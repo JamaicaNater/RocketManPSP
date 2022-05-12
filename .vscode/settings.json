@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/PSP",
+    "files.associations": {
+        "cmath": "cpp"
+    }
+}
