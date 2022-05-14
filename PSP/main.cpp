@@ -89,7 +89,7 @@ int main()
 
 		sceCtrlReadBufferPositive(&ctrlData, 1);
 		
-		if (cam_pos_x < 0) {
+		if (cam_pos_x < 0 ) {
 			cam_misaligned = true;
 		} else {
 			cam_misaligned = false;
@@ -104,10 +104,15 @@ int main()
 			}
 		}
 		if(ctrlData.Buttons & PSP_CTRL_RIGHT){
-			if (cam_pos_x < MAP_SIZE){
-				cam_pos_x+=PLAYER_SPEED;
+			if (!cam_misaligned) {
+				if (cam_pos_x < MAP_SIZE){
+					cam_pos_x+=PLAYER_SPEED;
+				}
+			} else {
+				worm.vector.x+=PLAYER_SPEED;
 			}
 		}
+		//TODO: Clean up code for readability
 
 		if (!cam_misaligned) {
 			worm.vector.y = (int)noise_map[cam_pos_x + 512/2];
@@ -116,7 +121,8 @@ int main()
 		}
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
-		GFX::drawRect(worm.vector.x, worm.vector.y-20, 5, 20, 0xD0BBF8);
+		//GFX::drawRect(worm.vector.x, worm.vector.y-20, 5, 20, 0xD0BBF8);
+		GFX::drawPNG(worm.vector.x, worm.vector.y, "player.png");
 		GFX::swapBuffers();
 
 		time++;

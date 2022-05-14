@@ -1,5 +1,5 @@
 TARGET = Tutorial
-OBJS = main.o gfx.o OpenSimplexNoise/OpenSimplexNoise.o 
+OBJS = main.o gfx.o OpenSimplexNoise/OpenSimplexNoise.o png/lodepng.o
 LIBS = -lstdc++ -lm 
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum -lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp -lpspmath
 
