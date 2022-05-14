@@ -1,6 +1,8 @@
 {
     "cmake.sourceDirectory": "${workspaceFolder}/PSP",
     "files.associations": {
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "xiosbase": "cpp",
+        "vector": "cpp"
     }
 }

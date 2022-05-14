@@ -1,0 +1,12 @@
+
+make util folder
+	bmp imports
+	bmp rotation
+	draw funtion for general images
+Physics Engine
+separate classes into files
+sleep for perfect 60fps
+
+
+splash screen
+

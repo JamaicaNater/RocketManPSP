@@ -36,21 +36,8 @@ namespace GFX
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, PSP_DISPLAY_SETBUF_NEXTFRAME);
 	}
 
-	void drawRect( unsigned int x, unsigned int y, unsigned int w, unsigned int h, uint32_t color)
+	void drawRect(int x, int y, int w, int h, uint32_t color)
 	{
-		if (x+w > 480)
-			x = 480-w;
-
-		if (y+h > 272)
-			y = 272-h;
-
-		if ((x + w) > 480)
-			w = 480 - x;
-
-		if ((y + h) > 272)
-			h = 272 - y;
-
-
 		for (int y1 = y; y1 < y + h; y1++)
 		{
 			for (int x1 = x; x1 < x + w; x1++)
@@ -69,7 +56,7 @@ namespace GFX
 
 				if (val >= y) {
 					*target = 0xf4a903;
-				} else if (val >= y - 15) {
+				} else if (val >= y - 5) {
 					*target = 0x318c34;			
 				} else {
 					*target = 0x2B6F8C;
