@@ -106,12 +106,13 @@ int main()
 		}
 
 		if(ctrlData.Buttons & PSP_CTRL_RIGHT){
-			if (cam_aligned) {
+			if (cam_aligned || worm.vector.x > 512/2) {
 				cam_pos_x+=PLAYER_SPEED;
+				cam_aligned = true;
 			} else {
 				worm.vector.x+=PLAYER_SPEED;
 			}
-			worm.vector.angle++;
+			///worm.vector.angle++;
 			worm.vector.direction = FORWARD;
 		}
 		//TODO: Clean up code for readability
@@ -124,10 +125,10 @@ int main()
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
 		//GFX::drawRect(worm.vector.x, worm.vector.y-20, 5, 20, 0xD0BBF8);
-		GFX::drawPNG(worm.vector.x, worm.vector.y ,20,worm.vector.direction, "player.png",0, worm.image);
+		GFX::drawPNG(worm.vector.x, worm.vector.y ,worm.vector.angle,worm.vector.direction, "player.png",0, worm.image);
 		GFX::swapBuffers();
 		
-		worm.vector.angle+=2;
+		//worm.vector.angle+=2;
 		end_time = sceKernelGetSystemTimeLow();
 		printf("fps: %2f", 1 / ((end_time - start_time) / static_cast<double>(1000*1000)));
 		sceDisplayWaitVblankStart();

@@ -65,12 +65,10 @@ namespace GFX
 		//unsigned char* image = 0;
 		unsigned width, height;
 
-		if (image) {
-			
-		} else {
+		if (!image) {
 			error = lodepng_decode32_file(&image, &width, &height, filename);
 			if(error) pspDebugScreenPrintf("error %u: %s %u Avaliable\n", error, lodepng_error_text(error), sceKernelTotalFreeMemSize());
-		}
+		} 
 		
 
 		//TODO create list of images in memory to be freed in the case of error 83
@@ -127,30 +125,35 @@ namespace GFX
 				}
 			}
 		} else {
+				if (rot < 0) rot +=360;
 				rot %= 360;
-
+				float rads = (rot * (PI / 180));
+				
 				//Finding the center point of rotated (or original) image
-				int r_height = height*3;
-				int r_width  = width*3;
+				int r_height = height*1.5;
+				int r_width  = width*1.5;
 
-				int mid_x = width/2;
-				int mid_y = height/2;
+				double mid_x = width/2;
+				double mid_y = height/2;
 				double x_i;
 				double y_i;
 
 				start_y = 0;
-				end_y = 0 + height;
+				end_y = start_y + height;
 				start_x = 0;
-				end_x = 0 + width;
+				end_x = start_x + width;
+
+				int y_pos_sub_mid;
+				int x_pos_sub_mid;
 				
 				for (int y = start_y; y <= end_y; y++){
-					for (int x = start_y; x <= end_y; x++){
+					for (int x = start_x; x < end_x; x++){
 						if (RGB_to_BGR(image + 4*(width*y + x), pixel)) {
-							x_i= (x-mid_x)*cos_table[rot]+(y-mid_y)*sin_table[rot];
-							y_i= -(x-mid_x)*sin_table[rot]+(y-mid_y)*cos_table[rot];
+							x_i= (x-mid_x)*cos(rads)+(y-mid_y)*sin(rads);
+							y_i= -(x-mid_x)*sin(rads)+(y-mid_y)*cos(rads);
 
-							x_i=round(x_i)+mid_x; 
-							y_i=round(y_i)+mid_y; 
+							x_i=round(x_i+mid_x); 
+							y_i=round(y_i+mid_y); 
 
 							if (x_i>=0 && y_i>=0 && x_i<r_width && y_i<r_height) {
 								draw_buffer[static_cast<int>((x_i) + SCREEN_WIDTH * y_i)] = *pixel;
