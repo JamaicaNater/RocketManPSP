@@ -48,12 +48,16 @@ const int PLAYER_SPEED = 2;
 int FRAMETIME = MICROSECONDS / 60;
 
 int main()
-{
+{  	
 	setupCallbacks();
 	pspDebugScreenInit();
 
 	sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
+
+	unsigned int start_time;
+
+	GFX::populate_trig_tables();
 
 	SceCtrlData ctrlData;
 	
@@ -66,7 +70,7 @@ int main()
 	unsigned char noise_map[MAP_SIZE];
 
 	FastNoiseLite noise(sceKernelGetSystemTimeLow());
-	auto start_time = sceKernelGetSystemTimeLow();
+	
 	
 	unsigned char max = 0;
 
@@ -80,47 +84,39 @@ int main()
 	//printf("\nmax: %d\n", (int)max);
 	//printf("[Test]: took %u microseconds!\nCan be ran %.03f times per second\n", end_time-start_time,  1.0 * MICROSECONDS / (end_time-start_time));
 	Projectile worm(Vector2d(10,10));
-	worm.vector.flip = FORWARD;
+	worm.vector.direction = FORWARD;
 	worm.vector.angle = 0;
-	bool cam_misaligned = false;
+	worm.image = nullptr;
+	bool cam_aligned = true;
 
 	while (1)
 	{
-		auto start_time = sceKernelGetSystemTimeLow();
-		//printf("hello");
-
+		pspDebugScreenSetXY(0,0);
+		start_time = sceKernelGetSystemTimeLow();
 		sceCtrlReadBufferPositive(&ctrlData, 1);
 		
-		if (cam_pos_x < 0 ) {
-			cam_misaligned = true;
-		} else {
-			cam_misaligned = false;
-			worm.vector.x = 512/2;
-		}
+		cam_aligned = (cam_pos_x > 0 && cam_pos_x + SCREEN_WIDTH < MAP_SIZE);
+		if (cam_aligned) worm.vector.x = 512/2;
 
 		if(ctrlData.Buttons & PSP_CTRL_LEFT){
-			if (!cam_misaligned){
-				cam_pos_x-=PLAYER_SPEED;
-			} else {
-				worm.vector.x-=PLAYER_SPEED;
-			}
+			cam_pos_x -= cam_aligned * PLAYER_SPEED; // if camaligned update cam position otherwise update worm position
+			worm.vector.x-= !cam_aligned * PLAYER_SPEED;
 
-			worm.vector.flip = BACKWARD;
+			worm.vector.direction = BACKWARD;
 		}
+
 		if(ctrlData.Buttons & PSP_CTRL_RIGHT){
-			if (!cam_misaligned) {
-				if (cam_pos_x < MAP_SIZE){
-					cam_pos_x+=PLAYER_SPEED;
-				}
+			if (cam_aligned) {
+				cam_pos_x+=PLAYER_SPEED;
 			} else {
 				worm.vector.x+=PLAYER_SPEED;
 			}
 			worm.vector.angle++;
-			worm.vector.flip = FORWARD;
+			worm.vector.direction = FORWARD;
 		}
 		//TODO: Clean up code for readability
 
-		if (!cam_misaligned) {
+		if (cam_aligned) {
 			worm.vector.y = (int)noise_map[cam_pos_x + 512/2];
 		} else {
 			worm.vector.y = (int)noise_map[worm.vector.x];
@@ -128,19 +124,13 @@ int main()
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
 		//GFX::drawRect(worm.vector.x, worm.vector.y-20, 5, 20, 0xD0BBF8);
-		GFX::drawPNG(worm.vector.x, worm.vector.y ,worm.vector.angle,worm.vector.flip, "player.png", 0);
+		GFX::drawPNG(worm.vector.x, worm.vector.y ,20,worm.vector.direction, "player.png",0, worm.image);
 		GFX::swapBuffers();
-
-		time++;
-		int i =0;
-		//while (i < 1000*1000 * 5){ i++; }
 		
-		auto end_time = sceKernelGetSystemTimeLow();
-		if (end_time - start_time > 0){
-			
-		}
-		sceDisplayWaitVblankStart();
 		worm.vector.angle+=2;
+		end_time = sceKernelGetSystemTimeLow();
+		printf("fps: %2f", 1 / ((end_time - start_time) / static_cast<double>(1000*1000)));
+		sceDisplayWaitVblankStart();
 	}
 	
 

@@ -13,6 +13,10 @@ namespace GFX
 
 	uint32_t* draw_buffer,
 			* disp_buffer;
+
+	float sin_table[360];
+	float cos_table[360];
+
 	void init()
 	{
 		draw_buffer = static_cast<uint32_t *>( sceGeEdramGetAddr() );
@@ -20,6 +24,11 @@ namespace GFX
 
 		sceDisplaySetMode(0, 480, 272);
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, 1);
+	}
+
+	void populate_trig_tables(){
+		for (int i = 0; i < 360; i++) sin_table[i] = sin((i * (PI / 180)));
+		for (int i = 0; i < 360; i++) cos_table[i] = cos((i * (PI / 180)));
 	}
 
 	void clear(uint32_t color)
@@ -50,14 +59,25 @@ namespace GFX
 	}
 
 	
-	void drawPNG(int x, int y, short rot, char flip, char* filename, uint32_t filter)
+	void drawPNG(int x, int y, short rot, char direction, char* filename, uint32_t filter, unsigned char * &image)
 	{
 		unsigned error;
-		unsigned char* image = 0;
+		//unsigned char* image = 0;
 		unsigned width, height;
 
-		error = lodepng_decode32_file(&image, &width, &height, filename);
-		if(error) pspDebugScreenPrintf("error %u: %s %u Avaliable\n", error, lodepng_error_text(error), sceKernelTotalFreeMemSize());
+		if (image) {
+			
+		} else {
+			error = lodepng_decode32_file(&image, &width, &height, filename);
+			if(error) pspDebugScreenPrintf("error %u: %s %u Avaliable\n", error, lodepng_error_text(error), sceKernelTotalFreeMemSize());
+		}
+		
+
+		//TODO create list of images in memory to be freed in the case of error 83
+		// TODO pass the entire projectile object in
+		// TODO set the worm image in case of null
+		
+
 
 		// /*use image here*/
 		// printf("%s", image);
@@ -86,7 +106,7 @@ namespace GFX
 					if (RGB_to_BGR((image+index), pixel)){
 						int index;
 						
-						switch (flip)
+						switch (direction)
 						{
 						case FORWARD:
 							index = (x1) + SCREEN_WIDTH * y1;
@@ -107,44 +127,42 @@ namespace GFX
 				}
 			}
 		} else {
-				
-				//First we will convert the degrees into radians
-				double pi = 3.14159265359;
-				float rads = (rot * (pi / 180));
+				rot %= 360;
 
-				//Finding the center point of rotated (or original) image.
-				int r_height = height;
-				int r_width  = width;
+				//Finding the center point of rotated (or original) image
+				int r_height = height*3;
+				int r_width  = width*3;
 
 				int mid_x = width/2;
 				int mid_y = height/2;
-				int x_i;
-				int y_i;
+				double x_i;
+				double y_i;
 
 				start_y = 0;
-				end_y = y + height*3;
+				end_y = 0 + height;
 				start_x = 0;
-				end_x = x + width*3;
+				end_x = 0 + width;
 				
-				for (int y = start_y; y < end_y; y++){
-					for (int x = start_y; x < end_y; x++){
-						x_i= (x-mid_x)*cos(rads)+(y-mid_y)*sin(rads);
-						y_i= -(x-mid_x)*sin(rads)+(y-mid_y)*cos(rads);
+				for (int y = start_y; y <= end_y; y++){
+					for (int x = start_y; x <= end_y; x++){
+						if (RGB_to_BGR(image + 4*(width*y + x), pixel)) {
+							x_i= (x-mid_x)*cos_table[rot]+(y-mid_y)*sin_table[rot];
+							y_i= -(x-mid_x)*sin_table[rot]+(y-mid_y)*cos_table[rot];
 
-						x_i=round(x_i)+mid_x; 
-						y_i=round(y_i)+mid_y; 
+							x_i=round(x_i)+mid_x; 
+							y_i=round(y_i)+mid_y; 
 
-						if (x_i>=0 && y_i>=0 && x_i<r_width && y_i<r_height && RGB_to_BGR((image + 4*(width*y_i + x_i) ), pixel)) {
-							draw_buffer[(x) + SCREEN_WIDTH * y] = *pixel;
+							if (x_i>=0 && y_i>=0 && x_i<r_width && y_i<r_height) {
+								draw_buffer[static_cast<int>((x_i) + SCREEN_WIDTH * y_i)] = *pixel;
+							}
 						}
-						index +=4;
 					}
 				}
 		}
 		
 
 		free(pixel);
-		free(image);
+		//free(image);
 	}
 
 	int RGB_to_BGR(unsigned char* RGB, uint32_t * BGR){
