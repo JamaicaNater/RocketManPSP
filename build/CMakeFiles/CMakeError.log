@@ -1329,3 +1329,729 @@ make.exe: *** [cmTC_ba72c/fast] Error 2
 
 
 
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/pspsdk/bin/psp-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/pspsdk/bin/psp-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_49671/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_49671.dir/build.make CMakeFiles/cmTC_49671.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_49671.dir/CMakeCCompilerABI.c.obj
+C:/pspsdk/bin/psp-gcc.exe   -v -o CMakeFiles/cmTC_49671.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_49671.dir/CMakeCCompilerABI.c.obj' '-c'
+ c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/cc1.exe -quiet -v -iprefix c:\pspsdk\bin\../lib/gcc/psp/8.2.0/ -DPSP=1 -D__psp__=1 -D_PSP=1 C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_49671.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\WILLIA~1\AppData\Local\Temp\ccc9mdIv.s
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include-fixed"
+ignoring nonexistent directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include-fixed
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/include
+End of search list.
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: aec3b88eec90076f6444ba7d36e07338
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_49671.dir/CMakeCCompilerABI.c.obj' '-c'
+ psp-as -EL -O1 -mabi=eabi -mno-pdr -o CMakeFiles/cmTC_49671.dir/CMakeCCompilerABI.c.obj C:\Users\WILLIA~1\AppData\Local\Temp\ccc9mdIv.s
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_49671.dir/CMakeCCompilerABI.c.obj' '-c'
+Linking C executable cmTC_49671.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_49671.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_49671.dir/objects.a @CMakeFiles/cmTC_49671.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe  -v -Wl,--whole-archive CMakeFiles/cmTC_49671.dir/objects.a -Wl,--no-whole-archive -o cmTC_49671.exe -Wl,--out-implib,libcmTC_49671.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+COLLECT_LTO_WRAPPER=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/lto-wrapper.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_49671.exe'
+ psp-ld -EL -o cmTC_49671.exe c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crti.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtbegin.o -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0 -Lc:/pspsdk/bin/../lib/gcc -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib --whole-archive CMakeFiles/cmTC_49671.dir/objects.a --no-whole-archive --out-implib libcmTC_49671.dll.a --major-image-version 0 --minor-image-version 0 -lgcc -lgcc c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtend.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtn.o
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_49671.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_49671/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_106b3/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_106b3.dir/build.make CMakeFiles/cmTC_106b3.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_106b3.dir/testCCompiler.c.obj
+C:/pspsdk/bin/psp-gcc.exe    -o CMakeFiles/cmTC_106b3.dir/testCCompiler.c.obj -c C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_106b3.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_106b3.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_106b3.dir/objects.a @CMakeFiles/cmTC_106b3.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe -Wl,--whole-archive CMakeFiles/cmTC_106b3.dir/objects.a -Wl,--no-whole-archive -o cmTC_106b3.exe -Wl,--out-implib,libcmTC_106b3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_106b3.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_106b3/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/pspsdk/bin/psp-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/pspsdk/bin/psp-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_dd33b/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_dd33b.dir/build.make CMakeFiles/cmTC_dd33b.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd33b.dir/CMakeCCompilerABI.c.obj
+C:/pspsdk/bin/psp-gcc.exe   -v -o CMakeFiles/cmTC_dd33b.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dd33b.dir/CMakeCCompilerABI.c.obj' '-c'
+ c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/cc1.exe -quiet -v -iprefix c:\pspsdk\bin\../lib/gcc/psp/8.2.0/ -DPSP=1 -D__psp__=1 -D_PSP=1 C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_dd33b.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\WILLIA~1\AppData\Local\Temp\ccrCO7TP.s
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include-fixed"
+ignoring nonexistent directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include-fixed
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/include
+End of search list.
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: aec3b88eec90076f6444ba7d36e07338
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dd33b.dir/CMakeCCompilerABI.c.obj' '-c'
+ psp-as -EL -O1 -mabi=eabi -mno-pdr -o CMakeFiles/cmTC_dd33b.dir/CMakeCCompilerABI.c.obj C:\Users\WILLIA~1\AppData\Local\Temp\ccrCO7TP.s
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dd33b.dir/CMakeCCompilerABI.c.obj' '-c'
+Linking C executable cmTC_dd33b.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_dd33b.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_dd33b.dir/objects.a @CMakeFiles/cmTC_dd33b.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe  -v -Wl,--whole-archive CMakeFiles/cmTC_dd33b.dir/objects.a -Wl,--no-whole-archive -o cmTC_dd33b.exe -Wl,--out-implib,libcmTC_dd33b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+COLLECT_LTO_WRAPPER=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/lto-wrapper.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dd33b.exe'
+ psp-ld -EL -o cmTC_dd33b.exe c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crti.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtbegin.o -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0 -Lc:/pspsdk/bin/../lib/gcc -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib --whole-archive CMakeFiles/cmTC_dd33b.dir/objects.a --no-whole-archive --out-implib libcmTC_dd33b.dll.a --major-image-version 0 --minor-image-version 0 -lgcc -lgcc c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtend.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtn.o
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_dd33b.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_dd33b/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_a3dd6/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_a3dd6.dir/build.make CMakeFiles/cmTC_a3dd6.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a3dd6.dir/testCCompiler.c.obj
+C:/pspsdk/bin/psp-gcc.exe    -o CMakeFiles/cmTC_a3dd6.dir/testCCompiler.c.obj -c C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_a3dd6.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_a3dd6.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_a3dd6.dir/objects.a @CMakeFiles/cmTC_a3dd6.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe -Wl,--whole-archive CMakeFiles/cmTC_a3dd6.dir/objects.a -Wl,--no-whole-archive -o cmTC_a3dd6.exe -Wl,--out-implib,libcmTC_a3dd6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_a3dd6.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_a3dd6/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/pspsdk/bin/psp-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/pspsdk/bin/psp-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_45558/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_45558.dir/build.make CMakeFiles/cmTC_45558.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45558.dir/CMakeCCompilerABI.c.obj
+C:/pspsdk/bin/psp-gcc.exe   -v -o CMakeFiles/cmTC_45558.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45558.dir/CMakeCCompilerABI.c.obj' '-c'
+ c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/cc1.exe -quiet -v -iprefix c:\pspsdk\bin\../lib/gcc/psp/8.2.0/ -DPSP=1 -D__psp__=1 -D_PSP=1 C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_45558.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\WILLIA~1\AppData\Local\Temp\ccPviZ0G.s
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include-fixed"
+ignoring nonexistent directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include-fixed
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/include
+End of search list.
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: aec3b88eec90076f6444ba7d36e07338
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45558.dir/CMakeCCompilerABI.c.obj' '-c'
+ psp-as -EL -O1 -mabi=eabi -mno-pdr -o CMakeFiles/cmTC_45558.dir/CMakeCCompilerABI.c.obj C:\Users\WILLIA~1\AppData\Local\Temp\ccPviZ0G.s
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45558.dir/CMakeCCompilerABI.c.obj' '-c'
+Linking C executable cmTC_45558.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_45558.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_45558.dir/objects.a @CMakeFiles/cmTC_45558.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe  -v -Wl,--whole-archive CMakeFiles/cmTC_45558.dir/objects.a -Wl,--no-whole-archive -o cmTC_45558.exe -Wl,--out-implib,libcmTC_45558.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+COLLECT_LTO_WRAPPER=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/lto-wrapper.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_45558.exe'
+ psp-ld -EL -o cmTC_45558.exe c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crti.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtbegin.o -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0 -Lc:/pspsdk/bin/../lib/gcc -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib --whole-archive CMakeFiles/cmTC_45558.dir/objects.a --no-whole-archive --out-implib libcmTC_45558.dll.a --major-image-version 0 --minor-image-version 0 -lgcc -lgcc c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtend.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtn.o
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_45558.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_45558/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_f81ae/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_f81ae.dir/build.make CMakeFiles/cmTC_f81ae.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f81ae.dir/testCCompiler.c.obj
+C:/pspsdk/bin/psp-gcc.exe    -o CMakeFiles/cmTC_f81ae.dir/testCCompiler.c.obj -c C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f81ae.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_f81ae.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_f81ae.dir/objects.a @CMakeFiles/cmTC_f81ae.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe -Wl,--whole-archive CMakeFiles/cmTC_f81ae.dir/objects.a -Wl,--no-whole-archive -o cmTC_f81ae.exe -Wl,--out-implib,libcmTC_f81ae.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_f81ae.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_f81ae/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/pspsdk/bin/psp-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/pspsdk/bin/psp-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_2caa0/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_2caa0.dir/build.make CMakeFiles/cmTC_2caa0.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2caa0.dir/CMakeCCompilerABI.c.obj
+C:/pspsdk/bin/psp-gcc.exe   -v -o CMakeFiles/cmTC_2caa0.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2caa0.dir/CMakeCCompilerABI.c.obj' '-c'
+ c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/cc1.exe -quiet -v -iprefix c:\pspsdk\bin\../lib/gcc/psp/8.2.0/ -DPSP=1 -D__psp__=1 -D_PSP=1 C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_2caa0.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\WILLIA~1\AppData\Local\Temp\ccnJQkS2.s
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include-fixed"
+ignoring nonexistent directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include-fixed
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/include
+End of search list.
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: aec3b88eec90076f6444ba7d36e07338
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2caa0.dir/CMakeCCompilerABI.c.obj' '-c'
+ psp-as -EL -O1 -mabi=eabi -mno-pdr -o CMakeFiles/cmTC_2caa0.dir/CMakeCCompilerABI.c.obj C:\Users\WILLIA~1\AppData\Local\Temp\ccnJQkS2.s
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2caa0.dir/CMakeCCompilerABI.c.obj' '-c'
+Linking C executable cmTC_2caa0.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_2caa0.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_2caa0.dir/objects.a @CMakeFiles/cmTC_2caa0.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe  -v -Wl,--whole-archive CMakeFiles/cmTC_2caa0.dir/objects.a -Wl,--no-whole-archive -o cmTC_2caa0.exe -Wl,--out-implib,libcmTC_2caa0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+COLLECT_LTO_WRAPPER=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/lto-wrapper.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2caa0.exe'
+ psp-ld -EL -o cmTC_2caa0.exe c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crti.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtbegin.o -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0 -Lc:/pspsdk/bin/../lib/gcc -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib --whole-archive CMakeFiles/cmTC_2caa0.dir/objects.a --no-whole-archive --out-implib libcmTC_2caa0.dll.a --major-image-version 0 --minor-image-version 0 -lgcc -lgcc c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtend.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtn.o
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_2caa0.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_2caa0/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_fffc4/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_fffc4.dir/build.make CMakeFiles/cmTC_fffc4.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fffc4.dir/testCCompiler.c.obj
+C:/pspsdk/bin/psp-gcc.exe    -o CMakeFiles/cmTC_fffc4.dir/testCCompiler.c.obj -c C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_fffc4.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_fffc4.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_fffc4.dir/objects.a @CMakeFiles/cmTC_fffc4.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe -Wl,--whole-archive CMakeFiles/cmTC_fffc4.dir/objects.a -Wl,--no-whole-archive -o cmTC_fffc4.exe -Wl,--out-implib,libcmTC_fffc4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_fffc4.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_fffc4/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/pspsdk/bin/psp-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/pspsdk/bin/psp-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_c0722/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_c0722.dir/build.make CMakeFiles/cmTC_c0722.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0722.dir/CMakeCCompilerABI.c.obj
+C:/pspsdk/bin/psp-gcc.exe   -v -o CMakeFiles/cmTC_c0722.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c0722.dir/CMakeCCompilerABI.c.obj' '-c'
+ c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/cc1.exe -quiet -v -iprefix c:\pspsdk\bin\../lib/gcc/psp/8.2.0/ -DPSP=1 -D__psp__=1 -D_PSP=1 C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_c0722.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\WILLIA~1\AppData\Local\Temp\ccW2mJl5.s
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include-fixed"
+ignoring nonexistent directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include-fixed
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/include
+End of search list.
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: aec3b88eec90076f6444ba7d36e07338
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c0722.dir/CMakeCCompilerABI.c.obj' '-c'
+ psp-as -EL -O1 -mabi=eabi -mno-pdr -o CMakeFiles/cmTC_c0722.dir/CMakeCCompilerABI.c.obj C:\Users\WILLIA~1\AppData\Local\Temp\ccW2mJl5.s
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c0722.dir/CMakeCCompilerABI.c.obj' '-c'
+Linking C executable cmTC_c0722.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_c0722.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_c0722.dir/objects.a @CMakeFiles/cmTC_c0722.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe  -v -Wl,--whole-archive CMakeFiles/cmTC_c0722.dir/objects.a -Wl,--no-whole-archive -o cmTC_c0722.exe -Wl,--out-implib,libcmTC_c0722.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+COLLECT_LTO_WRAPPER=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/lto-wrapper.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c0722.exe'
+ psp-ld -EL -o cmTC_c0722.exe c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crti.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtbegin.o -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0 -Lc:/pspsdk/bin/../lib/gcc -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib --whole-archive CMakeFiles/cmTC_c0722.dir/objects.a --no-whole-archive --out-implib libcmTC_c0722.dll.a --major-image-version 0 --minor-image-version 0 -lgcc -lgcc c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtend.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtn.o
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_c0722.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_c0722/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_577af/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_577af.dir/build.make CMakeFiles/cmTC_577af.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_577af.dir/testCCompiler.c.obj
+C:/pspsdk/bin/psp-gcc.exe    -o CMakeFiles/cmTC_577af.dir/testCCompiler.c.obj -c C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_577af.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_577af.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_577af.dir/objects.a @CMakeFiles/cmTC_577af.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe -Wl,--whole-archive CMakeFiles/cmTC_577af.dir/objects.a -Wl,--no-whole-archive -o cmTC_577af.exe -Wl,--out-implib,libcmTC_577af.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_577af.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_577af/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/pspsdk/bin/psp-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/pspsdk/bin/psp-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+psp-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 information.
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x44): undefined reference to `strlen'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0x90): undefined reference to `atexit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_main':
+(.text+0xa4): undefined reference to `exit'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1b4): undefined reference to `sceKernelCreateThread'
+c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o: In function `_start':
+(.text+0x1c4): undefined reference to `sceKernelStartThread'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_372d1/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_372d1.dir/build.make CMakeFiles/cmTC_372d1.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_372d1.dir/CMakeCCompilerABI.c.obj
+C:/pspsdk/bin/psp-gcc.exe   -v -o CMakeFiles/cmTC_372d1.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_372d1.dir/CMakeCCompilerABI.c.obj' '-c'
+ c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/cc1.exe -quiet -v -iprefix c:\pspsdk\bin\../lib/gcc/psp/8.2.0/ -DPSP=1 -D__psp__=1 -D_PSP=1 C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_372d1.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\WILLIA~1\AppData\Local\Temp\ccHn65Op.s
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/include-fixed"
+ignoring nonexistent directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/sys-include"
+ignoring duplicate directory "c:/pspsdk/lib/gcc/../../lib/gcc/psp/8.2.0/../../../../psp/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/include-fixed
+ c:\pspsdk\bin\../lib/gcc/psp/8.2.0/../../../../psp/include
+End of search list.
+GNU C17 (GCC) version 8.2.0 (psp)
+	compiled by GNU C version 8.2.0, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: aec3b88eec90076f6444ba7d36e07338
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_372d1.dir/CMakeCCompilerABI.c.obj' '-c'
+ psp-as -EL -O1 -mabi=eabi -mno-pdr -o CMakeFiles/cmTC_372d1.dir/CMakeCCompilerABI.c.obj C:\Users\WILLIA~1\AppData\Local\Temp\ccHn65Op.s
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_372d1.dir/CMakeCCompilerABI.c.obj' '-c'
+Linking C executable cmTC_372d1.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_372d1.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_372d1.dir/objects.a @CMakeFiles/cmTC_372d1.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe  -v -Wl,--whole-archive CMakeFiles/cmTC_372d1.dir/objects.a -Wl,--no-whole-archive -o cmTC_372d1.exe -Wl,--out-implib,libcmTC_372d1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=C:/pspsdk/bin/psp-gcc.exe
+COLLECT_LTO_WRAPPER=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/lto-wrapper.exe
+Target: psp
+Configured with: ../../gcc-8.2.0/configure --build=i686-pc-mingw32 --prefix=/pspsdk --target=psp --enable-languages=c,c++ --enable-cxx-flags=-G0 --with-newlib --with-headers --disable-win32-registry --disable-nls --disable-libstdcxx-pch --with-libiconv-prefix=/usr/local --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib
+Thread model: single
+gcc version 8.2.0 (GCC) 
+COMPILER_PATH=c:/pspsdk/bin/../libexec/gcc/psp/8.2.0/;c:/pspsdk/bin/../libexec/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/bin/
+LIBRARY_PATH=c:/pspsdk/bin/../lib/gcc/psp/8.2.0/;c:/pspsdk/bin/../lib/gcc/;c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_372d1.exe'
+ psp-ld -EL -o cmTC_372d1.exe c:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib/crt0.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crti.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtbegin.o -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0 -Lc:/pspsdk/bin/../lib/gcc -Lc:/pspsdk/bin/../lib/gcc/psp/8.2.0/../../../../psp/lib --whole-archive CMakeFiles/cmTC_372d1.dir/objects.a --no-whole-archive --out-implib libcmTC_372d1.dll.a --major-image-version 0 --minor-image-version 0 -lgcc -lgcc c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtend.o c:/pspsdk/bin/../lib/gcc/psp/8.2.0/crtn.o
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_372d1.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_372d1/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/pspsdk/bin/make.exe cmTC_6214a/fast && C:/pspsdk/bin/make.exe  -f CMakeFiles/cmTC_6214a.dir/build.make CMakeFiles/cmTC_6214a.dir/build
+make.exe[1]: Entering directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6214a.dir/testCCompiler.c.obj
+C:/pspsdk/bin/psp-gcc.exe    -o CMakeFiles/cmTC_6214a.dir/testCCompiler.c.obj -c C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_6214a.exe
+"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_6214a.dir/objects.a
+C:/pspsdk/bin/psp-ar.exe cr CMakeFiles/cmTC_6214a.dir/objects.a @CMakeFiles/cmTC_6214a.dir/objects1.rsp
+C:/pspsdk/bin/psp-gcc.exe -Wl,--whole-archive CMakeFiles/cmTC_6214a.dir/objects.a -Wl,--no-whole-archive -o cmTC_6214a.exe -Wl,--out-implib,libcmTC_6214a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+psp-ld: unrecognized option '--out-implib'
+psp-ld: use the --help option for usage information
+make.exe[1]: *** [cmTC_6214a.exe] Error 1
+make.exe[1]: Leaving directory `C:/Users/WilliamsFrancis/Documents/PSP_APP/build/CMakeFiles/CMakeTmp'
+make.exe: *** [cmTC_6214a/fast] Error 2
+
+
+

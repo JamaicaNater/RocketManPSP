@@ -79,7 +79,9 @@ int main()
 
 	//printf("\nmax: %d\n", (int)max);
 	//printf("[Test]: took %u microseconds!\nCan be ran %.03f times per second\n", end_time-start_time,  1.0 * MICROSECONDS / (end_time-start_time));
-	Projectile worm(Vector3d(10,10));
+	Projectile worm(Vector2d(10,10));
+	worm.vector.flip = FORWARD;
+	worm.vector.angle = 0;
 	bool cam_misaligned = false;
 
 	while (1)
@@ -102,6 +104,8 @@ int main()
 			} else {
 				worm.vector.x-=PLAYER_SPEED;
 			}
+
+			worm.vector.flip = BACKWARD;
 		}
 		if(ctrlData.Buttons & PSP_CTRL_RIGHT){
 			if (!cam_misaligned) {
@@ -111,6 +115,8 @@ int main()
 			} else {
 				worm.vector.x+=PLAYER_SPEED;
 			}
+			worm.vector.angle++;
+			worm.vector.flip = FORWARD;
 		}
 		//TODO: Clean up code for readability
 
@@ -122,7 +128,7 @@ int main()
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
 		//GFX::drawRect(worm.vector.x, worm.vector.y-20, 5, 20, 0xD0BBF8);
-		GFX::drawPNG(worm.vector.x, worm.vector.y, "player.png");
+		GFX::drawPNG(worm.vector.x, worm.vector.y ,worm.vector.angle,worm.vector.flip, "player.png", 0);
 		GFX::swapBuffers();
 
 		time++;
@@ -134,6 +140,7 @@ int main()
 			
 		}
 		sceDisplayWaitVblankStart();
+		worm.vector.angle+=2;
 	}
 	
 
