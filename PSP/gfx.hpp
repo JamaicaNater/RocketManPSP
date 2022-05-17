@@ -18,5 +18,6 @@ namespace GFX
 	void drawTerrain(unsigned char noise[], int cam_pos_x);
 	void drawPNG(int, int, short, char, char*, uint32_t , unsigned char* &);
 	int RGB_to_BGR(unsigned char* RGB, uint32_t * BGR);
+	bool valid_pixel(int x, int y, int * location);
 	void populate_trig_tables();
 }

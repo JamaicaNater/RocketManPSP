@@ -68,6 +68,10 @@ namespace GFX
 		if (!image) {
 			error = lodepng_decode32_file(&image, &width, &height, filename);
 			if(error) pspDebugScreenPrintf("error %u: %s %u Avaliable\n", error, lodepng_error_text(error), sceKernelTotalFreeMemSize());
+
+			// for (int i = 0 i < width*height; i++) {
+			// 	RGB_to_BGR(&image[i], &image[i])
+			// }
 		} 
 		
 
@@ -91,27 +95,64 @@ namespace GFX
 		int start_x = x;
 		int end_x = x + width;
 
-		if (!rot) {
+		if (rot) {
+			unsigned short playerx = x;
+			unsigned short playery = y;
+			if (rot < 0) rot +=360;
+			rot %= 360;
+			
+			unsigned short mid_x = width/2;
+			unsigned short mid_y = height/2;
+			float x_i;
+			float y_i;
+
+			start_y = 0;
+			end_y = start_y + height;
+			start_x = 0;
+			end_x = start_x + width;
+
+			unsigned short y_pos_sub_mid = start_x-mid_x;
+			unsigned short x_pos_sub_mid = start_y-mid_y;
+			unsigned short draw_pos;
+			
+			for (int y = start_y; y < end_y; y++){
+				for (int x = start_x; x < end_x; x++){
+					if (RGB_to_BGR(image + 4*(width*y + x), pixel)) {
+						x_i= (x-mid_x)*cos_table[rot]+(y-mid_y)*sin_table[rot];
+						y_i= -(x-mid_x)*sin_table[rot]+(y-mid_y)*cos_table[rot];
+
+						x_i=round(x_i)+mid_x; 
+						y_i=round(y_i)+mid_y; 
+
+						if (x_i+playerx>=0 && y_i+playery>=0) {
+							draw_buffer[static_cast<int>((x_i + playerx) + SCREEN_WIDTH * (y_i+playery))] = *pixel;
+						}
+					}
+				}
+			}
+		} else {
 			start_y = y;
 			end_y = y + height;
 			start_x = x;
 			end_x = x + width;
+
+			int draw_pos;
 
 			for (int y1 = start_y; y1 < end_y; y1++)
 			{
 				for (int x1 = start_x; x1 < end_x; x1++)
 				{
 					if (RGB_to_BGR((image+index), pixel)){
-						int index;
+						
 						
 						switch (direction)
 						{
 						case FORWARD:
-							index = (x1) + SCREEN_WIDTH * y1;
+							draw_pos = (x1) + SCREEN_WIDTH * y1;
 							break;
 
 						case BACKWARD:
-							index = (start_x + end_x - x1) + SCREEN_WIDTH * y1;
+							draw_pos = (start_x + end_x - x1) + SCREEN_WIDTH * y1;
 							break;
 						
 						default:
@@ -119,48 +160,11 @@ namespace GFX
 						}
 
 
-						draw_buffer[index] = *pixel;
+						draw_buffer[draw_pos] = *pixel;
 					}
 					index+=4;
 				}
 			}
-		} else {
-				if (rot < 0) rot +=360;
-				rot %= 360;
-				float rads = (rot * (PI / 180));
-				
-				//Finding the center point of rotated (or original) image
-				int r_height = height*1.5;
-				int r_width  = width*1.5;
-
-				double mid_x = width/2;
-				double mid_y = height/2;
-				double x_i;
-				double y_i;
-
-				start_y = 0;
-				end_y = start_y + height;
-				start_x = 0;
-				end_x = start_x + width;
-
-				int y_pos_sub_mid;
-				int x_pos_sub_mid;
-				
-				for (int y = start_y; y <= end_y; y++){
-					for (int x = start_x; x < end_x; x++){
-						if (RGB_to_BGR(image + 4*(width*y + x), pixel)) {
-							x_i= (x-mid_x)*cos(rads)+(y-mid_y)*sin(rads);
-							y_i= -(x-mid_x)*sin(rads)+(y-mid_y)*cos(rads);
-
-							x_i=round(x_i+mid_x); 
-							y_i=round(y_i+mid_y); 
-
-							if (x_i>=0 && y_i>=0 && x_i<r_width && y_i<r_height) {
-								draw_buffer[static_cast<int>((x_i) + SCREEN_WIDTH * y_i)] = *pixel;
-							}
-						}
-					}
-				}
 		}
 		
 
@@ -174,16 +178,26 @@ namespace GFX
 				unsigned char blue = *(RGB+2);
 				unsigned char alpha = *(RGB+3);
 
-				*BGR = blue<<16 | green<<8 | red;
+				*BGR =alpha<<24 | blue<<16 | green<<8 | red;
 				return alpha;
 	}
 
+	bool valid_pixel(int x, int y, int * location) {
+		if (x < 0 || y < 0 || x > SCREEN_WIDTH || y > SCREEN_HEIGHT) return false;
+
+		*location = x + y*512;
+		return true;
+	}
+
 	void drawTerrain(unsigned char noise[], int cam_pos_x) {
+		unsigned char val;
+		uint32_t * target;
+		int px_index;
 		for(int y = 0; y <= SCREEN_HEIGHT; y++) {
 			for(int x = 0; x <= SCREEN_WIDTH; x++) {
-				int px_index = x + (SCREEN_WIDTH * y);
-				float val = noise[x+cam_pos_x];
-				uint32_t * target = &draw_buffer[px_index];
+				px_index = x + (SCREEN_WIDTH * y);
+				val = noise[x+cam_pos_x];
+				target = &draw_buffer[px_index];
 
 				if (val >= y) {
 					*target = 0xf4a903;

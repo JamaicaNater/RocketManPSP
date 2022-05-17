@@ -75,7 +75,7 @@ int main()
 	unsigned char max = 0;
 
 	for(int i = 0; i < MAP_SIZE; i++) {
-		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 180) + 40; // MIN hieght = 40 max hieght = 180 + 40
+		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 170) + 40; // MIN hieght = 40 max hieght = 170 + 40
 		if (noise_map[i] > max) max = noise_map[i];
 	}
 
@@ -101,7 +101,6 @@ int main()
 		if(ctrlData.Buttons & PSP_CTRL_LEFT){
 			cam_pos_x -= cam_aligned * PLAYER_SPEED; // if camaligned update cam position otherwise update worm position
 			worm.vector.x-= !cam_aligned * PLAYER_SPEED;
-
 			worm.vector.direction = BACKWARD;
 		}
 
@@ -115,6 +114,13 @@ int main()
 			///worm.vector.angle++;
 			worm.vector.direction = FORWARD;
 		}
+
+		if(ctrlData.Buttons & PSP_CTRL_UP){ 
+			worm.vector.angle+=2;
+		}
+		if(ctrlData.Buttons & PSP_CTRL_DOWN){ 
+			worm.vector.angle-=2;
+		}
 		//TODO: Clean up code for readability
 
 		if (cam_aligned) {
@@ -125,12 +131,12 @@ int main()
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
 		//GFX::drawRect(worm.vector.x, worm.vector.y-20, 5, 20, 0xD0BBF8);
-		GFX::drawPNG(worm.vector.x, worm.vector.y ,worm.vector.angle,worm.vector.direction, "player.png",0, worm.image);
+		GFX::drawPNG(worm.vector.x, worm.vector.y ,worm.vector.angle, worm.vector.direction, "player.png", 0, worm.image);
 		GFX::swapBuffers();
 		
 		//worm.vector.angle+=2;
 		end_time = sceKernelGetSystemTimeLow();
-		printf("fps: %2f", 1 / ((end_time - start_time) / static_cast<double>(1000*1000)));
+		printf("fps: %.1f, x: %d, y: %d, angle: %d", 1 / ((end_time - start_time) / static_cast<float>(1000*1000)));
 		sceDisplayWaitVblankStart();
 	}
 	
