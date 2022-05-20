@@ -78,6 +78,8 @@ int main()
 	worm.image = nullptr;
 	
 	bool cam_aligned = true;
+
+	GFX::do_homescreen();
 	while (1)
 	{
 		pspDebugScreenSetXY(0,0);
@@ -120,6 +122,7 @@ int main()
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
 		GFX::drawBMP(worm.vector.x, worm.vector.y , worm.vector.angle, worm.vector.direction, "assets/player.bmp", 0, worm.image);
+		
 
 		GFX::swapBuffers();
 		end_time = sceKernelGetSystemTimeLow();

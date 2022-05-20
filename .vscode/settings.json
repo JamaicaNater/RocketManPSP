@@ -6,6 +6,7 @@
         "vector": "cpp",
         "atomic": "cpp",
         "cstdint": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "algorithm": "cpp"
     }
 }

@@ -5,6 +5,8 @@
 #include <math.h>
 #include <pspdebug.h>
 #include <pspsysmem.h>
+#include <pspkernel.h>
+#include <pspctrl.h>
 
 #include "png/lodepng.h"
 #include "bmp/loadBMP.h"
@@ -219,5 +221,31 @@ namespace GFX
 				}
 			}
 		}
+	}
+
+	void do_homescreen(){
+		unsigned int width;
+		unsigned int height;
+
+		unsigned int delta = 1000*1000*15, end_time;\
+		sceCtrlSetSamplingCycle(0);
+		sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
+		SceCtrlData ctrlData;
+		end_time = sceKernelGetSystemTimeLow() + delta;
+
+		while (1)
+		{
+			// TODO: use threads to break
+			sceCtrlReadBufferPositive(&ctrlData, 1);
+			if(ctrlData.Buttons & PSP_CTRL_START) break;
+			write_BMP(&height, &width, draw_buffer , "assets/back.bmp");
+			swapBuffers();
+			if(ctrlData.Buttons & PSP_CTRL_START) break;
+			write_BMP(&height, &width, draw_buffer , "assets/back2.bmp");
+			swapBuffers();
+			if(ctrlData.Buttons & PSP_CTRL_START) break;
+		}
+		
+
 	}
 }

@@ -17,4 +17,5 @@ namespace GFX
 	void drawTerrain(unsigned char noise[], int cam_pos_x);
 	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, unsigned int * &image);
 	void populate_trig_tables();
+	void do_homescreen();
 }
