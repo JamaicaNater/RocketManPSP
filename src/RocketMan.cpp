@@ -11,7 +11,6 @@
 #include "utils.hpp"
 
 #include "gfx.hpp"
-#include "OpenSimplexNoise/OpenSimplexNoise.h"
 #include "FastNoise/FastNoise.hpp"
 
 #define MICROSECONDS 1000 * 1000
@@ -120,7 +119,7 @@ int main()
 		}
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
-		GFX::drawBMP(worm.vector.x, worm.vector.y , worm.vector.angle, worm.vector.direction, "player.bmp", 0, worm.image);
+		GFX::drawBMP(worm.vector.x, worm.vector.y , worm.vector.angle, worm.vector.direction, "assets/player.bmp", 0, worm.image);
 
 		GFX::swapBuffers();
 		end_time = sceKernelGetSystemTimeLow();

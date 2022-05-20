@@ -1,5 +1,5 @@
 TARGET = Tutorial
-OBJS = main.o gfx.o OpenSimplexNoise/OpenSimplexNoise.o png/lodepng.o bmp/loadbmp.o
+OBJS = RocketMan.o gfx.o png/lodepng.o bmp/loadbmp.o
 LIBS = -lstdc++ -lm 
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum -lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp -lpspmath
 
