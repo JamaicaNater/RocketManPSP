@@ -81,13 +81,21 @@ int main()
 
 	auto end_time = sceKernelGetSystemTimeLow();
 
-	//printf("\nmax: %d\n", (int)max);
-	//printf("[Test]: took %u microseconds!\nCan be ran %.03f times per second\n", end_time-start_time,  1.0 * MICROSECONDS / (end_time-start_time));
 	Projectile worm(Vector2d(10,10));
 	worm.vector.direction = FORWARD;
 	worm.vector.angle = 0;
 	worm.image = nullptr;
 	bool cam_aligned = true;
+
+	Projectile worm2(Vector2d(50,50));
+	worm2.vector.direction = FORWARD;
+	worm2.vector.angle = 0;
+	worm2.image = nullptr;
+
+	Projectile worm3(Vector2d(150,50));
+	worm3.vector.direction = FORWARD;
+	worm3.vector.angle = 0;
+	worm3.image = nullptr;
 
 	while (1)
 	{
@@ -131,12 +139,17 @@ int main()
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
 		//GFX::drawRect(worm.vector.x, worm.vector.y-20, 5, 20, 0xD0BBF8);
-		GFX::drawPNG(worm.vector.x, worm.vector.y ,worm.vector.angle, worm.vector.direction, "player.png", 0, worm.image);
+		GFX::drawBMP(worm.vector.x, worm.vector.y , worm.vector.angle, worm.vector.direction, "player.bmp", 0, worm.image);
+		// GFX::drawPNG(worm2.vector.x, worm2.vector.y ,worm2.vector.angle, worm2.vector.direction, "player2.png", 0, worm2.image);
+		// GFX::drawPNG(worm3.vector.x, worm3.vector.y ,worm3.vector.angle, worm3.vector.direction, "player3.png", 0, worm3.image);
+
+		
+
 		GFX::swapBuffers();
 		
 		//worm.vector.angle+=2;
 		end_time = sceKernelGetSystemTimeLow();
-		printf("fps: %.1f, x: %d, y: %d, angle: %d", 1 / ((end_time - start_time) / static_cast<float>(1000*1000)));
+		printf("fps: %.1f, x: %d, y: %d, angle: %d ", 1 / ((end_time - start_time) / static_cast<float>(1000*1000)), worm.vector.x, worm.vector.y, worm.vector.angle);
 		sceDisplayWaitVblankStart();
 	}
 	

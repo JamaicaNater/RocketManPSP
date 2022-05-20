@@ -7,6 +7,7 @@
 #include <pspsysmem.h>
 
 #include "png/lodepng.h"
+#include "bmp/loadBMP.h"
 
 namespace GFX 
 {
@@ -16,6 +17,22 @@ namespace GFX
 
 	float sin_table[360];
 	float cos_table[360];
+
+	unsigned int swap_endian(unsigned int data)
+	{
+		// Used to Format Pixels from ARGB to ABGR for the PSP display
+		return (data&0xFF000000) | ((data&0xFF000000)>>24 | (data&0x00FF0000)>>8 | (data&0x0000FF00)<<8 | (data&0x000000FF)<<24)>>8;
+	}
+
+	bool is_transparent(unsigned int pixel) {
+		// Masks the Alpha channel and returns false if t has a value grater than 0
+		return !(pixel&0xFF000000);
+	}
+
+	// unsigned int swap_endian(unsigned int data)
+	// {
+	// 	return  (data&0x0000FF00) | (data&0xFF000000) | (data&0x00FF0000)>>16 | (data&0x000000FF)<<16;
+	// }
 
 	void init()
 	{
@@ -59,15 +76,147 @@ namespace GFX
 	}
 
 	
-	void drawPNG(int x, int y, short rot, char direction, char* filename, uint32_t filter, unsigned char * &image)
+	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, unsigned int * &image)
+	{
+		//unsigned char* image = 0;
+		int width, height;
+		
+
+		if (!image) {		
+			unsigned int * temp_img;
+			if (load_BMP(temp_img, height, width, filename)) pspDebugScreenPrintf("pixel %0x, height %d width %d", temp_img[0], height, width);
+
+			image = new unsigned int[width*height];
+			for (int i = 0; i < width*height; i++) {
+				image[i] = swap_endian(temp_img[i]);
+			}
+
+			int data = swap_endian(temp_img[0]);
+		
+			free(temp_img);
+		} 
+		pspDebugScreenPrintf("%0x ", image[width*height-10]);
+		
+
+		//TODO create list of images in memory to be freed in the case of no more memory
+		// TODO pass the entire projectile object in
+
+		
+
+
+		// /*use image here*/
+		// printf("%s", image);
+		//y = 272 - y;
+		y-=height;
+		x-=width/2;
+		int index = 0;
+		
+
+		uint32_t * pixel = new(uint32_t);
+		int start_y = y;
+		int end_y = y + height;
+		int start_x = x;
+		int end_x = x + width;
+
+		if (rot) {
+			unsigned short playerx = x;
+			unsigned short playery = y;
+			if (rot < 0) rot +=360;
+			rot %= 360;
+			
+			unsigned short mid_x = width/2;
+			unsigned short mid_y = height/2;
+			float x_i;
+			float y_i;
+
+			start_y = 0;
+			end_y = start_y + height;
+			start_x = 0;
+			end_x = start_x + width;
+
+			unsigned short y_pos_sub_mid = start_x-mid_x;
+			unsigned short x_pos_sub_mid = start_y-mid_y;
+			unsigned short draw_pos;
+			
+			for (int y = start_y; y < end_y; y++){
+				for (int x = start_x; x < end_x; x++){
+					pixel = image + (width*y + x);
+					if (!is_transparent(*pixel)) {
+						x_i= (x-mid_x)*cos_table[rot]+(y-mid_y)*sin_table[rot];
+						y_i= -(x-mid_x)*sin_table[rot]+(y-mid_y)*cos_table[rot];
+
+						x_i=round(x_i)+mid_x; 
+						y_i=round(y_i)+mid_y; 
+
+						if (x_i+playerx>=0 && y_i+playery>=0) {
+							draw_buffer[static_cast<int>((x_i + playerx) + SCREEN_WIDTH * (y_i+playery))] = *pixel;
+						}
+					}
+				}
+			}
+		} else {
+			start_y = y + height;
+			end_y = y;
+			start_x = x;
+			end_x = x + width;
+
+			int draw_pos;
+
+			for (int y1 = start_y; y1 > end_y; y1--)
+			{
+				for (int x1 = start_x; x1 < end_x; x1++)
+				{
+					pixel = image+index;
+					if (!is_transparent(*pixel)){
+						
+						
+						switch (direction)
+						{
+						case FORWARD:
+							draw_pos = (x1) + SCREEN_WIDTH * y1;
+							break;
+
+						case BACKWARD:
+							draw_pos = (start_x + end_x - x1) + SCREEN_WIDTH * y1;
+							break;
+						
+						default:
+							break;
+						}
+
+
+						draw_buffer[draw_pos] = *pixel;
+					}
+					index++;
+				}
+			}
+		}
+		
+
+		free(pixel);
+		//free(image);
+	}
+
+	void drawPNG(int x, int y, short rot, char direction,  char* filename, uint32_t filter, unsigned char * &image)
 	{
 		unsigned error;
 		//unsigned char* image = 0;
 		unsigned width, height;
+		
 
 		if (!image) {
-			error = lodepng_decode32_file(&image, &width, &height, filename);
-			if(error) pspDebugScreenPrintf("error %u: %s %u Avaliable\n", error, lodepng_error_text(error), sceKernelTotalFreeMemSize());
+			printf("loading image");
+			
+
+			for (int i = 0; i < INT32_MAX; i++){}
+			
+			unsigned char * i;
+			error = lodepng_decode32_file(&i, &width, &height, filename);
+			image = (unsigned char*)malloc(4 * width * height);
+
+			if(error || !image) pspDebugScreenPrintf("error %u: %s %u Avaliable\n", error, lodepng_error_text(error), sceKernelTotalFreeMemSize());
+			memcpy(image, i, 4*height*width);
+			free(i);
 
 			// for (int i = 0 i < width*height; i++) {
 			// 	RGB_to_BGR(&image[i], &image[i])

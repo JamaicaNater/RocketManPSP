@@ -16,6 +16,7 @@ namespace GFX
 	void swapBuffers();
 	void drawRect(int x, int y, int w, int h, uint32_t color);
 	void drawTerrain(unsigned char noise[], int cam_pos_x);
+	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, unsigned int * &image);
 	void drawPNG(int, int, short, char, char*, uint32_t , unsigned char* &);
 	int RGB_to_BGR(unsigned char* RGB, uint32_t * BGR);
 	bool valid_pixel(int x, int y, int * location);
