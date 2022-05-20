@@ -18,7 +18,7 @@ namespace GFX
 	float sin_table[360];
 	float cos_table[360];
 
-	unsigned int swap_endian(unsigned int data)
+	unsigned int format_pixel(unsigned int data)
 	{
 		// Used to Format Pixels from ARGB to ABGR for the PSP display
 		return (data&0xFF000000) | ((data&0xFF000000)>>24 | (data&0x00FF0000)>>8 | (data&0x0000FF00)<<8 | (data&0x000000FF)<<24)>>8;
@@ -75,49 +75,50 @@ namespace GFX
 		}
 	}
 
-	
+	/**
+	 * @brief 
+	 * 
+	 * @param x -  x position to draw at
+	 * @param y -  y position to draw at
+	 * @param rot - angle of the object
+	 * @param direction - direction of the object
+	 * @param filename 
+	 * @param filter - TBD
+	 * @param image 
+	 */
 	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, unsigned int * &image)
 	{
-		//unsigned char* image = 0;
-		int width, height;
+		unsigned int width;
+		unsigned int height;
 		
-
+		// If there is not a image present generate one and store it
 		if (!image) {		
 			unsigned int * temp_img;
-			if (load_BMP(temp_img, height, width, filename)) pspDebugScreenPrintf("pixel %0x, height %d width %d", temp_img[0], height, width);
+			load_BMP(&height, &width,temp_img , filename);
 
 			image = new unsigned int[width*height];
 			for (int i = 0; i < width*height; i++) {
-				image[i] = swap_endian(temp_img[i]);
+				image[i] = format_pixel(temp_img[i]);
 			}
-
-			int data = swap_endian(temp_img[0]);
 		
 			free(temp_img);
 		} 
-		pspDebugScreenPrintf("%0x ", image[width*height-10]);
 		
 
-		//TODO create list of images in memory to be freed in the case of no more memory
-		// TODO pass the entire projectile object in
+		//TODO create list of images in memory to be freed in the case of no more memory		
 
-		
-
-
-		// /*use image here*/
-		// printf("%s", image);
-		//y = 272 - y;
+		//TODO: change behaivor of function such that the program stticty draw at the passed in x and y positions
 		y-=height;
 		x-=width/2;
 		int index = 0;
 		
-
 		uint32_t * pixel = new(uint32_t);
 		int start_y = y;
 		int end_y = y + height;
 		int start_x = x;
 		int end_x = x + width;
-
+		
+		// Code t draw at an angle
 		if (rot) {
 			unsigned short playerx = x;
 			unsigned short playery = y;
@@ -140,8 +141,9 @@ namespace GFX
 			
 			for (int y = start_y; y < end_y; y++){
 				for (int x = start_x; x < end_x; x++){
-					pixel = image + (width*y + x);
+					*pixel = *(image + (width*y + x));
 					if (!is_transparent(*pixel)) {
+						// For ieach pixel in the image take it and rotate it
 						x_i= (x-mid_x)*cos_table[rot]+(y-mid_y)*sin_table[rot];
 						y_i= -(x-mid_x)*sin_table[rot]+(y-mid_y)*cos_table[rot];
 
@@ -162,41 +164,31 @@ namespace GFX
 
 			int draw_pos;
 
+			index = 0;
 			for (int y1 = start_y; y1 > end_y; y1--)
 			{
 				for (int x1 = start_x; x1 < end_x; x1++)
 				{
-					pixel = image+index;
+					*pixel = *(image+index);
 					if (!is_transparent(*pixel)){
 						
-						
-						switch (direction)
-						{
-						case FORWARD:
+						if(direction == FORWARD) {
 							draw_pos = (x1) + SCREEN_WIDTH * y1;
-							break;
-
-						case BACKWARD:
+						} else {
 							draw_pos = (start_x + end_x - x1) + SCREEN_WIDTH * y1;
-							break;
-						
-						default:
-							break;
 						}
-
 
 						draw_buffer[draw_pos] = *pixel;
 					}
 					index++;
 				}
 			}
-		}
-		
+		}	
 
 		free(pixel);
-		//free(image);
 	}
 
+	// To be deprecated in favor of drawBMP
 	void drawPNG(int x, int y, short rot, char direction,  char* filename, uint32_t filter, unsigned char * &image)
 	{
 		unsigned error;
@@ -320,7 +312,7 @@ namespace GFX
 		free(pixel);
 		//free(image);
 	}
-
+	// to be deprecated
 	int RGB_to_BGR(unsigned char* RGB, uint32_t * BGR){
 				unsigned char red = *(RGB);
 				unsigned char green = *(RGB+1);
@@ -330,7 +322,16 @@ namespace GFX
 				*BGR =alpha<<24 | blue<<16 | green<<8 | red;
 				return alpha;
 	}
-
+	
+	/**
+	 * @brief Performs bounds checking to make sure the area we attempt to write to can be written to
+	 * 
+	 * @param x 
+	 * @param y 
+	 * @param location x and y converted for use in 1d array
+	 * @return true valid position
+	 * @return false invalid position
+	 */
 	bool valid_pixel(int x, int y, int * location) {
 		if (x < 0 || y < 0 || x > SCREEN_WIDTH || y > SCREEN_HEIGHT) return false;
 
@@ -338,6 +339,12 @@ namespace GFX
 		return true;
 	}
 
+	/**
+	 * @brief Darws the backround terrain of the worm
+	 * 
+	 * @param noise Psudorandom perlin noise 
+	 * @param cam_pos_x Position of the camera
+	 */
 	void drawTerrain(unsigned char noise[], int cam_pos_x) {
 		unsigned char val;
 		uint32_t * target;
@@ -355,9 +362,7 @@ namespace GFX
 				} else {
 					*target = 0x2B6F8C;
 				}
-				
 			}
 		}
-
 	}
 }

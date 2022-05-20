@@ -55,7 +55,7 @@ int main()
 	sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
-	unsigned int start_time;
+	unsigned int start_time, end_time;
 
 	GFX::populate_trig_tables();
 
@@ -65,38 +65,20 @@ int main()
 	int cam_pos_x =10,
 		cam_pos_y =10;
 
-	int time = 0;
 
 	unsigned char noise_map[MAP_SIZE];
-
 	FastNoiseLite noise(sceKernelGetSystemTimeLow());
-	
-	
-	unsigned char max = 0;
-
 	for(int i = 0; i < MAP_SIZE; i++) {
 		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 170) + 40; // MIN hieght = 40 max hieght = 170 + 40
-		if (noise_map[i] > max) max = noise_map[i];
 	}
 
-	auto end_time = sceKernelGetSystemTimeLow();
 
 	Projectile worm(Vector2d(10,10));
 	worm.vector.direction = FORWARD;
 	worm.vector.angle = 0;
 	worm.image = nullptr;
+	
 	bool cam_aligned = true;
-
-	Projectile worm2(Vector2d(50,50));
-	worm2.vector.direction = FORWARD;
-	worm2.vector.angle = 0;
-	worm2.image = nullptr;
-
-	Projectile worm3(Vector2d(150,50));
-	worm3.vector.direction = FORWARD;
-	worm3.vector.angle = 0;
-	worm3.image = nullptr;
-
 	while (1)
 	{
 		pspDebugScreenSetXY(0,0);
@@ -138,20 +120,11 @@ int main()
 		}
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
-		//GFX::drawRect(worm.vector.x, worm.vector.y-20, 5, 20, 0xD0BBF8);
 		GFX::drawBMP(worm.vector.x, worm.vector.y , worm.vector.angle, worm.vector.direction, "player.bmp", 0, worm.image);
-		// GFX::drawPNG(worm2.vector.x, worm2.vector.y ,worm2.vector.angle, worm2.vector.direction, "player2.png", 0, worm2.image);
-		// GFX::drawPNG(worm3.vector.x, worm3.vector.y ,worm3.vector.angle, worm3.vector.direction, "player3.png", 0, worm3.image);
-
-		
 
 		GFX::swapBuffers();
-		
-		//worm.vector.angle+=2;
 		end_time = sceKernelGetSystemTimeLow();
 		printf("fps: %.1f, x: %d, y: %d, angle: %d ", 1 / ((end_time - start_time) / static_cast<float>(1000*1000)), worm.vector.x, worm.vector.y, worm.vector.angle);
 		sceDisplayWaitVblankStart();
 	}
-	
-
 }
