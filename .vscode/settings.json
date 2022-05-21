@@ -7,6 +7,9 @@
         "atomic": "cpp",
         "cstdint": "cpp",
         "new": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
     }
 }

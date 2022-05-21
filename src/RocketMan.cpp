@@ -8,7 +8,8 @@
 #include <cstdlib>
 
 #include "Projectile.hpp"
-#include "utils.hpp"
+#include "utils.h"
+#include "logger/logger.h"
 
 #include "gfx.hpp"
 #include "FastNoise/FastNoise.hpp"
@@ -46,8 +47,13 @@ const int MAP_SIZE = 1000;
 const int PLAYER_SPEED = 2;
 int FRAMETIME = MICROSECONDS / 60;
 
+
+
 int main()
 {  	
+	PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"test %d", 6);
+	PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"test %d", 6);
+	PSP_LOGGER::close_log();
 	setupCallbacks();
 	pspDebugScreenInit();
 

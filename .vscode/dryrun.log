@@ -1,0 +1,6 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: Entering directory `c:/Users/Francis Williams/Documents/RocketManPSP'
+make.exe: Leaving directory `c:/Users/Francis Williams/Documents/RocketManPSP'
+ 
+make.exe: *** No targets specified and no makefile found.  Stop.
+

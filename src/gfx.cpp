@@ -8,8 +8,8 @@
 #include <pspkernel.h>
 #include <pspctrl.h>
 
-#include "png/lodepng.h"
 #include "bmp/loadBMP.h"
+#include "utils.h"
 
 namespace GFX 
 {

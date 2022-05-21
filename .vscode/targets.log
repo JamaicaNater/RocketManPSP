@@ -1,0 +1,280 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make version 3.79.1, by Richard Stallman and Roland McGrath.
+# Built for mingw32
+# Copyright (C) 1988, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 2000
+# 	Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# Report bugs to <bug-make@gnu.org>.
+
+ 
+
+# Make data base, printed on Fri May 20 18:37:30 2022
+
+# Variables
+
+# environment
+LC_ALL = C
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+PROMPT = $P$G
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+LOGONSERVER = \\DESKTOP-NV2STV6
+# automatic
+@F = $(notdir $@)
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# environment
+USERNAME = Francis Williams
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+SUFFIXES := 
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+OS = Windows_NT
+# environment
+HOMEPATH = \Users\Francis Williams
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+CURDIR := c:/Users/Francis Williams/Documents/RocketManPSP
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_PID = 14332
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-3a328c16-0c28-4014-af9d-1543fea29451-sock
+# automatic
+%F = $(notdir $%)
+# environment
+TMP = C:\Users\FRANCI~1\AppData\Local\Temp
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-NV2STV6
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+SYSTEMROOT = C:\Windows
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# default
+SHELL := sh.exe
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+LOCALAPPDATA = C:\Users\Francis Williams\AppData\Local
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# default
+MAKE_VERSION := 3.79.1
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+MAKELEVEL := 0
+# environment
+VSCODE_LOG_STACK = false
+# environment
+HOMEDRIVE = C:
+# environment
+Path = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\pspsdk\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Francis Williams\AppData\Local\Microsoft\WindowsApps;C:\Users\Francis Williams\AppData\Local\Programs\Microsoft VS Code\bin;C:\mingw64\bin;;C:\pspsdk\bin
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Francis Williams\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+USERDOMAIN = DESKTOP-NV2STV6
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+MFLAGS = -Rrqp
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SESSIONNAME = Console
+# environment
+ONEDRIVE = C:\Users\Francis Williams\OneDrive
+# environment
+ONEDRIVECONSUMER = C:\Users\Francis Williams\OneDrive
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14332_FKDLRSQAKTJJHRZZ
+# environment
+COMPUTERNAME = DESKTOP-NV2STV6
+# environment
+LANG = C
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+TEMP = C:\Users\FRANCI~1\AppData\Local\Temp
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+USERPROFILE = C:\Users\Francis Williams
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_CWD = C:\Users\Francis Williams\AppData\Local\Programs\Microsoft VS Code
+# environment
+APPDATA = C:\Users\Francis Williams\AppData\Roaming
+# automatic
+?F = $(notdir $?)
+# environment
+PROCESSOR_REVISION = 0101
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# automatic
+<F = $(notdir $<)
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\Intel\Wired Networking\
+# environment
+PUBLIC = C:\Users\Public
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+SYSTEMDRIVE = C:
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+*F = $(notdir $*)
+# automatic
+^F = $(notdir $^)
+# environment
+WINDIR = C:\Windows
+# environment
+VSCODE_LOG_NATIVE = false
+# default
+MAKECMDGOALS := all
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\c21619518679a2b8db6246ab61284aa8-1.67.2-main-sock
+# default
+MAKEFILES := 
+# default
+MAKE_COMMAND := make.exe
+# environment
+PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\pspsdk\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Francis Williams\AppData\Local\Microsoft\WindowsApps;C:\Users\Francis Williams\AppData\Local\Programs\Microsoft VS Code\bin;C:\mingw64\bin;;C:\pspsdk\bin
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
+# environment
+FPS_BR 
+OWSER_USER_PROFILE_STRING = Default
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# 86 variables in 523 hash buckets.
+# average of 0.2 variables per bucket, max 2 in one bucket.
+
+# Directories
+
+# : could not be stat'd.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1653088427): 2842 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1652771443): 8 files, no impossibilities.
+# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1652770995): 5 files, no impossibilities.
+# C:\mingw64\bin (key C:/mingw64/bin, mtime 1652773629): 58 files, no impossibilities.
+# C:\Windows\System32\OpenSSH\: could not be stat'd.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1652851221): 10 files, no impossibilities.
+# C:\Users\Francis Williams\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/Francis Williams/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652907536): 4 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1652901687): 114 files, no impossibilities.
+# . (key c:/Users/Francis Williams/Documents/RocketManPSP, mtime 1653024224): 8 files, no impossibilities.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1652844003): 170 files, no impossibilities.
+# C:\pspsdk\bin (key C:/pspsdk/bin, mtime 1652773818): 62 files, no impossibilities.
+# C:\Users\Francis Williams\AppData\Local\Microsoft\WindowsApps (key C:/Users/Francis Williams/AppData/Local/Microsoft/WindowsApps, mtime 1652845293): 15 files, no impossibilities.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633528630): could not be opened.
+
+# 3296 files, no impossibilities in 14 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Pattern-specific variable values
+
+# No pattern-specific variable values.
+
+# Files
+
+# Not a target:
+Makefile:
+#  A default or MAKEFILES makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GNUmakefile:
+#  A default or MAKEFILES makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+makefile:
+#  A default or MAKEFILES makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# 6 files in 1007 hash buckets.
+# average 0.006 files per bucket, max 1 files in one bucket.
+
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No 
+make.exe: *** No rule to make target `all'.  Stop.
+
+ general (`VPATH' variable) search path.
+
+# Finished Make data base on Fri May 20 18:37:30 2022
+
+ 
