@@ -47,15 +47,19 @@ const int MAP_SIZE = 1000;
 const int PLAYER_SPEED = 2;
 int FRAMETIME = MICROSECONDS / 60;
 
-
+// int helloThread(SceSize args, void* argp){
+// 	PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "not a an error but a test");
+// }
 
 int main()
 {  	
-	PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"test %d", 6);
-	PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"test %d", 6);
-	PSP_LOGGER::close_log();
 	setupCallbacks();
 	pspDebugScreenInit();
+
+	// int thid = sceKernelCreateThread("test_thread", helloThread, 0x11, 0xFA0, 0, NULL);
+
+	// if (thid >= 0) sceKernelStartThread(thid, 0, NULL);
+	// else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
 
 	sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);

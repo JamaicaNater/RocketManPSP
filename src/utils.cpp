@@ -1,3 +1,5 @@
+#include <pspthreadman.h>
+
 #include "utils.h"
 
 /**
@@ -12,4 +14,16 @@ float map(float num, int range) {
 	num /= 2;
 
 	return num * range;
+}
+
+void wait_for(int micro_secs){
+	int start_time = sceKernelGetSystemTimeLow();
+
+	int loop = micro_secs * 32;
+	volatile int x;
+	for (x = 0; x < loop; x++)
+	{
+		/*do nothing*/  
+		if (sceKernelGetSystemTimeLow() > start_time + micro_secs) break;    
+	}
 }

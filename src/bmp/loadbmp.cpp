@@ -1,13 +1,19 @@
+#include <algorithm>
+
 #include "loadbmp.h"
 #include "stdlib.h"
 #include "math.h"
-#include <algorithm>
+#include "../utils.h"
+#include "../logger/logger.h"
+
 
 int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename) {
     FILE *fp = fopen(filename, "rb");
+    #ifdef PSP_LOGGING
+    if(!fp) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to open %s: does the file exist?", filename);
+    #endif
 
     int pixlmap_location;
-
     // 10 is Location of pixel data in files
     fseek(fp, 10, SEEK_SET);
     fread((void *)(&pixlmap_location), 1, 4, fp);
@@ -21,11 +27,15 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
 
     fseek(fp, pixlmap_location, SEEK_SET);
 
-    int size = 2000;
+    int size = *width * *height;
     if (size > 5000) {
         return 0;
     }
     buf = new unsigned int[size];
+
+    #ifdef PSP_LOGGING
+    if(!buf) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "failed to allocate enough memory for %s: %d x %d is likely too big!", filename, *width, *height);
+    #endif
 
     fread((void *)buf, 4, size, fp); 
     
@@ -42,6 +52,9 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
 
 void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename) {
     FILE *fp = fopen(filename, "rb");
+    #ifdef PSP_LOGGING
+    if(!fp) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to open %s: does the file exist?", filename);
+    #endif
 
     int pixlmap_location;
 

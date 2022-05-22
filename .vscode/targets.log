@@ -11,7 +11,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 
  
 
-# Make data base, printed on Fri May 20 18:37:30 2022
+# Make data base, printed on Sat May 21 18:42:51 2022
 
 # Variables
 
@@ -56,9 +56,9 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 +F = $(notdir $+)
 # environment
-VSCODE_PID = 14332
+VSCODE_PID = 12692
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-3a328c16-0c28-4014-af9d-1543fea29451-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-44885f5a-3de8-4c8c-85d5-ee818c32ce90-sock
 # automatic
 %F = $(notdir $%)
 # environment
@@ -75,7 +75,8 @@ VSCODE_PIPE_LOGGING = true
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-NV2STV6
 # environment
 PROCESSOR_ARCHITEW6432 = AMD64
-# environment
+# e 
+nvironment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # environment
 VSCODE_VERBOSE_LOGGING = true
@@ -124,7 +125,7 @@ ONEDRIVE = C:\Users\Francis Williams\OneDrive
 # environment
 ONEDRIVECONSUMER = C:\Users\Francis Williams\OneDrive
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14332_FKDLRSQAKTJJHRZZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12692_JHCSVXPAHZAXYKHX
 # environment
 COMPUTERNAME = DESKTOP-NV2STV6
 # environment
@@ -184,8 +185,7 @@ PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
 # environment
-FPS_BR 
-OWSER_USER_PROFILE_STRING = Default
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # 86 variables in 523 hash buckets.
@@ -194,7 +194,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # Directories
 
 # : could not be stat'd.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1653088427): 2842 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1653173967): 2842 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1652771443): 8 files, no impossibilities.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1652770995): 5 files, no impossibilities.
 # C:\mingw64\bin (key C:/mingw64/bin, mtime 1652773629): 58 files, no impossibilities.
@@ -275,6 +275,6 @@ make.exe: *** No rule to make target `all'.  Stop.
 
  general (`VPATH' variable) search path.
 
-# Finished Make data base on Fri May 20 18:37:30 2022
+# Finished Make data base on Sat May 21 18:42:51 2022
 
  
