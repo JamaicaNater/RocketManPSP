@@ -11,7 +11,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 
  
 
-# Make data base, printed on Sat May 21 18:42:51 2022
+# Make data base, printed on Sun May 22 01:09:31 2022
 
 # Variables
 
@@ -194,7 +194,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # Directories
 
 # : could not be stat'd.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1653173967): 2842 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1653190491): 2842 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1652771443): 8 files, no impossibilities.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1652770995): 5 files, no impossibilities.
 # C:\mingw64\bin (key C:/mingw64/bin, mtime 1652773629): 58 files, no impossibilities.
@@ -205,7 +205,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # . (key c:/Users/Francis Williams/Documents/RocketManPSP, mtime 1653024224): 8 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1652844003): 170 files, no impossibilities.
 # C:\pspsdk\bin (key C:/pspsdk/bin, mtime 1652773818): 62 files, no impossibilities.
-# C:\Users\Francis Williams\AppData\Local\Microsoft\WindowsApps (key C:/Users/Francis Williams/AppData/Local/Microsoft/WindowsApps, mtime 1652845293): 15 files, no impossibilities.
+# C:\Users\Francis Williams\AppData\Local\Microsoft\WindowsApps (key C:/Users/Francis Williams/AppData/Local/Microsoft/WindowsApps, mtime 1653190604): 15 files, no impossibilities.
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633528630): could not be opened.
 
 # 3296 files, no impossibilities in 14 directories.
@@ -275,6 +275,6 @@ make.exe: *** No rule to make target `all'.  Stop.
 
  general (`VPATH' variable) search path.
 
-# Finished Make data base on Sat May 21 18:42:51 2022
+# Finished Make data base on Sun May 22 01:09:31 2022
 
  

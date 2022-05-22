@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstdint>
+#include <pspkerneltypes.h>
 
 #define SCREEN_HEIGHT 272
 #define SCREEN_WIDTH_RES 480
@@ -16,6 +17,6 @@ namespace GFX
 	void swapBuffers();
 	void drawTerrain(unsigned char noise[], int cam_pos_x);
 	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, unsigned int * &image);
-	void populate_trig_tables();
-	void do_homescreen();
+	int do_homescreen(SceSize args, void* argp);
+	int launch_homescreen_thread();
 }

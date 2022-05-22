@@ -9,9 +9,8 @@
 
 int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename) {
     FILE *fp = fopen(filename, "rb");
-    #ifdef PSP_LOGGING
+
     if(!fp) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to open %s: does the file exist?", filename);
-    #endif
 
     int pixlmap_location;
     // 10 is Location of pixel data in files
@@ -33,9 +32,7 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
     }
     buf = new unsigned int[size];
 
-    #ifdef PSP_LOGGING
     if(!buf) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "failed to allocate enough memory for %s: %d x %d is likely too big!", filename, *width, *height);
-    #endif
 
     fread((void *)buf, 4, size, fp); 
     
@@ -44,7 +41,7 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
 }
 
 
-	unsigned int format_pixel2(unsigned int data)
+	unsigned int format_pixel(unsigned int data)
 	{
 		// Used to Format Pixels from ARGB to ABGR for the PSP display
 		return (data&0xFF000000) | ((data&0xFF000000)>>24 | (data&0x00FF0000)>>8 | (data&0x0000FF00)<<8 | (data&0x000000FF)<<24)>>8;
@@ -52,9 +49,7 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
 
 void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename) {
     FILE *fp = fopen(filename, "rb");
-    #ifdef PSP_LOGGING
     if(!fp) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to open %s: does the file exist?", filename);
-    #endif
 
     int pixlmap_location;
 
@@ -77,7 +72,7 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
     fread((void *)(buf+ i*CHUNK_SIZE), 4, CHUNK_SIZE, fp); 
     }
 
-    for (int i = 0; i < *width * *height; i++) buf[i] = format_pixel2(buf[i]);
+    for (int i = 0; i < *width * *height; i++) buf[i] = format_pixel(buf[i]);
 
     int temp[*width];
     unsigned int * front, * back;

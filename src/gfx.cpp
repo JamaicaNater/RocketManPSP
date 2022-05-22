@@ -10,15 +10,13 @@
 
 #include "bmp/loadBMP.h"
 #include "utils.h"
+#include "logger/logger.h"
 
 namespace GFX 
 {
 
 	uint32_t* draw_buffer,
 			* disp_buffer;
-
-	float sin_table[360];
-	float cos_table[360];
 
 	unsigned int format_pixel(unsigned int data)
 	{
@@ -45,10 +43,6 @@ namespace GFX
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, 1);
 	}
 
-	void populate_trig_tables(){
-		for (int i = 0; i < 360; i++) sin_table[i] = sin((i * (PI / 180)));
-		for (int i = 0; i < 360; i++) cos_table[i] = cos((i * (PI / 180)));
-	}
 
 	void clear(uint32_t color)
 	{
@@ -84,9 +78,11 @@ namespace GFX
 		unsigned int height;
 		
 		// If there is not a image present generate one and store it
-		if (!image) {		
+		if (!image) {
+			PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "loading %s into memory", filename);
 			unsigned int * temp_img;
 			load_BMP(&height, &width,temp_img , filename);
+			
 
 			image = new unsigned int[width*height];
 			for (int i = 0; i < width*height; i++) {
@@ -95,7 +91,7 @@ namespace GFX
 		
 			free(temp_img);
 		} 
-		
+		PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "%s, width: %u, heighet: %u", filename, width, height);
 
 		//TODO create list of images in memory to be freed in the case of no more memory		
 
@@ -114,8 +110,10 @@ namespace GFX
 		if (rot) {
 			unsigned short playerx = x;
 			unsigned short playery = y;
-			if (rot < 0) rot +=360;
-			rot %= 360;
+			// if (rot < 0) rot +=360;
+			// rot %= 360;
+
+			float rad = PI * rot /180.0f;
 			
 			unsigned short mid_x = width/2;
 			unsigned short mid_y = height/2;
@@ -130,20 +128,27 @@ namespace GFX
 			unsigned short y_pos_sub_mid = start_x-mid_x;
 			unsigned short x_pos_sub_mid = start_y-mid_y;
 			unsigned short draw_pos;
+
+			float sin_theta = sin(rad);
+			float cos_theta = cos(rad);
 			
 			for (int y = start_y; y < end_y; y++){
 				for (int x = start_x; x < end_x; x++){
 					*pixel = *(image + (width*y + x));
+
 					if (!is_transparent(*pixel)) {
-						// For ieach pixel in the image take it and rotate it
-						x_i= (x-mid_x)*cos_table[rot]+(y-mid_y)*sin_table[rot];
-						y_i= -(x-mid_x)*sin_table[rot]+(y-mid_y)*cos_table[rot];
+						// For each pixel in the image take it and rotate it
+						x_i= (x-mid_x)*cos_theta+(y-mid_y)*sin_theta;
+						y_i= -(x-mid_x)*sin_theta+(y-mid_y)*cos_theta;
+						//PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "", rad);
 
-						x_i=round(x_i)+mid_x; 
-						y_i=round(y_i)+mid_y; 
+						x_i+=mid_x; 
+						y_i+=mid_y; 
 
-						if (x_i+playerx>=0 && y_i+playery>=0) {
-							draw_buffer[static_cast<int>((x_i + playerx) + SCREEN_WIDTH * (y_i+playery))] = *pixel;
+						if (direction == FORWARD && x_i+playerx>=0 && y_i+playery>=0) {
+							draw_buffer[(int)round((x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery))] = *pixel;
+						} else if (direction == BACKWARD && x_i+playerx>=0 && y_i+playery>=0) {
+							draw_buffer[(int)round((end_x-x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery))] = *pixel;
 						}
 					}
 				}
@@ -223,29 +228,21 @@ namespace GFX
 		}
 	}
 
-	void do_homescreen(){
+	int do_homescreen(SceSize args, void* argp){
 		unsigned int width;
 		unsigned int height;
-
-		unsigned int delta = 1000*1000*15, end_time;\
-		sceCtrlSetSamplingCycle(0);
-		sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
-		SceCtrlData ctrlData;
-		end_time = sceKernelGetSystemTimeLow() + delta;
 
 		while (1)
 		{
 			// TODO: use threads to break
-			sceCtrlReadBufferPositive(&ctrlData, 1);
-			if(ctrlData.Buttons & PSP_CTRL_START) break;
 			write_BMP(&height, &width, draw_buffer , "assets/back.bmp");
 			swapBuffers();
-			if(ctrlData.Buttons & PSP_CTRL_START) break;
 			write_BMP(&height, &width, draw_buffer , "assets/back2.bmp");
 			swapBuffers();
-			if(ctrlData.Buttons & PSP_CTRL_START) break;
 		}
-		
+	} 
+
+	int launch_homescreen_thread() {
 
 	}
 }
