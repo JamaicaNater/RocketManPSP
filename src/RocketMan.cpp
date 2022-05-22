@@ -79,6 +79,8 @@ int main()
 	sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
+	GFX::load_terrain_textures();
+
 	unsigned int start_time, end_time;
 
 	SceCtrlData ctrlData;
@@ -98,23 +100,21 @@ int main()
 	Projectile worm(Vector2d(10,10));
 	worm.vector.direction = FORWARD;
 	//worm.vector.angle = 45;
-	worm.image = nullptr;
-	worm.weapon=nullptr;
 	
 	bool cam_aligned = true;
 
-	// unsigned int thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
-	// if (thid >= 0) sceKernelStartThread(thid, 0, NULL);
-	// else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
+	unsigned int thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
+	if (thid >= 0) sceKernelStartThread(thid, 0, NULL);
+	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
 
 
 
-	// unsigned int args[2] = {thid, sceKernelGetThreadId()};
-	// int thid2 = sceKernelCreateThread("interrupt_homescreen_thread", interrupt_homescreen, 0x12, 0xaFA0, 0, NULL);
-	// if (thid2 >= 0) sceKernelStartThread(thid2, 8, args);
-	// else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
+	unsigned int args[2] = {thid, sceKernelGetThreadId()};
+	int thid2 = sceKernelCreateThread("interrupt_homescreen_thread", interrupt_homescreen, 0x12, 0xaFA0, 0, NULL);
+	if (thid2 >= 0) sceKernelStartThread(thid2, 8, args);
+	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
 
-	// sceKernelSleepThread();
+	sceKernelSleepThread();
 	while (1)
 	{
 		pspDebugScreenSetXY(0,0);
@@ -155,7 +155,7 @@ int main()
 		}
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
-		GFX::drawBMP(100, 100 , worm.vector.get_angle(), worm.vector.direction, "assets/player_rocket.bmp", 0, worm.weapon);
+		GFX::drawBMP(worm.vector.x+5, worm.vector.y-20, worm.vector.get_angle(), worm.vector.direction, "assets/player_rocket.bmp", 0, worm.weapon);
 		GFX::drawBMP(worm.vector.x, worm.vector.y , 0, worm.vector.direction, "assets/player.bmp", 0, worm.image);
 		
 

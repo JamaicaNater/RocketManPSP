@@ -12,17 +12,16 @@
 #include "utils.h"
 #include "logger/logger.h"
 
+
 namespace GFX 
 {
 
 	uint32_t* draw_buffer,
 			* disp_buffer;
 
-	unsigned int format_pixel(unsigned int data)
-	{
-		// Used to Format Pixels from ARGB to ABGR for the PSP display
-		return (data&0xFF000000) | ((data&0xFF000000)>>24 | (data&0x00FF0000)>>8 | (data&0x0000FF00)<<8 | (data&0x000000FF)<<24)>>8;
-	}
+	Image dirt;
+	Image sky;
+
 
 	bool is_transparent(unsigned int pixel) {
 		// Masks the Alpha channel and returns false if t has a value grater than 0
@@ -41,6 +40,11 @@ namespace GFX
 
 		sceDisplaySetMode(0, 480, 272);
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, 1);
+	}
+
+	void load_terrain_textures() {
+		load_BMP(&dirt.height, &dirt.width, dirt.img_matrix, "assets/dirt.bmp");
+		load_BMP(&sky.height, &sky.width, sky.img_matrix, "assets/sky.bmp");
 	}
 
 
@@ -72,26 +76,16 @@ namespace GFX
 	 * @param filter - TBD
 	 * @param image 
 	 */
-	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, unsigned int * &image)
-	{
-		unsigned int width;
-		unsigned int height;
+	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, Image &img)
+	{	
+		unsigned int * &image = img.img_matrix;
+		unsigned int &width = img.width;
+		unsigned int &height = img.height;
 		
 		// If there is not a image present generate one and store it
 		if (!image) {
-			PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "loading %s into memory", filename);
-			unsigned int * temp_img;
-			load_BMP(&height, &width,temp_img , filename);
-			
-
-			image = new unsigned int[width*height];
-			for (int i = 0; i < width*height; i++) {
-				image[i] = format_pixel(temp_img[i]);
-			}
-		
-			free(temp_img);
+			load_BMP(&height, &width, image, filename);			
 		} 
-		PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "%s, width: %u, heighet: %u", filename, width, height);
 
 		//TODO create list of images in memory to be freed in the case of no more memory		
 
@@ -211,18 +205,24 @@ namespace GFX
 		unsigned char val;
 		uint32_t * target;
 		int px_index;
+
+		int y_img_pos = 0, x_img_pos = cam_pos_x;
 		for(int y = 0; y <= SCREEN_HEIGHT; y++) {
 			for(int x = 0; x <= SCREEN_WIDTH; x++) {
 				px_index = x + (SCREEN_WIDTH * y);
 				val = noise[x+cam_pos_x];
 				target = &draw_buffer[px_index];
+				int img_pos = (y%64)*64 + (cam_pos_x + x) % 64;
 
 				if (val >= y) {
-					*target = 0xf4a903;
+					//*target = 0xf4a903;
+					if (y>=64) *target = 0xba7b44;
+					else *target = sky.img_matrix[img_pos];
 				} else if (val >= y - 5) {
 					*target = 0x318c34;			
 				} else {
-					*target = 0x2B6F8C;
+					//*target = 0x2B6F8C;
+					*target = dirt.img_matrix[img_pos];
 				}
 			}
 		}
