@@ -24,19 +24,13 @@ namespace GFX
 
 
 	bool is_transparent(unsigned int pixel) {
-		// Masks the Alpha channel and returns false if t has a value grater than 0
 		return !(pixel&0xFF000000);
 	}
-
-	// unsigned int swap_endian(unsigned int data)
-	// {
-	// 	return  (data&0x0000FF00) | (data&0xFF000000) | (data&0x00FF0000)>>16 | (data&0x000000FF)<<16;
-	// }
 
 	void init()
 	{
 		draw_buffer = static_cast<uint32_t *>( sceGeEdramGetAddr() );
-		disp_buffer = static_cast<uint32_t *>( sceGeEdramGetAddr() + (512*480*4)) ;
+		disp_buffer = static_cast<uint32_t *>( (uint32_t*)sceGeEdramGetAddr() + (512*480)) ;
 
 		sceDisplaySetMode(0, 480, 272);
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, 1);
@@ -48,10 +42,9 @@ namespace GFX
 	}
 
 
-	void clear(uint32_t color)
+	void clear()
 	{
-		for (int i = 0; i < SCREEN_WIDTH * SCREEN_HEIGHT; i++)
-			draw_buffer[i] = color;
+		memset(draw_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT);
 	}
 
 	void swapBuffers()
@@ -64,18 +57,6 @@ namespace GFX
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, PSP_DISPLAY_SETBUF_NEXTFRAME);
 	}
 
-
-	/**
-	 * @brief 
-	 * 
-	 * @param x -  x position to draw at
-	 * @param y -  y position to draw at
-	 * @param rot - angle of the object
-	 * @param direction - direction of the object
-	 * @param filename 
-	 * @param filter - TBD
-	 * @param image 
-	 */
 	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, Image &img)
 	{	
 		unsigned int * &image = img.img_matrix;
@@ -179,15 +160,6 @@ namespace GFX
 		free(pixel);
 	}
 	
-	/**
-	 * @brief Performs bounds checking to make sure the area we attempt to write to can be written to
-	 * 
-	 * @param x 
-	 * @param y 
-	 * @param location x and y converted for use in 1d array
-	 * @return true valid position
-	 * @return false invalid position
-	 */
 	bool valid_pixel(int x, int y, int * location) {
 		if (x < 0 || y < 0 || x > SCREEN_WIDTH || y > SCREEN_HEIGHT) return false;
 
@@ -195,12 +167,6 @@ namespace GFX
 		return true;
 	}
 
-	/**
-	 * @brief Darws the backround terrain of the worm
-	 * 
-	 * @param noise Psudorandom perlin noise 
-	 * @param cam_pos_x Position of the camera
-	 */
 	void drawTerrain(unsigned char noise[], int cam_pos_x) {
 		unsigned char val;
 		uint32_t * target;
@@ -209,6 +175,8 @@ namespace GFX
 		int y_img_pos = 0, x_img_pos = cam_pos_x;
 		for(int y = 0; y <= SCREEN_HEIGHT; y++) {
 			for(int x = 0; x <= SCREEN_WIDTH; x++) {
+				if (x>SCREEN_WIDTH_RES) break;
+
 				px_index = x + (SCREEN_WIDTH * y);
 				val = noise[x+cam_pos_x];
 				target = &draw_buffer[px_index];
@@ -241,8 +209,4 @@ namespace GFX
 			swapBuffers();
 		}
 	} 
-
-	int launch_homescreen_thread() {
-
-	}
 }
