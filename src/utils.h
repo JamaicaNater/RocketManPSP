@@ -23,3 +23,11 @@ void wait_for(int micro_secs);
  * @return unsigned int data in new endianess
  */
 unsigned int swap_endian(unsigned int data);
+
+/**
+ * @brief allocates memory using the pspkernel (allows more free space than malloc)
+ * 
+ * @param size - size to allocate in bytes
+ * @return void* - pointer
+ */
+void * psp_malloc(int size);

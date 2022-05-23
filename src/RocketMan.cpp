@@ -97,6 +97,7 @@ int main()
 		cam_pos_y =10;
 
 
+	PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Generating noise map");
 	unsigned char noise_map[MAP_SIZE];
 	FastNoiseLite noise(sceKernelGetSystemTimeLow());
 	noise.SetFrequency(.008f);
@@ -109,6 +110,7 @@ int main()
 	player.vector.direction = FORWARD;
 	bool cam_aligned = true;
 
+	PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Launching threads");
 	unsigned int home_thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
 	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
 	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
@@ -120,6 +122,8 @@ int main()
 	int inter_home_thid = sceKernelCreateThread("interrupt_homescreen_thread", interrupt_titlescreen, 0x12, 0xaFA0, 0, NULL);
 	if (inter_home_thid >= 0) sceKernelStartThread(inter_home_thid, 8, args);
 	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
+
+	PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Sleeping main thread");
 	sceKernelSleepThread();
 
 	while (1)

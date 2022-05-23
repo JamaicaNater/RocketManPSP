@@ -6,13 +6,16 @@
 #include "../utils.h"
 #include "../logger/logger.h"
 
+
 unsigned int format_pixel(unsigned int data)
 {
     // Used to Format Pixels from ARGB to ABGR for the PSP display
     return (data&0xFF000000) | ((data&0xFF000000)>>24 | (data&0x00FF0000)>>8 | (data&0x0000FF00)<<8 | (data&0x000000FF)<<24)>>8;
 }
 
+
 int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename) {
+    //TODO use psp builtin file operations
     FILE *fp = fopen(filename, "rb");
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "loading %s into memory", filename);
     if(!fp) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to open %s: does the file exist?", filename);
@@ -32,12 +35,15 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
     fseek(fp, pixlmap_location, SEEK_SET);
 
     int size = *width * *height;
-    if (size > 5000) {
-        PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Image %s of size %s (%d x %d) exceeds the size of any resonable image use write_BMP instead", filename, size, *width, *height);
+    if (size > 4096) {
+        PSP_LOGGER::psp_log(PSP_LOGGER::WARNING, "Image %s of size %s (%d x %d) exceeds the size of any resonable image use write_BMP instead", filename, size, *width, *height);
     }
-    buf = new unsigned int[size];
+    	
+    buf = (unsigned int *)psp_malloc(size*4);
 
-    if(!buf) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "failed to allocate enough memory for %s: %d x %d is likely too big!", filename, *width, *height);
+
+    //buf = (unsigned int*)malloc(size*4);
+    if (!buf) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Memory allaction failed for %s(%d x %d) size:%d" , filename, *width, *height, size);
 
     fread((void *)buf, 4, size, fp); 
 
@@ -45,6 +51,7 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
         buf[i] = format_pixel(buf[i]);
     }
     
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Succesfully loaded %s into memory", filename);
     fclose(fp);
     return 1;
 }
@@ -52,6 +59,7 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
 void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename) {
     FILE *fp = fopen(filename, "rb");
     if(!fp) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to open %s: does the file exist?", filename);
+    else PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Opened %s", filename);
 
     int pixlmap_location;
 
@@ -66,12 +74,13 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
     fread((void *)(height), 1, 4, fp);
 
     int CHUNK_SIZE = *width * *height;
-    int chunk[CHUNK_SIZE];
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Chuck size:%d", CHUNK_SIZE);
+    //int chunk[CHUNK_SIZE];
 
     int last_chunk = round((*width * *height)/CHUNK_SIZE);
     for (int i = 0; i < last_chunk; i++){
-    fseek(fp, pixlmap_location+i*CHUNK_SIZE, SEEK_SET);
-    fread((void *)(buf+ i*CHUNK_SIZE), 4, CHUNK_SIZE, fp); 
+        fseek(fp, pixlmap_location+i*CHUNK_SIZE, SEEK_SET);
+        PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "%d bytes read", fread((void *)(buf+ i*CHUNK_SIZE), 4, CHUNK_SIZE, fp)); 
     }
 
     for (int i = 0; i < *width * *height; i++) buf[i] = format_pixel(buf[i]);

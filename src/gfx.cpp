@@ -21,7 +21,7 @@ namespace GFX
 
 	Image dirt;
 	Image sky;
-	//Image grass;
+	Image grass;
 
 
 	bool is_transparent(unsigned int pixel) {
@@ -40,7 +40,7 @@ namespace GFX
 	void load_terrain_textures() {
 		load_BMP(&dirt.height, &dirt.width, dirt.img_matrix, "assets/dirt.bmp");
 		load_BMP(&sky.height, &sky.width, sky.img_matrix, "assets/sky.bmp");
-		//load_BMP(&grass.height, &grass.width, grass.img_matrix, "assets/grass.bmp");
+		load_BMP(&grass.height, &grass.width, grass.img_matrix, "assets/grass.bmp");
 	}
 
 
@@ -234,8 +234,8 @@ namespace GFX
 						*target = sky.img_matrix[img_pos_y+img_pos_x_lagging_stretched];
 					}
 				} else if (val >= y - 5) {
-					*target = 0x318c34;
-					//*target = grass.img_matrix[img_pos_y+img_pos_x];
+					//*target = 0x318c34;
+					*target = grass.img_matrix[img_pos_y+img_pos_x];
 				} else {
 					//*target = 0x2B6F8C;
 					*target = dirt.img_matrix[img_pos_y+img_pos_x];

@@ -1,5 +1,45 @@
 INFO: loading assets/dirt.bmp into memory
+INFO: uid: 283
+INFO: Allocated 16384 bytes at 0x88492f0
+INFO: Succesfully loaded assets/dirt.bmp into memory
 INFO: loading assets/sky.bmp into memory
+INFO: uid: 285
+INFO: Allocated 16384 bytes at 0x884d3f0
+INFO: Succesfully loaded assets/sky.bmp into memory
+INFO: loading assets/grass.bmp into memory
+INFO: uid: 287
+INFO: Allocated 16384 bytes at 0x88514f0
+INFO: Succesfully loaded assets/grass.bmp into memory
+INFO: Generating noise map
+INFO: Launching threads
+INFO: Sleeping main thread
+INFO: Opened assets/back.bmp
+INFO: Chuck size:139264
+INFO: 139264 bytes read
+INFO: Opened assets/back2.bmp
+INFO: Chuck size:139264
+INFO: 139264 bytes read
+INFO: Opened assets/back.bmp
+INFO: Chuck size:139264
+INFO: 139264 bytes read
+INFO: Opened assets/back2.bmp
+INFO: Chuck size:139264
+INFO: 139264 bytes read
+INFO: Opened assets/back.bmp
+INFO: Chuck size:139264
+INFO: 139264 bytes read
+INFO: Opened assets/back2.bmp
+INFO: Chuck size:139264
+INFO: 139264 bytes read
+INFO: Opened assets/back.bmp
+INFO: Chuck size:139264
+INFO: 139264 bytes read
 INFO: Waking thread: 276
 INFO: loading assets/player_rocket.bmp into memory
+INFO: uid: 299
+INFO: Allocated 736 bytes at 0x8855610
+INFO: Succesfully loaded assets/player_rocket.bmp into memory
 INFO: loading assets/player.bmp into memory
+INFO: uid: 301
+INFO: Allocated 3072 bytes at 0x88559f0
+INFO: Succesfully loaded assets/player.bmp into memory

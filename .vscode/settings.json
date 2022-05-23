@@ -11,6 +11,8 @@
         "array": "cpp",
         "string": "cpp",
         "string_view": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "cstdio": "cpp",
+        "optional": "cpp"
     }
 }
