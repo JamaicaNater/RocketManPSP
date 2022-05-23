@@ -11,7 +11,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 
  
 
-# Make data base, printed on Sun May 22 02:39:57 2022
+# Make data base, printed on Sun May 22 19:27:42 2022
 
 # Variables
 
@@ -56,9 +56,9 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 +F = $(notdir $+)
 # environment
-VSCODE_PID = 12692
+VSCODE_PID = 3200
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-44885f5a-3de8-4c8c-85d5-ee818c32ce90-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-87b4e298-708c-4503-a776-dea095a97bbb-sock
 # automatic
 %F = $(notdir $%)
 # environment
@@ -75,8 +75,7 @@ VSCODE_PIPE_LOGGING = true
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-NV2STV6
 # environment
 PROCESSOR_ARCHITEW6432 = AMD64
-# e 
-nvironment
+# environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # environment
 VSCODE_VERBOSE_LOGGING = true
@@ -97,9 +96,10 @@ LOCALAPPDATA = C:\Users\Francis Williams\AppData\Local
 # environment
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
 # default
-MAKE_VERSION := 3.79.1
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+MAKE_VERSION 
+make.exe: *** No rule to make target `all'.  Stop.
+
+ := 3.79.1
 # environment
 MAKELEVEL := 0
 # environment
@@ -125,7 +125,7 @@ ONEDRIVE = C:\Users\Francis Williams\OneDrive
 # environment
 ONEDRIVECONSUMER = C:\Users\Francis Williams\OneDrive
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12692_JHCSVXPAHZAXYKHX
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3200_BIDKFIYQAXAFJYQU
 # environment
 COMPUTERNAME = DESKTOP-NV2STV6
 # environment
@@ -185,16 +185,14 @@ PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
 # environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# 86 variables in 523 hash buckets.
+# 84 variables in 523 hash buckets.
 # average of 0.2 variables per bucket, max 2 in one bucket.
 
 # Directories
 
 # : could not be stat'd.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1653190491): 2842 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1653265658): 2842 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1652771443): 8 files, no impossibilities.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1652770995): 5 files, no impossibilities.
 # C:\mingw64\bin (key C:/mingw64/bin, mtime 1652773629): 58 files, no impossibilities.
@@ -270,11 +268,8 @@ all:
 
 # No `vpath' search paths.
 
-# No 
-make.exe: *** No rule to make target `all'.  Stop.
+# No general (`VPATH' variable) search path.
 
- general (`VPATH' variable) search path.
-
-# Finished Make data base on Sun May 22 02:39:57 2022
+# Finished Make data base on Sun May 22 19:27:42 2022
 
  

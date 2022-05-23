@@ -21,6 +21,7 @@ namespace GFX
 
 	Image dirt;
 	Image sky;
+	//Image grass;
 
 
 	bool is_transparent(unsigned int pixel) {
@@ -39,6 +40,7 @@ namespace GFX
 	void load_terrain_textures() {
 		load_BMP(&dirt.height, &dirt.width, dirt.img_matrix, "assets/dirt.bmp");
 		load_BMP(&sky.height, &sky.width, sky.img_matrix, "assets/sky.bmp");
+		//load_BMP(&grass.height, &grass.width, grass.img_matrix, "assets/grass.bmp");
 	}
 
 
@@ -57,7 +59,7 @@ namespace GFX
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, PSP_DISPLAY_SETBUF_NEXTFRAME);
 	}
 
-	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, Image &img)
+	void drawBMP(int x, int y, short rot, pivots pivot, char direction, const char* filename, uint32_t filter, Image &img)
 	{	
 		unsigned int * &image = img.img_matrix;
 		unsigned int &width = img.width;
@@ -89,9 +91,49 @@ namespace GFX
 			// rot %= 360;
 
 			float rad = PI * rot /180.0f;
+			float sin_theta = sin(rad);
+			float cos_theta = cos(rad);
 			
-			unsigned short mid_x = width/2;
-			unsigned short mid_y = height/2;
+			unsigned short mid_x;
+			unsigned short mid_y;
+
+			switch (pivot)
+			{
+			case CENTER:
+				mid_x = width/2;
+				mid_y = height/2;
+				break;
+			case CENTER_LEFT:
+				mid_x = 0;
+				mid_y = height/2;
+				break;
+			case CENTER_RIGHT:
+				mid_x = width;
+				mid_y = height/2;
+				break;
+			case TOP_CENTER:
+				mid_x = width/2;
+				mid_y = height;
+				break;
+			case BOTTOM_CENTER:
+				mid_x = width/2;
+				mid_y = 0;
+				break;
+			case TOP_LEFT:
+				mid_x = 0;
+				mid_y = height;
+				break;
+			case TOP_RIGHT:
+				mid_x = width;
+				mid_y = height;
+				break;
+			\
+			default:
+				PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to match a pivot for %s", filename);
+				break;
+			}
+
+
 			float x_i;
 			float y_i;
 
@@ -99,13 +141,6 @@ namespace GFX
 			end_y = start_y + height;
 			start_x = 0;
 			end_x = start_x + width;
-
-			unsigned short y_pos_sub_mid = start_x-mid_x;
-			unsigned short x_pos_sub_mid = start_y-mid_y;
-			unsigned short draw_pos;
-
-			float sin_theta = sin(rad);
-			float cos_theta = cos(rad);
 			
 			for (int y = start_y; y < end_y; y++){
 				for (int x = start_x; x < end_x; x++){
@@ -120,9 +155,9 @@ namespace GFX
 						x_i+=mid_x; 
 						y_i+=mid_y; 
 
-						if (direction == FORWARD && x_i+playerx>=0 && y_i+playery>=0) {
+						if (direction == FORWARD && x_i+playerx>=0 && (int)(end_y-y_i+playery)>=0) {
 							draw_buffer[(int)round((x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery))] = *pixel;
-						} else if (direction == BACKWARD && x_i+playerx>=0 && y_i+playery>=0) {
+						} else if (direction == BACKWARD && end_x-x_i+playerx>=0 && end_y-y_i+playery>=0) {
 							draw_buffer[(int)round((end_x-x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery))] = *pixel;
 						}
 					}
@@ -172,6 +207,11 @@ namespace GFX
 		uint32_t * target;
 		int px_index;
 
+		int img_pos_y;
+		int img_pos_x;
+		int img_pos_x_lagging;
+		int img_pos_x_lagging_stretched;
+
 		int y_img_pos = 0, x_img_pos = cam_pos_x;
 		for(int y = 0; y <= SCREEN_HEIGHT; y++) {
 			for(int x = 0; x <= SCREEN_WIDTH; x++) {
@@ -180,17 +220,25 @@ namespace GFX
 				px_index = x + (SCREEN_WIDTH * y);
 				val = noise[x+cam_pos_x];
 				target = &draw_buffer[px_index];
-				int img_pos = (y%64)*64 + (cam_pos_x + x) % 64;
+
+				img_pos_y = (y%64)*64;
+				img_pos_x = (cam_pos_x + x) % 64;
+				//img_pos_x_lagging = (cam_pos_x/4 + x) % 64;
+				
 
 				if (val >= y) {
 					//*target = 0xf4a903;
 					if (y>=64) *target = 0xba7b44;
-					else *target = sky.img_matrix[img_pos];
+					else {
+						img_pos_x_lagging_stretched = (cam_pos_x/5 + x)/2 % 64;
+						*target = sky.img_matrix[img_pos_y+img_pos_x_lagging_stretched];
+					}
 				} else if (val >= y - 5) {
-					*target = 0x318c34;			
+					*target = 0x318c34;
+					//*target = grass.img_matrix[img_pos_y+img_pos_x];
 				} else {
 					//*target = 0x2B6F8C;
-					*target = dirt.img_matrix[img_pos];
+					*target = dirt.img_matrix[img_pos_y+img_pos_x];
 				}
 			}
 		}

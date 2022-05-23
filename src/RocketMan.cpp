@@ -43,6 +43,7 @@ void setupCallbacks()
 
 }
 // End of boilerplate PSP code
+
 /**
  * @brief Code written to interrupt the code for the home page
  * 
@@ -50,23 +51,23 @@ void setupCallbacks()
  * @param argp bytes 0-3: ID of the background thread. bytes 4-7: ID of the main thread.
  * @return int 
  */
-int interrupt_homescreen(SceSize args, void* argp){
+int interrupt_titlescreen(SceSize args, void* argp){
 	unsigned int * arg_arr = (unsigned int*)argp;
 	sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
 	SceCtrlData ctrlData;
-	bool in_homescreen = true;
+	bool in_titlescreen = true;
 
 	while (1)
 	{
 		sceCtrlReadBufferPositive(&ctrlData, 1);
-		if (ctrlData.Buttons & PSP_CTRL_START && in_homescreen){
+		if (ctrlData.Buttons & PSP_CTRL_START && in_titlescreen){
 			sceKernelTerminateThread(arg_arr[0]);
 			sceKernelDeleteThread(arg_arr[0]);
 			sceKernelWakeupThread(arg_arr[1]);
 			PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Waking thread: %u", arg_arr[1]);
-			in_homescreen = false;
+			in_titlescreen = false;
 			sceKernelExitDeleteThread(PSP_THREAD_STOPPED);
 		}
 		sceKernelDelayThread(100);
@@ -74,7 +75,7 @@ int interrupt_homescreen(SceSize args, void* argp){
 	return 0;
 }
 
-const int MAP_SIZE = 1000;
+const int MAP_SIZE = 5000;
 const int PLAYER_SPEED = 2;
 int FRAMETIME = MICROSECONDS / 60;
 
@@ -98,13 +99,14 @@ int main()
 
 	unsigned char noise_map[MAP_SIZE];
 	FastNoiseLite noise(sceKernelGetSystemTimeLow());
+	noise.SetFrequency(.008f);
+	//noise.SetDomainWarpAmp(30.0f);
 	for(int i = 0; i < MAP_SIZE; i++) {
 		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 170) + 40; // MIN hieght = 40 max hieght = 170 + 40
 	}
 
 	Projectile player(Vector2d(10,10));
 	player.vector.direction = FORWARD;
-	
 	bool cam_aligned = true;
 
 	unsigned int home_thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
@@ -115,7 +117,7 @@ int main()
 	if (main_thid<0) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "failed to obtain main thread ID");
 
 	unsigned int args[2] = {home_thid, (unsigned int)main_thid}; // If main_thid is not positive the program terminates
-	int inter_home_thid = sceKernelCreateThread("interrupt_homescreen_thread", interrupt_homescreen, 0x12, 0xaFA0, 0, NULL);
+	int inter_home_thid = sceKernelCreateThread("interrupt_homescreen_thread", interrupt_titlescreen, 0x12, 0xaFA0, 0, NULL);
 	if (inter_home_thid >= 0) sceKernelStartThread(inter_home_thid, 8, args);
 	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
 	sceKernelSleepThread();
@@ -163,8 +165,8 @@ int main()
 		}
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
-		GFX::drawBMP(player.vector.x+5, player.vector.y-20, player.vector.get_angle(), player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon);
-		GFX::drawBMP(player.vector.x, player.vector.y , 0, player.vector.direction, "assets/player.bmp", 0, player.image);
+		GFX::drawBMP(player.vector.x+5, player.vector.y-20, player.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon);
+		GFX::drawBMP(player.vector.x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
 		
 
 		GFX::swapBuffers();

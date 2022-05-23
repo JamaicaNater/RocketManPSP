@@ -10,6 +10,7 @@
 #define PI 3.14159265359
 
 enum flips{FORWARD, BACKWARD};
+enum pivots{CENTER = 0, TOP_LEFT, CENTER_LEFT, BOTTOM_LEFT, TOP_CENTER, BOTTOM_CENTER, TOP_RIGHT, CENTER_RIGHT, BOTTOM_RIGHT};
 
 namespace GFX 
 {
@@ -60,12 +61,13 @@ namespace GFX
 	 * @param x -  x position to draw at
 	 * @param y -  y position to draw at
 	 * @param rot - angle of the object
+	 * @param pivot-where we rotate the object about;
 	 * @param direction - direction of the object
 	 * @param filename 
 	 * @param filter - TBD
 	 * @param image 
 	 */
-	void drawBMP(int x, int y, short rot, char direction, const char* filename, uint32_t filter, Image &image);
+	void drawBMP(int x, int y, short rot, pivots pivot, char direction, const char* filename, uint32_t filter, Image &image);
 
 	/**
 	 * @brief Creates a looping titlescreen that a separate thread terminates upon start button being pressed

@@ -6,9 +6,10 @@
 
 #include <stdarg.h>
 
-
+#ifdef PSP_LOGGING
 const char * logger_file = "umd0:/logs/logger.log";
 SceUID fd = sceIoOpen(logger_file, PSP_O_WRONLY | PSP_O_CREAT | PSP_O_TRUNC, 0777);
+#endif
 
 namespace PSP_LOGGER {
     
