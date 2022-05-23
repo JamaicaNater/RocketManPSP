@@ -18,6 +18,8 @@
 
 //Boilerplate PSP code
 PSP_MODULE_INFO("Tutorial", 0, 1, 0);
+PSP_HEAP_SIZE_KB(2048);
+PSP_MAIN_THREAD_STACK_SIZE_KB(2048);
 
 int exit_calback(int arg1, int arg2, void* common)
 {

@@ -39,7 +39,7 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
         PSP_LOGGER::psp_log(PSP_LOGGER::WARNING, "Image %s of size %s (%d x %d) exceeds the size of any resonable image use write_BMP instead", filename, size, *width, *height);
     }
     	
-    buf = (unsigned int *)psp_malloc(size*4);
+    buf = new unsigned int[size];
 
 
     //buf = (unsigned int*)malloc(size*4);
