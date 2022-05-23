@@ -124,31 +124,44 @@ int main()
 	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
 	sceKernelSleepThread();
 
+	int player_draw_pos_x = 0;
+	bool cam_locked_left = true;
+	bool cam_locked_right = false;
+	int screen_center = 512/2;
 	while (1)
 	{
+		if (!cam_locked_right){ 
+			if (player.vector.x > screen_center) player_draw_pos_x = screen_center;
+			else player_draw_pos_x = player.vector.x;
+		}
+		else player_draw_pos_x = player.vector.x - cam_pos_x;
+
+
+		if (player.vector.x < screen_center) {
+			cam_pos_x = 0;
+			cam_locked_left = true;
+		} else if (MAP_SIZE - player.vector.x <= screen_center) {
+			cam_pos_x = MAP_SIZE-512;
+			cam_locked_right = true;
+		} else {
+			cam_locked_right = false;
+			cam_locked_left = false;
+		}
 
 		start_time = sceKernelGetSystemTimeLow(); // For FPS calculation
 		pspDebugScreenSetXY(0,0);
 
-
 		sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
-		
-		cam_aligned = (cam_pos_x > 0 && cam_pos_x + SCREEN_WIDTH < MAP_SIZE); // is the player in the center of the screen?
-		if (cam_aligned) player.vector.x = 512/2;
 
 		if(ctrlData.Buttons & PSP_CTRL_LEFT){
-			cam_pos_x -= cam_aligned * PLAYER_SPEED; // if camaligned update cam position otherwise update player position
-			player.vector.x-= !cam_aligned * PLAYER_SPEED;
+			if (!cam_locked_left) cam_pos_x -= PLAYER_SPEED;
+			if (player.vector.x - PLAYER_SPEED >= 0) player.vector.x -= PLAYER_SPEED;
 			player.vector.direction = BACKWARD;
 		}
 
 		if(ctrlData.Buttons & PSP_CTRL_RIGHT){
-			if (cam_aligned || player.vector.x > 512/2) {
-				cam_pos_x+=PLAYER_SPEED;
-				cam_aligned = true;
-			} else {
-				player.vector.x+=PLAYER_SPEED;
-			}
+			if (!cam_locked_right) cam_pos_x+=PLAYER_SPEED;
+			if (player.vector.x + PLAYER_SPEED <= MAP_SIZE-50) player.vector.x+=PLAYER_SPEED;
 			player.vector.direction = FORWARD;
 		}
 
@@ -158,24 +171,26 @@ int main()
 		if(ctrlData.Buttons & PSP_CTRL_DOWN){ 
 			player.vector.set_angle(player.vector.get_angle()-2);
 		}
+
 		//TODO: Clean up code for readability
 
-		if (cam_aligned) {
-			player.vector.y = (int)noise_map[cam_pos_x + 512/2];
-		} else {
-			player.vector.y = (int)noise_map[player.vector.x];
-		}
+
+		player.vector.y = (int)noise_map[player.vector.x];
+
+		// if(ctrlData.Buttons & PSP_CTRL_CROSS) {
+		// 	player.vector.y+=10;
+		// }
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
-		GFX::drawBMP(player.vector.x+5, player.vector.y-20, player.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon);
-		GFX::drawBMP(player.vector.x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
+		GFX::drawBMP(player_draw_pos_x+5, player.vector.y-20, player.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon);
+		GFX::drawBMP(player_draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
 		
 
 		GFX::swapBuffers();
 		GFX::clear();
 
 		end_time = sceKernelGetSystemTimeLow();
-		printf("fps: %.1f, x: %d, y: %d, angle: %d ", 1 / ((end_time - start_time) / static_cast<float>(1000*1000)), player.vector.x, player.vector.y, player.vector.get_angle());
+		printf("fps: %.1f, cam_x %d, x: %d, y: %d, angle: %d, cam_lock_l: %d, cam_lock_r: %d", 1 / ((end_time - start_time) / static_cast<float>(1000*1000)), cam_pos_x, player.vector.x, player.vector.y, player.vector.get_angle(), cam_locked_left, cam_locked_right);
 
 		sceDisplayWaitVblankStart();
 	}
