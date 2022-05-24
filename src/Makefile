@@ -1,5 +1,5 @@
 TARGET = Tutorial
-OBJS = RocketMan.o gfx.o bmp/loadbmp.o utils.o logger/logger.o
+OBJS = RocketMan.o gfx.o bmp/loadbmp.o utils.o logger/logger.o gamestate.o
 LIBS = -lstdc++ -lm 
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum -lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp -lpspmath
 

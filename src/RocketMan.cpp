@@ -1,10 +1,10 @@
 #include <pspkernel.h>
 #include <pspdebug.h>
-#include <pspctrl.h>
 #include <pspdisplay.h>
 #include <pspthreadman.h>
 #include <cstring>
 #include <cstdlib>
+#include "gamestate.h"
 
 #include "Projectile.hpp"
 #include "utils.h"
@@ -78,7 +78,7 @@ int interrupt_titlescreen(SceSize args, void* argp){
 }
 
 const int MAP_SIZE = 1000;
-const int PLAYER_SPEED = 2;
+unsigned char noise_map[MAP_SIZE];
 int FRAMETIME = MICROSECONDS / 60;
 
 int main()
@@ -89,29 +89,14 @@ int main()
 	GFX::load_terrain_textures();
 	GFX::init();
 
-	sceCtrlSetSamplingCycle(0);
-	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
-	SceCtrlData ctrlData;
-
 	unsigned int start_time = 0, end_time = 0;
-	
-	int cam_pos_x =10,
-		cam_pos_y =10;
 
-
-	unsigned char noise_map[MAP_SIZE];
 	FastNoiseLite noise(sceKernelGetSystemTimeLow());
 	noise.SetFrequency(.008f);
 	//noise.SetDomainWarpAmp(30.0f);
 	for(int i = 0; i < MAP_SIZE; i++) {
 		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 100) + 100; // MIN hieght = 40 max hieght = 150 + 40
 	}
-
-	Person player;
-	player.vector.x = 10;
-	player.vector.y = 10;
-	player.vector.direction = FORWARD;
-	bool cam_aligned = true;
 
 	unsigned int home_thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
 	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
@@ -126,89 +111,23 @@ int main()
 	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
 	sceKernelSleepThread();
 
-	int player_draw_pos_x = 0;
-	bool cam_locked_left = true;
-	bool cam_locked_right = false;
-	int screen_center = 512/2;
+
 	float physics_time_delta = 0.0f;
+	GameState state = GameState();
+	state.init(noise_map, MAP_SIZE);
 	while (1)
 	{
-		cam_pos_x = get_cam_position(player.vector.x, screen_center, MAP_SIZE);
 		start_time = sceKernelGetSystemTimeLow(); // For FPS calculation
 		
 		pspDebugScreenSetXY(0,0);
 
-		sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
+		state.update_game_time(start_time);
+		state.update();
+		state.draw();
 
-
-		if (MAP_SIZE - player.vector.x > screen_center){ 
-			if (player.vector.x > screen_center) player_draw_pos_x = screen_center;
-			else player_draw_pos_x = player.vector.x;
-		}
-		else player_draw_pos_x = player.vector.x - cam_pos_x;
-
-		player.vector.vel_x = 0;
-		if(ctrlData.Buttons & PSP_CTRL_LEFT){
-			player.vector.vel_x = -1*PLAYER_SPEED;
-			player.vector.direction = BACKWARD;
-		} 		
-
-		if(ctrlData.Buttons & PSP_CTRL_RIGHT){
-			player.vector.vel_x = PLAYER_SPEED;
-			player.vector.direction = FORWARD;
-		}
-
-		if(ctrlData.Buttons & PSP_CTRL_UP){ 
-			player.vector.set_angle(player.vector.get_angle()+2);
-		}
-		if(ctrlData.Buttons & PSP_CTRL_DOWN){ 
-			player.vector.set_angle(player.vector.get_angle()-2);
-		}
-
-		//TODO: Clean up code for readability
-
-
-		if (!player.jumping) player.vector.y = (int)noise_map[player.vector.x];
-
-		if(ctrlData.Buttons & PSP_CTRL_CROSS) {
-			if (player.vector.vel_y == 0) {
-				player.vector.vel_y= 110; // you cant double jump
-				player.jump_time = sceKernelGetSystemTimeLow();
-				player.jumping = true;
-				player.starting_jump_height = player.vector.y;
-			}
-		}
-
-		if (player.vector.vel_x > 0) {
-			if (player.vector.x + PLAYER_SPEED <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
-		} else if (player.vector.vel_x < 0) {
-			if (player.vector.x - PLAYER_SPEED >= 0) player.vector.x += player.vector.vel_x;
-		}
-
-		float time = (int)(player.jump_time - start_time)/1000000.0f;
-		if (player.jumping) {
-			PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"calcing with time: %f", time);
-			player.vector.y = player.starting_jump_height + player.vector.vel_y*time + .5 * (player.grav * time * time);
-			if (player.vector.y > noise_map[player.vector.x]) {
-				player.jumping = false;
-				player.vector.vel_y = 0;
-				player.starting_jump_height = 0;
-				player.jump_time = 0;
-			}
-		}
-
-
-		GFX::drawTerrain(noise_map, cam_pos_x);
-		GFX::drawBMP(player_draw_pos_x+5, player.vector.y-20, player.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon);
-		GFX::drawBMP(player_draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
-		
-
-		GFX::swapBuffers();
-		GFX::clear();
-		
 		end_time = sceKernelGetSystemTimeLow();
 		physics_time_delta = (end_time - start_time) / static_cast<float>(1000*1000);
-		printf("fps: %.1f, cam_x %d, x: %d, y: %d, angle: %d, cam_lock_l: %d\n cam_lock_r: %d, jump height %d", 1 / (physics_time_delta ), cam_pos_x, player.vector.x, player.vector.y, player.vector.get_angle(), cam_locked_left, cam_locked_right, player.jump_height);
+		//printf("fps: %.1f, cam_x %d, x: %d, y: %d, angle: %d, cam_lock_l: %d\n cam_lock_r: %d, jump height %d", 1 / (physics_time_delta ), cam_pos_x, player.vector.x, player.vector.y, player.vector.get_angle(), cam_locked_left, cam_locked_right, player.jump_height);
 
 		sceDisplayWaitVblankStart();
 	}

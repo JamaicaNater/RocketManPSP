@@ -14,20 +14,20 @@ struct Image
 	}
 };
 
-class Projectile
+class Object
 {
 	public:
 	float grav = 110.00f;
 	Image image = Image();
 	//Image weapon = Image();
 	Vector2d vector;
- 	Projectile(Vector2d _vector) {
+ 	Object(Vector2d _vector) {
 		 vector = _vector;
 	}
-	Projectile() {}
+	Object() {}
 };
 
-class Person: public Projectile 
+class Person: public Object 
 {
 	public:
 	Image weapon = Image();

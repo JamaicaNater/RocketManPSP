@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue May 24 00:27:29 2022
+# Make data base, printed on Tue May 24 16:21:35 2022
 
 # Variables
 
@@ -57,9 +57,9 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-eb316b7e-385b-4eb1-9aeb-9793745fbe64-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-5690c380-d404-4a9a-8a49-07997b89a94e-sock
 # environment
-VSCODE_CWD = C:\Users\franc\OneDrive\Documents
+VSCODE_CWD = C:\Users\franc\AppData\Local\Programs\Microsoft VS Code
 # environment
 PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\franc\AppData\Local\Microsoft\WindowsApps;C:\Users\franc\AppData\Roaming\npm;C:\Program Files (x86)\Nmap;C:\MinGW\bin;C:\Users\franc\AppData\Local\Programs\Microsoft VS Code\bin;C:\pspsdk\bin
 # environment
@@ -87,7 +87,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3812_SEOHDDNLIIMHNESW
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8260_RZAUNEWPUINAWCFK
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -107,7 +107,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\franc\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
@@ -135,7 +135,7 @@ PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
 LOCALAPPDATA = C:\Users\franc\AppData\Local
 # environment
-PSMODULEPATH = %ProgramFiles%\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := make.exe
 # environment
@@ -185,6 +185,8 @@ SUFFIXES :=
 # environment
 SYSTEMDRIVE = C:
 # environment
+SESSIONNAME = Console
+# environment
 PROCESSOR_REVISION = 7e05
 # default
 .INCLUDE_DIRS = C:/MinGW/include
@@ -195,11 +197,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 3812
+VSCODE_PID = 8260
 # environment
 USERDOMAIN_ROAMINGPROFILE = GWTN141-4
 # variable set hash-table stats:
-# Load=93/1024=9%, Rehash=0, Collisions=11/109=10%
+# Load=94/1024=9%, Rehash=0, Collisions=11/110=10%
 
 # Pattern-specific Variable Values
 
@@ -208,13 +210,13 @@ USERDOMAIN_ROAMINGPROFILE = GWTN141-4
 # Directories
 
 # C:\ProgramData\DockerDesktop\version-bin (key C:/ProgramData/DockerDesktop/version-bin, mtime 1637403092): 2 files, no impossibilities.
-# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1615576087): 30 files, no impossibilities.
-# . (key c:/Users/franc/OneDrive/Documents/RocketManPSP, mtime 1653348763): 8 files, no impossibilities.
+# C:\WINDOWS\System32\WindowsPowerShell\v1. 
+0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1615576087): 30 files, no impossibilities.
+# . (key c:/Users/franc/OneDrive/Documents/RocketManPSP, mtime 1653420573): 9 files, no impossibilities.
 # C:\Users\franc\AppData\Local\Microsoft\WindowsApps (key C:/Users/franc/AppData/Local/Microsoft/WindowsApps, mtime 1653337323): 21 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1635271053): 8 files, no impossibilities.
 # C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
-# C:\MinGW\bin (key C:/MinGW/bin, mtime 1631 
-228734): 56 files, no impossibilities.
+# C:\MinGW\bin (key C:/MinGW/bin, mtime 1631228734): 56 files, no impossibilities.
 # C:\WINDOWS (key C:/WINDOWS, mtime 1653311943): 112 files, no impossibilities.
 # C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1615701473): 13 files, no impossibilities.
 # C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1637403179): 13 files, no impossibilities.
@@ -225,11 +227,12 @@ USERDOMAIN_ROAMINGPROFILE = GWTN141-4
 # C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1634687828): 6 files, no impossibilities.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1615701401): 11 files, no impossibilities.
 # C:\Program Files (x86)\Nmap (key C:/Program Files (x86)/Nmap, mtime 1630618498): 37 files, no impossibilities.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1653328777): 2898 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1653420486): 2898 files, no impossibilities.
 # C:\pspsdk\bin (key C:/pspsdk/bin, mtime 1653191052): 62 files, no impossibilities.
-# C:\Users\franc\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/franc/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1653308691): 4 files, no impossibilities.
+# C:\Users\franc\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/franc/AppData/Local/Programs/Microsoft VS C 
+ode/bin, mtime 1653308691): 4 files, no impossibilities.
 
-# 3462 files, no impossibilities in 20 directories.
+# 3463 files, no impossibilities in 20 directories.
 
 # Implicit Rules
 
@@ -279,23 +282,22 @@ GNUmakefile:
 
 # files hash-table stats:
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
-# VPATH Se 
-make.exe: *** No rule to make target 'all'.  Stop.
-
-arch Paths
+# VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3434 / storage = 51255 B / avg = 14 B
+# strcache buffers: 7 (6) / strings = 3435 / storage = 51265 B / avg = 14 B
 # current buf: size = 8174 B / used = 2269 B / count = 165 / avg = 13 B
-# other used: total = 43081 B / count = 3269 / avg = 13 B
-# other free: total = 58 B / max = 12 B / min = 3 B / avg = 9 B
+# other used: total = 43091 B / count = 3270 / avg = 13 B
+# other free: total = 48 B / max = 14 B / min = 3 B / avg = 8 B
 
-# strcache performance: lookups = 3490 / hit rate = 1%
+# strcache performance: lookups = 3491 / hit rate = 1%
 # hash-table stats:
-# Load=3434/8192=42%, Rehash=0, Collisions=1167/3490=33%
-# Finished Make data base on Tue May 24 00:27:29 2022
+# Load=3435/8192=42%, Rehash=0, Collisions=1167/3491=33%
+# Finished Make data base on Tue May 24 16:21:35 2022
 
  
+make.exe: *** No rule to make target 'all'.  Stop.
+
