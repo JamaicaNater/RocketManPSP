@@ -230,13 +230,13 @@ namespace GFX
 
 				if (val >= y) {
 					//*target = 0xf4a903;
-					if (y>=96) {
-						
-						*target = bground.img_matrix[((y+32)%128)*196 + (cam_pos_x/5 +x)%196];
-					} else if (y >= 64) {
+					if (y>=100+50) *target = 0x41b498;
+					else if (y>=100) {
+						*target = bground.img_matrix[((y)%50)*196 + (cam_pos_x/5 +x)%196];
+					} else if (y >= 63) { //  blue sky texture
 						*target = 0xba7b44;
 					} else {
-						img_pos_x_lagging_stretched = (cam_pos_x/5 + x)/2 % 64;
+						img_pos_x_lagging_stretched = (cam_pos_x/6 + x)/2 % 64;
 						*target = sky.img_matrix[img_pos_y+img_pos_x_lagging_stretched];
 					}
 				} else if (val >= y - 5) {
