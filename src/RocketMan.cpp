@@ -168,10 +168,15 @@ int main()
 		//TODO: Clean up code for readability
 
 
-		player.vector.y = (int)noise_map[player.vector.x] + player.jump_height;
+		if (!player.jumping) player.vector.y = (int)noise_map[player.vector.x];
 
 		if(ctrlData.Buttons & PSP_CTRL_CROSS) {
-			if (player.vector.vel_y == 0) player.vector.vel_y=-10; // you cant double jump
+			if (player.vector.vel_y == 0) {
+				player.vector.vel_y= 110; // you cant double jump
+				player.jump_time = sceKernelGetSystemTimeLow();
+				player.jumping = true;
+				player.starting_jump_height = player.vector.y;
+			}
 		}
 
 		if (player.vector.vel_x > 0) {
@@ -180,8 +185,18 @@ int main()
 			if (player.vector.x - PLAYER_SPEED >= 0) player.vector.x += player.vector.vel_x;
 		}
 
-		player.jump_height += player.vector.vel_y;
-		//player.vector.vel_y 
+		float time = (int)(player.jump_time - start_time)/1000000.0f;
+		if (player.jumping) {
+			PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"calcing with time: %f", time);
+			player.vector.y = player.starting_jump_height + player.vector.vel_y*time + .5 * (player.grav * time * time);
+			if (player.vector.y > noise_map[player.vector.x]) {
+				player.jumping = false;
+				player.vector.vel_y = 0;
+				player.starting_jump_height = 0;
+				player.jump_time = 0;
+			}
+		}
+
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
 		GFX::drawBMP(player_draw_pos_x+5, player.vector.y-20, player.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon);
@@ -193,7 +208,7 @@ int main()
 		
 		end_time = sceKernelGetSystemTimeLow();
 		physics_time_delta = (end_time - start_time) / static_cast<float>(1000*1000);
-		printf("fps: %.1f, cam_x %d, x: %d, y: %d, angle: %d, cam_lock_l: %d, cam_lock_r: %d", 1 / (physics_time_delta ), cam_pos_x, player.vector.x, player.vector.y, player.vector.get_angle(), cam_locked_left, cam_locked_right);
+		printf("fps: %.1f, cam_x %d, x: %d, y: %d, angle: %d, cam_lock_l: %d\n cam_lock_r: %d, jump height %d", 1 / (physics_time_delta ), cam_pos_x, player.vector.x, player.vector.y, player.vector.get_angle(), cam_locked_left, cam_locked_right, player.jump_height);
 
 		sceDisplayWaitVblankStart();
 	}
