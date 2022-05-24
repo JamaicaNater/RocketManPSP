@@ -3,6 +3,7 @@ struct Vector2d {
         short angle;
     public:
     unsigned short x, y;
+    short vel_x, vel_y, acc_x, acc_y;
     bool direction;
 
     Vector2d() {

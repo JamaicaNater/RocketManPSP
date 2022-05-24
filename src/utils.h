@@ -23,3 +23,5 @@ void wait_for(int micro_secs);
  * @return unsigned int data in new endianess
  */
 unsigned int swap_endian(unsigned int data);
+
+int get_cam_position(int player_postion, int center, const int MAP_SIZE);

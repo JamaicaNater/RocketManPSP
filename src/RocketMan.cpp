@@ -77,7 +77,7 @@ int interrupt_titlescreen(SceSize args, void* argp){
 	return 0;
 }
 
-const int MAP_SIZE = 5000;
+const int MAP_SIZE = 1000;
 const int PLAYER_SPEED = 2;
 int FRAMETIME = MICROSECONDS / 60;
 
@@ -93,7 +93,7 @@ int main()
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 	SceCtrlData ctrlData;
 
-	unsigned int start_time, end_time;
+	unsigned int start_time = 0, end_time = 0;
 	
 	int cam_pos_x =10,
 		cam_pos_y =10;
@@ -104,10 +104,12 @@ int main()
 	noise.SetFrequency(.008f);
 	//noise.SetDomainWarpAmp(30.0f);
 	for(int i = 0; i < MAP_SIZE; i++) {
-		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 170) + 40; // MIN hieght = 40 max hieght = 170 + 40
+		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 100) + 100; // MIN hieght = 40 max hieght = 150 + 40
 	}
 
-	Projectile player(Vector2d(10,10));
+	Person player;
+	player.vector.x = 10;
+	player.vector.y = 10;
 	player.vector.direction = FORWARD;
 	bool cam_aligned = true;
 
@@ -128,40 +130,31 @@ int main()
 	bool cam_locked_left = true;
 	bool cam_locked_right = false;
 	int screen_center = 512/2;
+	float physics_time_delta = 0.0f;
 	while (1)
 	{
-		if (!cam_locked_right){ 
+		cam_pos_x = get_cam_position(player.vector.x, screen_center, MAP_SIZE);
+		start_time = sceKernelGetSystemTimeLow(); // For FPS calculation
+		
+		pspDebugScreenSetXY(0,0);
+
+		sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
+
+
+		if (MAP_SIZE - player.vector.x > screen_center){ 
 			if (player.vector.x > screen_center) player_draw_pos_x = screen_center;
 			else player_draw_pos_x = player.vector.x;
 		}
 		else player_draw_pos_x = player.vector.x - cam_pos_x;
 
-
-		if (player.vector.x < screen_center) {
-			cam_pos_x = 0;
-			cam_locked_left = true;
-		} else if (MAP_SIZE - player.vector.x <= screen_center) {
-			cam_pos_x = MAP_SIZE-512;
-			cam_locked_right = true;
-		} else {
-			cam_locked_right = false;
-			cam_locked_left = false;
-		}
-
-		start_time = sceKernelGetSystemTimeLow(); // For FPS calculation
-		pspDebugScreenSetXY(0,0);
-
-		sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
-
+		player.vector.vel_x = 0;
 		if(ctrlData.Buttons & PSP_CTRL_LEFT){
-			if (!cam_locked_left) cam_pos_x -= PLAYER_SPEED;
-			if (player.vector.x - PLAYER_SPEED >= 0) player.vector.x -= PLAYER_SPEED;
+			player.vector.vel_x = -1*PLAYER_SPEED;
 			player.vector.direction = BACKWARD;
-		}
+		} 		
 
 		if(ctrlData.Buttons & PSP_CTRL_RIGHT){
-			if (!cam_locked_right) cam_pos_x+=PLAYER_SPEED;
-			if (player.vector.x + PLAYER_SPEED <= MAP_SIZE-50) player.vector.x+=PLAYER_SPEED;
+			player.vector.vel_x = PLAYER_SPEED;
 			player.vector.direction = FORWARD;
 		}
 
@@ -175,11 +168,20 @@ int main()
 		//TODO: Clean up code for readability
 
 
-		player.vector.y = (int)noise_map[player.vector.x];
+		player.vector.y = (int)noise_map[player.vector.x] + player.jump_height;
 
-		// if(ctrlData.Buttons & PSP_CTRL_CROSS) {
-		// 	player.vector.y+=10;
-		// }
+		if(ctrlData.Buttons & PSP_CTRL_CROSS) {
+			if (player.vector.vel_y == 0) player.vector.vel_y=-10; // you cant double jump
+		}
+
+		if (player.vector.vel_x > 0) {
+			if (player.vector.x + PLAYER_SPEED <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
+		} else if (player.vector.vel_x < 0) {
+			if (player.vector.x - PLAYER_SPEED >= 0) player.vector.x += player.vector.vel_x;
+		}
+
+		player.jump_height += player.vector.vel_y;
+		//player.vector.vel_y 
 
 		GFX::drawTerrain(noise_map, cam_pos_x);
 		GFX::drawBMP(player_draw_pos_x+5, player.vector.y-20, player.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon);
@@ -188,9 +190,10 @@ int main()
 
 		GFX::swapBuffers();
 		GFX::clear();
-
+		
 		end_time = sceKernelGetSystemTimeLow();
-		printf("fps: %.1f, cam_x %d, x: %d, y: %d, angle: %d, cam_lock_l: %d, cam_lock_r: %d", 1 / ((end_time - start_time) / static_cast<float>(1000*1000)), cam_pos_x, player.vector.x, player.vector.y, player.vector.get_angle(), cam_locked_left, cam_locked_right);
+		physics_time_delta = (end_time - start_time) / static_cast<float>(1000*1000);
+		printf("fps: %.1f, cam_x %d, x: %d, y: %d, angle: %d, cam_lock_l: %d, cam_lock_r: %d", 1 / (physics_time_delta ), cam_pos_x, player.vector.x, player.vector.y, player.vector.get_angle(), cam_locked_left, cam_locked_right);
 
 		sceDisplayWaitVblankStart();
 	}

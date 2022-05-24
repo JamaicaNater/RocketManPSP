@@ -16,18 +16,33 @@ struct Image
 
 class Projectile
 {
-private:
-	int grav = 9.81;
-
-public:
+	public:
+	float grav = .40f;
 	Image image = Image();
-	Image weapon = Image();
+	//Image weapon = Image();
 	Vector2d vector;
  	Projectile(Vector2d _vector) {
 		 vector = _vector;
 	}
 	Projectile() {}
 };
+
+class Person: public Projectile 
+{
+	public:
+	Image weapon = Image();
+	
+	bool jumping = false;
+	unsigned int jump_time;
+	unsigned int jump_height = 0;
+
+	unsigned short jump_height_at(int microseconds) {
+		
+
+		return 1 ;
+	}
+
+} ;
 
 
 

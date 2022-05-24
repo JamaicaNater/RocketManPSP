@@ -26,3 +26,10 @@ unsigned int swap_endian(unsigned int data)
 {
 	return  (data&0x0000FF00) | (data&0xFF000000) | (data&0x00FF0000)>>16 | (data&0x000000FF)<<16;
 }
+
+int get_cam_position(int player_postion, int center, const int MAP_SIZE) {
+	if (player_postion < center) return 0;
+	else if (MAP_SIZE - player_postion <= center) return MAP_SIZE - 2*center;
+
+	return player_postion-center;
+}
