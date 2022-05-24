@@ -32,19 +32,26 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
     fseek(fp, pixlmap_location, SEEK_SET);
 
     int size = *width * *height;
-    if (size > 5000) {
-        PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Image %s of size %s (%d x %d) exceeds the size of any resonable image use write_BMP instead", filename, size, *width, *height);
+    // if (size > 5000) {
+    //     PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Image %s of size %d (%d x %d) exceeds the size of any resonable image use write_BMP instead", filename, size, *width, *height);
+    // }
+    
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Allocating Space");
+    try {
+        buf = new unsigned int[size];
+    } catch (std::exception &e) {
+        PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, " Threw exception \"%s\" attpeting to allocate space for %s: %d x %d is likely too big!", e.what(), filename, *width, *height);
     }
-    buf = new unsigned int[size];
 
-    if(!buf) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "failed to allocate enough memory for %s: %d x %d is likely too big!", filename, *width, *height);
-
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Reading file");
     fread((void *)buf, 4, size, fp); 
 
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Formatting pixels");
     for (int i = 0; i < size; i++) {
         buf[i] = format_pixel(buf[i]);
     }
     
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Succesfuly loaded %s", filename);
     fclose(fp);
     return 1;
 }

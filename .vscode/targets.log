@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Mon May 23 22:51:22 2022
+# Make data base, printed on Tue May 24 00:27:29 2022
 
 # Variables
 
@@ -49,6 +49,7 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
 MAKEFILE_LIST := 
 # environment
 TMP = C:\Users\franc\AppData\Local\Temp
+ 
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
@@ -60,8 +61,7 @@ VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-eb316b7e-385b-4eb1-9aeb-9793745fbe
 # environment
 VSCODE_CWD = C:\Users\franc\OneDrive\Documents
 # environment
-PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS 
-\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\franc\AppData\Local\Microsoft\WindowsApps;C:\Users\franc\AppData\Roaming\npm;C:\Program Files (x86)\Nmap;C:\MinGW\bin;C:\Users\franc\AppData\Local\Programs\Microsoft VS Code\bin;C:\pspsdk\bin
+PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\franc\AppData\Local\Microsoft\WindowsApps;C:\Users\franc\AppData\Roaming\npm;C:\Program Files (x86)\Nmap;C:\MinGW\bin;C:\Users\franc\AppData\Local\Programs\Microsoft VS Code\bin;C:\pspsdk\bin
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -193,8 +193,7 @@ PROCESSOR_REVISION = 7e05
 # environment
 LANG = C
 # environment
-PROCES 
-SOR_LEVEL = 6
+PROCESSOR_LEVEL = 6
 # environment
 VSCODE_PID = 3812
 # environment
@@ -209,13 +208,13 @@ USERDOMAIN_ROAMINGPROFILE = GWTN141-4
 # Directories
 
 # C:\ProgramData\DockerDesktop\version-bin (key C:/ProgramData/DockerDesktop/version-bin, mtime 1637403092): 2 files, no impossibilities.
-# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtim 
-e 1615576087): 30 files, no impossibilities.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1615576087): 30 files, no impossibilities.
 # . (key c:/Users/franc/OneDrive/Documents/RocketManPSP, mtime 1653348763): 8 files, no impossibilities.
 # C:\Users\franc\AppData\Local\Microsoft\WindowsApps (key C:/Users/franc/AppData/Local/Microsoft/WindowsApps, mtime 1653337323): 21 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1635271053): 8 files, no impossibilities.
 # C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
-# C:\MinGW\bin (key C:/MinGW/bin, mtime 1631228734): 56 files, no impossibilities.
+# C:\MinGW\bin (key C:/MinGW/bin, mtime 1631 
+228734): 56 files, no impossibilities.
 # C:\WINDOWS (key C:/WINDOWS, mtime 1653311943): 112 files, no impossibilities.
 # C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1615701473): 13 files, no impossibilities.
 # C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1637403179): 13 files, no impossibilities.
@@ -297,6 +296,6 @@ arch Paths
 # strcache performance: lookups = 3490 / hit rate = 1%
 # hash-table stats:
 # Load=3434/8192=42%, Rehash=0, Collisions=1167/3490=33%
-# Finished Make data base on Mon May 23 22:51:22 2022
+# Finished Make data base on Tue May 24 00:27:29 2022
 
  

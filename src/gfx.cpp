@@ -22,6 +22,7 @@ namespace GFX
 	Image dirt;
 	Image sky;
 	Image grass;
+	Image bground;
 
 
 	bool is_transparent(unsigned int pixel) {
@@ -41,6 +42,7 @@ namespace GFX
 		load_BMP(&dirt.height, &dirt.width, dirt.img_matrix, "assets/dirt.bmp");
 		load_BMP(&sky.height, &sky.width, sky.img_matrix, "assets/sky.bmp");
 		load_BMP(&grass.height, &grass.width, grass.img_matrix, "assets/grass.bmp");
+		load_BMP(&bground.height, &bground.width, bground.img_matrix, "assets/background.bmp");
 	}
 
 
@@ -228,8 +230,12 @@ namespace GFX
 
 				if (val >= y) {
 					//*target = 0xf4a903;
-					if (y>=64) *target = 0xba7b44;
-					else {
+					if (y>=96) {
+						
+						*target = bground.img_matrix[((y+32)%128)*196 + (cam_pos_x/5 +x)%196];
+					} else if (y >= 64) {
+						*target = 0xba7b44;
+					} else {
 						img_pos_x_lagging_stretched = (cam_pos_x/5 + x)/2 % 64;
 						*target = sky.img_matrix[img_pos_y+img_pos_x_lagging_stretched];
 					}
