@@ -41,10 +41,12 @@ void GameState::update(){
     if(ctrlData.Buttons & PSP_CTRL_LEFT){
         player.vector.vel_x = -1*PLAYER_SPEED;
         player.vector.direction = BACKWARD;
+        player.weapon.draw_pos_x = player.draw_pos_x-10;
     } 		
     if(ctrlData.Buttons & PSP_CTRL_RIGHT){
         player.vector.vel_x = PLAYER_SPEED;
         player.vector.direction = FORWARD;
+        player.weapon.draw_pos_x = player.draw_pos_x+10;
     }
 
     // Weapon angle positioning
@@ -83,10 +85,13 @@ void GameState::update(){
     } else if (player.vector.vel_x < 0) {
         if (player.vector.x - PLAYER_SPEED >= 0) player.vector.x += player.vector.vel_x;
     }
+
+    player.weapon.vector.x = player.vector.x;
+    player.weapon.vector.y = player.vector.y-25;
 }
 void GameState::draw(){
     GFX::drawTerrain(noise_map, cam_pos_x);
-    GFX::drawBMP(player.draw_pos_x+5, player.vector.y-20, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon.image);
+    GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon.image);
     GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
 
     for (int i = 0; i < num_projectiles; i++){
