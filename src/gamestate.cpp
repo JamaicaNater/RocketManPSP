@@ -13,17 +13,13 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
 	player.vector.y = 10;
 	player.vector.direction = FORWARD;
 
-    proj.vector.x = 10;
-    proj.vector.y = 10;
-    proj.vector.direction = FORWARD;
-
     noise_map = _noise_map;
     MAP_SIZE = _MAP_SIZE;
 
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
-    
+    load_BMP(&rocket.height, &rocket.width, rocket.img_matrix, "assets/missile.bmp");
 }
 void GameState::update_game_time(int _game_time){
     game_time = _game_time;
@@ -131,7 +127,7 @@ void GameState::draw(){
     for (int i = 0; i < num_projectiles; i++){
         if (projectiles[i]) {
             PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "rocket: x: %d, y: %d",int(projectiles[i]->vector.x - cam_pos_x), projectiles[i]->vector.y);
-            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, 0, CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, projectiles[i]->image);
+            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, 0, CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, rocket);
             PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "here");
         }
     }

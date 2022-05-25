@@ -13,7 +13,7 @@ private:
     unsigned char * noise_map;
 
     Person player;
-    Object proj;
+    Image rocket;
 
     Object * projectiles[MAX_PROJ] = {NULL};
     int num_projectiles = 0;
