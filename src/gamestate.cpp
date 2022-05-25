@@ -1,11 +1,12 @@
 #include <pspkernel.h>
+#include <math.h>
 
 #include "gamestate.h"
 #include "gfx.hpp"
 #include "utils.h"
 #include "logger/logger.h"
-
 #include "bmp/loadbmp.h"
+
 
 void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     player.vector.x = 10;
@@ -21,6 +22,8 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
 
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
+
+    
 }
 void GameState::update_game_time(int _game_time){
     game_time = _game_time;
@@ -79,11 +82,42 @@ void GameState::update(){
         }
     }
 
+    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && num_projectiles < 1) {
+        Object * proj = new Object();
+        projectiles[num_projectiles] = proj;
+        num_projectiles++;
+
+        proj->vector.x = player.weapon.vector.x;
+        proj->vector.y = player.weapon.vector.y;
+        proj->vector.set_angle(player.weapon.vector.get_angle());
+
+        float rad = PI/180.0f * proj->vector.get_angle();
+        proj->vector.vel_x = cos(rad) * 10;
+        proj->vector.vel_y = sin(rad) * 10;
+    }
+    
+
     // TODO: do we need nested ifs?
     if (player.vector.vel_x > 0) {
         if (player.vector.x + PLAYER_SPEED <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
     } else if (player.vector.vel_x < 0) {
         if (player.vector.x - PLAYER_SPEED >= 0) player.vector.x += player.vector.vel_x;
+    }
+
+    for (int i = 0; i < num_projectiles; i++){
+        if (projectiles[i]) {
+            projectiles[i]->vector.y+=projectiles[i]->vector.vel_y;
+            projectiles[i]->vector.x+=projectiles[i]->vector.vel_x;
+            projectiles[i]->draw_pos_x+=projectiles[i]->vector.vel_x;
+            projectiles[i]->draw_pos_x = projectiles[i]->vector.x - cam_pos_x;
+
+            if (projectiles[i]->draw_pos_x > SCREEN_WIDTH_RES + 50 || projectiles[i]->draw_pos_x < -50
+                || projectiles[i]->vector.y > SCREEN_HEIGHT + 50 || projectiles[i]->vector.y < -50) {
+                    PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "Freed projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
+                    free(projectiles[i]); // TODO num_projectiles?
+                    num_projectiles--;
+                }
+        }
     }
 
     player.weapon.vector.x = player.vector.x;
@@ -95,9 +129,12 @@ void GameState::draw(){
     GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
 
     for (int i = 0; i < num_projectiles; i++){
-        if (projectiles[i]) GFX::drawBMP(int(projectiles[i]->vector.x - cam_pos_x), projectiles[i]->vector.y, 0, CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, projectiles[i]->image);
+        if (projectiles[i]) {
+            PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "rocket: x: %d, y: %d",int(projectiles[i]->vector.x - cam_pos_x), projectiles[i]->vector.y);
+            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, 0, CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, projectiles[i]->image);
+            PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "here");
+        }
     }
-
     GFX::swapBuffers();
     GFX::clear();
 }

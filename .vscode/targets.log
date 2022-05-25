@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed May 25 01:48:08 2022
+# Make data base, printed on Wed May 25 03:08:30 2022
 
 # Variables
 
@@ -32,7 +32,8 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CURDIR := c:/Users/franc/OneDrive/Documents/RocketManPSP
+CUR 
+DIR := c:/Users/franc/OneDrive/Documents/RocketManPSP
 # default
 SHELL := sh.exe
 # environment
@@ -65,8 +66,7 @@ PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
 ZES_ENABLE_SYSMAN = 1
-# e 
-nvironment
+# environment
 CHOCOLATEYLASTPATHUPDATE = 132601714726956441
 # environment
 PROCESSOR_ARCHITECTURE = x86
@@ -163,7 +163,8 @@ MFLAGS = -Rrqp
 # environment
 SYSTEMROOT = C:\WINDOWS
 # automatic
-+D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
++D = $(patsubst %/,%,$(pa 
+tsubst %\,%,$(dir $+)))
 # automatic
 +F = $(notdir $+)
 # environment
@@ -214,8 +215,7 @@ USERDOMAIN_ROAMINGPROFILE = GWTN141-4
 # . (key c:/Users/franc/OneDrive/Documents/RocketManPSP, mtime 1653420573): 9 files, no impossibilities.
 # C:\Users\franc\AppData\Local\Microsoft\WindowsApps (key C:/Users/franc/AppData/Local/Microsoft/WindowsApps, mtime 1653444735): 21 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1635271053): 8 files, no impossibilities.
-# C:\WINDOWS\System32\OpenSSH\: could no 
-t be stat'd.
+# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1631228734): 56 files, no impossibilities.
 # C:\WINDOWS (key C:/WINDOWS, mtime 1653311943): 112 files, no impossibilities.
 # C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1615701473): 13 files, no impossibilities.
@@ -225,7 +225,8 @@ t be stat'd.
 # C:\Python39\ (key C:/Python39/, mtime 1615701649): 18 files, no impossibilities.
 # C:\Python39\Scripts\ (key C:/Python39/Scripts/, mtime 1615701657): 7 files, no impossibilities.
 # C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1634687828): 6 files, no impossibilities.
-# C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1615701401): 11 files, no impossibilities.
+# C:\Progra 
+m Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1615701401): 11 files, no impossibilities.
 # C:\Program Files (x86)\Nmap (key C:/Program Files (x86)/Nmap, mtime 1630618498): 37 files, no impossibilities.
 # C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1653420486): 2898 files, no impossibilities.
 # C:\pspsdk\bin (key C:/pspsdk/bin, mtime 1653191052): 62 files, no impossibilities.
@@ -294,10 +295,9 @@ GNUmakefile:
 
 # strcache performance: lookups = 3491 / hit rate = 1%
 # hash-table stats:
-# Load=3435/8192=42%, R 
-make.exe: *** No rule to make target 'all'.  Stop.
-
-ehash=0, Collisions=1167/3491=33%
-# Finished Make data base on Wed May 25 01:48:08 2022
+# Load=3435/8192=42%, Rehash=0, Collisions=1167/3491=33%
+# Finished Make data base on Wed May 25 03:08:30 2022
 
  
+make.exe: *** No rule to make target 'all'.  Stop.
+

@@ -160,6 +160,7 @@ namespace GFX
 						y_i+=mid_y; 
 
 						if (direction == FORWARD && x_i+playerx>=0 && (int)(end_y-y_i+playery)>=0) {
+							//PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "%s , %d", filename, (int)round((x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery)));
 							draw_buffer[(int)round((x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery))] = *pixel;
 						} else if (direction == BACKWARD && end_x-x_i+playerx>=0 && end_y-y_i+playery>=0) {
 							draw_buffer[(int)round((end_x-x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery))] = *pixel;

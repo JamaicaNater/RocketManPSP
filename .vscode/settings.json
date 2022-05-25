@@ -11,6 +11,13 @@
         "array": "cpp",
         "string": "cpp",
         "string_view": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "exception": "cpp",
+        "limits": "cpp",
+        "*.tcc": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp"
     }
 }
