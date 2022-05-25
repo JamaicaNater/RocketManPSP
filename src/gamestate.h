@@ -29,8 +29,7 @@ private:
 public:
     unsigned int time;
     void init(unsigned char * _noise_map, int _MAP_SIZE);
-    void update_game_time(int _game_time);
-    void update();
+    void update(int _game_time);
     void draw();
     inline GameState();
     inline ~GameState();

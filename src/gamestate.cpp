@@ -21,10 +21,9 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
 
     load_BMP(&rocket.height, &rocket.width, rocket.img_matrix, "assets/missile.bmp");
 }
-void GameState::update_game_time(int _game_time){
+
+void GameState::update(int _game_time){
     game_time = _game_time;
-}
-void GameState::update(){
     player.vector.vel_x = 0;// reset velocity; TODO: slowdown mechanic
     cam_pos_x = get_cam_position(player.vector.x, screen_center, MAP_SIZE);
     sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
@@ -86,19 +85,15 @@ void GameState::update(){
         proj->vector.x = player.weapon.vector.x;
         proj->vector.y = player.weapon.vector.y;
         proj->vector.set_angle(player.weapon.vector.get_angle());
+        proj->vector.direction =player.weapon.vector.direction;
 
         float rad = PI/180.0f * proj->vector.get_angle();
         proj->vector.vel_x = cos(rad) * 10;
         proj->vector.vel_y = sin(rad) * 10;
     }
     
-
-    // TODO: do we need nested ifs?
-    if (player.vector.vel_x > 0) {
-        if (player.vector.x + PLAYER_SPEED <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
-    } else if (player.vector.vel_x < 0) {
-        if (player.vector.x - PLAYER_SPEED >= 0) player.vector.x += player.vector.vel_x;
-    }
+    // DOnt move outside the map
+    if (player.vector.x+player.vector.vel_x > 0 && player.vector.x+player.vector.vel_x <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
 
     for (int i = 0; i < num_projectiles; i++){
         if (projectiles[i]) {
@@ -127,8 +122,7 @@ void GameState::draw(){
     for (int i = 0; i < num_projectiles; i++){
         if (projectiles[i]) {
             PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "rocket: x: %d, y: %d",int(projectiles[i]->vector.x - cam_pos_x), projectiles[i]->vector.y);
-            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, 0, CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, rocket);
-            PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "here");
+            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, rocket);
         }
     }
     GFX::swapBuffers();

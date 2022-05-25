@@ -121,8 +121,7 @@ int main()
 		
 		pspDebugScreenSetXY(0,0);
 
-		state.update_game_time(start_time);
-		state.update();
+		state.update(start_time);
 		state.draw();
 
 		end_time = sceKernelGetSystemTimeLow();

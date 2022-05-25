@@ -89,8 +89,8 @@ namespace GFX
 		
 		// Code to draw at an angle
 		if (rot) {
-			unsigned short playerx = x;
-			unsigned short playery = y;
+			short playerx = x;
+			short playery = y;
 			// if (rot < 0) rot +=360;
 			// rot %= 360;
 
@@ -145,6 +145,8 @@ namespace GFX
 			end_y = start_y + height;
 			start_x = 0;
 			end_x = start_x + width;
+
+			int location = 0;
 			
 			for (int y = start_y; y < end_y; y++){
 				for (int x = start_x; x < end_x; x++){
@@ -159,11 +161,11 @@ namespace GFX
 						x_i+=mid_x; 
 						y_i+=mid_y; 
 
-						if (direction == FORWARD && x_i+playerx>=0 && (int)(end_y-y_i+playery)>=0) {
+						if (direction == FORWARD && valid_pixel(x_i+playerx, end_y-y_i+playery, &location)) {
 							//PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "%s , %d", filename, (int)round((x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery)));
-							draw_buffer[(int)round((x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery))] = *pixel;
-						} else if (direction == BACKWARD && end_x-x_i+playerx>=0 && end_y-y_i+playery>=0) {
-							draw_buffer[(int)round((end_x-x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery))] = *pixel;
+							draw_buffer[location] = *pixel;
+						} else if (direction == BACKWARD && valid_pixel(end_x-x_i+playerx, end_y-y_i+playery, &location)) {
+							draw_buffer[location] = *pixel;
 						}
 					}
 				}
@@ -173,16 +175,6 @@ namespace GFX
 			end_y = y;
 			start_x = x;
 			end_x = x + width;
-			
-			if (end_x < 0) end_x = 0;
-			if (end_y < 0) end_y = 0;
-			if (start_y < 0) start_y = 0;
-			if (start_x < 0) start_x = 0;
-
-			if (end_x >= SCREEN_WIDTH_RES) end_x = SCREEN_WIDTH_RES-1;
-			if (end_y >= SCREEN_WIDTH_RES) end_y = SCREEN_WIDTH_RES-1;
-			if (start_y >= SCREEN_WIDTH_RES) start_y = SCREEN_WIDTH_RES-1;
-			if (start_x >= SCREEN_WIDTH_RES) start_x = SCREEN_WIDTH_RES-1;
 
 			int draw_pos;
 			index = 0;
@@ -194,11 +186,11 @@ namespace GFX
 					if (!is_transparent(*pixel)){
 						
 						if(direction == FORWARD) {
-							draw_pos = (x1) + SCREEN_WIDTH * y1;
-						} else {
-							draw_pos = (start_x + end_x - x1) + SCREEN_WIDTH * y1;
+							valid_pixel(x1, y1, &draw_pos);
+						} else if (direction == BACKWARD) {
+							valid_pixel(start_x + end_x - x1, y1, &draw_pos);
 						}
-
+						//PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "draw at %d", draw_pos);
 						draw_buffer[draw_pos] = *pixel;
 					}
 					index++;
@@ -210,10 +202,13 @@ namespace GFX
 	}
 	
 	bool valid_pixel(int x, int y, int * location) {
-		if (x < 0 || y < 0 || x > SCREEN_WIDTH || y > SCREEN_HEIGHT) return false;
-
-		*location = x + y*512;
-		return true;
+		if (x < 0 || y < 0 || x > SCREEN_WIDTH_RES || y > SCREEN_HEIGHT){
+			*location = SCREEN_WIDTH_RES; //Off screen
+			return false;
+		} else {
+			*location = x + y*SCREEN_WIDTH;
+			return true;
+		}
 	}
 
 	void drawTerrain(unsigned char noise[], int cam_pos_x) {
