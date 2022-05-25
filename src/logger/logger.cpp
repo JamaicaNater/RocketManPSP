@@ -48,6 +48,13 @@ namespace PSP_LOGGER {
         #endif
     }
 
+    /**
+     * @brief If assetion fails log and exit program
+     * 
+     * @param condition 
+     * @param format 
+     * @param ... 
+     */
     void assert_or_log(bool condition, const char * format, ...){
         #ifdef PSP_LOGGING
         if (condition) return;
@@ -61,8 +68,7 @@ namespace PSP_LOGGER {
 
         va_list args;
         char data[128];
-        sceIoWrite(fd, (void*)"CRITICAL", 8); // or strlen(data)
-        sceIoWrite(fd, (void *)": ", 2); // or strlen(data)
+        sceIoWrite(fd, (void*)"CRITICAL:assert_or_log() evaluated false: ", 42);
         va_start( args, format );
         vsprintf(data, format, args);
         va_end( args );

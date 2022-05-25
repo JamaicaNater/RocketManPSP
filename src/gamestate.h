@@ -25,11 +25,30 @@ private:
 
     SceCtrlData ctrlData;
 
-    /* data */
+    void update_player_actions();
+    void update_pyhsics();
 public:
-    unsigned int time;
+    /**
+     * @brief Initialize variabless needed for gamestate, 
+     * prepare sytem for reading controls.
+     * 
+     * @param _noise_map 
+     * @param _MAP_SIZE 
+     */
     void init(unsigned char * _noise_map, int _MAP_SIZE);
+
+    /**
+     * @brief Update player controled actions (controller input),
+     * player uncontrolled actions (AI) and Physics 
+     * 
+     * @param _game_time
+     */
     void update(int _game_time);
+
+    /**
+     * @brief Draw objects present in the game context
+     * 
+     */
     void draw();
     inline GameState();
     inline ~GameState();

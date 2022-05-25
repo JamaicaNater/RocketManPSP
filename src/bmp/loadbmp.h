@@ -2,7 +2,8 @@
 #include <string.h>
 
 /**
- * @brief 
+ * @brief Opens a bmp file as a binary file and get the width hieght and 
+ * pixmap location, after it reads in the pixmap data and stores it
  * 
  * @param height 
  * @param width 

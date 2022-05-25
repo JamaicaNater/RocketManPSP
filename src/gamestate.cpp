@@ -24,6 +24,32 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
 
 void GameState::update(int _game_time){
     game_time = _game_time;
+
+    GameState::update_player_actions();
+
+    GameState::update_pyhsics();
+}
+void GameState::draw(){
+    GFX::drawTerrain(noise_map, cam_pos_x);
+    GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon.image);
+    GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
+
+    for (int i = 0; i < num_projectiles; i++){
+        if (projectiles[i]) {
+            PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "rocket: x: %d, y: %d",int(projectiles[i]->vector.x - cam_pos_x), projectiles[i]->vector.y);
+            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, rocket);
+        }
+    }
+    GFX::swapBuffers();
+    GFX::clear();
+}
+
+/**
+ * @brief Resposible for handling player input, partially responsible for some
+ * physics calculations
+ * 
+ */
+void GameState::update_player_actions() {
     player.vector.vel_x = 0;// reset velocity; TODO: slowdown mechanic
     cam_pos_x = get_cam_position(player.vector.x, screen_center, MAP_SIZE);
     sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
@@ -65,17 +91,6 @@ void GameState::update(int _game_time){
             player.starting_jump_height = player.vector.y;
         }
     }
-    float time = (int)(player.jump_time - game_time)/1000000.0f;
-    if (player.jumping) { //JUMP Physics
-        PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"calcing with time: %f", time);
-        player.vector.y = player.starting_jump_height + player.vector.vel_y*(time*2) + .5 * (player.grav * (time*2) * (time*2) );
-        if (player.vector.y > noise_map[player.vector.x]) {
-            player.jumping = false;
-            player.vector.vel_y = 0;
-            player.starting_jump_height = 0;
-            player.jump_time = 0;
-        }
-    }
 
     if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && num_projectiles < 1) {
         Object * proj = new Object();
@@ -91,7 +106,22 @@ void GameState::update(int _game_time){
         proj->vector.vel_x = cos(rad) * 10;
         proj->vector.vel_y = sin(rad) * 10;
     }
-    
+}
+
+void GameState::update_pyhsics(){
+
+    float time = (int)(player.jump_time - game_time)/1000000.0f;
+    if (player.jumping) { //JUMP Physics
+        PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"calcing with time: %f", time);
+        player.vector.y = player.starting_jump_height + player.vector.vel_y*(time*2) + .5 * (player.grav * (time*2) * (time*2) );
+        if (player.vector.y > noise_map[player.vector.x]) {
+            player.jumping = false;
+            player.vector.vel_y = 0;
+            player.starting_jump_height = 0;
+            player.jump_time = 0;
+        }
+    }
+
     // DOnt move outside the map
     if (player.vector.x+player.vector.vel_x > 0 && player.vector.x+player.vector.vel_x <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
 
@@ -113,18 +143,4 @@ void GameState::update(int _game_time){
 
     player.weapon.vector.x = player.vector.x;
     player.weapon.vector.y = player.vector.y-25;
-}
-void GameState::draw(){
-    GFX::drawTerrain(noise_map, cam_pos_x);
-    GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon.image);
-    GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
-
-    for (int i = 0; i < num_projectiles; i++){
-        if (projectiles[i]) {
-            PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "rocket: x: %d, y: %d",int(projectiles[i]->vector.x - cam_pos_x), projectiles[i]->vector.y);
-            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, rocket);
-        }
-    }
-    GFX::swapBuffers();
-    GFX::clear();
 }

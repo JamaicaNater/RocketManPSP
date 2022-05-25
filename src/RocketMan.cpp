@@ -98,6 +98,8 @@ int main()
 		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 100) + 100; // MIN hieght = 40 max hieght = 150 + 40
 	}
 
+	//memset(noise_map+600, 100, 400);
+
 	unsigned int home_thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
 	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
 	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
