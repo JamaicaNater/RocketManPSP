@@ -127,6 +127,7 @@ int main()
 
 		end_time = sceKernelGetSystemTimeLow();
 		physics_time_delta = (end_time - start_time) / static_cast<float>(1000*1000);
+		printf("fps: %.1f", 1 / (physics_time_delta) );
 		//printf("fps: %.1f, cam_x %d, x: %d, y: %d, angle: %d, cam_lock_l: %d\n cam_lock_r: %d, jump height %d", 1 / (physics_time_delta ), cam_pos_x, player.vector.x, player.vector.y, player.vector.get_angle(), cam_locked_left, cam_locked_right, player.jump_height);
 
 		sceDisplayWaitVblankStart();

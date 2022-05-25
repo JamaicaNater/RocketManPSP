@@ -5,10 +5,16 @@
 #include "utils.h"
 #include "logger/logger.h"
 
+#include "bmp/loadbmp.h"
+
 void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     player.vector.x = 10;
 	player.vector.y = 10;
 	player.vector.direction = FORWARD;
+
+    proj.vector.x = 10;
+    proj.vector.y = 10;
+    proj.vector.direction = FORWARD;
 
     noise_map = _noise_map;
     MAP_SIZE = _MAP_SIZE;
@@ -86,7 +92,10 @@ void GameState::draw(){
     GFX::drawTerrain(noise_map, cam_pos_x);
     GFX::drawBMP(player_draw_pos_x+5, player.vector.y-20, player.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon);
     GFX::drawBMP(player_draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
-    
+
+    for (int i = 0; i < num_projectiles; i++){
+        if (projectiles[i]) GFX::drawBMP(int(projectiles[i]->vector.x - cam_pos_x), projectiles[i]->vector.y, 0, CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, projectiles[i]->image);
+    }
 
     GFX::swapBuffers();
     GFX::clear();

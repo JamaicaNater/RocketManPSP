@@ -63,6 +63,8 @@ namespace GFX
 
 	void drawBMP(int x, int y, short rot, pivots pivot, char direction, const char* filename, uint32_t filter, Image &img)
 	{	
+		//if (x < 0) return;
+
 		unsigned int * &image = img.img_matrix;
 		unsigned int &width = img.width;
 		unsigned int &height = img.height;
@@ -85,7 +87,7 @@ namespace GFX
 		int start_x = x;
 		int end_x = x + width;
 		
-		// Code t draw at an angle
+		// Code to draw at an angle
 		if (rot) {
 			unsigned short playerx = x;
 			unsigned short playery = y;
@@ -170,9 +172,18 @@ namespace GFX
 			end_y = y;
 			start_x = x;
 			end_x = x + width;
+			
+			if (end_x < 0) end_x = 0;
+			if (end_y < 0) end_y = 0;
+			if (start_y < 0) start_y = 0;
+			if (start_x < 0) start_x = 0;
+
+			if (end_x >= SCREEN_WIDTH_RES) end_x = SCREEN_WIDTH_RES-1;
+			if (end_y >= SCREEN_WIDTH_RES) end_y = SCREEN_WIDTH_RES-1;
+			if (start_y >= SCREEN_WIDTH_RES) start_y = SCREEN_WIDTH_RES-1;
+			if (start_x >= SCREEN_WIDTH_RES) start_x = SCREEN_WIDTH_RES-1;
 
 			int draw_pos;
-
 			index = 0;
 			for (int y1 = start_y; y1 > end_y; y1--)
 			{
@@ -216,9 +227,7 @@ namespace GFX
 
 		int y_img_pos = 0, x_img_pos = cam_pos_x;
 		for(int y = 0; y <= SCREEN_HEIGHT; y++) {
-			for(int x = 0; x <= SCREEN_WIDTH; x++) {
-				if (x>SCREEN_WIDTH_RES) break;
-
+			for(int x = 0; x <= SCREEN_WIDTH_RES; x++) {
 				px_index = x + (SCREEN_WIDTH * y);
 				val = noise[x+cam_pos_x];
 				target = &draw_buffer[px_index];
