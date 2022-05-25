@@ -54,7 +54,7 @@ void GameState::update(){
 
     if(ctrlData.Buttons & PSP_CTRL_CROSS) {
         if (player.vector.vel_y == 0) {
-            player.vector.vel_y= 110; // you cant double jump
+            player.vector.vel_y= 90; // you cant double jump
             player.jump_time = sceKernelGetSystemTimeLow();
             player.jumping = true;
             player.starting_jump_height = player.vector.y;
@@ -64,7 +64,7 @@ void GameState::update(){
         float time = (int)(player.jump_time - game_time)/1000000.0f;
     if (player.jumping) {
         PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"calcing with time: %f", time);
-        player.vector.y = player.starting_jump_height + player.vector.vel_y*time + .5 * (player.grav * time * time);
+        player.vector.y = player.starting_jump_height + player.vector.vel_y*(time*2) + .5 * (player.grav * (time*2) * (time*2) );
         if (player.vector.y > noise_map[player.vector.x]) {
             player.jumping = false;
             player.vector.vel_y = 0;

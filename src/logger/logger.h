@@ -16,4 +16,6 @@ namespace PSP_LOGGER {
      * 
      */
     void close_log();
+
+    void assert_or_log(bool condition, const char * format, ...);
 }

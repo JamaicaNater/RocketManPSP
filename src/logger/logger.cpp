@@ -47,6 +47,34 @@ namespace PSP_LOGGER {
         if(fd >= 0) sceIoClose(fd);
         #endif
     }
+
+    void assert_or_log(bool condition, const char * format, ...){
+        #ifdef PSP_LOGGING
+        if (condition) return;
+
+        if (fd<0) {
+            pspDebugScreenInit();
+            pspDebugScreenPrintf("Failed to open logger file at %s, please make sure the path exists, exiting in 10 seconds", logger_file);
+            wait_for(10*1000*1000);
+            sceKernelExitGame();
+        }
+
+        va_list args;
+        char data[128];
+        sceIoWrite(fd, (void*)"CRITICAL", 8); // or strlen(data)
+        sceIoWrite(fd, (void *)": ", 2); // or strlen(data)
+        va_start( args, format );
+        vsprintf(data, format, args);
+        va_end( args );
+        sceIoWrite(fd, data, strlen(data));
+        
+        sceIoWrite(fd, (void *)"\n", 1); // or strlen(data)
+
+        close_log();
+        sceKernelExitGame();
+        
+        #endif
+    }
     
 }
 
