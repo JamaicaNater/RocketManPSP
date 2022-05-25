@@ -21,7 +21,6 @@ private:
     unsigned int game_time = 0;
 
     int cam_pos_x =10, cam_pos_y =10;
-    int player_draw_pos_x = 0;
 	int screen_center = 512/2;
 
     SceCtrlData ctrlData;

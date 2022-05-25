@@ -19,7 +19,8 @@ class Object
 	public:
 	float grav = 110.00f;
 	Image image = Image();
-	//Image weapon = Image();
+	int draw_pos_x; // postion to draw at
+
 	Vector2d vector;
  	Object(Vector2d _vector) {
 		 vector = _vector;
@@ -30,7 +31,7 @@ class Object
 class Person: public Object 
 {
 	public:
-	Image weapon = Image();
+	Object weapon = Object();
 	
 	bool jumping = false;
 	unsigned int jump_time;
