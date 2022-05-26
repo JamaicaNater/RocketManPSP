@@ -14,6 +14,20 @@ struct Image
 	}
 };
 
+struct Animation
+{
+	unsigned int * * img_matrices;
+	unsigned int width;
+	unsigned int height;
+
+	Animation() {
+		img_matrices = NULL;
+		width = 0;
+		height = 0;
+	}
+};
+
+
 class Object
 {
 	public:

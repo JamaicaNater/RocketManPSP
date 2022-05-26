@@ -43,6 +43,8 @@ namespace GFX
 		load_BMP(&sky.height, &sky.width, sky.img_matrix, "assets/sky.bmp");
 		load_BMP(&grass.height, &grass.width, grass.img_matrix, "assets/grass.bmp");
 		load_BMP(&bground.height, &bground.width, bground.img_matrix, "assets/background.bmp");
+
+		
 	}
 
 

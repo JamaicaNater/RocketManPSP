@@ -22,3 +22,6 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
  * @param filename 
  */
 void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename);
+
+int load_BMP_array(unsigned int *height,unsigned int *width, 
+    unsigned int * * &buf, int rows, int cols, const char * filename);

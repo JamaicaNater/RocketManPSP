@@ -96,4 +96,58 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
     fclose(fp);
 }
 
-// int load_BMP_array(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename)
+int load_BMP_array(unsigned int *height,unsigned int *width, 
+    unsigned int * * &buf, int rows, int cols, const char * filename) {
+    
+    FILE *fp = fopen(filename, "rb");
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "loading %s into memory", filename);
+    if(!fp) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to open %s: does the file exist?", filename);
+
+    int pixlmap_location;
+
+    // 10 is Location of pixel data in files
+    fseek(fp, 10, SEEK_SET);
+    fread((void *)(&pixlmap_location), 1, sizeof(int), fp);
+
+    //Load Height and Width info
+    fseek(fp, 18, SEEK_SET);
+    fread((void *)(width), 1, sizeof(unsigned int), fp);
+    fseek(fp, 22, SEEK_SET);
+    fread((void *)(height), 1, sizeof(unsigned int), fp);
+
+    // Ensure that rows and cols evenly divides height and width
+    PSP_LOGGER::assert_or_log(!(*width % cols), "Width of %d is divisible by" 
+    "cols %d", *width, cols);
+    PSP_LOGGER::assert_or_log(!(*height % rows), "Height of %d is divisible by" 
+    "rows %d", *width, cols);
+
+    // Instead of using height and width of the image we now use height and 
+    // of the segment
+    *width/=cols;
+    *height/=rows;
+    int size = *width * *height;
+
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Alocating %d pointers for %d x %d images", rows*cols, *width, *height);
+    buf = (unsigned int **)malloc(sizeof(unsigned int *) * rows * cols);
+    
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Allocating Space");
+    for (int i = 0; i < rows * cols; i++) {
+        buf[i] = (unsigned int *)malloc(size * sizeof(unsigned int));
+        PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Memory Allocation for pointer %d failed in %s", i, filename);
+    }
+
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Reading file");
+    for(int i = 0; i < *height; i ++){
+        fread((unsigned int *)buf[0]+*width*i, sizeof(unsigned int), *width, fp);
+        fseek(fp, pixlmap_location + *width * cols*i*sizeof(unsigned int), SEEK_SET);
+    } 
+
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Formatting pixels");
+    for (int i = 0; i < size; i++) {
+        buf[0][i] = format_pixel(buf[0][i]);
+    }
+    
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Succesfuly loaded %s", filename);
+    fclose(fp);
+    return 1;
+}
