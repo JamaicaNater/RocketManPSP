@@ -7,8 +7,8 @@
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 
-	Animation explosion;
-	Image ex1[25];
+	Animation explosion(5, 5, 70*1000, "assets/explosion.bmp");
+	//Image ex1[25];
 
 void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     player.vector.x = 10;
@@ -21,15 +21,15 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
-    load_BMP(&rocket.height, &rocket.width, rocket.img_matrix, "assets/missile.bmp");
+    load_BMP(rocket);
 
-    load_BMP_array(&explosion.height, &explosion.width, explosion.img_matrices, 5,5,"assets/explosion.bmp");
+    load_BMP(explosion);
 	
-    for(int i = 0; i < 25; i++) {
-        ex1[i].height = explosion.height;
-        ex1[i].width = explosion.width;
-        ex1[i].img_matrix = explosion.img_matrices[i];
-    }
+    // for(int i = 0; i < 25; i++) {
+    //     ex1[i].height = explosion.height;
+    //     ex1[i].width = explosion.width;
+    //     ex1[i].img_matrix = explosion.img_matrices[i];
+    // }
 
 }
 
@@ -52,7 +52,7 @@ void GameState::draw(){
         }
     }
 
-    GFX::drawBMP(150,150, 0, CENTER, FORWARD, "", 0,ex1[player.vector.x%25]);
+    //GFX::drawBMP(150,150, 0, CENTER, FORWARD, "", 0,ex1[player.vector.x%25]);
     GFX::swapBuffers();
     GFX::clear();
 }

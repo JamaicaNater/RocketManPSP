@@ -19,10 +19,10 @@ namespace GFX
 	uint32_t* draw_buffer,
 			* disp_buffer;
 
-	Image dirt;
-	Image sky;
-	Image grass;
-	Image bground;
+	Image dirt("assets/dirt.bmp");
+	Image sky("assets/sky.bmp");
+	Image grass("assets/grass.bmp");
+	Image bground("assets/background.bmp");
 
 
 	bool is_transparent(unsigned int pixel) {
@@ -39,10 +39,10 @@ namespace GFX
 	}
 
 	void load_terrain_textures() {
-		load_BMP(&dirt.height, &dirt.width, dirt.img_matrix, "assets/dirt.bmp");
-		load_BMP(&sky.height, &sky.width, sky.img_matrix, "assets/sky.bmp");
-		load_BMP(&grass.height, &grass.width, grass.img_matrix, "assets/grass.bmp");
-		load_BMP(&bground.height, &bground.width, bground.img_matrix, "assets/background.bmp");
+		load_BMP(dirt);
+		load_BMP(sky);
+		load_BMP(grass);
+		load_BMP(bground);
 
 		
 	}
@@ -65,7 +65,7 @@ namespace GFX
 
 	void drawBMP(int x, int y, short rot, pivots pivot, char direction, const char* filename, uint32_t filter, Image &img)
 	{	
-		//if (x < 0) return;
+		PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "Attempting to draw %s", filename);
 
 		unsigned int * &image = img.img_matrix;
 		unsigned int &width = img.width;
@@ -73,7 +73,7 @@ namespace GFX
 		
 		// If there is not a image present generate one and store it
 		if (!image) {
-			load_BMP(&height, &width, image, filename);			
+			load_BMP(img);			
 		} 
 
 		//TODO create list of images in memory to be freed in the case of no more memory		

@@ -3,6 +3,7 @@
 #include "loadbmp.h"
 #include "stdlib.h"
 #include "math.h"
+
 #include "../utils.h"
 #include "../logger/logger.h"
 
@@ -14,7 +15,13 @@ unsigned int format_pixel(unsigned int data)
     return (data&0xFF000000) | ((data&0xFF000000)>>24 | (data&0x00FF0000)>>8 | (data&0x0000FF00)<<8 | (data&0x000000FF)<<24)>>8;
 }
 
-int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename) {
+int load_BMP(Image &img) {
+    char * &filename = img.filename;
+
+    unsigned int * &buf = img.img_matrix;
+    unsigned int &height = img.height;
+    unsigned int &width = img.width;
+
     FILE *fp = fopen(filename, "rb");
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "loading %s into memory", filename);
     if(!fp) {
@@ -29,14 +36,14 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
 
     //Load Height and Width info
     fseek(fp, 18, SEEK_SET);
-    fread((void *)(width), 1, 4, fp);
+    fread((void *)(&width), 1, 4, fp);
     fseek(fp, 22, SEEK_SET);
-    fread((void *)(height), 1, 4, fp);
+    fread((void *)(&height), 1, 4, fp);
 
 
     fseek(fp, pixlmap_location, SEEK_SET);
 
-    int size = *width * *height;
+    int size = width * height;
     
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Allocating Space");
     if (size * sizeof(unsigned int) > 65536) {
@@ -47,7 +54,7 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
     buf = (unsigned int *)malloc(size * sizeof(unsigned int));
     if (!buf) {
         PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Program failed attpeting to "
-        "allocate space for %s: %d x %d is likely too big!", filename, *width, *height);
+        "allocate space for %s: %d x %d is likely too big!", filename, width, height);
     }
 
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Reading file");
@@ -108,8 +115,14 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
     fclose(fp);
 }
 
-int load_BMP_array(unsigned int *height,unsigned int *width, 
-    unsigned int * * &buf, int rows, int cols, const char * filename) {
+int load_BMP(Animation &anim) {
+    char * &filename = anim.filename;
+    unsigned int &rows = anim.rows;
+    unsigned int &cols = anim.cols;
+
+    unsigned int &height = anim.height;
+    unsigned int &width = anim.width;
+    unsigned int ** &buf = anim.img_matrices;
     
     FILE *fp = fopen(filename, "rb");
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "loading %s into memory", filename);
@@ -126,27 +139,27 @@ int load_BMP_array(unsigned int *height,unsigned int *width,
 
     //Load Height and Width info
     fseek(fp, 18, SEEK_SET);
-    fread((void *)(width), 1, sizeof(unsigned int), fp);
+    fread((void *)(&width), 1, sizeof(unsigned int), fp);
     fseek(fp, 22, SEEK_SET);
-    fread((void *)(height), 1, sizeof(unsigned int), fp);
+    fread((void *)(&height), 1, sizeof(unsigned int), fp);
 
     // Ensure that rows and cols evenly divides height and width
-    PSP_LOGGER::assert_or_log(!(*width % cols), "Width of %d is divisible by" 
-    "cols %d", *width, cols);
-    PSP_LOGGER::assert_or_log(!(*height % rows), "Height of %d is divisible by" 
-    "rows %d", *width, cols);
+    PSP_LOGGER::assert_or_log(!(width % cols), "Width of %d is divisible by" 
+    "cols %d", width, cols);
+    PSP_LOGGER::assert_or_log(!(height % rows), "Height of %d is divisible by" 
+    "rows %d", width, cols);
 
-    const int BIG_WIDTH = *width;
-    const int BIG_HEIGHT = *height;
+    const int BIG_WIDTH = width;
+    const int BIG_HEIGHT = height;
 
     // Instead of using height and width of the image we now use height and 
     // of the segment
-    *width/=cols;
-    *height/=rows;
-    int size = *width * *height;
+    width/=cols;
+    height/=rows;
+    int size = width * height;
 
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Alocating %d pointers for %d x %d "
-    "images", rows*cols, *width, *height);
+    "images", rows*cols, width, height);
     buf = (unsigned int **)malloc(sizeof(unsigned int *) * rows * cols);
     
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Allocating Space");
@@ -169,12 +182,12 @@ int load_BMP_array(unsigned int *height,unsigned int *width,
     int read_from = 0;
     int write_to = 0;
     for(int i = 0; i < BIG_HEIGHT; i ++){
-        cur_row = rows -  (i / *height) - 1;
+        cur_row = rows -  (i / height) - 1;
         for (int cur_col = 0; cur_col < cols; cur_col++) {
-            write_to = (i+cur_col) * *width;
-            read_from = BIG_WIDTH*i + (cur_col * *width);
+            write_to = (i+cur_col) * width;
+            read_from = BIG_WIDTH*i + (cur_col * width);
             fseek(fp, pixlmap_location + read_from * sizeof(unsigned int), SEEK_SET);
-            fread((unsigned int *)&buf[cur_row*rows + cur_col][write_to], sizeof(unsigned int), *width, fp);
+            fread((unsigned int *)&buf[cur_row*rows + cur_col][write_to], sizeof(unsigned int), width, fp);
         }
     } 
 

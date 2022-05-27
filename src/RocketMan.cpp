@@ -50,7 +50,8 @@ void setupCallbacks()
  * @brief Code written to interrupt the code for the home page
  * 
  * @param args size of argp in bytes
- * @param argp bytes 0-3: ID of the background thread. bytes 4-7: ID of the main thread.
+ * @param argp bytes 0-3: ID of the background thread. 
+ * 			   bytes 4-7: ID of the main thread.
  * @return int 
  */
 int interrupt_titlescreen(SceSize args, void* argp){
