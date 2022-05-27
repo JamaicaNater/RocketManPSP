@@ -7,13 +7,13 @@
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 
-	Animation explosion(5, 5, 70*1000, "assets/explosion.bmp");
-	//Image ex1[25];
+Animation explosion(5, 5, 70*1000, "assets/explosion.bmp");
 
 void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     player.vector.x = 10;
 	player.vector.y = 10;
 	player.vector.direction = FORWARD;
+    player.weapon.image = Image("assets/player_rocket.bmp");
 
     noise_map = _noise_map;
     MAP_SIZE = _MAP_SIZE;
@@ -21,15 +21,11 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
+    explosion.last_updated =0;
+
     load_BMP(rocket);
 
     load_BMP(explosion);
-	
-    // for(int i = 0; i < 25; i++) {
-    //     ex1[i].height = explosion.height;
-    //     ex1[i].width = explosion.width;
-    //     ex1[i].img_matrix = explosion.img_matrices[i];
-    // }
 
 }
 
@@ -43,6 +39,7 @@ void GameState::update(int _game_time){
 void GameState::draw(){
     GFX::drawTerrain(noise_map, cam_pos_x);
     GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon.image);
+    //PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "explosion ptr: %0x, width: %d, file %s", player.weapon.image.img_matrix, player.weapon.image.width, player.image.filename);
     GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
 
     for (int i = 0; i < num_projectiles; i++){
@@ -52,7 +49,9 @@ void GameState::draw(){
         }
     }
 
-    //GFX::drawBMP(150,150, 0, CENTER, FORWARD, "", 0,ex1[player.vector.x%25]);
+    exp_frame = explosion.get_next_frame(game_time);
+    GFX::drawBMP(150,150, 0, CENTER, FORWARD, "", 0,exp_frame);
+
     GFX::swapBuffers();
     GFX::clear();
 }

@@ -65,17 +65,16 @@ namespace GFX
 
 	void drawBMP(int x, int y, short rot, pivots pivot, char direction, const char* filename, uint32_t filter, Image &img)
 	{	
-		PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "Attempting to draw %s", filename);
-
 		unsigned int * &image = img.img_matrix;
 		unsigned int &width = img.width;
 		unsigned int &height = img.height;
-		
 		// If there is not a image present generate one and store it
 		if (!image) {
+			PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "call loadBMP on %s", img.filename);
 			load_BMP(img);			
 		} 
 
+		//PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "Attempting to draw %s: %d x %d", filename, width, height);
 		//TODO create list of images in memory to be freed in the case of no more memory		
 
 		//TODO: change behaivor of function such that the program stticty draw at the passed in x and y positions

@@ -12,8 +12,10 @@ private:
     int MAP_SIZE;
     unsigned char * noise_map;
 
-    Person player = Person("assets/player.bmp");
+    Person player = Person(Image("assets/player.bmp"));
     Image rocket = Image("assets/missile.bmp");
+
+    Image exp_frame = Image(""); // TODO: fix error prone nature of this constructer
 
     Object * projectiles[MAX_PROJ] = {NULL};
     int num_projectiles = 0;

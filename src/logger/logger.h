@@ -1,3 +1,5 @@
+#pragma once
+
 #include <stdio.h>
 
 namespace PSP_LOGGER {
