@@ -8,7 +8,7 @@
 #include "bmp/loadbmp.h"
 
 	Animation explosion;
-	Image ex1;
+	Image ex1[25];
 
 void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     player.vector.x = 10;
@@ -24,10 +24,13 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     load_BMP(&rocket.height, &rocket.width, rocket.img_matrix, "assets/missile.bmp");
 
     load_BMP_array(&explosion.height, &explosion.width, explosion.img_matrices, 5,5,"assets/explosion.bmp");
-		ex1.height = explosion.height;
-		ex1.width = explosion.width;
-		ex1.img_matrix = explosion.img_matrices[0];
-    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Explosion width:%d, height%d", ex1.width, ex1.height);
+	
+    for(int i = 0; i < 25; i++) {
+        ex1[i].height = explosion.height;
+        ex1[i].width = explosion.width;
+        ex1[i].img_matrix = explosion.img_matrices[i];
+    }
+
 }
 
 void GameState::update(int _game_time){
@@ -49,7 +52,7 @@ void GameState::draw(){
         }
     }
 
-    GFX::drawBMP(50,50, 0, CENTER, FORWARD, "", 0,ex1);
+    GFX::drawBMP(150,150, 0, CENTER, FORWARD, "", 0,ex1[player.vector.x%25]);
     GFX::swapBuffers();
     GFX::clear();
 }

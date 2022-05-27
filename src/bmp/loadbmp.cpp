@@ -6,6 +6,8 @@
 #include "../utils.h"
 #include "../logger/logger.h"
 
+int bmp_mem=0;
+
 unsigned int format_pixel(unsigned int data)
 {
     // Used to Format Pixels from ARGB to ABGR for the PSP display
@@ -37,6 +39,7 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
     // }
     
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Allocating Space");
+    if (size * sizeof(unsigned int) > 65536) PSP_LOGGER::psp_log(PSP_LOGGER::WARNING, "Attempting to allocate %f kb of space", size * sizeof(unsigned int)/1024.0f);
     try {
         buf = new unsigned int[size];
     } catch (std::exception &e) {
@@ -50,8 +53,9 @@ int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, cons
     for (int i = 0; i < size; i++) {
         buf[i] = format_pixel(buf[i]);
     }
-    
-    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Succesfuly loaded %s", filename);
+
+    bmp_mem += size*sizeof(unsigned int);
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Succesfuly loaded %s, %f kb used by bmps", filename, bmp_mem/1024.0f);
     fclose(fp);
     return 1;
 }
@@ -121,6 +125,9 @@ int load_BMP_array(unsigned int *height,unsigned int *width,
     PSP_LOGGER::assert_or_log(!(*height % rows), "Height of %d is divisible by" 
     "rows %d", *width, cols);
 
+    const int BIG_WIDTH = *width;
+    const int BIG_HEIGHT = *height;
+
     // Instead of using height and width of the image we now use height and 
     // of the segment
     *width/=cols;
@@ -131,23 +138,38 @@ int load_BMP_array(unsigned int *height,unsigned int *width,
     buf = (unsigned int **)malloc(sizeof(unsigned int *) * rows * cols);
     
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Allocating Space");
+    if (size * rows * cols * sizeof(unsigned int) > 65536) PSP_LOGGER::psp_log(PSP_LOGGER::WARNING, "Attempting to allocate %f kb of space", size * rows * cols * sizeof(unsigned int)/1024.0f);
+    
     for (int i = 0; i < rows * cols; i++) {
-        buf[i] = (unsigned int *)malloc(size * sizeof(unsigned int));
-        PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Memory Allocation for pointer %d failed in %s", i, filename);
+        buf[i] = (unsigned int *)malloc(size * sizeof(unsigned int *));
+        if (!buf[i]) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Memory Allocation for pointer %d failed in %s", i, filename);
     }
 
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Reading file");
-    for(int i = 0; i < *height; i ++){
-        fread((unsigned int *)buf[0]+*width*i, sizeof(unsigned int), *width, fp);
-        fseek(fp, pixlmap_location + *width * cols*i*sizeof(unsigned int), SEEK_SET);
+    int cur_row = rows-1;
+    int cur_col = 0;
+    int read_from = 0;
+    int write_to = 0;
+    for(int i = 0; i < BIG_HEIGHT; i ++){
+        cur_row = rows -  (i / *height) - 1;
+        for (int cur_col = 0; cur_col < cols; cur_col++) {
+            write_to = (i+cur_col) * *width;
+            read_from = BIG_WIDTH*i + (cur_col * *width);
+            fseek(fp, pixlmap_location + read_from * sizeof(unsigned int), SEEK_SET);
+            fread((unsigned int *)&buf[cur_row*rows + cur_col][write_to], sizeof(unsigned int), *width, fp);
+            //PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Read from pixelmap + %d, into buf[%d][%d]",read_from * cols, cur_row*rows + cur_col, write_to);
+        }
     } 
 
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Formatting pixels");
-    for (int i = 0; i < size; i++) {
-        buf[0][i] = format_pixel(buf[0][i]);
+    for (int i = 0; i < rows * cols; i++){
+        for (int j = 0; j < size; j++) {
+            buf[i][j] = format_pixel(buf[i][j]);
+        }
     }
     
-    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Succesfuly loaded %s", filename);
+    bmp_mem += rows * cols* size*sizeof(unsigned int);
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Succesfuly loaded %s, %f kb used by bmps", filename, bmp_mem/1024.0f);
     fclose(fp);
     return 1;
 }

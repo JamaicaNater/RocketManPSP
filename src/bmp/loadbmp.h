@@ -14,7 +14,7 @@
 int load_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename);
 
 /**
- * @brief 
+ * @brief to be removed in favor of load BMP, remant from before realized i could increse the memory size
  * 
  * @param height 
  * @param width 
