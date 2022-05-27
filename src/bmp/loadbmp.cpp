@@ -175,16 +175,16 @@ int load_BMP(Animation &anim) {
 
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Reading file");
     int cur_row = rows-1;
-    int cur_col = 0;
     int read_from = 0;
     int write_to = 0;
     for(int i = 0; i < BIG_HEIGHT; i ++){
         cur_row = rows -  (i / height) - 1;
         for (int cur_col = 0; cur_col < cols; cur_col++) {
-            write_to = (i+cur_col) * width;
+            write_to = (i%height+cur_col) * width;
             read_from = BIG_WIDTH*i + (cur_col * width);
             fseek(fp, pixlmap_location + read_from * sizeof(unsigned int), SEEK_SET);
             fread((unsigned int *)&buf[cur_row*rows + cur_col][write_to], sizeof(unsigned int), width, fp);
+            //PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Indexing %d at %d",cur_row*rows + cur_col, write_to );
         }
     } 
 

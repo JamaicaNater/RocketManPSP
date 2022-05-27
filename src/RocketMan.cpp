@@ -46,6 +46,8 @@ void setupCallbacks()
 }
 // End of boilerplate PSP code
 
+
+// TODO: run this in the home thread instead
 /**
  * @brief Code written to interrupt the code for the home page
  * 

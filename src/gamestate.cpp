@@ -7,7 +7,7 @@
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 
-Animation explosion(5, 5, 70*1000, "assets/explosion.bmp");
+Animation explosion(5, 5, 50*1000, "assets/explosion.bmp");
 
 void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     player.vector.x = 10;
@@ -22,6 +22,7 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
     explosion.last_updated =0;
+    exp_obj.vector = Vector2d(150,150);
 
     load_BMP(rocket);
 
@@ -34,30 +35,43 @@ void GameState::update(int _game_time){
 
     GameState::update_player_actions();
 
-    GameState::update_pyhsics();
-}
-void GameState::draw(){
-    GFX::drawTerrain(noise_map, cam_pos_x);
-    GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon.image);
-    //PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "explosion ptr: %0x, width: %d, file %s", player.weapon.image.img_matrix, player.weapon.image.width, player.image.filename);
-    GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
+    GameState::update_nonplayer_actions();
 
-    for (int i = 0; i < num_projectiles; i++){
-        if (projectiles[i]) {
-            PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "rocket: x: %d, y: %d",int(projectiles[i]->vector.x - cam_pos_x), projectiles[i]->vector.y);
-            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, rocket);
-        }
-    }
-
-    exp_frame = explosion.get_next_frame(game_time);
-    GFX::drawBMP(150,150, 0, CENTER, FORWARD, "", 0,exp_frame);
-
-    GFX::swapBuffers();
-    GFX::clear();
+    GameState::update_physics();
 }
 
 /**
- * @brief Resposible for handling player input, partially responsible for some
+ * @brief Responsible for handling actions not directly caused by the player ie.
+ * certain animations, enemies and damage and collision events
+ * 
+ */
+void GameState::update_nonplayer_actions() {
+    for (int i = 0; i < num_projectiles; i++){
+        if (projectiles[i]) {
+            projectiles[i]->vector.y+=projectiles[i]->vector.vel_y;
+            projectiles[i]->vector.x+=projectiles[i]->vector.vel_x;
+            projectiles[i]->draw_pos_x = projectiles[i]->vector.x - cam_pos_x;
+
+            if (projectiles[i]->vector.y >= noise_map[projectiles[i]->vector.x]){ // Collision with floor
+                    exp_obj.vector.x = projectiles[i]->vector.x;
+                    exp_obj.vector.y = projectiles[i]->vector.y *1.5;
+                    explosion.animate = true;
+
+                    PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "Exploded projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
+                    free(projectiles[i]); // TODO num_projectiles?
+                    num_projectiles--;
+            } else if (projectiles[i]->off_screen()) {
+                    PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "Freed projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
+                    free(projectiles[i]); // TODO num_projectiles?
+                    num_projectiles--;
+            }
+
+        }
+    }
+}
+
+/**
+ * @brief Responsible for handling player input, partially responsible for some
  * physics calculations
  * 
  */
@@ -120,13 +134,12 @@ void GameState::update_player_actions() {
     }
 }
 
-void GameState::update_pyhsics(){
+void GameState::update_physics(){
 
     float time = (int)(player.jump_time - game_time)/1000000.0f;
     if (player.jumping) { //JUMP Physics
-        PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG,"calcing with time: %f", time);
-        player.vector.y = player.starting_jump_height + player.vector.vel_y*(time*2) + .5 * (player.grav * (time*2) * (time*2) );
-        if (player.vector.y > noise_map[player.vector.x]) {
+        player.vector.y = player.jump_height_at(time);
+        if (player.vector.y > noise_map[player.vector.x]) { // End of jump
             player.jumping = false;
             player.vector.vel_y = 0;
             player.starting_jump_height = 0;
@@ -137,22 +150,25 @@ void GameState::update_pyhsics(){
     // DOnt move outside the map
     if (player.vector.x+player.vector.vel_x > 0 && player.vector.x+player.vector.vel_x <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
 
+    player.weapon.vector.x = player.vector.x;
+    player.weapon.vector.y = player.vector.y-25;
+}
+
+void GameState::draw(){
+    GFX::drawTerrain(noise_map, cam_pos_x);
+    GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon.image);
+    GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
+
     for (int i = 0; i < num_projectiles; i++){
         if (projectiles[i]) {
-            projectiles[i]->vector.y+=projectiles[i]->vector.vel_y;
-            projectiles[i]->vector.x+=projectiles[i]->vector.vel_x;
-            projectiles[i]->draw_pos_x+=projectiles[i]->vector.vel_x;
-            projectiles[i]->draw_pos_x = projectiles[i]->vector.x - cam_pos_x;
-
-            if (projectiles[i]->draw_pos_x > SCREEN_WIDTH_RES + 50 || projectiles[i]->draw_pos_x < -50
-                || projectiles[i]->vector.y > SCREEN_HEIGHT + 50 || projectiles[i]->vector.y < -50) {
-                    PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "Freed projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
-                    free(projectiles[i]); // TODO num_projectiles?
-                    num_projectiles--;
-                }
+            PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "rocket: x: %d, y: %d",int(projectiles[i]->vector.x - cam_pos_x), projectiles[i]->vector.y);
+            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, rocket);
         }
     }
 
-    player.weapon.vector.x = player.vector.x;
-    player.weapon.vector.y = player.vector.y-25;
+    exp_obj.image = explosion.get_next_frame(game_time,1);
+    if(explosion.animate) GFX::drawBMP(exp_obj.vector.x - cam_pos_x, exp_obj.vector.y, 0, CENTER, FORWARD, "", 0,exp_obj.image);
+
+    GFX::swapBuffers();
+    GFX::clear();
 }

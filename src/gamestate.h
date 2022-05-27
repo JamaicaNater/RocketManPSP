@@ -3,6 +3,7 @@
 #include <pspctrl.h>
 #include "Projectile.hpp"
 
+// TODO make singleton
 class GameState
 {
 private:
@@ -15,10 +16,11 @@ private:
     Person player = Person(Image("assets/player.bmp"));
     Image rocket = Image("assets/missile.bmp");
 
-    Image exp_frame = Image(""); // TODO: fix error prone nature of this constructer
-
     Object * projectiles[MAX_PROJ] = {NULL};
     int num_projectiles = 0;
+
+
+    Object exp_obj = Object(""); // TODO: fix error prone nature of this constructor
     
     unsigned int game_time = 0;
 
@@ -27,12 +29,13 @@ private:
 
     SceCtrlData ctrlData;
 
+    void update_nonplayer_actions();
     void update_player_actions();
-    void update_pyhsics();
+    void update_physics();
 public:
     /**
-     * @brief Initialize variabless needed for gamestate, 
-     * prepare sytem for reading controls.
+     * @brief Initialize variables needed for GameState, 
+     * prepare system for reading controls.
      * 
      * @param _noise_map 
      * @param _MAP_SIZE 
@@ -40,7 +43,7 @@ public:
     void init(unsigned char * _noise_map, int _MAP_SIZE);
 
     /**
-     * @brief Update player controled actions (controller input),
+     * @brief Update player controlled actions (controller input),
      * player uncontrolled actions (AI) and Physics 
      * 
      * @param _game_time
