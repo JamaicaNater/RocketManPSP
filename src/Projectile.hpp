@@ -65,18 +65,19 @@ struct Animation
 	Image get_next_frame(int time, int repetitions){
 		int curr_frame = next_frame;
 
-		if (time > last_updated + frame_time){
+		if (time > (last_updated + frame_time)){
 			next_frame++;
 			next_frame%=(rows * cols);
 			last_updated = time;
 
-			if (curr_frame > rows*cols -2) {
-				repetitions--;
-			}
+			if (curr_frame > rows*cols -2) repetitions--;
 			if (!repetitions) animate = false;			
 		}
-		//PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "frame :%d", curr_frame);
 		return(Image(height, width, img_matrices[curr_frame], ".."));
+	}
+
+	void reset() {
+		next_frame = 0;
 	}
 
 	Animation(unsigned int _rows, unsigned int _cols, unsigned int _frame_time, const char * _filename) {
@@ -99,7 +100,7 @@ struct Animation
 class Object
 {
 	public:
-	float grav = 110.00f;
+	float grav = 60.0f;
 	Image image;
 	int draw_pos_x; // postion to draw at
 

@@ -2,8 +2,8 @@ struct Vector2d {
     private:
         short angle;
     public:
-    short x, y;
-    short vel_x, vel_y, acc_x, acc_y;
+    short x_i=0, y_i=0, x=0, y=0, vel_x=0, vel_y=0, acc_x=0, acc_y=0;
+    unsigned int created_at;
     bool direction;
 
     Vector2d() {

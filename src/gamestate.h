@@ -19,7 +19,7 @@ private:
     Object * projectiles[MAX_PROJ] = {NULL};
     int num_projectiles = 0;
 
-
+    Animation explosion = Animation(5, 5, 30*1000, "assets/explosion.bmp");
     Object exp_obj = Object(""); // TODO: fix error prone nature of this constructor
     
     unsigned int game_time = 0;
