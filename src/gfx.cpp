@@ -63,7 +63,7 @@ namespace GFX
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, PSP_DISPLAY_SETBUF_NEXTFRAME);
 	}
 
-	void drawBMP(int x, int y, short rot, pivots pivot, char direction, const char* filename, uint32_t filter, Image &img)
+	void drawBMP(int x, int y, short rot, pivots pivot, char direction, uint32_t filter, Image &img)
 	{	
 		unsigned int * &image = img.img_matrix;
 		unsigned int &width = img.width;
@@ -134,7 +134,7 @@ namespace GFX
 				break;
 			\
 			default:
-				PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to match a pivot for %s", filename);
+				PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Failed to match a pivot for %s", img.filename);
 				break;
 			}
 

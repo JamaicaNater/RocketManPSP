@@ -67,7 +67,7 @@ namespace GFX
 	 * @param filter - TBD
 	 * @param image 
 	 */
-	void drawBMP(int x, int y, short rot, pivots pivot, char direction, const char* filename, uint32_t filter, Image &image);
+	void drawBMP(int x, int y, short rot, pivots pivot, char direction, uint32_t filter, Image &image);
 
 	/**
 	 * @brief Creates a looping titlescreen that a separate thread terminates upon start button being pressed

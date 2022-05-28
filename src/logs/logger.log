@@ -25,37 +25,59 @@ INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/missile.bmp, 86.562500 kb used by bmps
 INFO: loading assets/explosion.bmp into memory
-INFO: Alocating 25 pointers for 176 x 171 images
+INFO: Alocating 15 pointers for 159 x 137 images
 INFO: Allocating Space
-WARNING: Attempting to allocate 2939.062500 kb of space
+WARNING: Attempting to allocate 1276.347656 kb of space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/explosion.bmp, 3025.625000 kb used by bmps
+INFO: Succesfuly loaded assets/explosion.bmp, 1362.910156 kb used by bmps
 DEBUG: call loadBMP on assets/player_rocket.bmp
 INFO: loading assets/player_rocket.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/player_rocket.bmp, 3026.343750 kb used by bmps
+INFO: Succesfuly loaded assets/player_rocket.bmp, 1363.628906 kb used by bmps
 DEBUG: call loadBMP on assets/player.bmp
 INFO: loading assets/player.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/player.bmp, 3029.343750 kb used by bmps
-INFO: Freed projectile 0 located at scr_x535, y3
-INFO: Freed projectile 0 located at scr_x274, y-51
-INFO: Freed projectile 0 located at scr_x120, y-53
-INFO: Freed projectile 0 located at scr_x76, y-54
-INFO: Exploded projectile 0 located at scr_x312, y113
-INFO: Freed projectile 0 located at scr_x536, y-14
-INFO: Freed projectile 0 located at scr_x539, y87
-INFO: Freed projectile 0 located at scr_x539, y87
-INFO: Exploded projectile 0 located at scr_x390, y133
-INFO: Exploded projectile 0 located at scr_x390, y133
-INFO: Exploded projectile 0 located at scr_x395, y143
-INFO: Exploded projectile 0 located at scr_x436, y120
-INFO: Exploded projectile 0 located at scr_x463, y111
-INFO: Exploded projectile 0 located at scr_x398, y133
-INFO: Exploded projectile 0 located at scr_x398, y133
-INFO: Exploded projectile 0 located at scr_x398, y133
+INFO: Succesfuly loaded assets/player.bmp, 1366.628906 kb used by bmps
+INFO: Exploded projectile 0 located at scr_x272, y144
+INFO: Exploded projectile 0 located at scr_x272, y144
+INFO: Exploded projectile 0 located at scr_x272, y144
+INFO: Exploded projectile 0 located at scr_x230, y155
+INFO: Exploded projectile 0 located at scr_x230, y155
+INFO: Exploded projectile 0 located at scr_x230, y155
+INFO: Exploded projectile 0 located at scr_x230, y155
+INFO: Exploded projectile 0 located at scr_x230, y155
+INFO: Exploded projectile 0 located at scr_x386, y161
+INFO: Exploded projectile 0 located at scr_x386, y161
+INFO: Exploded projectile 0 located at scr_x386, y161
+INFO: Exploded projectile 0 located at scr_x386, y161
+INFO: Exploded projectile 0 located at scr_x386, y161
+INFO: Exploded projectile 0 located at scr_x386, y161
+INFO: Exploded projectile 0 located at scr_x383, y133
+INFO: Exploded projectile 0 located at scr_x383, y135
+INFO: Exploded projectile 0 located at scr_x375, y150
+INFO: Exploded projectile 0 located at scr_x383, y133
+INFO: Exploded projectile 0 located at scr_x383, y133
+INFO: Exploded projectile 0 located at scr_x395, y116
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Exploded projectile 0 located at scr_x402, y144

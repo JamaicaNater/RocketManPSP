@@ -89,7 +89,7 @@ struct Animation
 		strncpy(filename, _filename, str_size-1);
 
 		rows = _rows;
-		cols = _rows;
+		cols = _cols;
 	}
 
 	~Animation() {

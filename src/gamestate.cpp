@@ -123,7 +123,7 @@ void GameState::update_physics(){
 
             if (projectiles[i]->vector.y >= noise_map[projectiles[i]->vector.x]){ // Collision with floor
                     exp_obj.vector.x = projectiles[i]->vector.x;
-                    exp_obj.vector.y = projectiles[i]->vector.y *1.5;
+                    exp_obj.vector.y = projectiles[i]->vector.y;
                     explosion.animate = true;
                     explosion.reset();
 
@@ -159,18 +159,18 @@ void GameState::update_physics(){
 
 void GameState::draw(){
     GFX::drawTerrain(noise_map, cam_pos_x);
-    GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, "assets/player_rocket.bmp", 0, player.weapon.image);
-    GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, "assets/player.bmp", 0, player.image);
+    GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
+    GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, 0, player.image);
 
     for (int i = 0; i < num_projectiles; i++){
         if (projectiles[i]) {
-            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, "assets/missile.bmp", 0, rocket);
+            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, 0, rocket);
         }
     }
 
     if(explosion.animate) {
         exp_obj.image = explosion.get_next_frame(game_time,1);
-        GFX::drawBMP(exp_obj.vector.x - cam_pos_x, exp_obj.vector.y, 0, CENTER, FORWARD, "", 0,exp_obj.image);
+        GFX::drawBMP(exp_obj.vector.x - cam_pos_x, exp_obj.vector.y, exp_obj.vector.get_angle(), CENTER, FORWARD, 0,exp_obj.image);
     }
 
     GFX::swapBuffers();

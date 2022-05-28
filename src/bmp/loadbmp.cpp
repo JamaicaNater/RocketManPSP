@@ -144,7 +144,7 @@ int load_BMP(Animation &anim) {
     PSP_LOGGER::assert_or_log(!(width % cols), "Width of %d is divisible by" 
     "cols %d", width, cols);
     PSP_LOGGER::assert_or_log(!(height % rows), "Height of %d is divisible by" 
-    "rows %d", width, cols);
+    "rows %d", height, rows);
 
     const int BIG_WIDTH = width;
     const int BIG_HEIGHT = height;
