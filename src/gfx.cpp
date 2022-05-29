@@ -42,11 +42,8 @@ namespace GFX
 		load_BMP(dirt);
 		load_BMP(sky);
 		load_BMP(grass);
-		load_BMP(bground);
-
-		
+		load_BMP(bground);		
 	}
-
 
 	void clear()
 	{

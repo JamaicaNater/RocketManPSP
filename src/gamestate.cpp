@@ -19,13 +19,33 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
-    explosion.last_updated =0;
+    explosion.last_updated = 0;
     exp_obj.vector = Vector2d(150,150);
 
     load_BMP(rocket);
-
     load_BMP(explosion);
+}
 
+void GameState::title_screen() {
+    unsigned int home_thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
+	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
+	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
+	int main_thid = sceKernelGetThreadId();
+	if (main_thid<0) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "failed to obtain main thread ID");
+
+	bool in_titlescreen = true;
+
+	while (1)
+	{
+		sceCtrlReadBufferPositive(&ctrlData, 1);
+		if (ctrlData.Buttons & PSP_CTRL_START && in_titlescreen){
+			sceKernelTerminateThread(home_thid);
+			sceKernelDeleteThread(home_thid);
+			in_titlescreen = false;
+			break;
+		}
+		sceKernelDelayThread(100);
+	}
 }
 
 void GameState::update(int _game_time){

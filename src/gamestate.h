@@ -34,6 +34,8 @@ private:
     void update_player_actions();
     void update_physics();
 public:
+    void title_screen();
+
     /**
      * @brief Initialize variables needed for GameState, 
      * prepare system for reading controls.
