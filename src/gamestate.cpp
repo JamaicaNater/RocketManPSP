@@ -179,7 +179,8 @@ void GameState::update_physics(){
 
 void GameState::draw(){
     GFX::drawTerrain(noise_map, cam_pos_x);
-    GFX::simple_drawBMP(0, 272-64,  status_bar);
+    GFX::simple_drawBMP(0, 272-64-2,  status_bar);
+    GFX::draw_progress_bar(50, 240, 20, 120, 80, 100, 0xFF00FF00, 0xFF0000FF);
     GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
     GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, 0, player.image);
 

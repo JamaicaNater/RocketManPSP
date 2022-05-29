@@ -60,6 +60,17 @@ namespace GFX
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, PSP_DISPLAY_SETBUF_NEXTFRAME);
 	}
 
+	void draw_progress_bar(int x, int y, int height, int width, int val, int max, uint32_t val_color, uint32_t rem_color){
+		int val_width = (val * 1.0f / max) * width;
+		int rem_width = width - val_width;
+		for (int y_i = y+height; y_i > y; y_i--){
+			for (int x_i = x; x_i < x+width; x_i++) {
+				if (x_i < x+val_width)draw_buffer[y_i*SCREEN_WIDTH+x_i] = val_color;
+				else draw_buffer[y_i*SCREEN_WIDTH+x_i] = rem_color;
+			}
+		}
+	}
+
 	void simple_drawBMP(int x, int y, Image &img) {
 		unsigned int * &image = img.img_matrix;
 		unsigned int &width = img.width;
@@ -260,8 +271,9 @@ namespace GFX
 
 				if (val >= y) {
 					//*target = 0xf4a903;
-					if (y>=100+50) *target = 0x41b498;
-					else if (y>=100) {
+					if (y>=100+50) {
+						*target = 0x41b498;
+					} else if (y>=100) {
 						*target = bground.img_matrix[((y)%50)*196 + (cam_pos_x/5 +x)%196];
 					} else if (y >= 63) { //  blue sky texture
 						*target = 0xba7b44;
