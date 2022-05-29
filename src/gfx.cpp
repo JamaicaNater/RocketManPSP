@@ -63,6 +63,31 @@ namespace GFX
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, PSP_DISPLAY_SETBUF_NEXTFRAME);
 	}
 
+	void simple_drawBMP(int x, int y, Image &img) {
+		unsigned int * &image = img.img_matrix;
+		unsigned int &width = img.width;
+		unsigned int &height = img.height;
+
+		if (!image) {
+			load_BMP(img);
+		}
+
+		int index = 0;
+		uint32_t * pixel = new(uint32_t);
+		int start_y = y + height;
+		int end_y = y;
+		int start_x = x;
+		int end_x = x + width;
+		int draw_pos;
+
+		for (int y1 = start_y; y1 > end_y; y1--)
+		{
+			memcpy(draw_buffer + (y1*SCREEN_WIDTH),image+index, width*4);
+			index+=width;
+		}
+		free(pixel);
+	}
+
 	void drawBMP(int x, int y, short rot, pivots pivot, char direction, uint32_t filter, Image &img)
 	{	
 		unsigned int * &image = img.img_matrix;

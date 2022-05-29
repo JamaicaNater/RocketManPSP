@@ -54,6 +54,8 @@ namespace GFX
 	 * @param cam_pos_x Position of the camera
 	 */
 	void drawTerrain(unsigned char noise[], int cam_pos_x);
+
+	void simple_drawBMP(int x, int y, Image &image);
 	
 	/**
 	 * @brief 

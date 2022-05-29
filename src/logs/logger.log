@@ -31,53 +31,20 @@ WARNING: Attempting to allocate 1276.347656 kb of space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/explosion.bmp, 1362.910156 kb used by bmps
+INFO: loading assets/statusbar.bmp into memory
+INFO: Allocating Space
+INFO: Reading file
+INFO: Formatting pixels
+INFO: Succesfuly loaded assets/statusbar.bmp, 1410.910156 kb used by bmps
 DEBUG: call loadBMP on assets/player_rocket.bmp
 INFO: loading assets/player_rocket.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/player_rocket.bmp, 1363.628906 kb used by bmps
+INFO: Succesfuly loaded assets/player_rocket.bmp, 1411.628906 kb used by bmps
 DEBUG: call loadBMP on assets/player.bmp
 INFO: loading assets/player.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/player.bmp, 1366.628906 kb used by bmps
-INFO: Exploded projectile 0 located at scr_x272, y144
-INFO: Exploded projectile 0 located at scr_x272, y144
-INFO: Exploded projectile 0 located at scr_x272, y144
-INFO: Exploded projectile 0 located at scr_x230, y155
-INFO: Exploded projectile 0 located at scr_x230, y155
-INFO: Exploded projectile 0 located at scr_x230, y155
-INFO: Exploded projectile 0 located at scr_x230, y155
-INFO: Exploded projectile 0 located at scr_x230, y155
-INFO: Exploded projectile 0 located at scr_x386, y161
-INFO: Exploded projectile 0 located at scr_x386, y161
-INFO: Exploded projectile 0 located at scr_x386, y161
-INFO: Exploded projectile 0 located at scr_x386, y161
-INFO: Exploded projectile 0 located at scr_x386, y161
-INFO: Exploded projectile 0 located at scr_x386, y161
-INFO: Exploded projectile 0 located at scr_x383, y133
-INFO: Exploded projectile 0 located at scr_x383, y135
-INFO: Exploded projectile 0 located at scr_x375, y150
-INFO: Exploded projectile 0 located at scr_x383, y133
-INFO: Exploded projectile 0 located at scr_x383, y133
-INFO: Exploded projectile 0 located at scr_x395, y116
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
-INFO: Exploded projectile 0 located at scr_x402, y144
+INFO: Succesfuly loaded assets/player.bmp, 1414.628906 kb used by bmps

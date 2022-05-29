@@ -159,11 +159,13 @@ void GameState::update_physics(){
 
 void GameState::draw(){
     GFX::drawTerrain(noise_map, cam_pos_x);
+    GFX::simple_drawBMP(0, 272-64,  status_bar);
     GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
     GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, 0, player.image);
 
     for (int i = 0; i < num_projectiles; i++){
         if (projectiles[i]) {
+            PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "draw proj scr_x:%d, scr_y:%d", projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
             GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, 0, rocket);
         }
     }

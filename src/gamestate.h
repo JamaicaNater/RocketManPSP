@@ -15,11 +15,12 @@ private:
 
     Person player = Person(Image("assets/player.bmp"));
     Image rocket = Image("assets/missile.bmp");
+    Image status_bar = Image("assets/statusbar.bmp");
 
     Object * projectiles[MAX_PROJ] = {NULL};
     int num_projectiles = 0;
 
-    Animation explosion = Animation(3, 5, 16666*2, "assets/explosion.bmp");
+    Animation explosion = Animation(3, 5, 50000, "assets/explosion.bmp");
     Object exp_obj = Object(""); // TODO: fix error prone nature of this constructor
     
     unsigned int game_time = 0;
