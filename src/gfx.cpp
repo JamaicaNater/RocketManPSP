@@ -248,8 +248,10 @@ namespace GFX
 		int img_pos_x_lagging_stretched;
 
 		int y_img_pos = 0, x_img_pos = cam_pos_x;
+		int start_x = 0;
 		for(int y = 0; y <= SCREEN_HEIGHT; y++) {
-			for(int x = 0; x <= SCREEN_WIDTH_RES; x++) {
+			start_x = (y>(272-64)) * 192;
+			for(int x = start_x; x <= SCREEN_WIDTH_RES; x++) {
 				px_index = x + (SCREEN_WIDTH * y);
 				val = noise[x+cam_pos_x];
 				target = &draw_buffer[px_index];
