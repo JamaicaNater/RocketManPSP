@@ -272,6 +272,12 @@ namespace GFX
 			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_sky1+384) , sky.img_matrix+(y)*sky.width, 4*(partial_sky2));
 		}
 
+		//Draw Blue sky
+		for (int y = 64; y < 100; y++){
+			//memset(draw_buffer+(SCREEN_WIDTH*y), 1, SCREEN_WIDTH*4);
+			for (int x = 0; x < SCREEN_WIDTH; x++) draw_buffer[y*SCREEN_WIDTH + x] = 0xba7b44;
+		}
+
 		//DRAW Background
 		int pos_196 = (cam_pos_x/5) % 192;
 		int partial_bg1 = bground.width-pos_196;
@@ -299,7 +305,7 @@ namespace GFX
 		}
 		
 
-		for(int y = 0; y <= SCREEN_HEIGHT-64; y++) {
+		for(int y = 100; y <= SCREEN_HEIGHT-64; y++) {
 			start_x = (y>(272-64)) * 192;
 			for(int x = start_x; x <= SCREEN_WIDTH_RES; x++) {
 				px_index = x + (SCREEN_WIDTH * y);
@@ -315,14 +321,7 @@ namespace GFX
 					//*target = 0xf4a903;
 					if (y>=100+50) {
 						*target = 0x41b498;//green grass
-					} else if (y>=100) {
-						//*target = bground.img_matrix[((y)%50)*196 + (cam_pos_x/5 +x)%196];
-					} else if (y >= 63) { //  blue sky texture
-						*target = 0xba7b44;
-					} else {
-						// img_pos_x_lagging_stretched = (cam_pos_x/6 + x)/2 % 64;
-						// *target = sky.img_matrix[img_pos_y+img_pos_x_lagging_stretched];
-					}
+					} 
 				} else {
 					//*target = 0x318c34;
 					*target = dirt.img_matrix[img_pos_y+img_pos_x];
