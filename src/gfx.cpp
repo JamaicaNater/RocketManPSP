@@ -221,7 +221,7 @@ namespace GFX
 						
 						if(direction == FORWARD) {
 							valid_pixel(x1, y1, &draw_pos);
-						} else if (direction == BACKWARD) {
+						} else{
 							valid_pixel(start_x + end_x - x1, y1, &draw_pos);
 						}
 						//PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "draw at %d", draw_pos);
@@ -249,82 +249,85 @@ namespace GFX
 		unsigned char val;
 		uint32_t * target;
 		int px_index;
-
 		int img_pos_y;
 		int img_pos_x;
-		int img_pos_x_lagging;
-		int img_pos_x_lagging_stretched;
 
-		int y_img_pos = 0, x_img_pos = cam_pos_x;
-		int start_x = 0;
+		int y_i;
+		int y_f;
+		int img_start_pos;
+		int first_chunk_size;
+		int chunk_size;
+		int last_chunk_size;
 
 		//TODO: increase readability
 
 		//Draw sky bmp
-		int pos_128 = (cam_pos_x/6) % 128;
-		int partial_sky1 = sky.width-pos_128;
-		int partial_sky2 = sky.width - partial_sky1;
-		for(int y = 0; y < 64; y++){
-			memcpy(draw_buffer + (SCREEN_WIDTH*y) , sky.img_matrix+(y)*sky.width+pos_128, 4*(partial_sky1));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_sky1) , sky.img_matrix+(y)*sky.width, 4*(sky.width));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_sky1+128) , sky.img_matrix+(y)*sky.width, 4*(sky.width));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_sky1+256) , sky.img_matrix+(y)*sky.width, 4*(sky.width));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_sky1+384) , sky.img_matrix+(y)*sky.width, 4*(partial_sky2));
+		y_i = 0;
+		y_f = y_i + sky.height;
+		img_start_pos = (cam_pos_x/6) % sky.width;
+		first_chunk_size = sky.width-img_start_pos;
+		chunk_size = sky.width;
+		last_chunk_size = SCREEN_WIDTH_RES - (first_chunk_size+384);
+		last_chunk_size *= (last_chunk_size>0);
+		for(int y = y_i; y < y_f; y++){
+			memcpy(draw_buffer + (SCREEN_WIDTH*y), sky.img_matrix+(y)*sky.width+img_start_pos, first_chunk_size * sizeof(unsigned int));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size), sky.img_matrix+(y)*sky.width, chunk_size * sizeof(unsigned int));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+128), sky.img_matrix+(y)*sky.width, chunk_size * sizeof(unsigned int));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+256), sky.img_matrix+(y)*sky.width, chunk_size * sizeof(unsigned int));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+384), sky.img_matrix+(y)*sky.width, last_chunk_size * sizeof(unsigned int));
 		}
 
 		//Draw Blue sky
 		for (int y = 64; y < 100; y++){
-			//memset(draw_buffer+(SCREEN_WIDTH*y), 1, SCREEN_WIDTH*4);
-			for (int x = 0; x < SCREEN_WIDTH; x++) draw_buffer[y*SCREEN_WIDTH + x] = 0xba7b44;
+			for (int x = 0; x < SCREEN_WIDTH_RES; x++) draw_buffer[y*SCREEN_WIDTH + x] = 0xba7b44;
 		}
 
 		//DRAW Background
-		int pos_196 = (cam_pos_x/5) % 192;
-		int partial_bg1 = bground.width-pos_196;
-		int partial_bg2 = bground.width - partial_bg1;
-		for (int y = 100; y < 150; y++) {
-			memcpy(draw_buffer + (SCREEN_WIDTH*y) , bground.img_matrix+(y-100)*bground.width+pos_196, 4*(partial_bg1));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_bg1) , bground.img_matrix+(y-100)*bground.width, 4*(bground.width));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_bg1+192) , bground.img_matrix+(y-100)*bground.width, 4*(bground.width));
-			partial_bg2 = (partial_bg1+384);
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_bg1+384) , bground.img_matrix+(y-100)*bground.width, (partial_bg2<SCREEN_WIDTH_RES)*4*(SCREEN_WIDTH_RES - (partial_bg1+384)));
+		y_i = 100;
+		y_f = y_i + bground.height;
+		img_start_pos = (cam_pos_x/5) % bground.width;
+		first_chunk_size = bground.width-img_start_pos;
+		chunk_size = bground.width;
+		last_chunk_size = SCREEN_WIDTH_RES - (first_chunk_size+384);
+		last_chunk_size *= (last_chunk_size>0);
+		for (int y = y_i; y < y_f; y++) {
+			memcpy(draw_buffer + (SCREEN_WIDTH*y) , bground.img_matrix+(y-y_i)*chunk_size+img_start_pos, first_chunk_size * sizeof(unsigned int) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size) , bground.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+chunk_size) , bground.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+chunk_size*2) , bground.img_matrix+(y-y_i)*chunk_size, last_chunk_size * sizeof(unsigned int) );
 		}
 
 		// Draw bottom 64 dirt
-		int y_i = SCREEN_HEIGHT-64;
-		int pos_64 = cam_pos_x % 64;
-		int partial_dirt1 = dirt.width-pos_64;
-		int partial_dirt2 = dirt.width - partial_dirt1;
-		for(int y = SCREEN_HEIGHT-64; y <= SCREEN_HEIGHT; y++) {
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192) , dirt.img_matrix+(y-y_i)*dirt.width+pos_64, 4*(partial_dirt1));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+partial_dirt1) , dirt.img_matrix+(y-y_i)*dirt.width, 4*dirt.width);
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+partial_dirt1+64) , dirt.img_matrix+(y-y_i)*dirt.width, 4*dirt.width);
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+partial_dirt1+128) , dirt.img_matrix+(y-y_i)*dirt.width, 4*dirt.width);
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+partial_dirt1+192) , dirt.img_matrix+(y-y_i)*dirt.width, 4*dirt.width);
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+partial_dirt1+256) , dirt.img_matrix+(y-y_i)*dirt.width, 4*partial_dirt2);
+		y_i = SCREEN_HEIGHT-64;
+		y_f = y_i + dirt.height;
+		img_start_pos = cam_pos_x % dirt.width;
+		first_chunk_size = dirt.width-img_start_pos;
+		chunk_size = dirt.width;
+		last_chunk_size = SCREEN_WIDTH_RES - (192+first_chunk_size+256);
+		last_chunk_size *= (last_chunk_size>0);
+		for(int y = y_i; y <= y_f; y++) {
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192) , dirt.img_matrix+(y-y_i)*chunk_size+img_start_pos, first_chunk_size * sizeof(unsigned int) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size*2) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size*3) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size*4) , dirt.img_matrix+(y-y_i)*chunk_size, last_chunk_size * sizeof(unsigned int));
 		}
 		
 
 		for(int y = 100; y <= SCREEN_HEIGHT-64; y++) {
-			start_x = (y>(272-64)) * 192;
-			for(int x = start_x; x <= SCREEN_WIDTH_RES; x++) {
+			for(int x = 0; x <= SCREEN_WIDTH_RES; x++) {
 				px_index = x + (SCREEN_WIDTH * y);
 				val = noise[x+cam_pos_x];
 				target = &draw_buffer[px_index];
-
-				img_pos_y = (y%64)*64;
-				img_pos_x = (cam_pos_x + x) % 64;
-				//img_pos_x_lagging = (cam_pos_x/4 + x) % 64;
-				
-
-				if (val >= y) {
-					//*target = 0xf4a903;
-					if (y>=100+50) {
-						*target = 0x41b498;//green grass
-					} 
-				} else {
-					//*target = 0x318c34;
-					*target = dirt.img_matrix[img_pos_y+img_pos_x];
+				if (val < y) {
+					img_pos_y = (y%64)*64;
+					img_pos_x = (cam_pos_x + x) % 64;
+					*target = (val < (y-5))*dirt.img_matrix[img_pos_y+img_pos_x] + ((val >= (y-5)))*grass.img_matrix[img_pos_y+img_pos_x];
+					continue;
+				} 
+				if (y>=100+50) {
+					*target = 0x41b498;//green grass
 				} 
 			}
 		}
