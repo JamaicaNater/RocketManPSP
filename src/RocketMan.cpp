@@ -44,7 +44,7 @@ void setupCallbacks()
 }
 // End of boilerplate PSP code
 
-const int MAP_SIZE = 1000;
+const int MAP_SIZE = 3000;
 unsigned char noise_map[MAP_SIZE];
 int FRAMETIME = MICROSECONDS / 60;
 

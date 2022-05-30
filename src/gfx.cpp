@@ -258,6 +258,32 @@ namespace GFX
 		int y_img_pos = 0, x_img_pos = cam_pos_x;
 		int start_x = 0;
 
+		//TODO: increase readability
+
+		//Draw sky bmp
+		int pos_128 = (cam_pos_x/6) % 128;
+		int partial_sky1 = sky.width-pos_128;
+		int partial_sky2 = sky.width - partial_sky1;
+		for(int y = 0; y < 64; y++){
+			memcpy(draw_buffer + (SCREEN_WIDTH*y) , sky.img_matrix+(y)*sky.width+pos_128, 4*(partial_sky1));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_sky1) , sky.img_matrix+(y)*sky.width, 4*(sky.width));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_sky1+128) , sky.img_matrix+(y)*sky.width, 4*(sky.width));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_sky1+256) , sky.img_matrix+(y)*sky.width, 4*(sky.width));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_sky1+384) , sky.img_matrix+(y)*sky.width, 4*(partial_sky2));
+		}
+
+		//DRAW Background
+		int pos_196 = (cam_pos_x/5) % 192;
+		int partial_bg1 = bground.width-pos_196;
+		int partial_bg2 = bground.width - partial_bg1;
+		for (int y = 100; y < 150; y++) {
+			memcpy(draw_buffer + (SCREEN_WIDTH*y) , bground.img_matrix+(y-100)*bground.width+pos_196, 4*(partial_bg1));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_bg1) , bground.img_matrix+(y-100)*bground.width, 4*(bground.width));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_bg1+192) , bground.img_matrix+(y-100)*bground.width, 4*(bground.width));
+			partial_bg2 = (partial_bg1+384);
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+partial_bg1+384) , bground.img_matrix+(y-100)*bground.width, (partial_bg2<SCREEN_WIDTH_RES)*4*(SCREEN_WIDTH_RES - (partial_bg1+384)));
+		}
+
 		// Draw bottom 64 dirt
 		int y_i = SCREEN_HEIGHT-64;
 		int pos_64 = cam_pos_x % 64;
@@ -288,14 +314,14 @@ namespace GFX
 				if (val >= y) {
 					//*target = 0xf4a903;
 					if (y>=100+50) {
-						*target = 0x41b498;
+						*target = 0x41b498;//green grass
 					} else if (y>=100) {
-						*target = bground.img_matrix[((y)%50)*196 + (cam_pos_x/5 +x)%196];
+						//*target = bground.img_matrix[((y)%50)*196 + (cam_pos_x/5 +x)%196];
 					} else if (y >= 63) { //  blue sky texture
 						*target = 0xba7b44;
 					} else {
-						img_pos_x_lagging_stretched = (cam_pos_x/6 + x)/2 % 64;
-						*target = sky.img_matrix[img_pos_y+img_pos_x_lagging_stretched];
+						// img_pos_x_lagging_stretched = (cam_pos_x/6 + x)/2 % 64;
+						// *target = sky.img_matrix[img_pos_y+img_pos_x_lagging_stretched];
 					}
 				} else {
 					//*target = 0x318c34;
