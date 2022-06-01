@@ -1,3 +1,8 @@
 /.vscode/
 /src/.vscode/
 /Testspace/
+*.o
+*.elf
+*.prx
+*.PBP
+*.SFO

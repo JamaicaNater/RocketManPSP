@@ -7,270 +7,515 @@ INFO: loading assets/sky.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/sky.bmp, 32.000000 kb used by bmps
+INFO: Succesfuly loaded assets/sky.bmp, 48.000000 kb used by bmps
 INFO: loading assets/grass.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/grass.bmp, 48.000000 kb used by bmps
+INFO: Succesfuly loaded assets/grass.bmp, 64.000000 kb used by bmps
 INFO: loading assets/background.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/background.bmp, 86.281250 kb used by bmps
+INFO: Succesfuly loaded assets/background.bmp, 102.281250 kb used by bmps
 INFO: loading assets/missile.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/missile.bmp, 86.562500 kb used by bmps
+INFO: Succesfuly loaded assets/missile.bmp, 102.562500 kb used by bmps
 INFO: loading assets/explosion.bmp into memory
 INFO: Alocating 15 pointers for 159 x 137 images
 INFO: Allocating Space
 WARNING: Attempting to allocate 1276.347656 kb of space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/explosion.bmp, 1362.910156 kb used by bmps
+INFO: Succesfuly loaded assets/explosion.bmp, 1378.910156 kb used by bmps
 INFO: loading assets/statusbar.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/statusbar.bmp, 1410.910156 kb used by bmps
+INFO: Succesfuly loaded assets/statusbar.bmp, 1426.910156 kb used by bmps
 DEBUG: call loadBMP on assets/player_rocket.bmp
 INFO: loading assets/player_rocket.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/player_rocket.bmp, 1411.628906 kb used by bmps
+INFO: Succesfuly loaded assets/player_rocket.bmp, 1427.628906 kb used by bmps
 DEBUG: call loadBMP on assets/player.bmp
 INFO: loading assets/player.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/player.bmp, 1414.628906 kb used by bmps
-DEBUG: draw proj scr_x:255, scr_y:85
-DEBUG: draw proj scr_x:263, scr_y:89
-DEBUG: draw proj scr_x:270, scr_y:93
-DEBUG: draw proj scr_x:278, scr_y:97
-DEBUG: draw proj scr_x:285, scr_y:101
-DEBUG: draw proj scr_x:292, scr_y:105
-DEBUG: draw proj scr_x:300, scr_y:109
-DEBUG: draw proj scr_x:307, scr_y:113
-DEBUG: draw proj scr_x:314, scr_y:117
-DEBUG: draw proj scr_x:322, scr_y:121
-DEBUG: draw proj scr_x:329, scr_y:125
-DEBUG: draw proj scr_x:336, scr_y:129
-DEBUG: draw proj scr_x:344, scr_y:134
-DEBUG: draw proj scr_x:351, scr_y:138
-INFO: Exploded projectile 0 located at scr_x359, y142
-DEBUG: draw proj scr_x:255, scr_y:95
-DEBUG: draw proj scr_x:264, scr_y:98
-DEBUG: draw proj scr_x:272, scr_y:100
-DEBUG: draw proj scr_x:280, scr_y:102
-DEBUG: draw proj scr_x:288, scr_y:105
-DEBUG: draw proj scr_x:296, scr_y:107
-DEBUG: draw proj scr_x:304, scr_y:110
-DEBUG: draw proj scr_x:312, scr_y:112
-DEBUG: draw proj scr_x:320, scr_y:114
-DEBUG: draw proj scr_x:328, scr_y:117
-DEBUG: draw proj scr_x:336, scr_y:119
-DEBUG: draw proj scr_x:344, scr_y:122
-DEBUG: draw proj scr_x:352, scr_y:124
-DEBUG: draw proj scr_x:360, scr_y:127
-DEBUG: draw proj scr_x:368, scr_y:129
-INFO: Exploded projectile 0 located at scr_x376, y132
-DEBUG: draw proj scr_x:109, scr_y:76
-DEBUG: draw proj scr_x:118, scr_y:79
-DEBUG: draw proj scr_x:126, scr_y:81
-DEBUG: draw proj scr_x:134, scr_y:83
-DEBUG: draw proj scr_x:142, scr_y:86
-DEBUG: draw proj scr_x:150, scr_y:88
-DEBUG: draw proj scr_x:158, scr_y:91
-DEBUG: draw proj scr_x:166, scr_y:93
-DEBUG: draw proj scr_x:174, scr_y:95
-DEBUG: draw proj scr_x:182, scr_y:98
-DEBUG: draw proj scr_x:190, scr_y:100
-DEBUG: draw proj scr_x:198, scr_y:103
-DEBUG: draw proj scr_x:206, scr_y:105
-DEBUG: draw proj scr_x:214, scr_y:108
-DEBUG: draw proj scr_x:222, scr_y:110
-DEBUG: draw proj scr_x:230, scr_y:113
-DEBUG: draw proj scr_x:238, scr_y:115
-DEBUG: draw proj scr_x:246, scr_y:118
-DEBUG: draw proj scr_x:254, scr_y:120
-DEBUG: draw proj scr_x:262, scr_y:123
-DEBUG: draw proj scr_x:270, scr_y:126
-DEBUG: draw proj scr_x:278, scr_y:128
-INFO: Exploded projectile 0 located at scr_x286, y131
-DEBUG: draw proj scr_x:255, scr_y:83
-DEBUG: draw proj scr_x:261, scr_y:86
-DEBUG: draw proj scr_x:267, scr_y:89
-DEBUG: draw proj scr_x:273, scr_y:92
-DEBUG: draw proj scr_x:279, scr_y:95
-DEBUG: draw proj scr_x:285, scr_y:98
-DEBUG: draw proj scr_x:290, scr_y:101
-DEBUG: draw proj scr_x:296, scr_y:104
-DEBUG: draw proj scr_x:302, scr_y:107
-DEBUG: draw proj scr_x:308, scr_y:110
-DEBUG: draw proj scr_x:314, scr_y:113
-DEBUG: draw proj scr_x:320, scr_y:116
-DEBUG: draw proj scr_x:325, scr_y:119
-DEBUG: draw proj scr_x:331, scr_y:122
-DEBUG: draw proj scr_x:337, scr_y:125
-DEBUG: draw proj scr_x:343, scr_y:128
-DEBUG: draw proj scr_x:349, scr_y:131
-DEBUG: draw proj scr_x:355, scr_y:134
-DEBUG: draw proj scr_x:360, scr_y:138
-INFO: Exploded projectile 0 located at scr_x366, y141
-DEBUG: draw proj scr_x:255, scr_y:104
-DEBUG: draw proj scr_x:262, scr_y:106
-DEBUG: draw proj scr_x:268, scr_y:107
-DEBUG: draw proj scr_x:274, scr_y:109
-DEBUG: draw proj scr_x:280, scr_y:110
-DEBUG: draw proj scr_x:287, scr_y:112
-DEBUG: draw proj scr_x:293, scr_y:113
-DEBUG: draw proj scr_x:299, scr_y:115
-INFO: Exploded projectile 0 located at scr_x305, y117
-DEBUG: draw proj scr_x:293, scr_y:95
-DEBUG: draw proj scr_x:302, scr_y:97
-DEBUG: draw proj scr_x:310, scr_y:98
-DEBUG: draw proj scr_x:318, scr_y:100
-DEBUG: draw proj scr_x:326, scr_y:101
-DEBUG: draw proj scr_x:335, scr_y:103
-DEBUG: draw proj scr_x:343, scr_y:104
-DEBUG: draw proj scr_x:351, scr_y:106
-DEBUG: draw proj scr_x:359, scr_y:108
-DEBUG: draw proj scr_x:367, scr_y:109
-DEBUG: draw proj scr_x:376, scr_y:111
-DEBUG: draw proj scr_x:384, scr_y:112
-DEBUG: draw proj scr_x:392, scr_y:114
-DEBUG: draw proj scr_x:400, scr_y:116
-DEBUG: draw proj scr_x:408, scr_y:117
-DEBUG: draw proj scr_x:417, scr_y:119
-DEBUG: draw proj scr_x:425, scr_y:121
-DEBUG: draw proj scr_x:433, scr_y:122
-DEBUG: draw proj scr_x:441, scr_y:124
-DEBUG: draw proj scr_x:449, scr_y:126
-DEBUG: draw proj scr_x:458, scr_y:128
-DEBUG: draw proj scr_x:466, scr_y:129
-DEBUG: draw proj scr_x:474, scr_y:131
-DEBUG: draw proj scr_x:482, scr_y:133
-DEBUG: draw proj scr_x:490, scr_y:135
-DEBUG: draw proj scr_x:499, scr_y:137
-DEBUG: draw proj scr_x:507, scr_y:138
-INFO: Exploded projectile 0 located at scr_x515, y140
-DEBUG: draw proj scr_x:111, scr_y:76
-DEBUG: draw proj scr_x:120, scr_y:78
-DEBUG: draw proj scr_x:128, scr_y:79
-DEBUG: draw proj scr_x:136, scr_y:81
-DEBUG: draw proj scr_x:144, scr_y:82
-DEBUG: draw proj scr_x:153, scr_y:84
-DEBUG: draw proj scr_x:161, scr_y:85
-DEBUG: draw proj scr_x:169, scr_y:87
-DEBUG: draw proj scr_x:177, scr_y:89
-DEBUG: draw proj scr_x:185, scr_y:90
-DEBUG: draw proj scr_x:194, scr_y:92
-DEBUG: draw proj scr_x:202, scr_y:93
-DEBUG: draw proj scr_x:210, scr_y:95
-DEBUG: draw proj scr_x:218, scr_y:97
-DEBUG: draw proj scr_x:226, scr_y:98
-DEBUG: draw proj scr_x:235, scr_y:100
-DEBUG: draw proj scr_x:243, scr_y:102
-DEBUG: draw proj scr_x:251, scr_y:103
-DEBUG: draw proj scr_x:259, scr_y:105
-DEBUG: draw proj scr_x:267, scr_y:107
-DEBUG: draw proj scr_x:276, scr_y:109
-DEBUG: draw proj scr_x:284, scr_y:110
-DEBUG: draw proj scr_x:292, scr_y:112
-DEBUG: draw proj scr_x:300, scr_y:114
-INFO: Exploded projectile 0 located at scr_x308, y116
-DEBUG: draw proj scr_x:193, scr_y:85
-DEBUG: draw proj scr_x:202, scr_y:87
-DEBUG: draw proj scr_x:210, scr_y:88
-DEBUG: draw proj scr_x:218, scr_y:90
-DEBUG: draw proj scr_x:226, scr_y:91
-DEBUG: draw proj scr_x:235, scr_y:93
-DEBUG: draw proj scr_x:243, scr_y:94
-DEBUG: draw proj scr_x:251, scr_y:96
-DEBUG: draw proj scr_x:259, scr_y:98
-DEBUG: draw proj scr_x:267, scr_y:99
-DEBUG: draw proj scr_x:276, scr_y:101
-DEBUG: draw proj scr_x:284, scr_y:102
-DEBUG: draw proj scr_x:292, scr_y:104
-DEBUG: draw proj scr_x:300, scr_y:106
-DEBUG: draw proj scr_x:308, scr_y:107
-INFO: Exploded projectile 0 located at scr_x317, y109
-DEBUG: draw proj scr_x:255, scr_y:69
-DEBUG: draw proj scr_x:262, scr_y:71
-DEBUG: draw proj scr_x:268, scr_y:72
-DEBUG: draw proj scr_x:274, scr_y:74
-DEBUG: draw proj scr_x:280, scr_y:75
-DEBUG: draw proj scr_x:287, scr_y:77
-DEBUG: draw proj scr_x:293, scr_y:78
-DEBUG: draw proj scr_x:299, scr_y:80
-DEBUG: draw proj scr_x:305, scr_y:82
-DEBUG: draw proj scr_x:311, scr_y:83
-DEBUG: draw proj scr_x:318, scr_y:85
-DEBUG: draw proj scr_x:324, scr_y:86
-DEBUG: draw proj scr_x:330, scr_y:88
-DEBUG: draw proj scr_x:336, scr_y:90
-DEBUG: draw proj scr_x:342, scr_y:91
-DEBUG: draw proj scr_x:349, scr_y:93
-DEBUG: draw proj scr_x:355, scr_y:95
-DEBUG: draw proj scr_x:361, scr_y:96
-DEBUG: draw proj scr_x:367, scr_y:98
-DEBUG: draw proj scr_x:373, scr_y:100
-DEBUG: draw proj scr_x:380, scr_y:102
-DEBUG: draw proj scr_x:386, scr_y:103
-DEBUG: draw proj scr_x:392, scr_y:105
-DEBUG: draw proj scr_x:398, scr_y:107
-DEBUG: draw proj scr_x:404, scr_y:109
-INFO: Exploded projectile 0 located at scr_x411, y111
-DEBUG: draw proj scr_x:255, scr_y:132
-DEBUG: draw proj scr_x:262, scr_y:134
-INFO: Exploded projectile 0 located at scr_x268, y135
-DEBUG: draw proj scr_x:255, scr_y:117
-DEBUG: draw proj scr_x:262, scr_y:119
-INFO: Exploded projectile 0 located at scr_x268, y120
-DEBUG: draw proj scr_x:255, scr_y:106
-DEBUG: draw proj scr_x:262, scr_y:108
-INFO: Exploded projectile 0 located at scr_x268, y109
-DEBUG: draw proj scr_x:255, scr_y:64
-DEBUG: draw proj scr_x:262, scr_y:66
-DEBUG: draw proj scr_x:268, scr_y:67
-DEBUG: draw proj scr_x:274, scr_y:69
-DEBUG: draw proj scr_x:280, scr_y:70
-DEBUG: draw proj scr_x:287, scr_y:72
-DEBUG: draw proj scr_x:293, scr_y:73
-DEBUG: draw proj scr_x:299, scr_y:75
-DEBUG: draw proj scr_x:305, scr_y:77
-DEBUG: draw proj scr_x:311, scr_y:78
-DEBUG: draw proj scr_x:318, scr_y:80
-DEBUG: draw proj scr_x:324, scr_y:81
-DEBUG: draw proj scr_x:330, scr_y:83
-DEBUG: draw proj scr_x:336, scr_y:85
-DEBUG: draw proj scr_x:342, scr_y:86
-DEBUG: draw proj scr_x:349, scr_y:88
-DEBUG: draw proj scr_x:355, scr_y:90
-DEBUG: draw proj scr_x:361, scr_y:91
-DEBUG: draw proj scr_x:367, scr_y:93
-DEBUG: draw proj scr_x:373, scr_y:95
-DEBUG: draw proj scr_x:380, scr_y:97
-DEBUG: draw proj scr_x:386, scr_y:98
-DEBUG: draw proj scr_x:392, scr_y:100
-DEBUG: draw proj scr_x:398, scr_y:102
-DEBUG: draw proj scr_x:404, scr_y:104
-DEBUG: draw proj scr_x:411, scr_y:106
-DEBUG: draw proj scr_x:417, scr_y:107
-DEBUG: draw proj scr_x:423, scr_y:109
-DEBUG: draw proj scr_x:429, scr_y:111
-DEBUG: draw proj scr_x:436, scr_y:113
-DEBUG: draw proj scr_x:442, scr_y:115
-DEBUG: draw proj scr_x:448, scr_y:117
-DEBUG: draw proj scr_x:454, scr_y:119
-DEBUG: draw proj scr_x:460, scr_y:121
-DEBUG: draw proj scr_x:467, scr_y:123
-DEBUG: draw proj scr_x:473, scr_y:125
-DEBUG: draw proj scr_x:479, scr_y:127
-DEBUG: draw proj scr_x:485, scr_y:129
-DEBUG: draw proj scr_x:491, scr_y:131
-INFO: Exploded projectile 0 located at scr_x498, y133
+INFO: Succesfuly loaded assets/player.bmp, 1430.628906 kb used by bmps
+DEBUG: draw proj scr_x:115, scr_y:78
+DEBUG: draw proj scr_x:123, scr_y:82
+DEBUG: draw proj scr_x:131, scr_y:85
+DEBUG: draw proj scr_x:138, scr_y:89
+DEBUG: draw proj scr_x:146, scr_y:92
+DEBUG: draw proj scr_x:154, scr_y:96
+DEBUG: draw proj scr_x:161, scr_y:99
+DEBUG: draw proj scr_x:169, scr_y:103
+DEBUG: draw proj scr_x:176, scr_y:106
+DEBUG: draw proj scr_x:184, scr_y:110
+DEBUG: draw proj scr_x:192, scr_y:113
+DEBUG: draw proj scr_x:199, scr_y:117
+DEBUG: draw proj scr_x:207, scr_y:120
+DEBUG: draw proj scr_x:214, scr_y:124
+DEBUG: draw proj scr_x:222, scr_y:128
+DEBUG: draw proj scr_x:230, scr_y:131
+DEBUG: draw proj scr_x:237, scr_y:135
+DEBUG: draw proj scr_x:245, scr_y:138
+DEBUG: draw proj scr_x:252, scr_y:142
+DEBUG: draw proj scr_x:260, scr_y:146
+INFO: Exploded projectile 0 located at scr_x268, y150
+DEBUG: draw proj scr_x:115, scr_y:78
+DEBUG: draw proj scr_x:123, scr_y:82
+DEBUG: draw proj scr_x:131, scr_y:85
+DEBUG: draw proj scr_x:138, scr_y:89
+DEBUG: draw proj scr_x:146, scr_y:92
+DEBUG: draw proj scr_x:154, scr_y:96
+DEBUG: draw proj scr_x:161, scr_y:99
+DEBUG: draw proj scr_x:169, scr_y:103
+DEBUG: draw proj scr_x:176, scr_y:106
+DEBUG: draw proj scr_x:184, scr_y:110
+DEBUG: draw proj scr_x:192, scr_y:113
+DEBUG: draw proj scr_x:199, scr_y:117
+DEBUG: draw proj scr_x:207, scr_y:120
+DEBUG: draw proj scr_x:214, scr_y:124
+DEBUG: draw proj scr_x:222, scr_y:128
+DEBUG: draw proj scr_x:230, scr_y:131
+DEBUG: draw proj scr_x:237, scr_y:135
+DEBUG: draw proj scr_x:245, scr_y:138
+DEBUG: draw proj scr_x:252, scr_y:142
+DEBUG: draw proj scr_x:260, scr_y:146
+INFO: Exploded projectile 0 located at scr_x268, y150
+DEBUG: draw proj scr_x:115, scr_y:78
+DEBUG: draw proj scr_x:123, scr_y:82
+DEBUG: draw proj scr_x:131, scr_y:85
+DEBUG: draw proj scr_x:138, scr_y:89
+DEBUG: draw proj scr_x:146, scr_y:92
+DEBUG: draw proj scr_x:154, scr_y:96
+DEBUG: draw proj scr_x:161, scr_y:99
+DEBUG: draw proj scr_x:169, scr_y:103
+DEBUG: draw proj scr_x:176, scr_y:106
+DEBUG: draw proj scr_x:184, scr_y:110
+DEBUG: draw proj scr_x:192, scr_y:113
+DEBUG: draw proj scr_x:199, scr_y:117
+DEBUG: draw proj scr_x:207, scr_y:120
+DEBUG: draw proj scr_x:214, scr_y:124
+DEBUG: draw proj scr_x:222, scr_y:128
+DEBUG: draw proj scr_x:230, scr_y:131
+DEBUG: draw proj scr_x:237, scr_y:135
+DEBUG: draw proj scr_x:245, scr_y:138
+DEBUG: draw proj scr_x:252, scr_y:142
+DEBUG: draw proj scr_x:260, scr_y:146
+INFO: Exploded projectile 0 located at scr_x268, y150
+DEBUG: draw proj scr_x:115, scr_y:78
+DEBUG: draw proj scr_x:123, scr_y:82
+DEBUG: draw proj scr_x:131, scr_y:85
+DEBUG: draw proj scr_x:138, scr_y:89
+DEBUG: draw proj scr_x:146, scr_y:92
+DEBUG: draw proj scr_x:154, scr_y:96
+DEBUG: draw proj scr_x:161, scr_y:99
+DEBUG: draw proj scr_x:169, scr_y:103
+DEBUG: draw proj scr_x:176, scr_y:106
+DEBUG: draw proj scr_x:184, scr_y:110
+DEBUG: draw proj scr_x:192, scr_y:113
+DEBUG: draw proj scr_x:199, scr_y:117
+DEBUG: draw proj scr_x:207, scr_y:120
+DEBUG: draw proj scr_x:214, scr_y:124
+DEBUG: draw proj scr_x:222, scr_y:128
+DEBUG: draw proj scr_x:230, scr_y:131
+DEBUG: draw proj scr_x:237, scr_y:135
+DEBUG: draw proj scr_x:245, scr_y:138
+DEBUG: draw proj scr_x:252, scr_y:142
+DEBUG: draw proj scr_x:260, scr_y:146
+INFO: Exploded projectile 0 located at scr_x268, y150
+DEBUG: draw proj scr_x:115, scr_y:78
+DEBUG: draw proj scr_x:123, scr_y:82
+DEBUG: draw proj scr_x:131, scr_y:85
+DEBUG: draw proj scr_x:138, scr_y:89
+DEBUG: draw proj scr_x:146, scr_y:92
+DEBUG: draw proj scr_x:154, scr_y:96
+DEBUG: draw proj scr_x:161, scr_y:99
+DEBUG: draw proj scr_x:169, scr_y:103
+DEBUG: draw proj scr_x:176, scr_y:106
+DEBUG: draw proj scr_x:184, scr_y:110
+DEBUG: draw proj scr_x:192, scr_y:113
+DEBUG: draw proj scr_x:199, scr_y:117
+DEBUG: draw proj scr_x:207, scr_y:120
+DEBUG: draw proj scr_x:214, scr_y:124
+DEBUG: draw proj scr_x:222, scr_y:128
+DEBUG: draw proj scr_x:230, scr_y:131
+DEBUG: draw proj scr_x:237, scr_y:135
+DEBUG: draw proj scr_x:245, scr_y:138
+DEBUG: draw proj scr_x:252, scr_y:142
+DEBUG: draw proj scr_x:260, scr_y:146
+INFO: Exploded projectile 0 located at scr_x268, y150
+DEBUG: draw proj scr_x:115, scr_y:78
+DEBUG: draw proj scr_x:122, scr_y:83
+DEBUG: draw proj scr_x:129, scr_y:88
+DEBUG: draw proj scr_x:136, scr_y:93
+DEBUG: draw proj scr_x:142, scr_y:98
+DEBUG: draw proj scr_x:149, scr_y:103
+DEBUG: draw proj scr_x:156, scr_y:108
+DEBUG: draw proj scr_x:163, scr_y:113
+DEBUG: draw proj scr_x:169, scr_y:118
+DEBUG: draw proj scr_x:176, scr_y:123
+DEBUG: draw proj scr_x:183, scr_y:128
+DEBUG: draw proj scr_x:190, scr_y:133
+DEBUG: draw proj scr_x:196, scr_y:138
+DEBUG: draw proj scr_x:203, scr_y:143
+DEBUG: draw proj scr_x:210, scr_y:149
+DEBUG: draw proj scr_x:217, scr_y:154
+INFO: Exploded projectile 0 located at scr_x223, y159
+DEBUG: draw proj scr_x:115, scr_y:78
+DEBUG: draw proj scr_x:118, scr_y:86
+DEBUG: draw proj scr_x:121, scr_y:94
+DEBUG: draw proj scr_x:124, scr_y:102
+INFO: Exploded projectile 0 located at scr_x127, y110
+DEBUG: draw proj scr_x:115, scr_y:78
+DEBUG: draw proj scr_x:117, scr_y:87
+DEBUG: draw proj scr_x:118, scr_y:95
+DEBUG: draw proj scr_x:120, scr_y:103
+INFO: Exploded projectile 0 located at scr_x121, y111
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:116, scr_y:87
+DEBUG: draw proj scr_x:116, scr_y:95
+INFO: Exploded projectile 0 located at scr_x116, y104
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103
+DEBUG: draw proj scr_x:116, scr_y:78
+DEBUG: draw proj scr_x:115, scr_y:87
+DEBUG: draw proj scr_x:114, scr_y:95
+INFO: Exploded projectile 0 located at scr_x113, y103

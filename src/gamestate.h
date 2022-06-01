@@ -1,7 +1,7 @@
 #pragma once
 
 #include <pspctrl.h>
-#include "Projectile.hpp"
+#include "objects.hpp"
 
 // TODO make singleton
 class GameState
@@ -16,6 +16,7 @@ private:
     Person player = Person(Image("assets/player.bmp"));
     Image rocket = Image("assets/missile.bmp");
     Image status_bar = Image("assets/statusbar.bmp");
+    Image enemy = Image("assets/enemy.bmp");
 
     Object * projectiles[MAX_PROJ] = {NULL};
     int num_projectiles = 0;

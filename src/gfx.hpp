@@ -2,7 +2,7 @@
 
 #include <cstdint>
 #include <pspkerneltypes.h>
-#include "Projectile.hpp"
+#include "objects.hpp"
 
 #define SCREEN_HEIGHT 272
 #define SCREEN_WIDTH_RES 480

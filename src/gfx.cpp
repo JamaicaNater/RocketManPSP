@@ -339,7 +339,6 @@ namespace GFX
 
 		while (1)
 		{
-			// TODO: use threads to break
 			write_BMP(&height, &width, draw_buffer , "assets/back.bmp");
 			swapBuffers();
 			write_BMP(&height, &width, draw_buffer , "assets/back2.bmp");

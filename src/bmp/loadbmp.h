@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "../Projectile.hpp"
+#include "../objects.hpp"
 
 /**
  * @brief Opens a bmp file as a binary file and get the width hieght and 
