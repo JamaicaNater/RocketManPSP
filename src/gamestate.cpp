@@ -16,11 +16,14 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     noise_map = _noise_map;
     MAP_SIZE = _MAP_SIZE;
 
+    enemy.vector.x = 200;
+    enemy.vector.y = noise_map[enemy.vector.x];
+
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
     load_BMP(rocket);
-    load_BMP(explosion);
+    load_BMP(explosion_animation);
 }
 
 void GameState::title_screen() {
@@ -51,7 +54,13 @@ void GameState::update(int _game_time){
 }
 
 void GameState::update_nonplayer_actions() {
-
+    if (player.vector.x < enemy.vector.x) {
+        enemy.vector.vel_x = .5*PLAYER_SPEED * -1;
+        enemy.vector.direction = FORWARD;
+    } else {
+        enemy.vector.vel_x = .5*PLAYER_SPEED;
+        enemy.vector.direction = BACKWARD;
+    }
 }
 
 void GameState::update_player_actions() {
@@ -129,7 +138,7 @@ void GameState::update_physics(){
                     explosion_object->vector.y = projectiles[i]->vector.y;
                     explosion_list.insert(explosion_object);
 
-                    explosion.animate = true;
+                    explosion_animation.animate = true;
 
                     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Exploded projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
                     projectile_list.remove(projectiles[i]);
@@ -155,6 +164,8 @@ void GameState::update_physics(){
 
     // DOnt move outside the map
     if (player.vector.x+player.vector.vel_x > 0 && player.vector.x+player.vector.vel_x <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
+    enemy.vector.x+=enemy.vector.vel_x;
+    enemy.vector.y = noise_map[enemy.vector.x];
 
     player.weapon.vector.x = player.vector.x;
     player.weapon.vector.y = player.vector.y-25;
@@ -176,19 +187,21 @@ void GameState::draw(){
 
     for (int i = 0; i < explosion_list.MAX_SIZE; i++) {
         if (explosions[i]) {
-            if (game_time > explosions[i]->last_frame_update + explosion.frame_time){
+            if (game_time > explosions[i]->last_frame_update + explosion_animation.frame_time){
                 explosions[i]->current_frame++;
-                if (explosions[i]->current_frame >= explosion.rows * explosion.cols) {
+                if (explosions[i]->current_frame >= explosion_animation.rows * explosion_animation.cols) {
                     explosion_list.remove(explosions[i]);
                     free(explosions[i]);
                     continue;
                 }
                 
             }
-            Image img = explosion.get_frame(explosions[i]->current_frame);
+            Image img = explosion_animation.get_frame(explosions[i]->current_frame);
             GFX::drawBMP(explosions[i]->vector.x - cam_pos_x, explosions[i]->vector.y, explosions[i]->vector.get_angle(), CENTER, FORWARD, 0, img);
         }
     }
+
+    GFX::drawBMP(enemy.vector.x - cam_pos_x, enemy.vector.y, enemy.vector.get_angle(), CENTER, enemy.vector.direction, 0, enemy_img);
 
     GFX::swapBuffers();
     GFX::clear();

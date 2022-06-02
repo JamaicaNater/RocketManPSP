@@ -20,13 +20,14 @@ private:
     Image status_bar = Image("assets/statusbar.bmp");
     Image enemy_img = Image("assets/enemy.bmp");
 
+    Object enemy;
     Object * enemies[MAX_ENEMIES];
     ObjectList projectile_list = ObjectList(MAX_ENEMIES);
     Object * * projectiles = projectile_list.get_list();
     ObjectList explosion_list = ObjectList(128); // TODO think about what the upper bound should be
     Object * * explosions =  explosion_list.get_list();
 
-    Animation explosion = Animation(3, 5, 50000, "assets/explosion.bmp");
+    Animation explosion_animation = Animation(3, 5, 50000, "assets/explosion.bmp");
     //Object exp_obj = Object(""); // TODO: fix error prone nature of this constructor
     
     unsigned int game_time = 0;
