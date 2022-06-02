@@ -24,4 +24,4 @@ void wait_for(int micro_secs);
  */
 unsigned int swap_endian(unsigned int data);
 
-int get_cam_position(int player_postion, int center, const int MAP_SIZE);
+int get_cam_position(int player_postion, int center);

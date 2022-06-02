@@ -1,5 +1,6 @@
 #pragma once
 
+#include "globals.h"
 #include <pspctrl.h>
 #include "objects.hpp"
 #include "utils/object_list.hpp"
@@ -13,9 +14,6 @@ private:
     static const int MAX_PROJ = 64;
     static const int MAX_ENEMIES = 16;
 
-    int MAP_SIZE;
-    unsigned char * noise_map;
-
     Person player = Person(Image("assets/player.bmp"));
     Image rocket = Image("assets/missile.bmp");
     Image status_bar = Image("assets/statusbar.bmp");
@@ -28,7 +26,7 @@ private:
     ObjectList explosion_list = ObjectList(128); // TODO think about what the upper bound should be
     Object * * explosions =  explosion_list.get_list();
     
-    EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, MAP_SIZE, noise_map);
+    EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES);
 
     Animation explosion_animation = Animation(3, 5, 50000, "assets/explosion.bmp");
     //Object exp_obj = Object(""); // TODO: fix error prone nature of this constructor
@@ -62,11 +60,8 @@ public:
     /**
      * @brief Initialize variables needed for GameState, 
      * prepare system for reading controls.
-     * 
-     * @param _noise_map 
-     * @param _MAP_SIZE 
      */
-    void init(unsigned char * _noise_map, int _MAP_SIZE);
+    void init();
 
     /**
      * @brief Update player controlled actions (controller input),

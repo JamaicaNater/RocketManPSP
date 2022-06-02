@@ -9,5 +9,5 @@
 #define MILLISECOND 1000
 #define FRAME_TIME SECOND / 60
 
-unsigned char _noise_map[MAP_SIZE];
+extern unsigned char * noise_map;
 #endif

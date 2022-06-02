@@ -7,15 +7,12 @@
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 
-void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
+void GameState::init(){
     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Init Gamestate");
     player.vector.x = 10;
 	player.vector.y = 10;
 	player.vector.direction = FORWARD;
     player.weapon.image = Image("assets/player_rocket.bmp");
-
-    noise_map = _noise_map;
-    MAP_SIZE = _MAP_SIZE;
 
     enemy.vector.x = 200;
     enemy.vector.y = noise_map[enemy.vector.x];
@@ -68,7 +65,7 @@ void GameState::update_nonplayer_actions() {
 
 void GameState::update_player_actions() {
     player.vector.vel_x = 0;// reset velocity; TODO: slowdown mechanic
-    cam_pos_x = get_cam_position(player.vector.x, screen_center, MAP_SIZE);
+    cam_pos_x = get_cam_position(player.vector.x, screen_center);
     sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
 
     // Where to draw the player on the screen

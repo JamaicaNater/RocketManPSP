@@ -4,6 +4,7 @@
 #include <pspthreadman.h>
 #include <cstdlib>
 
+#include "globals.h"
 #include "gamestate.h"
 #include "utils.h"
 #include "logger/logger.h"
@@ -11,7 +12,8 @@
 #include "gfx.hpp"
 #include "FastNoise/FastNoise.hpp"
 
-#define MICROSECONDS 1000 * 1000
+unsigned char * noise_map = (unsigned char*)malloc(MAP_SIZE);
+
 #define printf pspDebugScreenPrintf
 
 //Boilerplate PSP code
@@ -44,10 +46,6 @@ void setupCallbacks()
 }
 // End of boilerplate PSP code
 
-const int MAP_SIZE = 3000;
-unsigned char noise_map[MAP_SIZE];
-int FRAMETIME = MICROSECONDS / 60;
-
 int main()
 {  	
 	setupCallbacks();
@@ -68,7 +66,7 @@ int main()
 	unsigned int start_time = 0, end_time = 0;
 
 	GameState state = GameState();
-	state.init(noise_map, MAP_SIZE);
+	state.init();
 	state.title_screen();
 	while (1)
 	{

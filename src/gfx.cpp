@@ -102,8 +102,6 @@ namespace GFX
 		unsigned int &width = img.width;
 		unsigned int &height = img.height;
 		// If there is not a image present generate one and store it
-
-		PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "attempting to draw at x:%d, y:%d", x, y);
 		if (!image) {
 			PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "call loadBMP on %s", img.filename);
 			load_BMP(img);			
