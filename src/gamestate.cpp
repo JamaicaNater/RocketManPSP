@@ -8,6 +8,7 @@
 #include "bmp/loadbmp.h"
 
 void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
+    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Init Gamestate");
     player.vector.x = 10;
 	player.vector.y = 10;
 	player.vector.direction = FORWARD;
@@ -18,6 +19,8 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
 
     enemy.vector.x = 200;
     enemy.vector.y = noise_map[enemy.vector.x];
+
+    enemy_handler.spawn_enemy(300, noise_map[300], game_time);
 
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
@@ -167,6 +170,8 @@ void GameState::update_physics(){
     enemy.vector.x+=enemy.vector.vel_x;
     enemy.vector.y = noise_map[enemy.vector.x];
 
+    enemy_handler.update_physics(player.vector.x);
+
     player.weapon.vector.x = player.vector.x;
     player.weapon.vector.y = player.vector.y-25;
 }
@@ -201,7 +206,8 @@ void GameState::draw(){
         }
     }
 
-    GFX::drawBMP(enemy.vector.x - cam_pos_x, enemy.vector.y, enemy.vector.get_angle(), CENTER, enemy.vector.direction, 0, enemy_img);
+    enemy_handler.draw(cam_pos_x);
+    //GFX::drawBMP(enemy.vector.x - cam_pos_x, enemy.vector.y, enemy.vector.get_angle(), CENTER, enemy.vector.direction, 0, enemy_img);
 
     GFX::swapBuffers();
     GFX::clear();

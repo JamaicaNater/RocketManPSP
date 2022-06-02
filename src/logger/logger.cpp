@@ -57,7 +57,7 @@ namespace PSP_LOGGER {
      */
     void assert_or_log(bool condition, const char * format, ...){
         #ifdef PSP_LOGGING
-        if (condition) return;
+        //if (condition) return;
 
         if (fd<0) {
             pspDebugScreenInit();
@@ -68,7 +68,8 @@ namespace PSP_LOGGER {
 
         va_list args;
         char data[128];
-        sceIoWrite(fd, (void*)"CRITICAL:assert_or_log() evaluated false: ", 42);
+        if (!condition) sceIoWrite(fd, (void*)"CRITICAL:assert_or_log() evaluated false: ", 42);
+        else sceIoWrite(fd, (void*)"DEBUG: (assertion) ", 19);
         va_start( args, format );
         vsprintf(data, format, args);
         va_end( args );
@@ -76,8 +77,10 @@ namespace PSP_LOGGER {
         
         sceIoWrite(fd, (void *)"\n", 1); // or strlen(data)
 
-        close_log();
-        sceKernelExitGame();
+        if (!condition){
+            close_log();
+            sceKernelExitGame();
+        }
         
         #endif
     }

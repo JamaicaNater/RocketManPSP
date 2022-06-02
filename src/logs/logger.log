@@ -18,618 +18,853 @@ INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/background.bmp, 102.281250 kb used by bmps
+DEBUG: Allocating 64 Objects
+DEBUG: Allocating 128 Objects
+DEBUG: Calling ObjectList for enemy
+DEBUG: Allocating 16 Objects
+INFO: Init Gamestate
+DEBUG: attempting to spawn
+DEBUG: (assertion) Enemy spawned successfully
+DEBUG: Success spawn
 INFO: loading assets/missile.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/missile.bmp, 102.562500 kb used by bmps
 INFO: loading assets/explosion.bmp into memory
+DEBUG: (assertion) Width of 795 is divisible bycols 5
+DEBUG: (assertion) Height of 411 is divisible byrows 3
 INFO: Alocating 15 pointers for 159 x 137 images
 INFO: Allocating Space
 WARNING: Attempting to allocate 1276.347656 kb of space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/explosion.bmp, 1378.910156 kb used by bmps
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
 INFO: loading assets/statusbar.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/statusbar.bmp, 1426.910156 kb used by bmps
+DEBUG: attempting to draw at x:0, y:113
 DEBUG: call loadBMP on assets/player_rocket.bmp
 INFO: loading assets/player_rocket.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player_rocket.bmp, 1427.628906 kb used by bmps
+DEBUG: attempting to draw at x:10, y:138
 DEBUG: call loadBMP on assets/player.bmp
 INFO: loading assets/player.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player.bmp, 1430.628906 kb used by bmps
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:301, y:0
 DEBUG: call loadBMP on assets/enemy.bmp
 INFO: loading assets/enemy.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/enemy.bmp, 1439.808594 kb used by bmps
-DEBUG: draw proj scr_x:255, scr_y:97
-DEBUG: draw proj scr_x:264, scr_y:97
-DEBUG: draw proj scr_x:272, scr_y:97
-DEBUG: draw proj scr_x:281, scr_y:97
-DEBUG: draw proj scr_x:289, scr_y:97
-DEBUG: draw proj scr_x:297, scr_y:97
-DEBUG: draw proj scr_x:306, scr_y:97
-DEBUG: draw proj scr_x:314, scr_y:97
-DEBUG: draw proj scr_x:322, scr_y:97
-DEBUG: draw proj scr_x:331, scr_y:97
-DEBUG: draw proj scr_x:339, scr_y:97
-DEBUG: draw proj scr_x:347, scr_y:98
-DEBUG: draw proj scr_x:356, scr_y:98
-DEBUG: draw proj scr_x:364, scr_y:98
-DEBUG: draw proj scr_x:372, scr_y:98
-DEBUG: draw proj scr_x:381, scr_y:98
-DEBUG: draw proj scr_x:389, scr_y:99
-DEBUG: draw proj scr_x:397, scr_y:99
-DEBUG: draw proj scr_x:406, scr_y:99
-DEBUG: draw proj scr_x:414, scr_y:100
-DEBUG: draw proj scr_x:422, scr_y:100
-DEBUG: draw proj scr_x:431, scr_y:100
-DEBUG: draw proj scr_x:439, scr_y:101
-DEBUG: draw proj scr_x:447, scr_y:101
-DEBUG: draw proj scr_x:456, scr_y:101
-DEBUG: draw proj scr_x:464, scr_y:102
-DEBUG: draw proj scr_x:472, scr_y:102
-DEBUG: draw proj scr_x:481, scr_y:103
-DEBUG: draw proj scr_x:489, scr_y:103
-DEBUG: draw proj scr_x:497, scr_y:104
-DEBUG: draw proj scr_x:506, scr_y:104
-DEBUG: draw proj scr_x:514, scr_y:105
-DEBUG: draw proj scr_x:522, scr_y:105
-DEBUG: draw proj scr_x:529, scr_y:106
-INFO: Freed projectile 15 located at scr_x535, y106
-DEBUG: draw proj scr_x:255, scr_y:82
-DEBUG: draw proj scr_x:264, scr_y:82
-DEBUG: draw proj scr_x:272, scr_y:82
-DEBUG: draw proj scr_x:281, scr_y:82
-DEBUG: draw proj scr_x:289, scr_y:82
-DEBUG: draw proj scr_x:297, scr_y:82
-DEBUG: draw proj scr_x:306, scr_y:82
-DEBUG: draw proj scr_x:314, scr_y:82
-DEBUG: draw proj scr_x:322, scr_y:82
-DEBUG: draw proj scr_x:331, scr_y:82
-DEBUG: draw proj scr_x:339, scr_y:82
-DEBUG: draw proj scr_x:347, scr_y:83
-DEBUG: draw proj scr_x:255, scr_y:82
-DEBUG: draw proj scr_x:356, scr_y:83
-DEBUG: draw proj scr_x:264, scr_y:82
-DEBUG: draw proj scr_x:364, scr_y:83
-DEBUG: draw proj scr_x:272, scr_y:82
-DEBUG: draw proj scr_x:372, scr_y:83
-DEBUG: draw proj scr_x:281, scr_y:82
-DEBUG: draw proj scr_x:381, scr_y:83
-DEBUG: draw proj scr_x:289, scr_y:82
-DEBUG: draw proj scr_x:389, scr_y:84
-DEBUG: draw proj scr_x:297, scr_y:82
-DEBUG: draw proj scr_x:397, scr_y:84
-DEBUG: draw proj scr_x:306, scr_y:82
-DEBUG: draw proj scr_x:406, scr_y:84
-DEBUG: draw proj scr_x:314, scr_y:82
-DEBUG: draw proj scr_x:414, scr_y:85
-DEBUG: draw proj scr_x:322, scr_y:82
-DEBUG: draw proj scr_x:422, scr_y:85
-DEBUG: draw proj scr_x:331, scr_y:82
-DEBUG: draw proj scr_x:431, scr_y:85
-DEBUG: draw proj scr_x:339, scr_y:82
-DEBUG: draw proj scr_x:439, scr_y:86
-DEBUG: draw proj scr_x:347, scr_y:83
-DEBUG: draw proj scr_x:447, scr_y:86
-DEBUG: draw proj scr_x:255, scr_y:81
-DEBUG: draw proj scr_x:356, scr_y:83
-DEBUG: draw proj scr_x:456, scr_y:86
-DEBUG: draw proj scr_x:264, scr_y:83
-DEBUG: draw proj scr_x:364, scr_y:83
-DEBUG: draw proj scr_x:464, scr_y:87
-DEBUG: draw proj scr_x:272, scr_y:85
-DEBUG: draw proj scr_x:372, scr_y:83
-DEBUG: draw proj scr_x:472, scr_y:87
-DEBUG: draw proj scr_x:280, scr_y:87
-DEBUG: draw proj scr_x:381, scr_y:83
-DEBUG: draw proj scr_x:481, scr_y:88
-DEBUG: draw proj scr_x:288, scr_y:89
-DEBUG: draw proj scr_x:389, scr_y:84
-DEBUG: draw proj scr_x:489, scr_y:88
-DEBUG: draw proj scr_x:296, scr_y:90
-DEBUG: draw proj scr_x:397, scr_y:84
-DEBUG: draw proj scr_x:497, scr_y:89
-DEBUG: draw proj scr_x:304, scr_y:92
-DEBUG: draw proj scr_x:406, scr_y:84
-DEBUG: draw proj scr_x:506, scr_y:89
-DEBUG: draw proj scr_x:313, scr_y:94
-DEBUG: draw proj scr_x:414, scr_y:85
-DEBUG: draw proj scr_x:514, scr_y:90
-DEBUG: draw proj scr_x:321, scr_y:96
-DEBUG: draw proj scr_x:422, scr_y:85
-DEBUG: draw proj scr_x:522, scr_y:90
-INFO: Freed projectile 15 located at scr_x531, y91
-DEBUG: draw proj scr_x:329, scr_y:98
-DEBUG: draw proj scr_x:431, scr_y:85
-DEBUG: draw proj scr_x:337, scr_y:100
-DEBUG: draw proj scr_x:439, scr_y:86
-DEBUG: draw proj scr_x:345, scr_y:101
-DEBUG: draw proj scr_x:447, scr_y:86
-DEBUG: draw proj scr_x:353, scr_y:103
-DEBUG: draw proj scr_x:456, scr_y:86
-DEBUG: draw proj scr_x:362, scr_y:105
-DEBUG: draw proj scr_x:464, scr_y:87
-DEBUG: draw proj scr_x:370, scr_y:107
-DEBUG: draw proj scr_x:472, scr_y:87
-DEBUG: draw proj scr_x:378, scr_y:109
-DEBUG: draw proj scr_x:481, scr_y:88
-DEBUG: draw proj scr_x:386, scr_y:111
-DEBUG: draw proj scr_x:489, scr_y:88
-DEBUG: draw proj scr_x:255, scr_y:81
-DEBUG: draw proj scr_x:394, scr_y:113
-DEBUG: draw proj scr_x:497, scr_y:89
-DEBUG: draw proj scr_x:261, scr_y:87
-DEBUG: draw proj scr_x:402, scr_y:115
-DEBUG: draw proj scr_x:506, scr_y:89
-DEBUG: draw proj scr_x:267, scr_y:93
-INFO: Exploded projectile 13 located at scr_x411, y117
-DEBUG: draw proj scr_x:514, scr_y:90
-DEBUG: draw proj scr_x:273, scr_y:99
-DEBUG: draw proj scr_x:522, scr_y:90
-DEBUG: draw proj scr_x:279, scr_y:105
-INFO: Freed projectile 14 located at scr_x531, y91
-DEBUG: draw proj scr_x:285, scr_y:111
-DEBUG: draw proj scr_x:291, scr_y:117
-DEBUG: draw proj scr_x:297, scr_y:122
-DEBUG: draw proj scr_x:303, scr_y:128
-DEBUG: draw proj scr_x:309, scr_y:134
-DEBUG: draw proj scr_x:315, scr_y:140
-DEBUG: draw proj scr_x:321, scr_y:146
-DEBUG: draw proj scr_x:327, scr_y:152
-DEBUG: draw proj scr_x:333, scr_y:158
-DEBUG: draw proj scr_x:339, scr_y:164
-DEBUG: draw proj scr_x:345, scr_y:170
-DEBUG: draw proj scr_x:351, scr_y:176
-DEBUG: draw proj scr_x:357, scr_y:182
-INFO: Exploded projectile 15 located at scr_x363, y188
-DEBUG: draw proj scr_x:255, scr_y:81
-DEBUG: draw proj scr_x:261, scr_y:88
-DEBUG: draw proj scr_x:266, scr_y:94
-DEBUG: draw proj scr_x:272, scr_y:101
-DEBUG: draw proj scr_x:277, scr_y:107
-DEBUG: draw proj scr_x:282, scr_y:114
-DEBUG: draw proj scr_x:288, scr_y:120
-DEBUG: draw proj scr_x:293, scr_y:127
-DEBUG: draw proj scr_x:298, scr_y:133
-DEBUG: draw proj scr_x:304, scr_y:140
-DEBUG: draw proj scr_x:309, scr_y:146
-DEBUG: draw proj scr_x:314, scr_y:153
-DEBUG: draw proj scr_x:255, scr_y:81
-DEBUG: draw proj scr_x:320, scr_y:159
-DEBUG: draw proj scr_x:263, scr_y:85
-DEBUG: draw proj scr_x:325, scr_y:166
-INFO: Exploded projectile 15 located at scr_x330, y173
-DEBUG: draw proj scr_x:270, scr_y:89
-DEBUG: draw proj scr_x:278, scr_y:93
-DEBUG: draw proj scr_x:287, scr_y:96
-DEBUG: draw proj scr_x:297, scr_y:100
-DEBUG: draw proj scr_x:306, scr_y:104
-DEBUG: draw proj scr_x:316, scr_y:107
-DEBUG: draw proj scr_x:325, scr_y:111
-DEBUG: draw proj scr_x:335, scr_y:115
-DEBUG: draw proj scr_x:344, scr_y:119
-DEBUG: draw proj scr_x:354, scr_y:123
-DEBUG: draw proj scr_x:363, scr_y:127
-DEBUG: draw proj scr_x:373, scr_y:130
-DEBUG: draw proj scr_x:382, scr_y:134
-DEBUG: draw proj scr_x:392, scr_y:138
-DEBUG: draw proj scr_x:401, scr_y:142
-DEBUG: draw proj scr_x:411, scr_y:146
-INFO: Exploded projectile 14 located at scr_x420, y150
-DEBUG: draw proj scr_x:125, scr_y:83
-DEBUG: draw proj scr_x:132, scr_y:89
-DEBUG: draw proj scr_x:139, scr_y:94
-DEBUG: draw proj scr_x:145, scr_y:99
-DEBUG: draw proj scr_x:152, scr_y:104
-DEBUG: draw proj scr_x:158, scr_y:109
-DEBUG: draw proj scr_x:165, scr_y:115
-DEBUG: draw proj scr_x:172, scr_y:120
-DEBUG: draw proj scr_x:178, scr_y:125
-DEBUG: draw proj scr_x:125, scr_y:83
-DEBUG: draw proj scr_x:185, scr_y:130
-DEBUG: draw proj scr_x:132, scr_y:89
-DEBUG: draw proj scr_x:191, scr_y:136
-DEBUG: draw proj scr_x:138, scr_y:95
-DEBUG: draw proj scr_x:198, scr_y:141
-DEBUG: draw proj scr_x:144, scr_y:100
-DEBUG: draw proj scr_x:204, scr_y:146
-DEBUG: draw proj scr_x:150, scr_y:106
-DEBUG: draw proj scr_x:211, scr_y:151
-INFO: Exploded projectile 15 located at scr_x218, y157
-DEBUG: draw proj scr_x:156, scr_y:112
-DEBUG: draw proj scr_x:163, scr_y:117
-DEBUG: draw proj scr_x:169, scr_y:123
-DEBUG: draw proj scr_x:175, scr_y:129
-DEBUG: draw proj scr_x:181, scr_y:134
-DEBUG: draw proj scr_x:187, scr_y:140
-DEBUG: draw proj scr_x:194, scr_y:146
-DEBUG: draw proj scr_x:125, scr_y:83
-DEBUG: draw proj scr_x:200, scr_y:152
-DEBUG: draw proj scr_x:132, scr_y:89
-DEBUG: draw proj scr_x:206, scr_y:157
-DEBUG: draw proj scr_x:138, scr_y:95
-INFO: Exploded projectile 14 located at scr_x212, y163
-DEBUG: draw proj scr_x:144, scr_y:100
-DEBUG: draw proj scr_x:150, scr_y:106
-DEBUG: draw proj scr_x:156, scr_y:112
-DEBUG: draw proj scr_x:163, scr_y:117
-DEBUG: draw proj scr_x:169, scr_y:123
-DEBUG: draw proj scr_x:175, scr_y:129
-DEBUG: draw proj scr_x:181, scr_y:134
-DEBUG: draw proj scr_x:187, scr_y:140
-DEBUG: draw proj scr_x:194, scr_y:146
-DEBUG: draw proj scr_x:125, scr_y:83
-DEBUG: draw proj scr_x:200, scr_y:152
-DEBUG: draw proj scr_x:132, scr_y:89
-DEBUG: draw proj scr_x:206, scr_y:157
-INFO: Exploded projectile 15 located at scr_x212, y163
-DEBUG: draw proj scr_x:138, scr_y:95
-DEBUG: draw proj scr_x:144, scr_y:100
-DEBUG: draw proj scr_x:150, scr_y:106
-DEBUG: draw proj scr_x:156, scr_y:112
-DEBUG: draw proj scr_x:163, scr_y:117
-DEBUG: draw proj scr_x:169, scr_y:123
-DEBUG: draw proj scr_x:175, scr_y:129
-DEBUG: draw proj scr_x:125, scr_y:83
-DEBUG: draw proj scr_x:181, scr_y:134
-DEBUG: draw proj scr_x:132, scr_y:89
-DEBUG: draw proj scr_x:187, scr_y:140
-DEBUG: draw proj scr_x:138, scr_y:95
-DEBUG: draw proj scr_x:194, scr_y:146
-DEBUG: draw proj scr_x:144, scr_y:100
-DEBUG: draw proj scr_x:200, scr_y:152
-DEBUG: draw proj scr_x:150, scr_y:106
-DEBUG: draw proj scr_x:206, scr_y:157
-DEBUG: draw proj scr_x:156, scr_y:112
-INFO: Exploded projectile 14 located at scr_x212, y163
-DEBUG: draw proj scr_x:163, scr_y:117
-DEBUG: draw proj scr_x:169, scr_y:123
-DEBUG: draw proj scr_x:175, scr_y:129
-DEBUG: draw proj scr_x:181, scr_y:134
-DEBUG: draw proj scr_x:187, scr_y:140
-DEBUG: draw proj scr_x:194, scr_y:146
-DEBUG: draw proj scr_x:200, scr_y:152
-DEBUG: draw proj scr_x:206, scr_y:157
-INFO: Exploded projectile 15 located at scr_x212, y163
-DEBUG: draw proj scr_x:255, scr_y:101
-DEBUG: draw proj scr_x:260, scr_y:107
-DEBUG: draw proj scr_x:264, scr_y:113
-DEBUG: draw proj scr_x:268, scr_y:118
-DEBUG: draw proj scr_x:272, scr_y:124
-INFO: Exploded projectile 15 located at scr_x276, y130
-DEBUG: draw proj scr_x:255, scr_y:116
-DEBUG: draw proj scr_x:260, scr_y:122
-DEBUG: draw proj scr_x:264, scr_y:128
-INFO: Exploded projectile 15 located at scr_x268, y133
-DEBUG: draw proj scr_x:255, scr_y:113
-DEBUG: draw proj scr_x:260, scr_y:119
-INFO: Exploded projectile 15 located at scr_x264, y125
-DEBUG: draw proj scr_x:255, scr_y:94
-DEBUG: draw proj scr_x:260, scr_y:100
-INFO: Exploded projectile 15 located at scr_x264, y106
-DEBUG: draw proj scr_x:255, scr_y:81
-DEBUG: draw proj scr_x:260, scr_y:87
-DEBUG: draw proj scr_x:264, scr_y:93
-DEBUG: draw proj scr_x:268, scr_y:98
-DEBUG: draw proj scr_x:272, scr_y:104
-INFO: Exploded projectile 15 located at scr_x276, y110
-DEBUG: draw proj scr_x:255, scr_y:77
-DEBUG: draw proj scr_x:260, scr_y:83
-DEBUG: draw proj scr_x:264, scr_y:89
-DEBUG: draw proj scr_x:268, scr_y:94
-DEBUG: draw proj scr_x:272, scr_y:100
-DEBUG: draw proj scr_x:276, scr_y:106
-INFO: Exploded projectile 15 located at scr_x281, y111
-DEBUG: draw proj scr_x:103, scr_y:76
-DEBUG: draw proj scr_x:110, scr_y:82
-DEBUG: draw proj scr_x:116, scr_y:88
-DEBUG: draw proj scr_x:122, scr_y:93
-DEBUG: draw proj scr_x:128, scr_y:99
-DEBUG: draw proj scr_x:134, scr_y:105
-DEBUG: draw proj scr_x:141, scr_y:110
-DEBUG: draw proj scr_x:147, scr_y:116
-DEBUG: draw proj scr_x:153, scr_y:122
-DEBUG: draw proj scr_x:103, scr_y:76
-DEBUG: draw proj scr_x:159, scr_y:127
-DEBUG: draw proj scr_x:110, scr_y:82
-DEBUG: draw proj scr_x:165, scr_y:133
-DEBUG: draw proj scr_x:116, scr_y:88
-DEBUG: draw proj scr_x:172, scr_y:139
-DEBUG: draw proj scr_x:122, scr_y:93
-DEBUG: draw proj scr_x:178, scr_y:145
-DEBUG: draw proj scr_x:128, scr_y:99
-DEBUG: draw proj scr_x:184, scr_y:150
-DEBUG: draw proj scr_x:134, scr_y:105
-DEBUG: draw proj scr_x:190, scr_y:156
-DEBUG: draw proj scr_x:141, scr_y:110
-DEBUG: draw proj scr_x:196, scr_y:162
-INFO: Exploded projectile 15 located at scr_x203, y168
-DEBUG: draw proj scr_x:147, scr_y:116
-DEBUG: draw proj scr_x:153, scr_y:122
-DEBUG: draw proj scr_x:159, scr_y:127
-DEBUG: draw proj scr_x:165, scr_y:133
-DEBUG: draw proj scr_x:103, scr_y:76
-DEBUG: draw proj scr_x:172, scr_y:139
-DEBUG: draw proj scr_x:110, scr_y:82
-DEBUG: draw proj scr_x:178, scr_y:145
-DEBUG: draw proj scr_x:116, scr_y:88
-DEBUG: draw proj scr_x:184, scr_y:150
-DEBUG: draw proj scr_x:122, scr_y:93
-DEBUG: draw proj scr_x:190, scr_y:156
-DEBUG: draw proj scr_x:128, scr_y:99
-DEBUG: draw proj scr_x:196, scr_y:162
-DEBUG: draw proj scr_x:134, scr_y:105
-INFO: Exploded projectile 14 located at scr_x203, y168
-DEBUG: draw proj scr_x:141, scr_y:110
-DEBUG: draw proj scr_x:147, scr_y:116
-DEBUG: draw proj scr_x:153, scr_y:122
-DEBUG: draw proj scr_x:103, scr_y:76
-DEBUG: draw proj scr_x:159, scr_y:127
-DEBUG: draw proj scr_x:110, scr_y:82
-DEBUG: draw proj scr_x:165, scr_y:133
-DEBUG: draw proj scr_x:116, scr_y:88
-DEBUG: draw proj scr_x:172, scr_y:139
-DEBUG: draw proj scr_x:122, scr_y:93
-DEBUG: draw proj scr_x:178, scr_y:145
-DEBUG: draw proj scr_x:128, scr_y:99
-DEBUG: draw proj scr_x:184, scr_y:150
-DEBUG: draw proj scr_x:134, scr_y:105
-DEBUG: draw proj scr_x:190, scr_y:156
-DEBUG: draw proj scr_x:141, scr_y:110
-DEBUG: draw proj scr_x:196, scr_y:162
-INFO: Exploded projectile 15 located at scr_x203, y168
-DEBUG: draw proj scr_x:147, scr_y:116
-DEBUG: draw proj scr_x:153, scr_y:122
-DEBUG: draw proj scr_x:159, scr_y:127
-DEBUG: draw proj scr_x:165, scr_y:133
-DEBUG: draw proj scr_x:172, scr_y:139
-DEBUG: draw proj scr_x:178, scr_y:145
-DEBUG: draw proj scr_x:184, scr_y:150
-DEBUG: draw proj scr_x:190, scr_y:156
-DEBUG: draw proj scr_x:196, scr_y:162
-INFO: Exploded projectile 14 located at scr_x203, y168
-DEBUG: draw proj scr_x:255, scr_y:149
-DEBUG: draw proj scr_x:260, scr_y:155
-DEBUG: draw proj scr_x:264, scr_y:161
-DEBUG: draw proj scr_x:268, scr_y:166
-DEBUG: draw proj scr_x:272, scr_y:172
-DEBUG: draw proj scr_x:276, scr_y:178
-INFO: Exploded projectile 15 located at scr_x281, y183
-DEBUG: draw proj scr_x:255, scr_y:159
-DEBUG: draw proj scr_x:260, scr_y:165
-DEBUG: draw proj scr_x:264, scr_y:171
-DEBUG: draw proj scr_x:268, scr_y:176
-INFO: Exploded projectile 14 located at scr_x272, y182
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:175, scr_y:124
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:123, scr_y:153
-INFO: Exploded projectile 15 located at scr_x116, y158
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:175, scr_y:124
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:123, scr_y:153
-DEBUG: draw proj scr_x:256, scr_y:80
-INFO: Exploded projectile 14 located at scr_x116, y158
-DEBUG: draw proj scr_x:175, scr_y:124
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:123, scr_y:153
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:197, scr_y:112
-INFO: Exploded projectile 13 located at scr_x116, y158
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:175, scr_y:124
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:123, scr_y:153
-INFO: Exploded projectile 15 located at scr_x116, y158
-DEBUG: draw proj scr_x:175, scr_y:124
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:123, scr_y:153
-DEBUG: draw proj scr_x:211, scr_y:104
-INFO: Exploded projectile 14 located at scr_x116, y158
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:175, scr_y:124
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:175, scr_y:124
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:123, scr_y:153
-INFO: Exploded projectile 15 located at scr_x116, y158
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:175, scr_y:124
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:123, scr_y:153
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:219, scr_y:100
-INFO: Exploded projectile 13 located at scr_x116, y158
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:123, scr_y:153
-DEBUG: draw proj scr_x:175, scr_y:124
-INFO: Exploded projectile 14 located at scr_x116, y158
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:256, scr_y:80
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:248, scr_y:84
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:241, scr_y:88
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:233, scr_y:92
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:175, scr_y:124
-DEBUG: draw proj scr_x:226, scr_y:96
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:219, scr_y:100
-DEBUG: draw proj scr_x:123, scr_y:153
-INFO: Exploded projectile 15 located at scr_x116, y158
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:211, scr_y:104
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:204, scr_y:108
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:197, scr_y:112
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:189, scr_y:116
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:182, scr_y:120
-DEBUG: draw proj scr_x:123, scr_y:153
-DEBUG: draw proj scr_x:175, scr_y:124
-INFO: Exploded projectile 12 located at scr_x116, y158
-DEBUG: draw proj scr_x:167, scr_y:129
-DEBUG: draw proj scr_x:160, scr_y:133
-DEBUG: draw proj scr_x:152, scr_y:137
-DEBUG: draw proj scr_x:145, scr_y:141
-DEBUG: draw proj scr_x:138, scr_y:145
-DEBUG: draw proj scr_x:130, scr_y:149
-DEBUG: draw proj scr_x:123, scr_y:153
-INFO: Exploded projectile 14 located at scr_x116, y158
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:302, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:303, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:304, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:305, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:306, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:307, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:308, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:309, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:310, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:311, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:312, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:313, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:314, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:315, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:316, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:317, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:318, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:319, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:320, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:321, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:322, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:323, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:324, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:325, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:326, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:327, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:0, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:328, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:20, y:113
+DEBUG: attempting to draw at x:10, y:138
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:329, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:22, y:111
+DEBUG: attempting to draw at x:12, y:136
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:330, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:24, y:109
+DEBUG: attempting to draw at x:14, y:134
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:331, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:26, y:107
+DEBUG: attempting to draw at x:16, y:132
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:332, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:28, y:105
+DEBUG: attempting to draw at x:18, y:130
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:333, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:30, y:103
+DEBUG: attempting to draw at x:20, y:128
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:334, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:32, y:102
+DEBUG: attempting to draw at x:22, y:127
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:335, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:34, y:100
+DEBUG: attempting to draw at x:24, y:125
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:336, y:96
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:36, y:99
+DEBUG: attempting to draw at x:26, y:124
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:337, y:91
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:38, y:98
+DEBUG: attempting to draw at x:28, y:123
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:338, y:3
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:40, y:97
+DEBUG: attempting to draw at x:30, y:122
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:339, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:42, y:97
+DEBUG: attempting to draw at x:32, y:122
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:340, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:44, y:96
+DEBUG: attempting to draw at x:34, y:121
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:341, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:46, y:96
+DEBUG: attempting to draw at x:36, y:121
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:342, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:48, y:95
+DEBUG: attempting to draw at x:38, y:120
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:343, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:50, y:95
+DEBUG: attempting to draw at x:40, y:120
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:344, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:52, y:95
+DEBUG: attempting to draw at x:42, y:120
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:345, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:54, y:95
+DEBUG: attempting to draw at x:44, y:120
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:346, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:56, y:94
+DEBUG: attempting to draw at x:46, y:119
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:347, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:58, y:94
+DEBUG: attempting to draw at x:48, y:119
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:348, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:60, y:94
+DEBUG: attempting to draw at x:50, y:119
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:349, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:62, y:94
+DEBUG: attempting to draw at x:52, y:119
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:350, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:64, y:94
+DEBUG: attempting to draw at x:54, y:119
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:351, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:66, y:94
+DEBUG: attempting to draw at x:56, y:119
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:352, y:255
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:68, y:93
+DEBUG: attempting to draw at x:58, y:118
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:353, y:255
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:70, y:93
+DEBUG: attempting to draw at x:60, y:118
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:354, y:255
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:72, y:93
+DEBUG: attempting to draw at x:62, y:118
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:355, y:255
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:74, y:92
+DEBUG: attempting to draw at x:64, y:117
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:356, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:76, y:92
+DEBUG: attempting to draw at x:66, y:117
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:357, y:2
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:78, y:91
+DEBUG: attempting to draw at x:68, y:116
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:358, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:80, y:91
+DEBUG: attempting to draw at x:70, y:116
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:359, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:82, y:90
+DEBUG: attempting to draw at x:72, y:115
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:360, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:84, y:89
+DEBUG: attempting to draw at x:74, y:114
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:361, y:4
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:86, y:88
+DEBUG: attempting to draw at x:76, y:113
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:362, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:88, y:88
+DEBUG: attempting to draw at x:78, y:113
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:363, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:90, y:87
+DEBUG: attempting to draw at x:80, y:112
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:364, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:92, y:86
+DEBUG: attempting to draw at x:82, y:111
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:365, y:37
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:94, y:85
+DEBUG: attempting to draw at x:84, y:110
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:366, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:96, y:84
+DEBUG: attempting to draw at x:86, y:109
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:367, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:98, y:83
+DEBUG: attempting to draw at x:88, y:108
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:368, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:100, y:82
+DEBUG: attempting to draw at x:90, y:107
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:369, y:37
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:102, y:81
+DEBUG: attempting to draw at x:92, y:106
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:370, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:104, y:80
+DEBUG: attempting to draw at x:94, y:105
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:371, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:96, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:372, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:373, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:374, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:375, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:376, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:377, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:378, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:379, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:380, y:254
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:381, y:255
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:382, y:2
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:383, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:384, y:128
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:385, y:187
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:386, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:387, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:388, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:389, y:220
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:390, y:5
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:391, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:392, y:8
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:393, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:394, y:32
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:395, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:396, y:22
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:397, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:398, y:32
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:399, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:400, y:3
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:401, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:402, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:403, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:404, y:3
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:405, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:406, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:407, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:408, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:409, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:410, y:16
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:411, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:412, y:128
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:413, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:414, y:0
+DEBUG: Attempt update physics
+DEBUG: Phyisics Updated
+DEBUG: attempting to draw at x:106, y:79
+DEBUG: attempting to draw at x:98, y:104
+INFO: handling enemy draw
+INFO: 15
+DEBUG: attempting to draw at x:415, y:170

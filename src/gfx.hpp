@@ -9,7 +9,6 @@
 #define SCREEN_WIDTH 512
 #define PI 3.14159265359
 
-enum flips{FORWARD, BACKWARD};
 enum pivots{CENTER = 0, TOP_LEFT, CENTER_LEFT, BOTTOM_LEFT, TOP_CENTER, BOTTOM_CENTER, TOP_RIGHT, CENTER_RIGHT, BOTTOM_RIGHT};
 
 namespace GFX 
@@ -71,7 +70,7 @@ namespace GFX
 	 * @param filter - TBD
 	 * @param image 
 	 */
-	void drawBMP(int x, int y, short rot, pivots pivot, char direction, uint32_t filter, Image &image);
+	void drawBMP(int x, int y, short rot, pivots pivot, char direction, uint32_t filter, Image &image); // TODO: char direction???
 
 	/**
 	 * @brief Creates a looping titlescreen that a separate thread terminates upon start button being pressed
