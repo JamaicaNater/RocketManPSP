@@ -10,9 +10,11 @@
 class Object
 {
 	public:
-	float grav = 60.0f;
 	Image image;
 	int draw_pos_x; // postion to draw at
+	
+	int current_frame = 0;
+	int last_frame_update = 0;
 
 	Vector2d vector;
 	Object() {}
@@ -31,10 +33,12 @@ class Person: public Object
 	public:
 	Object weapon = Object(Image("assets/player_rocket.bmp"));
 	
-	bool jumping = false;
 	unsigned int jump_time;
 	int jump_height = 0;
 	int starting_jump_height;
+
+	int weapon_last_fired = 0;
+	int time_between_fires = 100*1000;
 
 	Person(Image _img) {
 		image = _img;
@@ -43,7 +47,7 @@ class Person: public Object
 	unsigned short jump_height_at(float time) {
 		time *=2;
 		return starting_jump_height + vector.vel_y*(time) 
-		       + .5 * (grav * (time) * (time) );		
+		       + .5 * (Vector2d::grav * (time) * (time) );		
 	}
 
 } ;

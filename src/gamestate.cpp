@@ -19,9 +19,6 @@ void GameState::init(unsigned char * _noise_map, int _MAP_SIZE){
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
-    explosion.last_updated = 0;
-    exp_obj.vector = Vector2d(150,150);
-
     load_BMP(rocket);
     load_BMP(explosion);
 }
@@ -30,18 +27,13 @@ void GameState::title_screen() {
     unsigned int home_thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
 	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
 	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
-	int main_thid = sceKernelGetThreadId();
-	if (main_thid<0) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "failed to obtain main thread ID");
-
-	bool in_titlescreen = true;
 
 	while (1)
 	{
 		sceCtrlReadBufferPositive(&ctrlData, 1);
-		if (ctrlData.Buttons & PSP_CTRL_START && in_titlescreen){
+		if (ctrlData.Buttons & PSP_CTRL_START){
 			sceKernelTerminateThread(home_thid);
 			sceKernelDeleteThread(home_thid);
-			in_titlescreen = false;
 			break;
 		}
 		sceKernelDelayThread(100);
@@ -58,20 +50,10 @@ void GameState::update(int _game_time){
     GameState::update_physics();
 }
 
-/**
- * @brief Responsible for handling actions not directly caused by the player ie.
- * certain animations, enemies and damage and collision events
- * 
- */
 void GameState::update_nonplayer_actions() {
 
 }
 
-/**
- * @brief Responsible for handling player input, partially responsible for some
- * physics calculations
- * 
- */
 void GameState::update_player_actions() {
     player.vector.vel_x = 0;// reset velocity; TODO: slowdown mechanic
     cam_pos_x = get_cam_position(player.vector.x, screen_center, MAP_SIZE);
@@ -105,20 +87,20 @@ void GameState::update_player_actions() {
     }
 
     // Jump 
-    if (!player.jumping) player.vector.y = (int)noise_map[player.vector.x];
+    if (!player.vector.vel_y) player.vector.y = (int)noise_map[player.vector.x];
     if(ctrlData.Buttons & PSP_CTRL_CROSS) {
         if (player.vector.vel_y == 0) {
             player.vector.vel_y= 50; // you cant double jump
             player.jump_time = sceKernelGetSystemTimeLow();
-            player.jumping = true;
             player.starting_jump_height = player.vector.y;
         }
     }
 
-    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && num_projectiles < 1) {
+    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && projectile_list.size < 8 && game_time >= player.time_between_fires + player.weapon_last_fired ) {
         Object * proj = new Object();
-        projectiles[num_projectiles] = proj;
-        num_projectiles++;
+        projectile_list.insert(proj);
+
+        player.weapon_last_fired = game_time;
 
         proj->vector.created_at=sceKernelGetSystemTimeLow();
         proj->vector.x = proj->vector.x_i =  player.weapon.vector.x;
@@ -134,36 +116,37 @@ void GameState::update_player_actions() {
 
 void GameState::update_physics(){
 
-    for (int i = 0; i < num_projectiles; i++){
+    for (int i = 0; i < projectile_list.MAX_SIZE; i++){
         if (projectiles[i]) {
             float time = ((int)game_time - (int)projectiles[i]->vector.created_at) / 1000000.0f;
-            projectiles[i]->vector.y= projectiles[i]->vector.y_i + projectiles[i]->vector.vel_y*(time) + .5 * (projectiles[i]->grav * (time) * (time) );	
+            projectiles[i]->vector.y= projectiles[i]->vector.y_i + projectiles[i]->vector.vel_y*(time) + .5 * (Vector2d::grav * (time) * (time) );	
             projectiles[i]->vector.x= projectiles[i]->vector.x_i + projectiles[i]->vector.vel_x * time;
             projectiles[i]->draw_pos_x = projectiles[i]->vector.x - cam_pos_x;
 
             if (projectiles[i]->vector.y >= noise_map[projectiles[i]->vector.x]){ // Collision with floor
-                    exp_obj.vector.x = projectiles[i]->vector.x;
-                    exp_obj.vector.y = projectiles[i]->vector.y;
+                    Object * explosion_object = new Object;
+                    explosion_object->vector.x = projectiles[i]->vector.x;
+                    explosion_object->vector.y = projectiles[i]->vector.y;
+                    explosion_list.insert(explosion_object);
+
                     explosion.animate = true;
-                    explosion.reset();
 
                     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Exploded projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
+                    projectile_list.remove(projectiles[i]);
                     free(projectiles[i]); // TODO num_projectiles?
-                    num_projectiles--;
             } else if (projectiles[i]->off_screen()) {
                     PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Freed projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
+                    projectile_list.remove(projectiles[i]);
                     free(projectiles[i]); // TODO num_projectiles?
-                    num_projectiles--;
             }
 
         }
     }
 
     float time = (int)(player.jump_time - game_time)/1000000.0f;
-    if (player.jumping) { //JUMP Physics
+    if (player.vector.vel_y) { //JUMP Physics
         player.vector.y = player.jump_height_at(time);
         if (player.vector.y > noise_map[player.vector.x]) { // End of jump
-            player.jumping = false;
             player.vector.vel_y = 0;
             player.starting_jump_height = 0;
             player.jump_time = 0;
@@ -184,16 +167,27 @@ void GameState::draw(){
     GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
     GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, 0, player.image);
 
-    for (int i = 0; i < num_projectiles; i++){
+    for (int i = 0; i < projectile_list.MAX_SIZE; i++){
         if (projectiles[i]) {
             PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "draw proj scr_x:%d, scr_y:%d", projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
             GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, 0, rocket);
         }
     }
 
-    if(explosion.animate) {
-        exp_obj.image = explosion.get_next_frame(game_time,1);
-        GFX::drawBMP(exp_obj.vector.x - cam_pos_x, exp_obj.vector.y, exp_obj.vector.get_angle(), CENTER, FORWARD, 0,exp_obj.image);
+    for (int i = 0; i < explosion_list.MAX_SIZE; i++) {
+        if (explosions[i]) {
+            if (game_time > explosions[i]->last_frame_update + explosion.frame_time){
+                explosions[i]->current_frame++;
+                if (explosions[i]->current_frame >= explosion.rows * explosion.cols) {
+                    explosion_list.remove(explosions[i]);
+                    free(explosions[i]);
+                    continue;
+                }
+                
+            }
+            Image img = explosion.get_frame(explosions[i]->current_frame);
+            GFX::drawBMP(explosions[i]->vector.x - cam_pos_x, explosions[i]->vector.y, explosions[i]->vector.get_angle(), CENTER, FORWARD, 0, img);
+        }
     }
 
     GFX::swapBuffers();
