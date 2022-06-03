@@ -7,6 +7,7 @@
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 
+
 void GameState::init(){
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Init Gamestate");
     player.vector.x = 10;
@@ -159,7 +160,8 @@ void GameState::update_physics(){
     enemy.vector.x+=enemy.vector.vel_x;
     enemy.vector.y = noise_map[enemy.vector.x];
 
-    enemy_handler.update_physics(player.vector.x);
+    enemy_handler.update_movement(player.vector.x);
+    enemy_handler.update_physics();
 
     player.weapon.vector.x = player.vector.x;
     player.weapon.vector.y = player.vector.y-25;

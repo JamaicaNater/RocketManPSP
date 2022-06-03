@@ -1,9 +1,11 @@
+#pragma once
+
 #include "object_list.hpp"
 #include "../globals.h"
 
 class ObjectHandler
 {
-private:
+protected:
     ObjectList object_list;
     unsigned int time_between_spawns = 1000*1000;
     unsigned int last_spawn = 0;
@@ -12,8 +14,8 @@ private:
     Image img;
 public:
     void spawn(int x, int y, int game_time);
-    void update_physics(int playerx);
+    virtual void update_physics(int playerx);
     void draw(int cam_pos_x);
     ObjectHandler(int MAX_OBJECTS, int _velocity, Image _img);
-    ~ObjectHandler();
+    virtual ~ObjectHandler();
 };
