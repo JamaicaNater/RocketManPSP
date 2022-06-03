@@ -27,7 +27,7 @@ private:
     ObjectList explosion_list = ObjectList(128); // TODO think about what the upper bound should be
     Object * * explosions =  explosion_list.get_list();
     
-    EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, enemy_img);
+    EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1);
 
     Animation explosion_animation = Animation(3, 5, 50000, "assets/explosion.bmp");
     //Object exp_obj = Object(""); // TODO: fix error prone nature of this constructor

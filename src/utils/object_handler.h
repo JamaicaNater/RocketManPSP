@@ -11,11 +11,11 @@ protected:
     unsigned int last_spawn = 0;
 
     int velocity;
-    Image img;
 public:
-    void spawn(int x, int y, int game_time);
+    void spawn(int x, int y, int game_time, Image _img);
     virtual void update_physics(int playerx);
-    void draw(int cam_pos_x);
-    ObjectHandler(int MAX_OBJECTS, int _velocity, Image _img);
+    virtual void draw(int cam_pos_x);
+    virtual void clean();
+    ObjectHandler(int MAX_OBJECTS, int _velocity);
     virtual ~ObjectHandler();
 };

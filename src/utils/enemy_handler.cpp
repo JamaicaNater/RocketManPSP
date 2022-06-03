@@ -25,7 +25,7 @@ void EnemyHandler::update_movement(int player_x){
     }
 }
 
-EnemyHandler::EnemyHandler(int MAX_OBJECTS, int _velocity, Image _img) : ObjectHandler(MAX_OBJECTS, _velocity, _img)
+EnemyHandler::EnemyHandler(int MAX_OBJECTS, int _velocity) : ObjectHandler(MAX_OBJECTS, _velocity)
 {
 }
 

@@ -53,7 +53,7 @@ void GameState::update(int _game_time){
 }
 
 void GameState::update_nonplayer_actions() {
-    enemy_handler.spawn(300, noise_map[300], game_time);
+    enemy_handler.spawn(300, noise_map[300], game_time, enemy_img);
 }
 
 void GameState::update_player_actions() {

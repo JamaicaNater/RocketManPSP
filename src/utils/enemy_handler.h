@@ -5,10 +5,11 @@
 class EnemyHandler : public ObjectHandler
 {
 private:
+    Image img;
     /* data */
 public:
     void update_physics();
     void update_movement(int player_x);
-    EnemyHandler(int MAX_OBJECTS, int _velocity, Image _img);
+    EnemyHandler(int MAX_OBJECTS, int _velocity);
     ~EnemyHandler();
 };

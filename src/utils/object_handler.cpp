@@ -3,14 +3,13 @@
 #include "../Vector2d.hpp"
 #include "../gfx.hpp"
 
-ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, Image _img)
+ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity)
 {
     PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Calling ObjectList for objects");
     object_list = *(new ObjectList(MAX_OBJECTS));
     Object ** objects = object_list.get_list();
 
     velocity = _velocity;
-    img = _img;
 }
 
 ObjectHandler::~ObjectHandler(){
@@ -19,14 +18,14 @@ ObjectHandler::~ObjectHandler(){
     free(&object_list);
 }
 
-void ObjectHandler::spawn(int x, int y, int game_time) {
+void ObjectHandler::spawn(int x, int y, int game_time, Image _img) {
     if (game_time < last_spawn + time_between_spawns) return;
     if (object_list.size >= object_list.MAX_SIZE){
         //PSP_LOGGER::log(PSP_LOGGER::ERROR, "Spawn fail: Object list full");
         return;
     }
 
-    Object * object = new Object(img);
+    Object * object = new Object(_img);
     object->vector.x = x;
     object->vector.y = y;
 
@@ -53,9 +52,13 @@ void ObjectHandler::draw(int cam_pos_x){
         if (!objects[i]->off_screen()) {
             GFX::drawBMP(objects[i]->vector.x - cam_pos_x, objects[i]->vector.y, 
             objects[i]->vector.get_angle(), CENTER, 
-            objects[i]->vector.direction, 0, img);
+            objects[i]->vector.direction, 0, objects[i]->image);
         }
 
     }
 }
 
+void ObjectHandler::clean(){
+    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Warning, base class clean method "
+    "called, this does nothing");
+}
