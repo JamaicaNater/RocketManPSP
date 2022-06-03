@@ -1,27 +1,27 @@
-#include "enemy_handler.h"
+#include "object_handler.h"
 #include "../logger/logger.h"
 #include "../Vector2d.hpp"
 #include "../gfx.hpp"
 
-EnemyHandler:: EnemyHandler(int MAX_ENEMIES, int _velocity, Image _img)
+ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, Image _img)
 {
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Calling ObjectList for enemy");
-    enemy_list = *(new ObjectList(MAX_ENEMIES));
-    Object ** enemies = enemy_list.get_list();
+    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Calling ObjectList for objects");
+    object_list = *(new ObjectList(MAX_OBJECTS));
+    Object ** objects = object_list.get_list();
 
     velocity = _velocity;
     img = _img;
 }
 
-EnemyHandler::~EnemyHandler(){
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Attempt destruction of Enemy handler with list of size %d", enemy_list.MAX_SIZE);
-    enemy_list.~ObjectList();
-    free(&enemy_list);
+ObjectHandler::~ObjectHandler(){
+    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Attempt destruction of Enemy handler with list of size %d", object_list.MAX_SIZE);
+    object_list.~ObjectList();
+    free(&object_list);
 }
 
-void EnemyHandler::spawn_enemy(int x, int y, int game_time) {
+void ObjectHandler::spawn(int x, int y, int game_time) {
     if (game_time < last_spawn + time_between_spawns) return;
-    if (enemy_list.size >= enemy_list.MAX_SIZE){
+    if (object_list.size >= object_list.MAX_SIZE){
         //PSP_LOGGER::log(PSP_LOGGER::ERROR, "Spawn fail: Enemy list full");
         return;
     }
@@ -30,14 +30,14 @@ void EnemyHandler::spawn_enemy(int x, int y, int game_time) {
     enemy->vector.x = x;
     enemy->vector.y = y;
 
-    PSP_LOGGER::assert((enemy_list.insert(enemy) > -1), 
-        "Enemy spawned successfully");
+    PSP_LOGGER::assert((object_list.insert(enemy) > -1), 
+        "Object spawned successfully");
     last_spawn = game_time;
 }
 
-void EnemyHandler::update_physics(int player_x){
-    Object ** enemies = enemy_list.get_list();
-    for (int i = 0; i < enemy_list.MAX_SIZE; i++){
+void ObjectHandler::update_physics(int player_x){
+    Object ** enemies = object_list.get_list();
+    for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!enemies[i]) continue;
 
         if (player_x < enemies[i]->vector.x) {
@@ -53,9 +53,9 @@ void EnemyHandler::update_physics(int player_x){
     }
 }
 
-void EnemyHandler::draw(int cam_pos_x){
-    Object ** enemies = enemy_list.get_list();
-    for (int i = 0; i < enemy_list.MAX_SIZE; i++){
+void ObjectHandler::draw(int cam_pos_x){
+    Object ** enemies = object_list.get_list();
+    for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!enemies[i]) continue;
         
         if (!enemies[i]->off_screen()) {

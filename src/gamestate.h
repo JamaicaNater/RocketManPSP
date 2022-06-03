@@ -4,7 +4,7 @@
 #include <pspctrl.h>
 #include "objects.hpp"
 #include "utils/object_list.hpp"
-#include "utils/enemy_handler.h"
+#include "utils/object_handler.h"
 
 // TODO make singleton
 class GameState
@@ -26,7 +26,7 @@ private:
     ObjectList explosion_list = ObjectList(128); // TODO think about what the upper bound should be
     Object * * explosions =  explosion_list.get_list();
     
-    EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, enemy_img);
+    ObjectHandler enemy_handler = ObjectHandler(MAX_ENEMIES, 1, enemy_img);
 
     Animation explosion_animation = Animation(3, 5, 50000, "assets/explosion.bmp");
     //Object exp_obj = Object(""); // TODO: fix error prone nature of this constructor

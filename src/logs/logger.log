@@ -20,7 +20,7 @@ INFO: Formatting pixels
 INFO: Succesfuly loaded assets/background.bmp, 102.281250 kb used by bmps
 DEBUG: Allocating 64 Objects
 DEBUG: Allocating 128 Objects
-DEBUG: Calling ObjectList for enemy
+DEBUG: Calling ObjectList for objects
 DEBUG: Allocating 16 Objects
 INFO: Init Gamestate
 INFO: loading assets/missile.bmp into memory
@@ -54,11 +54,12 @@ INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player.bmp, 1430.628906 kb used by bmps
-DEBUG: (assertion) Enemy spawned successfully
+DEBUG: (assertion) Object spawned successfully
 DEBUG: call loadBMP on assets/enemy.bmp
 INFO: loading assets/enemy.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/enemy.bmp, 1439.808594 kb used by bmps
-DEBUG: (assertion) Enemy spawned successfully
+DEBUG: (assertion) Object spawned successfully
+DEBUG: (assertion) Object spawned successfully
