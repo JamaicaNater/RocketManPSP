@@ -12,12 +12,12 @@ namespace PSP_LOGGER {
      * @param ... 
      */
     
-    void psp_log(unsigned char level, const char* format, ... );
+    void log(unsigned char level, const char* format, ... );
     /**
      * @brief Closes the log file
      * 
      */
     void close_log();
 
-    void assert_or_log(bool condition, const char * format, ...);
+    void assert(bool condition, const char * format, ...);
 }

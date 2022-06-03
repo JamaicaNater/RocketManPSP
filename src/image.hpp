@@ -12,7 +12,7 @@ struct Image
 	char filename[64] = {'\0'};
 	Image(const char * _filename) {
 		int str_size = strlen(_filename) + 1;
-		if (str_size > 64) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Filename"
+		if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
 		" %s too long", _filename);
 		strncpy(filename, _filename, str_size);
 	}
@@ -23,7 +23,7 @@ struct Image
 		img_matrix = _img_matrix;
 
 		int str_size = strlen(_filename) + 1;
-		if (str_size > 64) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Filename"
+		if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
 		" %s too long", _filename);
 		strncpy(filename, _filename, str_size-1);
 	}
@@ -53,7 +53,7 @@ struct Animation
 	char filename[64] = {'\0'};
 
 	Image get_frame(int index) {
-		PSP_LOGGER::assert_or_log(index < rows*cols, "get_frame(index) "
+		PSP_LOGGER::assert(index < rows*cols, "get_frame(index) "
 		"requested an in bounds value of %d for size %d", index, rows * cols);
 
 		return(Image(height, width, img_matrices[index], "."));
@@ -77,7 +77,7 @@ struct Animation
 		frame_time = _frame_time;
 		
 		int str_size = strlen(_filename) + 1;
-		if (str_size > 64) PSP_LOGGER::psp_log(PSP_LOGGER::CRITICAL, "Filename"
+		if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
 		" %s too long", _filename);
 		strncpy(filename, _filename, str_size-1);
 

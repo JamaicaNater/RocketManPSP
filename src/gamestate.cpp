@@ -8,7 +8,7 @@
 #include "bmp/loadbmp.h"
 
 void GameState::init(){
-    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Init Gamestate");
+    PSP_LOGGER::log(PSP_LOGGER::INFO, "Init Gamestate");
     player.vector.x = 10;
 	player.vector.y = 10;
 	player.vector.direction = FORWARD;
@@ -16,8 +16,6 @@ void GameState::init(){
 
     enemy.vector.x = 200;
     enemy.vector.y = noise_map[enemy.vector.x];
-
-    enemy_handler.spawn_enemy(300, noise_map[300], game_time);
 
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
@@ -29,7 +27,7 @@ void GameState::init(){
 void GameState::title_screen() {
     unsigned int home_thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
 	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
-	else PSP_LOGGER::psp_log(PSP_LOGGER::ERROR, "failed to create thread");
+	else PSP_LOGGER::log(PSP_LOGGER::ERROR, "failed to create thread");
 
 	while (1)
 	{
@@ -54,13 +52,7 @@ void GameState::update(int _game_time){
 }
 
 void GameState::update_nonplayer_actions() {
-    if (player.vector.x < enemy.vector.x) {
-        enemy.vector.vel_x = .5*PLAYER_SPEED * -1;
-        enemy.vector.direction = FORWARD;
-    } else {
-        enemy.vector.vel_x = .5*PLAYER_SPEED;
-        enemy.vector.direction = BACKWARD;
-    }
+    enemy_handler.spawn_enemy(300, noise_map[300], game_time);
 }
 
 void GameState::update_player_actions() {
@@ -140,11 +132,11 @@ void GameState::update_physics(){
 
                     explosion_animation.animate = true;
 
-                    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Exploded projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
+                    PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
                     projectile_list.remove(projectiles[i]);
                     free(projectiles[i]); // TODO num_projectiles?
             } else if (projectiles[i]->off_screen()) {
-                    PSP_LOGGER::psp_log(PSP_LOGGER::INFO, "Freed projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
+                    PSP_LOGGER::log(PSP_LOGGER::INFO, "Freed projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
                     projectile_list.remove(projectiles[i]);
                     free(projectiles[i]); // TODO num_projectiles?
             }
@@ -182,7 +174,7 @@ void GameState::draw(){
 
     for (int i = 0; i < projectile_list.MAX_SIZE; i++){
         if (projectiles[i]) {
-            PSP_LOGGER::psp_log(PSP_LOGGER::DEBUG, "draw proj scr_x:%d, scr_y:%d", projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
+            PSP_LOGGER::log(PSP_LOGGER::DEBUG, "draw proj scr_x:%d, scr_y:%d", projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
             GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, 0, rocket);
         }
     }

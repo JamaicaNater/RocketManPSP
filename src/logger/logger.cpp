@@ -15,7 +15,7 @@ namespace PSP_LOGGER {
     
     char levels_text[5][10] = {"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"};
     
-    void psp_log(unsigned char level, const char* format, ... ) {
+    void log(unsigned char level, const char* format, ... ) {
         #ifdef PSP_LOGGING
         if (fd<0) {
             pspDebugScreenInit();
@@ -55,7 +55,7 @@ namespace PSP_LOGGER {
      * @param format 
      * @param ... 
      */
-    void assert_or_log(bool condition, const char * format, ...){
+    void assert(bool condition, const char * format, ...){
         #ifdef PSP_LOGGING
         //if (condition) return;
 
@@ -68,7 +68,7 @@ namespace PSP_LOGGER {
 
         va_list args;
         char data[128];
-        if (!condition) sceIoWrite(fd, (void*)"CRITICAL:assert_or_log() evaluated false: ", 42);
+        if (!condition) sceIoWrite(fd, (void*)"CRITICAL:assert() evaluated false: ", 42);
         else sceIoWrite(fd, (void*)"DEBUG: (assertion) ", 19);
         va_start( args, format );
         vsprintf(data, format, args);
