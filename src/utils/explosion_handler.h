@@ -12,14 +12,14 @@ private:
     };
 
     FrameData * frame_data = NULL;
-    const int FRAME_TIME = 100 * MILLISECOND;
+    const int FRAME_TIME = 30 * MILLISECOND;
     Animation exp_animation = Animation(3, 5, 50000, "assets/explosion.bmp");
-    void update_frames(int game_time);
 public:
     ExplosionHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns);
     ~ExplosionHandler();
 
     void init();
+    void update_frames(int game_time);
     virtual void draw(int cam_pos_x);
     int get_size();
 };

@@ -20,15 +20,22 @@ void ExplosionHandler::update_frames(int game_time){
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!explosions[i]) continue;
 
-        if (frame_data[i].last_updated + FRAME_TIME > game_time){
-            
+        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "%d + %d > %d", frame_data[i].last_updated , FRAME_TIME , game_time);
+        if (frame_data[i].last_updated + FRAME_TIME < game_time){
+            frame_data[i].curr_frame++;
+            frame_data[i].last_updated = game_time;
+
+            if (frame_data[i].curr_frame >= exp_animation.cols*exp_animation.rows){
+                frame_data[i] = {0,0};
+                object_list.remove(explosions[i]);
+            }
         }
     }
 }
 
 void ExplosionHandler::draw(int cam_pos_x){
     Object ** explosions = object_list.get_list();
-    for (int i = 0; i < object_list.MAX_SIZE; i++) if (explosions[i]) explosions[i]->image = exp_animation.get_frame(0);
+    for (int i = 0; i < object_list.MAX_SIZE; i++) if (explosions[i]) explosions[i]->image = exp_animation.get_frame(frame_data[i].curr_frame);
     ObjectHandler::draw(cam_pos_x);
 }
 

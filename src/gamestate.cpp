@@ -13,7 +13,6 @@ void GameState::init(){
 
     //TODO: load all BMPs hear and add a loading screen for Christ sake
     load_BMP(enemy_img);
-    load_BMP(explosion_animation);
 
     explosion_handler.init();
 
@@ -22,14 +21,10 @@ void GameState::init(){
 	player.vector.direction = FORWARD;
     player.weapon.image = Image("assets/player_rocket.bmp");
 
-    enemy.vector.x = 200;
-    enemy.vector.y = noise_map[enemy.vector.x];
-
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
     load_BMP(rocket);
-    load_BMP(explosion_animation);
 }
 
 void GameState::title_screen() {
@@ -61,6 +56,8 @@ void GameState::update(int _game_time){
 
 void GameState::update_nonplayer_actions() {
     enemy_handler.spawn(Vector2d(300, noise_map[300]), game_time, enemy_img);
+
+    explosion_handler.update_frames(game_time);
 }
 
 void GameState::update_player_actions() {
@@ -140,8 +137,6 @@ void GameState::update_physics(){
 
     // DOnt move outside the map
     if (player.vector.x+player.vector.vel_x > 0 && player.vector.x+player.vector.vel_x <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
-    enemy.vector.x+=enemy.vector.vel_x;
-    enemy.vector.y = noise_map[enemy.vector.x];
 
     enemy_handler.update_movement(player.vector.x);
     enemy_handler.update_physics();
@@ -159,25 +154,7 @@ void GameState::draw(){
 
     projectile_handler.draw(cam_pos_x);
     explosion_handler.draw(cam_pos_x);
-
-    for (int i = 0; i < explosion_list.MAX_SIZE; i++) {
-        if (explosions[i]) {
-            if (game_time > explosions[i]->last_frame_update + explosion_animation.frame_time){
-                explosions[i]->current_frame++;
-                if (explosions[i]->current_frame >= explosion_animation.rows * explosion_animation.cols) {
-                    explosion_list.remove(explosions[i]);
-                    free(explosions[i]);
-                    continue;
-                }
-                
-            }
-            Image img = explosion_animation.get_frame(explosions[i]->current_frame);
-            GFX::drawBMP(explosions[i]->vector.x - cam_pos_x, explosions[i]->vector.y, explosions[i]->vector.get_angle(), CENTER, FORWARD, 0, img);
-        }
-    }
-
     enemy_handler.draw(cam_pos_x);
-    //GFX::drawBMP(enemy.vector.x - cam_pos_x, enemy.vector.y, enemy.vector.get_angle(), CENTER, enemy.vector.direction, 0, enemy_img);
 
     GFX::swapBuffers();
     GFX::clear();

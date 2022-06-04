@@ -21,21 +21,12 @@ private:
     Image rocket = Image("assets/missile.bmp");
     Image status_bar = Image("assets/statusbar.bmp");
     Image enemy_img = Image("assets/enemy.bmp");
-
-    Object enemy;
-
-    ObjectList explosion_list = ObjectList(128); // TODO think about what the upper bound should be
-    Object * * explosions =  explosion_list.get_list();
     
     EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, 1*SECOND);
     ExplosionHandler explosion_handler = ExplosionHandler(128, 0, 0);
     ProjectileHandler projectile_handler = ProjectileHandler(MAX_PROJ, 8, 20 * MILLISECOND, &explosion_handler);
 
-    Animation explosion_animation = Animation(3, 5, 50000, "assets/explosion.bmp");
-    //Object exp_obj = Object(""); // TODO: fix error prone nature of this constructor
-    
     unsigned int game_time = 0;
-
     int cam_pos_x =10, cam_pos_y =10;
 	int screen_center = 512/2;
 
