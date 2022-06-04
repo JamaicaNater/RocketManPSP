@@ -53,10 +53,10 @@ struct Animation
 	char filename[64] = {'\0'};
 
 	Image get_frame(int index) {
-		PSP_LOGGER::assert(index < rows*cols, "get_frame(index) "
-		"requested an in bounds value of %d for size %d", index, rows * cols);
+		// PSP_LOGGER::assert(index < rows*cols, "get_frame(index) "
+		// "requested an in bounds value of %d for size %d", index, rows * cols);
 
-		return(Image(height, width, img_matrices[index], "."));
+		return(Image(height, width, img_matrices[index], "Non-Loadable"));
 	}
 
 	// Image get_next_frame(int time, int repetitions){

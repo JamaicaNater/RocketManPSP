@@ -18,16 +18,19 @@ INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/background.bmp, 102.281250 kb used by bmps
-DEBUG: Allocating 64 Objects
 DEBUG: Allocating 128 Objects
 DEBUG: Calling ObjectList for objects
 DEBUG: Allocating 16 Objects
+DEBUG: Calling ObjectList for objects
+DEBUG: Allocating 128 Objects
+DEBUG: Calling ObjectList for objects
+DEBUG: Allocating 64 Objects
 INFO: Init Gamestate
-INFO: loading assets/missile.bmp into memory
+INFO: loading assets/enemy.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/missile.bmp, 102.562500 kb used by bmps
+INFO: Succesfuly loaded assets/enemy.bmp, 111.460938 kb used by bmps
 INFO: loading assets/explosion.bmp into memory
 DEBUG: (assertion) Width of 795 is divisible bycols 5
 DEBUG: (assertion) Height of 411 is divisible byrows 3
@@ -36,42 +39,92 @@ INFO: Allocating Space
 WARNING: Attempting to allocate 1276.347656 kb of space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/explosion.bmp, 1378.910156 kb used by bmps
+INFO: Succesfuly loaded assets/explosion.bmp, 1387.808594 kb used by bmps
+INFO: loading assets/explosion.bmp into memory
+DEBUG: (assertion) Width of 795 is divisible bycols 5
+DEBUG: (assertion) Height of 411 is divisible byrows 3
+INFO: Alocating 15 pointers for 159 x 137 images
+INFO: Allocating Space
+WARNING: Attempting to allocate 1276.347656 kb of space
+INFO: Reading file
+INFO: Formatting pixels
+INFO: Succesfuly loaded assets/explosion.bmp, 2664.156250 kb used by bmps
+INFO: loading assets/missile.bmp into memory
+INFO: Allocating Space
+INFO: Reading file
+INFO: Formatting pixels
+INFO: Succesfuly loaded assets/missile.bmp, 2664.437500 kb used by bmps
+INFO: loading assets/explosion.bmp into memory
+DEBUG: (assertion) Width of 795 is divisible bycols 5
+DEBUG: (assertion) Height of 411 is divisible byrows 3
+INFO: Alocating 15 pointers for 159 x 137 images
+INFO: Allocating Space
+WARNING: Attempting to allocate 1276.347656 kb of space
+INFO: Reading file
+INFO: Formatting pixels
+INFO: Succesfuly loaded assets/explosion.bmp, 3940.785156 kb used by bmps
+DEBUG: assets/enemy.bmp ptr: 8858340
+DEBUG: (assertion) Object spawned successfully
 INFO: loading assets/statusbar.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/statusbar.bmp, 1426.910156 kb used by bmps
+INFO: Succesfuly loaded assets/statusbar.bmp, 3988.785156 kb used by bmps
 DEBUG: call loadBMP on assets/player_rocket.bmp
 INFO: loading assets/player_rocket.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/player_rocket.bmp, 1427.628906 kb used by bmps
+INFO: Succesfuly loaded assets/player_rocket.bmp, 3989.503906 kb used by bmps
 DEBUG: call loadBMP on assets/player.bmp
 INFO: loading assets/player.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/player.bmp, 1430.628906 kb used by bmps
+INFO: Succesfuly loaded assets/player.bmp, 3992.503906 kb used by bmps
+DEBUG: assets/enemy.bmp ptr: 8858340
 DEBUG: (assertion) Object spawned successfully
-DEBUG: call loadBMP on assets/enemy.bmp
-INFO: loading assets/enemy.bmp into memory
-INFO: Allocating Space
-INFO: Reading file
-INFO: Formatting pixels
-INFO: Succesfuly loaded assets/enemy.bmp, 1439.808594 kb used by bmps
+DEBUG: assets/missile.bmp ptr: 8ad8bc0
 DEBUG: (assertion) Object spawned successfully
-DEBUG: call loadBMP on assets/enemy.bmp
-INFO: loading assets/enemy.bmp into memory
-INFO: Allocating Space
-INFO: Reading file
-INFO: Formatting pixels
-INFO: Succesfuly loaded assets/enemy.bmp, 1448.988281 kb used by bmps
+DEBUG: assets/player.bmp ptr: 0
 DEBUG: (assertion) Object spawned successfully
-DEBUG: call loadBMP on assets/enemy.bmp
-INFO: loading assets/enemy.bmp into memory
-INFO: Allocating Space
-INFO: Reading file
-INFO: Formatting pixels
-INFO: Succesfuly loaded assets/enemy.bmp, 1458.167969 kb used by bmps
+INFO: exp size: 1
+INFO: Exploded projectile 63 at scr_x:0, x292 y:127
+DEBUG: assets/enemy.bmp ptr: 8858340
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/enemy.bmp ptr: 8858340
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/enemy.bmp ptr: 8858340
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/missile.bmp ptr: 8ad8bc0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/missile.bmp ptr: 8ad8bc0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/enemy.bmp ptr: 8858340
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/player.bmp ptr: 0
+DEBUG: (assertion) Object spawned successfully
+INFO: exp size: 2
+INFO: Exploded projectile 63 at scr_x:0, x236 y:154
+DEBUG: assets/player.bmp ptr: 0
+DEBUG: (assertion) Object spawned successfully
+INFO: exp size: 3
+INFO: Exploded projectile 62 at scr_x:0, x236 y:154
+DEBUG: assets/enemy.bmp ptr: 8858340
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/missile.bmp ptr: 8ad8bc0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/missile.bmp ptr: 8ad8bc0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/player.bmp ptr: 0
+DEBUG: (assertion) Object spawned successfully
+INFO: exp size: 4
+INFO: Exploded projectile 63 at scr_x:0, x199 y:171
+DEBUG: assets/player.bmp ptr: 0
+DEBUG: (assertion) Object spawned successfully
+INFO: exp size: 5
+INFO: Exploded projectile 62 at scr_x:0, x199 y:171
+DEBUG: assets/enemy.bmp ptr: 8858340
+DEBUG: (assertion) Object spawned successfully
+DEBUG: assets/enemy.bmp ptr: 8858340
+DEBUG: (assertion) Object spawned successfully

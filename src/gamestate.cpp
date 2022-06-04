@@ -10,6 +10,13 @@
 
 void GameState::init(){
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Init Gamestate");
+
+    //TODO: load all BMPs hear and add a loading screen for Christ sake
+    load_BMP(enemy_img);
+    load_BMP(explosion_animation);
+
+    explosion_handler.init();
+
     player.vector.x = 10;
 	player.vector.y = 10;
 	player.vector.direction = FORWARD;
@@ -53,7 +60,7 @@ void GameState::update(int _game_time){
 }
 
 void GameState::update_nonplayer_actions() {
-    enemy_handler.spawn(300, noise_map[300], game_time, enemy_img);
+    enemy_handler.spawn(Vector2d(300, noise_map[300]), game_time, enemy_img);
 }
 
 void GameState::update_player_actions() {
@@ -98,52 +105,28 @@ void GameState::update_player_actions() {
         }
     }
 
-    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && projectile_list.size < 8 && game_time >= player.time_between_fires + player.weapon_last_fired ) {
-        Object * proj = new Object();
-        projectile_list.insert(proj);
-
+    // TODO: if_spawnable();
+    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && game_time >= player.time_between_fires + player.weapon_last_fired ) {
+        Vector2d vec;
         player.weapon_last_fired = game_time;
 
-        proj->vector.created_at=sceKernelGetSystemTimeLow();
-        proj->vector.x = proj->vector.x_i =  player.weapon.vector.x;
-        proj->vector.y = proj->vector.y_i = player.weapon.vector.y;
-        proj->vector.set_angle(player.weapon.vector.get_angle());
-        proj->vector.direction =player.weapon.vector.direction;
+        vec.created_at=sceKernelGetSystemTimeLow();
+        vec.x = vec.x_i =  player.weapon.vector.x;
+        vec.y = vec.y_i = player.weapon.vector.y;
+        vec.set_angle(player.weapon.vector.get_angle());
+        vec.direction =player.weapon.vector.direction;
 
-        float rad = PI/180.0f * proj->vector.get_angle();
-        proj->vector.vel_x = cos(rad) * 500;
-        proj->vector.vel_y = sin(rad) * 500;
+        float rad = PI/180.0f * vec.get_angle();
+        vec.vel_x = cos(rad) * 500;
+        vec.vel_y = sin(rad) * 500;
+
+        projectile_handler.spawn(vec, game_time, rocket);
     }
 }
 
 void GameState::update_physics(){
 
-    for (int i = 0; i < projectile_list.MAX_SIZE; i++){
-        if (projectiles[i]) {
-            float time = ((int)game_time - (int)projectiles[i]->vector.created_at) / 1000000.0f;
-            projectiles[i]->vector.y= projectiles[i]->vector.y_i + projectiles[i]->vector.vel_y*(time) + .5 * (Vector2d::grav * (time) * (time) );	
-            projectiles[i]->vector.x= projectiles[i]->vector.x_i + projectiles[i]->vector.vel_x * time;
-            projectiles[i]->draw_pos_x = projectiles[i]->vector.x - cam_pos_x;
-
-            if (projectiles[i]->vector.y >= noise_map[projectiles[i]->vector.x]){ // Collision with floor
-                    Object * explosion_object = new Object;
-                    explosion_object->vector.x = projectiles[i]->vector.x;
-                    explosion_object->vector.y = projectiles[i]->vector.y;
-                    explosion_list.insert(explosion_object);
-
-                    explosion_animation.animate = true;
-
-                    PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
-                    projectile_list.remove(projectiles[i]);
-                    free(projectiles[i]); // TODO num_projectiles?
-            } else if (projectiles[i]->off_screen()) {
-                    PSP_LOGGER::log(PSP_LOGGER::INFO, "Freed projectile %d located at scr_x%d, y%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
-                    projectile_list.remove(projectiles[i]);
-                    free(projectiles[i]); // TODO num_projectiles?
-            }
-
-        }
-    }
+    projectile_handler.update_physics(game_time);    
 
     float time = (int)(player.jump_time - game_time)/1000000.0f;
     if (player.vector.vel_y) { //JUMP Physics
@@ -174,12 +157,8 @@ void GameState::draw(){
     GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
     GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, 0, player.image);
 
-    for (int i = 0; i < projectile_list.MAX_SIZE; i++){
-        if (projectiles[i]) {
-            PSP_LOGGER::log(PSP_LOGGER::DEBUG, "draw proj scr_x:%d, scr_y:%d", projectiles[i]->draw_pos_x, projectiles[i]->vector.y);
-            GFX::drawBMP(projectiles[i]->draw_pos_x, projectiles[i]->vector.y, projectiles[i]->vector.get_angle(), CENTER, projectiles[i]->vector.direction, 0, rocket);
-        }
-    }
+    projectile_handler.draw(cam_pos_x);
+    explosion_handler.draw(cam_pos_x);
 
     for (int i = 0; i < explosion_list.MAX_SIZE; i++) {
         if (explosions[i]) {

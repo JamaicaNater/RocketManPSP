@@ -7,7 +7,7 @@
 #define SCREEN_WIDTH 512
 #define SECOND 1000000
 #define MILLISECOND 1000
-#define FRAME_TIME SECOND / 60
+#define GAME_FRAME_TIME SECOND / 60
 
 extern unsigned char * noise_map;
 #endif

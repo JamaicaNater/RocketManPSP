@@ -6,6 +6,8 @@
 #include "utils/object_list.hpp"
 #include "utils/object_handler.h"
 #include "utils/enemy_handler.h"
+#include "utils/explosion_handler.h"
+#include "utils/projectile_handler.h"
 
 // TODO make singleton
 class GameState
@@ -22,12 +24,12 @@ private:
 
     Object enemy;
 
-    ObjectList projectile_list = ObjectList(MAX_PROJ);
-    Object * * projectiles = projectile_list.get_list();
     ObjectList explosion_list = ObjectList(128); // TODO think about what the upper bound should be
     Object * * explosions =  explosion_list.get_list();
     
-    EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1);
+    EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, 1*SECOND);
+    ExplosionHandler explosion_handler = ExplosionHandler(128, 0, 0);
+    ProjectileHandler projectile_handler = ProjectileHandler(MAX_PROJ, 8, 20 * MILLISECOND, &explosion_handler);
 
     Animation explosion_animation = Animation(3, 5, 50000, "assets/explosion.bmp");
     //Object exp_obj = Object(""); // TODO: fix error prone nature of this constructor

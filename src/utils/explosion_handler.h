@@ -1,13 +1,25 @@
+#pragma once
+
 #include "object_handler.h"
 
 class ExplosionHandler : public ObjectHandler
 {
 private:
-    int * curr_frame;
-    /* data */
+    struct FrameData
+    {
+        int last_updated = 0;
+        int curr_frame = 0;
+    };
+
+    FrameData * frame_data = NULL;
+    const int FRAME_TIME = 100 * MILLISECOND;
+    Animation exp_animation = Animation(3, 5, 50000, "assets/explosion.bmp");
+    void update_frames(int game_time);
 public:
-    ExplosionHandler(int MAX_OBJECTS, int _velocity);
+    ExplosionHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns);
     ~ExplosionHandler();
 
+    void init();
     virtual void draw(int cam_pos_x);
+    int get_size();
 };
