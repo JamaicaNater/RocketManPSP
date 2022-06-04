@@ -1,6 +1,6 @@
 #include "projectile_handler.h"
 
-ProjectileHandler::ProjectileHandler(int MAX_OBJECTS, int velocity, int _time_between_spawns, ExplosionHandler * _explosion_handler) : ObjectHandler(MAX_OBJECTS, velocity, _time_between_spawns)
+ProjectileHandler::ProjectileHandler(int MAX_OBJECTS, int velocity, int _time_between_spawns, AnimationHandler * _explosion_handler) : ObjectHandler(MAX_OBJECTS, velocity, _time_between_spawns)
 {
     explosion_handler = _explosion_handler;
 }

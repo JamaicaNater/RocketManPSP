@@ -6,7 +6,7 @@
 #include "utils/object_list.hpp"
 #include "utils/object_handler.h"
 #include "utils/enemy_handler.h"
-#include "utils/explosion_handler.h"
+#include "utils/animation_handler.h"
 #include "utils/projectile_handler.h"
 
 // TODO make singleton
@@ -23,7 +23,7 @@ private:
     Image enemy_img = Image("assets/enemy.bmp");
     
     EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, 1*SECOND);
-    ExplosionHandler explosion_handler = ExplosionHandler(128, 0, 0);
+    AnimationHandler explosion_handler = AnimationHandler(128, 0, 0);
     ProjectileHandler projectile_handler = ProjectileHandler(MAX_PROJ, 8, 20 * MILLISECOND, &explosion_handler);
 
     unsigned int game_time = 0;

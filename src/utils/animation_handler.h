@@ -2,7 +2,7 @@
 
 #include "object_handler.h"
 
-class ExplosionHandler : public ObjectHandler
+class AnimationHandler : public ObjectHandler
 {
 private:
     struct FrameData
@@ -12,13 +12,14 @@ private:
     };
 
     FrameData * frame_data = NULL;
-    const int FRAME_TIME = 30 * MILLISECOND;
-    Animation exp_animation = Animation(3, 5, 50000, "assets/explosion.bmp");
-public:
-    ExplosionHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns);
-    ~ExplosionHandler();
+    Animation * animation;
 
-    void init();
+    const int FRAME_TIME = 30 * MILLISECOND;
+public:
+    AnimationHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns);
+    ~AnimationHandler();
+
+    void init(Animation * _animation);
     void update_frames(int game_time);
     virtual void draw(int cam_pos_x);
     int get_size();
