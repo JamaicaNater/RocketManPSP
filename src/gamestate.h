@@ -46,9 +46,11 @@ private:
      */
     void update_player_actions();
 
-
     void update_physics();
 public:
+    enum GameStates{RUNNING, PAUSED, TERMINATED};
+    
+    GameStates state = RUNNING;
     void title_screen();
 
     /**

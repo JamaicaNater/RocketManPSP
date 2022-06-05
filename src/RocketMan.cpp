@@ -8,6 +8,7 @@
 #include "gamestate.h"
 #include "utils.h"
 #include "logger/logger.h"
+#include "assert.h"
 
 #include "gfx.hpp"
 #include "FastNoise/FastNoise.hpp"
@@ -58,28 +59,30 @@ int main()
 	FastNoiseLite noise(sceKernelGetSystemTimeLow());
 	noise.SetFrequency(.008f);
 	for(int i = 0; i < MAP_SIZE; i++) {
-		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 100) + 100; // MIN hieght = 40 max hieght = 150 + 40
+		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 100) + 100; 
+		// MIN hieght = 40 max hieght = 150 + 40
 	}
 
 	// FPS calculation
 	float physics_time_delta = 0.0f;
 	unsigned int start_time = 0, end_time = 0;
 
-	GameState state = GameState();
-	state.init();
-	state.title_screen();
-	while (1)
+	GameState game_state = GameState();
+	game_state.init();
+	game_state.title_screen();
+
+	while (game_state.state != GameState::TERMINATED)
 	{
 		start_time = sceKernelGetSystemTimeLow(); // For FPS calculation
-		
 		pspDebugScreenSetXY(0,0);
 
-		state.update(start_time);
-		state.draw();
+		game_state.update(start_time);
+		game_state.draw();
 
 		end_time = sceKernelGetSystemTimeLow();
 		physics_time_delta = (end_time - start_time) / static_cast<float>(1000*1000);
 		printf("fps: %.1f", 1 / (physics_time_delta) );
+
 		sceDisplayWaitVblankStart();
 	}
 }

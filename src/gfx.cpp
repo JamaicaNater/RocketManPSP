@@ -107,9 +107,7 @@ namespace GFX
 			load_BMP(img);			
 		} 
 
-		//PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Attempting to draw %s: %d x %d", filename, width, height);
 		//TODO create list of images in memory to be freed in the case of no more memory		
-
 		//TODO: change behaivor of function such that the program stticty draw at the passed in x and y positions
 		y-=height;
 		x-=width/2;

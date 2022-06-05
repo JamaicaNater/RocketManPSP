@@ -7,10 +7,10 @@
 class ObjectHandler
 {
 protected:
+    Object::ObjectTypes type = Object::NONE; 
     ObjectList object_list;
     unsigned int time_between_spawns = 0;
     unsigned int last_spawn = 0;
-    Object::ObjectTypes type = Object::NONE;
     int velocity;
 public:
     void spawn(Vector2d v, int game_time, Image &_img);

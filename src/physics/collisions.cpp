@@ -6,10 +6,10 @@
 
 Object * object_collision(Object * obj){
     // Treat objects as a rectangle
-    int obj1_x1 = obj->vector.x, 
-        obj1_y1 = obj->vector.y, // Top Left
-        obj1_x2 = obj->vector.x + obj->image.width, 
-        obj1_y2 = obj->vector.y + obj->image.height,//Bottom right
+    int obj1_x1 = obj->vector.x - obj->image.width/2, 
+        obj1_y1 = obj->vector.y - obj->image.height, // Top Left
+        obj1_x2 = obj->vector.x, 
+        obj1_y2 = obj->vector.y,//Bottom right
         obj2_x1, obj2_x2, obj2_y1, obj2_y2;
 
     Object ** glob_objects = ObjectList::_global_object_list->get_list();
@@ -17,11 +17,12 @@ Object * object_collision(Object * obj){
     for (int i = 0; i < ObjectList::_global_object_list->MAX_SIZE; i++){
         if (!glob_objects[i]) continue;
         if (glob_objects[i] == obj) continue;
+        if (glob_objects[i]->type == Object::EXPLOSION) continue;
 
-        obj2_x1 = glob_objects[i]->vector.x, 
-        obj2_y1 = glob_objects[i]->vector.y, // Top Left
-        obj2_x2 = glob_objects[i]->vector.x + glob_objects[i]->image.width, 
-        obj2_y2 = glob_objects[i]->vector.y + glob_objects[i]->image.height; // Bottom Right
+        obj2_x1 = glob_objects[i]->vector.x - glob_objects[i]->image.width/2, 
+        obj2_y1 = glob_objects[i]->vector.y - glob_objects[i]->image.height, // Top Left
+        obj2_x2 = glob_objects[i]->vector.x, 
+        obj2_y2 = glob_objects[i]->vector.y; // Bottom Right
 
         //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Obj1:%d (%d,%d),(%d,%d); Obj2:%d (%d,%d),(%d,%d);", obj->type,obj1_x1,obj1_y1,obj1_x2,obj1_y2, glob_objects[i]->type,obj2_x1,obj2_y1,obj2_x2,obj2_y2);
 
