@@ -8,7 +8,11 @@ private:
     Image img;
     /* data */
 public:
-    void update_physics();
+    /**
+     * @brief Handle actions of the AI
+     * 
+     * @param player_x position of the player
+     */
     void update_movement(int player_x);
     EnemyHandler(int MAX_OBJECTS, int _velocity, 
         int _time_between_spawns, Object::ObjectTypes _type);

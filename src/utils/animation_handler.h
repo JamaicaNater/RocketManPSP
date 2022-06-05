@@ -5,6 +5,7 @@
 class AnimationHandler : public ObjectHandler
 {
 private:
+    friend class ProjectileHandler;
     struct FrameData
     {
         int last_updated = 0;
@@ -20,7 +21,17 @@ public:
         Object::ObjectTypes _type);
     ~AnimationHandler();
 
+    /**
+     * @brief Load the Animation into memory
+     * 
+     * @param _animation 
+     */
     void init(Animation * _animation);
+
+    /**
+     * @brief update what frame of the animation the image of the object is on
+     * 
+     * @param game_time 
+     */
     void update_frames(int game_time);
-    virtual void draw(int cam_pos_x);
 };

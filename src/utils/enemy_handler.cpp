@@ -1,15 +1,5 @@
 #include "enemy_handler.h"
 
-void EnemyHandler::update_physics(){
-    Object ** objects = object_list.get_list();
-    for (int i = 0; i < object_list.MAX_SIZE; i++){
-        if (!objects[i]) continue;
-
-        objects[i]->vector.x += objects[i]->vector.vel_x;
-        objects[i]->vector.y = noise_map[objects[i]->vector.x];
-    }
-}
-
 void EnemyHandler::update_movement(int player_x){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){

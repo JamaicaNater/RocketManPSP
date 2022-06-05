@@ -29,15 +29,12 @@ void AnimationHandler::update_frames(int game_time){
             if (frame_data[i].curr_frame >= animation->cols*animation->rows){
                 frame_data[i] = {0,0};
                 object_list.remove(objects[i]);
+                continue;
             }
+
+            objects[i]->image = animation->get_frame(frame_data[i].curr_frame);
         }
     }
-}
-
-void AnimationHandler::draw(int cam_pos_x){
-    Object ** objects = object_list.get_list();
-    for (int i = 0; i < object_list.MAX_SIZE; i++) if (objects[i]) objects[i]->image = animation->get_frame(frame_data[i].curr_frame);
-    ObjectHandler::draw(cam_pos_x);
 }
 
 void AnimationHandler::init(Animation * _animation){

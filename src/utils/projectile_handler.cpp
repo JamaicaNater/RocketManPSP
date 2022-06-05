@@ -15,7 +15,7 @@ void ProjectileHandler::clean(){
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!projectiles[i]) continue;
         if (terrain_collision(projectiles[i]) || object_collision(projectiles[i])){ // Collision with floor
-            Image img = Image("assets/player.bmp"); //TODO: Eliminate this
+            Image img = explosion_handler->animation->get_frame(0); //TODO: Eliminate this
             explosion_handler->spawn(Vector2d(projectiles[i]->vector.x, 
                 projectiles[i]->vector.y), 0, img); // NOTE: game time does not matter for explosion handler
 
@@ -32,8 +32,6 @@ void ProjectileHandler::update_physics(int game_time){
     Object ** projectiles = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!projectiles[i]) continue;
-
-        projectiles[i]->type = Object::MISSILE; // TODO: remove after debug
 
         float time = ((int)game_time - (int)projectiles[i]->vector.created_at) / 1000000.0f;
         projectiles[i]->vector.y= projectiles[i]->vector.y_i + projectiles[i]->vector.vel_y*(time) + .5 * (Vector2d::grav * (time) * (time) );	

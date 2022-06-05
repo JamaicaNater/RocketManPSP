@@ -70,12 +70,12 @@ void GameState::update_player_actions() {
     if(ctrlData.Buttons & PSP_CTRL_LEFT){
         player.vector.vel_x = -1*PLAYER_SPEED;
         player.vector.direction = BACKWARD;
-        player.weapon.vector.x = player.vector.x-5;
+        player.weapon.vector.x = player.vector.x-10;
     } 		
     if(ctrlData.Buttons & PSP_CTRL_RIGHT){
         player.vector.vel_x = PLAYER_SPEED;
         player.vector.direction = FORWARD;
-        player.weapon.vector.x = player.vector.x+20;
+        player.weapon.vector.x = player.vector.x+10;
     }
 
     // Weapon angle positioning
@@ -97,9 +97,8 @@ void GameState::update_player_actions() {
     }
 
     // TODO: if_spawnable();
-    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && game_time >= player.time_between_fires + player.weapon_last_fired ) {
+    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && projectile_handler.can_spawn(sceKernelGetSystemTimeLow()) ) {
         Vector2d vec;
-        player.weapon_last_fired = game_time;
 
         vec.created_at=sceKernelGetSystemTimeLow();
         vec.x = vec.x_i =  player.weapon.vector.x;
@@ -133,9 +132,8 @@ void GameState::update_physics(){
     if (player.vector.x+player.vector.vel_x > 0 && player.vector.x+player.vector.vel_x <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
 
     enemy_handler.update_movement(player.vector.x);
-    enemy_handler.update_physics();
+    enemy_handler.update_physics(game_time);
 
-    //player.weapon.vector.x = player.vector.x;
     player.weapon.vector.y = player.vector.y-25;
 }
 
@@ -144,11 +142,12 @@ void GameState::draw(){
     GFX::simple_drawBMP(0, 272-64-2,  status_bar);
     GFX::draw_progress_bar(50, 240, 20, 120, 80, 100, 0xFF00FF00, 0xFF0000FF);
     
+    projectile_handler.draw(cam_pos_x);
     
     GFX::drawBMP(player.weapon.get_draw_x(cam_pos_x), player.weapon.get_draw_y(), player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
     GFX::drawBMP(player.get_draw_x(cam_pos_x), player.get_draw_y() , 0, CENTER, player.vector.direction, 0, player.image);
 
-    projectile_handler.draw(cam_pos_x);
+    
     enemy_handler.draw(cam_pos_x);
     explosion_handler.draw(cam_pos_x);
 
