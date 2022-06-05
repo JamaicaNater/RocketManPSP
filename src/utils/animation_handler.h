@@ -22,5 +22,4 @@ public:
     void init(Animation * _animation);
     void update_frames(int game_time);
     virtual void draw(int cam_pos_x);
-    int get_size();
 };

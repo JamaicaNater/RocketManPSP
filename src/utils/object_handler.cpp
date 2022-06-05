@@ -19,17 +19,15 @@ ObjectHandler::~ObjectHandler(){
     free(&object_list);
 }
 
-void ObjectHandler::spawn(Vector2d v, int game_time, Image &_img) {
-    if (game_time < last_spawn + time_between_spawns){
-        //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Failed to spawn %s %d < %d + %d", _img.filename, game_time, last_spawn, time_between_spawns);
-        return;
-    }
-    if (object_list.size >= object_list.MAX_SIZE){
-        //PSP_LOGGER::log(PSP_LOGGER::ERROR, "Spawn fail: Object list full");
-        return;
-    }
+bool ObjectHandler::can_spawn(int game_time){
+    return ( (game_time >= last_spawn + time_between_spawns) && 
+             object_list.size < object_list.MAX_SIZE );
+}
 
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "%s ptr: %0x", _img.filename, _img.img_matrix);
+void ObjectHandler::spawn(Vector2d v, int game_time, Image &_img) {
+    if (!can_spawn(game_time)) return;
+
+    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: %0x, global objs: %d", _img.filename, _img.img_matrix, ObjectList::_global_object_list->size);
 
     Object * object = new Object(_img);
     object->image.img_matrix = _img.img_matrix;

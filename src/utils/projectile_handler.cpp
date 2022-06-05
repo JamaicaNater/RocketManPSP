@@ -15,17 +15,10 @@ void ProjectileHandler::clean(){
         if (!projectiles[i]) continue;
 
         if (projectiles[i]->vector.y >= noise_map[projectiles[i]->vector.x]){ // Collision with floor
-            // Object * explosion_object = new Object;
-            // explosion_object->vector.x = projectiles[i]->vector.x;
-            // explosion_object->vector.y = projectiles[i]->vector.y;
-            // explosion_list.insert(explosion_object);
-            // explosion_animation.animate = true;
-
             Image img = Image("assets/player.bmp"); //TODO: Eliminate this
             explosion_handler->spawn(Vector2d(projectiles[i]->vector.x, 
-                projectiles[i]->vector.y), 2147483600, img);
+                projectiles[i]->vector.y), 0, img); // NOTE: game time does not matter for explosion handler
 
-            PSP_LOGGER::log(PSP_LOGGER::INFO, "exp size: %d", explosion_handler->get_size());
             PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded projectile %d at scr_x:%d, x%d y:%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.x, projectiles[i]->vector.y);
             object_list.remove(projectiles[i]);
         } else if (projectiles[i]->off_screen()) {

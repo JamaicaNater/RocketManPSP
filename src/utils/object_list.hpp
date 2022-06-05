@@ -4,73 +4,24 @@
 
 struct ObjectList
 {
+private:
     Object * * objects;
+
+    int _insert(Object * value);
+    int _remove(Object * value);
+public:
+    static ObjectList * _global_object_list;
     int MAX_SIZE;
     int size = 0;
 
-    ObjectList(){}
-
-    ObjectList(int _max_size) {
-        MAX_SIZE = _max_size;
-        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Allocating %d Objects", MAX_SIZE);
-        objects = (Object**)malloc(MAX_SIZE * sizeof(Object *));
-        memset(objects, 0, MAX_SIZE * sizeof(Object *));
-    }
-
-    ObjectList(const ObjectList &other){
-        MAX_SIZE = other.MAX_SIZE;
-        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "(copy constructor)Allocating %d Objects", MAX_SIZE);
-        objects = (Object**)malloc(MAX_SIZE * sizeof(Object *));
-        memset(objects, 0, MAX_SIZE * sizeof(Object *));
-    }
-
-    ~ObjectList() {
-        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Deallocating %d Objects", MAX_SIZE);
-        for (int i = 0; i < MAX_SIZE; i++){
-             if (objects[i]) free(objects[i]);
-        }
-        free(objects);
-    }
-
-    int insert(Object * value){
-        int i = MAX_SIZE;
-
-        while (i > -1)
-        {
-            i--;
-            if(!objects[i]) {
-                objects[i] = value;
-                break;
-            }
-        }
-        if (i != -1) size++;
-        return i;
-    }
-
-    int remove(Object * value){
-        int i = MAX_SIZE;
-
-        while (i > -1)
-        {
-            i--;
-            if(objects[i] == value) {
-                objects[i] = NULL;
-                break;
-            }
-        }
-        if (i != -1) size--;
-        return i;
-    }
-
-    Object * * get_list() {
-        return objects;
-    }
-
-    bool is_full(){
-        return size == MAX_SIZE;
-    }
-
-    bool is_empty(){
-        return size == 0;
-    }
+    ObjectList();
+    ObjectList(int _max_size);
+    ObjectList(const ObjectList &other);
+    ~ObjectList();
+    int insert(Object * &value);
+    int remove(Object* &value);
+    Object * * get_list();
+    bool is_full();
+    bool is_empty();
 };
+

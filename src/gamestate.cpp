@@ -11,7 +11,7 @@
 void GameState::init(){
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Init Gamestate");
 
-    //TODO: load all BMPs hear and add a loading screen for Christ sake
+    //TODO: load all BMPs here and add a loading screen for Christ sake
     load_BMP(enemy_img);
 
     explosion_handler.init(new Animation(3, 5, 50000, "assets/explosion.bmp"));
@@ -149,12 +149,14 @@ void GameState::draw(){
     GFX::drawTerrain(noise_map, cam_pos_x);
     GFX::simple_drawBMP(0, 272-64-2,  status_bar);
     GFX::draw_progress_bar(50, 240, 20, 120, 80, 100, 0xFF00FF00, 0xFF0000FF);
+    
+    
     GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
     GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, 0, player.image);
 
     projectile_handler.draw(cam_pos_x);
-    explosion_handler.draw(cam_pos_x);
     enemy_handler.draw(cam_pos_x);
+    explosion_handler.draw(cam_pos_x);
 
     GFX::swapBuffers();
     GFX::clear();

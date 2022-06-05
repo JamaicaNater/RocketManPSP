@@ -14,6 +14,7 @@ protected:
     int velocity;
 public:
     void spawn(Vector2d v, int game_time, Image &_img);
+    bool can_spawn(int game_time);
     virtual void update_physics(int game_time);
     virtual void draw(int cam_pos_x);
     virtual void clean();
