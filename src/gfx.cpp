@@ -108,9 +108,6 @@ namespace GFX
 		} 
 
 		//TODO create list of images in memory to be freed in the case of no more memory		
-		//TODO: change behaivor of function such that the program stticty draw at the passed in x and y positions
-		y-=height;
-		x-=width/2;
 		int index = 0;
 		
 		uint32_t * pixel = new(uint32_t);

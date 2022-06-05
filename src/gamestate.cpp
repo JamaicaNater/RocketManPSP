@@ -20,6 +20,7 @@ void GameState::init(){
 	player.vector.y = 10;
 	player.vector.direction = FORWARD;
     player.weapon.image = Image("assets/player_rocket.bmp");
+    player.type = Object::PLAYER;
 
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
@@ -65,23 +66,16 @@ void GameState::update_player_actions() {
     cam_pos_x = get_cam_position(player.vector.x, screen_center);
     sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
 
-    // Where to draw the player on the screen
-    if (MAP_SIZE - player.vector.x > screen_center){ 
-        if (player.vector.x > screen_center) player.draw_pos_x = screen_center;
-        else player.draw_pos_x = player.vector.x;
-    }
-    else player.draw_pos_x = player.vector.x - cam_pos_x;
-
     // PLAYER MOVEMENT
     if(ctrlData.Buttons & PSP_CTRL_LEFT){
         player.vector.vel_x = -1*PLAYER_SPEED;
         player.vector.direction = BACKWARD;
-        player.weapon.draw_pos_x = player.draw_pos_x-10;
+        player.weapon.vector.x = player.vector.x-5;
     } 		
     if(ctrlData.Buttons & PSP_CTRL_RIGHT){
         player.vector.vel_x = PLAYER_SPEED;
         player.vector.direction = FORWARD;
-        player.weapon.draw_pos_x = player.draw_pos_x+10;
+        player.weapon.vector.x = player.vector.x+20;
     }
 
     // Weapon angle positioning
@@ -141,7 +135,7 @@ void GameState::update_physics(){
     enemy_handler.update_movement(player.vector.x);
     enemy_handler.update_physics();
 
-    player.weapon.vector.x = player.vector.x;
+    //player.weapon.vector.x = player.vector.x;
     player.weapon.vector.y = player.vector.y-25;
 }
 
@@ -151,8 +145,8 @@ void GameState::draw(){
     GFX::draw_progress_bar(50, 240, 20, 120, 80, 100, 0xFF00FF00, 0xFF0000FF);
     
     
-    GFX::drawBMP(player.weapon.draw_pos_x, player.weapon.vector.y, player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
-    GFX::drawBMP(player.draw_pos_x, player.vector.y , 0, CENTER, player.vector.direction, 0, player.image);
+    GFX::drawBMP(player.weapon.get_draw_x(cam_pos_x), player.weapon.get_draw_y(), player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
+    GFX::drawBMP(player.get_draw_x(cam_pos_x), player.get_draw_y() , 0, CENTER, player.vector.direction, 0, player.image);
 
     projectile_handler.draw(cam_pos_x);
     enemy_handler.draw(cam_pos_x);

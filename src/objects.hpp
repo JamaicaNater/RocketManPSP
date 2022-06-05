@@ -6,6 +6,7 @@
 #include "Vector2d.hpp"
 #include "logger/logger.h"
 #include "image.hpp"
+#include "globals.h"
 
 class Object
 {
@@ -28,6 +29,19 @@ class Object
 	bool off_screen() {
 		return draw_pos_x > 480 + 50 || draw_pos_x < -50
 		|| vector.y > 512 + 50 || vector.y < -50;
+	}
+
+	int get_draw_x(int cam_pos_x){
+		// Where to draw the player on the screen
+		if (type == PLAYER && MAP_SIZE - vector.x > 512/2){ 
+			if (vector.x > 512/2) return 512/2 - image.width/2;
+		}
+		
+		return vector.x - cam_pos_x - image.width/2;
+	}
+
+	int get_draw_y(){
+		return vector.y - image.height;
 	}
 };
 

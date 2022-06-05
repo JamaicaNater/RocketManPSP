@@ -38,7 +38,6 @@ void ProjectileHandler::update_physics(int game_time){
         float time = ((int)game_time - (int)projectiles[i]->vector.created_at) / 1000000.0f;
         projectiles[i]->vector.y= projectiles[i]->vector.y_i + projectiles[i]->vector.vel_y*(time) + .5 * (Vector2d::grav * (time) * (time) );	
         projectiles[i]->vector.x= projectiles[i]->vector.x_i + projectiles[i]->vector.vel_x * time;
-        //projectiles[i]->draw_pos_x = projectiles[i]->vector.x - cam_pos_x;
     }
 
     ProjectileHandler::clean();

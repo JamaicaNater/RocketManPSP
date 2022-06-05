@@ -1,6 +1,6 @@
 #pragma once
 
-enum flips{FORWARD, BACKWARD};
+enum Flips{FORWARD, BACKWARD};
 struct Vector2d {
     private:
         short angle;

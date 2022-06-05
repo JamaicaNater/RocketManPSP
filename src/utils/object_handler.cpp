@@ -56,11 +56,10 @@ void ObjectHandler::draw(int cam_pos_x){
         if (!objects[i]) continue;
         
         if (!objects[i]->off_screen()) {
-            GFX::drawBMP(objects[i]->vector.x - cam_pos_x, objects[i]->vector.y, 
+            GFX::drawBMP(objects[i]->get_draw_x(cam_pos_x), objects[i]->get_draw_y(), 
             objects[i]->vector.get_angle(), CENTER, 
             objects[i]->vector.direction, 0, objects[i]->image);
         }
-
     }
 }
 
