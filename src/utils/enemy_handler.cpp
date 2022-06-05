@@ -25,7 +25,9 @@ void EnemyHandler::update_movement(int player_x){
     }
 }
 
-EnemyHandler::EnemyHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns) : ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns)
+EnemyHandler::EnemyHandler(int MAX_OBJECTS, int _velocity, 
+    int _time_between_spawns, Object::ObjectTypes _type) : 
+    ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns, _type)
 {
 }
 

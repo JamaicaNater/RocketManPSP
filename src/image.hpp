@@ -40,11 +40,8 @@ struct Animation
 	public:
 	// Program updated variables
 	unsigned int * * img_matrices = NULL;
-	unsigned int last_updated = 0;
 	unsigned int width = 0;
 	unsigned int height = 0;
-	bool animate = false;
-	bool looping =  false;
 
 	// User provided variables 
 	unsigned int frame_time = 0;
@@ -58,20 +55,6 @@ struct Animation
 
 		return(Image(height, width, img_matrices[index], "Non-Loadable"));
 	}
-
-	// Image get_next_frame(int time, int repetitions){
-	// 	int curr_frame = next_frame;
-
-	// 	if (time > (last_updated + frame_time)){
-	// 		next_frame++;
-	// 		next_frame%=(rows * cols);
-	// 		last_updated = time;
-
-	// 		if (curr_frame > rows*cols -2) repetitions--;
-	// 		if (!repetitions) animate = false;			
-	// 	}
-	// 	return(Image(height, width, img_matrices[curr_frame], ".."));
-	// }
 
 	Animation(unsigned int _rows, unsigned int _cols, unsigned int _frame_time, const char * _filename) {
 		frame_time = _frame_time;

@@ -9,7 +9,8 @@ private:
     AnimationHandler * explosion_handler;
     
 public:
-    ProjectileHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, AnimationHandler * explosion_handler);
+    ProjectileHandler(int MAX_OBJECTS, int velocity, int _time_between_spawns, 
+    Object::ObjectTypes type, AnimationHandler * _explosion_handler);
     ~ProjectileHandler();
 
     void clean();

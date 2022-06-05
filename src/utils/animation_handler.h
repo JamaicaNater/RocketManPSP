@@ -16,7 +16,8 @@ private:
 
     const int FRAME_TIME = 30 * MILLISECOND;
 public:
-    AnimationHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns);
+    AnimationHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, 
+        Object::ObjectTypes _type);
     ~AnimationHandler();
 
     void init(Animation * _animation);

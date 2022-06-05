@@ -10,6 +10,9 @@
 class Object
 {
 	public:
+	enum ObjectTypes{PLAYER = 0, ENEMY, MISSILE, EXPLOSION, NONE};
+
+	ObjectTypes type = NONE;
 	Image image;
 	int draw_pos_x; // postion to draw at
 	

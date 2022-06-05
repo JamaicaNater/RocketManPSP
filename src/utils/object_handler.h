@@ -10,7 +10,7 @@ protected:
     ObjectList object_list;
     unsigned int time_between_spawns = 0;
     unsigned int last_spawn = 0;
-
+    Object::ObjectTypes type = Object::NONE;
     int velocity;
 public:
     void spawn(Vector2d v, int game_time, Image &_img);
@@ -19,6 +19,6 @@ public:
     virtual void draw(int cam_pos_x);
     virtual void clean();
     virtual void init();
-    ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns);
+    ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, Object::ObjectTypes type);
     virtual ~ObjectHandler();
 };

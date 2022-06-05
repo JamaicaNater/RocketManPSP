@@ -3,8 +3,9 @@
 #include "../gfx.hpp"
 #include "../bmp/loadbmp.h"
 
-AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns) 
-: ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns)
+AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity, 
+    int _time_between_spawns, Object::ObjectTypes _type) 
+    : ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns, _type)
 {
     frame_data = (FrameData*)malloc(MAX_OBJECTS * sizeof(FrameData));
     memset(frame_data, 0, sizeof(FrameData) * MAX_OBJECTS);

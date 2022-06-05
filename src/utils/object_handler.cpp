@@ -3,7 +3,7 @@
 #include "../Vector2d.hpp"
 #include "../gfx.hpp"
 
-ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns)
+ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, Object::ObjectTypes _type)
 {
     PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Calling ObjectList for objects");
     object_list = *(new ObjectList(MAX_OBJECTS));
@@ -11,6 +11,7 @@ ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_s
 
     velocity = _velocity;
     time_between_spawns = _time_between_spawns;
+    type = _type;
 }
 
 ObjectHandler::~ObjectHandler(){
@@ -32,6 +33,7 @@ void ObjectHandler::spawn(Vector2d v, int game_time, Image &_img) {
     Object * object = new Object(_img);
     object->image.img_matrix = _img.img_matrix;
     object->vector = v;
+    object->type = type;
 
     PSP_LOGGER::assert((object_list.insert(object) > -1), 
         "Object spawned successfully");

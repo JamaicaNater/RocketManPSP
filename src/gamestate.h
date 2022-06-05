@@ -22,9 +22,9 @@ private:
     Image status_bar = Image("assets/statusbar.bmp");
     Image enemy_img = Image("assets/enemy.bmp");
     
-    EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, 1*SECOND);
-    AnimationHandler explosion_handler = AnimationHandler(128, 0, 0);
-    ProjectileHandler projectile_handler = ProjectileHandler(MAX_PROJ, 8, 20 * MILLISECOND, &explosion_handler);
+    EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, 1*SECOND, Object::ENEMY);
+    AnimationHandler explosion_handler = AnimationHandler(128, 0, 0, Object::EXPLOSION);
+    ProjectileHandler projectile_handler = ProjectileHandler(MAX_PROJ, 8, 20 * MILLISECOND, Object::MISSILE, &explosion_handler);
 
     unsigned int game_time = 0;
     int cam_pos_x =10, cam_pos_y =10;
