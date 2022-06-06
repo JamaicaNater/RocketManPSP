@@ -17,7 +17,7 @@ void ProjectileHandler::clean(){
         if (terrain_collision(projectiles[i]) || object_collision(projectiles[i])){ // Collision with floor
             Image img = explosion_handler->animation->get_frame(0); //TODO: Eliminate this
             explosion_handler->spawn(Vector2d(projectiles[i]->vector.x, 
-                projectiles[i]->vector.y), 0, img); // NOTE: game time does not matter for explosion handler
+                projectiles[i]->vector.y), img); // NOTE: game time does not matter for explosion handler
 
             PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded projectile %d, x%d y:%d",i, projectiles[i]->vector.x, projectiles[i]->vector.y);
             object_list.remove(projectiles[i]);
@@ -28,12 +28,12 @@ void ProjectileHandler::clean(){
     }
 }
 
-void ProjectileHandler::update_physics(int game_time){
+void ProjectileHandler::update_physics(){
     Object ** projectiles = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!projectiles[i]) continue;
 
-        float time = ((int)game_time - (int)projectiles[i]->vector.created_at) / 1000000.0f;
+        float time = ((int)curr_time - (int)projectiles[i]->vector.created_at) / 1000000.0f;
         projectiles[i]->vector.y= projectiles[i]->vector.y_i + projectiles[i]->vector.vel_y*(time) + .5 * (Vector2d::grav * (time) * (time) );	
         projectiles[i]->vector.x= projectiles[i]->vector.x_i + projectiles[i]->vector.vel_x * time;
     }

@@ -25,5 +25,5 @@ public:
      * 
      * @param game_time 
      */
-    void update_physics(int game_time);
+    void update_physics();
 };

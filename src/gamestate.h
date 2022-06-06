@@ -26,8 +26,7 @@ private:
     AnimationHandler explosion_handler = AnimationHandler(128, 0, 0, Object::EXPLOSION);
     ProjectileHandler projectile_handler = ProjectileHandler(MAX_PROJ, 8, 80 * MILLISECOND, Object::MISSILE, &explosion_handler);
 
-    unsigned int game_time = 0;
-	int screen_center = 512/2;
+	int screen_center = SCREEN_WIDTH/2;
 
     SceCtrlData ctrlData;
 
@@ -62,9 +61,8 @@ public:
      * @brief Update player controlled actions (controller input),
      * player uncontrolled actions (AI) and Physics 
      * 
-     * @param _game_time
      */
-    void update(int _game_time);
+    void update();
 
     /**
      * @brief Draw objects present in the game context

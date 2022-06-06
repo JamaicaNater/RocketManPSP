@@ -79,7 +79,7 @@ int main()
 		start_time = sceKernelGetSystemTimeLow(); // For FPS calculation
 		pspDebugScreenSetXY(0,0);
 
-		game_state.update(start_time);
+		game_state.update();
 		game_state.draw();
 
 		end_time = sceKernelGetSystemTimeLow();

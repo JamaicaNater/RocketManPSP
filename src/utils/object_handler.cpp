@@ -20,13 +20,13 @@ ObjectHandler::~ObjectHandler(){
     free(&object_list);
 }
 
-bool ObjectHandler::can_spawn(int game_time){
-    return ( (game_time >= last_spawn + time_between_spawns) && 
+bool ObjectHandler::can_spawn(){
+    return ( (curr_time >= last_spawn + time_between_spawns) && 
              object_list.size < object_list.MAX_SIZE );
 }
 
-void ObjectHandler::spawn(Vector2d v, int game_time, Image &_img) {
-    if (!can_spawn(game_time)) return;
+void ObjectHandler::spawn(Vector2d v, Image &_img) {
+    if (!can_spawn()) return;
 
     PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: %0x, global objs: %d", _img.filename, _img.img_matrix, ObjectList::_global_object_list->size);
 
@@ -37,10 +37,10 @@ void ObjectHandler::spawn(Vector2d v, int game_time, Image &_img) {
 
     PSP_LOGGER::assert((object_list.insert(object) > -1), 
         "Object spawned successfully");
-    last_spawn = game_time;
+    last_spawn = curr_time;
 }
 
-void ObjectHandler::update_physics(int game_time){
+void ObjectHandler::update_physics(){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;

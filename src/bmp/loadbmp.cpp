@@ -102,13 +102,13 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
 
     int temp[*width];
     unsigned int * front, * back;
-    for (int i = 0; i < 272/2; i++) {
-        front = buf + i* 512;
-        back = buf + (272 - i - 1)* 512;
+    for (int i = 0; i < SCREEN_HEIGHT/2; i++) {
+        front = buf + i* SCREEN_WIDTH;
+        back = buf + (SCREEN_HEIGHT - i - 1)* SCREEN_WIDTH;
 
-        memcpy((void*)temp, (void*)front, 512*4);
-        memcpy((void*)front, (void*)back, 512*4);
-        memcpy((void*)back, (void*)temp, 512*4);
+        memcpy((void*)temp, (void*)front, SCREEN_WIDTH*sizeof(unsigned int));
+        memcpy((void*)front, (void*)back, SCREEN_WIDTH*sizeof(unsigned int));
+        memcpy((void*)back, (void*)temp, SCREEN_WIDTH*sizeof(unsigned int));
     }
     fclose(fp);
 }

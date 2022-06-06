@@ -24,14 +24,14 @@ class Object
 	}
 
 	bool off_screen() {
-		return draw_pos_x > 480 + 50 || draw_pos_x < -50
-		|| vector.y > 512 + 50 || vector.y < -50;
+		return draw_pos_x > SCREEN_WIDTH_RES + 50 || draw_pos_x < -50
+		|| vector.y > SCREEN_WIDTH + 50 || vector.y < -50;
 	}
 
 	int get_draw_x(){
 		// Where to draw the player on the screen
-		if (type == PLAYER && MAP_SIZE - vector.x > 512/2){ 
-			if (vector.x > 512/2) return 512/2 - image.width/2;
+		if (type == PLAYER && MAP_SIZE - vector.x > SCREEN_WIDTH/2){ 
+			if (vector.x > SCREEN_WIDTH/2) return SCREEN_WIDTH/2 - image.width/2;
 		}
 		
 		return vector.x - camera_x - image.width/2;

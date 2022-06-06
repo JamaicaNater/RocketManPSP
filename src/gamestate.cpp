@@ -46,20 +46,21 @@ void GameState::title_screen() {
 	}
 }
 
-void GameState::update(int _game_time){
-    game_time = _game_time;
-
+void GameState::update(){
+    curr_time = sceKernelGetSystemTimeLow();
     GameState::update_player_actions();
 
+    curr_time = sceKernelGetSystemTimeLow();
     GameState::update_nonplayer_actions();
 
+    curr_time = sceKernelGetSystemTimeLow();
     GameState::update_physics();
 }
 
 void GameState::update_nonplayer_actions() {
-    enemy_handler.spawn(Vector2d(300, noise_map[300]), game_time, enemy_img);
+    enemy_handler.spawn(Vector2d(300, noise_map[300]), enemy_img);
 
-    explosion_handler.update_frames(game_time);
+    explosion_handler.update_frames();
 }
 
 void GameState::update_player_actions() {
@@ -97,8 +98,8 @@ void GameState::update_player_actions() {
         }
     }
 
-    // TODO: if_spawnable();
-    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && projectile_handler.can_spawn(sceKernelGetSystemTimeLow()) ) {
+
+    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && projectile_handler.can_spawn() ) {
         Vector2d vec;
 
         vec.created_at=sceKernelGetSystemTimeLow();
@@ -111,15 +112,15 @@ void GameState::update_player_actions() {
         vec.vel_x = cos(rad) * 500;
         vec.vel_y = sin(rad) * 500;
 
-        projectile_handler.spawn(vec, game_time, rocket);
+        projectile_handler.spawn(vec, rocket);
     }
 }
 
 void GameState::update_physics(){
 
-    projectile_handler.update_physics(game_time);    
+    projectile_handler.update_physics();    
 
-    float time = (int)(player.jump_time - game_time)/1000000.0f;
+    float time = (int)(player.jump_time - curr_time)/1000000.0f;
     if (player.vector.vel_y) { //JUMP Physics
         player.vector.y = player.jump_height_at(time);
         if (player.vector.y > noise_map[player.vector.x]) { // End of jump
@@ -133,14 +134,14 @@ void GameState::update_physics(){
     if (player.vector.x+player.vector.vel_x > 0 && player.vector.x+player.vector.vel_x <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
 
     enemy_handler.update_movement(player.vector.x);
-    enemy_handler.update_physics(game_time);
+    enemy_handler.update_physics();
 
     player.weapon.vector.y = player.vector.y-25;
 }
 
 void GameState::draw(){
     GFX::drawTerrain();
-    GFX::simple_drawBMP(0, 272-64-2,  status_bar);
+    GFX::simple_drawBMP(0, SCREEN_HEIGHT-64-2,  status_bar);
     GFX::draw_progress_bar(50, 240, 20, 120, 80, 100, 0xFF00FF00, 0xFF0000FF);
     
     projectile_handler.draw();

@@ -17,14 +17,14 @@ AnimationHandler::~AnimationHandler()
     free(frame_data);
 }
 
-void AnimationHandler::update_frames(int game_time){
+void AnimationHandler::update_frames(){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
 
-        if (frame_data[i].last_updated + FRAME_TIME < game_time){
+        if (frame_data[i].last_updated + FRAME_TIME < curr_time){
             frame_data[i].curr_frame++;
-            frame_data[i].last_updated = game_time;
+            frame_data[i].last_updated = curr_time;
 
             if (frame_data[i].curr_frame >= animation->cols*animation->rows){
                 frame_data[i] = {0,0};

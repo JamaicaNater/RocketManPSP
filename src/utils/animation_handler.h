@@ -31,7 +31,6 @@ public:
     /**
      * @brief update what frame of the animation the image of the object is on
      * 
-     * @param game_time 
      */
-    void update_frames(int game_time);
+    void update_frames();
 };

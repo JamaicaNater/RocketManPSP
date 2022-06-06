@@ -33,7 +33,7 @@ namespace GFX
 	void init()
 	{
 		draw_buffer = static_cast<uint32_t *>( sceGeEdramGetAddr() );
-		disp_buffer = static_cast<uint32_t *>( (uint32_t*)sceGeEdramGetAddr() + (512*480)) ;
+		disp_buffer = static_cast<uint32_t *>( (uint32_t*)sceGeEdramGetAddr() + (SCREEN_WIDTH*480)) ;
 
 		sceDisplaySetMode(0, 480, 272);
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, 1);
