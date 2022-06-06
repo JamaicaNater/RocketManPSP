@@ -16,6 +16,7 @@ class Object
 	ObjectTypes type = NONE;
 	Image image;
 	int draw_pos_x; // postion to draw at
+	int health = 100, max_health = 100;
 
 	Vector2d vector;
 	Object() {}
@@ -24,8 +25,8 @@ class Object
 	}
 
 	bool off_screen() {
-		return draw_pos_x > SCREEN_WIDTH_RES + 50 || draw_pos_x < -50
-		|| vector.y > SCREEN_WIDTH + 50 || vector.y < -50;
+		return get_draw_x() > SCREEN_WIDTH_RES + 50 || get_draw_x() < -50
+		|| get_draw_y() > SCREEN_WIDTH + 50 || get_draw_y() < -50;
 	}
 
 	int get_draw_x(){

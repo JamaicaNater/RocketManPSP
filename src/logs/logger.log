@@ -61,36 +61,78 @@ INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player.bmp, 1439.808594 kb used by bmps
-DEBUG: Spawned:assets/enemy.bmp ptr: 8858950, global objs: 0
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 0
 DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/missile.bmp ptr: 88585e0, global objs: 1
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 1
 DEBUG: (assertion) Object spawned successfully
-INFO: Freed projectile 63, x:92 y:87
-DEBUG: Spawned:assets/missile.bmp ptr: 88585e0, global objs: 1
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 2
 DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 8858950, global objs: 2
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 3
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 8858890
-DEBUG: Spawned:Non-Loadable ptr: 885b220, global objs: 3
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 4
 DEBUG: (assertion) Object spawned successfully
-INFO: Exploded projectile 63, x321 y:89
-DEBUG: Spawned:assets/missile.bmp ptr: 88585e0, global objs: 3
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 5
 DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/missile.bmp ptr: 88585e0, global objs: 3
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 6
 DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 8858950, global objs: 4
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 7
 DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/missile.bmp ptr: 88585e0, global objs: 5
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 8
 DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:Non-Loadable ptr: 885b220, global objs: 6
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 9
 DEBUG: (assertion) Object spawned successfully
-INFO: Exploded projectile 63, x555 y:108
-INFO: Collision detected with 8858710
-DEBUG: Spawned:Non-Loadable ptr: 885b220, global objs: 6
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 10
 DEBUG: (assertion) Object spawned successfully
-INFO: Exploded projectile 61, x128 y:91
-DEBUG: Spawned:Non-Loadable ptr: 885b220, global objs: 6
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 11
 DEBUG: (assertion) Object spawned successfully
-INFO: Exploded projectile 62, x554 y:108
-DEBUG: Spawned:assets/enemy.bmp ptr: 8858950, global objs: 3
+INFO: Freed projectile 63, x:425 y:-47
+INFO: Freed projectile 62, x:425 y:-47
+INFO: Freed projectile 61, x:425 y:-47
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 9
 DEBUG: (assertion) Object spawned successfully
+INFO: Freed projectile 60, x:425 y:-47
+INFO: Freed projectile 59, x:425 y:-47
+INFO: Freed projectile 58, x:425 y:-47
+INFO: Freed projectile 57, x:425 y:-47
+INFO: Freed projectile 56, x:425 y:-47
+INFO: Freed projectile 55, x:425 y:-47
+INFO: Freed projectile 54, x:425 y:-47
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 3
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 4
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 5
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 6
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 7
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 8
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 9
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 10
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 11
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 12
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 13
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 14
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 15
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 16
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 17
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/missile.bmp ptr: 88587e0, global objs: 18
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8858b50, global objs: 19
+DEBUG: (assertion) Object spawned successfully
+INFO: Freed projectile 63, x:1661 y:-47
+INFO: Freed projectile 62, x:1671 y:-49
+INFO: Freed projectile 61, x:1673 y:-47
+INFO: Freed projectile 60, x:1691 y:-49
+INFO: Freed projectile 59, x:1716 y:-48

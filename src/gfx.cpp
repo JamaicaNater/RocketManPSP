@@ -64,6 +64,16 @@ namespace GFX
 	void draw_progress_bar(int x, int y, int height, int width, int val, int max, uint32_t val_color, uint32_t rem_color){
 		int val_width = (val * 1.0f / max) * width;
 		int rem_width = width - val_width;
+
+		if (y < 0) y = 0;
+		if (y > SCREEN_HEIGHT) return;
+
+		if(x < 0) x = 0;
+		if(x > SCREEN_WIDTH_RES) return;
+
+		if (y + height > SCREEN_HEIGHT) height = SCREEN_HEIGHT - y;
+		if (x + width > SCREEN_WIDTH_RES) width = SCREEN_WIDTH_RES - x;
+
 		for (int y_i = y+height; y_i > y; y_i--){
 			for (int x_i = x; x_i < x+width; x_i++) {
 				if (x_i < x+val_width)draw_buffer[y_i*SCREEN_WIDTH+x_i] = val_color;

@@ -6,7 +6,7 @@ LIBS = -lstdc++ -lm
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum -lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp -lpspmath
 
 CFLAGS = 
-CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -DPSP_LOGGING
+CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 #-DPSP_LOGGING
 ASFLAGS = $(CFLAGS)
 
 #PSP Stuff

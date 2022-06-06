@@ -14,10 +14,18 @@ void ProjectileHandler::clean(){
     Object ** projectiles = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!projectiles[i]) continue;
-        if (terrain_collision(projectiles[i]) || object_collision(projectiles[i])){ // Collision with floor
-            Image img = explosion_handler->animation->get_frame(0); //TODO: Eliminate this
-            explosion_handler->spawn(Vector2d(projectiles[i]->vector.x, 
-                projectiles[i]->vector.y), img); // NOTE: game time does not matter for explosion handler
+        Object* coll_obj;
+        if ( (coll_obj = object_collision(projectiles[i])) || terrain_collision(projectiles[i])){ // Collision with floor
+            
+            if (coll_obj) coll_obj->health-=5;
+
+            explosion_handler->spawn(
+                Vector2d(
+                (coll_obj) ? coll_obj->vector.x : projectiles[i]->vector.x,
+                (coll_obj) ? coll_obj->vector.y : projectiles[i]->vector.y ),
+                explosion_handler->animation->get_frame(0));
+                // If we collided with an object put the explosion under it 
+                // Otherwise put the explosion when the projectile is.
 
             PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded projectile %d, x%d y:%d",i, projectiles[i]->vector.x, projectiles[i]->vector.y);
             object_list.remove(projectiles[i]);

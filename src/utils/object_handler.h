@@ -19,7 +19,7 @@ public:
      * @param v - vector to assign to the object
      * @param _img // TODO eliminate this parameter
      */
-    void spawn(Vector2d v, Image &_img);
+    void spawn(Vector2d v, Image _img);
 
     /**
      * @brief Determine if we can spawn the object, check to se if our list is 
