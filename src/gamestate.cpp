@@ -2,7 +2,7 @@
 #include <math.h>
 
 #include "gamestate.h"
-#include "gfx.hpp"
+#include "graphics/gfx.hpp"
 #include "utils.h"
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"

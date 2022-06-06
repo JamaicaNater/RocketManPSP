@@ -3,11 +3,11 @@
 #include "globals.h"
 #include <pspctrl.h>
 #include "objects.hpp"
-#include "utils/object_list.hpp"
-#include "utils/object_handler.h"
-#include "utils/enemy_handler.h"
-#include "utils/animation_handler.h"
-#include "utils/projectile_handler.h"
+#include "object_handler/object_list.h"
+#include "object_handler/object_handler.h"
+#include "object_handler/enemy_handler.h"
+#include "object_handler/animation_handler.h"
+#include "object_handler/projectile_handler.h"
 
 // TODO make singleton
 class GameState

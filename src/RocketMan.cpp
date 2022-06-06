@@ -10,7 +10,7 @@
 #include "logger/logger.h"
 #include "assert.h"
 
-#include "gfx.hpp"
+#include "graphics/gfx.hpp"
 #include "../Dependencies/FastNoise/FastNoise.hpp"
 
 unsigned char * noise_map = (unsigned char*)malloc(MAP_SIZE);

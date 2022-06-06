@@ -1,7 +1,7 @@
 TARGET = Tutorial
-OBJS = RocketMan.o gfx.o bmp/loadbmp.o utils.o logger/logger.o gamestate.o \
-utils/object_list.o utils/object_handler.o utils/enemy_handler.o \
-utils/projectile_handler.o utils/animation_handler.o physics/collisions.o
+OBJS = RocketMan.o graphics/gfx.o bmp/loadbmp.o utils.o logger/logger.o gamestate.o \
+object_handler/object_list.o object_handler/object_handler.o object_handler/enemy_handler.o \
+object_handler/projectile_handler.o object_handler/animation_handler.o physics/collisions.o
 LIBS = -lstdc++ -lm 
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum -lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp -lpspmath
 

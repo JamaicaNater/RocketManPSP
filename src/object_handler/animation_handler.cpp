@@ -1,6 +1,6 @@
 #include "animation_handler.h"
 #include "../Vector2d.hpp"
-#include "../gfx.hpp"
+#include "../graphics/gfx.hpp"
 #include "../bmp/loadbmp.h"
 
 AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity, 
