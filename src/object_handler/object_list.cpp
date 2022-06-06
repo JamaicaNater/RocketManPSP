@@ -43,7 +43,9 @@ ObjectList::ObjectList(int _max_size) {
 
 ObjectList::ObjectList(const ObjectList &other){
         MAX_SIZE = other.MAX_SIZE;
-        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "(copy constructor)Allocating %d Objects", MAX_SIZE);
+        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "(copy constructor)Allocating %d "
+            "Objects", MAX_SIZE);
+            
         objects = (Object**)malloc(MAX_SIZE * sizeof(Object *));
         memset(objects, 0, MAX_SIZE * sizeof(Object *));
     }

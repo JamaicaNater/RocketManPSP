@@ -54,6 +54,7 @@ public:
      * 
      */
     virtual void init();
-    ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, Object::ObjectTypes type);
+    ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, 
+        Object::ObjectTypes type);
     virtual ~ObjectHandler();
 };

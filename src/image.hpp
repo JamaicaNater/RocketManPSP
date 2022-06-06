@@ -17,7 +17,9 @@ struct Image
 		strncpy(filename, _filename, str_size);
 	}
 
-	Image(unsigned int _height, unsigned int _width, unsigned int * _img_matrix, const char * _filename) {
+	Image(unsigned int _height, unsigned int _width, unsigned int * _img_matrix,
+		const char * _filename) 
+	{
 		height = _height;
 		width = _width;
 		img_matrix = _img_matrix;
@@ -56,7 +58,9 @@ struct Animation
 		return(Image(height, width, img_matrices[index], "Non-Loadable"));
 	}
 
-	Animation(unsigned int _rows, unsigned int _cols, unsigned int _frame_time, const char * _filename) {
+	Animation(unsigned int _rows, unsigned int _cols, unsigned int _frame_time, 
+		const char * _filename) 
+	{
 		frame_time = _frame_time;
 		
 		int str_size = strlen(_filename) + 1;

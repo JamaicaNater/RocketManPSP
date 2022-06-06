@@ -30,7 +30,9 @@ void GameState::init(){
 }
 
 void GameState::title_screen() {
-    unsigned int home_thid = sceKernelCreateThread("homescreen_thread", GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
+    unsigned int home_thid = sceKernelCreateThread("homescreen_thread", 
+        GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
+
 	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
 	else PSP_LOGGER::log(PSP_LOGGER::ERROR, "failed to create thread");
 
@@ -99,7 +101,7 @@ void GameState::update_player_actions() {
     }
 
 
-    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && projectile_handler.can_spawn() ) {
+    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && projectile_handler.can_spawn() ){
         Vector2d vec;
 
         vec.created_at=sceKernelGetSystemTimeLow();
@@ -130,8 +132,11 @@ void GameState::update_physics(){
         }
     }
 
-    // DOnt move outside the map
-    if (player.vector.x+player.vector.vel_x > 0 && player.vector.x+player.vector.vel_x <= MAP_SIZE-50) player.vector.x+=player.vector.vel_x;
+    // Dont move outside the map
+    if (    player.vector.x+player.vector.vel_x > 0 && 
+            player.vector.x+player.vector.vel_x <= MAP_SIZE-50  ) {
+        player.vector.x+=player.vector.vel_x;
+    }
 
     enemy_handler.update_movement(player.vector.x);
     enemy_handler.update_physics();
@@ -146,10 +151,13 @@ void GameState::draw(){
     
     projectile_handler.draw();
     
-    GFX::drawBMP(player.weapon.get_draw_x(), player.weapon.get_draw_y(), player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
-    GFX::drawBMP(player.get_draw_x(), player.get_draw_y() , 0, CENTER, player.vector.direction, 0, player.image);
+    GFX::drawBMP(player.weapon.get_draw_x(), player.weapon.get_draw_y(), 
+        player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 
+        0, player.weapon.image);
 
-    
+    GFX::drawBMP(player.get_draw_x(), player.get_draw_y() , 0, CENTER, 
+        player.vector.direction, 0, player.image);
+
     enemy_handler.draw();
     explosion_handler.draw();
 

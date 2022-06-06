@@ -33,7 +33,8 @@ namespace GFX
 	void init()
 	{
 		draw_buffer = static_cast<uint32_t *>( sceGeEdramGetAddr() );
-		disp_buffer = static_cast<uint32_t *>( (uint32_t*)sceGeEdramGetAddr() + (SCREEN_WIDTH*480)) ;
+		disp_buffer = static_cast<uint32_t *>( (uint32_t*)sceGeEdramGetAddr() + 
+			(SCREEN_WIDTH*480));
 
 		sceDisplaySetMode(0, 480, 272);
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, 1);
@@ -58,10 +59,13 @@ namespace GFX
 		draw_buffer = temp;
 
 		sceKernelDcacheWritebackInvalidateAll();
-		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, PSP_DISPLAY_SETBUF_NEXTFRAME);
+		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, 
+			PSP_DISPLAY_SETBUF_NEXTFRAME);
 	}
 
-	void draw_progress_bar(int x, int y, int height, int width, int val, int max, uint32_t val_color, uint32_t rem_color){
+	void draw_progress_bar(int x, int y, int height, int width, int val, 
+		int max, uint32_t val_color, uint32_t rem_color
+	){
 		int val_width = (val * 1.0f / max) * width;
 		int rem_width = width - val_width;
 
@@ -107,8 +111,9 @@ namespace GFX
 		free(pixel);
 	}
 
-	void drawBMP(int x, int y, short rot, pivots pivot, char direction, uint32_t filter, Image &img)
-	{	
+	void drawBMP(int x, int y, short rot, pivots pivot, char direction, 
+		uint32_t filter, Image &img
+	){	
 		unsigned int * &image = img.img_matrix;
 		unsigned int &width = img.width;
 		unsigned int &height = img.height;
@@ -118,7 +123,8 @@ namespace GFX
 			load_BMP(img);			
 		} 
 
-		//TODO create list of images in memory to be freed in the case of no more memory		
+		//TODO create list of images in memory to be freed in the case of 
+		//no more memory		
 		int index = 0;
 		
 		uint32_t * pixel = new(uint32_t);
@@ -173,7 +179,8 @@ namespace GFX
 				break;
 			\
 			default:
-				PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to match a pivot for %s", img.filename);
+				PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to match a pivot"
+					" for %s", img.filename);
 				break;
 			}
 
