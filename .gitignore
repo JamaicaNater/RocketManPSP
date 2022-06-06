@@ -1,6 +1,8 @@
 /.vscode/
 /src/.vscode/
 /Testspace/
+/build/
+/src/Debug/
 *.o
 *.elf
 *.prx
