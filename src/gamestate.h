@@ -27,7 +27,6 @@ private:
     ProjectileHandler projectile_handler = ProjectileHandler(MAX_PROJ, 8, 80 * MILLISECOND, Object::MISSILE, &explosion_handler);
 
     unsigned int game_time = 0;
-    int cam_pos_x =10, cam_pos_y =10;
 	int screen_center = 512/2;
 
     SceCtrlData ctrlData;

@@ -10,6 +10,7 @@
 
 void GameState::init(){
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Init Gamestate");
+    camera_x = 0;
 
     //TODO: load all BMPs here and add a loading screen for Christ sake
     load_BMP(enemy_img);
@@ -63,7 +64,7 @@ void GameState::update_nonplayer_actions() {
 
 void GameState::update_player_actions() {
     player.vector.vel_x = 0;// reset velocity; TODO: slowdown mechanic
-    cam_pos_x = get_cam_position(player.vector.x, screen_center);
+    camera_x = get_cam_position(player.vector.x, screen_center);
     sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
 
     // PLAYER MOVEMENT
@@ -138,18 +139,18 @@ void GameState::update_physics(){
 }
 
 void GameState::draw(){
-    GFX::drawTerrain(noise_map, cam_pos_x);
+    GFX::drawTerrain();
     GFX::simple_drawBMP(0, 272-64-2,  status_bar);
     GFX::draw_progress_bar(50, 240, 20, 120, 80, 100, 0xFF00FF00, 0xFF0000FF);
     
-    projectile_handler.draw(cam_pos_x);
+    projectile_handler.draw();
     
-    GFX::drawBMP(player.weapon.get_draw_x(cam_pos_x), player.weapon.get_draw_y(), player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
-    GFX::drawBMP(player.get_draw_x(cam_pos_x), player.get_draw_y() , 0, CENTER, player.vector.direction, 0, player.image);
+    GFX::drawBMP(player.weapon.get_draw_x(), player.weapon.get_draw_y(), player.weapon.vector.get_angle(), CENTER_LEFT, player.vector.direction, 0, player.weapon.image);
+    GFX::drawBMP(player.get_draw_x(), player.get_draw_y() , 0, CENTER, player.vector.direction, 0, player.image);
 
     
-    enemy_handler.draw(cam_pos_x);
-    explosion_handler.draw(cam_pos_x);
+    enemy_handler.draw();
+    explosion_handler.draw();
 
     GFX::swapBuffers();
     GFX::clear();

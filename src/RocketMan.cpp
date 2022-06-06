@@ -11,9 +11,11 @@
 #include "assert.h"
 
 #include "gfx.hpp"
-#include "FastNoise/FastNoise.hpp"
+#include "../Dependencies/FastNoise/FastNoise.hpp"
 
 unsigned char * noise_map = (unsigned char*)malloc(MAP_SIZE);
+unsigned int curr_time = 0;
+int camera_x = 0;
 
 #define printf pspDebugScreenPrintf
 
@@ -71,6 +73,7 @@ int main()
 	game_state.init();
 	game_state.title_screen();
 
+	curr_time = sceKernelGetSystemTimeLow();
 	while (game_state.state != GameState::TERMINATED)
 	{
 		start_time = sceKernelGetSystemTimeLow(); // For FPS calculation

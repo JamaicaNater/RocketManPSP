@@ -49,10 +49,8 @@ namespace GFX
 	/**
 	 * @brief Draws the backround terrain of the worm
 	 * 
-	 * @param noise Psudorandom perlin noise 
-	 * @param cam_pos_x Position of the camera
 	 */
-	void drawTerrain(unsigned char noise[], int cam_pos_x);
+	void drawTerrain();
 
 	void draw_progress_bar(int x, int y, int height, int width, int val, int max, uint32_t val_color, uint32_t rem_color);
 

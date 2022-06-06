@@ -16,9 +16,6 @@ class Object
 	ObjectTypes type = NONE;
 	Image image;
 	int draw_pos_x; // postion to draw at
-	
-	int current_frame = 0;
-	int last_frame_update = 0;
 
 	Vector2d vector;
 	Object() {}
@@ -31,13 +28,13 @@ class Object
 		|| vector.y > 512 + 50 || vector.y < -50;
 	}
 
-	int get_draw_x(int cam_pos_x){
+	int get_draw_x(){
 		// Where to draw the player on the screen
 		if (type == PLAYER && MAP_SIZE - vector.x > 512/2){ 
 			if (vector.x > 512/2) return 512/2 - image.width/2;
 		}
 		
-		return vector.x - cam_pos_x - image.width/2;
+		return vector.x - camera_x - image.width/2;
 	}
 
 	int get_draw_y(){

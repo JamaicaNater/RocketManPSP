@@ -42,9 +42,8 @@ public:
     /**
      * @brief Draw objects on the screen
      * 
-     * @param cam_pos_x camera position
      */
-    virtual void draw(int cam_pos_x);
+    virtual void draw();
 
     /**
      * @brief N/A pure virtual function

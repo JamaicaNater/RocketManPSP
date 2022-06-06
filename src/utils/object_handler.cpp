@@ -50,13 +50,13 @@ void ObjectHandler::update_physics(int game_time){
     }
 }
 
-void ObjectHandler::draw(int cam_pos_x){
+void ObjectHandler::draw(){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
         
         if (!objects[i]->off_screen()) {
-            GFX::drawBMP(objects[i]->get_draw_x(cam_pos_x), objects[i]->get_draw_y(), 
+            GFX::drawBMP(objects[i]->get_draw_x(), objects[i]->get_draw_y(), 
             objects[i]->vector.get_angle(), CENTER, 
             objects[i]->vector.direction, 0, objects[i]->image);
         }

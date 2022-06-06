@@ -11,6 +11,7 @@
 #include "bmp/loadBMP.h"
 #include "utils.h"
 #include "logger/logger.h"
+#include "globals.h"
 
 
 namespace GFX 
@@ -240,7 +241,7 @@ namespace GFX
 		}
 	}
 
-	void drawTerrain(unsigned char noise[], int cam_pos_x) {
+	void drawTerrain() {
 		unsigned char val;
 		uint32_t * target;
 		int px_index;
@@ -259,7 +260,7 @@ namespace GFX
 		//Draw sky bmp
 		y_i = 0;
 		y_f = y_i + sky.height;
-		img_start_pos = (cam_pos_x/6) % sky.width;
+		img_start_pos = (camera_x/6) % sky.width;
 		first_chunk_size = sky.width-img_start_pos;
 		chunk_size = sky.width;
 		last_chunk_size = SCREEN_WIDTH_RES - (first_chunk_size+384);
@@ -280,7 +281,7 @@ namespace GFX
 		//DRAW Background
 		y_i = 100;
 		y_f = y_i + bground.height;
-		img_start_pos = (cam_pos_x/5) % bground.width;
+		img_start_pos = (camera_x/5) % bground.width;
 		first_chunk_size = bground.width-img_start_pos;
 		chunk_size = bground.width;
 		last_chunk_size = SCREEN_WIDTH_RES - (first_chunk_size+384);
@@ -295,7 +296,7 @@ namespace GFX
 		// Draw bottom 64 dirt
 		y_i = SCREEN_HEIGHT-64;
 		y_f = y_i + dirt.height;
-		img_start_pos = cam_pos_x % dirt.width;
+		img_start_pos = camera_x % dirt.width;
 		first_chunk_size = dirt.width-img_start_pos;
 		chunk_size = dirt.width;
 		last_chunk_size = SCREEN_WIDTH_RES - (192+first_chunk_size+256);
@@ -313,11 +314,11 @@ namespace GFX
 		for(int y = 100; y <= SCREEN_HEIGHT-64; y++) {
 			for(int x = 0; x <= SCREEN_WIDTH_RES; x++) {
 				px_index = x + (SCREEN_WIDTH * y);
-				val = noise[x+cam_pos_x];
+				val = noise_map[x+camera_x];
 				target = &draw_buffer[px_index];
 				if (val < y) {
 					img_pos_y = (y%64)*64;
-					img_pos_x = (cam_pos_x + x) % 64;
+					img_pos_x = (camera_x + x) % 64;
 					*target = (val < (y-5))*dirt.img_matrix[img_pos_y+img_pos_x] + ((val >= (y-5)))*grass.img_matrix[img_pos_y+img_pos_x];
 					continue;
 				} 

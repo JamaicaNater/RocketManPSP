@@ -19,10 +19,10 @@ void ProjectileHandler::clean(){
             explosion_handler->spawn(Vector2d(projectiles[i]->vector.x, 
                 projectiles[i]->vector.y), 0, img); // NOTE: game time does not matter for explosion handler
 
-            PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded projectile %d at scr_x:%d, x%d y:%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.x, projectiles[i]->vector.y);
+            PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded projectile %d, x%d y:%d",i, projectiles[i]->vector.x, projectiles[i]->vector.y);
             object_list.remove(projectiles[i]);
         } else if (projectiles[i]->off_screen()) {
-            PSP_LOGGER::log(PSP_LOGGER::INFO, "Freed projectile %d at scr_x:%d, x:%d y:%d",i, projectiles[i]->draw_pos_x, projectiles[i]->vector.x, projectiles[i]->vector.y);
+            PSP_LOGGER::log(PSP_LOGGER::INFO, "Freed projectile %d, x:%d y:%d",i, projectiles[i]->vector.x, projectiles[i]->vector.y);
             object_list.remove(projectiles[i]);
         }
     }
