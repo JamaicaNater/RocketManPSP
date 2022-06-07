@@ -1,12 +1,16 @@
 #pragma once
 
 #include "../objects.hpp"
+#include "global_object_manager.h"
 
 struct ObjectList
 {
 private:
     Object * * objects;
+    static ObjectList * _global_object_list;
     friend int object_collision(Object*, ObjectList&);
+
+    friend void ObjectManager::draw_health_bars();
 
     /**
      * @brief Private insert method, inserts to a given list without inserting
@@ -26,7 +30,6 @@ private:
      */
     int _remove(Object * value);
 public:
-    static ObjectList * _global_object_list;
     int MAX_SIZE;
     int size = 0;
 
@@ -34,6 +37,21 @@ public:
     ObjectList(int _max_size);
     ObjectList(const ObjectList &other);
     ~ObjectList();
+
+    /**
+     * @brief Get object at a specific index
+     * 
+     * @param index 
+     * @return Object* The object pointer 
+     */
+    Object * get(int index);
+
+    /**
+     * @brief gets the first non null in the list
+     * 
+     * @return Object*&  First non null in list, NULL if list is empty
+     */
+    Object * find_first();
 
     /**
      * @brief Searches for object in list

@@ -8,14 +8,14 @@ private:
     friend class ProjectileHandler;
     struct FrameData
     {
-        int last_updated = 0;
-        int curr_frame = 0;
+        unsigned int last_updated = 0;
+        unsigned int curr_frame = 0;
     };
 
     FrameData * frame_data = NULL;
     Animation * animation = NULL;
 
-    const int FRAME_TIME = 30 * MILLISECOND;
+    const unsigned int FRAME_TIME = 30 * MILLISECOND;
 public:
     AnimationHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, 
         Object::ObjectTypes _type);

@@ -8,7 +8,7 @@ AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity,
     : ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns, _type)
 {
     frame_data = (FrameData*)malloc(MAX_OBJECTS * sizeof(FrameData));
-    memset(frame_data, 0, sizeof(FrameData) * MAX_OBJECTS);
+    for (int i = 0; i < MAX_OBJECTS; i++) frame_data[i] = {0,0};
     time_between_spawns = 0;
 }
 

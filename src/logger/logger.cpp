@@ -1,5 +1,6 @@
 #include "logger.h"
 #include "../utils.h"
+#include "../globals.h"
 #include <pspkernel.h>
 #include <stdio.h>
 #include<cstring>
@@ -20,7 +21,7 @@ namespace PSP_LOGGER {
         if (fd<0) {
             pspDebugScreenInit();
             pspDebugScreenPrintf("Failed to open logger file at %s, please make sure the path exists, exiting in 10 seconds", logger_file);
-            wait_for(10*1000*1000);
+            sceKernelDelayThread(10 * SECOND);
             sceKernelExitGame();
         }
 
@@ -62,7 +63,7 @@ namespace PSP_LOGGER {
         if (fd<0) {
             pspDebugScreenInit();
             pspDebugScreenPrintf("Failed to open logger file at %s, please make sure the path exists, exiting in 10 seconds", logger_file);
-            wait_for(10*1000*1000);
+            sceKernelDelayThread(10 * SECOND);
             sceKernelExitGame();
         }
 

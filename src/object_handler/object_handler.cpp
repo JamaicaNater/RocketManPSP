@@ -8,7 +8,6 @@ ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity,
 {
     PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Calling ObjectList for objects");
     object_list = *(new ObjectList(MAX_OBJECTS));
-    Object ** objects = object_list.get_list();
 
     velocity = _velocity;
     time_between_spawns = _time_between_spawns;
@@ -31,8 +30,8 @@ bool ObjectHandler::can_spawn(){
 void ObjectHandler::spawn(Vector2d v, Image _img) {
     if (!can_spawn()) return;
 
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: %0x, global objs: %d", 
-        _img.filename, _img.img_matrix, ObjectList::_global_object_list->size);
+    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: 0x%0x", 
+        _img.filename, _img.img_matrix);
 
     Object * object = new Object(_img);
     object->image.img_matrix = _img.img_matrix;
@@ -45,6 +44,8 @@ void ObjectHandler::spawn(Vector2d v, Image _img) {
 }
 
 void ObjectHandler::update_physics(){
+    remove_dead_objects();
+
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
@@ -55,8 +56,6 @@ void ObjectHandler::update_physics(){
 }
 
 void ObjectHandler::draw(){
-    remove_dead_objects();//TODO: put somewhere else
-
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
@@ -65,11 +64,6 @@ void ObjectHandler::draw(){
         GFX::drawBMP(objects[i]->get_draw_x(), objects[i]->get_draw_y(), 
         objects[i]->vector.get_angle(), CENTER, 
         objects[i]->vector.direction, 0, objects[i]->image);
-        
-        if (objects[i]->type == Object::MISSILE) continue;
-        GFX::draw_progress_bar(objects[i]->get_draw_x(),
-            objects[i]->get_draw_y() - 5, 3, 30, 
-            objects[i]->health, objects[i]->max_health, 0xFF00FF00, 0xFF0000FF);
     }
 }
 

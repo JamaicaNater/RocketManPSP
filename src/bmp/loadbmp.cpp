@@ -90,7 +90,6 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
     fread((void *)(height), 1, 4, fp);
 
     int CHUNK_SIZE = *width * *height;
-    int chunk[CHUNK_SIZE];
 
     int last_chunk = round((*width * *height)/CHUNK_SIZE);
     for (int i = 0; i < last_chunk; i++){
@@ -98,7 +97,7 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
     fread((void *)(buf+ i*CHUNK_SIZE), 4, CHUNK_SIZE, fp); 
     }
 
-    for (int i = 0; i < *width * *height; i++) buf[i] = format_pixel(buf[i]);
+    for (unsigned int i = 0; i < *width * *height; i++) buf[i] = format_pixel(buf[i]);
 
     int temp[*width];
     unsigned int * front, * back;
@@ -165,7 +164,7 @@ int load_BMP(Animation &anim) {
         "of space", size * rows * cols * sizeof(unsigned int)/1024.0f);
     }
     
-    for (int i = 0; i < rows * cols; i++) {
+    for (unsigned int i = 0; i < rows * cols; i++) {
         buf[i] = (unsigned int *)malloc(size * sizeof(unsigned int *));
         if (!buf[i]) {
             PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Memory Allocation for "
@@ -179,7 +178,7 @@ int load_BMP(Animation &anim) {
     int write_to = 0;
     for(int i = 0; i < BIG_HEIGHT; i ++){
         cur_row = rows -  (i / height) - 1;
-        for (int cur_col = 0; cur_col < cols; cur_col++) {
+        for (unsigned int cur_col = 0; cur_col < cols; cur_col++) {
             write_to = (i%height+cur_col) * width;
             read_from = BIG_WIDTH*i + (cur_col * width);
             fseek(fp, pixlmap_location + read_from * sizeof(unsigned int), SEEK_SET);
@@ -189,7 +188,7 @@ int load_BMP(Animation &anim) {
     } 
 
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Formatting pixels");
-    for (int i = 0; i < rows * cols; i++){
+    for (unsigned int i = 0; i < rows * cols; i++){
         for (int j = 0; j < size; j++) {
             buf[i][j] = format_pixel(buf[i][j]);
         }

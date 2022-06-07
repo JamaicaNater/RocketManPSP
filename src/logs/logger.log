@@ -61,73 +61,11 @@ INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player.bmp, 1439.808594 kb used by bmps
-DEBUG: Spawned:assets/enemy.bmp ptr: 8858e50, global objs: 0
+DEBUG: Spawned:assets/enemy.bmp ptr: 0x8858e50
 DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 8858e50, global objs: 1
+DEBUG: Spawned:assets/enemy.bmp ptr: 0x8858e50
 DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 2
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 3
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x103 y:103
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 3
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 4
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x102 y:104
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 4
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 5
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x102 y:104
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 5
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 6
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x102 y:104
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/enemy.bmp ptr: 8858e50, global objs: 6
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 6
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
 DEBUG: (assertion) Object spawned successfully
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
@@ -139,7 +77,127 @@ DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 6
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c10
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c10
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x186 y:114
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/enemy.bmp ptr: 0x8858e50
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c10
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 61, x178 y:112
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
 DEBUG: (assertion) Object spawned successfully
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
@@ -153,96 +211,12 @@ DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
 DEBUG: Allocating 4 Objects
 INFO: Collision detected with 8858c10
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 6
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
 DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x130 y:96
+INFO: Exploded proj. 63, x178 y:112
 DEBUG: Deallocating 4 Objects
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 6
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-INFO: Collision detected with 8858c10
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 6
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 62, x121 y:95
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 6
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-INFO: Collision detected with 8858c10
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 7
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x121 y:95
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 7
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Allocating 4 Objects
-INFO: Collision detected with 8858c10
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 8
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 62, x113 y:95
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 8
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-INFO: Collision detected with 8858c10
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 9
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x113 y:95
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-INFO: Collision detected with 8858c10
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 9
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 62, x105 y:94
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 8858ae0, global objs: 9
-DEBUG: (assertion) Object spawned successfully
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
 DEBUG: Allocating 4 Objects
@@ -253,11 +227,763 @@ DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
 DEBUG: Allocating 4 Objects
 INFO: Collision detected with 8858c10
-DEBUG: Spawned:Non-Loadable ptr: 885b720, global objs: 10
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
 DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x105 y:94
+INFO: Exploded proj. 62, x162 y:107
 DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/enemy.bmp ptr: 8858e50, global objs: 8
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
 DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 8858e50, global objs: 4
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c10
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 61, x154 y:104
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c10
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x138 y:100
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c10
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x130 y:97
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c10
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x130 y:97
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c10
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x122 y:95
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x186 y:114
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 61, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/enemy.bmp ptr: 0x8858e50
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x186 y:114
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 61, x178 y:112
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x170 y:109
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x162 y:107
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 61, x154 y:104
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 8858c90
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x138 y:100
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x186 y:114
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x186 y:114
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 61, x178 y:112
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x186 y:114
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/enemy.bmp ptr: 0x8858e50
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 61, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 61, x186 y:114
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 885b510
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x178 y:112
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/missile.bmp ptr: 0x8858ae0
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 89a81d0
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 63, x202 y:119
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 89a81d0
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 61, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+DEBUG: Deallocating 4 Objects
+DEBUG: Allocating 4 Objects
+INFO: Collision detected with 89a81d0
+DEBUG: Spawned:Non-Loadable ptr: 0x885b720
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj. 62, x194 y:117
+DEBUG: Deallocating 4 Objects
+DEBUG: Spawned:assets/enemy.bmp ptr: 0x8858e50
 DEBUG: (assertion) Object spawned successfully

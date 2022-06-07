@@ -43,7 +43,7 @@ ObjectList::ObjectList(int _max_size) {
 
 ObjectList::ObjectList(const ObjectList &other){
     MAX_SIZE = other.MAX_SIZE;
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "(copy constructor)Allocating %d "
+    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "(copy constructor) Allocating %d "
         "Objects", MAX_SIZE);
 
     objects = (Object**)malloc(MAX_SIZE * sizeof(Object *));
@@ -58,6 +58,19 @@ ObjectList::~ObjectList() {
     //      if (objects[i]) free(objects[i]);
     // }
     free(objects);
+}
+
+Object * ObjectList::get(int index) {
+    return objects[index];
+}
+
+Object * ObjectList::find_first(){
+    int i = MAX_SIZE;
+    while (i > -1) {
+        i--;
+        if(objects[i]) return objects[i];
+    }
+    return NULL;
 }
 
 int ObjectList::insert(Object * &value){
@@ -84,8 +97,7 @@ bool ObjectList::is_empty(){
 
 int ObjectList::find(Object * obj){
     int i = MAX_SIZE;
-    while (i > -1)
-    {
+    while (i > -1) {
         i--;
         if(objects[i] == obj) {
             break;

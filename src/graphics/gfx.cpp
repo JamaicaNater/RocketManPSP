@@ -67,7 +67,6 @@ namespace GFX
 		int max, uint32_t val_color, uint32_t rem_color
 	){
 		int val_width = (val * 1.0f / max) * width;
-		int rem_width = width - val_width;
 
 		if (y < 0) y = 0;
 		if (y > SCREEN_HEIGHT) return;
@@ -80,7 +79,7 @@ namespace GFX
 
 		for (int y_i = y+height; y_i > y; y_i--){
 			for (int x_i = x; x_i < x+width; x_i++) {
-				if (x_i < x+val_width)draw_buffer[y_i*SCREEN_WIDTH+x_i] = val_color;
+				if (x_i < x+val_width) draw_buffer[y_i*SCREEN_WIDTH+x_i] = val_color;
 				else draw_buffer[y_i*SCREEN_WIDTH+x_i] = rem_color;
 			}
 		}
@@ -96,19 +95,14 @@ namespace GFX
 		}
 
 		int index = 0;
-		uint32_t * pixel = new(uint32_t);
 		int start_y = y + height;
 		int end_y = y;
-		int start_x = x;
-		int end_x = x + width;
-		int draw_pos;
 
 		for (int y1 = start_y; y1 > end_y; y1--)
 		{
 			memcpy(draw_buffer + (y1*SCREEN_WIDTH),image+index, width*4);
 			index+=width;
 		}
-		free(pixel);
 	}
 
 	void drawBMP(int x, int y, short rot, pivots pivot, char direction, 
@@ -144,8 +138,8 @@ namespace GFX
 			float sin_theta = sin(rad);
 			float cos_theta = cos(rad);
 			
-			unsigned short mid_x;
-			unsigned short mid_y;
+			unsigned short mid_x = 0;
+			unsigned short mid_y = 0;
 
 			switch (pivot)
 			{

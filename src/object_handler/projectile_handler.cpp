@@ -27,12 +27,12 @@ void ProjectileHandler::clean(){
                 if (!collision_list.size) break;
                 if (!collisions[i]) continue;
 
-                collisions[i]->health-=5;
+                collisions[i]->health-=10;
             }
             
             // Set collided object if there is one
-            Object * coll_obj = (object_list.size) ? object_list.get_list()[0] : NULL;
-
+            Object * coll_obj = (collision_list.size) ? collision_list.find_first() : NULL;
+            //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "%0x", collisions[0]);
             explosion_handler->spawn(
                 Vector2d(
                 (coll_obj) ? coll_obj->vector.x : projectiles[i]->vector.x,

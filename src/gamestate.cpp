@@ -6,6 +6,7 @@
 #include "utils.h"
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
+#include "object_handler/global_object_manager.h"
 
 
 void GameState::init(){
@@ -30,7 +31,7 @@ void GameState::init(){
 }
 
 void GameState::title_screen() {
-    unsigned int home_thid = sceKernelCreateThread("homescreen_thread", 
+    int home_thid = sceKernelCreateThread("homescreen_thread", 
         GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
 
 	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
@@ -61,7 +62,6 @@ void GameState::update(){
 
 void GameState::update_nonplayer_actions() {
     enemy_handler.spawn(Vector2d(300, noise_map[300]), enemy_img);
-
     explosion_handler.update_frames();
 }
 
@@ -160,6 +160,8 @@ void GameState::draw(){
 
     enemy_handler.draw();
     explosion_handler.draw();
+
+    ObjectManager::draw_health_bars();
 
     GFX::swapBuffers();
     GFX::clear();

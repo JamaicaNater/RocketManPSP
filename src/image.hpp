@@ -27,7 +27,7 @@ struct Image
 		int str_size = strlen(_filename) + 1;
 		if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
 		" %s too long", _filename);
-		strncpy(filename, _filename, str_size-1);
+		strncpy(filename, _filename, str_size);
 	}
 
 	Image() {}
@@ -66,7 +66,7 @@ struct Animation
 		int str_size = strlen(_filename) + 1;
 		if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
 		" %s too long", _filename);
-		strncpy(filename, _filename, str_size-1);
+		strncpy(filename, _filename, str_size);
 
 		rows = _rows;
 		cols = _cols;
