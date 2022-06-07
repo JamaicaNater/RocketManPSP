@@ -31,6 +31,12 @@ public:
     bool can_spawn();
 
     /**
+     * @brief Remove objects that have under 0 heath
+     * 
+     */
+    void remove_dead_objects();
+
+    /**
      * @brief Advance the postion of the object;
      * 
      * TODO: disconnect gamespeed from player speed
@@ -41,7 +47,7 @@ public:
      * @brief Draw objects on the screen
      * 
      */
-    virtual void draw();
+    void draw();
 
     /**
      * @brief N/A pure virtual function

@@ -6,6 +6,7 @@ struct ObjectList
 {
 private:
     Object * * objects;
+    friend int object_collision(Object*, ObjectList&);
 
     /**
      * @brief Private insert method, inserts to a given list without inserting
@@ -35,6 +36,14 @@ public:
     ~ObjectList();
 
     /**
+     * @brief Searches for object in list
+     * 
+     * @param obj object pointer we are searching for
+     * @return int index of the object -1 if not found
+     */
+    int find(Object * obj);
+
+    /**
      * @brief Insert into both global object list and the local list
      * 
      * @param value - object we wish to insert
@@ -50,7 +59,7 @@ public:
      */
     int remove(Object* &value);
 
-    /**
+    /** //TODO: Abstract this away
      * @brief Get the list object
      * 
      * @return Object** 

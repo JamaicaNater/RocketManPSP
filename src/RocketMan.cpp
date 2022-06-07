@@ -63,7 +63,7 @@ int main()
 	noise.SetFrequency(.008f);
 	for(int i = 0; i < MAP_SIZE; i++) {
 		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 100) + 100; 
-		// MIN hieght = 40 max hieght = 150 + 40
+		// MIN height = 40 max height = 150 + 40
 	}
 
 	// FPS calculation

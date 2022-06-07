@@ -2,10 +2,10 @@
  * @brief Check if two objects collide
  * 
  * @param obj - The object we are checking the global object list against
- * @return Object* - The first object we find that it collides with.
- *                 - NULL if no such object.
+ * @param collisions list of objects detected to colliding with
+ * @return Object* - Number of objects we collided with.
  */
-Object * object_collision(Object * obj);
+int object_collision(Object * obj, ObjectList &collisions);
 
 /**
  * @brief Detects collisions with the terrain

@@ -55,6 +55,8 @@ void ObjectHandler::update_physics(){
 }
 
 void ObjectHandler::draw(){
+    remove_dead_objects();//TODO: put somewhere else
+
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
@@ -63,10 +65,22 @@ void ObjectHandler::draw(){
         GFX::drawBMP(objects[i]->get_draw_x(), objects[i]->get_draw_y(), 
         objects[i]->vector.get_angle(), CENTER, 
         objects[i]->vector.direction, 0, objects[i]->image);
+        
+        if (objects[i]->type == Object::MISSILE) continue;
         GFX::draw_progress_bar(objects[i]->get_draw_x(),
             objects[i]->get_draw_y() - 5, 3, 30, 
             objects[i]->health, objects[i]->max_health, 0xFF00FF00, 0xFF0000FF);
     }
+}
+
+void ObjectHandler::remove_dead_objects(){
+    Object ** objects = object_list.get_list();
+    for (int i = 0; i < object_list.MAX_SIZE; i++){
+        if (!objects[i]) continue;
+
+        if (objects[i]->health <= 0) object_list.remove(objects[i]);
+    }
+
 }
 
 void ObjectHandler::clean(){

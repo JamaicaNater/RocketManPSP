@@ -15,12 +15,20 @@ void ProjectileHandler::clean(){
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!projectiles[i]) continue;
         
-        Object* coll_obj;
-        if ( (coll_obj = object_collision(projectiles[i])) || 
-            terrain_collision(projectiles[i]))
-        { // Collision with floor
+        ObjectList collision_list = ObjectList(32);
+        if ( object_collision(projectiles[i], collision_list) || 
+            terrain_collision(projectiles[i])
+        ){ // Collision with floor
+            Object ** collisions = collision_list.get_list();
+            for (int i = 0; i < collision_list.MAX_SIZE; i++){
+                if (!collision_list.size) break;
+                if (!collisions[i]) continue;
+
+                collisions[i]->health-=5;
+            }
             
-            if (coll_obj) coll_obj->health-=5;
+            // Set collided object if there is one
+            Object * coll_obj = (object_list.size) ? object_list.get_list()[0] : NULL;
 
             explosion_handler->spawn(
                 Vector2d(
@@ -37,7 +45,7 @@ void ProjectileHandler::clean(){
         } else if (projectiles[i]->off_screen()) {
             PSP_LOGGER::log(PSP_LOGGER::INFO, "Freed proj. %d, x:%d y:%d",i,
                  projectiles[i]->vector.x, projectiles[i]->vector.y);
-                 
+
             object_list.remove(projectiles[i]);
         }
     }

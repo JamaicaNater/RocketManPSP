@@ -4,7 +4,7 @@
 #include "../logger/logger.h"
 #include "collisions.h"
 
-Object * object_collision(Object * obj){
+int object_collision(Object * obj, ObjectList &collisions){
     // Treat objects as a rectangle
     // NOTE: a position of 0 is the higher than a position of 50
     // NOTE: objects are shifter left by half their width when drawn
@@ -20,6 +20,7 @@ Object * object_collision(Object * obj){
         if (!glob_objects[i]) continue;
         if (glob_objects[i] == obj) continue;
         if (glob_objects[i]->type == Object::EXPLOSION) continue;
+        if (collisions.find(glob_objects[i]) != -1) continue;
 
         obj2_x1 = glob_objects[i]->vector.x - glob_objects[i]->image.width/2, 
         obj2_y1 = glob_objects[i]->vector.y - glob_objects[i]->image.height, // Top Left
@@ -40,9 +41,14 @@ Object * object_collision(Object * obj){
         if(obj1_y1>obj2_y2||obj2_y1>obj1_y2) continue;
         
         PSP_LOGGER::log(PSP_LOGGER::INFO, "Collision detected with %0x", glob_objects[i]);
-        return glob_objects[i];
+        collisions._insert(glob_objects[i]);
+
+        if (collisions.size == collisions.MAX_SIZE){
+            PSP_LOGGER::log(PSP_LOGGER::WARNING, "collision list filled");
+            break;
+        }
     }
-    return NULL;
+    return collisions.size;
 }
 
 bool terrain_collision(Object * obj){
