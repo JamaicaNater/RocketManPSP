@@ -1,13 +1,13 @@
 #pragma once
 
 #include "globals.h"
-#include <pspctrl.h>
 #include "objects.hpp"
 #include "object_handler/object_list.h"
 #include "object_handler/object_handler.h"
 #include "object_handler/enemy_handler.h"
 #include "object_handler/animation_handler.h"
 #include "object_handler/projectile_handler.h"
+#include "object_handler/player_handler.h"
 
 // TODO make singleton
 class GameState
@@ -28,11 +28,12 @@ private:
         Object::EXPLOSION);
 
     ProjectileHandler projectile_handler = 
-        ProjectileHandler(MAX_PROJ, 8, 80 * MILLISECOND, Object::MISSILE, 
+        ProjectileHandler(MAX_PROJ, 8, 300 * MILLISECOND, Object::MISSILE, 
         &explosion_handler);
 
-	int screen_center = SCREEN_WIDTH/2;
+    PlayerHandler player_handler = PlayerHandler(PLAYER_SPEED, &projectile_handler);
 
+	int screen_center = SCREEN_WIDTH/2;
     SceCtrlData ctrlData;
 
     /**

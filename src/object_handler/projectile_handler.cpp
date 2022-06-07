@@ -27,7 +27,7 @@ void ProjectileHandler::clean(){
                 if (!collision_list.size) break;
                 if (!collisions[i]) continue;
 
-                collisions[i]->health-=10;
+                collisions[i]->health-=23;
             }
             
             // Set collided object if there is one

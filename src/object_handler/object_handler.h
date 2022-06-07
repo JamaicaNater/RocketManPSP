@@ -47,7 +47,7 @@ public:
      * @brief Draw objects on the screen
      * 
      */
-    void draw();
+    virtual void draw(); // TODO remove virtual
 
     /**
      * @brief N/A pure virtual function
