@@ -15,6 +15,7 @@ AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity,
 AnimationHandler::~AnimationHandler()
 {
     free(frame_data);
+    if(animation) animation->~Animation();
 }
 
 void AnimationHandler::update_frames(){

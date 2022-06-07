@@ -1,8 +1,11 @@
 #include "projectile_handler.h"
 #include "../physics/collisions.h"
 
-ProjectileHandler::ProjectileHandler(int MAX_OBJECTS, int velocity, int _time_between_spawns, Object::ObjectTypes type, AnimationHandler * _explosion_handler) : ObjectHandler(MAX_OBJECTS, velocity, _time_between_spawns, type)
-{
+ProjectileHandler::ProjectileHandler(int MAX_OBJECTS, int velocity, 
+    int _time_between_spawns, Object::ObjectTypes type, 
+    AnimationHandler * _explosion_handler) : 
+    ObjectHandler(MAX_OBJECTS, velocity, _time_between_spawns, type
+){
     explosion_handler = _explosion_handler;
 }
 
@@ -15,7 +18,7 @@ void ProjectileHandler::clean(){
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!projectiles[i]) continue;
         
-        ObjectList collision_list = ObjectList(32);
+        ObjectList collision_list = ObjectList(4); // At most, damage 4 objects
         if ( object_collision(projectiles[i], collision_list) || 
             terrain_collision(projectiles[i])
         ){ // Collision with floor

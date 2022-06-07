@@ -13,7 +13,7 @@ private:
     };
 
     FrameData * frame_data = NULL;
-    Animation * animation;
+    Animation * animation = NULL;
 
     const int FRAME_TIME = 30 * MILLISECOND;
 public:
