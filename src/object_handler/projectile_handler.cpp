@@ -14,45 +14,48 @@ ProjectileHandler::~ProjectileHandler()
 {
 }
 
-void ProjectileHandler::clean(){
-    Object ** projectiles = object_list.get_list();
-    for (int i = 0; i < object_list.MAX_SIZE; i++){
-        if (!projectiles[i]) continue;
-        
-        ObjectList collision_list = ObjectList(4); // At most, damage 4 objects
-        if ( object_collision(projectiles[i], collision_list) || 
-            terrain_collision(projectiles[i])
-        ){ // Collision with floor
-            Object ** collisions = collision_list.get_list();
-            for (int i = 0; i < collision_list.MAX_SIZE; i++){
-                if (!collision_list.size) break;
-                if (!collisions[i]) continue;
+void ProjectileHandler::on_object_collision(Object * obj, ObjectList &collision_list){
+    Object ** collisions = collision_list.get_list();
+    for (int i = 0; i < collision_list.MAX_SIZE; i++){
+        if (!collision_list.size) break;
+        if (!collisions[i]) continue;
 
-                collisions[i]->health-=37;
-            }
-            
-            // Set collided object if there is one
-            Object * coll_obj = (collision_list.size) ? collision_list.find_first() : NULL;
-            //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "%0x", collisions[0]);
-            explosion_handler->spawn(
-                Vector2d(
-                (coll_obj) ? coll_obj->vector.x : projectiles[i]->vector.x,
-                (coll_obj) ? coll_obj->vector.y : projectiles[i]->vector.y ),
-                explosion_handler->animation->get_frame(0));
-                // If we collided with an object put the explosion under it 
-                // Otherwise put the explosion when the projectile is.
-
-            PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded proj. %d, x:%d y:%d, coll_with:%d",
-                i, projectiles[i]->vector.x, projectiles[i]->vector.y, collision_list.size);
-
-            object_list.remove(projectiles[i]);
-        } else if (projectiles[i]->off_screen()) {
-            PSP_LOGGER::log(PSP_LOGGER::INFO, "Freed proj. %d, x:%d y:%d",i,
-                 projectiles[i]->vector.x, projectiles[i]->vector.y);
-
-            object_list.remove(projectiles[i]);
-        }
+        collisions[i]->health-=37;
     }
+    
+    // Set collided object if there is one
+    Object * coll_obj = (collision_list.size) ? collision_list.find_first() : NULL;
+    //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "%0x", collisions[0]);
+    explosion_handler->spawn(
+        Vector2d(coll_obj->vector.x, coll_obj->vector.y),
+        explosion_handler->animation->get_frame(0));
+        // If we collided with an object put the explosion under it 
+        // Otherwise put the explosion when the projectile is.  
+
+    PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded proj at x:%d y:%d, coll_with:%d",
+        obj->vector.x, obj->vector.y, collision_list.size);
+
+    object_list.remove(obj);
+}
+
+void ProjectileHandler::on_terrain_collision(Object * obj){
+    explosion_handler->spawn(
+    Vector2d(obj->vector.x, obj->vector.y),
+    explosion_handler->animation->get_frame(0));
+    // If we collided with an object put the explosion under it 
+    // Otherwise put the explosion when the projectile is. 
+
+    PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded proj at x:%d y:%d, on terrain",
+        obj->vector.x, obj->vector.y);
+
+    object_list.remove(obj);
+}
+
+void ProjectileHandler::on_off_screen(Object * obj){
+    PSP_LOGGER::log(PSP_LOGGER::INFO, "Freed proj. at x:%d y:%d",
+                 obj->vector.x, obj->vector.y);
+
+        object_list.remove(obj);
 }
 
 void ProjectileHandler::update_physics(){
@@ -70,5 +73,5 @@ void ProjectileHandler::update_physics(){
             projectiles[i]->vector.vel_x * time;
     }
 
-    ProjectileHandler::clean();
+    ProjectileHandler::check_collisions(4);
 }

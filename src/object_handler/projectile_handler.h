@@ -7,7 +7,10 @@ class ProjectileHandler : public ObjectHandler
 {
 private:
     AnimationHandler * explosion_handler; // Trigger explosions
-    
+
+    void on_off_screen(Object * obj);
+    void on_object_collision(Object * obj, ObjectList &collision_list);
+    void on_terrain_collision(Object * obj);
 public:
     ProjectileHandler(int MAX_OBJECTS, int velocity, int _time_between_spawns, 
     Object::ObjectTypes type, AnimationHandler * _explosion_handler);

@@ -2,6 +2,7 @@
 #include "../logger/logger.h"
 #include "../Vector2d.hpp"
 #include "../graphics/gfx.hpp"
+#include "../physics/collisions.h"
 
 ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, 
     int _time_between_spawns, Object::ObjectTypes _type)
@@ -43,7 +44,7 @@ void ObjectHandler::spawn(Vector2d v, Image _img) {
 }
 
 void ObjectHandler::update_physics(){
-    remove_dead_objects();
+    clean();
 
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
@@ -66,7 +67,7 @@ void ObjectHandler::draw(){
     }
 }
 
-void ObjectHandler::remove_dead_objects(){
+void ObjectHandler::clean(){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
@@ -76,12 +77,35 @@ void ObjectHandler::remove_dead_objects(){
 
 }
 
-void ObjectHandler::clean(){
-    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Warning, pure virtual clean method "
-        "called, this does nothing");
+void ObjectHandler::init() {
+    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual init method called");
 }
 
-void ObjectHandler::init() {
-    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Warning, pure virtual init method "
-        "called, this does nothing");
+void ObjectHandler::on_object_collision(Object * obj, ObjectList &collision_list) {
+    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual obj_col method called");
 }
+
+void ObjectHandler::on_terrain_collision(Object * obj) {
+    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual ter_col method called");
+}
+
+void ObjectHandler::on_off_screen(Object * obj){
+    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual off_scr method called");
+}
+
+void ObjectHandler::check_collisions(int MAX_COLLISIONS){
+    Object ** objects = object_list.get_list();
+    for (int i = 0; i < object_list.MAX_SIZE; i++){
+        if (!objects[i]) continue;
+        
+        ObjectList collision_list = ObjectList(MAX_COLLISIONS);
+        if ( object_collision(objects[i], collision_list)){ 
+            on_object_collision(objects[i] ,collision_list);
+        } else if (terrain_collision(objects[i])){
+            on_terrain_collision(objects[i]);
+        } else if (objects[i]->off_screen()) {
+            on_off_screen(objects[i]);
+        }
+    }
+}
+

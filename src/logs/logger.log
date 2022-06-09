@@ -65,7 +65,7 @@ INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player.bmp, 1439.808594 kb used by bmps
 DEBUG: Spawned:assets/missile.bmp ptr: 0, 0
 DEBUG: (assertion) Object spawned successfully
-DEBUG: 105
+DEBUG: 94
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
 DEBUG: call loadBMP on assets/missile.bmp
@@ -74,393 +74,181 @@ INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/missile.bmp, 1440.089844 kb used by bmps
-DEBUG: Spawned:assets/enemy.bmp ptr: 88591e0, 50
-DEBUG: (assertion) Object spawned successfully
-DEBUG: 105
+DEBUG: 89
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 105
+DEBUG: 86
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 105
+DEBUG: 83
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 105
+DEBUG: 81
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 105
+DEBUG: 78
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 105
+DEBUG: 75
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 106
+DEBUG: 73
 DEBUG: Allocating 4 Objects
-DEBUG: Spawned:Non-Loadable ptr: 885bab0, 137
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x:96 y:106, coll_with:0
 DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 0, 0
-DEBUG: (assertion) Object spawned successfully
-DEBUG: 94
+DEBUG: 70
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: call loadBMP on assets/missile.bmp
-INFO: loading assets/missile.bmp into memory
-INFO: Allocating Space
-INFO: Reading file
-INFO: Formatting pixels
-INFO: Succesfuly loaded assets/missile.bmp, 1440.371094 kb used by bmps
-DEBUG: 94
+DEBUG: 67
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: 65
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: 62
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: 60
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: 58
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: 55
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 95
+DEBUG: 53
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 95
+DEBUG: 51
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 95
+DEBUG: 48
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 96
+DEBUG: 46
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 96
+DEBUG: 44
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 96
+DEBUG: 42
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 97
+DEBUG: 39
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 97
+DEBUG: 37
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 98
+DEBUG: 35
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 98
+DEBUG: 33
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 99
+DEBUG: 31
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 100
+DEBUG: 29
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 100
+DEBUG: 27
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 0, 0
-DEBUG: (assertion) Object spawned successfully
-DEBUG: 93
-DEBUG: 101
+DEBUG: 25
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
+DEBUG: 23
 DEBUG: Allocating 4 Objects
-INFO: Collision detected with 899ac50
-DEBUG: Spawned:Non-Loadable ptr: 885bab0, 137
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x:239 y:101, coll_with:1
 DEBUG: Deallocating 4 Objects
-DEBUG: call loadBMP on assets/missile.bmp
-INFO: loading assets/missile.bmp into memory
-INFO: Allocating Space
-INFO: Reading file
-INFO: Formatting pixels
-INFO: Succesfuly loaded assets/missile.bmp, 1440.652344 kb used by bmps
-DEBUG: 93
+DEBUG: 22
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: 20
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: 18
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: 16
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: 15
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: 13
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: 11
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: 10
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: 8
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 95
+DEBUG: 6
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 95
+DEBUG: 5
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 95
+DEBUG: 3
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 96
+DEBUG: 2
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 96
+DEBUG: 1
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 97
+DEBUG: 0
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 97
+DEBUG: -1
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 98
+DEBUG: -2
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 99
+DEBUG: -4
 DEBUG: Allocating 4 Objects
-INFO: Collision detected with 899ac50
-DEBUG: Spawned:Non-Loadable ptr: 885bab0, 137
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 62, x:226 y:99, coll_with:1
 DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 0, 0
-DEBUG: (assertion) Object spawned successfully
-DEBUG: 93
+DEBUG: -5
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: call loadBMP on assets/missile.bmp
-INFO: loading assets/missile.bmp into memory
-INFO: Allocating Space
-INFO: Reading file
-INFO: Formatting pixels
-INFO: Succesfuly loaded assets/missile.bmp, 1440.933594 kb used by bmps
-DEBUG: Spawned:assets/enemy.bmp ptr: 88591e0, 50
-DEBUG: (assertion) Object spawned successfully
-DEBUG: 93
+DEBUG: -6
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: -7
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: -9
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: -10
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: -11
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 93
+DEBUG: -12
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: -13
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: -14
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 94
+DEBUG: -15
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 95
+DEBUG: -16
 DEBUG: Allocating 4 Objects
 DEBUG: Deallocating 4 Objects
-DEBUG: 95
+DEBUG: -17
 DEBUG: Allocating 4 Objects
+INFO: Freed proj. at x:544 y:-17
 DEBUG: Deallocating 4 Objects
-DEBUG: 95
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 96
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 96
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 97
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 97
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 98
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 99
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 99
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 0, 0
-DEBUG: (assertion) Object spawned successfully
-DEBUG: 93
-DEBUG: 100
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: call loadBMP on assets/missile.bmp
-INFO: loading assets/missile.bmp into memory
-INFO: Allocating Space
-INFO: Reading file
-INFO: Formatting pixels
-INFO: Succesfuly loaded assets/missile.bmp, 1441.214844 kb used by bmps
-DEBUG: 93
-DEBUG: 101
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-INFO: Collision detected with 89a81c0
-DEBUG: Spawned:Non-Loadable ptr: 885bab0, 137
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x:259 y:101, coll_with:1
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 94
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 94
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 94
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 95
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 95
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 95
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 96
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 96
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 97
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 97
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/missile.bmp ptr: 0, 0
-DEBUG: (assertion) Object spawned successfully
-DEBUG: 98
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: call loadBMP on assets/missile.bmp
-INFO: loading assets/missile.bmp into memory
-INFO: Allocating Space
-INFO: Reading file
-INFO: Formatting pixels
-INFO: Succesfuly loaded assets/missile.bmp, 1441.496094 kb used by bmps
-DEBUG: 99
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-INFO: Collision detected with 89a81c0
-DEBUG: Spawned:Non-Loadable ptr: 885bab0, 137
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 62, x:234 y:99, coll_with:1
-DEBUG: Deallocating 4 Objects
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 93
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 94
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 94
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 94
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 95
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 95
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 95
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 96
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 96
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 97
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 97
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 98
-DEBUG: Allocating 4 Objects
-DEBUG: Deallocating 4 Objects
-DEBUG: 99
-DEBUG: Allocating 4 Objects
-INFO: Collision detected with 89a81c0
-DEBUG: Spawned:Non-Loadable ptr: 885bab0, 137
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj. 63, x:226 y:99, coll_with:1
-DEBUG: Deallocating 4 Objects
-DEBUG: Spawned:assets/enemy.bmp ptr: 88591e0, 50
-DEBUG: (assertion) Object spawned successfully
