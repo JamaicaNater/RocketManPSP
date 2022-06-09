@@ -8,6 +8,7 @@ ProjectileHandler::ProjectileHandler(int MAX_OBJECTS, int velocity,
     ObjectHandler(MAX_OBJECTS, velocity, _time_between_spawns, type
 ){
     explosion_handler = _explosion_handler;
+    MAX_COLLISIONS = 4;
 }
 
 ProjectileHandler::~ProjectileHandler()
@@ -23,14 +24,12 @@ void ProjectileHandler::on_object_collision(Object * obj, ObjectList &collision_
         collisions[i]->health-=37;
     }
     
-    // Set collided object if there is one
-    Object * coll_obj = (collision_list.size) ? collision_list.find_first() : NULL;
-    //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "%0x", collisions[0]);
+    // Set collided object
+    Object * coll_obj = collision_list.find_first();
     explosion_handler->spawn(
         Vector2d(coll_obj->vector.x, coll_obj->vector.y),
         explosion_handler->animation->get_frame(0));
         // If we collided with an object put the explosion under it 
-        // Otherwise put the explosion when the projectile is.  
 
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded proj at x:%d y:%d, coll_with:%d",
         obj->vector.x, obj->vector.y, collision_list.size);
@@ -42,7 +41,6 @@ void ProjectileHandler::on_terrain_collision(Object * obj){
     explosion_handler->spawn(
     Vector2d(obj->vector.x, obj->vector.y),
     explosion_handler->animation->get_frame(0));
-    // If we collided with an object put the explosion under it 
     // Otherwise put the explosion when the projectile is. 
 
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded proj at x:%d y:%d, on terrain",
@@ -73,5 +71,5 @@ void ProjectileHandler::update_physics(){
             projectiles[i]->vector.vel_x * time;
     }
 
-    ProjectileHandler::check_collisions(4);
+    ProjectileHandler::check_collisions(MAX_COLLISIONS);
 }

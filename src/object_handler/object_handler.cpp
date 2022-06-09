@@ -45,6 +45,7 @@ void ObjectHandler::spawn(Vector2d v, Image _img) {
 
 void ObjectHandler::update_physics(){
     clean();
+    check_collisions(MAX_COLLISIONS);
 
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
@@ -73,6 +74,7 @@ void ObjectHandler::clean(){
         if (!objects[i]) continue;
 
         if (objects[i]->health <= 0) object_list.remove(objects[i]);
+        //TODO: put off screen here
     }
 
 }

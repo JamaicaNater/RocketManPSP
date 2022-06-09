@@ -16,6 +16,7 @@ private:
     Animation * animation = NULL;
 
     const unsigned int FRAME_TIME = 30 * MILLISECOND;
+    void on_object_collision(Object * obj, ObjectList &collision_list);
 public:
     AnimationHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, 
         Object::ObjectTypes _type);

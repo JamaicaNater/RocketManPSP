@@ -2,6 +2,7 @@
 
 #include <cstring>
 #include "logger/logger.h"
+//#include "bmp/loadbmp.h"
 
 struct Image
 {

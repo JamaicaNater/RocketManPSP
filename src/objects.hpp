@@ -18,10 +18,20 @@ class Object
 	int draw_pos_x; // postion to draw at
 	int health = 100, max_health = 100;
 
+	unsigned int next_damage_event = 0;
+	unsigned int invincibility_time = 10 * MILLISECOND;
+
 	Vector2d vector;
 	Object() {}
 	Object(Image _img) {
 		image = _img;
+	}
+
+	void damage_object(int damage){
+		if (curr_time < next_damage_event) return;
+
+		health -= damage;
+		next_damage_event = curr_time + invincibility_time;
 	}
 
 	bool off_screen() {

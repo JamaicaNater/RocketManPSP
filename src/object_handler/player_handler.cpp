@@ -25,6 +25,8 @@ void PlayerHandler::init() {
 
     weapon.vector.pivot = CENTER_LEFT;
     //object_list.insert(weapon);
+
+    projectile_handler->init();
 }
 
 Object * PlayerHandler::player = new Object(Image("assets/player.bmp"));

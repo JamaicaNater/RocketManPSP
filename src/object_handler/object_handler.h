@@ -12,6 +12,7 @@ protected:
     unsigned int time_between_spawns = 0;
     unsigned int last_spawn = 0;
     int velocity;
+    int MAX_COLLISIONS = 0;
 
     /**
      * @brief Checks to see if a given object has collided with anything
