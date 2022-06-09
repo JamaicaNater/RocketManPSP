@@ -3,11 +3,11 @@
 enum Flips{FORWARD, BACKWARD};
 struct Vector2d {
     private:
-        short angle;
+        short angle = 0;
     public:
     constexpr static float grav = 60.0f;
     short x_i=0, y_i=0, x=0, y=0, vel_x=0, vel_y=0, acc_x=0, acc_y=0;
-    unsigned int created_at;
+    unsigned int t0_x = 0, t0_y = 0; // t0 for velocity and gravit calculations
     bool direction;
 
     Vector2d() {

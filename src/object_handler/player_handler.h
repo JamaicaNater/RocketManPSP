@@ -7,11 +7,11 @@ class PlayerHandler : public ObjectHandler
 {
 private:
     SceCtrlData ctrlData;
-    Person player = Person(Image("assets/player.bmp"));
     Image rocket = Image("assets/missile.bmp");
 
     ProjectileHandler * projectile_handler;
 public:
+    Person player = Person(Image("assets/player.bmp"));
     void init();
     void read_controls();
     void update_physics();

@@ -26,6 +26,8 @@ void GameState::init(){
     player.weapon.image = Image("assets/player_rocket.bmp");
     player.type = Object::PLAYER;
 
+    player_ptr = &player_handler.player;
+
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
@@ -74,7 +76,7 @@ void GameState::update_player_actions() {
 void GameState::update_physics(){
     projectile_handler.update_physics();    
     player_handler.update_physics();
-    enemy_handler.update_movement(player.vector.x);
+    enemy_handler.update_movement(player_ptr->vector.x);
     enemy_handler.update_physics();
 }
 

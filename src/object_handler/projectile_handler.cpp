@@ -1,4 +1,5 @@
 #include "projectile_handler.h"
+#include "../physics/physics.h"
 #include "../physics/collisions.h"
 
 ProjectileHandler::ProjectileHandler(int MAX_OBJECTS, int velocity, 
@@ -59,12 +60,10 @@ void ProjectileHandler::update_physics(){
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!projectiles[i]) continue;
 
-        float time = ((int)curr_time - (int)projectiles[i]->vector.created_at) 
+        float time = ((int)curr_time - (int)projectiles[i]->vector.t0_y) 
                     / 1000000.0f;
 
-        projectiles[i]->vector.y= projectiles[i]->vector.y_i + 
-            projectiles[i]->vector.vel_y*(time) + .5 * 
-            (Vector2d::grav * (time) * (time) );
+        apply_gravity(projectiles[i]->vector);
 
         projectiles[i]->vector.x= projectiles[i]->vector.x_i + 
             projectiles[i]->vector.vel_x * time;

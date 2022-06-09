@@ -4,5 +4,5 @@
  * 
  * @param vec vector we are going to modify
  */
-void gravity(Vector2d &vec);
+void apply_gravity(Vector2d &vec);
 

@@ -52,9 +52,6 @@ class Person: public Object
 	int jump_height = 0;
 	int starting_jump_height;
 
-	int weapon_last_fired = 0;
-	int time_between_fires = 100*1000;
-
 	Person(Image _img) {
 		image = _img;
 	}

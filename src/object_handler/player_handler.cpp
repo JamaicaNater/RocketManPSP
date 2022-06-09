@@ -1,8 +1,10 @@
+#include <pspkernel.h>
 #include "player_handler.h"
 #include "../globals.h"
 #include "../utils.h"
 #include <math.h>
 #include "../graphics/gfx.hpp"
+#include "../physics/physics.h"
 
 PlayerHandler::PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler) : 
     ObjectHandler(1, _velocity, 0, Object::PLAYER
@@ -47,9 +49,9 @@ void PlayerHandler::read_controls(){
     if (!player.vector.vel_y) player.vector.y = (int)noise_map[player.vector.x];
     if(ctrlData.Buttons & PSP_CTRL_CROSS) {
         if (player.vector.vel_y == 0) {
-            player.vector.vel_y= 50; // you cant double jump
-            player.jump_time = curr_time;
-            player.starting_jump_height = player.vector.y;
+            player.vector.vel_y= -50; // you cant double jump
+            player.vector.y_i = player.vector.y;
+            player.vector.t0_y = curr_time;
         }
     }
 
@@ -57,7 +59,7 @@ void PlayerHandler::read_controls(){
     if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && projectile_handler->can_spawn() ){
         Vector2d vec;
 
-        vec.created_at = curr_time;
+        vec.t0_y = vec.t0_x = curr_time;
         vec.x = vec.x_i =  player.weapon.vector.x;
         vec.y = vec.y_i = player.weapon.vector.y;
         vec.set_angle(player.weapon.vector.get_angle());
@@ -74,11 +76,10 @@ void PlayerHandler::read_controls(){
 void PlayerHandler::update_physics() {
     float time = (int)(player.jump_time - curr_time)/1000000.0f;
     if (player.vector.vel_y) { //JUMP Physics
-        player.vector.y = player.jump_height_at(time);
+        apply_gravity(player.vector);
         if (player.vector.y > noise_map[player.vector.x]) { // End of jump
             player.vector.vel_y = 0;
-            player.starting_jump_height = 0;
-            player.jump_time = 0;
+            player.vector.y_i = 0;
         }
     }
 
