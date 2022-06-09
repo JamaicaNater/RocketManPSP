@@ -20,6 +20,7 @@ int object_collision(Object * obj, ObjectList &collisions){
         if (!glob_objects[i]) continue;
         if (glob_objects[i] == obj) continue;
         if (glob_objects[i]->type == Object::EXPLOSION) continue;
+        //if (glob_objects[i]->type == Object::PLAYER) continue;
         if (collisions.find(glob_objects[i]) != -1) continue;
 
         obj2_x1 = glob_objects[i]->vector.x - glob_objects[i]->image.width/2, 

@@ -28,7 +28,7 @@ void ProjectileHandler::clean(){
                 if (!collision_list.size) break;
                 if (!collisions[i]) continue;
 
-                collisions[i]->health-=23;
+                collisions[i]->health-=37;
             }
             
             // Set collided object if there is one
@@ -42,8 +42,8 @@ void ProjectileHandler::clean(){
                 // If we collided with an object put the explosion under it 
                 // Otherwise put the explosion when the projectile is.
 
-            PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded proj. %d, x%d y:%d",
-                i, projectiles[i]->vector.x, projectiles[i]->vector.y);
+            PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded proj. %d, x:%d y:%d, coll_with:%d",
+                i, projectiles[i]->vector.x, projectiles[i]->vector.y, collision_list.size);
 
             object_list.remove(projectiles[i]);
         } else if (projectiles[i]->off_screen()) {
@@ -62,8 +62,9 @@ void ProjectileHandler::update_physics(){
 
         float time = ((int)curr_time - (int)projectiles[i]->vector.t0_y) 
                     / 1000000.0f;
-
+        
         apply_gravity(projectiles[i]->vector);
+        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "%d", projectiles[i]->vector.y);
 
         projectiles[i]->vector.x= projectiles[i]->vector.x_i + 
             projectiles[i]->vector.vel_x * time;

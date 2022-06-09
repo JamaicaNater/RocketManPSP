@@ -43,26 +43,6 @@ class Object
 	}
 };
 
-class Person: public Object 
-{
-	public:
-	Object weapon = Object(Image("assets/player_rocket.bmp"));
-	
-	unsigned int jump_time;
-	int jump_height = 0;
-	int starting_jump_height;
-
-	Person(Image _img) {
-		image = _img;
-	}
-
-	unsigned short jump_height_at(float time) {
-		time *=2;
-		return starting_jump_height + vector.vel_y*(time) 
-		       + .5 * (Vector2d::grav * (time) * (time) );		
-	}
-
-} ;
 
 
 

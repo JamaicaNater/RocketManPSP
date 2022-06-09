@@ -17,8 +17,7 @@ private:
     static const int MAX_PROJ = 64;
     static const int MAX_ENEMIES = 16;
 
-    Person player = Person(Image("assets/player.bmp"));
-    Person * player_ptr;
+    Object player = Object(Image("assets/player.bmp"));
     Image rocket = Image("assets/missile.bmp");
     Image status_bar = Image("assets/statusbar.bmp");
     Image enemy_img = Image("assets/enemy.bmp");

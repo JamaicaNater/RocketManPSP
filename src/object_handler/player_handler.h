@@ -6,12 +6,15 @@
 class PlayerHandler : public ObjectHandler
 {
 private:
+    static Object * player;
+
     SceCtrlData ctrlData;
+    Object weapon = Object(Image("assets/player_rocket.bmp"));
     Image rocket = Image("assets/missile.bmp");
 
     ProjectileHandler * projectile_handler;
 public:
-    Person player = Person(Image("assets/player.bmp"));
+    static Vector2d get_player_vec();
     void init();
     void read_controls();
     void update_physics();

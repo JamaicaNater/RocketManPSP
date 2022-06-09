@@ -30,13 +30,12 @@ bool ObjectHandler::can_spawn(){
 void ObjectHandler::spawn(Vector2d v, Image _img) {
     if (!can_spawn()) return;
 
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: 0x%0x", 
-        _img.filename, _img.img_matrix);
-
     Object * object = new Object(_img);
-    object->image.img_matrix = _img.img_matrix;
     object->vector = v;
     object->type = type;
+
+    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: %0x, %d", 
+    _img.filename, _img.img_matrix, _img.height);
 
     PSP_LOGGER::assert((object_list.insert(object) > -1), 
         "Object spawned successfully");
@@ -62,8 +61,8 @@ void ObjectHandler::draw(){
         if (objects[i]->off_screen()) continue;
         
         GFX::drawBMP(objects[i]->get_draw_x(), objects[i]->get_draw_y(), 
-        objects[i]->vector.get_angle(), CENTER, 
-        objects[i]->vector.direction, 0, objects[i]->image);
+            objects[i]->vector.get_angle(), objects[i]->vector.pivot, 
+            objects[i]->vector.direction, 0, objects[i]->image);
     }
 }
 
