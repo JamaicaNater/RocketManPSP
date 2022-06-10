@@ -29,8 +29,10 @@ public:
     //TODO DFS style dealloc
     }
 
-    void add_panel(short x, short y, short height, short width){
-
+    void add_panel(short _x, short _y, short _height, short _width, unsigned int _color){
+        for (short y = _x; y < _height + _y; y++){
+            for (short x = _y; x < _width + _x; x++) img_matrix[width*y + x] = _color;
+        }
     }
 
     Image get_image() {

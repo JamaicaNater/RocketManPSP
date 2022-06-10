@@ -32,6 +32,8 @@ void GameState::init(){
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
+    comp.add_panel(10,10, 10, 20, 0xFF00FF00);
+
     load_BMP(rocket);
 }
 
