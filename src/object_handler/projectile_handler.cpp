@@ -21,7 +21,7 @@ void ProjectileHandler::on_object_collision(Object * obj, ObjectList &collision_
         if (!collision_list.size) break;
         if (!collisions[i]) continue;
 
-        collisions[i]->health-=37;
+        collisions[i]->damage_object(37);
     }
     
     // Set collided object

@@ -73,7 +73,7 @@ void GameState::update_player_actions() {
 void GameState::update_physics(){  
     player_handler.update_physics();
     projectile_handler.update_physics();  
-    enemy_handler.update_movement(PlayerHandler::get_player_vec().x);
+    enemy_handler.update_movement(PlayerHandler::get_player_val().vector.x);
     enemy_handler.update_physics();
     explosion_handler.update_physics();
 }
@@ -81,7 +81,8 @@ void GameState::update_physics(){
 void GameState::draw(){
     GFX::drawTerrain();
     GFX::simple_drawBMP(0, SCREEN_HEIGHT-64-2,  status_bar);
-    GFX::draw_progress_bar(50, 240, 20, 120, 80, 100, 0xFF00FF00, 0xFF0000FF);
+    GFX::draw_progress_bar(50, 240, 20, 120, PlayerHandler::get_player_val().health
+        , PlayerHandler::get_player_val().max_health, 0xFF00FF00, 0xFF0000FF);
     
     projectile_handler.draw();
     player_handler.draw();

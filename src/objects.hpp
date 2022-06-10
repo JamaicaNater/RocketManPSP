@@ -11,7 +11,7 @@
 class Object
 {
 	public:
-	enum ObjectTypes{PLAYER = 0, ENEMY, MISSILE, EXPLOSION, NONE};
+	enum ObjectTypes{PLAYER = 0, ENEMY, MISSILE, EXPLOSION, WEAPON, NONE};
 
 	ObjectTypes type = NONE;
 	Image image;

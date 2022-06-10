@@ -9,16 +9,16 @@ private:
     static Object * player;
 
     SceCtrlData ctrlData;
-    Object weapon = Object(Image("assets/player_rocket.bmp"));
+    Object * weapon = new Object(Image("assets/player_rocket.bmp"));
     Image rocket = Image("assets/missile.bmp");
 
     ProjectileHandler * projectile_handler;
 public:
-    static Vector2d get_player_vec();
-    void init();
+    static Object get_player_val();
+    void init() override;
     void read_controls();
-    void update_physics();
-    void draw();
+    void update_physics() override;
+    void on_off_screen(Object * obj) override;
     PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler);
     ~PlayerHandler();
 };

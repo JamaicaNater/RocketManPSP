@@ -3,6 +3,7 @@
 #include "../Vector2d.hpp"
 #include "../graphics/gfx.hpp"
 #include "../physics/collisions.h"
+#include "../physics/physics.h"
 
 ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, 
     int _time_between_spawns, Object::ObjectTypes _type)
@@ -51,8 +52,20 @@ void ObjectHandler::update_physics(){
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
 
+        if (objects[i]->vector.vel_y) {
+            apply_gravity(objects[i]->vector);
+            if (objects[i]->vector.y > noise_map[objects[i]->vector.x]) { // End of jump
+                objects[i]->vector.vel_y = objects[i]->vector.y_i = 0;
+            }
+        } else {
+            objects[i]->vector.y = noise_map[objects[i]->vector.x];
+        }
+
         objects[i]->vector.x += objects[i]->vector.vel_x;
-        objects[i]->vector.y = noise_map[objects[i]->vector.x];
+
+        if (objects[i]->type == Object::ENEMY || objects[i]->type == Object::PLAYER){
+
+        }
     }
 }
 
@@ -80,19 +93,19 @@ void ObjectHandler::clean(){
 }
 
 void ObjectHandler::init() {
-    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual init method called");
+    //PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual init method called");
 }
 
 void ObjectHandler::on_object_collision(Object * obj, ObjectList &collision_list) {
-    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual obj_col method called");
+    //PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual obj_col method called");
 }
 
 void ObjectHandler::on_terrain_collision(Object * obj) {
-    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual ter_col method called");
+    //PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual ter_col method called");
 }
 
 void ObjectHandler::on_off_screen(Object * obj){
-    PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual off_scr method called");
+    //PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual off_scr method called");
 }
 
 void ObjectHandler::check_collisions(int MAX_COLLISIONS){

@@ -7,9 +7,7 @@ namespace ObjectManager{
         Object ** glob_objects = ObjectList::_global_object_list->get_list();
         for (int i = 0; i < ObjectList::_global_object_list->MAX_SIZE; i++) {
             if (!glob_objects[i]) continue;
-            if (glob_objects[i]->type == Object::MISSILE || 
-                glob_objects[i]->type == Object:: EXPLOSION ||
-                glob_objects[i]->type == Object::PLAYER) continue;
+            if (glob_objects[i]->type != Object::ENEMY) continue;
 
 
             GFX::draw_progress_bar(glob_objects[i]->get_draw_x(),
