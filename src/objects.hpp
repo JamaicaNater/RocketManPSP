@@ -36,7 +36,7 @@ class Object
 
 	bool off_screen() {
 		return get_draw_x() > SCREEN_WIDTH_RES + 50 || get_draw_x() < -50
-		|| get_draw_y() > SCREEN_WIDTH + 50 || get_draw_y() < -50;
+		|| get_draw_y() > SCREEN_HEIGHT + 50 || get_draw_y() < -50;
 	}
 
 	int get_draw_x(){
