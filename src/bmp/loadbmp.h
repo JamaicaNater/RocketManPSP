@@ -2,14 +2,12 @@
 #include <string.h>
 #include "../objects.hpp"
 
+//TODO redocument this
 /**
  * @brief Opens a bmp file as a binary file and get the width hieght and 
  * pixmap location, after it reads in the pixmap data and stores it
  * 
- * @param height 
- * @param width 
- * @param buf 
- * @param filename 
+ * @param img
  * @return int 
  */
 int load_BMP(Image &img);

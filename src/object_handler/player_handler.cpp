@@ -5,6 +5,7 @@
 #include <math.h>
 #include "../graphics/gfx.hpp"
 #include "../physics/physics.h"
+#include "../bmp/loadbmp.h"
 
 PlayerHandler::PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler) : 
     ObjectHandler(2, _velocity, 0, Object::PLAYER
@@ -19,6 +20,8 @@ void PlayerHandler::init() {
     // For Controls
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
+
+    load_BMP(rocket);
 
     player->type = Object::PLAYER;
     object_list.insert(player);
@@ -78,13 +81,14 @@ void PlayerHandler::read_controls(){
         Vector2d vec;
 
         vec.t0_y = vec.t0_x = curr_time;
-        vec.x = vec.x_i = weapon->vector.x + 15;
-        vec.y = vec.y_i = weapon->vector.y;
         vec.set_angle(weapon->vector.get_angle());
         vec.direction = weapon->vector.direction;
         vec.pivot = weapon->vector.pivot;
 
         float rad = PI/180.0f * vec.get_angle();
+
+        vec.x = vec.x_i = weapon->vector.x + cos(rad)*25;
+        vec.y = vec.y_i = weapon->vector.y + sin(rad)*25;
         vec.vel_x = cos(rad) * 550;
         vec.vel_y = sin(rad) * 550;
 

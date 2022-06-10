@@ -31,4 +31,13 @@ struct Vector2d {
     short get_angle() {
         return angle;
     }
+
+    short get_mirrored_angle (){
+        short mirrored_angle = 180 - angle;
+
+        if (mirrored_angle < 0) {
+            mirrored_angle = 360 + mirrored_angle;
+        }
+        return mirrored_angle;
+    }
 };
