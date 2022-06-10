@@ -90,12 +90,12 @@ void PlayerHandler::read_controls(){
         float rad = PI/180.0f * ((player->vector.direction==FORWARD)*vec.get_angle() 
             + (player->vector.direction==BACKWARD)*vec.get_mirrored_angle());
 
-        vec.x = vec.x_i = weapon->vector.x + cos(rad)*25;
-        vec.y = vec.y_i = weapon->vector.y + sin(rad)*25;
+        // Add distance so the missile doesnt collide with player/weapon
+        vec.x = vec.x_i = weapon->vector.x + cos(rad)*25; 
+        vec.y = vec.y_i = weapon->vector.y + sin(rad)*25; 
         vec.vel_x = cos(rad) * 550;
         vec.vel_y = sin(rad) * 550;
 
-        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "ang: %d, mirr: %d", vec.get_angle(), vec.get_mirrored_angle());
         projectile_handler->spawn(vec, rocket);
     }
 }
