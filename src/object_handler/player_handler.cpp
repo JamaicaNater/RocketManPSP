@@ -29,6 +29,8 @@ void PlayerHandler::init() {
     weapon->vector.pivot = CENTER_LEFT;
     weapon->type = Object::WEAPON; // TODO Weapon break mechanic?
     object_list.insert(weapon);
+    player->health = 1000;
+    player->max_health = 1000;
 
     projectile_handler->init();
 }
@@ -85,13 +87,15 @@ void PlayerHandler::read_controls(){
         vec.direction = weapon->vector.direction;
         vec.pivot = weapon->vector.pivot;
 
-        float rad = PI/180.0f * vec.get_angle();
+        float rad = PI/180.0f * ((player->vector.direction==FORWARD)*vec.get_angle() 
+            + (player->vector.direction==BACKWARD)*vec.get_mirrored_angle());
 
         vec.x = vec.x_i = weapon->vector.x + cos(rad)*25;
         vec.y = vec.y_i = weapon->vector.y + sin(rad)*25;
         vec.vel_x = cos(rad) * 550;
         vec.vel_y = sin(rad) * 550;
 
+        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "ang: %d, mirr: %d", vec.get_angle(), vec.get_mirrored_angle());
         projectile_handler->spawn(vec, rocket);
     }
 }

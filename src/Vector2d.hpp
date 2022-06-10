@@ -23,8 +23,8 @@ struct Vector2d {
     }
 
     void set_angle(short _angle) {
-        if (_angle > 360) _angle%=360;
-        if (_angle < 360) _angle%=-360;
+        // if (_angle > 360) _angle%=360;
+        // if (_angle < 360) _angle%=-360;
         angle = _angle;
     }
 
@@ -33,11 +33,7 @@ struct Vector2d {
     }
 
     short get_mirrored_angle (){
-        short mirrored_angle = 180 - angle;
-
-        if (mirrored_angle < 0) {
-            mirrored_angle = 360 + mirrored_angle;
-        }
+        short mirrored_angle = (angle < 0)? -180 - angle: 180 - angle;
         return mirrored_angle;
     }
 };

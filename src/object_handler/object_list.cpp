@@ -36,22 +36,22 @@ ObjectList::ObjectList(){}
 
 ObjectList::ObjectList(int _max_size) {
     MAX_SIZE = _max_size;
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Allocating %d Objects", MAX_SIZE);
+    //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Allocating %d Objects", MAX_SIZE);
     objects = (Object**)malloc(MAX_SIZE * sizeof(Object *));
     memset(objects, 0, MAX_SIZE * sizeof(Object *));
 }
 
 ObjectList::ObjectList(const ObjectList &other){
     MAX_SIZE = other.MAX_SIZE;
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "(copy constructor) Allocating %d "
-        "Objects", MAX_SIZE);
+    //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "(copy constructor) Allocating %d "
+    //    "Objects", MAX_SIZE);
 
     objects = (Object**)malloc(MAX_SIZE * sizeof(Object *));
     memset(objects, 0, MAX_SIZE * sizeof(Object *));
 }
 
 ObjectList::~ObjectList() {
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Deallocating %d Objects", MAX_SIZE);
+    //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Deallocating %d Objects", MAX_SIZE);
     //TODO: list that refrence other list vs orignal list
 
     // for (int i = 0; i < MAX_SIZE; i++){
