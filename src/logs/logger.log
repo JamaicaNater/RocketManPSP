@@ -47,8 +47,6 @@ INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/missile.bmp, 1388.371094 kb used by bmps
-DEBUG: Spawned:assets/enemy.bmp ptr: 88594a0, 50
-DEBUG: (assertion) Object spawned successfully
 INFO: loading assets/statusbar.bmp into memory
 INFO: Allocating Space
 INFO: Reading file
@@ -66,3259 +64,694 @@ INFO: Allocating Space
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player.bmp, 1440.089844 kb used by bmps
-DEBUG: Spawned:assets/enemy.bmp ptr: 88594a0, 50
+DEBUG: Spawned:assets/enemy.bmp ptr: 885b550, 50
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-DEBUG: Spawned:assets/enemy.bmp ptr: 88594a0, 50
+DEBUG: Spawned:assets/enemy.bmp ptr: 885b550, 50
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-DEBUG: Spawned:assets/enemy.bmp ptr: 88594a0, 50
+DEBUG: Spawned:assets/missile.bmp ptr: 885b420, 4
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+DEBUG: 92
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+DEBUG: 95
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+DEBUG: 99
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+DEBUG: 103
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+DEBUG: 107
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+DEBUG: 111
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+DEBUG: 115
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-DEBUG: Spawned:assets/enemy.bmp ptr: 88594a0, 50
+DEBUG: 119
+INFO: Collision detected with 885b1e0
+DEBUG: Spawned:Non-Loadable ptr: 885de20, 137
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883da40
+INFO: Exploded proj at x:174 y:119, coll_with:1
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 883da40
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-DEBUG: Spawned:assets/enemy.bmp ptr: 88594a0, 50
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+DEBUG: Spawned:assets/enemy.bmp ptr: 885b550, 50
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 885b960
+INFO: Collision detected with 885b390
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 885b9f0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 885b390
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 885b390
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 885b390
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 885b960
+INFO: Collision detected with 885b390
+INFO: Collision detected with 885b270
+INFO: Collision detected with 885b1e0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 885b9f0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 883da40
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 885b960
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 885b9f0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 885b960
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 885b9f0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 885b960
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 885b9f0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 885b960
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 885b9f0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 885b960
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 885b9f0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 8858ed0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 885b960
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 885b9f0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859250
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled
-INFO: Collision detected with 8859130
+INFO: Collision detected with 883db40
 WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 8858ed0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859130
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-DEBUG: Spawned:assets/enemy.bmp ptr: 88594a0, 50
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88591c0
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 885b960
-WARNING: collision list filled
-INFO: Collision detected with 885b9f0
-WARNING: collision list filled
-INFO: Collision detected with 8859250
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
-WARNING: collision list filled
-INFO: Collision detected with 88592e0
+INFO: Collision detected with 8858fd0
 WARNING: collision list filled

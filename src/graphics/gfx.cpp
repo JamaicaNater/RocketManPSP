@@ -192,7 +192,6 @@ namespace GFX
 			for (int y = start_y; y < end_y; y++){
 				for (int x = start_x; x < end_x; x++){
 					*pixel = *(image + (width*y + x));
-
 					if (!is_transparent(*pixel)) {
 						// For each pixel in the image take it and rotate it
 						x_i= (x-mid_x)*cos_theta+(y-mid_y)*sin_theta;
@@ -223,6 +222,7 @@ namespace GFX
 			{
 				for (int x1 = start_x; x1 < end_x; x1++)
 				{
+					//PSP_LOGGER::log(PSP_LOGGER::DEBUG, "x: %d, y: %d, h: %d, w: %d", x1-start_x, y1-start_y, height, width);
 					*pixel = *(image+index);
 					if (!is_transparent(*pixel)){
 						

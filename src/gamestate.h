@@ -8,6 +8,7 @@
 #include "object_handler/animation_handler.h"
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
+#include "image_builder/component.hpp"
 
 
 
@@ -34,6 +35,8 @@ private:
         &explosion_handler);
 
     PlayerHandler player_handler = PlayerHandler(PLAYER_SPEED, &projectile_handler);
+
+    Component comp = Component(20,20,45,45, 0xFF0000FF);
 
 	int screen_center = SCREEN_WIDTH/2;
     SceCtrlData ctrlData;

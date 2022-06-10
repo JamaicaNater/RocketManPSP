@@ -9,6 +9,7 @@
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"
 
+
 GameState::GameStates GameState::state = GameState::RUNNING;
 
 void GameState::init(){
@@ -111,6 +112,12 @@ void GameState::draw(){
     explosion_handler.draw();
 
     ObjectManager::draw_health_bars();
+
+    
+    Image img = comp.get_image();
+    GFX::simple_drawBMP(20, 50, img);
+
+    //sceKernelDelayThread(1 * SECOND);
 
     GFX::swapBuffers();
     GFX::clear();
