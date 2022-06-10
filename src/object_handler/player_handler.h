@@ -1,3 +1,5 @@
+#pragma once
+
 #include <pspctrl.h>
 
 #include "object_handler.h" 

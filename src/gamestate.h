@@ -9,6 +9,8 @@
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
 
+
+
 // TODO make singleton
 class GameState
 {
@@ -53,8 +55,7 @@ private:
     void update_physics();
 public:
     enum GameStates{RUNNING, PAUSED, TERMINATED};
-    
-    GameStates state = RUNNING;
+    static GameStates state;
     void title_screen();
 
     /**

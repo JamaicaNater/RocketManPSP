@@ -6,6 +6,7 @@
 #include "../graphics/gfx.hpp"
 #include "../physics/physics.h"
 #include "../bmp/loadbmp.h"
+#include "gamestate.h"
 
 PlayerHandler::PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler) : 
     ObjectHandler(2, _velocity, 0, Object::PLAYER
@@ -76,6 +77,10 @@ void PlayerHandler::read_controls(){
             player->vector.y_i = player->vector.y;
             player->vector.t0_y = curr_time;
         }
+    }
+
+    if(ctrlData.Buttons & PSP_CTRL_START){ 
+        GameState::state = GameState::PAUSED;
     }
 
 

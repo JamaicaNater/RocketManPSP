@@ -9,9 +9,11 @@
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"
 
+GameState::GameStates GameState::state = GameState::RUNNING;
 
 void GameState::init(){
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Init Gamestate");
+    state = RUNNING;
     camera_x = 0;
     player_handler.init();
 
@@ -45,6 +47,8 @@ void GameState::title_screen() {
 		if (ctrlData.Buttons & PSP_CTRL_START){
 			sceKernelTerminateThread(home_thid);
 			sceKernelDeleteThread(home_thid);
+            sceKernelDelayThread(100 * MILLISECOND); // So that we have 
+            //time for the start(pause) button to be released
 			break;
 		}
 		sceKernelDelayThread(100);
@@ -52,6 +56,22 @@ void GameState::title_screen() {
 }
 
 void GameState::update(){
+    if (state == PAUSED) {
+        sceKernelDelayThread(200 * MILLISECOND); // So that we have 
+                //time for the start(pause) button to be released
+        while (1)
+        {
+            sceCtrlReadBufferPositive(&ctrlData, 1);
+            if (ctrlData.Buttons & PSP_CTRL_START){
+                state = RUNNING;
+                sceKernelDelayThread(200 * MILLISECOND); // So that we have 
+                //time for the start(pause) button to be released
+                break;
+            }
+            sceKernelDelayThread(100);
+        }
+    }
+
     curr_time = sceKernelGetSystemTimeLow();
     GameState::update_player_actions();
 
