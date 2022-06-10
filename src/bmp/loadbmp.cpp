@@ -30,13 +30,13 @@ int load_BMP(Image &img) {
     int pixlmap_location;
     // 10 is Location of pixel data in files
     fseek(fp, 10, SEEK_SET);
-    fread((void *)(&pixlmap_location), 1, 4, fp);
+    fread((void *)(&pixlmap_location), 1, sizeof(unsigned int), fp);
 
     //Load Height and Width info
     fseek(fp, 18, SEEK_SET);
-    fread((void *)(&width), 1, 4, fp);
+    fread((void *)(&width), 1, sizeof(unsigned int), fp);
     fseek(fp, 22, SEEK_SET);
-    fread((void *)(&height), 1, 4, fp);
+    fread((void *)(&height), 1, sizeof(unsigned int), fp);
 
 
     fseek(fp, pixlmap_location, SEEK_SET);
@@ -56,7 +56,7 @@ int load_BMP(Image &img) {
     }
 
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Reading file");
-    fread((void *)buf, 4, size, fp); 
+    fread((void *)buf, sizeof(unsigned int), size, fp); 
 
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Formatting pixels");
     for (int i = 0; i < size; i++) {
@@ -81,20 +81,20 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
 
     // 10 is Location of pixel data in files
     fseek(fp, 10, SEEK_SET);
-    fread((void *)(&pixlmap_location), 1, 4, fp);
+    fread((void *)(&pixlmap_location), 1, sizeof(unsigned int), fp);
 
     //Load Height and Width info
     fseek(fp, 18, SEEK_SET);
-    fread((void *)(width), 1, 4, fp);
+    fread((void *)(width), 1, sizeof(unsigned int), fp);
     fseek(fp, 22, SEEK_SET);
-    fread((void *)(height), 1, 4, fp);
+    fread((void *)(height), 1, sizeof(unsigned int), fp);
 
     int CHUNK_SIZE = *width * *height;
 
     int last_chunk = round((*width * *height)/CHUNK_SIZE);
     for (int i = 0; i < last_chunk; i++){
     fseek(fp, pixlmap_location+i*CHUNK_SIZE, SEEK_SET);
-    fread((void *)(buf+ i*CHUNK_SIZE), 4, CHUNK_SIZE, fp); 
+    fread((void *)(buf+ i*CHUNK_SIZE), sizeof(unsigned int), CHUNK_SIZE, fp); 
     }
 
     for (unsigned int i = 0; i < *width * *height; i++) buf[i] = format_pixel(buf[i]);

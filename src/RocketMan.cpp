@@ -85,7 +85,7 @@ int main()
 
 		end_time = sceKernelGetSystemTimeLow();
 		physics_time_delta = (end_time - start_time) / static_cast<float>(1000*1000);
-		printf("fps: %.1f", 1 / (physics_time_delta) );
+		printf("FPS: %.1f", 1 / (physics_time_delta) );
 
 		sceDisplayWaitVblankStart();
 	}

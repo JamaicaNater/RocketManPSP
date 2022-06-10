@@ -15,7 +15,8 @@ void GameState::init(){
     camera_x = 0;
     player_handler.init();
 
-    //TODO: load all BMPs here and add a loading screen for Christ sake
+    //TODO: load all BMPs here
+    
     load_BMP(enemy_img);
 
     explosion_handler.init(new Animation(3, 5, 50000, "assets/explosion.bmp"));

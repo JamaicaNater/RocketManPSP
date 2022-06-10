@@ -100,7 +100,7 @@ namespace GFX
 
 		for (int y1 = start_y; y1 > end_y; y1--)
 		{
-			memcpy(draw_buffer + (y1*SCREEN_WIDTH),image+index, width*4);
+			memcpy(draw_buffer + (y1*SCREEN_WIDTH),image+index, width * sizeof(unsigned int));
 			index+=width;
 		}
 	}
