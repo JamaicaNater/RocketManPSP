@@ -23,7 +23,7 @@ void GameState::init(){
     load_BMP(enemy_img);
 
     explosion_handler.init(new Animation(3, 5, 50000, "assets/explosion.bmp"));
-
+    
     player.vector.x = 10;
 	player.vector.y = 10;
 	player.vector.direction = FORWARD;
@@ -35,6 +35,9 @@ void GameState::init(){
     comp.add_panel(10,10, 10, 20, 0xFF00FF00);
 
     load_BMP(rocket);
+    load_BMP(status_bar);
+    //load_BMP(font);
+
 }
 
 void GameState::title_screen() {
@@ -116,9 +119,13 @@ void GameState::draw(){
     ObjectManager::draw_health_bars();
 
     
-    Image img = comp.get_image();
-    GFX::simple_drawBMP(20, 50, img);
+    // Image img = comp.get_image();
+    // GFX::simple_drawBMP(20, 50, img);
 
+
+    // img = font.get_frame(1);
+    
+    // GFX::simple_drawBMP(20, 50, img);
     //sceKernelDelayThread(1 * SECOND);
 
     GFX::swapBuffers();

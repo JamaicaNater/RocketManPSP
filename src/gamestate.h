@@ -24,6 +24,8 @@ private:
     Image rocket = Image("assets/missile.bmp");
     Image status_bar = Image("assets/statusbar.bmp");
     Image enemy_img = Image("assets/enemy.bmp");
+
+    Animation font = Animation(9, 9, 0, "assets/font.bmp");
     
     EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, 1*SECOND, 
         Object::ENEMY);

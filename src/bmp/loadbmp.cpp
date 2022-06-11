@@ -118,7 +118,7 @@ int load_BMP(Animation &anim) {
 
     unsigned int &height = anim.height;
     unsigned int &width = anim.width;
-    unsigned int ** &buf = anim.img_matrices;
+    unsigned int * &buf = anim.img_matrices;
     
     FILE *fp = fopen(anim.filename, "rb");
     PSP_LOGGER::log(PSP_LOGGER::INFO, "loading %s into memory", anim.filename);
@@ -147,56 +147,43 @@ int load_BMP(Animation &anim) {
 
     const int BIG_WIDTH = width;
     const int BIG_HEIGHT = height;
+    const int row_size = BIG_HEIGHT/rows;
+    const int col_size = BIG_WIDTH/cols;
 
     // Instead of using height and width of the image we now use height and 
     // of the segment
     width/=cols;
     height/=rows;
     int size = width * height;
-
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Alocating %d pointers for %d x %d "
-    "images", rows*cols, width, height);
-    buf = (unsigned int **)malloc(sizeof(unsigned int *) * rows * cols);
-    
+  
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Allocating Space");
-    if (size * rows * cols * sizeof(unsigned int) > 65536) {
-        PSP_LOGGER::log(PSP_LOGGER::WARNING, "Attempting to allocate %f kb "
-        "of space", size * rows * cols * sizeof(unsigned int)/1024.0f);
-    }
-    
-    for (unsigned int i = 0; i < rows * cols; i++) {
-        buf[i] = (unsigned int *)malloc(size * sizeof(unsigned int *));
-        if (!buf[i]) {
-            PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Memory Allocation for "
-            "pointer %d failed in %s", i, anim.filename);
-        }
-    }
-
+    unsigned int * buf2 = (unsigned int *)malloc(sizeof(unsigned int) * rows * cols * size);
+    if (!buf2) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed memory allocation");
+    PSP_LOGGER::log(PSP_LOGGER::INFO, "Allocating Space");
+    buf = (unsigned int *)malloc(sizeof(unsigned int) * rows * cols * size);
+    if (!buf) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed memory allocation");
+   
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Reading file");
-    int cur_row = rows-1;
-    int read_from = 0;
-    int write_to = 0;
-    for(int i = 0; i < BIG_HEIGHT; i ++){
-        cur_row = rows -  (i / height) - 1;
-        for (unsigned int cur_col = 0; cur_col < cols; cur_col++) {
-            write_to = (i%height+cur_col) * width;
-            read_from = BIG_WIDTH*i + (cur_col * width);
-            fseek(fp, pixlmap_location + read_from * sizeof(unsigned int), SEEK_SET);
-            fread((unsigned int *)&buf[cur_row*rows + cur_col][write_to], sizeof(unsigned int), width, fp);
-            //PSP_LOGGER::log(PSP_LOGGER::INFO, "Indexing %d at %d",cur_row*rows + cur_col, write_to );
+    fseek(fp, pixlmap_location, SEEK_SET);
+    fread(buf2,sizeof(unsigned int), BIG_HEIGHT * BIG_WIDTH,fp);
+    int curr_row, curr_col;
+    for (int y = 0; y < BIG_HEIGHT; y++) {
+        curr_row = rows -  (y / height) - 1;
+        for (int x = 0; x < BIG_WIDTH; x++){
+            curr_col = x / col_size;
+            buf[size * (curr_row * rows + curr_col) + ( (y % height) * width + x % width)] = buf2[y * BIG_WIDTH + x];
         }
-    } 
+        
+    }
 
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Formatting pixels");
-    for (unsigned int i = 0; i < rows * cols; i++){
-        for (int j = 0; j < size; j++) {
-            buf[i][j] = format_pixel(buf[i][j]);
-        }
+    for (unsigned int i = 0; i < BIG_HEIGHT * BIG_WIDTH; i++){
+        buf[i] = format_pixel(buf[i]);
     }
     
     bmp_mem += rows * cols* size*sizeof(unsigned int);
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Succesfuly loaded %s, %f kb used by "
-    "bmps", anim.filename, bmp_mem/1024.0f);
+    PSP_LOGGER::log(PSP_LOGGER::INFO, "Successfully loaded %s, %f kb used by "
+    "BMPs", anim.filename, bmp_mem/1024.0f);
     
     fclose(fp);
     return 1;

@@ -23,6 +23,8 @@ void PlayerHandler::init() {
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
 
     load_BMP(rocket);
+    load_BMP(weapon->image);
+    load_BMP(player->image);
 
     player->type = Object::PLAYER;
     object_list.insert(player);

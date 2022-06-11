@@ -42,7 +42,7 @@ struct Animation
 	private:
 	public:
 	// Program updated variables
-	unsigned int * * img_matrices = NULL;
+	unsigned int * img_matrices = NULL;
 	unsigned int width = 0;
 	unsigned int height = 0;
 
@@ -56,7 +56,7 @@ struct Animation
 		// PSP_LOGGER::assert(index < rows*cols, "get_frame(index) "
 		// "requested an in bounds value of %d for size %d", index, rows * cols);
 
-		return(Image(height, width, img_matrices[index], "Non-Loadable"));
+		return(Image(height, width, img_matrices + (width * height * index), "Non-Loadable"));
 	}
 
 	Animation(unsigned int _rows, unsigned int _cols, unsigned int _frame_time, 
