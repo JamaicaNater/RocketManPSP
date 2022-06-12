@@ -3,25 +3,30 @@
 #include <cstdlib>
 
 Animation font = Animation(9, 9, 0, "assets/font.bmp");
+bool initialized = false;
 int convert_ascii(char c);
 
 void init_text_builder(){
     load_BMP(font);
+    initialized = true;
 }
 
 // TODO where will this be freed
 Image text(const char * txt) {
+    PSP_LOGGER::assert(initialized, "text builder initalized");
+
     int index = 0;
     int letter_size = font.height * font.width;
     int length = strlen(txt);
 
     unsigned int * img_matrix = (unsigned int *)malloc( letter_size
-        * strlen(txt) * sizeof(unsigned int));
+        * length * sizeof(unsigned int));
     if(!img_matrix) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to allocate"
         "memory for text builder");
 
     while (txt[index])
     {
+        // Draw each letter in the img_matrix
         for (int y = 0; y < font.height; y++){
             memcpy(&img_matrix[y*length*font.width + index * font.width], 
                 &font.get_frame(convert_ascii(txt[index])).img_matrix[y * font.width],
@@ -44,7 +49,6 @@ int convert_ascii(char c){
             {
             case ' ':
                 frame_num = 26;
-                PSP_LOGGER::log(PSP_LOGGER::DEBUG, "checking %c", c);
                 break;
 
             case '.':
@@ -112,6 +116,5 @@ int convert_ascii(char c){
                 break;
             }
         }
-        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "checking %d", frame_num);
         return frame_num;
 }   

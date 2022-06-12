@@ -9,6 +9,7 @@
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
 #include "image_builder/component.hpp"
+#include "image_builder/text_builder.h"
 
 
 
@@ -42,6 +43,8 @@ private:
 
 	int screen_center = SCREEN_WIDTH/2;
     SceCtrlData ctrlData;
+
+    Image img2 =Image("");
 
     /**
      * @brief Responsible for handling actions not directly caused by the player

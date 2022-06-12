@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include "../image.hpp"
 #include "../logger/logger.h"
+#include "../graphics/gfx.hpp"
 
 
 struct Component
@@ -32,6 +33,15 @@ public:
     void add_panel(short _x, short _y, short _height, short _width, unsigned int _color){
         for (short y = _x; y < _height + _y; y++){
             for (short x = _y; x < _width + _x; x++) img_matrix[width*y + x] = _color;
+        }
+    }
+
+    void add_img(short _x, short _y, Image _img){
+        for (short y = _x; y < _img.height + _y; y++){
+            for (short x = _y; x < _img.width + _x; x++) {
+                if (!GFX::is_transparent(_img.img_matrix[_img.width*(y - _y) + (x - _x)]) && y < height && x < width)
+                img_matrix[width*y + x] = _img.img_matrix[_img.width*(y - _y) + (x - _x)];
+            }
         }
     }
 

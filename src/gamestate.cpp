@@ -32,12 +32,14 @@ void GameState::init(){
 
     sceCtrlSetSamplingCycle(0);
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
-
+    init_text_builder();
+    
+    img2 = text("tatakae!, eren");
     comp.add_panel(10,10, 10, 20, 0xFF00FF00);
+    comp.add_img(00,00, img2);
 
     load_BMP(rocket);
     load_BMP(status_bar);
-    init_text_builder();
     
 }
 
@@ -119,13 +121,10 @@ void GameState::draw(){
 
     ObjectManager::draw_health_bars();
 
-    
+   
     Image img = comp.get_image();
     GFX::simple_drawBMP(20, 50, img);
-
-    Image img2 = text("tatakae!, eren");
-    GFX::drawBMP(10,10,0,CENTER,FORWARD,0,img2);
-    free(img2.img_matrix);
+     //free(img2.img_matrix);
 
     GFX::swapBuffers();
     GFX::clear();
