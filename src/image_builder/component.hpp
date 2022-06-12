@@ -9,7 +9,7 @@
 
 struct Component
 {
-private:
+public:
     enum ComponentType{PANEL, BUTTON, LABEL, EXTERN_IMG};
     
     unsigned int x, y, height, width;
@@ -17,7 +17,7 @@ private:
     //Component * children[4];
 
     unsigned int * img_matrix;
-public:
+
     Component(unsigned int _x, unsigned int _y, unsigned int _height, unsigned int _width, unsigned int color){
         x = _x;
         y = _y;

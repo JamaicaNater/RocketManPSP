@@ -39,7 +39,7 @@ private:
 
     PlayerHandler player_handler = PlayerHandler(PLAYER_SPEED, &projectile_handler);
 
-    Component comp = Component(20,20,45,45, 0xFF0000FF);
+    Component pause_menu = Component(180,50,120,90, 0xFF0000FF);
 
 	int screen_center = SCREEN_WIDTH/2;
     SceCtrlData ctrlData;

@@ -34,12 +34,10 @@ void GameState::init(){
 	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
     init_text_builder();
     
-    img2 = text("tatakae!, eren");
-    comp.add_panel(10,10, 10, 20, 0xFF00FF00);
-    comp.add_img(00,00, img2);
-
     load_BMP(rocket);
     load_BMP(status_bar);
+
+    status_bar.resize(2);
     
 }
 
@@ -68,6 +66,14 @@ void GameState::update(){
     if (state == PAUSED) {
         sceKernelDelayThread(200 * MILLISECOND); // So that we have 
                 //time for the start(pause) button to be released
+        
+        Image img = pause_menu.get_image();
+        img2 = text("Game Paused");
+        pause_menu.add_panel(10,10, 10, 20, 0xFF00FF00);
+        pause_menu.add_img(00,00, img2);
+
+        GFX::simple_drawBMP(pause_menu.x, pause_menu.y, img);
+        GFX::swapBuffers();
         while (1)
         {
             sceCtrlReadBufferPositive(&ctrlData, 1);
@@ -75,6 +81,8 @@ void GameState::update(){
                 state = RUNNING;
                 sceKernelDelayThread(200 * MILLISECOND); // So that we have 
                 //time for the start(pause) button to be released
+                //free(img.img_matrix);
+                free(img2.img_matrix);
                 break;
             }
             sceKernelDelayThread(100);
@@ -120,15 +128,7 @@ void GameState::draw(){
     explosion_handler.draw();
 
     ObjectManager::draw_health_bars();
-
-   
-    Image img = comp.get_image();
-    GFX::simple_drawBMP(20, 50, img);
-    
-    Image blury = blur(enemy_img);
-    GFX::simple_drawBMP(20, 50, blury);
-    free(blury.img_matrix);
-
+       
     GFX::swapBuffers();
     GFX::clear();
 }

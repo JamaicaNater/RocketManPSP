@@ -47,7 +47,6 @@ DEBUG: (assertion) Height of 0 is divisible byrows 9
 INFO: Allocating Space
 INFO: Formatting pixels
 INFO: Successfully loaded assets/font.bmp, 1433.57 kb used by BMPs
-DEBUG: (assertion) text builder initalized
 INFO: loading assets/missile.bmp into memory
 INFO: Reading file
 INFO: Formatting pixels
@@ -56,237 +55,21 @@ INFO: loading assets/statusbar.bmp into memory
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/statusbar.bmp, 1481.855469 kb used by bmps
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 885d650
+DEBUG: (assertion) Image to resize initialized
+DEBUG: (assertion) Success in creating resize img
+DEBUG: (assertion) text builder initalized
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866270
 DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: Spawned:assets/missile.bmp ptr: 885c620
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866270
 DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 885d650
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866270
 DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c3a0
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 885ff20
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866270
 DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:208 y:142, coll_with:1
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: Spawned:assets/missile.bmp ptr: 885c620
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866270
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 89b74b0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 89b74b0
-INFO: Collision detected with 885c3a0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c3a0
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 885ff20
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866270
 DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:181 y:125, coll_with:1
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-INFO: Collision detected with 885c4c0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 885d650
+DEBUG: (assertion) text builder initalized
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866270
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 885c4c0
-INFO: Collision detected with 89b75d0
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully
-DEBUG: (assertion) blur matrix for assets/enemy.bmp allocated successfully

@@ -1,6 +1,7 @@
 #ifndef PSP_GLOBS
 #define PSP_GLOBS
 
+
 #define MAP_SIZE 3000
 #define SCREEN_HEIGHT 272
 #define SCREEN_WIDTH_RES 480

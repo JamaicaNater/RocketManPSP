@@ -1,7 +1,9 @@
 #pragma once
-
+#include <cstdlib>
 #include <cstring>
+#include <math.h>
 #include "logger/logger.h"
+#include <stdint.h>
 //#include "bmp/loadbmp.h"
 
 struct Image
@@ -35,6 +37,32 @@ struct Image
 
 	~Image() {
 		//free(img_matrix);
+	}
+
+	/*
+		Implementation of the nearest neighbor resize algorithm
+		https://towardsdatascience.com/image-processing-image-scaling-algorithms-ae29aaa6b36c
+	*/
+	void resize(int h, int w){
+		uint32_t * new_img = (uint32_t *)malloc(h * w * sizeof(uint32_t));
+		PSP_LOGGER::assert(img_matrix, "Image to resize initialized");
+		PSP_LOGGER::assert(new_img, "Success in creating resize img");
+
+		float scale_x = w/(float)width;
+		float scale_y = h/(float)height;
+		for (int y = 0; y < h; y++){
+			for (int x = 0; x < w; x++){
+				new_img[y * w + x] = img_matrix[(int)round(y/scale_y) * width + (int)round(x/scale_x)];
+			}
+		}
+		free(img_matrix);
+		img_matrix = new_img;
+		height = h;
+		width = w;
+	}
+
+	void resize(float scale){
+		resize(scale*height, scale*width);
 	}
 };
 
