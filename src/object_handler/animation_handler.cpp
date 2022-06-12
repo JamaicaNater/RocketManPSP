@@ -7,8 +7,7 @@ AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity,
     int _time_between_spawns, Object::ObjectTypes _type) 
     : ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns, _type)
 {
-    frame_data = (FrameData*)malloc(MAX_OBJECTS * sizeof(FrameData));
-    for (int i = 0; i < MAX_OBJECTS; i++) frame_data[i] = {0,0};
+    
     time_between_spawns = 0;
     MAX_COLLISIONS = 5;
 }
@@ -40,6 +39,9 @@ void AnimationHandler::update_frames(){
 }
 
 void AnimationHandler::init(Animation * _animation){
+    frame_data = (FrameData*)malloc(object_list.MAX_SIZE * sizeof(FrameData));
+    for (int i = 0; i < object_list.MAX_SIZE; i++) frame_data[i] = {0,0};
+
     load_BMP(*_animation);
     animation = _animation;
 }

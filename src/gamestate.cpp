@@ -36,9 +36,6 @@ void GameState::init(){
     
     load_BMP(rocket);
     load_BMP(status_bar);
-
-    status_bar.resize(2);
-    
 }
 
 void GameState::title_screen() {
@@ -69,6 +66,7 @@ void GameState::update(){
         
         Image img = pause_menu.get_image();
         img2 = text("Game Paused");
+        
         pause_menu.add_panel(10,10, 10, 20, 0xFF00FF00);
         pause_menu.add_img(00,00, img2);
 
@@ -119,8 +117,9 @@ void GameState::update_physics(){
 void GameState::draw(){
     GFX::drawTerrain();
     GFX::simple_drawBMP(0, SCREEN_HEIGHT-64-2,  status_bar);
-    GFX::draw_progress_bar(50, 240, 20, 120, PlayerHandler::get_player_val().health
-        , PlayerHandler::get_player_val().max_health, 0xFF00FF00, 0xFF0000FF);
+    GFX::draw_progress_bar(50, 240, 20, 120, 
+        PlayerHandler::get_player_val().health, 
+        PlayerHandler::get_player_val().max_health, 0xFF00FF00, 0xFF0000FF);
     
     projectile_handler.draw();
     player_handler.draw();
