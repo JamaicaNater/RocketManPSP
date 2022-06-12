@@ -34,6 +34,7 @@ struct Image
 	Image() {}
 
 	~Image() {
+		//free(img_matrix);
 	}
 };
 
@@ -56,12 +57,13 @@ struct Animation
 		// PSP_LOGGER::assert(index < rows*cols, "get_frame(index) "
 		// "requested an in bounds value of %d for size %d", index, rows * cols);
 
-		return(Image(height, width, img_matrices + (width * height * index), "Non-Loadable"));
+		return(Image(height, width, img_matrices + (width * height * index), 
+			"Non-Loadable Animation frame"));
 	}
 
 	Animation(unsigned int _rows, unsigned int _cols, unsigned int _frame_time, 
-		const char * _filename) 
-	{
+		const char * _filename
+	){
 		frame_time = _frame_time;
 		
 		int str_size = strlen(_filename) + 1;

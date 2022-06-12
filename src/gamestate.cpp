@@ -8,6 +8,7 @@
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"
+#include "image_builder/text_builder.h"
 
 
 GameState::GameStates GameState::state = GameState::RUNNING;
@@ -36,8 +37,8 @@ void GameState::init(){
 
     load_BMP(rocket);
     load_BMP(status_bar);
-    //load_BMP(font);
-
+    init_text_builder();
+    
 }
 
 void GameState::title_screen() {
@@ -119,14 +120,12 @@ void GameState::draw(){
     ObjectManager::draw_health_bars();
 
     
-    // Image img = comp.get_image();
-    // GFX::simple_drawBMP(20, 50, img);
+    Image img = comp.get_image();
+    GFX::simple_drawBMP(20, 50, img);
 
-
-    // img = font.get_frame(1);
-    
-    // GFX::simple_drawBMP(20, 50, img);
-    //sceKernelDelayThread(1 * SECOND);
+    Image img2 = text("tatakae!, eren");
+    GFX::drawBMP(10,10,0,CENTER,FORWARD,0,img2);
+    free(img2.img_matrix);
 
     GFX::swapBuffers();
     GFX::clear();

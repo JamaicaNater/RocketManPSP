@@ -49,795 +49,5727 @@ INFO: loading assets/statusbar.bmp into memory
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/statusbar.bmp, 1440.089844 kb used by bmps
-DEBUG: Spawned:assets/enemy.bmp ptr: 885c250, 50
+INFO: loading assets/font.bmp into memory
+DEBUG: (assertion) Width of 0 is divisible bycols 9
+DEBUG: (assertion) Height of 0 is divisible byrows 9
+INFO: Allocating Space
+INFO: Formatting pixels
+INFO: Successfully loaded assets/font.bmp, 1481.86 kb used by BMPs
+DEBUG: Spawned:assets/enemy.bmp ptr: 885c950, 50
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: Spawned:assets/missile.bmp ptr: 885b220, 4
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: Spawned:assets/enemy.bmp ptr: 885c950, 50
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883d940
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 89
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 89
-INFO: Collision detected with 883d940
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 89
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 89
-INFO: Collision detected with 883d940
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 89
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 89
-INFO: Collision detected with 883d940
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 89
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 89
-INFO: Collision detected with 883d940
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 90
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 90
-INFO: Collision detected with 883d940
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 90
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 91
-INFO: Collision detected with 883d940
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 91
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 92
-INFO: Collision detected with 883d940
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 92
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 93
-INFO: Collision detected with 883d940
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 93
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 94
-INFO: Collision detected with 883d940
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 88594d0
 WARNING: collision list filled
-DEBUG: 95
-INFO: Collision detected with 883d940
+INFO: Collision detected with 885b6a0
 WARNING: collision list filled
-INFO: Collision detected with 8858dd0
+INFO: Collision detected with 885b730
 WARNING: collision list filled
-DEBUG: 96
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 96
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 97
-DEBUG: Spawned:assets/enemy.bmp ptr: 885c250, 50
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: Spawned:assets/enemy.bmp ptr: 885c950, 50
 DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 98
-INFO: Collision detected with 885b0c0
-DEBUG: Spawned:Non-Loadable ptr: 885eb20, 137
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:313 y:98, coll_with:1
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-DEBUG: Spawned:assets/missile.bmp ptr: 885b220, 4
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 83
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 88
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 93
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 98
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 103
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 108
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 113
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 119
-INFO: Collision detected with 885afa0
-DEBUG: Spawned:Non-Loadable ptr: 885eb20, 137
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:197 y:119, coll_with:1
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 885afa0
-DEBUG: Spawned:assets/missile.bmp ptr: 885b220, 4
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 83
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 89a9dc0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 88
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 89a9dc0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 93
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 89a9dc0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 98
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 89a9dc0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 103
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 89a9dc0
-INFO: Collision detected with 885afa0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 108
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 113
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-DEBUG: 119
-INFO: Collision detected with 885afa0
-DEBUG: Spawned:Non-Loadable ptr: 885eb20, 137
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:197 y:119, coll_with:1
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-DEBUG: Spawned:assets/enemy.bmp ptr: 885c250, 50
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 885b0c0
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
-INFO: Collision detected with 89a9ee0
-INFO: Collision detected with 8858dd0
-INFO: Collision detected with 883d940
-WARNING: collision list filled
-INFO: Collision detected with 8858dd0
-WARNING: collision list filled
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking 65
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking  
+DEBUG: checking 26
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 44
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+DEBUG: checking 40
+INFO: Collision detected with 883e040
+WARNING: collision list filled
+INFO: Collision detected with 88594d0
+WARNING: collision list filled
+INFO: Collision detected with 885b730
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+INFO: Collision detected with 885b7c0
+WARNING: collision list filled
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 46
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 37
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 27
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 31
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG: checking 71
+DEBUG
