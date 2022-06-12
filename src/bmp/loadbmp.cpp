@@ -109,8 +109,8 @@ int load_BMP(Animation &anim) {
         "file exist?", anim.filename);
     }
     int pixlmap_location;
-    int BIG_WIDTH;
-    int BIG_HEIGHT;
+    unsigned int BIG_WIDTH;
+    unsigned int BIG_HEIGHT;
     int size;
 
     // 10 is Location of pixel data in files

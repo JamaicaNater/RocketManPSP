@@ -65,7 +65,6 @@ void ProjectileHandler::update_physics(){
                     / 1000000.0f;
         
         apply_gravity(projectiles[i]->vector);
-        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "%d", projectiles[i]->vector.y);
 
         projectiles[i]->vector.x= projectiles[i]->vector.x_i + 
             projectiles[i]->vector.vel_x * time;

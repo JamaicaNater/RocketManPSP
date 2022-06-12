@@ -12,13 +12,13 @@ struct Component
 private:
     enum ComponentType{PANEL, BUTTON, LABEL, EXTERN_IMG};
     
-    short x, y, height, width;
+    unsigned int x, y, height, width;
     char * text_field;
     //Component * children[4];
 
     unsigned int * img_matrix;
 public:
-    Component(short _x, short _y, short _height, short _width, unsigned int color){
+    Component(unsigned int _x, unsigned int _y, unsigned int _height, unsigned int _width, unsigned int color){
         x = _x;
         y = _y;
         height = _height;
@@ -31,15 +31,15 @@ public:
     //TODO DFS style dealloc
     }
 
-    void add_panel(short _x, short _y, short _height, short _width, unsigned int _color){
-        for (short y = _x; y < _height + _y; y++){
-            for (short x = _y; x < _width + _x; x++) img_matrix[width*y + x] = filter(_color, 0x8800D5);
+    void add_panel(unsigned int _x, unsigned int _y, unsigned int _height, unsigned int _width, unsigned int _color){
+        for (unsigned int y = _x; y < _height + _y; y++){
+            for (unsigned int x = _y; x < _width + _x; x++) img_matrix[width*y + x] = filter(_color, 0x8800D5);
         }
     }
 
-    void add_img(short _x, short _y, Image _img){
-        for (short y = _x; y < _img.height + _y; y++){
-            for (short x = _y; x < _img.width + _x; x++) {
+    void add_img(unsigned int _x, unsigned int _y, Image _img){
+        for (unsigned int y = _x; y < _img.height + _y; y++){
+            for (unsigned int x = _y; x < _img.width + _x; x++) {
                 if (!GFX::is_transparent(_img.img_matrix[_img.width*(y - _y) + (x - _x)]) && y < height && x < width)
                 img_matrix[width*y + x] = _img.img_matrix[_img.width*(y - _y) + (x - _x)];
             }

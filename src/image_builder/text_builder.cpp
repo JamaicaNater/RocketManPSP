@@ -27,7 +27,7 @@ Image text(const char * txt) {
     while (txt[index])
     {
         // Draw each letter in the img_matrix
-        for (int y = 0; y < font.height; y++){
+        for (unsigned int y = 0; y < font.height; y++){
             memcpy(&img_matrix[y*length*font.width + index * font.width], 
                 &font.get_frame(convert_ascii(txt[index])).img_matrix[y * font.width],
                 font.width * sizeof(unsigned int));
@@ -111,6 +111,7 @@ int convert_ascii(char c){
                 frame_num = 78;
                 break;           
             default:
+                frame_num = 0;
                 PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to match: '%c' "
                     "in text builder", c);
                 break;

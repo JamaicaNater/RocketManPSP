@@ -36,8 +36,8 @@ void ObjectHandler::spawn(Vector2d v, Image _img) {
     object->vector = v;
     object->type = type;
 
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: %0x, %d", 
-    _img.filename, _img.img_matrix, _img.height);
+    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: %0x", 
+    _img.filename, _img.img_matrix);
 
     PSP_LOGGER::assert((object_list.insert(object) > -1), 
         "Object spawned successfully");
@@ -113,12 +113,18 @@ void ObjectHandler::check_collisions(int MAX_COLLISIONS){
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
         
-        ObjectList collision_list = ObjectList(MAX_COLLISIONS);
-        if ( object_collision(objects[i], collision_list)){ 
-            on_object_collision(objects[i] ,collision_list);
-        } else if (terrain_collision(objects[i])){
+        if (MAX_COLLISIONS){
+            ObjectList collision_list = ObjectList(MAX_COLLISIONS);
+            if ( object_collision(objects[i], collision_list)){ 
+                on_object_collision(objects[i] ,collision_list);
+            } 
+        }
+        
+        if (objects[i] && terrain_collision(objects[i])){
             on_terrain_collision(objects[i]);
-        } else if (objects[i]->off_screen()) {
+        } 
+        
+        if (objects[i] && objects[i]->off_screen()) {
             on_off_screen(objects[i]);
         }
     }
