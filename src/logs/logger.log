@@ -46,23 +46,13 @@ DEBUG: (assertion) Width of 0 is divisible bycols 9
 DEBUG: (assertion) Height of 0 is divisible byrows 9
 INFO: Allocating Space
 INFO: Formatting pixels
-INFO: Successfully loaded assets/font.bmp, 1420.29 kb used by BMPs
+INFO: Successfully loaded assets/font.bmp, 1417.12 kb used by BMPs
 INFO: loading assets/missile.bmp into memory
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/missile.bmp, 1420.566406 kb used by bmps
+INFO: Succesfuly loaded assets/missile.bmp, 1417.402344 kb used by bmps
 INFO: loading assets/statusbar.bmp into memory
 INFO: Reading file
 INFO: Formatting pixels
-INFO: Succesfuly loaded assets/statusbar.bmp, 1468.566406 kb used by bmps
+INFO: Succesfuly loaded assets/statusbar.bmp, 1465.402344 kb used by bmps
 DEBUG: (assertion) text builder initalized
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) text builder initalized
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) text builder initalized
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
