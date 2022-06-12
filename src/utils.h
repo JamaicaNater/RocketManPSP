@@ -1,4 +1,5 @@
 #pragma once
+#include "image.hpp"
 
 /**
  * @brief takes in a range of number from -1 to 1 and maps the number a range of numbers
@@ -18,3 +19,7 @@ float map(float num, int range);
 unsigned int swap_endian(unsigned int data);
 
 int get_cam_position(int player_postion, int center);
+
+unsigned int filter(unsigned int pixel, unsigned int filter);
+
+Image blur(Image img);

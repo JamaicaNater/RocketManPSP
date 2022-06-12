@@ -124,7 +124,10 @@ void GameState::draw(){
    
     Image img = comp.get_image();
     GFX::simple_drawBMP(20, 50, img);
-     //free(img2.img_matrix);
+    
+    Image blury = blur(enemy_img);
+    GFX::simple_drawBMP(20, 50, blury);
+    free(blury.img_matrix);
 
     GFX::swapBuffers();
     GFX::clear();

@@ -4,6 +4,7 @@
 #include "../image.hpp"
 #include "../logger/logger.h"
 #include "../graphics/gfx.hpp"
+#include "../utils.h"
 
 
 struct Component
@@ -32,7 +33,7 @@ public:
 
     void add_panel(short _x, short _y, short _height, short _width, unsigned int _color){
         for (short y = _x; y < _height + _y; y++){
-            for (short x = _y; x < _width + _x; x++) img_matrix[width*y + x] = _color;
+            for (short x = _y; x < _width + _x; x++) img_matrix[width*y + x] = filter(_color, 0x8800D5);
         }
     }
 
