@@ -51,7 +51,7 @@ namespace GFX
 		unsigned int * ptr = (unsigned int*)psp_malloc(SCREEN_HEIGHT*SCREEN_WIDTH*4);
 		memcpy(ptr, draw_buffer, SCREEN_HEIGHT*SCREEN_WIDTH*4);
 		Image blurred_screen = Image(SCREEN_HEIGHT,SCREEN_WIDTH,ptr, "screen");
-		blur(blurred_screen);
+		blurred_screen.blur();
 		memcpy(draw_buffer, ptr, SCREEN_HEIGHT*SCREEN_WIDTH*4);
 		
 		psp_free(ptr);

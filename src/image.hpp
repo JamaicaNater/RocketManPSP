@@ -4,6 +4,7 @@
 #include <cstring>
 #include <math.h>
 #include "logger/logger.h"
+#include "utils.h"
 #include "utils/psp_malloc.h"
 #include <stdint.h>
 //#include "bmp/loadbmp.h"
@@ -15,65 +16,18 @@ struct Image
 	unsigned int height = 0;
 
 	char filename[64] = {'\0'};
-	Image(const char * _filename) {
-		int str_size = strlen(_filename) + 1;
-		if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
-		" %s too long", _filename);
-		strncpy(filename, _filename, str_size);
-	}
+	Image(const char * _filename);
 
 	Image(unsigned int _height, unsigned int _width, unsigned int * _img_matrix,
-		const char * _filename) 
-	{
-		height = _height;
-		width = _width;
-		img_matrix = _img_matrix;
+		const char * _filename);
 
-		int str_size = strlen(_filename) + 1;
-		if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
-		" %s too long", _filename);
-		strncpy(filename, _filename, str_size);
-	}
+	Image();
 
-	// Image (const Image &other){
-	// 	width = other.width;
-	// 	height = other.height;
-	// 	int size = other.width * other.height * sizeof(unsigned int);
-	// 	can_free = other.can_free;
-	// 	img_matrix = (unsigned int*)psp_malloc(size);
-	// 	memcpy(img_matrix, other.img_matrix, size);
-	// }
+	~Image();
 
-	Image() {}
-
-	~Image() {
-	}
-
-	/*
-		Implementation of the nearest neighbor resize algorithm
-		https://towardsdatascience.com/image-processing-image-scaling-algorithms-ae29aaa6b36c
-	*/
-	void resize(int h, int w){
-		uint32_t * new_img = (uint32_t *)psp_malloc(h * w * sizeof(uint32_t));
-		PSP_LOGGER::assert(img_matrix, "Image to resize initialized");
-		PSP_LOGGER::assert(new_img, "Success in creating resize img");
-
-		float scale_x = w/(float)width;
-		float scale_y = h/(float)height;
-		for (int y = 0; y < h; y++){
-			for (int x = 0; x < w; x++){
-				new_img[y * w + x] = img_matrix[(int)round(y/scale_y) * width + (int)round(x/scale_x)];
-			}
-		}
-		psp_free(img_matrix);
-		img_matrix = new_img;
-		height = h;
-		width = w;
-	}
-
-	void resize(float scale){
-		resize(scale*height, scale*width);
-	}
+	void resize(int h, int w);
+	void resize(float scale);
+	void blur();
 };
 
 struct Animation
