@@ -20,6 +20,6 @@ unsigned int swap_endian(unsigned int data);
 
 int get_cam_position(int player_postion, int center);
 
-unsigned int filter(unsigned int pixel, unsigned int filter);
+unsigned int tint_pixel(unsigned int pixel, unsigned int tint);
 
 unsigned int average_pixels( unsigned int * arr, unsigned int size);

@@ -52,6 +52,8 @@ namespace GFX
 
 	void blur_screen();
 
+	void tint_screen(uint32_t tint_factor);
+
 	void draw_progress_bar(int x, int y, int height, int width, int val, int max, uint32_t val_color, uint32_t rem_color);
 
 	void simple_drawBMP(int x, int y, Image &image);

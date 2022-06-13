@@ -52,6 +52,10 @@ namespace GFX
 		blurred_screen.blur();
 	}
 
+	void tint_screen(uint32_t tint_factor){
+		for (int i = 0; i < SCREEN_WIDTH * SCREEN_HEIGHT; i++) draw_buffer[i] = tint_pixel(draw_buffer[i], tint_factor);
+	}
+
 	void clear()
 	{
 		//memset(draw_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT);

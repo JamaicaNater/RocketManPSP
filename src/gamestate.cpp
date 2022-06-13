@@ -128,7 +128,7 @@ void GameState::draw(){
     explosion_handler.draw();
 
     ObjectManager::draw_health_bars();
-    
+    //GFX::tint_screen(0x00000022);
        
     GFX::swapBuffers();
     GFX::clear();

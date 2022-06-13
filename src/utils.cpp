@@ -25,10 +25,10 @@ int get_cam_position(int player_postion, int center) {
 	return player_postion-center;
 }
 
-unsigned int filter(unsigned int pixel, unsigned int filter){
-    unsigned char red_p = (pixel&0x000000FF), red_f = (filter&0x000000FF),
-		green_p = (pixel&0x0000FF00)>>8, green_f = (filter&0x0000FF00)>>8,
-		blue_p = (pixel&0x00FF0000)>>16, blue_f = (filter&0x00FF0000)>>16,
+unsigned int tint_pixel(unsigned int pixel, unsigned int tint){
+    unsigned char red_p = (pixel&0x000000FF), red_f = (tint&0x000000FF),
+		green_p = (pixel&0x0000FF00)>>8, green_f = (tint&0x0000FF00)>>8,
+		blue_p = (pixel&0x00FF0000)>>16, blue_f = (tint&0x00FF0000)>>16,
 		red_r, blue_r, green_r;
 
 	red_r = (red_p + (unsigned int)red_f < UINT8_MAX) ? red_p + red_f : UINT8_MAX;
