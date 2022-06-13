@@ -6,6 +6,7 @@
 #include "globals.h"
 
 
+
 float map(float num, int range) {
 	num += 1;
 	num /= 2;
@@ -61,4 +62,16 @@ unsigned int average_pixels( unsigned int *arr, unsigned int size){
 	green = average(green_arr, size);
 
 	return red | green<<8 | blue<<16;
+}
+
+void wait_button_release(SceCtrlData &ctrlData, PspCtrlButtons button){
+	while(ctrlData.Buttons & button){
+		sceCtrlReadBufferPositive(&ctrlData, 1);
+		sceKernelDelayThread(200); 
+            // Wait for button to be released
+	}
+}
+
+unsigned int get_time(){
+	return sceKernelGetSystemTimeLow() - pause_time;
 }

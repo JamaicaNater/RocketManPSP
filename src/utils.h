@@ -1,5 +1,6 @@
 #pragma once
 #include "image.hpp"
+#include <pspctrl.h>
 
 /**
  * @brief takes in a range of number from -1 to 1 and maps the number a range of numbers
@@ -23,3 +24,7 @@ int get_cam_position(int player_postion, int center);
 unsigned int tint_pixel(unsigned int pixel, unsigned int tint);
 
 unsigned int average_pixels( unsigned int * arr, unsigned int size);
+
+void wait_button_release(SceCtrlData &ctrlData, PspCtrlButtons button);
+
+unsigned int get_time();

@@ -16,6 +16,7 @@
 
 unsigned char * noise_map = (unsigned char*)malloc(MAP_SIZE);
 unsigned int curr_time = 0;
+unsigned int pause_time = 0;
 int camera_x = 0;
 
 #define printf pspDebugScreenPrintf

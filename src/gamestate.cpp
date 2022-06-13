@@ -60,41 +60,42 @@ void GameState::title_screen() {
 }
 
 void GameState::update(){
-    if (state == PAUSED) {
-        sceKernelDelayThread(200 * MILLISECOND); // So that we have 
-                //time for the start(pause) button to be released
+    if (state == PAUSED) { 
+        uint32_t pause_time_begin = sceKernelGetSystemTimeLow(); 
         
         Image img = pause_menu.get_image();
         img2 = text("Game Paused");
         pause_menu.set_pos(CENTER, 0, -20);
         pause_menu.add_panel(10,10, 10, 20, 0xFF00FF00);
         pause_menu.add_img(00,00, img2);
+        
         GFX::blur_screen();
-
         GFX::simple_drawBMP(pause_menu.x, pause_menu.y, img);
         GFX::swapBuffers();
+
+        wait_button_release(ctrlData, PSP_CTRL_START);   
         while (1)
         {
             sceCtrlReadBufferPositive(&ctrlData, 1);
             if (ctrlData.Buttons & PSP_CTRL_START){
                 state = RUNNING;
-                sceKernelDelayThread(400 * MILLISECOND); // So that we have 
-                //time for the start(pause) button to be released
-                //free(img.img_matrix);
+                
+                wait_button_release(ctrlData, PSP_CTRL_START);
+                uint32_t pause_time_end = sceKernelGetSystemTimeLow();  
+                pause_time += (pause_time_end - pause_time_begin);
                 psp_free(img2.img_matrix);
                 break;
             }
-            sceKernelDelayThread(100);
         }
     }
 
-    curr_time = sceKernelGetSystemTimeLow();
+    curr_time = get_time();
     GameState::update_player_actions();
 
-    curr_time = sceKernelGetSystemTimeLow();
+    curr_time = get_time();
     GameState::update_nonplayer_actions();
 
-    curr_time = sceKernelGetSystemTimeLow();
+    curr_time = get_time();
     GameState::update_physics();
 }
 
@@ -128,7 +129,7 @@ void GameState::draw(){
     explosion_handler.draw();
 
     ObjectManager::draw_health_bars();
-    //GFX::tint_screen(0x00000022);
+    //GFX::tint_screen(0x000000);
        
     GFX::swapBuffers();
     GFX::clear();

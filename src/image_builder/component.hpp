@@ -33,8 +33,8 @@ public:
     }
 
     void add_panel(unsigned int _x, unsigned int _y, unsigned int _height, unsigned int _width, unsigned int _color){
-        for (unsigned int y = _x; y < _height + _y; y++){
-            for (unsigned int x = _y; x < _width + _x; x++) img_matrix[width*y + x] = tint_pixel(_color, 0x8800D5);
+        for (unsigned int y = _y; y < _height + _y; y++){
+            for (unsigned int x = _x; x < _width + _x; x++) img_matrix[width*y + x] = _color;
         }
     }
 
