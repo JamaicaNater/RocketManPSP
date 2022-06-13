@@ -68,22 +68,23 @@ unsigned int average_pixels( unsigned int arr[], int size){
 	(https://en.wikipedia.org/wiki/Box_blur) algorithm, in the implementation of
 	the algorithm we take the neighbors (3 x 3) of a matrix value and average 
 	their values together
+
+	This implementation blurs the matrix inplace
 */
-Image blur(Image img){
+void blur(Image &img){
 	const unsigned int neighborhood_size_max = 9;
 	unsigned int neighborhood_size;
 	unsigned int to_avg[neighborhood_size_max];
 
 	int start_i, end_i, start_j, end_j, index;
 
-	unsigned int * new_mat = (unsigned int *)psp_malloc(
-		img.height * img.width * sizeof(unsigned int));
-
-	PSP_LOGGER::assert(new_mat, "blur matrix for %s allocated successfully",
-		img.filename);
+	unsigned int prev_row[img.width];
+	unsigned int prev_item;
 
 	for (unsigned int y = 0; y <= img.height; y++){
-		for (unsigned int x = 0; x < img.width; x++){		
+		if (y>0) memcpy(prev_row, img.img_matrix + (y-1)*img.width, img.width * sizeof(unsigned int));
+		for (unsigned int x = 0; x < img.width; x++){
+			if (x>0) prev_item = img.img_matrix[y*img.width + x];		
 			start_i = (y > 0) ? -1 : 0;
 			start_j = (x > 0) ? -1 : 0;
 
@@ -93,14 +94,18 @@ Image blur(Image img){
 			index = 0;
 			for (int i = start_i; i <= end_i; i++){
 				for (int j = start_i; j <= end_j; j++){
-					to_avg[index] = img.img_matrix[(y+i) * img.width + (x+j)];
+					// We have already modified the top values
+					if (i == -1) to_avg[index] = prev_row[(x+j)]; 
+					// We have already modified the left value
+					else if (i == 0 && j == -1) to_avg[index] = prev_item;
+					// We have not modified these values
+					else to_avg[index] = img.img_matrix[(y+i) * img.width + (x+j)];
 					index++;
 				}
 			}
-
+			//PSP_LOGGER::log(PSP_LOGGER::DEBUG, "x %u y %u", x,y);
 			neighborhood_size = (end_i - start_i + 1) * (end_j - start_j + 1);
-			new_mat[y*img.width + x] = average_pixels(to_avg, neighborhood_size);
+			img.img_matrix[y*img.width + x] = average_pixels(to_avg, neighborhood_size);
 		}
-	}
-	return Image(img.height, img.width, new_mat, "blur");
+	} 
 }

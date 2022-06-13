@@ -22,4 +22,4 @@ int get_cam_position(int player_postion, int center);
 
 unsigned int filter(unsigned int pixel, unsigned int filter);
 
-Image blur(Image img);
+void blur(Image &img);

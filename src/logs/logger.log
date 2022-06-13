@@ -135,8 +135,11 @@ DEBUG-H: inset 3520 at 89bad10
 DEBUG: (assertion) psp_malloc inserted 3520bytes successfully
 DEBUG-H: Allocated 3520 at 89bad10. Info 
 DEBUG-H: 19 Objects in memory allocated to 1549156 bytes
-DEBUG-H: inset 43200 at 89bbae0
-DEBUG: (assertion) psp_malloc inserted 43200bytes successfully
-DEBUG-H: Allocated 43200 at 89bbae0. Info 
-DEBUG-H: 20 Objects in memory allocated to 1592356 bytes
-DEBUG: (assertion) blur matrix for component allocated successfully
+DEBUG-H: inset 557056 at 89bbae0
+DEBUG: (assertion) psp_malloc inserted 557056bytes successfully
+DEBUG-H: Allocated 557056 at 89bbae0. Info 
+DEBUG-H: 20 Objects in memory allocated to 2106212 bytes
+DEBUG-H: freed 557056 bytes
+DEBUG: (assertion) psp_free call on 89bbae0 successful
+DEBUG-H: Attempting to free 89bbae0
+DEBUG-H: Successfully freed 89bbae0. 19 Objects in memory allocated to 1549156 bytes

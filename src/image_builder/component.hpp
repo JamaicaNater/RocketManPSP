@@ -47,6 +47,48 @@ public:
         }
     }
 
+    void set_pos(pivots pos, int padding_x = 0, int padding_y = 0){
+        int scr_cen_x = SCREEN_WIDTH_RES/2;
+        int scr_cen_y = SCREEN_HEIGHT/2;
+
+        switch (pos)
+			{
+			case CENTER:
+				x = scr_cen_x - width/2 + padding_x;
+                y = scr_cen_y - height/2 + padding_y;
+				break;
+			case CENTER_LEFT:
+				x = 0 + padding_x;
+                y = scr_cen_y - height/2 + padding_y;
+				break;
+			case CENTER_RIGHT:
+				x = SCREEN_WIDTH_RES - width + padding_x;
+                y = scr_cen_y - height/2 + padding_y;
+				break;
+			case TOP_CENTER:
+				x = scr_cen_x - width/2 + padding_x;
+                y = 0 + padding_y;
+				break;
+			case BOTTOM_CENTER:
+				x = scr_cen_x - width/2 + padding_x;
+                y = SCREEN_HEIGHT - height + padding_y;
+				break;
+			case TOP_LEFT:
+				x = 0 + padding_x;
+                y = 0 + padding_y;
+				break;
+			case TOP_RIGHT:
+				x = SCREEN_WIDTH_RES - width + padding_x;
+                y = 0 + padding_y;
+				break;
+			\
+			default:
+				PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to match a pivot"
+					"");
+				break;
+			}
+    }
+
     Image get_image() {
         return Image(height, width, img_matrix, "component");
     }

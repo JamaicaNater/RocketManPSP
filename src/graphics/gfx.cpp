@@ -47,9 +47,19 @@ namespace GFX
 		load_BMP(bground);		
 	}
 
+	void blur_screen(){
+		unsigned int * ptr = (unsigned int*)psp_malloc(SCREEN_HEIGHT*SCREEN_WIDTH*4);
+		memcpy(ptr, draw_buffer, SCREEN_HEIGHT*SCREEN_WIDTH*4);
+		Image blurred_screen = Image(SCREEN_HEIGHT,SCREEN_WIDTH,ptr, "screen");
+		blur(blurred_screen);
+		memcpy(draw_buffer, ptr, SCREEN_HEIGHT*SCREEN_WIDTH*4);
+		
+		psp_free(ptr);
+	}
+
 	void clear()
 	{
-		memset(draw_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT);
+		//memset(draw_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT);
 	}
 
 	void swapBuffers()

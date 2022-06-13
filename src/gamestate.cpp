@@ -66,9 +66,10 @@ void GameState::update(){
         
         Image img = pause_menu.get_image();
         img2 = text("Game Paused");
-        
+        pause_menu.set_pos(CENTER, 0, -20);
         pause_menu.add_panel(10,10, 10, 20, 0xFF00FF00);
         pause_menu.add_img(00,00, img2);
+        GFX::blur_screen();
 
         GFX::simple_drawBMP(pause_menu.x, pause_menu.y, img);
         GFX::swapBuffers();
@@ -127,6 +128,7 @@ void GameState::draw(){
     explosion_handler.draw();
 
     ObjectManager::draw_health_bars();
+    
        
     GFX::swapBuffers();
     GFX::clear();

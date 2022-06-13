@@ -50,6 +50,8 @@ namespace GFX
 	 */
 	void drawTerrain();
 
+	void blur_screen();
+
 	void draw_progress_bar(int x, int y, int height, int width, int val, int max, uint32_t val_color, uint32_t rem_color);
 
 	void simple_drawBMP(int x, int y, Image &image);
