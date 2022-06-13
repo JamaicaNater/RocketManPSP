@@ -34,7 +34,7 @@ namespace GFX
 	{
 		draw_buffer = static_cast<uint32_t *>( sceGeEdramGetAddr() );
 		disp_buffer = static_cast<uint32_t *>( (uint32_t*)sceGeEdramGetAddr() + 
-			(SCREEN_WIDTH*SCREEN_HEIGHT));
+			(SCREEN_WIDTH*480));
 
 		sceDisplaySetMode(0, 480, 272);
 		sceDisplaySetFrameBuf(disp_buffer, 512, PSP_DISPLAY_PIXEL_FORMAT_8888, 1);
@@ -49,7 +49,7 @@ namespace GFX
 
 	void clear()
 	{
-		memset(draw_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT *  sizeof(uint32_t));
+		memset(draw_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT);
 	}
 
 	void swapBuffers()
