@@ -3,6 +3,7 @@
 /Testspace/
 /build/
 /src/Debug/
+/logs/
 *.o
 *.elf
 *.prx
