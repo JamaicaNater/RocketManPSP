@@ -51,7 +51,7 @@ void GameState::title_screen() {
 		if (ctrlData.Buttons & PSP_CTRL_START){
 			sceKernelTerminateThread(home_thid);
 			sceKernelDeleteThread(home_thid);
-            sceKernelDelayThread(100 * MILLISECOND); // So that we have 
+            sceKernelDelayThread(200 * MILLISECOND); // So that we have 
             //time for the start(pause) button to be released
 			break;
 		}
@@ -77,7 +77,7 @@ void GameState::update(){
             sceCtrlReadBufferPositive(&ctrlData, 1);
             if (ctrlData.Buttons & PSP_CTRL_START){
                 state = RUNNING;
-                sceKernelDelayThread(200 * MILLISECOND); // So that we have 
+                sceKernelDelayThread(400 * MILLISECOND); // So that we have 
                 //time for the start(pause) button to be released
                 //free(img.img_matrix);
                 free(img2.img_matrix);
