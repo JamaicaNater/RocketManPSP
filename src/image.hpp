@@ -1,8 +1,10 @@
 #pragma once
+
 #include <cstdlib>
 #include <cstring>
 #include <math.h>
 #include "logger/logger.h"
+#include "utils/psp_malloc.h"
 #include <stdint.h>
 //#include "bmp/loadbmp.h"
 
