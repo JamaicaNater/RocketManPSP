@@ -48,13 +48,8 @@ namespace GFX
 	}
 
 	void blur_screen(){
-		unsigned int * ptr = (unsigned int*)psp_malloc(SCREEN_HEIGHT*SCREEN_WIDTH*4);
-		memcpy(ptr, draw_buffer, SCREEN_HEIGHT*SCREEN_WIDTH*4);
-		Image blurred_screen = Image(SCREEN_HEIGHT,SCREEN_WIDTH,ptr, "screen");
+		Image blurred_screen = Image(SCREEN_HEIGHT,SCREEN_WIDTH,draw_buffer, "screen");
 		blurred_screen.blur();
-		memcpy(draw_buffer, ptr, SCREEN_HEIGHT*SCREEN_WIDTH*4);
-		
-		psp_free(ptr);
 	}
 
 	void clear()
