@@ -21,7 +21,7 @@ ObjectHandler::~ObjectHandler(){
         "with list of size %d", object_list.MAX_SIZE);
 
     object_list.~ObjectList();
-    free(&object_list);
+    psp_free(&object_list);
 }
 
 bool ObjectHandler::can_spawn(){

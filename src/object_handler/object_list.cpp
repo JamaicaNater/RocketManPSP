@@ -1,4 +1,5 @@
 #include "object_list.h"
+#include "../utils/psp_malloc.h"
 
 int ObjectList::_insert(Object * value){
     int i = MAX_SIZE;
@@ -37,7 +38,7 @@ ObjectList::ObjectList(){}
 ObjectList::ObjectList(int _max_size) {
     MAX_SIZE = _max_size;
     //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Allocating %d Objects", MAX_SIZE);
-    objects = (Object**)malloc(MAX_SIZE * sizeof(Object *));
+    objects = (Object**)psp_malloc(MAX_SIZE * sizeof(Object *));
     memset(objects, 0, MAX_SIZE * sizeof(Object *));
 }
 
@@ -46,7 +47,7 @@ ObjectList::ObjectList(const ObjectList &other){
     //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "(copy constructor) Allocating %d "
     //    "Objects", MAX_SIZE);
 
-    objects = (Object**)malloc(MAX_SIZE * sizeof(Object *));
+    objects = (Object**)psp_malloc(MAX_SIZE * sizeof(Object *));
     memset(objects, 0, MAX_SIZE * sizeof(Object *));
 }
 
@@ -57,7 +58,7 @@ ObjectList::~ObjectList() {
     // for (int i = 0; i < MAX_SIZE; i++){
     //      if (objects[i]) free(objects[i]);
     // }
-    free(objects);
+    psp_free(objects);
 }
 
 Object * ObjectList::get(int index) {

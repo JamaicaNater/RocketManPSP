@@ -14,7 +14,7 @@ AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity,
 
 AnimationHandler::~AnimationHandler()
 {
-    free(frame_data);
+    psp_free(frame_data);
     if(animation) animation->~Animation();
 }
 
@@ -39,7 +39,7 @@ void AnimationHandler::update_frames(){
 }
 
 void AnimationHandler::init(Animation * _animation){
-    frame_data = (FrameData*)malloc(object_list.MAX_SIZE * sizeof(FrameData));
+    frame_data = (FrameData*)psp_malloc(object_list.MAX_SIZE * sizeof(FrameData));
     for (int i = 0; i < object_list.MAX_SIZE; i++) frame_data[i] = {0,0};
 
     load_BMP(*_animation);

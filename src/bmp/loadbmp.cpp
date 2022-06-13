@@ -4,6 +4,7 @@
 #include "stdlib.h"
 #include "math.h"
 
+#include "../utils/psp_malloc.h"
 #include "../utils.h"
 #include "../logger/logger.h"
 
@@ -39,7 +40,7 @@ int load_BMP(Image &img) {
 
     int size = img.width * img.height;
 
-    img.img_matrix = (unsigned int *)malloc(size * sizeof(unsigned int));
+    img.img_matrix = (unsigned int *)psp_malloc(size * sizeof(unsigned int));
     if (!img.img_matrix) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, 
         "Failed memory allocation");
     
@@ -136,7 +137,7 @@ int load_BMP(Animation &anim) {
     size = anim.width * anim.height;
 
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Allocating Space");
-    anim.img_matrices = (unsigned int *)malloc(sizeof(unsigned int) 
+    anim.img_matrices = (unsigned int *)psp_malloc(sizeof(unsigned int) 
         * anim.rows * anim.cols * size);
     if (!anim.img_matrices) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, 
         "Failed memory allocation");

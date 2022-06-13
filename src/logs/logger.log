@@ -1,2849 +1,1366 @@
+DEBUG-H: Init: 0 Objects in memory allocated to 0 bytes
 INFO: loading assets/dirt.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 16384bytes successfully
+DEBUG-H: Allocated 16384 at 8841090. Info 
+DEBUG-H: 1 Objects in memory allocated to 16384 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/dirt.bmp, 16.000000 kb used by bmps
 INFO: loading assets/sky.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 32768bytes successfully
+DEBUG-H: Allocated 32768 at 8845170. Info 
+DEBUG-H: 2 Objects in memory allocated to 49152 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/sky.bmp, 48.000000 kb used by bmps
 INFO: loading assets/grass.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 16384bytes successfully
+DEBUG-H: Allocated 16384 at 884d180. Info 
+DEBUG-H: 3 Objects in memory allocated to 65536 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/grass.bmp, 64.000000 kb used by bmps
 INFO: loading assets/background.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 39200bytes successfully
+DEBUG-H: Allocated 39200 at 8851190. Info 
+DEBUG-H: 4 Objects in memory allocated to 104736 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/background.bmp, 102.281250 kb used by bmps
 DEBUG: Calling ObjectList for objects
+DEBUG: (assertion) psp_malloc inserted 64bytes successfully
+DEBUG-H: Allocated 64 at 8840c70. Info 
+DEBUG-H: 5 Objects in memory allocated to 104800 bytes
 DEBUG: Calling ObjectList for objects
+DEBUG: (assertion) psp_malloc inserted 512bytes successfully
+DEBUG-H: Allocated 512 at 8840cd0. Info 
+DEBUG-H: 6 Objects in memory allocated to 105312 bytes
 DEBUG: Calling ObjectList for objects
+DEBUG: (assertion) psp_malloc inserted 256bytes successfully
+DEBUG-H: Allocated 256 at 8840ef0. Info 
+DEBUG-H: 7 Objects in memory allocated to 105568 bytes
 DEBUG: Calling ObjectList for objects
+DEBUG: (assertion) psp_malloc inserted 8bytes successfully
+DEBUG-H: Allocated 8 at 8841010. Info 
+DEBUG-H: 8 Objects in memory allocated to 105576 bytes
+DEBUG: (assertion) psp_malloc inserted 43200bytes successfully
+DEBUG-H: Allocated 43200 at 885ab50. Info 
+DEBUG-H: 9 Objects in memory allocated to 148776 bytes
 INFO: Init Gamestate
 INFO: loading assets/missile.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 288bytes successfully
+DEBUG-H: Allocated 288 at 8865830. Info 
+DEBUG-H: 10 Objects in memory allocated to 149064 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/missile.bmp, 102.562500 kb used by bmps
 INFO: loading assets/player_rocket.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 736bytes successfully
+DEBUG-H: Allocated 736 at 8865960. Info 
+DEBUG-H: 11 Objects in memory allocated to 149800 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player_rocket.bmp, 103.281250 kb used by bmps
 INFO: loading assets/player.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 3072bytes successfully
+DEBUG-H: Allocated 3072 at 8865c50. Info 
+DEBUG-H: 12 Objects in memory allocated to 152872 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player.bmp, 106.281250 kb used by bmps
 INFO: loading assets/enemy.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 9400bytes successfully
+DEBUG-H: Allocated 9400 at 8866860. Info 
+DEBUG-H: 13 Objects in memory allocated to 162272 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/enemy.bmp, 115.460938 kb used by bmps
+DEBUG: (assertion) psp_malloc inserted 1024bytes successfully
+DEBUG-H: Allocated 1024 at 8868d20. Info 
+DEBUG-H: 14 Objects in memory allocated to 163296 bytes
 INFO: loading assets/explosion.bmp into memory
 DEBUG: (assertion) Width of 0 is divisible bycols 5
 DEBUG: (assertion) Height of 0 is divisible byrows 3
 INFO: Allocating Space
+DEBUG: (assertion) psp_malloc inserted 1306980bytes successfully
+DEBUG-H: Allocated 1306980 at 8869540. Info 
+DEBUG-H: 15 Objects in memory allocated to 1470276 bytes
 INFO: Formatting pixels
 INFO: Successfully loaded assets/explosion.bmp, 1391.81 kb used by BMPs
 INFO: loading assets/font.bmp into memory
 DEBUG: (assertion) Width of 0 is divisible bycols 9
 DEBUG: (assertion) Height of 0 is divisible byrows 9
 INFO: Allocating Space
+DEBUG: (assertion) psp_malloc inserted 25920bytes successfully
+DEBUG-H: Allocated 25920 at 89a86b0. Info 
+DEBUG-H: 16 Objects in memory allocated to 1496196 bytes
 INFO: Formatting pixels
 INFO: Successfully loaded assets/font.bmp, 1417.12 kb used by BMPs
 INFO: loading assets/missile.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 288bytes successfully
+DEBUG-H: Allocated 288 at 8865480. Info 
+DEBUG-H: 17 Objects in memory allocated to 1496484 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/missile.bmp, 1417.402344 kb used by bmps
 INFO: loading assets/statusbar.bmp into memory
+DEBUG: (assertion) psp_malloc inserted 49152bytes successfully
+DEBUG-H: Allocated 49152 at 89aec00. Info 
+DEBUG-H: 18 Objects in memory allocated to 1545636 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/statusbar.bmp, 1465.402344 kb used by bmps
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866860
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866860
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/missile.bmp ptr: 8865830
+DEBUG: (assertion) Object spawned successfully
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545652 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545652 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545668 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545668 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545684 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545684 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545700 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545700 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545716 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545716 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545732 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545732 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545748 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545748 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545764 bytes
+INFO: Collision detected with 88655b0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8869540
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj at x:194 y:116, coll_with:1
+DEBUG-H: freed 613632955515928576 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545764 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545784 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 425201762304 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545784 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545804 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 420906795008 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545804 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545824 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 416611827712 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545824 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545844 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 412316860416 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545844 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545864 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 408021893120 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545864 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545884 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 403726925824 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545884 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545904 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 399431958528 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545904 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545924 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 395136991232 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545924 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545944 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 390842023936 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545944 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545964 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 386547056640 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545964 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1545984 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 382252089344 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1545984 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8865830
+DEBUG: (assertion) Object spawned successfully
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546000 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546000 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546020 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 377957122048 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546020 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546036 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546036 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546056 bytes
+INFO: Collision detected with 89bac10
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 425201762304 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546056 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546072 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546072 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546092 bytes
+INFO: Collision detected with 89bac10
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 420906795008 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546092 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546108 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546108 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546128 bytes
+INFO: Collision detected with 89bac10
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 416611827712 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546128 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546144 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546144 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546164 bytes
+INFO: Collision detected with 89bac10
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 412316860416 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546164 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546180 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546180 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546200 bytes
+INFO: Collision detected with 89bac10
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 408021893120 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546200 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546216 bytes
+INFO: Collision detected with 88655b0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8869540
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj at x:185 y:111, coll_with:1
+DEBUG-H: freed 613632955515928576 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546216 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546236 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 352187318272 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546236 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546256 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546256 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546276 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 347892350976 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546276 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546296 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546296 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546316 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 343597383680 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546316 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546336 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546336 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546356 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 339302416384 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546356 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546376 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546376 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546396 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 335007449088 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546396 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546416 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546416 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546436 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 330712481792 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546436 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546456 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546456 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546476 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 326417514496 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546476 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546496 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546496 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546516 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 322122547200 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546516 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546536 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546536 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546556 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 317827579904 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546556 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546576 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546576 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546596 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 313532612608 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546596 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546616 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546616 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546636 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 309237645312 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546636 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546656 bytes
+INFO: Collision detected with 8865640
+INFO: Collision detected with 88655b0
+DEBUG-H: freed 614272613585256448 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546656 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8865830
+DEBUG: (assertion) Object spawned successfully
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546672 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546672 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546692 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 425201762304 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546692 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546708 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546708 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546728 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 420906795008 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546728 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546744 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546744 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546764 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 416611827712 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546764 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546780 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546780 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546800 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 412316860416 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546800 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546816 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546816 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546836 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 408021893120 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546836 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546852 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546852 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546872 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 403726925824 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546872 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546888 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546888 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546908 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 399431958528 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546908 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546924 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546924 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546944 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 395136991232 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546944 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546960 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546960 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546980 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 390842023936 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1546980 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1546996 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1546996 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547016 bytes
+INFO: Collision detected with 89bad30
+INFO: Collision detected with 8865640
+DEBUG-H: freed 386547056640 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547016 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547032 bytes
+INFO: Collision detected with 8865640
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8869540
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj at x:220 y:130, coll_with:1
+DEBUG-H: freed 613632955515928576 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547032 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547052 bytes
+INFO: Collision detected with 8865640
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547052 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547072 bytes
+INFO: Collision detected with 8865640
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547072 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547092 bytes
+INFO: Collision detected with 8865640
+DEBUG-H: freed 103079215104 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547092 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547112 bytes
+INFO: Collision detected with 8865640
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547112 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866860
+DEBUG: (assertion) Object spawned successfully
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547132 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 425201762304 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547132 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547152 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 614273232060547072 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547152 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547172 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 420906795008 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547172 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547192 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 614273232060547072 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547192 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547212 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 416611827712 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547212 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547232 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 614273232060547072 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547232 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547252 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 412316860416 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547252 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547272 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 614273232060547072 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547272 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8865830
+DEBUG: (assertion) Object spawned successfully
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547288 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547288 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547308 bytes
+INFO: Collision detected with 89baee0
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 425201762304 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547308 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547328 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 614273232060547072 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547328 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547344 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547344 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547364 bytes
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 403726925824 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547364 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547380 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547380 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547400 bytes
+INFO: Collision detected with 89baee0
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 420906795008 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547400 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547416 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547416 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547436 bytes
+INFO: Collision detected with 89baee0
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 416611827712 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547436 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547452 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547452 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547472 bytes
+INFO: Collision detected with 89baee0
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 412316860416 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547472 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547488 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547488 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547508 bytes
+INFO: Collision detected with 89baee0
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 408021893120 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547508 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547524 bytes
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547524 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547544 bytes
+INFO: Collision detected with 89baee0
+INFO: Collision detected with 89bae50
+INFO: Collision detected with 8865640
+DEBUG-H: freed 403726925824 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547544 bytes
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547560 bytes
+INFO: Collision detected with 8865640
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8869540
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj at x:203 y:120, coll_with:1
+DEBUG-H: freed 613632955515928576 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547560 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547580 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 377957122048 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547580 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547600 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547600 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547620 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 373662154752 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547620 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547640 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547640 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547660 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 369367187456 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547660 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547680 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547680 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547700 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 365072220160 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547700 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547720 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547720 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547740 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 360777252864 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547740 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547760 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547760 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547780 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 356482285568 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547780 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547800 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547800 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547820 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 352187318272 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547820 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547840 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547840 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547860 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 347892350976 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547860 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547880 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547880 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547900 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 343597383680 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547900 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547920 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547920 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547940 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 339302416384 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547940 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547960 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1547960 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1547980 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 335007449088 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1547980 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548000 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548000 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548020 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 330712481792 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548020 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548040 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548040 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548060 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 326417514496 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548060 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548080 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548080 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548100 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 322122547200 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548100 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548120 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548120 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548140 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 317827579904 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548140 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548160 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 0 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548160 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548180 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 313532612608 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548180 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548200 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 309237645312 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548200 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548220 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 304942678016 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548220 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548240 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 300647710720 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548240 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548260 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 296352743424 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548260 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548280 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 292057776128 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548280 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548300 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 287762808832 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548300 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548320 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 283467841536 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548320 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548340 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 279172874240 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548340 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548360 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 274877906944 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548360 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548380 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 270582939648 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548380 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548400 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 266287972352 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548400 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865760. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548420 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 261993005056 bytes
+DEBUG: (assertion) psp_free call on 8865760bytes successfully
+DEBUG-H: Attempting to free 8865760
+DEBUG-H: Successfully freed 8865760.18 Objects in memory allocated to 1548420 bytes
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 8865810. Info 
+DEBUG-H: 19 Objects in memory allocated to 1548440 bytes
+INFO: Collision detected with 89bae50
+DEBUG-H: freed 257698037760 bytes
+DEBUG: (assertion) psp_free call on 8865810bytes successfully
+DEBUG-H: Attempting to free 8865810
+DEBUG-H: Successfully freed 8865810.18 Objects in memory allocated to 1548440 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866860
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866860
+DEBUG: (assertion) Object spawned successfully
+DEBUG: Spawned:assets/enemy.bmp ptr: 8866860
 DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) text builder initalized
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) text builder initalized
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) text builder initalized
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) text builder initalized
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) text builder initalized
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: (assertion) text builder initalized
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:4
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:4
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-INFO: Collision detected with 89b9ea0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89ba050
-INFO: Collision detected with 89b9fc0
-INFO: Collision detected with 89b9f30
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-INFO: Collision detected with 8864840
-WARNING: collision list filled
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-INFO: Collision detected with 8864840
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-INFO: Collision detected with 8864840
-WARNING: collision list filled
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:4
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:4
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 89b9e10
-INFO: Collision detected with 8864960
-INFO: Collision detected with 88648d0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba0e0
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:3
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8864840
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-WARNING: collision list filled
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 88647b0
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:2
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89ba170
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:2
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:1
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:1
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 8859cc0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89ba560
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:2
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:161 y:141, coll_with:1
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:166 y:141, coll_with:1
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89baa70
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:168 y:141, coll_with:2
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:172 y:141, coll_with:1
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bb400
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:184 y:172, on terrain
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bae60
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bae60
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:176 y:139, coll_with:1
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb640
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb640
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:184 y:172, on terrain
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bb7f0
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb7f0
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb7f0
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:197 y:179, on terrain
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb250
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bb250
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:181 y:136, coll_with:1
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bba30
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bba30
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bba30
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:197 y:179, on terrain
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bbbe0
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbbe0
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbbe0
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:197 y:179, on terrain
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bb760
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bb760
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:185 y:133, coll_with:1
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbe20
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbe20
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbe20
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:206 y:168, on terrain
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbb50
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bbb50
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:163 y:140, coll_with:1
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc180
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc180
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc180
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc180
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc180
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc180
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:177 y:164, on terrain
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc2a0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc2a0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc2a0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc2a0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc2a0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc2a0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bbf40
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:186 y:140, coll_with:1
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bbf40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 883ec40
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc3c0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc3c0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc3c0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc3c0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc3c0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc3c0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc3c0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc3c0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc3c0
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:210 y:167, on terrain
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc0f0
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc4e0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc4e0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc4e0
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc4e0
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc4e0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc4e0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc4e0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc4e0
-INFO: Collision detected with 89bc0f0
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:205 y:147, coll_with:1
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc0f0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc690
-INFO: Collision detected with 89bc570
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:246 y:139, coll_with:1
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc7b0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc7b0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc7b0
-INFO: Collision detected with 89bc570
-INFO: Collision detected with 89bc7b0
-INFO: Collision detected with 89bc570
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:228 y:129, coll_with:1
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc8d0
-INFO: Collision detected with 89bc8d0
-INFO: Collision detected with 89bc8d0
-INFO: Collision detected with 89bc8d0
-INFO: Collision detected with 89bc8d0
-INFO: Collision detected with 89bc8d0
-DEBUG: Spawned:assets/enemy.bmp ptr: 8865a60
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc8d0
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc8d0
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc8d0
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc8d0
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:264 y:148, on terrain
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-DEBUG: Spawned:assets/missile.bmp ptr: 8864a30
-DEBUG: (assertion) Object spawned successfully
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bca80
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bca80
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bca80
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bca80
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bca80
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bca80
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bca80
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bca80
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bca80
-DEBUG: Spawned:Non-Loadable Animation frame ptr: 8868740
-DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:264 y:148, on terrain
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-INFO: Collision detected with 89bc960
-DEBUG: (assertion) text builder initalized

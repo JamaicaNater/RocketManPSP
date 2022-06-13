@@ -14,7 +14,7 @@ SceUID fd = sceIoOpen(logger_file, PSP_O_WRONLY | PSP_O_CREAT | PSP_O_TRUNC, 077
 #endif
 
 namespace PSP_LOGGER {
-    char levels_text[5][10] = {"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"};
+    char levels_text[6][10] = {"DEBUG-H", "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"};
     
     void log(unsigned char level, const char* format, ... ) {
         #ifdef PSP_LOGGING

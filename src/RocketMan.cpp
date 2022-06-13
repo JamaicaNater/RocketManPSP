@@ -9,6 +9,7 @@
 #include "utils.h"
 #include "logger/logger.h"
 #include "assert.h"
+#include "utils/psp_malloc.h"
 
 #include "graphics/gfx.hpp"
 #include "../Dependencies/FastNoise/FastNoise.hpp"
@@ -52,6 +53,7 @@ void setupCallbacks()
 
 int main()
 {  	
+	init_malloc();
 	setupCallbacks();
 	pspDebugScreenInit();
 

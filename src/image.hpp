@@ -46,7 +46,7 @@ struct Image
 		https://towardsdatascience.com/image-processing-image-scaling-algorithms-ae29aaa6b36c
 	*/
 	void resize(int h, int w){
-		uint32_t * new_img = (uint32_t *)malloc(h * w * sizeof(uint32_t));
+		uint32_t * new_img = (uint32_t *)psp_malloc(h * w * sizeof(uint32_t));
 		PSP_LOGGER::assert(img_matrix, "Image to resize initialized");
 		PSP_LOGGER::assert(new_img, "Success in creating resize img");
 
@@ -57,7 +57,7 @@ struct Image
 				new_img[y * w + x] = img_matrix[(int)round(y/scale_y) * width + (int)round(x/scale_x)];
 			}
 		}
-		free(img_matrix);
+		psp_free(img_matrix);
 		img_matrix = new_img;
 		height = h;
 		width = w;

@@ -5,6 +5,7 @@
 #include "../logger/logger.h"
 #include "../graphics/gfx.hpp"
 #include "../utils.h"
+#include "utils/psp_malloc.h"
 
 
 struct Component
@@ -24,8 +25,8 @@ public:
         height = _height;
         width = _width;
 
-        img_matrix = (unsigned int *)malloc(width * height * sizeof(unsigned int));
-        for (int i = 0; i < width * height; i++) img_matrix[i] = color;
+        img_matrix = (unsigned int *)psp_malloc(width * height * sizeof(unsigned int));
+        for (unsigned int i = 0; i < width * height; i++) img_matrix[i] = color;
     }
     ~Component(){
     //TODO DFS style dealloc

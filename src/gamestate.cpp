@@ -80,7 +80,7 @@ void GameState::update(){
                 sceKernelDelayThread(400 * MILLISECOND); // So that we have 
                 //time for the start(pause) button to be released
                 //free(img.img_matrix);
-                free(img2.img_matrix);
+                psp_free(img2.img_matrix);
                 break;
             }
             sceKernelDelayThread(100);

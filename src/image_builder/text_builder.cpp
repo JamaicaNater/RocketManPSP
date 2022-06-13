@@ -1,4 +1,5 @@
 #include "../bmp/loadbmp.h"
+#include "../utils/psp_malloc.h"
 #include "text_builder.h"
 #include <cstdlib>
 
@@ -19,7 +20,7 @@ Image text(const char * txt) {
     int letter_size = font.height * font.width;
     int length = strlen(txt);
 
-    unsigned int * img_matrix = (unsigned int *)malloc( letter_size
+    unsigned int * img_matrix = (unsigned int *)psp_malloc( letter_size
         * length * sizeof(unsigned int));
     if(!img_matrix) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to allocate"
         "memory for text builder");

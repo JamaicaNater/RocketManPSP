@@ -1,5 +1,6 @@
 #include <pspthreadman.h>
 #include <cstdlib>
+#include "utils/psp_malloc.h"
 
 #include "utils.h"
 #include "globals.h"
@@ -75,7 +76,7 @@ Image blur(Image img){
 
 	int start_i, end_i, start_j, end_j, index;
 
-	unsigned int * new_mat = (unsigned int *)malloc(
+	unsigned int * new_mat = (unsigned int *)psp_malloc(
 		img.height * img.width * sizeof(unsigned int));
 
 	PSP_LOGGER::assert(new_mat, "blur matrix for %s allocated successfully",
