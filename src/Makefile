@@ -3,7 +3,7 @@ OBJS = RocketMan.o graphics/gfx.o bmp/loadbmp.o utils.o logger/logger.o gamestat
 object_handler/object_list.o object_handler/object_handler.o object_handler/enemy_handler.o \
 object_handler/projectile_handler.o object_handler/animation_handler.o physics/collisions.o \
 object_handler/global_object_manager.o object_handler/player_handler.o physics/physics.o \
-image_builder/text_builder.o utils/psp_malloc.o image.o
+image_builder/text_builder.o utils/psp_malloc.o image.o animation.o
 LIBS = -lstdc++ -lm 
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum -lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp -lpspmath
 

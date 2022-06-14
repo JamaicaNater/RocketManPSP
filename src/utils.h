@@ -1,5 +1,5 @@
 #pragma once
-#include "image.hpp"
+#include "image.h"
 #include <pspctrl.h>
 #include "stdint.h"
 

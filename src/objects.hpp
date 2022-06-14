@@ -5,7 +5,7 @@
 
 #include "Vector2d.hpp"
 #include "logger/logger.h"
-#include "image.hpp"
+#include "image.h"
 #include "globals.h"
 
 class Object

@@ -1,4 +1,4 @@
-#include "../image.hpp"
+#include "../image.h"
 
 void init_text_builder();
 

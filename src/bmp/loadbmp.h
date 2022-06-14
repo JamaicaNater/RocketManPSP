@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "../objects.hpp"
+#include "../animation.h"
 
 //TODO redocument this
 /**
