@@ -39,7 +39,7 @@ private:
 
     PlayerHandler player_handler = PlayerHandler(PLAYER_SPEED, &projectile_handler);
 
-    Component pause_menu = Component(180,50,120,90, 0xFF0000FF);
+    Component pause_menu = Component(180,50,120,90, 0xC0C0C0);
 
 	int screen_center = SCREEN_WIDTH/2;
     SceCtrlData ctrlData;
@@ -61,6 +61,8 @@ private:
     void update_player_actions();
 
     void update_physics();
+
+    void on_pause();
 public:
     enum GameStates{RUNNING, PAUSED, TERMINATED};
     static GameStates state;

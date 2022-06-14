@@ -59,34 +59,38 @@ void GameState::title_screen() {
 	}
 }
 
+void GameState::on_pause(){
+    uint32_t pause_time_begin = sceKernelGetSystemTimeLow(); 
+        
+    Image img = pause_menu.get_image();
+    img2 = text("Game Paused");
+    pause_menu.set_pos(CENTER, 0, -20);
+    pause_menu.add_panel(10,10, 10, 20, 0x00FF00);
+    pause_menu.add_img(00,00, img2);
+    
+    GFX::blur_screen();
+    GFX::simple_drawBMP(pause_menu.x, pause_menu.y, img);
+    GFX::swapBuffers();
+
+    wait_button_release(ctrlData, PSP_CTRL_START);   
+    while (1)
+    {
+        sceCtrlReadBufferPositive(&ctrlData, 1);
+        if (ctrlData.Buttons & PSP_CTRL_START){
+            state = RUNNING;
+            
+            wait_button_release(ctrlData, PSP_CTRL_START);
+            uint32_t pause_time_end = sceKernelGetSystemTimeLow();  
+            pause_time += (pause_time_end - pause_time_begin);
+            psp_free(img2.img_matrix);
+            break;
+        }
+    }
+}
+
 void GameState::update(){
     if (state == PAUSED) { 
-        uint32_t pause_time_begin = sceKernelGetSystemTimeLow(); 
-        
-        Image img = pause_menu.get_image();
-        img2 = text("Game Paused");
-        pause_menu.set_pos(CENTER, 0, -20);
-        pause_menu.add_panel(10,10, 10, 20, 0xFF00FF00);
-        pause_menu.add_img(00,00, img2);
-        
-        GFX::blur_screen();
-        GFX::simple_drawBMP(pause_menu.x, pause_menu.y, img);
-        GFX::swapBuffers();
-
-        wait_button_release(ctrlData, PSP_CTRL_START);   
-        while (1)
-        {
-            sceCtrlReadBufferPositive(&ctrlData, 1);
-            if (ctrlData.Buttons & PSP_CTRL_START){
-                state = RUNNING;
-                
-                wait_button_release(ctrlData, PSP_CTRL_START);
-                uint32_t pause_time_end = sceKernelGetSystemTimeLow();  
-                pause_time += (pause_time_end - pause_time_begin);
-                psp_free(img2.img_matrix);
-                break;
-            }
-        }
+        GameState::on_pause();
     }
 
     curr_time = get_time();

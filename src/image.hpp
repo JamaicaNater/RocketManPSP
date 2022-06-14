@@ -11,14 +11,14 @@
 
 struct Image
 {
-	unsigned int * img_matrix = NULL;
-	unsigned int width = 0;
-	unsigned int height = 0;
+	uint32_t * img_matrix = NULL;
+	uint32_t width = 0;
+	uint32_t height = 0;
 
 	char filename[64] = {'\0'};
 	Image(const char * _filename);
 
-	Image(unsigned int _height, unsigned int _width, unsigned int * _img_matrix,
+	Image(uint32_t _height, uint32_t _width, uint32_t * _img_matrix,
 		const char * _filename);
 
 	Image();
@@ -35,14 +35,14 @@ struct Animation
 	private:
 	public:
 	// Program updated variables
-	unsigned int * img_matrices = NULL;
-	unsigned int width = 0;
-	unsigned int height = 0;
+	uint32_t * img_matrices = NULL;
+	uint32_t width = 0;
+	uint32_t height = 0;
 
 	// User provided variables 
-	unsigned int frame_time = 0;
-	unsigned int rows = 0;
-	unsigned int cols = 0;
+	uint32_t frame_time = 0;
+	uint32_t rows = 0;
+	uint32_t cols = 0;
 	char filename[64] = {'\0'};
 
 	Image get_frame(int index) {
@@ -53,7 +53,7 @@ struct Animation
 			"Non-Loadable Animation frame"));
 	}
 
-	Animation(unsigned int _rows, unsigned int _cols, unsigned int _frame_time, 
+	Animation(uint32_t _rows, uint32_t _cols, uint32_t _frame_time, 
 		const char * _filename
 	){
 		frame_time = _frame_time;

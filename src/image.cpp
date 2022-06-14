@@ -13,7 +13,7 @@ Image::Image(const char * _filename) {
     strncpy(filename, _filename, str_size);
 }
 
-Image::Image(unsigned int _height, unsigned int _width, unsigned int * _img_matrix,
+Image::Image(uint32_t _height,uint32_t _width, uint32_t * _img_matrix,
     const char * _filename) 
 {
     height = _height;
@@ -75,19 +75,19 @@ their values together
 This implementation blurs the matrix inplace
 */
 void Image::blur(){
-    const unsigned int neighborhood_size_max = 9;
-    unsigned int neighborhood_size;
-    unsigned int to_avg[neighborhood_size_max];
+    const uint32_t neighborhood_size_max = 9;
+    uint32_t neighborhood_size;
+    uint32_t to_avg[neighborhood_size_max];
 
     int start_i, end_i, start_j, end_j, index;
 
-    unsigned int prev_row[width];
-    unsigned int prev_item;
+    uint32_t prev_row[width];
+    uint32_t prev_item;
 
-    for (unsigned int y = 0; y <= height; y++){
-        if (y>0) memcpy(prev_row, img_matrix + (y-1)*width, width * sizeof(unsigned int));
-        for (unsigned int x = 0; x < width; x++){
-            if (x>0) prev_item = img_matrix[y*width + x];		
+    for (uint32_t y = 0; y <= height; y++){
+        if (y>0) memcpy(prev_row, img_matrix + (y-1)*width, width * sizeof(uint32_t));
+        for (uint32_t x = 0; x < width; x++){
+            if (x>0) prev_item = img_matrix[y*width + x-1];		
             start_i = (y > 0) ? -1 : 0;
             start_j = (x > 0) ? -1 : 0;
 
@@ -106,7 +106,6 @@ void Image::blur(){
                     index++;
                 }
             }
-            //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "x %u y %u", x,y);
             neighborhood_size = (end_i - start_i + 1) * (end_j - start_j + 1);
             img_matrix[y*width + x] = average_pixels(to_avg, neighborhood_size);
         }
