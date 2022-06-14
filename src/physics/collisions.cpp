@@ -1,6 +1,6 @@
 #include "../globals.h"
 
-#include "../object_handler/object_list.h"
+#include "../object/object_list.h"
 #include "../logger/logger.h"
 #include "collisions.h"
 

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cstdlib>
-#include "../image.h"
+#include "../image/image.h"
 #include "../logger/logger.h"
 #include "../graphics/gfx.hpp"
 #include "../utils.h"

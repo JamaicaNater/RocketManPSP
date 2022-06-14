@@ -1,8 +1,8 @@
 #pragma once
 
 #include "globals.h"
-#include "object.h"
-#include "object_handler/object_list.h"
+#include "object/object.h"
+#include "object/object_list.h"
 #include "object_handler/object_handler.h"
 #include "object_handler/enemy_handler.h"
 #include "object_handler/animation_handler.h"

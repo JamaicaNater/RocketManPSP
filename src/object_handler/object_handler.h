@@ -1,6 +1,6 @@
 #pragma once
 
-#include "object_list.h"
+#include "../object/object_list.h"
 #include "../globals.h"
 #include "../Vector2d.hpp"
 
