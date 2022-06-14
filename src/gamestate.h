@@ -1,7 +1,7 @@
 #pragma once
 
 #include "globals.h"
-#include "objects.hpp"
+#include "object.h"
 #include "object_handler/object_list.h"
 #include "object_handler/object_handler.h"
 #include "object_handler/enemy_handler.h"

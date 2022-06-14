@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../objects.hpp"
+#include "../object.h"
 #include "global_object_manager.h"
 
 struct ObjectList
