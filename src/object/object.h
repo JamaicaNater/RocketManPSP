@@ -27,12 +27,35 @@ class Object
 	
 	Object(Image _img);
 
+	/**
+	 * @brief Reduce the health value of an object
+	 * 
+	 * @param damage value to reduce objects health by
+	 */
 	void damage_object(int damage);
 
+	/**
+	 * @brief Returns whether or not if the object is off the screen 
+	 * 
+	 * @return true 
+	 * @return false 
+	 */
 	bool off_screen();
 
+	/**
+	 * @brief We dont draw objects as their precise x and y position, the x and
+	 * y refer to the position of the image corner
+	 * 
+	 * @return int 
+	 */
 	int get_draw_x();
 
+	/**
+	 * @brief We dont draw objects as their precise x and y position, the x and
+	 * y refer to the position of the image corner
+	 * 
+	 * @return int 
+	 */
 	int get_draw_y();
 };
 

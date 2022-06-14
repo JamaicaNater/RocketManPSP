@@ -7,11 +7,3 @@ public:
     ExplosionHandler(/* args */);
     ~ExplosionHandler();
 };
-
-ExplosionHandler::ExplosionHandler(/* args */)
-{
-}
-
-ExplosionHandler::~ExplosionHandler()
-{
-}

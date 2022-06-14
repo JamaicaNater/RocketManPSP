@@ -60,12 +60,26 @@ private:
      */
     void update_player_actions();
 
+    /**
+     * @brief Call the update physics methods for all the object handlers
+     * 
+     */
     void update_physics();
 
+    /**
+     * @brief Create a pause menu and pause the game time;
+     * 
+     */
     void on_pause();
 public:
     enum GameStates{RUNNING, PAUSED, TERMINATED};
     static GameStates state;
+    
+    /**
+     * @brief Load the title screen image and render it to the screen wait for 
+     * player to press start
+     * 
+     */
     void title_screen();
 
     /**
@@ -86,6 +100,7 @@ public:
      * 
      */
     void draw();
+    
     inline GameState();
     inline ~GameState();
 };
