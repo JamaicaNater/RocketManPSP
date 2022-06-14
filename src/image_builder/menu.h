@@ -10,9 +10,7 @@
 
 struct Menu
 {
-public:
-    enum ComponentType{PANEL, BUTTON, LABEL, EXTERN_IMG};
-    
+public:   
     unsigned int x, y, height, width;
     char * text_field;
     //Component * children[4];

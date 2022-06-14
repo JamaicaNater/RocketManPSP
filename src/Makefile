@@ -1,9 +1,18 @@
 TARGET = Tutorial
-OBJS = RocketMan.o graphics/gfx.o bmp/loadbmp.o utils.o logger/logger.o gamestate.o \
-object/object_list.o object_handler/object_handler.o object_handler/enemy_handler.o \
-object_handler/projectile_handler.o object_handler/animation_handler.o physics/collisions.o \
-object_handler/global_object_manager.o object_handler/player_handler.o physics/physics.o \
-image_builder/text_builder.o image_builder/menu.o utils/psp_malloc.o image/image.o image/animation.o object/object.o
+OBJS = RocketMan.o \
+	gamestate.o \
+	graphics/gfx.o \
+	bmp/loadbmp.o \
+	utils.o \
+	logger/logger.o \
+	utils/psp_malloc.o \
+	physics/physics.o physics/collisions.o \
+	object_handler/object_handler.o object_handler/enemy_handler.o \
+	object_handler/projectile_handler.o object_handler/animation_handler.o \
+	object_handler/global_object_manager.o object_handler/player_handler.o \
+	image_builder/text_builder.o image_builder/menu.o \
+	image/image.o image/animation.o \
+	object/object_list.o object/object.o \
 
 LIBS = -lstdc++ -lm 
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum -lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp -lpspmath
