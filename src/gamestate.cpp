@@ -65,7 +65,7 @@ void GameState::on_pause(){
     Image img = pause_menu.get_image();
     img2 = text("Game Paused");
     pause_menu.set_pos(CENTER, 0, -20);
-    pause_menu.add_panel(10,10, 10, 20, 0x00FF00);
+    pause_menu.add_panel(BOTTOM_CENTER, 10, 20, 0x00FF00);
     pause_menu.add_img(00,00, img2);
     
     GFX::blur_screen();

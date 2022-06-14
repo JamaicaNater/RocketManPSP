@@ -8,7 +8,7 @@
 #include "object_handler/animation_handler.h"
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
-#include "image_builder/component.hpp"
+#include "image_builder/menu.h"
 #include "image_builder/text_builder.h"
 
 
@@ -32,14 +32,14 @@ private:
         Object::ENEMY);
     AnimationHandler explosion_handler = AnimationHandler(128, 0, 0, 
         Object::EXPLOSION);
-
+    // TODO: velocity parameter useless
     ProjectileHandler projectile_handler = 
         ProjectileHandler(MAX_PROJ, 8, 300 * MILLISECOND, Object::MISSILE, 
         &explosion_handler);
 
     PlayerHandler player_handler = PlayerHandler(PLAYER_SPEED, &projectile_handler);
 
-    Component pause_menu = Component(180,50,120,90, 0xC0C0C0);
+    Menu pause_menu = Menu(180,50,120,90, 0xC0C0C0);
 
 	int screen_center = SCREEN_WIDTH/2;
     SceCtrlData ctrlData;
@@ -100,7 +100,7 @@ public:
      * 
      */
     void draw();
-    
+
     inline GameState();
     inline ~GameState();
 };
