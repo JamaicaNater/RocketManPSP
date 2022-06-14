@@ -9,6 +9,7 @@
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
 #include "image_builder/menu.h"
+#include "image_builder/component.h"
 #include "image_builder/text_builder.h"
 
 
@@ -25,8 +26,6 @@ private:
     Image rocket = Image("assets/missile.bmp");
     Image status_bar = Image("assets/statusbar.bmp");
     Image enemy_img = Image("assets/enemy.bmp");
-
-    
     
     EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, 1*SECOND, 
         Object::ENEMY);
@@ -39,7 +38,7 @@ private:
 
     PlayerHandler player_handler = PlayerHandler(PLAYER_SPEED, &projectile_handler);
 
-    Menu pause_menu = Menu(180,50,120,90, 0xC0C0C0);
+    Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0);
 
 	int screen_center = SCREEN_WIDTH/2;
     SceCtrlData ctrlData;

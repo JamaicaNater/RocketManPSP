@@ -1,22 +1,49 @@
+#pragma once
+
 #include "../image/image.h"
 
 class Component
 {
-private:
+public:
     enum Shape {Rectangle, Circle, Triangle};
-    enum ComponentType{PANEL, LABEL, EXTERN_IMG};
+    enum ComponentType{NONE_TYPE, PANEL_TYPE, LABEL_TYPE, IMAGE_TYPE};
 
-    typedef union
+    struct CompData
     {
-        Shape shape;
-        Image img;
-        char text[64];
-    } DataUnion;
+        typedef union D_U
+        {
+            Shape shape;
+            Image img;
+            char text[64];
 
-    int x, y, width, height;
-    uint32_t background_color;
+            D_U(){}
+            ~D_U(){}
+        } DataUnion;
+
+
+        ComponentType type;
+        DataUnion data;
+
+        CompData() : type (NONE_TYPE){
+
+        }
+        CompData(char t[]) : type(LABEL_TYPE){
+            strncpy(data.text, t, 63);
+        }
+        CompData(Image i) : type(IMAGE_TYPE){
+            data.img = i;
+        }
+        CompData(Shape s) : type(PANEL_TYPE){
+            data.shape = s;
+        }
+    };
+    
+
+    int width = 0, height = 0;
+    uint32_t background_color = 0x00000000;
+    CompData data;
     
 public:
-    Component(int _x, int _y, int _width, int _height, DataUnion _dat, uint32_t _color = 0x00000000);
+    Component(int _height, int _width, CompData _dat, uint32_t _color = 0x00000000);
     ~Component();
 };
