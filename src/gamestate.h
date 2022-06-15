@@ -69,8 +69,6 @@ private:
     static const int MAX_PROJ = 64;
     static const int MAX_ENEMIES = 16;
 
-    Object player = Object(Image("assets/player.bmp"));
-    Image rocket = Image("assets/missile.bmp");
     Image status_bar = Image("assets/statusbar.bmp");
     Image enemy_img = Image("assets/enemy.bmp");
     
@@ -84,11 +82,8 @@ private:
         &explosion_handler);
 
     PlayerHandler player_handler = PlayerHandler(PLAYER_SPEED, &projectile_handler);
-
-	int screen_center = SCREEN_WIDTH/2;
+    
     ControlReader control_reader;
-
-    Image img2 =Image("");
 
     /**
      * @brief Responsible for handling actions not directly caused by the player

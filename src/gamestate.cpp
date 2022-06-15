@@ -18,26 +18,17 @@ void GameState::init(){
     GameState::update_status(RUNNING);
     //in_menu = true;
     in_title = true;
-
     camera_x = 0;
-    player_handler.init();
 
     //TODO: load all BMPs here
-    
+    load_BMP(status_bar);
     load_BMP(enemy_img);
-
-    explosion_handler.init(new Animation(3, 5, 50000, "assets/explosion.bmp"));
     
-    player.vector.x = 10;
-	player.vector.y = 10;
-	player.vector.direction = FORWARD;
-    player.type = Object::PLAYER;
+    player_handler.init();
+    explosion_handler.init(new Animation(3, 5, 50000, "assets/explosion.bmp"));
 
     control_reader.init();
-    init_text_builder();
-    
-    load_BMP(rocket);
-    load_BMP(status_bar);
+    init_text_builder();    
 }
 
 void GameState::title_screen() {
@@ -63,14 +54,10 @@ void GameState::title_screen() {
 }
 
 void GameState::on_pause(){
-    uint32_t pause_time_begin = sceKernelGetSystemTimeLow(); 
-
-    control_reader.on_button_press_start = [this, pause_time_begin](){
-        GameState::update_status(RUNNING);
-        
+    control_reader.on_button_press_start = [this](){       
         control_reader.wait_button_release(PSP_CTRL_START);  
-        uint32_t pause_time_end = sceKernelGetSystemTimeLow();  
-        pause_time += (pause_time_end - pause_time_begin);
+        pause_time += (sceKernelGetSystemTimeLow() - GameState::status_info.start_time);
+        GameState::update_status(RUNNING);
     };
     
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
