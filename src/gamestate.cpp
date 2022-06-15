@@ -11,11 +11,14 @@
 
 
 
-GameState::GameStates GameState::state = GameState::RUNNING;
+GameState::StatusInfo GameState::status_info = {GameState::RUNNING, sceKernelGetSystemTimeLow()};
 
 void GameState::init(){
     PSP_LOGGER::log(PSP_LOGGER::INFO, "Init Gamestate");
-    state = RUNNING;
+    GameState::update_status(RUNNING);
+    //in_menu = true;
+    in_title = true;
+
     camera_x = 0;
     player_handler.init();
 
@@ -30,8 +33,7 @@ void GameState::init(){
 	player.vector.direction = FORWARD;
     player.type = Object::PLAYER;
 
-    sceCtrlSetSamplingCycle(0);
-	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
+    control_reader.init();
     init_text_builder();
     
     load_BMP(rocket);
@@ -45,58 +47,57 @@ void GameState::title_screen() {
 	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
 	else PSP_LOGGER::log(PSP_LOGGER::ERROR, "failed to create thread");
 
-	while (1)
+    control_reader.on_button_press_start = [home_thid, this](){
+        sceKernelTerminateThread(home_thid);
+        sceKernelDeleteThread(home_thid);
+        sceKernelDelayThread(200 * MILLISECOND); // So that we have 
+        //time for the start(pause) button to be released
+        in_title = false;
+    };
+
+	while (in_title)
 	{
-		sceCtrlReadBufferPositive(&ctrlData, 1);
-		if (ctrlData.Buttons & PSP_CTRL_START){
-			sceKernelTerminateThread(home_thid);
-			sceKernelDeleteThread(home_thid);
-            sceKernelDelayThread(200 * MILLISECOND); // So that we have 
-            //time for the start(pause) button to be released
-			break;
-		}
-		sceKernelDelayThread(100);
+        sceKernelDelayThread(100);
+        control_reader.read_controls();
 	}
 }
 
 void GameState::on_pause(){
     uint32_t pause_time_begin = sceKernelGetSystemTimeLow(); 
+
+    control_reader.on_button_press_start = [this, pause_time_begin](){
+        GameState::update_status(RUNNING);
+        
+        control_reader.wait_button_release(PSP_CTRL_START);  
+        uint32_t pause_time_end = sceKernelGetSystemTimeLow();  
+        pause_time += (pause_time_end - pause_time_begin);
+    };
     
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
-    Image img = pause_menu.get_image();
-
     pause_menu.add_component(BOTTOM_CENTER, 
         Component(10,20, Component::Rectangle, 0x00FF00),
         0, 20);
     pause_menu.add_component(CENTER, Component("Game Paused"));
-        
     pause_menu.update();
     
-    pause_menu.on_open = [pause_menu, &img, this, pause_time_begin](){
+    pause_menu.on_open = [this](Menu self){
+        Image img = self.get_image();
         GFX::blur_screen();
-        GFX::simple_drawBMP(pause_menu.x, pause_menu.y, img);
+        GFX::simple_drawBMP(self.x, self.y, img);
         GFX::swapBuffers();
 
-        wait_button_release(ctrlData, PSP_CTRL_START);   
-        while (1)
-        {
-            sceCtrlReadBufferPositive(&ctrlData, 1);
-            if (ctrlData.Buttons & PSP_CTRL_START){
-                state = RUNNING;
-                
-                wait_button_release(ctrlData, PSP_CTRL_START);
-                uint32_t pause_time_end = sceKernelGetSystemTimeLow();  
-                pause_time += (pause_time_end - pause_time_begin);
-                break;
-            }
+        control_reader.wait_button_release(PSP_CTRL_START);   
+        while (status_info.status == PAUSED)
+        {   
+            control_reader.read_controls();
         }
     };
 
-    pause_menu.on_open();
+    pause_menu.on_open(pause_menu);
 }
 
 void GameState::update(){
-    if (state == PAUSED) { 
+    if (status_info.status == PAUSED) { 
         GameState::on_pause();
     }
 
@@ -144,4 +145,17 @@ void GameState::draw(){
        
     GFX::swapBuffers();
     GFX::clear();
+}
+
+void GameState::update_status(Status _status){
+    status_info.status = _status;
+    status_info.start_time = sceKernelGetSystemTimeLow();
+}
+
+GameState::GameState(){
+
+}
+
+GameState::~GameState(){
+    
 }

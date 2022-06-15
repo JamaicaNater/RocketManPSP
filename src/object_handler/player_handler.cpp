@@ -82,7 +82,7 @@ void PlayerHandler::read_controls(){
     }
 
     if(ctrlData.Buttons & PSP_CTRL_START){ 
-        GameState::state = GameState::PAUSED;
+        GameState::update_status(GameState::PAUSED);
     }
 
 

@@ -11,12 +11,59 @@
 #include "GUI/menu.h"
 #include "GUI/component.h"
 #include "GUI/text_builder.h"
-
-
+#include "controls/control_reader.h"
 
 // TODO make singleton
 class GameState
 {
+public:
+    enum Status{RUNNING, PAUSED, TERMINATED};
+    struct StatusInfo
+    {
+        Status status;
+        uint32_t start_time; // when did we enter this state
+    };
+    
+
+    bool in_menu;
+    bool in_title;
+    static StatusInfo status_info;
+    
+    /**
+     * @brief Load the title screen image and render it to the screen wait for 
+     * player to press start
+     * 
+     */
+    void title_screen();
+
+    /**
+     * @brief Initialize variables needed for GameState, 
+     * prepare system for reading controls.
+     */
+    void init();
+
+    /**
+     * @brief Update player controlled actions (controller input),
+     * player uncontrolled actions (AI) and Physics 
+     * 
+     */
+    void update();
+
+    /**
+     * @brief update Status and set time;
+     * 
+     */
+    static void update_status(GameState::Status state);
+
+    /**
+     * @brief Draw objects present in the game context
+     * 
+     */
+    void draw();
+
+    GameState();
+    ~GameState();
+
 private:
     const int PLAYER_SPEED = 2;
     static const int MAX_PROJ = 64;
@@ -39,7 +86,7 @@ private:
     PlayerHandler player_handler = PlayerHandler(PLAYER_SPEED, &projectile_handler);
 
 	int screen_center = SCREEN_WIDTH/2;
-    SceCtrlData ctrlData;
+    ControlReader control_reader;
 
     Image img2 =Image("");
 
@@ -68,44 +115,4 @@ private:
      * 
      */
     void on_pause();
-public:
-    enum GameStates{RUNNING, PAUSED, TERMINATED};
-    static GameStates state;
-    
-    /**
-     * @brief Load the title screen image and render it to the screen wait for 
-     * player to press start
-     * 
-     */
-    void title_screen();
-
-    /**
-     * @brief Initialize variables needed for GameState, 
-     * prepare system for reading controls.
-     */
-    void init();
-
-    /**
-     * @brief Update player controlled actions (controller input),
-     * player uncontrolled actions (AI) and Physics 
-     * 
-     */
-    void update();
-
-    /**
-     * @brief Draw objects present in the game context
-     * 
-     */
-    void draw();
-
-    inline GameState();
-    inline ~GameState();
 };
-
-GameState::GameState(){
-
-}
-
-GameState::~GameState(){
-    
-}

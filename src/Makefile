@@ -6,6 +6,7 @@ OBJS = RocketMan.o \
 	utils.o \
 	logger/logger.o \
 	utils/psp_malloc.o \
+	controls/control_reader.o \
 	physics/physics.o physics/collisions.o \
 	object_handler/object_handler.o object_handler/enemy_handler.o \
 	object_handler/projectile_handler.o object_handler/animation_handler.o \

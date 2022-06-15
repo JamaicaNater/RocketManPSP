@@ -1,4 +1,5 @@
 #include "control_reader.h"
+#include <pspthreadman.h>
 
 ControlReader::ControlReader(/* args */)
 {
@@ -15,6 +16,7 @@ void ControlReader::init(){
 }
 
 void ControlReader::read_controls(){
+    sceCtrlReadBufferPositive(&ctrlData, 1);
     if(ctrlData.Buttons & PSP_CTRL_LEFT) {
         on_button_press_left();
     } 		
@@ -62,4 +64,12 @@ void ControlReader::read_controls(){
     if(ctrlData.Buttons & PSP_CTRL_LTRIGGER){
         on_button_press_l_trig();
     }
+}
+
+void ControlReader::wait_button_release(PspCtrlButtons button){
+    while(ctrlData.Buttons & button){
+		sceCtrlReadBufferPositive(&ctrlData, 1);
+		sceKernelDelayThread(200); 
+        // Wait for button to be released
+	}
 }

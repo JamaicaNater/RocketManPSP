@@ -19,7 +19,7 @@ public:
 
     std::vector<Component> components;
 
-    std::function<void()> on_open;
+    std::function<void(Menu self)> on_open;
 
     unsigned int * img_matrix;
 

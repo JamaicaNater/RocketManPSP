@@ -78,7 +78,7 @@ int main()
 	game_state.title_screen();
 
 	curr_time = sceKernelGetSystemTimeLow();
-	while (game_state.state != GameState::TERMINATED)
+	while (game_state.status_info.status != GameState::TERMINATED)
 	{
 		start_time = sceKernelGetSystemTimeLow(); // For FPS calculation
 		pspDebugScreenSetXY(0,0);
