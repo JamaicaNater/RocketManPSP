@@ -38,7 +38,7 @@ public:
         }
     };
     
-
+    int x,y;
     int width = 0, height = 0;
     uint32_t background_color = 0x00000000;
     CompData data;

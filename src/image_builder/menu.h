@@ -17,6 +17,7 @@ public:
     unsigned int x, y, height, width;
 
     Component * children[4];
+    int num_components = 0;
     unsigned int * img_matrix;
 
     Menu(unsigned int _x, unsigned int _y, unsigned int _height, 
@@ -32,11 +33,13 @@ public:
 
     void add_component(pivots pos, Component comp, int padding_x = 0, int padding_y = 0);
 
-    void add_panel(unsigned int _x, unsigned int _y, Component comp);
+    void draw_panel(Component comp);
 
-    void add_img(unsigned int _x, unsigned int _y, Image _img);
+    void draw_img(Component comp);
 
     void set_pos(pivots pos, int padding_x = 0, int padding_y = 0);
+
+    void update();
 
     Image get_image();
 };

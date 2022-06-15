@@ -93,33 +93,36 @@ void Menu::add_component(pivots _pos, Component comp, int padding_x /* = 0*/,
 ){
     Vector2d vec = pivot_to_coord(_pos, comp.height, comp.width, height, width, 
         false, padding_x, padding_y);
+    comp.x = vec.x;
+    comp.y = vec.y;
 
     if (comp.data.type == Component::IMAGE_TYPE) {
-        add_img(vec.x, vec.y, comp.data.data.img);
+        draw_img(comp);
     }
     if (comp.data.type == Component::LABEL_TYPE) {
         
     }
     if (comp.data.type == Component::PANEL_TYPE) {
-        add_panel(vec.x, vec.y, comp);
+        draw_panel(comp);
     }
 }
 
-void Menu::add_panel(unsigned int _x, unsigned int _y, Component comp){
-    for (unsigned int y = _y; y < comp.height + _y; y++){
-        for (unsigned int x = _x; x < comp.width + _x; x++) {
+void Menu::draw_panel(Component comp){
+    for (unsigned int y = comp.y; y < comp.height + comp.y; y++){
+        for (unsigned int x = comp.x; x < comp.width + comp.x; x++) {
             img_matrix[width*y + x] = comp.background_color;
         }
     }
 }
 
-void Menu::add_img(unsigned int _x, unsigned int _y, Image _img){
-    for (unsigned int y = _y; y < _img.height + _y; y++){
-        for (unsigned int x = _x; x < _img.width + _x; x++) {
-            if (!GFX::is_transparent(_img.img_matrix[_img.width*(y - _y) + (x - _x)]) 
+void Menu::draw_img(Component comp){
+    Image _img = comp.data.data.img;
+    for (unsigned int y = comp.y; y < _img.height + comp.y; y++){
+        for (unsigned int x = comp.x; x < _img.width + comp.x; x++) {
+            if (!GFX::is_transparent(_img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)]) 
                 && y < height && x < width
             ) {
-                img_matrix[width*y + x] = _img.img_matrix[_img.width*(y - _y) + (x - _x)];
+                img_matrix[width*y + x] = _img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)];
             }
         }
     }
@@ -131,6 +134,10 @@ void Menu::set_pos(pivots pos, int padding_x /* = 0*/, int padding_y /* = 0*/){
 
     x = vec.x;
     y = vec.y;
+}
+
+void Menu::update(){
+    
 }
 
 Image Menu::get_image() {
