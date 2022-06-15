@@ -3,19 +3,21 @@
 #include "text_builder.h"
 
 Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height, 
-    unsigned int _width, uint32_t _color
-){
+    unsigned int _width, uint32_t _color) 
+        : gui(_height, _width, 
+            (uint32_t *)psp_malloc(_width * _height * sizeof(uint32_t)), "menu"
+) {
     x = _x;
     y = _y;
     height = _height;
     width = _width;
-
-    img_matrix = (unsigned int *)psp_malloc(width * height * sizeof(unsigned int));
-    for (unsigned int i = 0; i < width * height; i++) img_matrix[i] = _color;
+    background_color = _color;
 }
 
 Menu::Menu(pivots _pos, unsigned int _height, unsigned int _width, 
-        uint32_t _color, int padding_x/* = 0*/, int padding_y/* = 0*/
+    uint32_t _color, int padding_x/* = 0*/, int padding_y/* = 0*/)
+        : gui(_height, _width, 
+            (uint32_t *)psp_malloc(_width * _height * sizeof(uint32_t)), "menu"
 ){
     Vector2d vec = pivot_to_coord(_pos, _height, _width, SCREEN_HEIGHT, 
         SCREEN_WIDTH_RES, true, padding_x, padding_y);
@@ -24,9 +26,7 @@ Menu::Menu(pivots _pos, unsigned int _height, unsigned int _width,
     y = vec.y;
     height = _height;
     width = _width;
-
-    img_matrix = (unsigned int *)psp_malloc(width * height * sizeof(unsigned int));
-    for (unsigned int i = 0; i < width * height; i++) img_matrix[i] = _color;
+    background_color = _color;    
 }
 
 Menu::~Menu(){
@@ -104,7 +104,7 @@ void Menu::add_component(pivots _pos, Component comp, int padding_x /* = 0*/,
 void Menu::draw_panel(Component comp){
     for (unsigned int y = comp.y; y < comp.height + comp.y; y++){
         for (unsigned int x = comp.x; x < comp.width + comp.x; x++) {
-            img_matrix[width*y + x] = comp.background_color;
+            gui.img_matrix[width*y + x] = comp.background_color;
         }
     }
 }
@@ -116,7 +116,7 @@ void Menu::draw_img(Component comp){
             if (!GFX::is_transparent(_img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)]) 
                 && y < height && x < width
             ) {
-                img_matrix[width*y + x] = _img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)];
+                gui.img_matrix[width*y + x] = _img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)];
             }
         }
     }
@@ -130,7 +130,8 @@ void Menu::set_pos(pivots pos, int padding_x /* = 0*/, int padding_y /* = 0*/){
     y = vec.y;
 }
 
-void Menu::update(){    
+void Menu::update(){   
+    for (unsigned int i = 0; i < width * height; i++) gui.img_matrix[i] = background_color; 
     for (Component comp: components){
         if (comp.data.type == Component::IMAGE_TYPE) {
             draw_img(comp);
@@ -147,8 +148,4 @@ void Menu::update(){
             draw_panel(comp);
         }
     }
-}
-
-Image Menu::get_image() {
-    return Image(height, width, img_matrix, "Menu");
 }

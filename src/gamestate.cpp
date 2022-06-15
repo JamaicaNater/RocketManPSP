@@ -68,9 +68,8 @@ void GameState::on_pause(){
     pause_menu.update();
     
     pause_menu.on_open = [this](Menu self){
-        Image img = self.get_image();
         GFX::blur_screen();
-        GFX::simple_drawBMP(self.x, self.y, img);
+        GFX::simple_drawBMP(self.x, self.y, self.gui);
         GFX::swapBuffers();
 
         control_reader.wait_button_release(PSP_CTRL_START);   

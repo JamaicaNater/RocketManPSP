@@ -1,27 +1,27 @@
 #pragma once
 
+#include "component.h"
+
 #include <cstdlib>
 #include <vector>
 
-#include "component.h"
-
+#include "utils/psp_malloc.h"
 #include "../image/image.h"
 #include "../logger/logger.h"
 #include "../graphics/gfx.hpp"
 #include "../utils.h"
-#include "utils/psp_malloc.h"
-
 
 class Menu
 {
 public:   
     unsigned int x, y, height, width;
+    uint32_t background_color;
 
     std::vector<Component> components;
 
     std::function<void(Menu self)> on_open;
 
-    unsigned int * img_matrix;
+    Image gui;
 
     Menu(unsigned int _x, unsigned int _y, unsigned int _height, 
         unsigned int _width, uint32_t color);
@@ -43,8 +43,6 @@ public:
     void set_pos(pivots pos, int padding_x = 0, int padding_y = 0);
 
     void update();
-
-    Image get_image();
 
     void close();
 };

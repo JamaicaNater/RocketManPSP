@@ -32,6 +32,11 @@ public:
      */
     void read_controls();
 
+    /**
+     * @brief Set the up the events that will happen when each button was 
+     * pressed
+     * 
+     */
     void set_up_controls();
     
     /**
