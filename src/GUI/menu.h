@@ -18,7 +18,9 @@ public:
     unsigned int x, y, height, width;
 
     std::vector<Component> components;
-    int num_components = 0;
+
+    std::function<void()> on_open;
+
     unsigned int * img_matrix;
 
     Menu(unsigned int _x, unsigned int _y, unsigned int _height, 

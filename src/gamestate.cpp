@@ -72,23 +72,27 @@ void GameState::on_pause(){
         
     pause_menu.update();
     
-    GFX::blur_screen();
-    GFX::simple_drawBMP(pause_menu.x, pause_menu.y, img);
-    GFX::swapBuffers();
+    pause_menu.on_open = [pause_menu, &img, this, pause_time_begin](){
+        GFX::blur_screen();
+        GFX::simple_drawBMP(pause_menu.x, pause_menu.y, img);
+        GFX::swapBuffers();
 
-    wait_button_release(ctrlData, PSP_CTRL_START);   
-    while (1)
-    {
-        sceCtrlReadBufferPositive(&ctrlData, 1);
-        if (ctrlData.Buttons & PSP_CTRL_START){
-            state = RUNNING;
-            
-            wait_button_release(ctrlData, PSP_CTRL_START);
-            uint32_t pause_time_end = sceKernelGetSystemTimeLow();  
-            pause_time += (pause_time_end - pause_time_begin);
-            break;
+        wait_button_release(ctrlData, PSP_CTRL_START);   
+        while (1)
+        {
+            sceCtrlReadBufferPositive(&ctrlData, 1);
+            if (ctrlData.Buttons & PSP_CTRL_START){
+                state = RUNNING;
+                
+                wait_button_release(ctrlData, PSP_CTRL_START);
+                uint32_t pause_time_end = sceKernelGetSystemTimeLow();  
+                pause_time += (pause_time_end - pause_time_begin);
+                break;
+            }
         }
-    }
+    };
+
+    pause_menu.on_open();
 }
 
 void GameState::update(){

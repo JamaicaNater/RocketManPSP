@@ -1,12 +1,17 @@
 #pragma once
 
 #include "../image/image.h"
+#include <stdint.h>
+#include <functional>
 
 class Component
 {
 public:
     enum Shape {Rectangle, Circle, Triangle};
     enum ComponentType{NONE_TYPE, PANEL_TYPE, LABEL_TYPE, IMAGE_TYPE};
+
+    uint32_t comp_ID;
+    uint32_t group_ID;
 
     struct CompData
     {
@@ -37,6 +42,9 @@ public:
             data.shape = s;
         }
     };
+
+    std::function<void()> on_click;
+    std::function<void()> on_select;
     
     int x,y;
     int width = 0, height = 0;
