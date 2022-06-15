@@ -4,13 +4,14 @@
 
 #include "object_handler.h" 
 #include "projectile_handler.h"
+#include "../controls/control_reader.h"
 
 class PlayerHandler : public ObjectHandler
 {
 private:
     static Object * player;
 
-    SceCtrlData ctrlData;
+    ControlReader player_control_reader;
     Object * weapon = new Object(Image("assets/player_rocket.bmp"));
     Image rocket = Image("assets/missile.bmp");
 
@@ -30,6 +31,8 @@ public:
      * 
      */
     void read_controls();
+
+    void set_up_controls();
     
     /**
      * @brief updates the physics and sets the weapon positions

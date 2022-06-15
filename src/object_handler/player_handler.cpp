@@ -19,8 +19,7 @@ PlayerHandler::~PlayerHandler() {
 
 void PlayerHandler::init() {
     // For Controls
-    sceCtrlSetSamplingCycle(0);
-	sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
+    player_control_reader.init();
 
     load_BMP(rocket);
     load_BMP(weapon->image);
@@ -36,6 +35,7 @@ void PlayerHandler::init() {
     player->max_health = 1000;
 
     projectile_handler->init();
+    set_up_controls();
 }
 
 Object * PlayerHandler::player = new Object(Image("assets/player.bmp"));
@@ -44,49 +44,36 @@ Object PlayerHandler::get_player_val(){
     return *player;
 }
 
-void PlayerHandler::read_controls(){
-    player->vector.vel_x = 0;// reset velocity; TODO: slowdown mechanic
-    camera_x = get_cam_position(player->vector.x, SCREEN_WIDTH/2);
-    sceCtrlReadBufferPositive(&ctrlData, 1); // For reading in controls 
-
-    // PLAYER MOVEMENT
-    if(ctrlData.Buttons & PSP_CTRL_LEFT){
+void PlayerHandler::set_up_controls(){
+    player_control_reader.on_button_press_left = [this](){
         player->vector.vel_x = -1*velocity;
         player->vector.direction = BACKWARD;
         weapon->vector.direction = BACKWARD;
         weapon->vector.x = player->vector.x-10;
-    } 		
-    if(ctrlData.Buttons & PSP_CTRL_RIGHT){
+    };
+    player_control_reader.on_button_press_right = [this](){
         player->vector.vel_x = velocity;
         player->vector.direction = FORWARD;
         weapon->vector.direction = FORWARD;
         weapon->vector.x = player->vector.x+10;
-    }
-
-    // Weapon angle positioning
-    if(ctrlData.Buttons & PSP_CTRL_UP){ 
+    };
+    player_control_reader.on_button_press_up = [this](){
         weapon->vector.set_angle(weapon->vector.get_angle()-2);
-    }
-    if(ctrlData.Buttons & PSP_CTRL_DOWN){ 
+    };
+    player_control_reader.on_button_press_down = [this](){
         weapon->vector.set_angle(weapon->vector.get_angle()+2);
-    }
+    };
 
-    // Jump 
-    if (!player->vector.vel_y) player->vector.y = (int)noise_map[player->vector.x];
-    if(ctrlData.Buttons & PSP_CTRL_CROSS) {
+    player_control_reader.on_button_press_cross = [this](){
         if (player->vector.vel_y == 0) {
             player->vector.vel_y= -40; // you cant double jump
             player->vector.y_i = player->vector.y;
             player->vector.t0_y = curr_time;
         }
-    }
+    };
 
-    if(ctrlData.Buttons & PSP_CTRL_START){ 
-        GameState::update_status(GameState::PAUSED);
-    }
-
-
-    if(ctrlData.Buttons & PSP_CTRL_RTRIGGER && projectile_handler->can_spawn() ){
+    player_control_reader.on_button_press_r_trig = [this](){
+        if (!projectile_handler->can_spawn()) return;
         Vector2d vec;
 
         vec.t0_y = vec.t0_x = curr_time;
@@ -104,7 +91,23 @@ void PlayerHandler::read_controls(){
         vec.vel_y = sin(rad) * 550;
 
         projectile_handler->spawn(vec, rocket);
-    }
+    };
+
+    player_control_reader.on_button_press_start = [this](){
+        GameState::update_status(GameState::PAUSED);
+    };
+}
+
+void PlayerHandler::read_controls(){
+    player->vector.vel_x = 0;// reset velocity; TODO: slowdown mechanic
+    camera_x = get_cam_position(player->vector.x, SCREEN_WIDTH/2);
+
+    player_control_reader.read_controls();
+
+
+
+    // Jump 
+    if (!player->vector.vel_y) player->vector.y = (int)noise_map[player->vector.x];
 }
 
 void PlayerHandler::update_physics() {
