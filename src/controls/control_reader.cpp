@@ -1,4 +1,7 @@
 #include "control_reader.h"
+
+#include "globals.h"
+
 #include <pspthreadman.h>
 
 ControlReader::ControlReader(/* args */)
@@ -67,9 +70,10 @@ void ControlReader::read_controls(){
 }
 
 void ControlReader::wait_button_release(PspCtrlButtons button){
+    sceCtrlReadBufferPositive(&ctrlData, 1);
     while(ctrlData.Buttons & button){
 		sceCtrlReadBufferPositive(&ctrlData, 1);
-		sceKernelDelayThread(200); 
+		sceKernelDelayThread(MILLISECOND); 
         // Wait for button to be released
 	}
 }

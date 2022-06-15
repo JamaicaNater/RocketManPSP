@@ -9,6 +9,8 @@
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"
 
+#include "GUI/interface/pause_menu.h"
+
 
 
 GameState::StatusInfo GameState::status_info = {GameState::RUNNING, sceKernelGetSystemTimeLow()};
@@ -53,32 +55,8 @@ void GameState::title_screen() {
 	}
 }
 
-void GameState::on_pause(){
-    control_reader.on_button_press_start = [this](){       
-        control_reader.wait_button_release(PSP_CTRL_START);  
-        pause_time += (sceKernelGetSystemTimeLow() - GameState::status_info.start_time);
-        GameState::update_status(RUNNING);
-    };
-    
-    Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
-    pause_menu.add_component(BOTTOM_CENTER, 
-        Component(10,20, Component::Rectangle, 0x00FF00),
-        0, 20);
-    pause_menu.add_component(CENTER, Component("Game Paused"));
-    pause_menu.update();
-    
-    pause_menu.on_open = [this](Menu self){
-        GFX::blur_screen();
-        GFX::simple_drawBMP(self.x, self.y, self.gui);
-        GFX::swapBuffers();
-
-        control_reader.wait_button_release(PSP_CTRL_START);   
-        while (status_info.status == PAUSED)
-        {   
-            control_reader.read_controls();
-        }
-    };
-
+void GameState::on_pause(){    
+    Menu pause_menu = build_pause_menu();
     pause_menu.on_open(pause_menu);
 }
 

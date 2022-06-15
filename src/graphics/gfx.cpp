@@ -48,7 +48,7 @@ namespace GFX
 	}
 
 	void blur_screen(){
-		Image blurred_screen = Image(SCREEN_HEIGHT,SCREEN_WIDTH,draw_buffer, "screen");
+		Image blurred_screen = Image(SCREEN_HEIGHT,SCREEN_WIDTH, draw_buffer, "screen");
 		blurred_screen.blur();
 	}
 
