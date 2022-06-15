@@ -137,7 +137,10 @@ void Menu::update(){
         }
         if (comp.data.type == Component::LABEL_TYPE) {
             Image img = text(comp.data.data.text);
-            draw_img(Component(img.height, img.width, img));
+            Component temp = Component(img);
+            temp.set_x(comp.x);
+            temp.set_y(comp.y);
+            draw_img(temp);
             free(img.img_matrix);
         }
         if (comp.data.type == Component::PANEL_TYPE) {

@@ -119,4 +119,14 @@ int convert_ascii(char c){
             }
         }
         return frame_num;
-}   
+} 
+
+int get_font_width(){
+    PSP_LOGGER::assert(initialized, "Font was initialized before call to get_font_width");
+    return font.width;
+}
+
+int get_font_height(){
+    PSP_LOGGER::assert(initialized, "Font was initialized before call to get_font_height");
+    return font.height;
+}

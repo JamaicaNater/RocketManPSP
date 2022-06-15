@@ -66,9 +66,9 @@ void GameState::on_pause(){
     Image img = pause_menu.get_image();
 
     pause_menu.add_component(BOTTOM_CENTER, 
-        Component(10,20, Component::Rectangle, 0x00FF00));
-    pause_menu.add_component(CENTER, 
-        Component(img2.height, img2.width, "Game Paused"));
+        Component(10,20, Component::Rectangle, 0x00FF00),
+        0, 20);
+    pause_menu.add_component(CENTER, Component("Game Paused"));
         
     pause_menu.update();
     

@@ -45,5 +45,11 @@ public:
     
 public:
     Component(int _height, int _width, CompData _dat, uint32_t _color = 0x00000000);
+    Component(int _height, int _width, Shape s, uint32_t _color = 0x00000000);
+    Component(const char * txt, uint32_t _color = 0x00000000);
+    Component(Image _img, uint32_t _color = 0x00000000);
+
+    void set_x(int _x);
+    void set_y(int _y);
     ~Component();
 };
