@@ -8,9 +8,9 @@
 #include "object_handler/animation_handler.h"
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
-#include "image_builder/menu.h"
-#include "image_builder/component.h"
-#include "image_builder/text_builder.h"
+#include "GUI/menu.h"
+#include "GUI/component.h"
+#include "GUI/text_builder.h"
 
 
 
@@ -37,8 +37,6 @@ private:
         &explosion_handler);
 
     PlayerHandler player_handler = PlayerHandler(PLAYER_SPEED, &projectile_handler);
-
-    Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0);
 
 	int screen_center = SCREEN_WIDTH/2;
     SceCtrlData ctrlData;

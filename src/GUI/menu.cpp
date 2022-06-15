@@ -1,5 +1,7 @@
 #include "menu.h"
 
+#include "text_builder.h"
+
 Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height, 
     unsigned int _width, uint32_t _color
 ){
@@ -96,15 +98,7 @@ void Menu::add_component(pivots _pos, Component comp, int padding_x /* = 0*/,
     comp.x = vec.x;
     comp.y = vec.y;
 
-    if (comp.data.type == Component::IMAGE_TYPE) {
-        draw_img(comp);
-    }
-    if (comp.data.type == Component::LABEL_TYPE) {
-        
-    }
-    if (comp.data.type == Component::PANEL_TYPE) {
-        draw_panel(comp);
-    }
+    components.push_back(comp);
 }
 
 void Menu::draw_panel(Component comp){
@@ -136,8 +130,20 @@ void Menu::set_pos(pivots pos, int padding_x /* = 0*/, int padding_y /* = 0*/){
     y = vec.y;
 }
 
-void Menu::update(){
-    
+void Menu::update(){    
+    for (Component comp: components){
+        if (comp.data.type == Component::IMAGE_TYPE) {
+            draw_img(comp);
+        }
+        if (comp.data.type == Component::LABEL_TYPE) {
+            Image img = text(comp.data.data.text);
+            draw_img(Component(img.height, img.width, img));
+            free(img.img_matrix);
+        }
+        if (comp.data.type == Component::PANEL_TYPE) {
+            draw_panel(comp);
+        }
+    }
 }
 
 Image Menu::get_image() {

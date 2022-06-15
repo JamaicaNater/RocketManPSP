@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstdlib>
+#include <vector>
 
 #include "component.h"
 
@@ -16,7 +17,7 @@ class Menu
 public:   
     unsigned int x, y, height, width;
 
-    Component * children[4];
+    std::vector<Component> components;
     int num_components = 0;
     unsigned int * img_matrix;
 
@@ -42,4 +43,6 @@ public:
     void update();
 
     Image get_image();
+
+    void close();
 };

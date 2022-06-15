@@ -8,7 +8,7 @@
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"
-#include "image_builder/text_builder.h"
+
 
 
 GameState::GameStates GameState::state = GameState::RUNNING;
@@ -61,15 +61,16 @@ void GameState::title_screen() {
 
 void GameState::on_pause(){
     uint32_t pause_time_begin = sceKernelGetSystemTimeLow(); 
-        
-    Image img = pause_menu.get_image();
-    img2 = text("Game Paused");
-    pause_menu.set_pos(CENTER, 0, -20);
-    Component comp2 = Component(10,20, Component::Rectangle, 0x00FF00);
-    pause_menu.add_component(BOTTOM_CENTER, comp2);
     
-    Component comp = Component(img2.height, img2.width, img2);
-    pause_menu.add_component(CENTER, comp);
+    Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
+    Image img = pause_menu.get_image();
+
+    pause_menu.add_component(BOTTOM_CENTER, 
+        Component(10,20, Component::Rectangle, 0x00FF00));
+    pause_menu.add_component(CENTER, 
+        Component(img2.height, img2.width, "Game Paused"));
+        
+    pause_menu.update();
     
     GFX::blur_screen();
     GFX::simple_drawBMP(pause_menu.x, pause_menu.y, img);
@@ -85,7 +86,6 @@ void GameState::on_pause(){
             wait_button_release(ctrlData, PSP_CTRL_START);
             uint32_t pause_time_end = sceKernelGetSystemTimeLow();  
             pause_time += (pause_time_end - pause_time_begin);
-            psp_free(img2.img_matrix);
             break;
         }
     }

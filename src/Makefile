@@ -10,12 +10,14 @@ OBJS = RocketMan.o \
 	object_handler/object_handler.o object_handler/enemy_handler.o \
 	object_handler/projectile_handler.o object_handler/animation_handler.o \
 	object_handler/global_object_manager.o object_handler/player_handler.o \
-	image_builder/text_builder.o image_builder/menu.o image_builder/component.o \
+	GUI/text_builder.o GUI/menu.o GUI/component.o \
 	image/image.o image/animation.o \
 	object/object_list.o object/object.o \
 
 LIBS = -lstdc++ -lm 
-#-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum -lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp -lpspmath
+#-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum 
+#-lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp 
+#-lpspmath
 
 CFLAGS = 
 CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra #-DPSP_LOGGING
