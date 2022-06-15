@@ -8,14 +8,6 @@
 
 class PlayerHandler : public ObjectHandler
 {
-private:
-    static Object * player;
-
-    ControlReader player_control_reader;
-    Object * weapon = new Object(Image("assets/player_rocket.bmp"));
-    Image rocket = Image("assets/missile.bmp");
-
-    ProjectileHandler * projectile_handler;
 public:
     static Object get_player_val();
     
@@ -55,4 +47,12 @@ public:
     
     PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler);
     ~PlayerHandler();
+private:
+    static Object * player;
+
+    ControlReader player_control_reader;
+    Object * weapon = new Object(Image("assets/player_rocket.bmp"));
+    Image rocket = Image("assets/missile.bmp");
+
+    ProjectileHandler * projectile_handler;
 };

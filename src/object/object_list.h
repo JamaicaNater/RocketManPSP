@@ -5,30 +5,6 @@
 
 struct ObjectList
 {
-private:
-    Object * * objects;
-    static ObjectList * _global_object_list;
-    friend int object_collision(Object*, ObjectList&);
-
-    friend void ObjectManager::draw_health_bars();
-
-    /**
-     * @brief Private insert method, inserts to a given list without inserting
-     * into the global object list
-     * 
-     * @param value - object we wish to insert
-     * @return int - index if success -1 if not successful
-     */
-    int _insert(Object * value);
-
-    /**
-     * @brief Private remove method, removes from a given list without removing
-     * from the global object list
-     * 
-     * @param value - object we wish to remove
-     * @return int - index if success -1 if not found
-     */
-    int _remove(Object * value);
 public:
     int MAX_SIZE;
     int size = 0;
@@ -99,5 +75,29 @@ public:
      * @return false list is not empty
      */
     bool is_empty();
+private:
+    Object * * objects;
+    static ObjectList * _global_object_list;
+    friend int object_collision(Object*, ObjectList&);
+
+    friend void ObjectManager::draw_health_bars();
+
+    /**
+     * @brief Private insert method, inserts to a given list without inserting
+     * into the global object list
+     * 
+     * @param value - object we wish to insert
+     * @return int - index if success -1 if not successful
+     */
+    int _insert(Object * value);
+
+    /**
+     * @brief Private remove method, removes from a given list without removing
+     * from the global object list
+     * 
+     * @param value - object we wish to remove
+     * @return int - index if success -1 if not found
+     */
+    int _remove(Object * value);
 };
 

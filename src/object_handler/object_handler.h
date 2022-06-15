@@ -6,48 +6,6 @@
 
 class ObjectHandler
 {
-protected:
-    Object::ObjectTypes type = Object::NONE; 
-    ObjectList object_list;
-    unsigned int time_between_spawns = 0;
-    unsigned int last_spawn = 0;
-    int velocity;
-    int MAX_COLLISIONS = 0;
-
-    /**
-     * @brief Checks to see if a given object has collided with anything
-     * in the space, if so it will perform differnt event depending on
-     * if the object collides with the floor another object or goes
-     * off screen
-     * 
-     * @param MAX_COLLISIONS 
-     */
-    void check_collisions(int MAX_COLLISIONS);
-
-    /**
-     * @brief Pure virtual function decribes what do so if an object collides
-     * with another
-     * 
-     * @param obj object we check against all the others
-     * @param collision_list 
-     */
-    virtual void on_object_collision(Object * obj, ObjectList &collision_list);
-
-    /**
-     * @brief Pure virtual function decribes what do so if an object collides
-     * with the terrain
-     * 
-     * @param obj object we check
-     */
-    virtual void on_terrain_collision(Object * obj);
-
-    /**
-     * @brief Pure virtual function decribes what do so if an object goes
-     * off screen
-     * 
-     * @param obj object we check
-     */
-    virtual void on_off_screen(Object * obj);
 public:
     /**
      * @brief Spawn an Object at a point specifed by vector
@@ -100,4 +58,46 @@ public:
     ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, 
         Object::ObjectTypes type);
     virtual ~ObjectHandler();
+protected:
+    Object::ObjectTypes type = Object::NONE; 
+    ObjectList object_list;
+    unsigned int time_between_spawns = 0;
+    unsigned int last_spawn = 0;
+    int velocity;
+    int MAX_COLLISIONS = 0;
+
+    /**
+     * @brief Checks to see if a given object has collided with anything
+     * in the space, if so it will perform differnt event depending on
+     * if the object collides with the floor another object or goes
+     * off screen
+     * 
+     * @param MAX_COLLISIONS 
+     */
+    void check_collisions(int MAX_COLLISIONS);
+
+    /**
+     * @brief Pure virtual function decribes what do so if an object collides
+     * with another
+     * 
+     * @param obj object we check against all the others
+     * @param collision_list 
+     */
+    virtual void on_object_collision(Object * obj, ObjectList &collision_list);
+
+    /**
+     * @brief Pure virtual function decribes what do so if an object collides
+     * with the terrain
+     * 
+     * @param obj object we check
+     */
+    virtual void on_terrain_collision(Object * obj);
+
+    /**
+     * @brief Pure virtual function decribes what do so if an object goes
+     * off screen
+     * 
+     * @param obj object we check
+     */
+    virtual void on_off_screen(Object * obj);
 };

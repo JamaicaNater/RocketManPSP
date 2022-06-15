@@ -5,7 +5,6 @@
 
 struct Animation
 {
-	private:
 	public:
 	// Program updated variables
 	uint32_t * img_matrices = NULL;
@@ -24,4 +23,5 @@ struct Animation
 		const char * _filename);
 
 	~Animation();
+	private:
 };

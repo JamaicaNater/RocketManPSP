@@ -51,7 +51,6 @@ public:
     uint32_t background_color = 0x00000000;
     CompData data;
     
-public:
     Component(int _height, int _width, CompData _dat, uint32_t _color = 0x00000000);
     Component(int _height, int _width, Shape s, uint32_t _color = 0x00000000);
     Component(const char * txt, uint32_t _color = 0x00000000);

@@ -4,9 +4,6 @@
 
 class EnemyHandler : public ObjectHandler
 {
-private:
-    Image img;
-    /* data */
 public:
     /**
      * @brief Handle actions of the AI
@@ -17,4 +14,7 @@ public:
     EnemyHandler(int MAX_OBJECTS, int _velocity, 
         int _time_between_spawns, Object::ObjectTypes _type);
     ~EnemyHandler();
+
+private:
+    Image img;
 };

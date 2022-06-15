@@ -3,8 +3,6 @@
 enum Flips{FORWARD = 1, BACKWARD = -1};
 enum pivots{CENTER = 0, TOP_LEFT, CENTER_LEFT, BOTTOM_LEFT, TOP_CENTER, BOTTOM_CENTER, TOP_RIGHT, CENTER_RIGHT, BOTTOM_RIGHT};
 struct Vector2d {
-    private:
-        short angle = 0;
     public:
     constexpr static float grav = 70.0f;
     short x_i=0, y_i=0, x=0, y=0, vel_x=0, vel_y=0, acc_x=0, acc_y=0;
@@ -36,4 +34,6 @@ struct Vector2d {
         short mirrored_angle = (angle < 0)? -180 - angle: 180 - angle;
         return mirrored_angle;
     }
+private:
+    short angle = 0;
 };
