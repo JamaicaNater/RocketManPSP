@@ -6,6 +6,7 @@
 #include "object_handler/object_handler.h"
 #include "object_handler/enemy_handler.h"
 #include "object_handler/animation_handler.h"
+#include "object_handler/explosion_handler.h"
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
 #include "GUI/menu.h"
@@ -74,7 +75,7 @@ private:
     
     EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, 1*SECOND, 
         Object::ENEMY);
-    AnimationHandler explosion_handler = AnimationHandler(128, 0, 0, 
+    ExplosionHandler explosion_handler = ExplosionHandler(128, 0, 0, 
         Object::EXPLOSION);
     // TODO: velocity parameter useless
     ProjectileHandler projectile_handler = 

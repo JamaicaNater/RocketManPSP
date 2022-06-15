@@ -34,5 +34,4 @@ private:
     Animation * animation = NULL;
 
     const unsigned int FRAME_TIME = 30 * MILLISECOND;
-    virtual void on_object_collision(Object * obj, ObjectList &collision_list) override;
 };

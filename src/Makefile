@@ -11,6 +11,7 @@ OBJS = RocketMan.o \
 	object_handler/object_handler.o object_handler/enemy_handler.o \
 	object_handler/projectile_handler.o object_handler/animation_handler.o \
 	object_handler/global_object_manager.o object_handler/player_handler.o \
+	object_handler/explosion_handler.o \
 	GUI/text_builder.o GUI/menu.o GUI/component.o \
 	GUI/interface/pause_menu.o \
 	image/image.o image/animation.o \

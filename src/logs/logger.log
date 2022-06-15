@@ -120,419 +120,2107 @@ DEBUG: Spawned:assets/enemy.bmp ptr: 886a870
 DEBUG: (assertion) Object spawned successfully
 DEBUG: Spawned:assets/missile.bmp ptr: 886cd30
 DEBUG: (assertion) Object spawned successfully
-DEBUG-H: inset 16 at 8844920
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 16 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
 DEBUG: (assertion) psp_malloc inserted 16bytes successfully
-DEBUG-H: Allocated 16 at 8844920. Info 
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
 INFO: Collision detected with 885e7d0
 DEBUG: Spawned:Non-Loadable Animation frame ptr: 886e290
 DEBUG: (assertion) Object spawned successfully
-INFO: Exploded proj at x:230 y:99, coll_with:1
+INFO: Exploded proj at x:242 y:104, coll_with:1
 DEBUG-H: freed 16 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
 INFO: Collision detected with 885e7d0
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 885e7d0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
 DEBUG: Spawned:assets/enemy.bmp ptr: 886a870
 DEBUG: (assertion) Object spawned successfully
-DEBUG-H: inset 20 at 8844920
+DEBUG: Spawned:assets/missile.bmp ptr: 886cd30
+DEBUG: (assertion) Object spawned successfully
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+INFO: Collision detected with 885e7d0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 886e290
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj at x:246 y:103, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
+DEBUG-H: Allocated 20 at 885e450. Info 
 DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 16 Objects in memory allocated to 1502148 bytes
-DEBUG-H: inset 43200 at 89b3950
-DEBUG: (assertion) psp_malloc inserted 43200bytes successfully
-DEBUG-H: Allocated 43200 at 89b3950. Info 
-DEBUG-H: 17 Objects in memory allocated to 1545348 bytes
-DEBUG: (assertion) Font was initialized before call to get_font_width
-DEBUG: (assertion) Font was initialized before call to get_font_height
-DEBUG: (assertion) text builder initalized
-DEBUG-H: inset 3520 at 89be220
-DEBUG: (assertion) psp_malloc inserted 3520bytes successfully
-DEBUG-H: Allocated 3520 at 89be220. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
-DEBUG-H: 19 Objects in memory allocated to 1548888 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 18 Objects in memory allocated to 1548868 bytes
-DEBUG-H: inset 20 at 8844920
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
 DEBUG: (assertion) psp_malloc inserted 20bytes successfully
-DEBUG-H: Allocated 20 at 8844920. Info 
-DEBUG-H: 19 Objects in memory allocated to 1548888 bytes
-INFO: Collision detected with 886dfa0
-INFO: Collision detected with 885e7d0
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
 DEBUG-H: freed 20 bytes
-DEBUG: (assertion) psp_free call on 8844920 successful
-DEBUG-H: Attempting to free 8844920
-DEBUG-H: Successfully freed 8844920. 18 Objects in memory allocated to 1548868 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 886cd30
+DEBUG: (assertion) Object spawned successfully
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 886a870
+DEBUG: (assertion) Object spawned successfully
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+INFO: Collision detected with 89b3a70
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 886e290
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj at x:209 y:99, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 886cd30
+DEBUG: (assertion) Object spawned successfully
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+INFO: Collision detected with 89b3cb0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 886e290
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj at x:227 y:101, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3a70
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 886a870
+DEBUG: (assertion) Object spawned successfully
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 886cd30
+DEBUG: (assertion) Object spawned successfully
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 16 at 885e450
+DEBUG: (assertion) psp_malloc inserted 16bytes successfully
+DEBUG-H: Allocated 16 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502164 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 886e290
+DEBUG: (assertion) Object spawned successfully
+INFO: Exploded proj at x:236 y:102, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3cb0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 886a870
+DEBUG: (assertion) Object spawned successfully
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b40a0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b40a0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes
+DEBUG-H: inset 20 at 885e450
+DEBUG: (assertion) psp_malloc inserted 20bytes successfully
+DEBUG-H: Allocated 20 at 885e450. Info 
+DEBUG-H: 17 Objects in memory allocated to 1502168 bytes
+INFO: Collision detected with 89b40a0
+INFO: Collision detected with 89b3ef0
+DEBUG-H: freed 20 bytes
+DEBUG: (assertion) psp_free call on 885e450 successful
+DEBUG-H: Attempting to free 885e450
+DEBUG-H: Successfully freed 885e450. 16 Objects in memory allocated to 1502148 bytes

@@ -45,14 +45,4 @@ void AnimationHandler::init(Animation * _animation){
     load_BMP(*_animation);
     animation = _animation;
 }
-
-void AnimationHandler::on_object_collision(Object * obj, ObjectList &collision_list){
-    Object ** collisions = collision_list.get_list();
-    for (int i = 0; i < collision_list.MAX_SIZE; i++){
-        if (!collision_list.size) break;
-        if (!collisions[i]) continue;
-
-        collisions[i]->damage_object(1);
-    }
-}
     
