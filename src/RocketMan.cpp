@@ -66,11 +66,9 @@ int main()
 	noise.SetFrequency(.008f);
 	for(int i = 0; i < MAP_SIZE; i++) {
 		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 100) + 100; 
-		// MIN height = 40 max height = 150 + 40
 	}
 
 	// FPS calculation
-	float physics_time_delta = 0.0f;
 	unsigned int start_time = 0, end_time = 0;
 
 	GameState game_state = GameState();
@@ -87,8 +85,7 @@ int main()
 		game_state.draw();
 
 		end_time = sceKernelGetSystemTimeLow();
-		physics_time_delta = (end_time - start_time) / static_cast<float>(SECOND);
-		printf("FPS: %.1f", 1 / (physics_time_delta) );
+		printf("FPS: %.1f", static_cast<float>(SECOND) / (end_time - start_time));
 
 		sceDisplayWaitVblankStart();
 	}

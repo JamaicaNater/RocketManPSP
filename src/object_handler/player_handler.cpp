@@ -104,8 +104,6 @@ void PlayerHandler::read_controls(){
 
     player_control_reader.read_controls();
 
-
-
     // Jump 
     if (!player->vector.vel_y) player->vector.y = (int)noise_map[player->vector.x];
 }

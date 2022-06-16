@@ -35,9 +35,12 @@ public:
 
     ~Menu();
 
-    void add_component(pivots pos, Component comp, int padding_x = 0, int padding_y = 0);
-
-    void add_component_group(pivots pos, std::vector<Component> arr, Grouping grouping, int padding_x = 0, int padding_y = 0);
+    void add_component(pivots pos, Component comp, int padding_x = 0, 
+        int padding_y = 0);
+ 
+    void add_component_group(pivots pos, std::vector<Component> arr, 
+        Grouping grouping, int spacing = 1, int padding_x = 0, int padding_y = 0, 
+        int rows = 0, int cols = 0);
 
     void draw_panel(Component comp);
 
@@ -52,4 +55,10 @@ private:
     Vector2d pivot_to_coord(pivots pos, unsigned int height_obj, 
         unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
         bool screen_coord, int padding_x = 0, int padding_y = 0 );
+
+    void add_vertical_list(pivots pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
+    void add_horizontal_list(pivots pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
+    void add_grid(pivots pos, std::vector<Component> arr, Grouping grouping, 
+        int spacing = 1, int padding_x = 0, int padding_y = 0, int rows = 0, 
+        int cols = 0);
 };

@@ -14,7 +14,7 @@ Menu build_pause_menu(){
 
     pause_menu.add_component_group(BOTTOM_LEFT, {
         Component(10,10, Component::Rectangle, 0x00FF00),
-        Component(10,10, Component::Rectangle, 0x00FF00),
+        Component(10,20, Component::Rectangle, 0x00FF00),
         Component(10,10, Component::Rectangle, 0x00FF00)
     }, Menu::VERTICAL_LIST);
 
