@@ -16,7 +16,7 @@ Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height,
     background_color = _color;
 }
 
-Menu::Menu(pivots _pos, unsigned int _height, unsigned int _width, 
+Menu::Menu(Position _pos, unsigned int _height, unsigned int _width, 
     uint32_t _color, int padding_x/* = 0*/, int padding_y/* = 0*/)
         : gui(_height, _width, 
             (uint32_t *)psp_malloc(_width * _height * sizeof(uint32_t)), "menu"
@@ -35,7 +35,7 @@ Menu::~Menu(){
 //TODO DFS style dealloc
 }
 
-Vector2d Menu::pivot_to_coord(pivots pos, unsigned int height_obj, 
+Vector2d Menu::pivot_to_coord(Position pos, unsigned int height_obj, 
     unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
     bool screen_coord, int padding_x/* = 0*/, int padding_y/* = 0*/
 ){
@@ -92,7 +92,7 @@ Vector2d Menu::pivot_to_coord(pivots pos, unsigned int height_obj,
     return Vector2d(_x,_y);
 }
 
-void Menu::add_component(pivots _pos, Component comp, int padding_x /* = 0*/, 
+void Menu::add_component(Position _pos, Component comp, int padding_x /* = 0*/, 
     int padding_y /* = 0*/
 ){
     Vector2d vec = pivot_to_coord(_pos, comp.height, comp.width, height, width, 
@@ -103,7 +103,7 @@ void Menu::add_component(pivots _pos, Component comp, int padding_x /* = 0*/,
     components.push_back(comp);
 }
 
-void Menu::add_component_group(pivots pos, std::vector<Component> arr, 
+void Menu::add_component_group(Position pos, std::vector<Component> arr, 
     Grouping grouping, int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
@@ -126,7 +126,7 @@ void Menu::add_component_group(pivots pos, std::vector<Component> arr,
     }
 }
 
-void Menu::add_vertical_list(pivots pos, std::vector<Component> arr, int spacing/* = 1*/, 
+void Menu::add_vertical_list(Position pos, std::vector<Component> arr, int spacing/* = 1*/, 
     int padding_x/* = 0*/, int padding_y/* = 0*/
 ) {
     int total_width = 0;
@@ -154,7 +154,7 @@ void Menu::add_vertical_list(pivots pos, std::vector<Component> arr, int spacing
         components.push_back(comp);
     }
 }
-void Menu::add_horizontal_list(pivots pos, std::vector<Component> arr, int spacing/* = 1*/,
+void Menu::add_horizontal_list(Position pos, std::vector<Component> arr, int spacing/* = 1*/,
     int padding_x/* = 0*/, int padding_y/* = 0*/
 ) {
     int total_width = 0;
@@ -229,7 +229,7 @@ void Menu::draw_img(Component comp){
     }
 }
 
-void Menu::set_pos(pivots pos, int padding_x /* = 0*/, int padding_y /* = 0*/){
+void Menu::set_pos(Position pos, int padding_x /* = 0*/, int padding_y /* = 0*/){
     Vector2d vec  = pivot_to_coord(pos, height, width, SCREEN_HEIGHT, 
         SCREEN_WIDTH_RES, true, padding_x, padding_y);
 

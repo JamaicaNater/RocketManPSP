@@ -30,15 +30,15 @@ public:
 
     Menu(unsigned int _x, unsigned int _y, unsigned int _height, 
         unsigned int _width, uint32_t color);
-    Menu(pivots _pos, unsigned int _height, unsigned int _width, 
+    Menu(Position _pos, unsigned int _height, unsigned int _width, 
         uint32_t _color, int padding_x = 0, int padding_y = 0);
 
     ~Menu();
 
-    void add_component(pivots pos, Component comp, int padding_x = 0, 
+    void add_component(Position pos, Component comp, int padding_x = 0, 
         int padding_y = 0);
  
-    void add_component_group(pivots pos, std::vector<Component> arr, 
+    void add_component_group(Position pos, std::vector<Component> arr, 
         Grouping grouping, int spacing = 1, int padding_x = 0, int padding_y = 0, 
         int rows = 0, int cols = 0);
 
@@ -46,19 +46,19 @@ public:
 
     void draw_img(Component comp);
 
-    void set_pos(pivots pos, int padding_x = 0, int padding_y = 0);
+    void set_pos(Position pos, int padding_x = 0, int padding_y = 0);
 
     void update();
 
     void close();
 private:
-    Vector2d pivot_to_coord(pivots pos, unsigned int height_obj, 
+    Vector2d pivot_to_coord(Position pos, unsigned int height_obj, 
         unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
         bool screen_coord, int padding_x = 0, int padding_y = 0 );
 
-    void add_vertical_list(pivots pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
-    void add_horizontal_list(pivots pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
-    void add_grid(pivots pos, std::vector<Component> arr, Grouping grouping, 
+    void add_vertical_list(Position pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
+    void add_horizontal_list(Position pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
+    void add_grid(Position pos, std::vector<Component> arr, Grouping grouping, 
         int spacing = 1, int padding_x = 0, int padding_y = 0, int rows = 0, 
         int cols = 0);
 };

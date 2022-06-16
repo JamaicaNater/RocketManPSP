@@ -114,7 +114,7 @@ namespace GFX
 		}
 	}
 
-	void drawBMP(int x, int y, short rot, pivots pivot, Flips direction, 
+	void drawBMP(int x, int y, short rot, Position pivot, Flips direction, 
 		uint32_t filter, Image &img
 	){	
 		unsigned int * &image = img.img_matrix;
