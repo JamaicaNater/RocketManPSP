@@ -130,38 +130,46 @@ void Menu::add_grid(Position pos, std::vector<Component> arr,
     Grouping grouping, int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
-    int widest = 0;
-    int tallest = 0;
+    
+
+    int widest[cols] = {0};
+    int tallest[rows] = {0};
 
     int total_height = 0;
     int total_width = 0;
     
+    int i = 0;
     for (Component &comp : arr){
-        if (comp.width > widest) widest = comp.width;
-        if (comp.height > tallest) tallest = comp.height;
+        if (comp.width > widest[i%cols]) widest[i%cols] = comp.width;
+        if (comp.height > tallest[i/cols]) tallest[i/cols] = comp.height;
+        i++;
     }
 
-    total_height = rows * tallest + (rows-1) * spacing; // simplify
-    total_width = cols * widest + (cols-1) * spacing;
+    for (int i=0; i < cols; i++) total_width += (widest[i] + spacing);
+    for (int i=0; i < rows; i++) total_height += (tallest[i] + spacing);
+    total_height -= spacing;
+    total_width -= spacing;
 
     Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
     int start_x = curr_coord.x;
 
-    int curr_col = 0;
+    i = 0;
     for (Component &comp : arr){
         comp.x = curr_coord.x;
         comp.y = curr_coord.y;
 
-        comp.y += (tallest - comp.height)/2;
-        comp.x += (widest - comp.width)/2;
+        comp.y += (tallest[i/cols] - comp.height)/2;
+        comp.x += (widest[i%cols] - comp.width)/2;
+
+        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "tallest %d, widest %d, i %d", tallest[i/cols], widest[i%cols], i);
         
-        curr_coord.x += widest + spacing;
-        
+        curr_coord.x += widest[i%cols] + spacing;
+
         components.push_back(comp);
-        curr_col++;
-        if (curr_col == cols) {
-            curr_col = 0;
-            curr_coord.y += tallest + spacing;
+
+        i++;
+        if (i % cols == 0) { // next row
+            curr_coord.y += tallest[i/cols] + spacing;
             curr_coord.x = start_x;
         }
     }
