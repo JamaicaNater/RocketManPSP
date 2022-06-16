@@ -44,6 +44,8 @@ Component::~Component()
 {
 }
 
+
+
 void Component::set_x(int _x){
     x = _x;
 }

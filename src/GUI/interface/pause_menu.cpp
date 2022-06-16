@@ -7,13 +7,19 @@
 Menu build_pause_menu(){
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
     
-    pause_menu.add_component(BOTTOM_CENTER, 
-        Component(10,20, Component::Rectangle, 0x00FF00),
-        0, 20);
-    pause_menu.add_component(CENTER, Component("Game Paused"));
+    // pause_menu.add_component(BOTTOM_CENTER, 
+    //     Component(40,40, Component::Rectangle, 0x00FF00),
+    //     0, 20);
+    pause_menu.add_component(CENTER, Component("Game Paused", 0x00CC00));
+
+    pause_menu.add_component_group(BOTTOM_LEFT, {
+        Component(10,10, Component::Rectangle, 0x00FF00),
+        Component(10,10, Component::Rectangle, 0x00FF00),
+        Component(10,10, Component::Rectangle, 0x00FF00)
+    }, Menu::VERTICAL_LIST);
 
     
-    pause_menu.control_reader.on_button_press_start = [&pause_menu](){       
+    pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       
         pause_menu.control_reader.wait_button_release(PSP_CTRL_START);  
         pause_time += (sceKernelGetSystemTimeLow() - GameState::status_info.start_time);
         GameState::update_status(GameState::RUNNING);

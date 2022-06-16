@@ -16,6 +16,7 @@
 class Menu
 {
 public:   
+    enum Grouping{GRID, VERTICAL_LIST, HORIZONTAL_LIST};
     unsigned int x, y, height, width;
     uint32_t background_color;
 
@@ -35,6 +36,8 @@ public:
     ~Menu();
 
     void add_component(pivots pos, Component comp, int padding_x = 0, int padding_y = 0);
+
+    void add_component_group(pivots pos, std::vector<Component> arr, Grouping grouping, int padding_x = 0, int padding_y = 0);
 
     void draw_panel(Component comp);
 

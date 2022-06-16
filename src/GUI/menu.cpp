@@ -1,5 +1,7 @@
 #include "menu.h"
 
+#include <math.h>
+
 #include "text_builder.h"
 
 Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height, 
@@ -101,11 +103,72 @@ void Menu::add_component(pivots _pos, Component comp, int padding_x /* = 0*/,
     components.push_back(comp);
 }
 
-void Menu::draw_panel(Component comp){
-    for (unsigned int y = comp.y; y < comp.height + comp.y; y++){
-        for (unsigned int x = comp.x; x < comp.width + comp.x; x++) {
-            gui.img_matrix[width*y + x] = comp.background_color;
+void Menu::add_component_group(pivots pos, std::vector<Component> arr, Grouping grouping, 
+    int padding_x, int padding_y
+) {
+    int spacing = 5;
+
+    int total_width = 0;
+    int total_height = 0;
+    // When implementing the grid will need to determwnt the talest widest part 
+    // of each row and coloms and equalize
+    for (Component &comp : arr){
+        if (grouping == VERTICAL_LIST) {
+            total_height += comp.height;
+            total_width = (comp.width > total_width)? : comp.width;
         }
+        if (grouping == HORIZONTAL_LIST) {
+            total_width += comp.width;
+            total_height = (comp.height > total_height)? : comp.height;
+        }
+    }
+
+    if (grouping == VERTICAL_LIST) total_height += spacing * (arr.size() - 1);
+    if (grouping == HORIZONTAL_LIST) total_width += spacing * (arr.size() - 1);
+
+    Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
+
+    for (Component &comp : arr){
+        comp.x = curr_coord.x;
+        comp.y = curr_coord.y;
+
+        if (grouping == VERTICAL_LIST) curr_coord.y += comp.height + spacing;
+        if (grouping == HORIZONTAL_LIST) curr_coord.x += comp.width + spacing;
+        components.push_back(comp);
+    }
+}
+
+void Menu::draw_panel(Component comp){
+    switch (comp.data.data.shape)
+    {
+    case Component::Rectangle:
+        for (int y = comp.y; y < comp.height + comp.y; y++){
+            for (int x = comp.x; x < comp.width + comp.x; x++) {
+                gui.img_matrix[width*y + x] = comp.background_color;
+            }
+        }
+        break;
+
+    case Component::Circle:
+        int _x;
+        int _y;
+        for (int y = comp.y; y < comp.height + comp.y; y++){
+            for (int x = comp.x; x < comp.width + comp.x; x++) {
+                _x = comp.x - x + comp.width/2;
+                _y = comp.y - y + comp.height/2;
+
+                // We know that the general equation for a circle is 
+                // ( x - h )^2 + ( y - k )^2 = r^2, where ( h, k ) is the center 
+                // and r is the radius.
+                if((pow(_x,2) + pow(_y,2)) <= pow(comp.width/2,2)) {
+                    gui.img_matrix[width*y + x] = comp.background_color;  
+                } 
+            }
+        }
+        break;
+    
+    default:
+        break;
     }
 }
 
@@ -113,10 +176,11 @@ void Menu::draw_img(Component comp){
     Image _img = comp.data.data.img;
     for (unsigned int y = comp.y; y < _img.height + comp.y; y++){
         for (unsigned int x = comp.x; x < _img.width + comp.x; x++) {
-            if (!GFX::is_transparent(_img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)]) 
-                && y < height && x < width
-            ) {
-                gui.img_matrix[width*y + x] = _img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)];
+            if (y < height && x < width) {
+                if (GFX::is_transparent(_img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)])){
+                    if (comp.background_color ) gui.img_matrix[width*y + x] = comp.background_color;
+                }
+                else gui.img_matrix[width*y + x] = _img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)];
             }
         }
     }
@@ -137,10 +201,12 @@ void Menu::update(){
             draw_img(comp);
         }
         if (comp.data.type == Component::LABEL_TYPE) {
-            Image img = text(comp.data.data.text);
+            //TODO simplify this
+            Image img = text(comp.data.data.text); // Todo: data.data?
             Component temp = Component(img);
             temp.set_x(comp.x);
             temp.set_y(comp.y);
+            temp.background_color = comp.background_color;
             draw_img(temp);
             free(img.img_matrix);
         }

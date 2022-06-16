@@ -10,9 +10,6 @@ public:
     enum Shape {Rectangle, Circle, Triangle};
     enum ComponentType{NONE_TYPE, PANEL_TYPE, LABEL_TYPE, IMAGE_TYPE};
 
-    uint32_t comp_ID;
-    uint32_t group_ID;
-
     struct CompData
     {
         typedef union D_U
@@ -42,21 +39,29 @@ public:
             data.shape = s;
         }
     };
-
-    std::function<void()> on_click;
-    std::function<void()> on_select;
-    
     int x,y;
     int width = 0, height = 0;
     uint32_t background_color = 0x00000000;
+    uint32_t comp_ID;
+    uint32_t group_ID;
+
     CompData data;
-    
+
+    bool selectable, hidden;
+
+    std::function<void()> on_click;
+    std::function<void()> on_select;
+        
     Component(int _height, int _width, CompData _dat, uint32_t _color = 0x00000000);
     Component(int _height, int _width, Shape s, uint32_t _color = 0x00000000);
     Component(const char * txt, uint32_t _color = 0x00000000);
     Component(Image _img, uint32_t _color = 0x00000000);
+    ~Component();
 
     void set_x(int _x);
     void set_y(int _y);
-    ~Component();
+
+    void resize (int h, int w);
+    void resize (float scale);
+
 };
