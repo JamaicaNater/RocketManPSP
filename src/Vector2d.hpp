@@ -1,7 +1,9 @@
 #pragma once
 
 enum Flips{FORWARD = 1, BACKWARD = -1};
-enum Position{CENTER = 0, TOP_LEFT, CENTER_LEFT, BOTTOM_LEFT, TOP_CENTER, BOTTOM_CENTER, TOP_RIGHT, CENTER_RIGHT, BOTTOM_RIGHT};
+enum Position{CENTER = 0, TOP_LEFT, CENTER_LEFT, BOTTOM_LEFT, TOP_CENTER, 
+BOTTOM_CENTER, TOP_RIGHT, CENTER_RIGHT, BOTTOM_RIGHT};
+
 struct Vector2d {
     public:
     constexpr static float grav = 70.0f;

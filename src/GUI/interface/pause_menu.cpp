@@ -14,9 +14,10 @@ Menu build_pause_menu(){
 
     pause_menu.add_component_group(BOTTOM_LEFT, {
         Component(10,10, Component::Rectangle, 0x00FF00),
+        Component(10,10, Component::Rectangle, 0x00FF00),
         Component(10,20, Component::Rectangle, 0x00FF00),
         Component(10,10, Component::Rectangle, 0x00FF00)
-    }, Menu::VERTICAL_LIST);
+    }, Menu::GRID, 2,0,0, 2,2);
 
     
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       

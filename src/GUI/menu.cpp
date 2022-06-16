@@ -118,11 +118,52 @@ void Menu::add_component_group(Position pos, std::vector<Component> arr,
         break;
     
     case GRID:
-
+        add_grid(pos, arr, grouping, spacing, padding_x, padding_y, rows, cols);
         break;
     
     default:
         break;
+    }
+}
+
+void Menu::add_grid(Position pos, std::vector<Component> arr, 
+    Grouping grouping, int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
+    int rows/* = 0*/, int cols/* = 0*/
+) {
+    int widest = 0;
+    int tallest = 0;
+
+    int total_height = 0;
+    int total_width = 0;
+    
+    for (Component &comp : arr){
+        if (comp.width > widest) widest = comp.width;
+        if (comp.height > tallest) tallest = comp.height;
+    }
+
+    total_height = rows * tallest + (rows-1) * spacing; // simplify
+    total_width = cols * widest + (cols-1) * spacing;
+
+    Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
+    int start_x = curr_coord.x;
+
+    int curr_col = 0;
+    for (Component &comp : arr){
+        comp.x = curr_coord.x;
+        comp.y = curr_coord.y;
+
+        comp.y += (tallest - comp.height)/2;
+        comp.x += (widest - comp.width)/2;
+        
+        curr_coord.x += widest + spacing;
+        
+        components.push_back(comp);
+        curr_col++;
+        if (curr_col == cols) {
+            curr_col = 0;
+            curr_coord.y += tallest + spacing;
+            curr_coord.x = start_x;
+        }
     }
 }
 
