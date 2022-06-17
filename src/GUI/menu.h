@@ -8,10 +8,10 @@
 #include "utils/psp_malloc.h"
 
 #include "../image/image.h"
-#include "../logger/logger.h"
 #include "../graphics/gfx.hpp"
 #include "../utils.h"
 #include "../controls/control_reader.h"
+#include "../logger/logger.h"
 
 class Menu
 {
@@ -20,7 +20,7 @@ public:
     
     unsigned int x, y, height, width;
     uint32_t background_color;
-    uint32_t selected_color = 0x00000050;
+    uint32_t selected_color = 0x0000AA;
 
     std::vector<Component> components;
 
@@ -63,6 +63,7 @@ private:
 
     std::vector<GroupInfo> groups;
 
+    uint32_t highlight_selection(Component comp, uint32_t pixel);
     Vector2d pivot_to_coord(Position pos, unsigned int height_obj, 
         unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
         bool screen_coord, int padding_x = 0, int padding_y = 0 );

@@ -34,12 +34,29 @@ Component::~Component()
 {
 }
 
-
-
 void Component::set_x(int _x){
     x = _x;
 }
 
 void Component::set_y(int _y){
     y = _y;
+}
+
+Component Component::hide() {
+    hidden = true;
+    return *this;
+}
+
+Component Component::show() {
+    hidden = false;
+    return *this;
+}
+
+Component Component::select() {
+    selected = true;
+    return *this;
+}
+Component Component::deselect(){
+    selected = false;
+    return *this;
 }

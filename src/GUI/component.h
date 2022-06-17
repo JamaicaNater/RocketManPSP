@@ -35,7 +35,7 @@ public:
 
     CompData data;
 
-    bool selectable, hidden;
+    bool selectable = false, selected = false, hidden = false;
 
     std::function<void()> on_click;
     std::function<void()> on_select;
@@ -48,7 +48,9 @@ public:
     void set_x(int _x);
     void set_y(int _y);
 
-    void resize (int h, int w);
-    void resize (float scale);
+    Component hide();
+    Component show();
 
+    Component select();
+    Component deselect();
 };

@@ -35,6 +35,10 @@ Menu::~Menu(){
 //TODO DFS style dealloc
 }
 
+inline uint32_t Menu::highlight_selection(Component comp, uint32_t pixel){
+    return pixel + comp.selected * selected_color;
+}
+
 Vector2d Menu::pivot_to_coord(Position pos, unsigned int height_obj, 
     unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
     bool screen_coord, int padding_x/* = 0*/, int padding_y/* = 0*/
@@ -222,7 +226,7 @@ void Menu::draw_panel(Component comp){
     case Component::Rectangle:
         for (int y = comp.y; y < comp.height + comp.y; y++){
             for (int x = comp.x; x < comp.width + comp.x; x++) {
-                gui.img_matrix[width*y + x] = comp.background_color;
+                gui.img_matrix[width*y + x] = highlight_selection(comp, comp.background_color);
             }
         }
         break;
@@ -239,7 +243,7 @@ void Menu::draw_panel(Component comp){
                 // ( x - h )^2 + ( y - k )^2 = r^2, where ( h, k ) is the center 
                 // and r is the radius.
                 if((pow(_x,2) + pow(_y,2)) <= pow(comp.width/2,2)) {
-                    gui.img_matrix[width*y + x] = comp.background_color;  
+                    gui.img_matrix[width*y + x] = highlight_selection(comp, comp.background_color);  
                 } 
             }
         }
@@ -256,9 +260,13 @@ void Menu::draw_img(Component comp){
         for (unsigned int x = comp.x; x < _img.width + comp.x; x++) {
             if (y < height && x < width) {
                 if (GFX::is_transparent(_img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)])){
-                    if (comp.background_color ) gui.img_matrix[width*y + x] = comp.background_color;
+                    if (comp.background_color ){
+                        gui.img_matrix[width*y + x] = highlight_selection(comp, comp.background_color);
+                    }
                 }
-                else gui.img_matrix[width*y + x] = _img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)];
+                else {
+                    gui.img_matrix[width*y + x] = highlight_selection(comp, _img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)]);
+                }
             }
         }
     }
@@ -275,18 +283,18 @@ void Menu::set_pos(Position pos, int padding_x /* = 0*/, int padding_y /* = 0*/)
 void Menu::update(){   
     for (unsigned int i = 0; i < width * height; i++) gui.img_matrix[i] = background_color; 
     for (Component comp: components){
+        if (comp.hidden) continue;
+
         if (comp.data.type == Component::IMAGE_TYPE) {
             draw_img(comp);
         }
         if (comp.data.type == Component::LABEL_TYPE) {
             //TODO simplify this
-            Image img = text(comp.data.data.text); // Todo: data.data?
-            Component temp = Component(img);
-            temp.set_x(comp.x);
-            temp.set_y(comp.y);
-            temp.background_color = comp.background_color;
+            Component temp = comp;
+            temp.data.type = Component::IMAGE_TYPE;
+            temp.data.data.img = text(comp.data.data.text); // Todo: data.data?
             draw_img(temp);
-            psp_free(img.img_matrix);
+            psp_free(temp.data.data.img.img_matrix);
         }
         if (comp.data.type == Component::PANEL_TYPE) {
             draw_panel(comp);

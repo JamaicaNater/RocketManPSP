@@ -10,6 +10,7 @@ Menu build_pause_menu(){
     // pause_menu.add_component(BOTTOM_CENTER, 
     //     Component(40,40, Component::Rectangle, 0x00FF00),
     //     0, 20);
+    
     pause_menu.add_component(CENTER, Component("Game Paused", 0x00CC00));
 
     pause_menu.add_component_group(BOTTOM_CENTER, {
@@ -26,15 +27,24 @@ Menu build_pause_menu(){
         GameState::update_status(GameState::RUNNING);
     };
     
-    pause_menu.on_open = [](Menu &self){
+    int * i = new int;
+    *i = 0;
+    pause_menu.control_reader.on_button_press_down = [&pause_menu, i]() {
+        log(INFO, "%d", *i);
+        pause_menu.components[*i].select();
+        pause_menu.control_reader.wait_button_release(PSP_CTRL_DOWN);
+        (*i)++;
+    };
+    
+    pause_menu.on_open = [&i](Menu &self){
+        i++;
         GFX::blur_screen();
         GFX::copy_buffers();
         self.update();
-
-        self.control_reader.wait_button_release(PSP_CTRL_START);   
-
         GFX::simple_drawBMP(self.x, self.y, self.gui);
         GFX::swapBuffers();
+
+        self.control_reader.wait_button_release(PSP_CTRL_START);   
 
         while (GameState::status_info.status == GameState::PAUSED)
         {   
