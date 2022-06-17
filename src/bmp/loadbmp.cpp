@@ -119,9 +119,9 @@ int load_BMP(Animation &anim) {
     fread((void *)(&BIG_HEIGHT), 1, sizeof(unsigned int), fp);
 
     // Ensure that rows and cols evenly divides height and width
-    PSP_LOGGER::assert(!(anim.width % anim.cols), "Width of %d is divisible by" 
+    assert(!(anim.width % anim.cols), "Width of %d is divisible by" 
     "cols %d", anim.width, anim.cols);
-    PSP_LOGGER::assert(!(anim.height % anim.rows), "Height of %d is divisible by" 
+    assert(!(anim.height % anim.rows), "Height of %d is divisible by" 
     "rows %d", anim.height, anim.rows);
 
     // Instead of using height and width of the image we now use height and 

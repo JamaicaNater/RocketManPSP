@@ -46,8 +46,8 @@ Image::~Image() {
 */
 void Image::resize(int h, int w){
     uint32_t * new_img = (uint32_t *)psp_malloc(h * w * sizeof(uint32_t));
-    PSP_LOGGER::assert(img_matrix, "Image to resize initialized");
-    PSP_LOGGER::assert(new_img, "Success in creating resize img");
+    assert(img_matrix, "Image to resize initialized");
+    assert(new_img, "Success in creating resize img");
 
     float scale_x = w/(float)width;
     float scale_y = h/(float)height;

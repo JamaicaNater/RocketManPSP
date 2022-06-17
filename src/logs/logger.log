@@ -97,18 +97,5 @@ DEBUG-H: 16 Objects in memory allocated to 1502148 bytes
 INFO: Formatting pixels
 INFO: Successfully loaded assets/font.bmp, 1465.12 kb used by BMPs
 DEBUG: Spawned:assets/enemy.bmp ptr: 8879d70
-DEBUG-H: inset 43200 at 89c2e50
-DEBUG-H: Allocated 43200 at 89c2e50. Info 
-DEBUG-H: 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 3520 at 89ce470
-DEBUG-H: Allocated 3520 at 89ce470. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
-DEBUG-H: inset 320 at 89cd720
-DEBUG-H: Allocated 320 at 89cd720. Info 
-DEBUG-H: 19 Objects in memory allocated to 1549188 bytes
-DEBUG-H: inset 320 at 89cd720
-DEBUG-H: Allocated 320 at 89cd720. Info 
-DEBUG-H: 20 Objects in memory allocated to 1549508 bytes
-DEBUG-H: inset 320 at 89cd720
-DEBUG-H: Allocated 320 at 89cd720. Info 
-DEBUG-H: 21 Objects in memory allocated to 1549828 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 8879d70
+DEBUG: Spawned:assets/enemy.bmp ptr: 8879d70

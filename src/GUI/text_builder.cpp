@@ -14,7 +14,7 @@ void init_text_builder(){
 
 // TODO where will this be freed
 Image text(const char * txt) {
-    PSP_LOGGER::assert(initialized, "text builder initalized");
+    assert(initialized, "text builder initalized");
 
     int index = 0;
     int letter_size = font.height * font.width;
@@ -122,11 +122,11 @@ int convert_ascii(char c){
 } 
 
 int get_font_width(){
-    PSP_LOGGER::assert(initialized, "Font was initialized before call to get_font_width");
+    assert(initialized, "Font was initialized before call to get_font_width");
     return font.width;
 }
 
 int get_font_height(){
-    PSP_LOGGER::assert(initialized, "Font was initialized before call to get_font_height");
+    assert(initialized, "Font was initialized before call to get_font_height");
     return font.height;
 }

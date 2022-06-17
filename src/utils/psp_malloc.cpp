@@ -63,7 +63,7 @@ void init_malloc(){
 void * psp_malloc(unsigned int bytes, const char * debug_info){
     void * ptr = malloc(bytes);
 
-    PSP_LOGGER::assert(map.insert({ptr,bytes})>-1, "psp_malloc inserted %u" 
+    assert(map.insert({ptr,bytes})>-1, "psp_malloc inserted %u" 
         "bytes successfully", bytes);
     
     PSP_LOGGER::log(PSP_LOGGER::DEBUG_H, "Allocated %lu at %0x. Info %s", bytes, ptr, debug_info);
@@ -73,7 +73,7 @@ void * psp_malloc(unsigned int bytes, const char * debug_info){
 }
 
 void psp_free(void * ptr){
-    PSP_LOGGER::assert(map.remove(ptr)>-1, "psp_free call on %0x" 
+    assert(map.remove(ptr)>-1, "psp_free call on %0x" 
         " successful", ptr);
     
     PSP_LOGGER::log(PSP_LOGGER::DEBUG_H, "Attempting to free %0x", ptr);

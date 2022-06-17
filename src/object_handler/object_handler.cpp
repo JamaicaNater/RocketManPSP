@@ -39,7 +39,7 @@ void ObjectHandler::spawn(Vector2d v, Image _img) {
     PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: %0x", 
     _img.filename, _img.img_matrix);
 
-    PSP_LOGGER::assert((object_list.insert(object) > -1), 
+    assert((object_list.insert(object) > -1), 
         "Object spawned successfully");
     last_spawn = curr_time;
 }

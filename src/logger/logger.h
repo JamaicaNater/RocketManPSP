@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdio.h>
-//#define assert(cond, args...) (cond) ? 0 :PSP_LOGGER::__assert_fail(#cond, __FILE__, __LINE__, args)
+#define assert(cond, args...) (cond) ? 0 :PSP_LOGGER::__assert_fail(#cond, __FILE__, __LINE__, args)
 
 namespace PSP_LOGGER {
     enum levels{DEBUG_H, DEBUG, INFO, WARNING, ERROR, CRITICAL};
@@ -20,16 +20,6 @@ namespace PSP_LOGGER {
      * 
      */
     void close_log();
-
-    /**
-     * @brief If condition evaluates to false close the program and output the 
-     * given notes.
-     * 
-     * @param condition 
-     * @param format - Notes
-     * @param ... 
-     */
-    void assert(bool condition, const char * format, ...);
 
     int __assert_fail(const char * condition, const char * file, int lineno, const char * format, ...);
 }

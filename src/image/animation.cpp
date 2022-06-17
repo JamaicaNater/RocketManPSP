@@ -1,7 +1,7 @@
 #include "animation.h"
 
 Image Animation::get_frame(int index) {
-    // PSP_LOGGER::assert(index < rows*cols, "get_frame(index) "
+    // assert(index < rows*cols, "get_frame(index) "
     // "requested an in bounds value of %d for size %d", index, rows * cols);
 
     return(Image(height, width, img_matrices + (width * height * index), 
