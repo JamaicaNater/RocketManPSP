@@ -13,10 +13,10 @@ Menu build_pause_menu(){
     pause_menu.add_component(CENTER, Component("Game Paused", 0x00CC00));
 
     pause_menu.add_component_group(BOTTOM_LEFT, {
-        Component(10,10, Component::Rectangle, 0x00FF00),
-        Component(10,10, Component::Rectangle, 0x00FF00),
-        Component(10,20, Component::Rectangle, 0x00FF00),
-        Component(10,10, Component::Rectangle, 0x00FF00)
+        Component("1", 0x00CC00),
+        Component("2", 0x00CC00),
+        Component("3", 0x00CC00),
+        Component(15,15, Component::Rectangle, 0x00FF00)
     }, Menu::GRID, 2,0,0, 2,2);
 
     

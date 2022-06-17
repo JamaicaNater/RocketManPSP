@@ -118,7 +118,7 @@ void Menu::add_component_group(Position pos, std::vector<Component> arr,
         break;
     
     case GRID:
-        add_grid(pos, arr, grouping, spacing, padding_x, padding_y, rows, cols);
+        add_grid_row_major(pos, arr, grouping, spacing, padding_x, padding_y, rows, cols);
         break;
     
     default:
@@ -126,23 +126,19 @@ void Menu::add_component_group(Position pos, std::vector<Component> arr,
     }
 }
 
-void Menu::add_grid(Position pos, std::vector<Component> arr, 
+void Menu::add_grid_row_major(Position pos, std::vector<Component> arr, 
     Grouping grouping, int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
-    
-
     int widest[cols] = {0};
     int tallest[rows] = {0};
 
     int total_height = 0;
     int total_width = 0;
     
-    int i = 0;
-    for (Component &comp : arr){
-        if (comp.width > widest[i%cols]) widest[i%cols] = comp.width;
-        if (comp.height > tallest[i/cols]) tallest[i/cols] = comp.height;
-        i++;
+    for (int i = 0; i < arr.size(); i++) {
+        if (arr[i].width > widest[i%cols]) widest[i%cols] = arr[i].width;
+        if (arr[i].height > tallest[i/cols]) tallest[i/cols] = arr[i].height;
     }
 
     for (int i=0; i < cols; i++) total_width += (widest[i] + spacing);
@@ -151,27 +147,65 @@ void Menu::add_grid(Position pos, std::vector<Component> arr,
     total_width -= spacing;
 
     Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
+    curr_coord.y += total_height - tallest[0]; // top down left right
     int start_x = curr_coord.x;
+    for (int i = 0; i < arr.size(); i++) {
+        if (i % cols == 0 && i > 0) { // next row
+            curr_coord.y -= tallest[i/cols] + spacing;
+            curr_coord.x = start_x;
+        }
 
-    i = 0;
-    for (Component &comp : arr){
-        comp.x = curr_coord.x;
-        comp.y = curr_coord.y;
+        arr[i].x = curr_coord.x;
+        arr[i].y = curr_coord.y;
 
-        comp.y += (tallest[i/cols] - comp.height)/2;
-        comp.x += (widest[i%cols] - comp.width)/2;
-
-        PSP_LOGGER::log(PSP_LOGGER::DEBUG, "tallest %d, widest %d, i %d", tallest[i/cols], widest[i%cols], i);
+        arr[i].y += (tallest[i/cols] - arr[i].height)/2;
+        arr[i].x += (widest[i%cols] - arr[i].width)/2;
         
         curr_coord.x += widest[i%cols] + spacing;
 
-        components.push_back(comp);
+        components.push_back(arr[i]);
+    }
+}
 
-        i++;
-        if (i % cols == 0) { // next row
-            curr_coord.y += tallest[i/cols] + spacing;
-            curr_coord.x = start_x;
+void Menu::add_grid_col_major(Position pos, std::vector<Component> arr, 
+    Grouping grouping, int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
+    int rows/* = 0*/, int cols/* = 0*/
+) {
+    int widest[rows] = {0};
+    int tallest[cols] = {0};
+
+    int total_height = 0;
+    int total_width = 0;
+    
+    for (int i = 0; i < arr.size(); i++) {
+        if (arr[i].width > widest[i/rows]) widest[i/rows] = arr[i].width;
+        if (arr[i].height > tallest[i%rows]) tallest[i%rows] = arr[i].height;
+    }
+
+    for (int i=0; i < cols; i++) total_width += (widest[i] + spacing);
+    for (int i=0; i < rows; i++) total_height += (tallest[i] + spacing);
+    total_height -= spacing;
+    total_width -= spacing;
+
+    Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
+    curr_coord.y += total_height - tallest[0]; // top down left right
+    int start_y = curr_coord.y;
+    int start_x = curr_coord.x;
+    for (int i = 0; i < arr.size(); i++) {
+        if (i % rows == 0 && i > 0) { // next row
+            curr_coord.x += widest[i%rows] + spacing;
+            curr_coord.y = start_y;
         }
+
+        arr[i].x = curr_coord.x;
+        arr[i].y = curr_coord.y;
+
+        arr[i].y -= (tallest[i%rows] - arr[i].height)/2;
+        arr[i].x += (widest[i/rows] - arr[i].width)/2;
+        
+        curr_coord.y -= tallest[i/rows] + spacing;
+
+        components.push_back(arr[i]);
     }
 }
 

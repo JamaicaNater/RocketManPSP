@@ -58,7 +58,10 @@ private:
 
     void add_vertical_list(Position pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
     void add_horizontal_list(Position pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
-    void add_grid(Position pos, std::vector<Component> arr, Grouping grouping, 
-        int spacing = 1, int padding_x = 0, int padding_y = 0, int rows = 0, 
-        int cols = 0);
+    void add_grid_col_major(Position pos, std::vector<Component> arr, 
+        Grouping grouping, int spacing = 1, int padding_x = 0, int padding_y = 0,
+        int rows = 0, int cols = 0);
+    void add_grid_row_major(Position pos, std::vector<Component> arr, 
+        Grouping grouping, int spacing = 1, int padding_x = 0, int padding_y = 0,
+        int rows = 0, int cols = 0);
 };
