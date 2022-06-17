@@ -7,7 +7,7 @@
 class Component
 {
 public:
-    enum Shape {Rectangle, Circle, Triangle};
+    enum Shape {Rectangle, Circle};
     enum ComponentType{NONE_TYPE, PANEL_TYPE, LABEL_TYPE, IMAGE_TYPE};
 
     struct CompData

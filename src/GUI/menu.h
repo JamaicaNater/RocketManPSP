@@ -17,6 +17,7 @@ class Menu
 {
 public:   
     enum Grouping{GRID, VERTICAL_LIST, HORIZONTAL_LIST};
+    
     unsigned int x, y, height, width;
     uint32_t background_color;
 
@@ -52,6 +53,15 @@ public:
 
     void close();
 private:
+    struct GroupInfo
+    {
+        int group_id;
+        int num_components;
+        Grouping grouping;
+    };
+
+    std::vector<GroupInfo> groups;
+
     Vector2d pivot_to_coord(Position pos, unsigned int height_obj, 
         unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
         bool screen_coord, int padding_x = 0, int padding_y = 0 );
