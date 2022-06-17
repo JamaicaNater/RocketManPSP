@@ -8,7 +8,6 @@
 #include "gamestate.h"
 #include "utils.h"
 #include "logger/logger.h"
-#include "assert.h"
 #include "utils/psp_malloc.h"
 
 #include "graphics/gfx.hpp"

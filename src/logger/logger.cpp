@@ -57,33 +57,55 @@ namespace PSP_LOGGER {
      * @param ... 
      */
     void assert(bool condition, const char * format, ...){
-        #ifdef PSP_LOGGING
-        //if (condition) return;
+        //#ifdef PSP_LOGGING
+        if (condition) return;
+        pspDebugScreenInit();
 
-        if (fd<0) {
-            pspDebugScreenInit();
-            pspDebugScreenPrintf("Failed to open logger file at %s, please make sure the path exists, exiting in 10 seconds", logger_file);
-            sceKernelDelayThread(10 * SECOND);
-            sceKernelExitGame();
-        }
+        // if (fd<0) {
+        //     pspDebugScreenInit();
+        //     pspDebugScreenPrintf("Failed to open logger file at %s, please make"
+        //         " sure the path exists, exiting in 10 seconds", logger_file);
+        //     sceKernelDelayThread(10 * SECOND);
+        //     sceKernelExitGame();
+        // }
 
         va_list args;
-        char data[128];
-        if (!condition) sceIoWrite(fd, (void*)"CRITICAL:assert() evaluated false: ", 42);
-        else sceIoWrite(fd, (void*)"DEBUG: (assertion) ", 19);
+        char data[256] = "CRITICAL:assert() evaluated false: ";
+        
+        va_start( args, format );
+        vsprintf(data+42, format, args);
+        va_end( args );
+
+        pspDebugScreenPrintf("%s, %s:%d", data, __FILE__, __LINE__);
+        
+        
+        sceKernelDelayThread(10 * SECOND);
+        
+        sceKernelExitGame();
+
+        
+        //#endif
+    }
+
+    int __assert_fail(const char * condition, const char * file, int lineno, const char * format, ...){
+        //#ifdef PSP_LOGGING
+        pspDebugScreenInit();
+
+        va_list args;
+        char data[256];
+        
         va_start( args, format );
         vsprintf(data, format, args);
         va_end( args );
-        sceIoWrite(fd, data, strlen(data));
-        
-        sceIoWrite(fd, (void *)"\n", 1); // or strlen(data)
 
-        if (!condition){
-            close_log();
-            sceKernelExitGame();
-        }
+        pspDebugScreenPrintf("assert() evaluated false: %s, at %s:%d comments: %s",condition, file, lineno, data);
         
-        #endif
+        sceKernelDelayThread(10 * SECOND);
+        
+        sceKernelExitGame();
+
+        return 1;
+        //#endif
     }
     
 }

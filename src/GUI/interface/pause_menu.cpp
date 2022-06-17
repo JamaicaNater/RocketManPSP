@@ -16,8 +16,8 @@ Menu build_pause_menu(){
         Component("1", 0x00CC00),
         Component("2", 0x00CC00),
         Component("3", 0x00CC00),
-        Component(15,15, Component::Rectangle, 0x00FF00)
-    }, Menu::VERTICAL_LIST, 2,0,0, 2,2);
+        Component(16,16, Component::Rectangle, 0x00FF00)
+    }, Menu::HORIZONTAL_LIST, 2,0,0, 2,2);
 
     
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       
