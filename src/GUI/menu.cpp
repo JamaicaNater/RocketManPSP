@@ -301,3 +301,10 @@ void Menu::update(){
         }
     }
 }
+
+void Menu::select_component(Component &comp) {
+    if(selected_comp) selected_comp->deselect();
+
+    selected_comp = &comp;
+    selected_comp->select();
+}

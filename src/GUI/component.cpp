@@ -53,10 +53,15 @@ Component Component::show() {
 }
 
 Component Component::select() {
-    selected = true;
+    if (selectable) selected = true;
     return *this;
 }
 Component Component::deselect(){
     selected = false;
+    return *this;
+}
+
+Component Component::set_selectable(bool _selectable){
+    selectable = _selectable;
     return *this;
 }

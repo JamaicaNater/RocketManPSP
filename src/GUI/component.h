@@ -35,7 +35,7 @@ public:
 
     CompData data;
 
-    bool selectable = false, selected = false, hidden = false;
+    bool selectable = true, selected = false, hidden = false;
 
     std::function<void()> on_click;
     std::function<void()> on_select;
@@ -53,4 +53,6 @@ public:
 
     Component select();
     Component deselect();
+
+    Component set_selectable(bool _selectable);
 };

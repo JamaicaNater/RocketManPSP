@@ -6,12 +6,15 @@
 
 Menu build_pause_menu(){
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
+
+    int * selected_id = (int*)malloc(sizeof(int));
+    *selected_id = 0;
     
-    // pause_menu.add_component(BOTTOM_CENTER, 
-    //     Component(40,40, Component::Rectangle, 0x00FF00),
-    //     0, 20);
     
-    pause_menu.add_component(CENTER, Component("Game Paused", 0x00CC00));
+    pause_menu.add_component(CENTER, 
+        Component("Game Paused", 0x00CC00)
+        .set_selectable(false)
+    );
 
     pause_menu.add_component_group(BOTTOM_CENTER, {
         Component("1", 0x00CC00),
@@ -20,24 +23,40 @@ Menu build_pause_menu(){
         Component(16,16, Component::Rectangle, 0x00FF00)
     }, Menu::HORIZONTAL_LIST, 2,0,0, 2,2);
 
-    
-    pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       
+    pause_menu.control_reader.on_button_press_start = [&pause_menu, selected_id]() {       
         pause_menu.control_reader.wait_button_release(PSP_CTRL_START);  
         pause_time += (sceKernelGetSystemTimeLow() - GameState::status_info.start_time);
         GameState::update_status(GameState::RUNNING);
+        free(selected_id);
     };
     
-    int * i = new int;
-    *i = 0;
-    pause_menu.control_reader.on_button_press_down = [&pause_menu, i]() {
-        log(INFO, "%d", *i);
-        pause_menu.components[*i].select();
+    pause_menu.control_reader.on_button_press_down = [&pause_menu, selected_id]() {
+        while (!pause_menu.components[*selected_id].selectable) { 
+            (*selected_id)++;
+            *selected_id %= pause_menu.components.size();
+        }
+
+        pause_menu.select_component(pause_menu.components[*selected_id]);
         pause_menu.control_reader.wait_button_release(PSP_CTRL_DOWN);
-        (*i)++;
+        
+        (*selected_id)++;
+        *selected_id %= pause_menu.components.size();
+    };
+
+    pause_menu.control_reader.on_button_press_up = [&pause_menu, selected_id]() {
+        while (!pause_menu.components[*selected_id].selectable) { 
+            (*selected_id)--;
+            *selected_id = (*selected_id < 0) ? pause_menu.components.size() - 1: *selected_id;
+        }
+
+        pause_menu.select_component(pause_menu.components[*selected_id]);
+        pause_menu.control_reader.wait_button_release(PSP_CTRL_UP);
+        
+        (*selected_id)--;
+        *selected_id = (*selected_id < 0) ? pause_menu.components.size() - 1: *selected_id;
     };
     
-    pause_menu.on_open = [&i](Menu &self){
-        i++;
+    pause_menu.on_open = [](Menu &self){
         GFX::blur_screen();
         GFX::copy_buffers();
         self.update();

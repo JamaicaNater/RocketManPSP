@@ -22,6 +22,8 @@ public:
     uint32_t background_color;
     uint32_t selected_color = 0x0000AA;
 
+    Component * selected_comp = NULL;
+
     std::vector<Component> components;
 
     ControlReader control_reader; // TOdo init
@@ -53,6 +55,8 @@ public:
     void update();
 
     void close();
+
+    void select_component(Component &comp);
 private:
     struct GroupInfo
     {
