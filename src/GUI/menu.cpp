@@ -110,17 +110,17 @@ void Menu::add_component_group(Position pos, std::vector<Component> arr,
     switch (grouping)
     {
     case VERTICAL_LIST:
-        add_grid_row_major(pos, arr, grouping, spacing, padding_x, padding_y, arr.size(), 1);
+        add_grid_row_major(pos, arr, spacing, padding_x, padding_y, arr.size(), 1);
         break;
 
     case HORIZONTAL_LIST:
-        add_grid_row_major(pos, arr, grouping, spacing, padding_x, padding_y, 1, arr.size());
+        add_grid_row_major(pos, arr, spacing, padding_x, padding_y, 1, arr.size());
         break;
     
     case GRID:
-        if(row_major) add_grid_row_major(pos, arr, grouping, spacing, padding_x,
+        if(row_major) add_grid_row_major(pos, arr, spacing, padding_x,
             padding_y, rows, cols);
-        else add_grid_col_major(pos, arr, grouping, spacing, padding_x, padding_y, 
+        else add_grid_col_major(pos, arr, spacing, padding_x, padding_y, 
             rows, cols);
         break;
     
@@ -129,8 +129,8 @@ void Menu::add_component_group(Position pos, std::vector<Component> arr,
     }
 }
 
-void Menu::add_grid_row_major(Position pos, std::vector<Component> arr, 
-    Grouping grouping, int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
+void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
+    int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
     int widest[cols] = {0};
@@ -139,7 +139,7 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     int total_height = 0;
     int total_width = 0;
     
-    for (int i = 0; i < arr.size(); i++) {
+    for (unsigned int i = 0; i < arr.size(); i++) {
         if (arr[i].width > widest[i%cols]) widest[i%cols] = arr[i].width;
         if (arr[i].height > tallest[i/cols]) tallest[i/cols] = arr[i].height;
     }
@@ -150,9 +150,12 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     total_width -= spacing;
 
     Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
+    curr_coord.x += padding_x;
+    curr_coord.y += padding_y;
+
     curr_coord.y += total_height - tallest[0]; // top down left right
     int start_x = curr_coord.x;
-    for (int i = 0; i < arr.size(); i++) {
+    for (unsigned int i = 0; i < arr.size(); i++) {
         if (i % cols == 0 && i > 0) { // next row
             curr_coord.y -= tallest[i/cols] + spacing;
             curr_coord.x = start_x;
@@ -171,7 +174,7 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
 }
 
 void Menu::add_grid_col_major(Position pos, std::vector<Component> arr, 
-    Grouping grouping, int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
+    int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
     int widest[rows] = {0};
@@ -180,7 +183,7 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     int total_height = 0;
     int total_width = 0;
     
-    for (int i = 0; i < arr.size(); i++) {
+    for (unsigned int i = 0; i < arr.size(); i++) {
         if (arr[i].width > widest[i/rows]) widest[i/rows] = arr[i].width;
         if (arr[i].height > tallest[i%rows]) tallest[i%rows] = arr[i].height;
     }
@@ -191,10 +194,12 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     total_width -= spacing;
 
     Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
+    curr_coord.x += padding_x;
+    curr_coord.y += padding_y;
+
     curr_coord.y += total_height - tallest[0]; // top down left right
     int start_y = curr_coord.y;
-    int start_x = curr_coord.x;
-    for (int i = 0; i < arr.size(); i++) {
+    for (unsigned int i = 0; i < arr.size(); i++) {
         if (i % rows == 0 && i > 0) { // next row
             curr_coord.x += widest[i%rows] + spacing;
             curr_coord.y = start_y;

@@ -25,20 +25,8 @@ public:
 
         ComponentType type;
         DataUnion data;
-
-        CompData() : type (NONE_TYPE){
-
-        }
-        CompData(char t[]) : type(LABEL_TYPE){
-            strncpy(data.text, t, 63);
-        }
-        CompData(Image i) : type(IMAGE_TYPE){
-            data.img = i;
-        }
-        CompData(Shape s) : type(PANEL_TYPE){
-            data.shape = s;
-        }
     };
+    
     int x,y;
     int width = 0, height = 0;
     uint32_t background_color = 0x00000000;
@@ -52,7 +40,6 @@ public:
     std::function<void()> on_click;
     std::function<void()> on_select;
         
-    Component(int _height, int _width, CompData _dat, uint32_t _color = 0x00000000);
     Component(int _height, int _width, Shape s, uint32_t _color = 0x00000000);
     Component(const char * txt, uint32_t _color = 0x00000000);
     Component(Image _img, uint32_t _color = 0x00000000);
