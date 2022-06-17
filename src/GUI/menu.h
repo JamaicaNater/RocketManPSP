@@ -40,7 +40,7 @@ public:
  
     void add_component_group(Position pos, std::vector<Component> arr, 
         Grouping grouping, int spacing = 1, int padding_x = 0, int padding_y = 0, 
-        int rows = 0, int cols = 0);
+        int rows = 0, int cols = 0, bool row_major = false);
 
     void draw_panel(Component comp);
 
@@ -55,9 +55,6 @@ private:
     Vector2d pivot_to_coord(Position pos, unsigned int height_obj, 
         unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
         bool screen_coord, int padding_x = 0, int padding_y = 0 );
-
-    void add_vertical_list(Position pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
-    void add_horizontal_list(Position pos, std::vector<Component> arr, int spacing = 1, int padding_x = 0, int padding_y = 0);
     void add_grid_col_major(Position pos, std::vector<Component> arr, 
         Grouping grouping, int spacing = 1, int padding_x = 0, int padding_y = 0,
         int rows = 0, int cols = 0);

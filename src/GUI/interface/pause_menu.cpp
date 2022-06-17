@@ -12,12 +12,12 @@ Menu build_pause_menu(){
     //     0, 20);
     pause_menu.add_component(CENTER, Component("Game Paused", 0x00CC00));
 
-    pause_menu.add_component_group(BOTTOM_LEFT, {
+    pause_menu.add_component_group(BOTTOM_CENTER, {
         Component("1", 0x00CC00),
         Component("2", 0x00CC00),
         Component("3", 0x00CC00),
         Component(15,15, Component::Rectangle, 0x00FF00)
-    }, Menu::GRID, 2,0,0, 2,2);
+    }, Menu::VERTICAL_LIST, 2,0,0, 2,2);
 
     
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       
