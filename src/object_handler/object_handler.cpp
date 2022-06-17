@@ -39,8 +39,7 @@ void ObjectHandler::spawn(Vector2d v, Image _img) {
     log(DEBUG, "Spawned:%s ptr: %0x", 
     _img.filename, _img.img_matrix);
 
-    assert((object_list.insert(object) > -1), 
-        "Object spawned successfully");
+    assert((object_list.insert(object) > -1), "Object spawned successfully");
     last_spawn = curr_time;
 }
 

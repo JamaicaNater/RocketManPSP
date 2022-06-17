@@ -204,13 +204,11 @@ namespace GFX
 						// For each pixel in the image take it and rotate it
 						x_i= (x-mid_x)*cos_theta+(y-mid_y)*sin_theta;
 						y_i= -(x-mid_x)*sin_theta+(y-mid_y)*cos_theta;
-						//log(INFO, "", rad);
 
 						x_i+=mid_x; 
 						y_i+=mid_y; 
 
 						if (direction == FORWARD && valid_pixel(x_i+playerx, end_y-y_i+playery, &location)) {
-							//log(DEBUG, "%s , %d", filename, (int)round((x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery)));
 							draw_buffer[location] = *pixel;
 						} else if (direction == BACKWARD && valid_pixel(end_x-x_i+playerx, end_y-y_i+playery, &location)) {
 							draw_buffer[location] = *pixel;
@@ -230,7 +228,6 @@ namespace GFX
 			{
 				for (int x1 = start_x; x1 < end_x; x1++)
 				{
-					//log(DEBUG, "x: %d, y: %d, h: %d, w: %d", x1-start_x, y1-start_y, height, width);
 					*pixel = *(image+index);
 					if (!is_transparent(*pixel)){
 						
@@ -239,7 +236,6 @@ namespace GFX
 						} else{
 							valid_pixel(start_x + end_x - x1, y1, &draw_pos);
 						}
-						//log(INFO, "draw at %d", draw_pos);
 						draw_buffer[draw_pos] = *pixel;
 					}
 					index++;
