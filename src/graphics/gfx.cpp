@@ -61,6 +61,10 @@ namespace GFX
 		//memset(draw_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT);
 	}
 
+	void copy_buffers(){
+		memcpy(disp_buffer, draw_buffer, sizeof(uint32_t) * SCREEN_WIDTH * SCREEN_HEIGHT);
+	}
+
 	void swapBuffers()
 	{
 		uint32_t* temp = disp_buffer;
@@ -94,23 +98,22 @@ namespace GFX
 		}
 	}
 
-	void simple_drawBMP(int x, int y, Image &img) {
-		unsigned int * &image = img.img_matrix;
-		unsigned int &width = img.width;
-		unsigned int &height = img.height;
+	void simple_drawBMP(int x, int y, Image &img, bool disp_buf) {
+		uint32_t * buffer = (disp_buf) ? disp_buffer : draw_buffer;
 
-		if (!image) {
+		if (!img.img_matrix) {
 			load_BMP(img);
 		}
 
 		int index = 0;
-		int start_y = y + height;
+		int start_y = y + img.height;
 		int end_y = y;
 
 		for (int y1 = start_y; y1 > end_y; y1--)
 		{
-			memcpy(draw_buffer + (y1*SCREEN_WIDTH) + x,image+index, width * sizeof(unsigned int));
-			index+=width;
+			memcpy(buffer + (y1*SCREEN_WIDTH) + x, img.img_matrix+index, 
+				img.width * sizeof(uint32_t));
+			index += img.width;
 		}
 	}
 

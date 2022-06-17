@@ -20,6 +20,7 @@ public:
     
     unsigned int x, y, height, width;
     uint32_t background_color;
+    uint32_t selected_color = 0x00000050;
 
     std::vector<Component> components;
 

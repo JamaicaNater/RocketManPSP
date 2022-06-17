@@ -29,6 +29,6 @@ public:
     ControlReader(/* args */);
     ~ControlReader();
     void init();
-    void read_controls();
+    int read_controls();
     void wait_button_release(PspCtrlButtons button);
 };

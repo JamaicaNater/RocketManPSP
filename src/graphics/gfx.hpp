@@ -38,6 +38,8 @@ namespace GFX
 	 */
 	bool valid_pixel(int x, int y, int * location);
 
+	void copy_buffers();
+
 	/**
 	 * @brief Swaps the draw buffer with the display buffer
 	 * 
@@ -56,7 +58,7 @@ namespace GFX
 
 	void draw_progress_bar(int x, int y, int height, int width, int val, int max, uint32_t val_color, uint32_t rem_color);
 
-	void simple_drawBMP(int x, int y, Image &image);
+	void simple_drawBMP(int x, int y, Image &image, bool disp_buf = false);
 	
 	/**
 	 * @brief 

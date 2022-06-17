@@ -50,24 +50,28 @@ void close_log() {
 }
 
 int __assert_fail(const char * condition, const char * file, int lineno, const char * format, ...){
-    //#ifdef PSP_LOGGING
     pspDebugScreenInit();
 
     va_list args;
-    char data[256];
+    char va_data[256];
+    char data[512];
     
     va_start( args, format );
-    vsprintf(data, format, args);
+    vsprintf(va_data, format, args);
     va_end( args );
 
-    pspDebugScreenPrintf("assert() evaluated false: %s, at %s:%d comments: %s",condition, file, lineno, data);
-    
-    sceKernelDelayThread(10 * SECOND);
+    sprintf(data, "assert() evaluated false: %s, at %s:%d comments: %s", condition, file, lineno, va_data);
+
+    pspDebugScreenPrintf("%s", data);
+
+    sceKernelDelayThread(5 * SECOND);
+    #ifdef PSP_LOGGING
+    log(CRITICAL, data);
+    #endif
     close_log();
     sceKernelExitGame();
 
     return 1;
-    //#endif
 }
     
 

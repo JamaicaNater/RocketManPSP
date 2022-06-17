@@ -286,7 +286,7 @@ void Menu::update(){
             temp.set_y(comp.y);
             temp.background_color = comp.background_color;
             draw_img(temp);
-            free(img.img_matrix);
+            psp_free(img.img_matrix);
         }
         if (comp.data.type == Component::PANEL_TYPE) {
             draw_panel(comp);
