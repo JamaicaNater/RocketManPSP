@@ -9,8 +9,7 @@ Menu build_pause_menu(){
 
     int * selected_id = (int*)malloc(sizeof(int));
     *selected_id = 0;
-    
-    
+
     pause_menu.add_component(CENTER, 
         Component("Game Paused", 0x00CC00)
         .set_selectable(false)
@@ -31,29 +30,23 @@ Menu build_pause_menu(){
     };
     
     pause_menu.control_reader.on_button_press_down = [&pause_menu, selected_id]() {
-        while (!pause_menu.components[*selected_id].selectable) { 
-            (*selected_id)++;
-            *selected_id %= pause_menu.components.size();
-        }
+        std::vector<Component*> selectable = pause_menu.get_selectable_components();
 
-        pause_menu.select_component(pause_menu.components[*selected_id]);
+        pause_menu.select_component(selectable[*selected_id]);
         pause_menu.control_reader.wait_button_release(PSP_CTRL_DOWN);
         
         (*selected_id)++;
-        *selected_id %= pause_menu.components.size();
+        *selected_id %= selectable.size();
     };
 
     pause_menu.control_reader.on_button_press_up = [&pause_menu, selected_id]() {
-        while (!pause_menu.components[*selected_id].selectable) { 
-            (*selected_id)--;
-            *selected_id = (*selected_id < 0) ? pause_menu.components.size() - 1: *selected_id;
-        }
+        std::vector<Component*> selectable = pause_menu.get_selectable_components();
 
-        pause_menu.select_component(pause_menu.components[*selected_id]);
+        pause_menu.select_component(selectable[*selected_id]);
         pause_menu.control_reader.wait_button_release(PSP_CTRL_UP);
         
         (*selected_id)--;
-        *selected_id = (*selected_id < 0) ? pause_menu.components.size() - 1: *selected_id;
+        *selected_id = (*selected_id < 0) ? selectable.size() - 1: *selected_id;
     };
     
     pause_menu.on_open = [](Menu &self){

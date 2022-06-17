@@ -56,7 +56,9 @@ public:
 
     void close();
 
-    void select_component(Component &comp);
+    std::vector<Component*> get_selectable_components();
+
+    void select_component(Component *comp);
 private:
     struct GroupInfo
     {

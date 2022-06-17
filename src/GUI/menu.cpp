@@ -302,9 +302,19 @@ void Menu::update(){
     }
 }
 
-void Menu::select_component(Component &comp) {
+std::vector<Component*> Menu::get_selectable_components(){
+    std::vector<Component*> selectable_arr;
+    
+    for (int i = 0; i < components.size(); i++){
+        if (components[i].selectable) selectable_arr.push_back(&components[i]);
+    }
+
+    return selectable_arr;
+}
+
+void Menu::select_component(Component *comp) {
     if(selected_comp) selected_comp->deselect();
 
-    selected_comp = &comp;
+    selected_comp = comp;
     selected_comp->select();
 }
