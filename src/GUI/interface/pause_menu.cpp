@@ -28,25 +28,28 @@ Menu build_pause_menu(){
         GameState::update_status(GameState::RUNNING);
         free(selected_id);
     };
-    
+
+    std::vector<int> selectable = pause_menu.get_selectable_components();
+    pause_menu.select_component(selectable[*selected_id]);
+
     pause_menu.control_reader.on_button_press_down = [&pause_menu, selected_id]() {
-        std::vector<Component*> selectable = pause_menu.get_selectable_components();
+        std::vector<int> selectable = pause_menu.get_selectable_components();
+
+        (*selected_id)++;
+        *selected_id %= selectable.size();
 
         pause_menu.select_component(selectable[*selected_id]);
         pause_menu.control_reader.wait_button_release(PSP_CTRL_DOWN);
-        
-        (*selected_id)++;
-        *selected_id %= selectable.size();
     };
 
     pause_menu.control_reader.on_button_press_up = [&pause_menu, selected_id]() {
-        std::vector<Component*> selectable = pause_menu.get_selectable_components();
+        std::vector<int> selectable = pause_menu.get_selectable_components();
+
+        (*selected_id)--;
+        *selected_id = (*selected_id < 0) ? selectable.size() - 1: *selected_id;
 
         pause_menu.select_component(selectable[*selected_id]);
         pause_menu.control_reader.wait_button_release(PSP_CTRL_UP);
-        
-        (*selected_id)--;
-        *selected_id = (*selected_id < 0) ? selectable.size() - 1: *selected_id;
     };
     
     pause_menu.on_open = [](Menu &self){

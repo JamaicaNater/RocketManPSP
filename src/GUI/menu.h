@@ -17,14 +17,11 @@ class Menu
 {
 public:   
     enum Grouping{GRID, VERTICAL_LIST, HORIZONTAL_LIST};
+    enum Direction{UP, DOWN, LEFT, RIGHT};
     
     unsigned int x, y, height, width;
     uint32_t background_color;
     uint32_t selected_color = 0x0000AA;
-
-    Component * selected_comp = NULL;
-
-    std::vector<Component> components;
 
     ControlReader control_reader; // TOdo init
 
@@ -39,10 +36,10 @@ public:
 
     ~Menu();
 
-    void add_component(Position pos, Component comp, int padding_x = 0, 
+    std::pair<int,int> add_component(Position pos, Component comp, int padding_x = 0, 
         int padding_y = 0);
  
-    void add_component_group(Position pos, std::vector<Component> arr, 
+    std::pair<int,int> add_component_group(Position pos, std::vector<Component> arr, 
         Grouping grouping, int spacing = 1, int padding_x = 0, int padding_y = 0, 
         int rows = 0, int cols = 0, bool row_major = false);
 
@@ -56,15 +53,33 @@ public:
 
     void close();
 
-    std::vector<Component*> get_selectable_components();
+    std::vector<int> get_selectable_components();
 
-    void select_component(Component *comp);
+    void select_next();
+
+    void select_component(int comp_id);
 private:
+    int selected_comp_id = -1;
+
+    std::vector<Component> components;
     struct GroupInfo
     {
         int group_id;
         int num_components;
-        Grouping grouping;
+        bool row_major;
+        int rows;
+        int cols;
+        std::vector<Component*> components;
+
+        GroupInfo(int _group_id, bool _row_major, int _rows, int _cols, 
+            std::vector<Component*> _components
+        ) {
+            group_id = _group_id;
+            row_major = _row_major;
+            rows = _rows;
+            cols = _cols;
+            components = _components;
+        }
     };
 
     std::vector<GroupInfo> groups;

@@ -95,28 +95,42 @@ Vector2d Menu::pivot_to_coord(Position pos, unsigned int height_obj,
     return Vector2d(_x,_y);
 }
 
-void Menu::add_component(Position _pos, Component comp, int padding_x /* = 0*/, 
+std::pair<int,int> Menu::add_component(Position _pos, Component comp, int padding_x /* = 0*/, 
     int padding_y /* = 0*/
 ){
+    int comp_index = components.size();
+    int group_index = groups.size();
+
     Vector2d vec = pivot_to_coord(_pos, comp.height, comp.width, height, width, 
         false, padding_x, padding_y);
     comp.x = vec.x;
     comp.y = vec.y;
 
     components.push_back(comp);
+    groups.push_back(GroupInfo(groups.size(), true, 1, 1, 
+        {&components[components.size()-1]}));
+
+    return {comp_index, group_index};
 }
 
-void Menu::add_component_group(Position pos, std::vector<Component> arr, 
+std::pair<int,int> Menu::add_component_group(Position pos, std::vector<Component> arr, 
     Grouping grouping, int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/, bool row_major/* = true*/
 ) {
+    int first_comp_index = components.size();
+    int group_index = groups.size();
     switch (grouping)
     {
     case VERTICAL_LIST:
+        rows = arr.size();
+        cols = 1;
         add_grid_row_major(pos, arr, spacing, padding_x, padding_y, arr.size(), 1);
         break;
 
     case HORIZONTAL_LIST:
+        row_major = false;
+        rows = 1;
+        cols = arr.size();
         add_grid_row_major(pos, arr, spacing, padding_x, padding_y, 1, arr.size());
         break;
     
@@ -128,8 +142,17 @@ void Menu::add_component_group(Position pos, std::vector<Component> arr,
         break;
     
     default:
+        assert(0, "Failed to match grouping %d", grouping);
         break;
     }
+
+    std::vector<Component *> group_vec;
+    for(int i = components.size() - arr.size() - 1; i < components.size(); i++) {
+        group_vec.push_back(&components[i]);
+    }
+    groups.push_back(GroupInfo(groups.size(), row_major, rows, cols, group_vec));
+
+    return {first_comp_index, group_index};
 }
 
 void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
@@ -302,19 +325,19 @@ void Menu::update(){
     }
 }
 
-std::vector<Component*> Menu::get_selectable_components(){
-    std::vector<Component*> selectable_arr;
+std::vector<int> Menu::get_selectable_components(){
+    std::vector<int> selectable_arr;
     
     for (int i = 0; i < components.size(); i++){
-        if (components[i].selectable) selectable_arr.push_back(&components[i]);
+        if (components[i].selectable) selectable_arr.push_back(i);
     }
 
     return selectable_arr;
 }
 
-void Menu::select_component(Component *comp) {
-    if(selected_comp) selected_comp->deselect();
+void Menu::select_component(int comp_id) {
+    if(selected_comp_id > -1) components[selected_comp_id].deselect();
 
-    selected_comp = comp;
-    selected_comp->select();
+    selected_comp_id = comp_id;
+    components[selected_comp_id].select();
 }
