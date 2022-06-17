@@ -84,7 +84,7 @@ Vector2d Menu::pivot_to_coord(Position pos, unsigned int height_obj,
     \
     default:
         _x = _y = 0;
-        PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to match a pivot"
+        log(CRITICAL, "Failed to match a pivot"
             "");
         break;
     }

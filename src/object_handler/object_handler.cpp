@@ -8,7 +8,7 @@
 ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, 
     int _time_between_spawns, Object::ObjectTypes _type)
 {
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Calling ObjectList for objects");
+    log(DEBUG, "Calling ObjectList for objects");
     object_list = *(new ObjectList(MAX_OBJECTS));
 
     velocity = _velocity;
@@ -17,8 +17,8 @@ ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity,
 }
 
 ObjectHandler::~ObjectHandler(){
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Attempt destruction of Object handler "
-        "with list of size %d", object_list.MAX_SIZE);
+    log(DEBUG, "Attempt destruction of Object handler with list of size %d",
+         object_list.MAX_SIZE);
 
     object_list.~ObjectList();
     psp_free(&object_list);
@@ -36,7 +36,7 @@ void ObjectHandler::spawn(Vector2d v, Image _img) {
     object->vector = v;
     object->type = type;
 
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Spawned:%s ptr: %0x", 
+    log(DEBUG, "Spawned:%s ptr: %0x", 
     _img.filename, _img.img_matrix);
 
     assert((object_list.insert(object) > -1), 
@@ -93,19 +93,19 @@ void ObjectHandler::clean(){
 }
 
 void ObjectHandler::init() {
-    //PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual init method called");
+    //log(WARNING, "Pure virtual init method called");
 }
 
 void ObjectHandler::on_object_collision(Object * obj, ObjectList &collision_list) {
-    //PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual obj_col method called");
+    //log(WARNING, "Pure virtual obj_col method called");
 }
 
 void ObjectHandler::on_terrain_collision(Object * obj) {
-    //PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual ter_col method called");
+    //log(WARNING, "Pure virtual ter_col method called");
 }
 
 void ObjectHandler::on_off_screen(Object * obj){
-    //PSP_LOGGER::log(PSP_LOGGER::WARNING, "Pure virtual off_scr method called");
+    //log(WARNING, "Pure virtual off_scr method called");
 }
 
 void ObjectHandler::check_collisions(int MAX_COLLISIONS){

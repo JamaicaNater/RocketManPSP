@@ -12,10 +12,9 @@ int bmp_mem=0;
 
 int load_BMP(Image &img) {
     FILE *fp = fopen(img.filename, "rb");
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "loading %s into memory", img.filename);
+    log(INFO, "loading %s into memory", img.filename);
     if(!fp) {
-        PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to open %s: does "
-        "the file exist?", img.filename);
+        log(CRITICAL, "Failed to open %s: does the file exist?", img.filename);
     }
 
     int pixlmap_location;
@@ -35,20 +34,19 @@ int load_BMP(Image &img) {
     int size = img.width * img.height;
 
     img.img_matrix = (unsigned int *)psp_malloc(size * sizeof(unsigned int));
-    if (!img.img_matrix) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, 
-        "Failed memory allocation");
+    if (!img.img_matrix) log(CRITICAL, "Failed memory allocation");
     
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Reading file");
+    log(INFO, "Reading file");
     fread((void *)img.img_matrix, sizeof(unsigned int), size, fp); 
 
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Formatting pixels");
+    log(INFO, "Formatting pixels");
     for (int i = 0; i < size; i++) {
         img.img_matrix[i] = format_pixel(img.img_matrix[i]);
     }
 
     bmp_mem += size*sizeof(unsigned int);
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Succesfuly loaded %s, %f kb used by "
-        "bmps", img.filename, bmp_mem/1024.0f);
+    log(INFO, "Succesfuly loaded %s, %f kb used by bmps", 
+        img.filename, bmp_mem/1024.0f);
 
     fclose(fp);
     return 1;
@@ -57,8 +55,7 @@ int load_BMP(Image &img) {
 void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename) {
     FILE *fp = fopen(filename, "rb");
     if(!fp) {
-        PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to open %s: does the "
-        "file exist?", filename);
+        log(CRITICAL, "Failed to open %s: does the file exist?", filename);
     }
 
     int pixlmap_location;
@@ -98,10 +95,9 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
 
 int load_BMP(Animation &anim) {   
     FILE *fp = fopen(anim.filename, "rb");
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "loading %s into memory", anim.filename);
+    log(INFO, "loading %s into memory", anim.filename);
     if(!fp) {
-        PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to open %s: does the" 
-        "file exist?", anim.filename);
+        log(CRITICAL, "Failed to open %s: does the file exist?", anim.filename);
     }
     int pixlmap_location;
     unsigned int BIG_WIDTH;
@@ -130,11 +126,10 @@ int load_BMP(Animation &anim) {
     anim.height= BIG_HEIGHT / anim.rows;
     size = anim.width * anim.height;
 
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Allocating Space");
+    log(INFO, "Allocating Space");
     anim.img_matrices = (unsigned int *)psp_malloc(sizeof(unsigned int) 
         * anim.rows * anim.cols * size);
-    if (!anim.img_matrices) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, 
-        "Failed memory allocation");
+    if (!anim.img_matrices) log(CRITICAL, "Failed memory allocation");
    
     int curr_row;
     for (unsigned int y = 0; y < BIG_HEIGHT; y++) {
@@ -148,14 +143,14 @@ int load_BMP(Animation &anim) {
         }
     }
 
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Formatting pixels");
+    log(INFO, "Formatting pixels");
     for (unsigned int i = 0; i < BIG_HEIGHT * BIG_WIDTH; i++){
         anim.img_matrices[i] = format_pixel(anim.img_matrices[i]);
     }
     
     bmp_mem += anim.rows * anim.cols* size*sizeof(unsigned int);
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Successfully loaded %s, %.2f kb used by "
-        "BMPs", anim.filename, bmp_mem/1024.0f);
+    log(INFO, "Successfully loaded %s, %.2f kb used by BMPs", 
+        anim.filename, bmp_mem/1024.0f);
     
     fclose(fp);
     return 1;

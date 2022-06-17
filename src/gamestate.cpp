@@ -16,7 +16,7 @@
 GameState::StatusInfo GameState::status_info = {GameState::RUNNING, sceKernelGetSystemTimeLow()};
 
 void GameState::init(){
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Init Gamestate");
+    log(INFO, "Init Gamestate");
     GameState::update_status(RUNNING);
     //in_menu = true;
     in_title = true;
@@ -38,7 +38,7 @@ void GameState::title_screen() {
         GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
 
 	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
-	else PSP_LOGGER::log(PSP_LOGGER::ERROR, "failed to create thread");
+	else log(ERROR, "failed to create thread");
 
     control_reader.on_button_press_start = [home_thid, this](){
         sceKernelTerminateThread(home_thid);

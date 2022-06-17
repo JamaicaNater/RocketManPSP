@@ -17,7 +17,7 @@ struct MemMap {
 
     int insert(MemNode m){
         int index = MAX_SIZE;
-        PSP_LOGGER::log(PSP_LOGGER::DEBUG_H, "inset %u at %0x", m.bytes, m.ptr);
+        log(DEBUG_H, "inset %u at %0x", m.bytes, m.ptr);
         while (index > -1)
         {
             if (!arr[index].ptr) {
@@ -40,7 +40,7 @@ struct MemMap {
         {
             if (arr[index].ptr == ptr) {
                 bytes_allocated -= arr[index].bytes;
-                PSP_LOGGER::log(PSP_LOGGER::DEBUG_H, "freed %lu bytes", arr[index].bytes);
+                log(DEBUG_H, "freed %lu bytes", arr[index].bytes);
                 arr[index] = {0,0};
                 break;
             }
@@ -57,7 +57,8 @@ MemMap map;
 void init_malloc(){
     map.bytes_allocated = 0;
     map.num_allocated = 0;
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG_H, "Init: %u Objects in memory allocated to %lu bytes",map.num_allocated, map.bytes_allocated);
+    log(DEBUG_H, "Init: %u Objects in memory allocated to %lu bytes", 
+        map.num_allocated, map.bytes_allocated);
 }
 
 void * psp_malloc(unsigned int bytes, const char * debug_info){
@@ -66,8 +67,9 @@ void * psp_malloc(unsigned int bytes, const char * debug_info){
     assert(map.insert({ptr,bytes})>-1, "psp_malloc inserted %u" 
         "bytes successfully", bytes);
     
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG_H, "Allocated %lu at %0x. Info %s", bytes, ptr, debug_info);
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG_H, "%u Objects in memory allocated to %lu bytes",map.num_allocated, map.bytes_allocated);
+    log(DEBUG_H, "Allocated %lu at %0x. Info %s", bytes, ptr, debug_info);
+    log(DEBUG_H, "%u Objects in memory allocated to %lu bytes", 
+        map.num_allocated, map.bytes_allocated);
 
     return ptr;
 }
@@ -76,10 +78,9 @@ void psp_free(void * ptr){
     assert(map.remove(ptr)>-1, "psp_free call on %0x" 
         " successful", ptr);
     
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG_H, "Attempting to free %0x", ptr);
+    log(DEBUG_H, "Attempting to free %0x", ptr);
 
     free(ptr);
-    PSP_LOGGER::log(PSP_LOGGER::DEBUG_H, "Successfully freed %0x. " 
-        "%d Objects in memory allocated to %lu bytes", 
-        ptr, map.num_allocated, map.bytes_allocated);
+    log(DEBUG_H, "Successfully freed %0x. %d Objects in memory allocated to %lu"
+        " bytes", ptr, map.num_allocated, map.bytes_allocated);
 }

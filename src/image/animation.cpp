@@ -14,8 +14,7 @@ Animation::Animation(uint32_t _rows, uint32_t _cols, uint32_t _frame_time,
     frame_time = _frame_time;
     
     int str_size = strlen(_filename) + 1;
-    if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
-    " %s too long", _filename);
+    if (str_size > 64) log(CRITICAL, "Filename %s too long", _filename);
     strncpy(filename, _filename, str_size);
 
     rows = _rows;

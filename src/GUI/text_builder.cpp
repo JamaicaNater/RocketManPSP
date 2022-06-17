@@ -22,8 +22,7 @@ Image text(const char * txt) {
 
     unsigned int * img_matrix = (unsigned int *)psp_malloc( letter_size
         * length * sizeof(unsigned int));
-    if(!img_matrix) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to allocate"
-        "memory for text builder");
+    if(!img_matrix) log(CRITICAL, "Failed to allocate memory for text builder");
 
     while (txt[index])
     {
@@ -113,8 +112,7 @@ int convert_ascii(char c){
                 break;           
             default:
                 frame_num = 0;
-                PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to match: '%c' "
-                    "in text builder", c);
+                log(CRITICAL, "Failed to match: '%c' in text builder", c);
                 break;
             }
         }

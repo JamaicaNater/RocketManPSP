@@ -31,7 +31,7 @@ void ProjectileHandler::on_object_collision(Object * obj, ObjectList &collision_
         explosion_handler->animation->get_frame(0));
         // If we collided with an object put the explosion under it 
 
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded proj at x:%d y:%d, coll_with:%d",
+    log(INFO, "Exploded proj at x:%d y:%d, coll_with:%d",
         obj->vector.x, obj->vector.y, collision_list.size);
 
     object_list.remove(obj);
@@ -43,17 +43,17 @@ void ProjectileHandler::on_terrain_collision(Object * obj){
     explosion_handler->animation->get_frame(0));
     // Otherwise put the explosion when the projectile is. 
 
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Exploded proj at x:%d y:%d, on terrain",
+    log(INFO, "Exploded proj at x:%d y:%d, on terrain",
         obj->vector.x, obj->vector.y);
 
     object_list.remove(obj);
 }
 
 void ProjectileHandler::on_off_screen(Object * obj){
-    PSP_LOGGER::log(PSP_LOGGER::INFO, "Freed proj. at x:%d y:%d",
-                 obj->vector.x, obj->vector.y);
+    log(INFO, "Freed proj. at x:%d y:%d",
+        obj->vector.x, obj->vector.y);
 
-        object_list.remove(obj);
+    object_list.remove(obj);
 }
 
 void ProjectileHandler::update_physics(){

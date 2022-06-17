@@ -29,7 +29,7 @@ int object_collision(Object * obj, ObjectList &collisions){
         obj2_x2 = glob_objects[i]->vector.x + glob_objects[i]->image.width/2, 
         obj2_y2 = glob_objects[i]->vector.y; // Bottom Right
 
-        //PSP_LOGGER::log(PSP_LOGGER::DEBUG, "Obj1:%d (%d,%d),(%d,%d); Obj2:%d (%d,%d),(%d,%d);", obj->type,obj1_x1,obj1_y1,obj1_x2,obj1_y2, glob_objects[i]->type,obj2_x1,obj2_y1,obj2_x2,obj2_y2);
+        //log(DEBUG, "Obj1:%d (%d,%d),(%d,%d); Obj2:%d (%d,%d),(%d,%d);", obj->type,obj1_x1,obj1_y1,obj1_x2,obj1_y2, glob_objects[i]->type,obj2_x1,obj2_y1,obj2_x2,obj2_y2);
 
         // If the leftmost x postion of object one is greater than the rightmost position of object 2 OR
         // If the right most position of object 1 is less that the left most position of object 2
@@ -42,11 +42,11 @@ int object_collision(Object * obj, ObjectList &collisions){
         // They cannot overlap
         if(obj1_y1>obj2_y2||obj2_y1>obj1_y2) continue;
         
-        PSP_LOGGER::log(PSP_LOGGER::INFO, "Collision detected with %0x", glob_objects[i]);
+        log(INFO, "Collision detected with %0x", glob_objects[i]);
         collisions._insert(glob_objects[i]);
 
         if (collisions.size == collisions.MAX_SIZE){
-            PSP_LOGGER::log(PSP_LOGGER::WARNING, "collision list filled");
+            log(WARNING, "collision list filled");
             break;
         }
     }

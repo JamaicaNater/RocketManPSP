@@ -122,7 +122,7 @@ namespace GFX
 		unsigned int &height = img.height;
 		// If there is not a image present generate one and store it
 		if (!image) {
-			PSP_LOGGER::log(PSP_LOGGER::DEBUG, "call loadBMP on %s", img.filename);
+			log(DEBUG, "call loadBMP on %s", img.filename);
 			load_BMP(img);			
 		} 
 
@@ -182,8 +182,7 @@ namespace GFX
 				break;
 			\
 			default:
-				PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Failed to match a pivot"
-					" for %s", img.filename);
+				log(CRITICAL, "Failed to match a pivot for %s", img.filename);
 				break;
 			}
 
@@ -205,13 +204,13 @@ namespace GFX
 						// For each pixel in the image take it and rotate it
 						x_i= (x-mid_x)*cos_theta+(y-mid_y)*sin_theta;
 						y_i= -(x-mid_x)*sin_theta+(y-mid_y)*cos_theta;
-						//PSP_LOGGER::log(PSP_LOGGER::INFO, "", rad);
+						//log(INFO, "", rad);
 
 						x_i+=mid_x; 
 						y_i+=mid_y; 
 
 						if (direction == FORWARD && valid_pixel(x_i+playerx, end_y-y_i+playery, &location)) {
-							//PSP_LOGGER::log(PSP_LOGGER::DEBUG, "%s , %d", filename, (int)round((x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery)));
+							//log(DEBUG, "%s , %d", filename, (int)round((x_i+playerx) + SCREEN_WIDTH * (int)(end_y-y_i+playery)));
 							draw_buffer[location] = *pixel;
 						} else if (direction == BACKWARD && valid_pixel(end_x-x_i+playerx, end_y-y_i+playery, &location)) {
 							draw_buffer[location] = *pixel;
@@ -231,7 +230,7 @@ namespace GFX
 			{
 				for (int x1 = start_x; x1 < end_x; x1++)
 				{
-					//PSP_LOGGER::log(PSP_LOGGER::DEBUG, "x: %d, y: %d, h: %d, w: %d", x1-start_x, y1-start_y, height, width);
+					//log(DEBUG, "x: %d, y: %d, h: %d, w: %d", x1-start_x, y1-start_y, height, width);
 					*pixel = *(image+index);
 					if (!is_transparent(*pixel)){
 						
@@ -240,7 +239,7 @@ namespace GFX
 						} else{
 							valid_pixel(start_x + end_x - x1, y1, &draw_pos);
 						}
-						//PSP_LOGGER::log(PSP_LOGGER::INFO, "draw at %d", draw_pos);
+						//log(INFO, "draw at %d", draw_pos);
 						draw_buffer[draw_pos] = *pixel;
 					}
 					index++;

@@ -13,62 +13,62 @@ const char * logger_file = "umd0:/logs/logger.log";
 SceUID fd = sceIoOpen(logger_file, PSP_O_WRONLY | PSP_O_CREAT | PSP_O_TRUNC, 0777);
 #endif
 
-namespace PSP_LOGGER {
-    char levels_text[6][10] = {"DEBUG-H", "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"};
-    
-    void log(unsigned char level, const char* format, ... ) {
-        #ifdef PSP_LOGGING
-        if (fd<0) {
-            pspDebugScreenInit();
-            pspDebugScreenPrintf("Failed to open logger file at %s, please make sure the path exists, exiting in 10 seconds", logger_file);
-            sceKernelDelayThread(10 * SECOND);
-            sceKernelExitGame();
-        }
 
-        va_list args;
-        char data[128];
-        sceIoWrite(fd, levels_text[level], strlen(levels_text[level])); // or strlen(data)
-        sceIoWrite(fd, (void *)": ", 2); // or strlen(data)
-        va_start( args, format );
-        vsprintf(data, format, args);
-        va_end( args );
-        sceIoWrite(fd, data, strlen(data));
-        
-        sceIoWrite(fd, (void *)"\n", 1); // or strlen(data)
+char levels_text[6][10] = {"DEBUG-H", "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"};
 
-        if (level == CRITICAL) {
-            close_log();
-            sceKernelExitGame();
-        }
-        #endif
-    } 
-
-    void close_log() {
-        #ifdef PSP_LOGGING
-        if(fd >= 0) sceIoClose(fd);
-        #endif
+void log(unsigned char level, const char* format, ... ) {
+    #ifdef PSP_LOGGING
+    if (fd<0) {
+        pspDebugScreenInit();
+        pspDebugScreenPrintf("Failed to open logger file at %s, please make sure the path exists, exiting in 10 seconds", logger_file);
+        sceKernelDelayThread(10 * SECOND);
+        sceKernelExitGame();
     }
 
-    int __assert_fail(const char * condition, const char * file, int lineno, const char * format, ...){
-        //#ifdef PSP_LOGGING
-        pspDebugScreenInit();
+    va_list args;
+    char data[128];
+    sceIoWrite(fd, levels_text[level], strlen(levels_text[level])); // or strlen(data)
+    sceIoWrite(fd, (void *)": ", 2); // or strlen(data)
+    va_start( args, format );
+    vsprintf(data, format, args);
+    va_end( args );
+    sceIoWrite(fd, data, strlen(data));
+    
+    sceIoWrite(fd, (void *)"\n", 1); // or strlen(data)
 
-        va_list args;
-        char data[256];
-        
-        va_start( args, format );
-        vsprintf(data, format, args);
-        va_end( args );
-
-        pspDebugScreenPrintf("assert() evaluated false: %s, at %s:%d comments: %s",condition, file, lineno, data);
-        
-        sceKernelDelayThread(10 * SECOND);
+    if (level == CRITICAL) {
         close_log();
         sceKernelExitGame();
-
-        return 1;
-        //#endif
     }
-    
+    #endif
+} 
+
+void close_log() {
+    #ifdef PSP_LOGGING
+    if(fd >= 0) sceIoClose(fd);
+    #endif
 }
+
+int __assert_fail(const char * condition, const char * file, int lineno, const char * format, ...){
+    //#ifdef PSP_LOGGING
+    pspDebugScreenInit();
+
+    va_list args;
+    char data[256];
+    
+    va_start( args, format );
+    vsprintf(data, format, args);
+    va_end( args );
+
+    pspDebugScreenPrintf("assert() evaluated false: %s, at %s:%d comments: %s",condition, file, lineno, data);
+    
+    sceKernelDelayThread(10 * SECOND);
+    close_log();
+    sceKernelExitGame();
+
+    return 1;
+    //#endif
+}
+    
+
 

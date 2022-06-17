@@ -8,8 +8,7 @@
 
 Image::Image(const char * _filename) {
     int str_size = strlen(_filename) + 1;
-    if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
-    " %s too long", _filename);
+    if (str_size > 64) log(CRITICAL, "Filename %s too long", _filename);
     strncpy(filename, _filename, str_size);
 }
 
@@ -21,8 +20,7 @@ Image::Image(uint32_t _height,uint32_t _width, uint32_t * _img_matrix,
     img_matrix = _img_matrix;
 
     int str_size = strlen(_filename) + 1;
-    if (str_size > 64) PSP_LOGGER::log(PSP_LOGGER::CRITICAL, "Filename"
-    " %s too long", _filename);
+    if (str_size > 64) log(CRITICAL, "Filename %s too long", _filename);
     strncpy(filename, _filename, str_size);
 }
 
