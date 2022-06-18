@@ -1,5 +1,5 @@
 #include "../bmp/loadbmp.h"
-#include "../utils/psp_malloc.h"
+#include "../memory/psp_malloc.h"
 #include "text_builder.h"
 #include <cstdlib>
 

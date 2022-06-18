@@ -6,7 +6,7 @@
 
 #include "../game/utils.h"
 #include "logger/logger.h"
-#include "utils/psp_malloc.h"
+#include "memory/psp_malloc.h"
 
 Image::Image(const char * _filename) {
     int str_size = strlen(_filename) + 1;

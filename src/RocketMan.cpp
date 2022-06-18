@@ -8,7 +8,7 @@
 #include "game/gamestate.h"
 #include "game/utils.h"
 #include "logger/logger.h"
-#include "utils/psp_malloc.h"
+#include "memory/psp_malloc.h"
 #include "graphics/gfx.hpp"
 
 #include "../Dependencies/FastNoise/FastNoise.hpp"

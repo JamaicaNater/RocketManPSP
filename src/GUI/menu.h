@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <vector>
 
-#include "utils/psp_malloc.h"
+#include "memory/psp_malloc.h"
 
 #include "../image/image.h"
 #include "../graphics/gfx.hpp"

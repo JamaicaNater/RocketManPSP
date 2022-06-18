@@ -13,7 +13,7 @@ OBJS = RocketMan.o \
 	graphics/gfx.o \
 	bmp/loadbmp.o \
 	logger/logger.o \
-	utils/psp_malloc.o \
+	memory/psp_malloc.o \
 	controls/control_reader.o \
 	physics/physics.o physics/collisions.o physics/vector2d.o \
 	GUI/text_builder.o GUI/menu.o GUI/component.o \

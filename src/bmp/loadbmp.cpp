@@ -4,7 +4,7 @@
 #include "stdlib.h"
 #include "math.h"
 
-#include "../utils/psp_malloc.h"
+#include "../memory/psp_malloc.h"
 #include "../game/utils.h"
 #include "../logger/logger.h"
 
