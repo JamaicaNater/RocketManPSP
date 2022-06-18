@@ -5,12 +5,12 @@
 #include <cstdlib>
 
 #include "globals.h"
-#include "gamestate.h"
-#include "utils.h"
+#include "game/gamestate.h"
+#include "game/utils.h"
 #include "logger/logger.h"
 #include "utils/psp_malloc.h"
-
 #include "graphics/gfx.hpp"
+
 #include "../Dependencies/FastNoise/FastNoise.hpp"
 
 unsigned char * noise_map = (unsigned char*)malloc(MAP_SIZE);

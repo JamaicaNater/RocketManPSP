@@ -1,12 +1,16 @@
-#include <pspkernel.h>
 #include "player_handler.h"
-#include "../globals.h"
-#include "../utils.h"
+
+#include <pspkernel.h>
 #include <math.h>
-#include "../graphics/gfx.hpp"
-#include "../physics/physics.h"
-#include "../bmp/loadbmp.h"
-#include "gamestate.h"
+
+#include "../../globals.h"
+
+#include "../gamestate.h"
+#include "../utils.h"
+
+#include "../../graphics/gfx.hpp"
+#include "../../physics/physics.h"
+#include "../../bmp/loadbmp.h"
 
 PlayerHandler::PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler) : 
     ObjectHandler(2, _velocity, 0, Object::PLAYER

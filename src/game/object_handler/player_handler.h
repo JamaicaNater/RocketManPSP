@@ -4,7 +4,7 @@
 
 #include "object_handler.h" 
 #include "projectile_handler.h"
-#include "../controls/control_reader.h"
+#include "../../controls/control_reader.h"
 
 class PlayerHandler : public ObjectHandler
 {

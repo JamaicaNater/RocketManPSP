@@ -1,9 +1,8 @@
 #include "object_handler.h"
-#include "../logger/logger.h"
-#include "../Vector2d.hpp"
-#include "../graphics/gfx.hpp"
-#include "../physics/collisions.h"
-#include "../physics/physics.h"
+#include "../../logger/logger.h"
+#include "../../graphics/gfx.hpp"
+#include "../../physics/collisions.h"
+#include "../../physics/physics.h"
 
 ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, 
     int _time_between_spawns, Object::ObjectTypes _type)

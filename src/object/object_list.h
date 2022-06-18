@@ -1,7 +1,7 @@
 #pragma once
 
 #include "object.h"
-#include "../object_handler/global_object_manager.h"
+#include "../game/object_handler/global_object_manager.h"
 
 struct ObjectList
 {

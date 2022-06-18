@@ -5,7 +5,7 @@
 #include "math.h"
 
 #include "../utils/psp_malloc.h"
-#include "../utils.h"
+#include "../game/utils.h"
 #include "../logger/logger.h"
 
 int bmp_mem=0;

@@ -1,10 +1,12 @@
+#include "image.h"
+
 #include <cstdlib>
 #include <cstring>
 #include <math.h>
+
+#include "../game/utils.h"
 #include "logger/logger.h"
-#include "utils.h"
 #include "utils/psp_malloc.h"
-#include "image.h"
 
 Image::Image(const char * _filename) {
     int str_size = strlen(_filename) + 1;

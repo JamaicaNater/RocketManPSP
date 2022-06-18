@@ -1,8 +1,8 @@
 #pragma once
 
-#include "../object/object_list.h"
-#include "../globals.h"
-#include "../Vector2d.hpp"
+#include "../../globals.h"
+#include "../../object/object_list.h"
+#include "../../physics/Vector2d.hpp"
 
 class ObjectHandler
 {

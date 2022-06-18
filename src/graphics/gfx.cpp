@@ -8,10 +8,11 @@
 #include <pspkernel.h>
 #include <pspctrl.h>
 
-#include "bmp/loadBMP.h"
-#include "utils.h"
-#include "logger/logger.h"
 #include "globals.h"
+
+#include "game/utils.h"
+#include "bmp/loadBMP.h"
+#include "logger/logger.h"
 
 
 namespace GFX 

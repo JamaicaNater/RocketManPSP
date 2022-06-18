@@ -3,7 +3,7 @@
 #include <cstring>
 #include <cstdlib>
 
-#include "Vector2d.hpp"
+#include "../physics/Vector2d.hpp"
 #include "logger/logger.h"
 #include "../image/image.h"
 #include "globals.h"

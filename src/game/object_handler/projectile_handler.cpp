@@ -1,6 +1,6 @@
 #include "projectile_handler.h"
-#include "../physics/physics.h"
-#include "../physics/collisions.h"
+#include "../../physics/physics.h"
+#include "../../physics/collisions.h"
 
 ProjectileHandler::ProjectileHandler(int MAX_OBJECTS, int velocity, 
     int _time_between_spawns, Object::ObjectTypes type, 

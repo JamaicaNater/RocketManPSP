@@ -9,9 +9,9 @@
 
 #include "../image/image.h"
 #include "../graphics/gfx.hpp"
-#include "../utils.h"
 #include "../controls/control_reader.h"
 #include "../logger/logger.h"
+#include "../game/utils.h"
 
 class Menu
 {
