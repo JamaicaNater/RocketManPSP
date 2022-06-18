@@ -19,8 +19,10 @@ Menu build_pause_menu(){
         Component("4", 0x00CC00),
         Component("5", 0x00CC00),
         Component("6", 0x00CC00),
-        Component(16,16, Component::Rectangle, 0x00FF00)
-    }, Menu::GRID, 2,0,0, 3,3,true);
+        Component(16,16, Component::Rectangle, 0x00FF00),
+        Component("8", 0x00CC00),
+        Component("9", 0x00CC00),
+    }, Menu::HORIZONTAL_LIST, 2,0,0, 3,3,true);
 
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       
         pause_menu.control_reader.wait_button_release(PSP_CTRL_START);  
