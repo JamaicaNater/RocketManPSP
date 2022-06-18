@@ -74,7 +74,7 @@ void ObjectHandler::draw(){
         if (objects[i]->off_screen()) continue;
         
         GFX::drawBMP(objects[i]->get_draw_x(), objects[i]->get_draw_y(), 
-            objects[i]->vector.get_angle(), objects[i]->vector.pivot, 
+            objects[i]->vector.angle, objects[i]->vector.pivot, 
             objects[i]->vector.direction, 0, objects[i]->image);
     }
 }

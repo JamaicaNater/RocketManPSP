@@ -62,10 +62,10 @@ void PlayerHandler::set_up_controls(){
         weapon->vector.x = player->vector.x+10;
     };
     player_control_reader.on_button_press_up = [this](){
-        weapon->vector.set_angle(weapon->vector.get_angle()-2);
+        weapon->vector.angle = weapon->vector.angle-2;
     };
     player_control_reader.on_button_press_down = [this](){
-        weapon->vector.set_angle(weapon->vector.get_angle()+2);
+        weapon->vector.angle = weapon->vector.angle+2;
     };
 
     player_control_reader.on_button_press_cross = [this](){
@@ -81,11 +81,11 @@ void PlayerHandler::set_up_controls(){
         Vector2d vec;
 
         vec.t0_y = vec.t0_x = curr_time;
-        vec.set_angle(weapon->vector.get_angle());
+        vec.angle = weapon->vector.angle;
         vec.direction = weapon->vector.direction;
         vec.pivot = weapon->vector.pivot;
 
-        float rad = PI/180.0f * ((player->vector.direction==FORWARD)*vec.get_angle() 
+        float rad = PI/180.0f * ((player->vector.direction==FORWARD)*vec.angle
             + (player->vector.direction==BACKWARD)*vec.get_mirrored_angle());
 
         // Add distance so the missile doesnt collide with player/weapon
