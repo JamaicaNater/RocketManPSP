@@ -42,14 +42,54 @@ public:
     Component(Image _img, uint32_t _color = 0x00000000);
     ~Component();
 
+    /**
+     * @brief Set the x postion of the object
+     * 
+     * @param _x 
+     * @return Component 
+     */
     Component set_x(int _x);
+    
+    /**
+     * @brief Set the y postion of the object
+     * 
+     * @param _y 
+     * @return Component 
+     */
     Component set_y(int _y);
 
+    /**
+     * @brief hides the object
+     * 
+     * @return Component 
+     */
     Component hide();
+    /**
+     * @brief unhides the object
+     * 
+     * @return Component 
+     */
     Component show();
 
+    /**
+     * @brief Selects (highlights) the object
+     * 
+     * @return Component 
+     */
     Component select();
+
+    /**
+     * @brief Deselects the object
+     * 
+     * @return Component 
+     */
     Component deselect();
 
+    /**
+     * @brief Set is the object is selectable
+     * 
+     * @param _selectable 
+     * @return Component 
+     */
     Component set_selectable(bool _selectable);
 };

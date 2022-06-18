@@ -56,6 +56,7 @@ Component Component::show() {
 
 Component Component::select() {
     if (selectable) selected = true;
+    else log(WARNING, "Select called on non selectable object");
     return *this;
 }
 Component Component::deselect(){

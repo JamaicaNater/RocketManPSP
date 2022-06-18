@@ -311,6 +311,8 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
 }
 
 void Menu::draw_panel(Component comp){
+    assert(comp.data.type == Component::PANEL_TYPE, "");
+
     switch (comp.data.data.shape)
     {
     case Component::Rectangle:
@@ -345,6 +347,8 @@ void Menu::draw_panel(Component comp){
 }
 
 void Menu::draw_text(Component comp){
+    assert(comp.data.type == Component::LABEL_TYPE, "");
+    
     // Create temporary component object 
     Component temp = comp;
     temp.data.type = Component::IMAGE_TYPE;
@@ -356,6 +360,8 @@ void Menu::draw_text(Component comp){
 }
 
 void Menu::draw_img(Component comp){
+    assert(comp.data.type == Component::IMAGE_TYPE, "");
+
     Image _img = comp.data.data.img;
     for (unsigned int y = comp.y; y < _img.height + comp.y; y++){
         for (unsigned int x = comp.x; x < _img.width + comp.x; x++) {
