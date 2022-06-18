@@ -4,7 +4,7 @@
 
 #include "gamestate.h"
 #include "graphics/gfx.hpp"
-#include "utils.h"
+#include "game_utils.h"
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"

@@ -1,7 +1,7 @@
 TARGET = Tutorial
 OBJS = RocketMan.o \
 	game/gamestate.o \
-	game/utils.o \
+	game/game_utils.o \
 	game/interface/pause_menu.o \
 	game/object_handler/object_handler.o \
 	game/object_handler/enemy_handler.o \
@@ -27,7 +27,7 @@ LIBS = -lstdc++ -lm
 #-lpspmath
 
 CFLAGS = 
-CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra #-DPSP_LOGGING
+CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra -DPSP_LOGGING
 ASFLAGS = $(CFLAGS)
 
 #PSP Stuff

@@ -6,7 +6,7 @@
 
 #include "globals.h"
 #include "game/gamestate.h"
-#include "game/utils.h"
+#include "game/game_utils.h"
 #include "logger/logger.h"
 #include "memory/psp_malloc.h"
 #include "graphics/gfx.hpp"

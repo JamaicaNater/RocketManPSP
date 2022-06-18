@@ -3,11 +3,10 @@
 #include <cstdlib>
 #include <cstring>
 #include <math.h>
-#include "logger/logger.h"
-#include "game/utils.h"
-#include "memory/psp_malloc.h"
 #include <stdint.h>
-//#include "bmp/loadbmp.h"
+
+#include "logger/logger.h"
+#include "memory/psp_malloc.h"
 
 struct Image
 {

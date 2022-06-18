@@ -6,7 +6,6 @@
 #include "../globals.h"
 
 #include "logger.h"
-#include "../game/utils.h"
 
 #ifdef PSP_LOGGING
 const char * logger_file = "umd0:/logs/logger.log";

@@ -6,7 +6,7 @@
 #include "../../globals.h"
 
 #include "../gamestate.h"
-#include "../utils.h"
+#include "../game_utils.h"
 
 #include "../../graphics/gfx.hpp"
 #include "../../physics/physics.h"

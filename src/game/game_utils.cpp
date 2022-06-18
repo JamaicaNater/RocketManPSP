@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include "memory/psp_malloc.h"
 
-#include "utils.h"
+#include "game_utils.h"
 #include "globals.h"
 
 float map(float num, int range) {
