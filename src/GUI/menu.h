@@ -47,6 +47,8 @@ public:
 
     void draw_img(Component comp);
 
+    void draw_text(Component comp);
+
     void set_pos(Position pos, int padding_x = 0, int padding_y = 0);
 
     void update();
@@ -71,17 +73,15 @@ private:
     std::vector<Component> components;
     struct GroupInfo
     {
-        int group_id;
         int num_components;
         bool row_major;
         int rows;
         int cols;
         std::vector<Component*> components;
 
-        GroupInfo(int _group_id, bool _row_major, int _rows, int _cols, 
+        GroupInfo(bool _row_major, int _rows, int _cols, 
             std::vector<Component*> _components
         ) {
-            group_id = _group_id;
             row_major = _row_major;
             rows = _rows;
             cols = _cols;
@@ -91,10 +91,6 @@ private:
 
     std::vector<GroupInfo> groups;
 
-    void assign_comp_id(Component &comp);
-    void assign_group_id(Component &comp);
-    void assign_group_id(std::vector<Component> &arr);
-    int find_component_by_id(int component_id);
     uint32_t highlight_selection(Component comp, uint32_t pixel);
     Vector2d pivot_to_coord(Position pos, unsigned int height_obj, 
         unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,

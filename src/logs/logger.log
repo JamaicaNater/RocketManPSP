@@ -1,351 +1,441 @@
 DEBUG-H: Init: 0 Objects in memory allocated to 0 bytes
 INFO: loading assets/dirt.bmp into memory
-DEBUG-H: inset 16384 at 8856c90
-DEBUG-H: Allocated 16384 at 8856c90. Info 
+DEBUG-H: inset 16384 at 8856d90
+DEBUG-H: Allocated 16384 at 8856d90. Info 
 DEBUG-H: 1 Objects in memory allocated to 16384 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/dirt.bmp, 16.000000 kb used by bmps
 INFO: loading assets/sky.bmp into memory
-DEBUG-H: inset 32768 at 885ad70
-DEBUG-H: Allocated 32768 at 885ad70. Info 
+DEBUG-H: inset 32768 at 885ae70
+DEBUG-H: Allocated 32768 at 885ae70. Info 
 DEBUG-H: 2 Objects in memory allocated to 49152 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/sky.bmp, 48.000000 kb used by bmps
 INFO: loading assets/grass.bmp into memory
-DEBUG-H: inset 16384 at 8862d80
-DEBUG-H: Allocated 16384 at 8862d80. Info 
+DEBUG-H: inset 16384 at 8862e80
+DEBUG-H: Allocated 16384 at 8862e80. Info 
 DEBUG-H: 3 Objects in memory allocated to 65536 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/grass.bmp, 64.000000 kb used by bmps
 INFO: loading assets/background.bmp into memory
-DEBUG-H: inset 39200 at 8866d90
-DEBUG-H: Allocated 39200 at 8866d90. Info 
+DEBUG-H: inset 39200 at 8866e90
+DEBUG-H: Allocated 39200 at 8866e90. Info 
 DEBUG-H: 4 Objects in memory allocated to 104736 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/background.bmp, 102.281250 kb used by bmps
 DEBUG: Calling ObjectList for objects
-DEBUG-H: inset 64 at 8856870
-DEBUG-H: Allocated 64 at 8856870. Info 
+DEBUG-H: inset 64 at 8856970
+DEBUG-H: Allocated 64 at 8856970. Info 
 DEBUG-H: 5 Objects in memory allocated to 104800 bytes
 DEBUG: Calling ObjectList for objects
-DEBUG-H: inset 512 at 88568d0
-DEBUG-H: Allocated 512 at 88568d0. Info 
+DEBUG-H: inset 512 at 88569d0
+DEBUG-H: Allocated 512 at 88569d0. Info 
 DEBUG-H: 6 Objects in memory allocated to 105312 bytes
 DEBUG: Calling ObjectList for objects
-DEBUG-H: inset 256 at 8856af0
-DEBUG-H: Allocated 256 at 8856af0. Info 
+DEBUG-H: inset 256 at 8856bf0
+DEBUG-H: Allocated 256 at 8856bf0. Info 
 DEBUG-H: 7 Objects in memory allocated to 105568 bytes
 DEBUG: Calling ObjectList for objects
-DEBUG-H: inset 8 at 8856c10
-DEBUG-H: Allocated 8 at 8856c10. Info 
+DEBUG-H: inset 8 at 8856d10
+DEBUG-H: Allocated 8 at 8856d10. Info 
 DEBUG-H: 8 Objects in memory allocated to 105576 bytes
 INFO: Init Gamestate
 INFO: loading assets/statusbar.bmp into memory
-DEBUG-H: inset 49152 at 8870b60
-DEBUG-H: Allocated 49152 at 8870b60. Info 
+DEBUG-H: inset 49152 at 8870c60
+DEBUG-H: Allocated 49152 at 8870c60. Info 
 DEBUG-H: 9 Objects in memory allocated to 154728 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/statusbar.bmp, 150.281250 kb used by bmps
 INFO: loading assets/enemy.bmp into memory
-DEBUG-H: inset 9400 at 887cb70
-DEBUG-H: Allocated 9400 at 887cb70. Info 
+DEBUG-H: inset 9400 at 887cc70
+DEBUG-H: Allocated 9400 at 887cc70. Info 
 DEBUG-H: 10 Objects in memory allocated to 164128 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/enemy.bmp, 159.460938 kb used by bmps
 INFO: loading assets/missile.bmp into memory
-DEBUG-H: inset 288 at 887f030
-DEBUG-H: Allocated 288 at 887f030. Info 
+DEBUG-H: inset 288 at 887f130
+DEBUG-H: Allocated 288 at 887f130. Info 
 DEBUG-H: 11 Objects in memory allocated to 164416 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/missile.bmp, 159.742188 kb used by bmps
 INFO: loading assets/player_rocket.bmp into memory
-DEBUG-H: inset 736 at 8870780
-DEBUG-H: Allocated 736 at 8870780. Info 
+DEBUG-H: inset 736 at 8870880
+DEBUG-H: Allocated 736 at 8870880. Info 
 DEBUG-H: 12 Objects in memory allocated to 165152 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player_rocket.bmp, 160.460938 kb used by bmps
 INFO: loading assets/player.bmp into memory
-DEBUG-H: inset 3072 at 887f570
-DEBUG-H: Allocated 3072 at 887f570. Info 
+DEBUG-H: inset 3072 at 887f670
+DEBUG-H: Allocated 3072 at 887f670. Info 
 DEBUG-H: 13 Objects in memory allocated to 168224 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Succesfuly loaded assets/player.bmp, 163.460938 kb used by bmps
-DEBUG-H: inset 1024 at 887f160
-DEBUG-H: Allocated 1024 at 887f160. Info 
+DEBUG-H: inset 1024 at 887f260
+DEBUG-H: Allocated 1024 at 887f260. Info 
 DEBUG-H: 14 Objects in memory allocated to 169248 bytes
 INFO: loading assets/explosion.bmp into memory
 INFO: Allocating Space
-DEBUG-H: inset 1306980 at 8880590
-DEBUG-H: Allocated 1306980 at 8880590. Info 
+DEBUG-H: inset 1306980 at 8880690
+DEBUG-H: Allocated 1306980 at 8880690. Info 
 DEBUG-H: 15 Objects in memory allocated to 1476228 bytes
 INFO: Formatting pixels
 INFO: Successfully loaded assets/explosion.bmp, 1439.81 kb used by BMPs
 INFO: loading assets/font.bmp into memory
 INFO: Allocating Space
-DEBUG-H: inset 25920 at 89bf700
-DEBUG-H: Allocated 25920 at 89bf700. Info 
+DEBUG-H: inset 25920 at 89bf800
+DEBUG-H: Allocated 25920 at 89bf800. Info 
 DEBUG-H: 16 Objects in memory allocated to 1502148 bytes
 INFO: Formatting pixels
 INFO: Successfully loaded assets/font.bmp, 1465.12 kb used by BMPs
-DEBUG: Spawned:assets/enemy.bmp ptr: 887cb70
-DEBUG-H: inset 43200 at 89c5c50
-DEBUG-H: Allocated 43200 at 89c5c50. Info 
+DEBUG-H: inset 43200 at 89c5d50
+DEBUG-H: Allocated 43200 at 89c5d50. Info 
 DEBUG-H: 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
+DEBUG-H: inset 3520 at 89d1220
+DEBUG-H: Allocated 3520 at 89d1220. Info 
 DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
+DEBUG-H: Attempting to free 89d1220
+DEBUG-H: Successfully freed 89d1220. 17 Objects in memory allocated to 1545348 bytes
+DEBUG-H: inset 320 at 89d0620
+DEBUG-H: Allocated 320 at 89d0620. Info 
 DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
+DEBUG-H: Attempting to free 89d0620
+DEBUG-H: Successfully freed 89d0620. 17 Objects in memory allocated to 1545348 bytes
+DEBUG-H: inset 320 at 89d0620
+DEBUG-H: Allocated 320 at 89d0620. Info 
 DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
+DEBUG-H: Attempting to free 89d0620
+DEBUG-H: Successfully freed 89d0620. 17 Objects in memory allocated to 1545348 bytes
+DEBUG-H: inset 320 at 89d0620
+DEBUG-H: Allocated 320 at 89d0620. Info 
 DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG: down 1, 3
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
+DEBUG-H: Attempting to free 89d0620
+DEBUG-H: Successfully freed 89d0620. 17 Objects in memory allocated to 1545348 bytes
+DEBUG-H: inset 3520 at 89d1220
+DEBUG-H: Allocated 3520 at 89d1220. Info 
 DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
+DEBUG-H: Attempting to free 89d1220
+DEBUG-H: Successfully freed 89d1220. 17 Objects in memory allocated to 1545348 bytes
+DEBUG-H: inset 320 at 89d0620
+DEBUG-H: Allocated 320 at 89d0620. Info 
 DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
+DEBUG-H: Attempting to free 89d0620
+DEBUG-H: Successfully freed 89d0620. 17 Objects in memory allocated to 1545348 bytes
+DEBUG-H: inset 320 at 89d0620
+DEBUG-H: Allocated 320 at 89d0620. Info 
 DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
+DEBUG-H: Attempting to free 89d0620
+DEBUG-H: Successfully freed 89d0620. 17 Objects in memory allocated to 1545348 bytes
+DEBUG-H: inset 320 at 89d0620
+DEBUG-H: Allocated 320 at 89d0620. Info 
 DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG: down 2, 4294967295
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
+DEBUG-H: Attempting to free 89d0620
+DEBUG-H: Successfully freed 89d0620. 17 Objects in memory allocated to 1545348 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 887cc70
+DEBUG-H: inset 43200 at 89d0620
+DEBUG-H: Allocated 43200 at 89d0620. Info 
+DEBUG-H: 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG: down 3, 201062065
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG: down 0, 7
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG: down 1, 3
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG: down 2, 4294967295
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG: down 3, 201062065
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG: down 0, 7
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG: down 1, 3
-DEBUG-H: inset 3520 at 89d12a0
-DEBUG-H: Allocated 3520 at 89d12a0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1548868 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 89d12a0
-DEBUG-H: Successfully freed 89d12a0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
-DEBUG-H: inset 320 at 89d05c0
-DEBUG-H: Allocated 320 at 89d05c0. Info 
-DEBUG-H: 18 Objects in memory allocated to 1545668 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
 DEBUG-H: freed 320 bytes
-DEBUG-H: Attempting to free 89d05c0
-DEBUG-H: Successfully freed 89d05c0. 17 Objects in memory allocated to 1545348 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
+DEBUG-H: freed 3520 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
+DEBUG-H: freed 3520 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
+DEBUG-H: freed 3520 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 3520 at 89dbb80
+DEBUG-H: Allocated 3520 at 89dbb80. Info 
+DEBUG-H: 19 Objects in memory allocated to 1592068 bytes
+DEBUG-H: freed 3520 bytes
+DEBUG-H: Attempting to free 89dbb80
+DEBUG-H: Successfully freed 89dbb80. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes
+DEBUG-H: inset 320 at 89daf10
+DEBUG-H: Allocated 320 at 89daf10. Info 
+DEBUG-H: 19 Objects in memory allocated to 1588868 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89daf10
+DEBUG-H: Successfully freed 89daf10. 18 Objects in memory allocated to 1588548 bytes

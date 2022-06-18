@@ -106,10 +106,8 @@ std::pair<int,int> Menu::add_component(Position _pos, Component comp, int paddin
     comp.x = vec.x;
     comp.y = vec.y;
 
-    assign_comp_id(comp);
-    assign_group_id(comp);
     components.push_back(comp);
-    groups.push_back(GroupInfo(comp.group_ID, true, 1, 1, 
+    groups.push_back(GroupInfo(true, 1, 1, 
         {&components[components.size()-1]}));
 
     return {comp_index, group_index};
@@ -124,13 +122,13 @@ std::pair<int,int> Menu::add_component_group(Position pos, std::vector<Component
     switch (grouping)
     {
     case VERTICAL_LIST:
+        row_major = false;
         rows = arr.size();
         cols = 1;
-        add_grid_row_major(pos, arr, spacing, padding_x, padding_y, arr.size(), 1);
+        add_grid_col_major(pos, arr, spacing, padding_x, padding_y, arr.size(), 1);
         break;
 
     case HORIZONTAL_LIST:
-        row_major = false;
         rows = 1;
         cols = arr.size();
         add_grid_row_major(pos, arr, spacing, padding_x, padding_y, 1, arr.size());
@@ -152,7 +150,7 @@ std::pair<int,int> Menu::add_component_group(Position pos, std::vector<Component
     for(int i = components.size() - arr.size() - 1; i < components.size(); i++) {
         group_vec.push_back(&components[i]);
     }
-    groups.push_back(GroupInfo(groups.size(), row_major, rows, cols, group_vec));
+    groups.push_back(GroupInfo(row_major, rows, cols, group_vec));
 
     return {first_comp_index, group_index};
 }
@@ -161,30 +159,38 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
+    // Store the widest values of each row / column so that we can center 
+    // the smaller values 
     int widest[cols] = {0};
     int tallest[rows] = {0};
 
+    // Total dimensions of the grid
     int total_height = 0;
     int total_width = 0;
     
+    // Determine the widest and tallest member of each column and row
     for (unsigned int i = 0; i < arr.size(); i++) {
         if (arr[i].width > widest[i%cols]) widest[i%cols] = arr[i].width;
         if (arr[i].height > tallest[i/cols]) tallest[i/cols] = arr[i].height;
     }
 
+    // Set the dimensions using the widest and tallest values of each row and col
     for (int i=0; i < cols; i++) total_width += (widest[i] + spacing);
     for (int i=0; i < rows; i++) total_height += (tallest[i] + spacing);
+    
+    // Total spacing = (row/cols -1) * spacing
     total_height -= spacing;
     total_width -= spacing;
 
+    // Get the coordinates of the grid from relative postion: pos
     Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
     curr_coord.x += padding_x;
     curr_coord.y += padding_y;
 
-    curr_coord.y += total_height - tallest[0]; // top down left right
+    // We draw components top down left to right
+    curr_coord.y += total_height - tallest[0];
     int start_x = curr_coord.x;
 
-    assign_group_id(arr);
     for (unsigned int i = 0; i < arr.size(); i++) {
         if (i % cols == 0 && i > 0) { // next row
             curr_coord.y -= tallest[i/cols] + spacing;
@@ -194,12 +200,13 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
         arr[i].x = curr_coord.x;
         arr[i].y = curr_coord.y;
 
+        // Put in the center of the row/col
         arr[i].y += (tallest[i/cols] - arr[i].height)/2;
         arr[i].x += (widest[i%cols] - arr[i].width)/2;
         
+        // Move for next element
         curr_coord.x += widest[i%cols] + spacing;
 
-        assign_comp_id(arr[i]);
         components.push_back(arr[i]);
     }
 }
@@ -208,31 +215,39 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
+    // Store the widest values of each row / column so that we can center 
+    // the smaller values 
     int widest[rows] = {0};
     int tallest[cols] = {0};
 
+    // Total dimensions of the grid
     int total_height = 0;
     int total_width = 0;
     
+    // Determine the widest and tallest member of each column and row
     for (unsigned int i = 0; i < arr.size(); i++) {
         if (arr[i].width > widest[i/rows]) widest[i/rows] = arr[i].width;
         if (arr[i].height > tallest[i%rows]) tallest[i%rows] = arr[i].height;
     }
 
+    // Set the dimensions using the widest and tallest values of each row and col
     for (int i=0; i < cols; i++) total_width += (widest[i] + spacing);
     for (int i=0; i < rows; i++) total_height += (tallest[i] + spacing);
+    
+    // Total spacing = (row/cols -1) * spacing
     total_height -= spacing;
     total_width -= spacing;
 
+    // Get the coordinates of the grid from relative postion: pos
     Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
     curr_coord.x += padding_x;
     curr_coord.y += padding_y;
 
-    curr_coord.y += total_height - tallest[0]; // top down left right
+    // We draw components top down left to right
+    curr_coord.y += total_height - tallest[0];
     int start_y = curr_coord.y;
-    assign_group_id(arr);
     for (unsigned int i = 0; i < arr.size(); i++) {
-        if (i % rows == 0 && i > 0) { // next row
+        if (i % rows == 0 && i > 0) { // next col
             curr_coord.x += widest[i%rows] + spacing;
             curr_coord.y = start_y;
         }
@@ -240,12 +255,13 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
         arr[i].x = curr_coord.x;
         arr[i].y = curr_coord.y;
 
+        // Put in the center of the row/col
         arr[i].y -= (tallest[i%rows] - arr[i].height)/2;
         arr[i].x += (widest[i/rows] - arr[i].width)/2;
         
+        // Move for next element
         curr_coord.y -= tallest[i/rows] + spacing;
 
-        assign_comp_id(arr[i]);
         components.push_back(arr[i]);
     }
 }
@@ -284,6 +300,14 @@ void Menu::draw_panel(Component comp){
     }
 }
 
+void Menu::draw_text(Component comp){
+    Component temp = comp;
+    temp.data.type = Component::IMAGE_TYPE;
+    temp.data.data.img = text(comp.data.data.text); // Todo: data.data?
+    draw_img(temp);
+    psp_free(temp.data.data.img.img_matrix);
+}
+
 void Menu::draw_img(Component comp){
     Image _img = comp.data.data.img;
     for (unsigned int y = comp.y; y < _img.height + comp.y; y++){
@@ -319,12 +343,7 @@ void Menu::update(){
             draw_img(comp);
         }
         if (comp.data.type == Component::LABEL_TYPE) {
-            //TODO simplify this
-            Component temp = comp;
-            temp.data.type = Component::IMAGE_TYPE;
-            temp.data.data.img = text(comp.data.data.text); // Todo: data.data?
-            draw_img(temp);
-            psp_free(temp.data.data.img.img_matrix);
+            draw_text(comp);
         }
         if (comp.data.type == Component::PANEL_TYPE) {
             draw_panel(comp);
@@ -359,48 +378,41 @@ void Menu::select_component(int comp_id) {
     components[selected_comp_id].select();
 }
 
-int Menu::find_component_by_id(int component_id){
-    int index = -1;
-    for (unsigned int i = 0; i < components.size(); i++){
-        if (components[i].comp_ID == component_id) index = i;
-    }
-    return index;
-}
-
-void Menu::assign_comp_id(Component &comp){
-    comp.comp_ID = next_id;
-    next_id++;
-}
-
-void Menu::assign_group_id(Component &comp){
-    comp.group_ID = next_group_id;
-    next_group_id++;
-}
-
-void Menu::assign_group_id(std::vector<Component> &arr){
-    for (Component &comp : arr) comp.group_ID = next_group_id;
-    
-    next_group_id++;
-}
 
 void Menu::select_next(){
+    if (components.size() == 0 || groups.size() == 0){
+        log(WARNING, "Groups and / or component list is empty");
+        return;
+    }
+
+    // Get the array of selectable buttons within a group
     std::vector<int> selectable = get_selectable_components(groups[1].components);
+
+    if (selectable.size() == 0){
+        log(WARNING, "No selections for group %d", selected_group_id);
+        return;
+    }
+    
+    // Get the group array index of the item we wish to deselect
     int old_index = selectable[selected_comp_id];
-    components[old_index].deselect();
+    groups[1].components[old_index]->deselect(); // Deselect the old item
+    
     selected_comp_id++;
-    selected_comp_id %= selectable.size();
-    log(DEBUG, "down %d, %u", selected_comp_id), selectable.size();
+    selected_comp_id %= selectable.size(); // Bounded increment
+
     int new_index = selectable[selected_comp_id];
-    components[new_index].select();
+    groups[1].components[new_index]->select();
 }
 
 void Menu::select_prev(){
     std::vector<int> selectable = get_selectable_components(groups[1].components);
+    
     int old_index = selectable[selected_comp_id];
-    components[old_index].deselect();
+    groups[1].components[old_index]->deselect();
+
     (selected_comp_id)--;
     selected_comp_id = (selected_comp_id < 0) ? selectable.size() - 1: selected_comp_id;
-    log(DEBUG, "up %d", selected_comp_id);
+
     int new_index = selectable[selected_comp_id];
-    components[new_index].select();
+    groups[1].components[new_index]->select();
 }
