@@ -15,7 +15,7 @@ OBJS = RocketMan.o \
 	logger/logger.o \
 	utils/psp_malloc.o \
 	controls/control_reader.o \
-	physics/physics.o physics/collisions.o \
+	physics/physics.o physics/collisions.o physics/vector2d.o \
 	GUI/text_builder.o GUI/menu.o GUI/component.o \
 	game/interface/pause_menu.o \
 	image/image.o image/animation.o \
