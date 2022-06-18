@@ -312,7 +312,7 @@ void Menu::draw_text(Component comp){
     temp.data.data.img = text(comp.data.data.text); // assign image
     
     draw_img(temp);
-    
+
     psp_free(temp.data.data.img.img_matrix);
 }
 
@@ -359,17 +359,6 @@ void Menu::update(){
     }
 }
 
-// TODO remove
-std::vector<int> Menu::get_selectable_components(){
-    std::vector<int> selectable_arr;
-    
-    for (unsigned int i = 0; i < components.size(); i++){
-        if (components[i].selectable) selectable_arr.push_back(i);
-    }
-
-    return selectable_arr;
-}
-
 std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr){
     std::vector<int> selectable_arr;
     
@@ -380,14 +369,7 @@ std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr){
     return selectable_arr;
 }
 
-void Menu::select_component(int comp_id) {
-    if(selected_comp_id > -1) components[selected_comp_id].deselect();
-
-    components[selected_comp_id].select();
-}
-
-
-void Menu::select_next(){
+void Menu::select_next(Direction direction){
     if (components.size() == 0 || groups.size() == 0){
         log(WARNING, "Groups and / or component list is empty");
         return;
@@ -405,21 +387,27 @@ void Menu::select_next(){
     int old_index = selectable[selected_comp_id];
     groups[1].components[old_index]->deselect(); // Deselect the old item
     
-    selected_comp_id++;
-    selected_comp_id %= selectable.size(); // Bounded increment
+    switch (direction)
+    {
+    case UP:
+        /* code */
+        break;
+    case DOWN:
+        /* code */
+        break;
+    case LEFT:
+        (selected_comp_id)--; // Bounded decrement
+        selected_comp_id = (selected_comp_id < 0) ? selectable.size() - 1: selected_comp_id;
+        break;
+    case RIGHT:
+        selected_comp_id++;
+        selected_comp_id %= selectable.size(); // Bounded increment
+        break;
 
-    int new_index = selectable[selected_comp_id];
-    groups[1].components[new_index]->select();
-}
-
-void Menu::select_prev(){
-    std::vector<int> selectable = get_selectable_components(groups[1].components);
-    
-    int old_index = selectable[selected_comp_id];
-    groups[1].components[old_index]->deselect();
-
-    (selected_comp_id)--;
-    selected_comp_id = (selected_comp_id < 0) ? selectable.size() - 1: selected_comp_id;
+    default:
+        assert(0, "value %d did not match a valid direction", direction);
+        break;
+    }
 
     int new_index = selectable[selected_comp_id];
     groups[1].components[new_index]->select();

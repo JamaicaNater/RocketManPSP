@@ -25,15 +25,13 @@ Menu build_pause_menu(){
         GameState::update_status(GameState::RUNNING);
     };
 
-    std::vector<int> selectable = pause_menu.get_selectable_components();
-
     pause_menu.control_reader.on_button_press_down = [&pause_menu]() {
-        pause_menu.select_next();
+        pause_menu.select_next(Menu::LEFT);
         pause_menu.control_reader.wait_button_release(PSP_CTRL_DOWN);
     };
 
     pause_menu.control_reader.on_button_press_up = [&pause_menu]() {
-        pause_menu.select_prev();
+        pause_menu.select_next(Menu::RIGHT);
         pause_menu.control_reader.wait_button_release(PSP_CTRL_UP);
     };
     

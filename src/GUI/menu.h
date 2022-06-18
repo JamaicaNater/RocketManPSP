@@ -55,13 +55,9 @@ public:
 
     void close();
 
-    std::vector<int> get_selectable_components();
     std::vector<int> get_selectable_components(std::vector<Component *> arr);
 
-    void select_component(int comp_id);
-
-    void select_next();
-    void select_prev();
+    void select_next(Direction direction);
 private:
 // TODO ID vs index
     int next_id = 0;
