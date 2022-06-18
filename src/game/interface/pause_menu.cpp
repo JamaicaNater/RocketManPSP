@@ -2,7 +2,7 @@
 
 #include <pspthreadman.h>
 
-#include "../../game/gamestate.h"
+#include "../gamestate.h"
 
 Menu build_pause_menu(){
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);

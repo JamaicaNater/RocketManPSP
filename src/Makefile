@@ -2,18 +2,22 @@ TARGET = Tutorial
 OBJS = RocketMan.o \
 	game/gamestate.o \
 	game/utils.o \
+	game/interface/pause_menu.o \
+	game/object_handler/object_handler.o \
+	game/object_handler/enemy_handler.o \
+	game/object_handler/projectile_handler.o \
+	game/object_handler/animation_handler.o \
+	game/object_handler/global_object_manager.o \
+	game/object_handler/player_handler.o \
+	game/object_handler/explosion_handler.o \
 	graphics/gfx.o \
 	bmp/loadbmp.o \
 	logger/logger.o \
 	utils/psp_malloc.o \
 	controls/control_reader.o \
 	physics/physics.o physics/collisions.o \
-	game/object_handler/object_handler.o game/object_handler/enemy_handler.o \
-	game/object_handler/projectile_handler.o game/object_handler/animation_handler.o \
-	game/object_handler/global_object_manager.o game/object_handler/player_handler.o \
-	game/object_handler/explosion_handler.o \
 	GUI/text_builder.o GUI/menu.o GUI/component.o \
-	GUI/interface/pause_menu.o \
+	game/interface/pause_menu.o \
 	image/image.o image/animation.o \
 	object/object_list.o object/object.o \
 
