@@ -21,7 +21,7 @@ Menu::Menu(Position _pos, unsigned int _height, unsigned int _width,
         : gui(_height, _width, 
             (uint32_t *)psp_malloc(_width * _height * sizeof(uint32_t)), "menu"
 ){
-    Vector2d vec = pivot_to_coord(_pos, _height, _width, SCREEN_HEIGHT, 
+    Vector2d vec = pos_to_coord(_pos, _height, _width, SCREEN_HEIGHT, 
         SCREEN_WIDTH_RES, true, padding_x, padding_y);
 
     x = vec.x;
@@ -39,34 +39,37 @@ inline uint32_t Menu::highlight_selection(Component comp, uint32_t pixel){
     return pixel + comp.selected * selected_color;
 }
 
-Vector2d Menu::pivot_to_coord(Position pos, unsigned int height_obj, 
+Vector2d Menu::pos_to_coord(Position pos, unsigned int height_obj, 
     unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
     bool screen_coord, int padding_x/* = 0*/, int padding_y/* = 0*/
 ){
-    int menu_cen_x = width_pan/2;
-    int menu_cen_y = height_pan/2;
+    // Center of the panel we are placing the object on
+    int pan_cen_x = width_pan/2;
+    int pan_cen_y = height_pan/2;
 
     int _x,_y;
 
+    // screen_coord: if the object we are getting the coords for are the screen
+    // we have to recognize that a y value of 0 refers to the top of the screen
     switch (pos) {
     case CENTER:
-        _x = menu_cen_x - width_obj/2 + padding_x;
-        _y = menu_cen_y - height_obj/2 + padding_y;
+        _x = pan_cen_x - width_obj/2 + padding_x;
+        _y = pan_cen_y - height_obj/2 + padding_y;
         break;
     case CENTER_LEFT:
         _x = 0 + padding_x;
-        _y = menu_cen_y - height_obj/2 + padding_y;
+        _y = pan_cen_y - height_obj/2 + padding_y;
         break;
     case CENTER_RIGHT:
         _x = width_pan - width_obj + padding_x;
-        _y = menu_cen_y - height_obj/2 + padding_y;
+        _y = pan_cen_y - height_obj/2 + padding_y;
         break;
     case TOP_CENTER:
-        _x = menu_cen_x - width_obj/2 + padding_x;
+        _x = pan_cen_x - width_obj/2 + padding_x;
         _y = (screen_coord) ? 0 + padding_y : height_pan - height_obj + padding_y;
         break;
     case BOTTOM_CENTER:
-        _x = menu_cen_x - width_obj/2 + padding_x;
+        _x = pan_cen_x - width_obj/2 + padding_x;
         _y = (screen_coord) ? height_pan - height_obj + padding_y: 0 + padding_y;
         break;
     case TOP_LEFT:
@@ -87,35 +90,37 @@ Vector2d Menu::pivot_to_coord(Position pos, unsigned int height_obj,
         break;
     \
     default:
-        _x = _y = 0;
-        log(CRITICAL, "Failed to match a pivot");
+        _x = _y = 0; // For a warning (it doesn't recognize sceExitGame() closes
+                     // the program) and says vals uninitialized
+        assert(0, "Failed to match a pivot");
         break;
     }
 
     return Vector2d(_x,_y);
 }
 
-std::pair<int,int> Menu::add_component(Position _pos, Component comp, int padding_x /* = 0*/, 
-    int padding_y /* = 0*/
+std::pair<int,int> Menu::add_component(Position _pos, Component comp, 
+    int padding_x /* = 0*/, int padding_y /* = 0*/
 ){
     int comp_index = components.size();
     int group_index = groups.size();
 
-    Vector2d vec = pivot_to_coord(_pos, comp.height, comp.width, height, width, 
+    Vector2d vec = pos_to_coord(_pos, comp.height, comp.width, height, width, 
         false, padding_x, padding_y);
+    
     comp.x = vec.x;
     comp.y = vec.y;
 
     components.push_back(comp);
-    groups.push_back(GroupInfo(true, 1, 1, 
-        {&components[components.size()-1]}));
+    groups.push_back(GroupInfo(true, 1, 1, {&components[components.size()-1]}));
 
     return {comp_index, group_index};
 }
 
-std::pair<int,int> Menu::add_component_group(Position pos, std::vector<Component> arr, 
-    Grouping grouping, int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
-    int rows/* = 0*/, int cols/* = 0*/, bool row_major/* = true*/
+std::pair<int,int> Menu::add_component_group(Position pos, 
+    std::vector<Component> arr, Grouping grouping, int spacing/* = 1*/, 
+    int padding_x/* = 0*/, int padding_y/* = 0*/, int rows/* = 0*/, 
+    int cols/* = 0*/, bool row_major/* = true*/
 ) {
     int first_comp_index = components.size();
     int group_index = groups.size();
@@ -125,13 +130,13 @@ std::pair<int,int> Menu::add_component_group(Position pos, std::vector<Component
         row_major = false;
         rows = arr.size();
         cols = 1;
-        add_grid_col_major(pos, arr, spacing, padding_x, padding_y, arr.size(), 1);
+        add_grid_col_major(pos, arr, spacing, padding_x, padding_y, rows, cols);
         break;
 
     case HORIZONTAL_LIST:
         rows = 1;
         cols = arr.size();
-        add_grid_row_major(pos, arr, spacing, padding_x, padding_y, 1, arr.size());
+        add_grid_row_major(pos, arr, spacing, padding_x, padding_y, rows, cols);
         break;
     
     case GRID:
@@ -183,7 +188,7 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     total_width -= spacing;
 
     // Get the coordinates of the grid from relative postion: pos
-    Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
+    Vector2d curr_coord = pos_to_coord(pos, total_height, total_width, height, width, false);
     curr_coord.x += padding_x;
     curr_coord.y += padding_y;
 
@@ -239,7 +244,7 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     total_width -= spacing;
 
     // Get the coordinates of the grid from relative postion: pos
-    Vector2d curr_coord = pivot_to_coord(pos, total_height, total_width, height, width, false);
+    Vector2d curr_coord = pos_to_coord(pos, total_height, total_width, height, width, false);
     curr_coord.x += padding_x;
     curr_coord.y += padding_y;
 
@@ -301,10 +306,13 @@ void Menu::draw_panel(Component comp){
 }
 
 void Menu::draw_text(Component comp){
+    // Create temporary component object 
     Component temp = comp;
     temp.data.type = Component::IMAGE_TYPE;
-    temp.data.data.img = text(comp.data.data.text); // Todo: data.data?
+    temp.data.data.img = text(comp.data.data.text); // assign image
+    
     draw_img(temp);
+    
     psp_free(temp.data.data.img.img_matrix);
 }
 
@@ -327,7 +335,7 @@ void Menu::draw_img(Component comp){
 }
 
 void Menu::set_pos(Position pos, int padding_x /* = 0*/, int padding_y /* = 0*/){
-    Vector2d vec  = pivot_to_coord(pos, height, width, SCREEN_HEIGHT, 
+    Vector2d vec  = pos_to_coord(pos, height, width, SCREEN_HEIGHT, 
         SCREEN_WIDTH_RES, true, padding_x, padding_y);
 
     x = vec.x;
