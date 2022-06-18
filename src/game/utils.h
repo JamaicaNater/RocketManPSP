@@ -33,44 +33,9 @@ unsigned int swap_endian(unsigned int data);
 int get_cam_position(int player_postion, int center);
 
 /**
- * @brief Wait for a button to be released if it is currently pressed
- * 
- * @param ctrlData - interface to the PSP control input
- * @param button - button we wait for, these can be OR'ed together for mulitple
- */
-void wait_button_release(SceCtrlData &ctrlData, PspCtrlButtons button);
-
-/**
  * @brief Wrapper for sceKernelGetSystemTimeLow() that takes into account the 
  * time we spend paused
  * 
  * @return unsigned int 
  */
 unsigned int get_time();
-
-/**
- * @brief TODO: find out what i want this to be
- * 
- * @param pixel 
- * @param tint 
- * @return uint32_t 
- */
-uint32_t tint_pixel(uint32_t pixel, uint32_t tint);
-
-/**
- * @brief Takes in an array of pixel values and averages them together
- * 
- * @param arr 
- * @param size 
- * @return uint32_t - average value
- */
-uint32_t average_pixels(uint32_t * arr, uint32_t size);
-
-/**
- * @brief Convert pixel from ARGB (pc) to ABGR (psp) likely has to do with 
- * endianness differences
- * 
- * @param data 
- * @return uint32_t 
- */
-uint32_t format_pixel(uint32_t data);

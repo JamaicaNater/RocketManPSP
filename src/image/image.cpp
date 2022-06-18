@@ -4,7 +4,7 @@
 #include <cstring>
 #include <math.h>
 
-#include "../game/utils.h"
+#include "image_utils.h"
 #include "logger/logger.h"
 #include "memory/psp_malloc.h"
 
@@ -25,15 +25,6 @@ Image::Image(uint32_t _height,uint32_t _width, uint32_t * _img_matrix,
     if (str_size > 64) log(CRITICAL, "Filename %s too long", _filename);
     strncpy(filename, _filename, str_size);
 }
-
-// Image (const Image &other){
-// 	width = other.width;
-// 	height = other.height;
-// 	int size = other.width * other.height * sizeof(unsigned int);
-// 	can_free = other.can_free;
-// 	img_matrix = (unsigned int*)psp_malloc(size);
-// 	memcpy(img_matrix, other.img_matrix, size);
-// }
 
 Image::Image() {}
 

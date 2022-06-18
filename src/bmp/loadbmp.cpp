@@ -5,7 +5,6 @@
 #include "math.h"
 
 #include "../memory/psp_malloc.h"
-#include "../game/utils.h"
 #include "../logger/logger.h"
 
 int bmp_mem=0;
@@ -154,4 +153,10 @@ int load_BMP(Animation &anim) {
     
     fclose(fp);
     return 1;
+}
+
+uint32_t format_pixel(uint32_t data){
+    // Used to Format Pixels from ARGB to ABGR for the PSP display
+	// Bit shift was done in this weird way due to the psp being finicky
+    return (data&0xFF000000) | ((data&0xFF000000)>>24 | (data&0x00FF0000)>>8 | (data&0x0000FF00)<<8 | (data&0x000000FF)<<24)>>8;
 }

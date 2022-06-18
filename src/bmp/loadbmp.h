@@ -37,3 +37,12 @@ void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, co
  * @return int 
  */
 int load_BMP(Animation &anim);
+
+/**
+ * @brief Convert pixel from ARGB (pc) to ABGR (psp) likely has to do with 
+ * endianness differences
+ * 
+ * @param data 
+ * @return uint32_t 
+ */
+uint32_t format_pixel(uint32_t data);

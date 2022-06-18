@@ -10,9 +10,9 @@
 
 #include "globals.h"
 
-#include "game/utils.h"
 #include "bmp/loadBMP.h"
 #include "logger/logger.h"
+#include "../image/image_utils.h"
 
 
 namespace GFX 
