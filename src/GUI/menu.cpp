@@ -373,12 +373,13 @@ void Menu::draw_img(Component comp){
     }
 }
 
-void Menu::set_pos(Position pos, int padding_x /* = 0*/, int padding_y /* = 0*/){
+Menu Menu::set_pos(Position pos, int padding_x /* = 0*/, int padding_y /* = 0*/){
     Vector2d vec  = pos_to_coord(pos, height, width, SCREEN_HEIGHT, 
         SCREEN_WIDTH_RES, true, padding_x, padding_y);
 
     x = vec.x;
     y = vec.y;
+    return *this;
 }
 
 void Menu::update(){   

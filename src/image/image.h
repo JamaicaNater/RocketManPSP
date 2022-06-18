@@ -25,7 +25,7 @@ struct Image
 
 	~Image();
 
-	void resize(int h, int w);
-	void resize(float scale);
-	void blur();
+	Image resize(int h, int w);
+	Image resize(float scale);
+	Image blur();
 };

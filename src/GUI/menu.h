@@ -36,6 +36,8 @@ public:
 
     ~Menu();
 
+    Menu set_pos(Position pos, int padding_x = 0, int padding_y = 0);
+
     std::pair<int,int> add_component(Position pos, Component comp, int padding_x = 0, 
         int padding_y = 0);
  
@@ -48,8 +50,6 @@ public:
     void draw_img(Component comp);
 
     void draw_text(Component comp);
-
-    void set_pos(Position pos, int padding_x = 0, int padding_y = 0);
 
     void update();
 

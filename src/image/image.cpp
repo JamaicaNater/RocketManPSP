@@ -42,7 +42,7 @@ Image::~Image() {
     Implementation of the nearest neighbor resize algorithm
     https://towardsdatascience.com/image-processing-image-scaling-algorithms-ae29aaa6b36c
 */
-void Image::resize(int h, int w){
+Image Image::resize(int h, int w){
     uint32_t * new_img = (uint32_t *)psp_malloc(h * w * sizeof(uint32_t));
     assert(img_matrix, "Image to resize initialized");
     assert(new_img, "Success in creating resize img");
@@ -58,10 +58,11 @@ void Image::resize(int h, int w){
     img_matrix = new_img;
     height = h;
     width = w;
+    return *this;
 }
 
-void Image::resize(float scale){
-    resize(scale*height, scale*width);
+Image Image::resize(float scale){
+    return resize(scale*height, scale*width);
 }
 
 /*
@@ -72,7 +73,7 @@ their values together
 
 This implementation blurs the matrix inplace
 */
-void Image::blur(){
+Image Image::blur(){
     const uint32_t neighborhood_size_max = 9;
     uint32_t neighborhood_size;
     uint32_t to_avg[neighborhood_size_max];
@@ -107,5 +108,6 @@ void Image::blur(){
             neighborhood_size = (end_i - start_i + 1) * (end_j - start_j + 1);
             img_matrix[y*width + x] = average_pixels(to_avg, neighborhood_size);
         }
-    } 
+    }
+    return *this;
 }

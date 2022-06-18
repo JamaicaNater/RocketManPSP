@@ -34,12 +34,14 @@ Component::~Component()
 {
 }
 
-void Component::set_x(int _x){
+Component Component::set_x(int _x){
     x = _x;
+    return *this;
 }
 
-void Component::set_y(int _y){
+Component Component::set_y(int _y){
     y = _y;
+    return *this;
 }
 
 Component Component::hide() {

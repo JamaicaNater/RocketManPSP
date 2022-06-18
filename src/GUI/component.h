@@ -42,8 +42,8 @@ public:
     Component(Image _img, uint32_t _color = 0x00000000);
     ~Component();
 
-    void set_x(int _x);
-    void set_y(int _y);
+    Component set_x(int _x);
+    Component set_y(int _y);
 
     Component hide();
     Component show();
