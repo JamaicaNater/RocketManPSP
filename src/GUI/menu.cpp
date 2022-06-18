@@ -122,7 +122,6 @@ std::pair<int,int> Menu::add_component_group(Position pos,
     int padding_x/* = 0*/, int padding_y/* = 0*/, int rows/* = 0*/, 
     int cols/* = 0*/, bool row_major/* = true*/
 ) {
-    log(DEBUG, "arr size %d:", arr.size());
     int first_comp_index = components.size();
     int group_index = groups.size();
     switch (grouping)
@@ -167,6 +166,14 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
+    // Check if rows provided was correct
+    if (ceil(arr.size() * 1.0f / cols < rows)){
+        log(ERROR, "Too many rows provided");
+    }
+    if (ceil(arr.size() * 1.0f / cols > rows)){
+        log(ERROR, "Not enough rows provided");
+    }
+
     // Store the widest values of each row / column so that we can center 
     // the smaller values 
     int widest[cols] = {0};
@@ -194,6 +201,17 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     Vector2d curr_coord = pos_to_coord(pos, total_height, total_width, height, width, false);
     curr_coord.x += padding_x;
     curr_coord.y += padding_y;
+
+    if (curr_coord.y + total_height >= height) {
+        log(WARNING, "Grid height of %d exceeds max panel height of %d for "
+            "coords %d, %d", total_height, height - curr_coord.y, 
+            curr_coord.x, curr_coord.y);
+    }
+    if (curr_coord.x + total_width >= width) {
+        log(WARNING, "Grid width of %d exceeds max panel width of %d for "
+            "coords %d, %d", total_width, width - curr_coord.x, curr_coord.x, 
+            curr_coord.y);
+    }
 
     // We draw components top down left to right
     curr_coord.y += total_height - tallest[0];
@@ -223,6 +241,14 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     int spacing/* = 1*/, int padding_x/* = 0*/, int padding_y/* = 0*/,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
+    // Check if cols provided was correct
+    if (ceil(arr.size() * 1.0f / rows < cols)){
+        log(ERROR, "Too many columns provided");
+    }
+    if (ceil(arr.size() * 1.0f / rows > cols)){
+        log(ERROR, "Not enough columns provided");
+    }
+
     // Store the widest values of each row / column so that we can center 
     // the smaller values 
     int widest[cols] = {0};
@@ -250,6 +276,17 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     Vector2d curr_coord = pos_to_coord(pos, total_height, total_width, height, width, false);
     curr_coord.x += padding_x;
     curr_coord.y += padding_y;
+
+    if (curr_coord.y + total_height >= height) {
+        log(WARNING, "Grid height of %d exceeds max panel height of %d for "
+            "coords %d, %d", total_height, height - curr_coord.y, 
+            curr_coord.x, curr_coord.y);
+    }
+    if (curr_coord.x + total_width >= width) {
+        log(WARNING, "Grid width of %d exceeds max panel width of %d for "
+            "coords %d, %d", total_width, width - curr_coord.x, curr_coord.x, 
+            curr_coord.y);
+    }
 
     // We draw components top down left to right
     curr_coord.y += total_height;
