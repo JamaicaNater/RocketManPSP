@@ -30,8 +30,8 @@ public:
     int x,y;
     int width = 0, height = 0;
     uint32_t background_color = 0x00000000;
-    uint32_t comp_ID;
-    uint32_t group_ID;
+    int comp_ID;
+    int group_ID;
 
     CompData data;
 

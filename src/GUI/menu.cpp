@@ -106,8 +106,10 @@ std::pair<int,int> Menu::add_component(Position _pos, Component comp, int paddin
     comp.x = vec.x;
     comp.y = vec.y;
 
+    assign_comp_id(comp);
+    assign_group_id(comp);
     components.push_back(comp);
-    groups.push_back(GroupInfo(groups.size(), true, 1, 1, 
+    groups.push_back(GroupInfo(comp.group_ID, true, 1, 1, 
         {&components[components.size()-1]}));
 
     return {comp_index, group_index};
@@ -181,6 +183,8 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
 
     curr_coord.y += total_height - tallest[0]; // top down left right
     int start_x = curr_coord.x;
+
+    assign_group_id(arr);
     for (unsigned int i = 0; i < arr.size(); i++) {
         if (i % cols == 0 && i > 0) { // next row
             curr_coord.y -= tallest[i/cols] + spacing;
@@ -195,6 +199,7 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
         
         curr_coord.x += widest[i%cols] + spacing;
 
+        assign_comp_id(arr[i]);
         components.push_back(arr[i]);
     }
 }
@@ -225,6 +230,7 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
 
     curr_coord.y += total_height - tallest[0]; // top down left right
     int start_y = curr_coord.y;
+    assign_group_id(arr);
     for (unsigned int i = 0; i < arr.size(); i++) {
         if (i % rows == 0 && i > 0) { // next row
             curr_coord.x += widest[i%rows] + spacing;
@@ -239,6 +245,7 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
         
         curr_coord.y -= tallest[i/rows] + spacing;
 
+        assign_comp_id(arr[i]);
         components.push_back(arr[i]);
     }
 }
@@ -325,11 +332,22 @@ void Menu::update(){
     }
 }
 
+// TODO remove
 std::vector<int> Menu::get_selectable_components(){
     std::vector<int> selectable_arr;
     
-    for (int i = 0; i < components.size(); i++){
+    for (unsigned int i = 0; i < components.size(); i++){
         if (components[i].selectable) selectable_arr.push_back(i);
+    }
+
+    return selectable_arr;
+}
+
+std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr){
+    std::vector<int> selectable_arr;
+    
+    for (unsigned int i = 0; i < arr.size(); i++){
+        if (arr[i]->selectable) selectable_arr.push_back(i);
     }
 
     return selectable_arr;
@@ -338,6 +356,51 @@ std::vector<int> Menu::get_selectable_components(){
 void Menu::select_component(int comp_id) {
     if(selected_comp_id > -1) components[selected_comp_id].deselect();
 
-    selected_comp_id = comp_id;
     components[selected_comp_id].select();
+}
+
+int Menu::find_component_by_id(int component_id){
+    int index = -1;
+    for (unsigned int i = 0; i < components.size(); i++){
+        if (components[i].comp_ID == component_id) index = i;
+    }
+    return index;
+}
+
+void Menu::assign_comp_id(Component &comp){
+    comp.comp_ID = next_id;
+    next_id++;
+}
+
+void Menu::assign_group_id(Component &comp){
+    comp.group_ID = next_group_id;
+    next_group_id++;
+}
+
+void Menu::assign_group_id(std::vector<Component> &arr){
+    for (Component &comp : arr) comp.group_ID = next_group_id;
+    
+    next_group_id++;
+}
+
+void Menu::select_next(){
+    std::vector<int> selectable = get_selectable_components(groups[1].components);
+    int old_index = selectable[selected_comp_id];
+    components[old_index].deselect();
+    selected_comp_id++;
+    selected_comp_id %= selectable.size();
+    log(DEBUG, "down %d, %u", selected_comp_id), selectable.size();
+    int new_index = selectable[selected_comp_id];
+    components[new_index].select();
+}
+
+void Menu::select_prev(){
+    std::vector<int> selectable = get_selectable_components(groups[1].components);
+    int old_index = selectable[selected_comp_id];
+    components[old_index].deselect();
+    (selected_comp_id)--;
+    selected_comp_id = (selected_comp_id < 0) ? selectable.size() - 1: selected_comp_id;
+    log(DEBUG, "up %d", selected_comp_id);
+    int new_index = selectable[selected_comp_id];
+    components[new_index].select();
 }

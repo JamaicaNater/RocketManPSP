@@ -54,12 +54,19 @@ public:
     void close();
 
     std::vector<int> get_selectable_components();
-
-    void select_next();
+    std::vector<int> get_selectable_components(std::vector<Component *> arr);
 
     void select_component(int comp_id);
+
+    void select_next();
+    void select_prev();
 private:
-    int selected_comp_id = -1;
+// TODO ID vs index
+    int next_id = 0;
+    int next_group_id = 0;
+
+    int selected_comp_id = 0;
+    int selected_group_id = 0;
 
     std::vector<Component> components;
     struct GroupInfo
@@ -84,6 +91,10 @@ private:
 
     std::vector<GroupInfo> groups;
 
+    void assign_comp_id(Component &comp);
+    void assign_group_id(Component &comp);
+    void assign_group_id(std::vector<Component> &arr);
+    int find_component_by_id(int component_id);
     uint32_t highlight_selection(Component comp, uint32_t pixel);
     Vector2d pivot_to_coord(Position pos, unsigned int height_obj, 
         unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
