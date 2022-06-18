@@ -23,7 +23,7 @@ Menu build_pause_menu(){
         Component("8", 0x00CC00),
         Component("9", 0x00CC00),
         Component("10", 0x00CC00),
-    }, Menu::GRID, 2,0,0, 5,2,false);
+    }, Menu::GRID, 2,0,0, 5,2,true);
 
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       
         pause_menu.control_reader.wait_button_release(PSP_CTRL_START);  
