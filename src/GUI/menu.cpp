@@ -122,6 +122,7 @@ std::pair<int,int> Menu::add_component_group(Position pos,
     int padding_x/* = 0*/, int padding_y/* = 0*/, int rows/* = 0*/, 
     int cols/* = 0*/, bool row_major/* = true*/
 ) {
+    log(DEBUG, "arr size %d:", arr.size());
     int first_comp_index = components.size();
     int group_index = groups.size();
     switch (grouping)
@@ -153,8 +154,9 @@ std::pair<int,int> Menu::add_component_group(Position pos,
     }
 
     std::vector<Component *> group_vec;
-    for(int i = components.size() - arr.size() - 1; i < components.size(); i++) {
+    for(int i = components.size() - arr.size(); i < components.size(); i++) {
         group_vec.push_back(&components[i]);
+        log(DEBUG, "push back %d", i);
     }
     groups.push_back(GroupInfo(row_major, rows, cols, group_vec));
 
@@ -239,15 +241,10 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     // Set the dimensions using the widest and tallest values of each row and col
     for (int i=0; i < cols; i++) total_width += (widest[i] + spacing);
     for (int i=0; i < rows; i++) total_height += (tallest[i] + spacing);
-
-        for (int i=0; i < cols; i++) log(DEBUG, "widest: %d i: %d", widest[i], i);
-    for (int i=0; i < rows; i++) log(DEBUG, "tallest: %d i: %d", tallest[i], i);
     
     // Total spacing = (row/cols -1) * spacing
     total_height -= spacing;
     total_width -= spacing;
-
-    log(DEBUG, "%d x %d", total_width, total_height);
 
     // Get the coordinates of the grid from relative postion: pos
     Vector2d curr_coord = pos_to_coord(pos, total_height, total_width, height, width, false);
@@ -257,7 +254,6 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     // We draw components top down left to right
     curr_coord.y += total_height;
     int start_y = curr_coord.y;
-    log(DEBUG, "x %d y %d", curr_coord.x, curr_coord.y);
     for (unsigned int i = 0; i < arr.size(); i++) {
         // Move for next element
         if (i % rows == 0 && i > 0) { // next col
@@ -271,8 +267,7 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
         // Put in the center of the row/col
         arr[i].y -= (tallest[i%rows] + arr[i].height)/2;
         arr[i].x += (widest[i/rows] - arr[i].width)/2;
-    
-        log(DEBUG, "%d - %d, rows %d, cols %d, i %d", tallest[i%rows] - arr[i].height,tallest[i%rows] + spacing, rows, cols, i);
+
         curr_coord.y -= (tallest[i%rows] + spacing);
         components.push_back(arr[i]);
     }
@@ -394,14 +389,19 @@ void Menu::select_next(Direction direction){
     int old_index = selectable[selected_comp_id];
     groups[1].components[old_index]->deselect(); // Deselect the old item
     
+    int rows = groups[1].rows;
+    int cols = groups[1].cols;
+    int size = selectable.size();
     switch (direction)
     {
     case UP:
         if (groups[1].rows <= 1) break;
 
         if(groups[1].row_major) {
-            (selected_comp_id) -= groups[1].rows; // Bounded decrement
-            if (selected_comp_id < 0) selected_comp_id += selectable.size();
+            selected_comp_id -= groups[1].rows; // Bounded decrement
+            if (selected_comp_id < 0) selected_comp_id += (groups[1].rows * groups[1].cols);
+            // in the case that the gird isn't filled
+            if (selected_comp_id >= size) selected_comp_id -= groups[1].rows;
         }
         else {
             (selected_comp_id)--; // Bounded decrement
@@ -410,14 +410,29 @@ void Menu::select_next(Direction direction){
 
         break;
     case DOWN:
-        /* code */
+        if (groups[1].rows <= 1) break;
+        
+        if(groups[1].row_major) {
+            selected_comp_id += groups[1].rows; // Bounded decrement
+            if (selected_comp_id > size) selected_comp_id -= (groups[1].rows * groups[1].cols);
+            // in the case that the gird isn't filled
+            if (selected_comp_id >= selectable.size()) selected_comp_id -= groups[1].rows;
+            log (DEBUG, "done");
+        }
+        else {
+            
+        }
         break;
     case LEFT:
         if (groups[1].cols <= 1) break;
 
         if(groups[1].row_major) {
-            (selected_comp_id)--; // Bounded decrement
-            if (selected_comp_id < 0) selected_comp_id += selectable.size();
+            (selected_comp_id)--;
+            // If Moving leftward forces us to go up one row or go out of bounds
+            // add the columns size, this makes it so that we stay in the same row
+            if (selected_comp_id < 0 || selected_comp_id % cols == cols - 1) selected_comp_id += cols;
+            // In case the above statement pushes out of bounds
+            if (selected_comp_id >= size) selected_comp_id -= (selected_comp_id % cols);
         }
         else {
             (selected_comp_id) -= groups[1].rows; // Bounded decrement
@@ -430,7 +445,10 @@ void Menu::select_next(Direction direction){
 
         if(groups[1].row_major){
             selected_comp_id++;
-            selected_comp_id %= selectable.size(); // Bounded increment
+            if (selected_comp_id % cols == 0 && selected_comp_id != 0){
+                selected_comp_id -= cols;
+            }
+            if (selected_comp_id >= size) selected_comp_id -= (selected_comp_id % cols);
         } else {
             selected_comp_id += groups[1].rows;
             selected_comp_id %= selectable.size(); // Bounded increment
@@ -443,6 +461,11 @@ void Menu::select_next(Direction direction){
         break;
     }
 
+    log(DEBUG, "selected: %d", selected_comp_id);
+    log(DEBUG, "size: %d", groups[1].components.size());
+
     int new_index = selectable[selected_comp_id];
+    log(DEBUG, "index: %d", new_index);
     groups[1].components[new_index]->select();
+    log(DEBUG, "here");
 }

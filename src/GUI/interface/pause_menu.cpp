@@ -33,6 +33,11 @@ Menu build_pause_menu(){
         pause_menu.control_reader.wait_button_release(PSP_CTRL_UP);
     };
 
+    pause_menu.control_reader.on_button_press_down = [&pause_menu]() {
+        pause_menu.select_next(Menu::DOWN);
+        pause_menu.control_reader.wait_button_release(PSP_CTRL_DOWN);
+    };
+
     pause_menu.control_reader.on_button_press_left = [&pause_menu]() {
         pause_menu.select_next(Menu::LEFT);
         pause_menu.control_reader.wait_button_release(PSP_CTRL_LEFT);
