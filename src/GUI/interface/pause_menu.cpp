@@ -16,8 +16,11 @@ Menu build_pause_menu(){
         Component("1", 0x00CC00),
         Component("2", 0x00CC00),
         Component("3", 0x00CC00),
+        Component("4", 0x00CC00),
+        Component("5", 0x00CC00),
+        Component("6", 0x00CC00),
         Component(16,16, Component::Rectangle, 0x00FF00)
-    }, Menu::HORIZONTAL_LIST, 2,0,0, 2,2);
+    }, Menu::GRID, 2,0,0, 3,3,true);
 
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       
         pause_menu.control_reader.wait_button_release(PSP_CTRL_START);  
@@ -25,14 +28,19 @@ Menu build_pause_menu(){
         GameState::update_status(GameState::RUNNING);
     };
 
-    pause_menu.control_reader.on_button_press_down = [&pause_menu]() {
-        pause_menu.select_next(Menu::LEFT);
-        pause_menu.control_reader.wait_button_release(PSP_CTRL_DOWN);
+    pause_menu.control_reader.on_button_press_up = [&pause_menu]() {
+        pause_menu.select_next(Menu::UP);
+        pause_menu.control_reader.wait_button_release(PSP_CTRL_UP);
     };
 
-    pause_menu.control_reader.on_button_press_up = [&pause_menu]() {
+    pause_menu.control_reader.on_button_press_left = [&pause_menu]() {
+        pause_menu.select_next(Menu::LEFT);
+        pause_menu.control_reader.wait_button_release(PSP_CTRL_LEFT);
+    };
+
+    pause_menu.control_reader.on_button_press_right = [&pause_menu]() {
         pause_menu.select_next(Menu::RIGHT);
-        pause_menu.control_reader.wait_button_release(PSP_CTRL_UP);
+        pause_menu.control_reader.wait_button_release(PSP_CTRL_RIGHT);
     };
     
     pause_menu.on_open = [](Menu &self){

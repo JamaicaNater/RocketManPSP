@@ -41,7 +41,7 @@ public:
  
     std::pair<int,int> add_component_group(Position pos, std::vector<Component> arr, 
         Grouping grouping, int spacing = 1, int padding_x = 0, int padding_y = 0, 
-        int rows = 0, int cols = 0, bool row_major = false);
+        int rows = 0, int cols = 0, bool row_major = true);
 
     void draw_panel(Component comp);
 
