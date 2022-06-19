@@ -92,4 +92,10 @@ public:
      * @return Component 
      */
     Component set_selectable(bool _selectable);
+
+    /**
+     * @brief Set what do to do if the user clicks the component
+     * 
+     */
+    Component set_on_click(std::function<void()> _on_click);
 };

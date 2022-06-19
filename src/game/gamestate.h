@@ -27,9 +27,11 @@ public:
     
 
     bool in_menu;
-    bool in_title;
+    static bool in_title;
     static StatusInfo status_info;
     
+    static void exit_game();
+
     /**
      * @brief Load the title screen image and render it to the screen wait for 
      * player to press start

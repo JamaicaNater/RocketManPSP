@@ -68,3 +68,8 @@ Component Component::set_selectable(bool _selectable){
     selectable = _selectable;
     return *this;
 }
+
+Component Component::set_on_click(std::function<void()> _on_click){
+    on_click = _on_click;
+    return *this;
+}

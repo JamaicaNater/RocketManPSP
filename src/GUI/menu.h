@@ -115,6 +115,8 @@ public:
     std::vector<int> get_selectable_components(std::vector<Component *> arr);
 
     void select_next(Direction direction);
+
+    void click_selection();
 private:
 
     int selected_comp_id = 0;

@@ -16,6 +16,8 @@
 
 GameState::StatusInfo GameState::status_info = {GameState::RUNNING, sceKernelGetSystemTimeLow()};
 
+bool GameState::in_title = true;
+
 void GameState::init(){
     log(INFO, "Init Gamestate");
     GameState::update_status(RUNNING);
@@ -34,8 +36,13 @@ void GameState::init(){
     init_text_builder();    
 }
 
+void GameState::exit_game(){
+    sceKernelExitGame();
+}
+
 void GameState::title_screen() {
     Menu title_menu = build_title_menu();
+    title_menu.on_open(title_menu);
 }
 
 void GameState::on_pause(){    

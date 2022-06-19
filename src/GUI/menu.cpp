@@ -560,3 +560,17 @@ void Menu::select_next(Direction direction){
     groups[1].components[new_index]->select();
     log(DEBUG, "here");
 }
+
+void Menu::click_selection(){
+    // Get the array of selectable buttons within a group
+    std::vector<int> selectable = get_selectable_components(groups[1].components);
+
+    if (selectable.size() == 0){
+        log(WARNING, "No selections for group %d", selected_group_id);
+        return;
+    }
+    
+    // Get the group array index of the item we wish to deselect
+    int index = selectable[selected_comp_id];
+    groups[1].components[index]->on_click(); // do the on_click functions
+}
