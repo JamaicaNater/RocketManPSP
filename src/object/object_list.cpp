@@ -1,5 +1,5 @@
 #include "object_list.h"
-#include "../memory/psp_malloc.h"
+#include "memory/psp_malloc.h"
 
 int ObjectList::_insert(Object * value){
     int i = MAX_SIZE;

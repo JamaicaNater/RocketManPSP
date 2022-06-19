@@ -10,7 +10,7 @@
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"
 
-#include "../GUI/text_builder.h"
+#include "GUI/text_builder.h"
 
 #include "interface/pause_menu.h"
 #include "interface/title_menu.h"

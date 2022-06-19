@@ -12,7 +12,7 @@
 
 #include "bmp/loadBMP.h"
 #include "logger/logger.h"
-#include "../image/image_utils.h"
+#include "image/image_utils.h"
 
 
 namespace GFX 

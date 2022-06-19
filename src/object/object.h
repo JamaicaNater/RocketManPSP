@@ -3,9 +3,9 @@
 #include <cstring>
 #include <cstdlib>
 
-#include "../physics/vector2d.h"
+#include "physics/vector2d.h"
 #include "logger/logger.h"
-#include "../image/image.h"
+#include "image/image.h"
 #include "globals.h"
 
 class Object

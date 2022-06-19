@@ -1,4 +1,4 @@
-#include "../image/image.h"
+#include "image/image.h"
 /**
  * @brief Loads the Bmp fo the font table into memory
  * 

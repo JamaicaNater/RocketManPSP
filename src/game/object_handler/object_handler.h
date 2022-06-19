@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../object/object_list.h"
-#include "../../physics/vector2d.h"
+#include "object/object_list.h"
+#include "physics/vector2d.h"
 
 class ObjectHandler
 {

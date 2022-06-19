@@ -5,9 +5,9 @@
 #include "object_handler.h" 
 #include "projectile_handler.h"
 
-#include "../interface/pause_menu.h"
+#include "controls/control_reader.h"
 
-#include "../../controls/control_reader.h"
+#include "game/interface/pause_menu.h"
 
 class PlayerHandler : public ObjectHandler
 {

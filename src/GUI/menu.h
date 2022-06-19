@@ -5,8 +5,8 @@
 #include <cstdlib>
 #include <vector>
 
-#include "../image/image.h"
-#include "../controls/control_reader.h"
+#include "image/image.h"
+#include "controls/control_reader.h"
 #include "physics/vector2d.h"
 
 class Menu

@@ -2,7 +2,8 @@
 
 #include <cstdlib>
 
-#include "../logger/logger.h"
+#include "logger/logger.h"
+
 struct MemNode
 {
     void * ptr;

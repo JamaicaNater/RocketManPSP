@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "../memory/psp_malloc.h"
-#include "../logger/logger.h"
+#include "memory/psp_malloc.h"
+#include "logger/logger.h"
 
 int bmp_mem=0;
 

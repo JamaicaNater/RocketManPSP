@@ -1,6 +1,6 @@
 #include "control_reader.h"
 
-#include "../globals.h"
+#include "globals.h"
 
 #include <pspthreadman.h>
 

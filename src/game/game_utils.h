@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdint.h"
+#include <stdint.h>
 
 /**
  * @brief takes in a range of number from -1 to 1 and maps the number a range of numbers

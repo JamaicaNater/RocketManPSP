@@ -2,7 +2,7 @@
 #include "math.h"
 #include "physics.h"
 
-#include "../logger/logger.h"
+#include "logger/logger.h"
 
 void apply_gravity(Vector2d &vec){
     

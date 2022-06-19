@@ -1,4 +1,5 @@
 #pragma once
+
 #include <cstdlib>
 
 void init_malloc();

@@ -1,5 +1,5 @@
-#include "../../graphics/gfx.hpp"
-#include "../../object/object_list.h"
+#include "graphics/gfx.hpp"
+#include "object/object_list.h"
 #include "global_object_manager.h"
 
 namespace ObjectManager{

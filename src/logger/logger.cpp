@@ -3,7 +3,7 @@
 #include <cstring>
 #include <stdarg.h>
 
-#include "../globals.h"
+#include "globals.h"
 
 #include "logger.h"
 

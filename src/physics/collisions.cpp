@@ -1,7 +1,7 @@
-#include "../globals.h"
+#include "globals.h"
 
-#include "../object/object_list.h"
-#include "../logger/logger.h"
+#include "object/object_list.h"
+#include "logger/logger.h"
 #include "collisions.h"
 
 int object_collision(Object * obj, ObjectList &collisions){

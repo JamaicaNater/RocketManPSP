@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
-#include "../object/object.h"
-#include "../image/animation.h"
+
+#include "object/object.h"
+#include "image/animation.h"
 
 //TODO redocument this
 /**

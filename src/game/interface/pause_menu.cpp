@@ -5,7 +5,7 @@
 #include "../gamestate.h"
 
 #include "graphics/gfx.hpp"
-#include "../../bmp/loadbmp.h"
+#include "bmp/loadbmp.h"
 
 void swap_player_image(const char * filename){
     psp_free(PlayerHandler::player->image.img_matrix);
