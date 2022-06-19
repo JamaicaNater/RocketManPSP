@@ -167,10 +167,10 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
     // Check if rows provided was correct
-    if (ceil(arr.size() * 1.0f / cols < rows)){
+    if (ceil(arr.size() * 1.0f) / cols < rows){
         log(ERROR, "Too many rows provided");
     }
-    if (ceil(arr.size() * 1.0f / cols > rows)){
+    if (ceil(arr.size() * 1.0f) / cols > rows){
         log(ERROR, "Not enough rows provided");
     }
 
@@ -242,10 +242,10 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     int rows/* = 0*/, int cols/* = 0*/
 ) {
     // Check if cols provided was correct
-    if (ceil(arr.size() * 1.0f / rows < cols)){
+    if (ceil(arr.size() * 1.0f / rows) < cols){
         log(ERROR, "Too many columns provided");
     }
-    if (ceil(arr.size() * 1.0f / rows > cols)){
+    if (ceil(arr.size() * 1.0f / rows) > cols){
         log(ERROR, "Not enough columns provided");
     }
 
@@ -267,6 +267,9 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     // Set the dimensions using the widest and tallest values of each row and col
     for (int i=0; i < cols; i++) total_width += (widest[i] + spacing);
     for (int i=0; i < rows; i++) total_height += (tallest[i] + spacing);
+
+    for (int i=0; i < cols; i++) log(DEBUG, "widest %d, %d", widest[i], i);
+    for (int i=0; i < rows; i++) log(DEBUG, "tallest %d, %d", tallest[i], i);
     
     // Total spacing = (row/cols -1) * spacing
     total_height -= spacing;
@@ -294,7 +297,7 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     for (unsigned int i = 0; i < arr.size(); i++) {
         // Move for next element
         if (i % rows == 0 && i > 0) { // next col
-            curr_coord.x += widest[i/rows] + spacing;
+            curr_coord.x += (widest[(i-1)/rows] + spacing);
             curr_coord.y = start_y;
         }
 
@@ -348,7 +351,6 @@ void Menu::draw_panel(Component comp){
 
 void Menu::draw_text(Component comp){
     assert(comp.data.type == Component::LABEL_TYPE, "");
-    
     // Create temporary component object 
     Component temp = comp;
     temp.data.type = Component::IMAGE_TYPE;
@@ -451,9 +453,17 @@ void Menu::select_next(Direction direction){
             // Move selection in bounds
             if (selected_comp_id >= size) selected_comp_id = size-1;
         }
-        else {
-            (selected_comp_id)--; // Bounded decrement
-            if (selected_comp_id < 0) selected_comp_id += selectable.size();
+        else { // Column Major
+            // If current position is the first element...
+            if (selected_comp_id % rows == 0) {
+                // then to move up we wrap around to the end of the column...
+                selected_comp_id += rows - 1;
+                // bounds checking if the grid is not complete
+                if (selected_comp_id >= size) selected_comp_id = size-1;
+            } else {
+                // Otherwise just decrement
+                selected_comp_id--;
+            }
         }
 
         break;
@@ -471,7 +481,16 @@ void Menu::select_next(Direction direction){
             if (selected_comp_id >= size) selected_comp_id = size-1;
         }
         else {
-            
+            // If current position is the last element...
+            if (selected_comp_id % rows == rows - 1) {
+                // then to move right we wrap around to the front of the row...
+                selected_comp_id -= rows - 1;
+            } else {
+                // Other wise just increment
+                selected_comp_id++;
+                // bounds checking if the grid is not complete
+                if (selected_comp_id >= size) selected_comp_id = rows * (size/rows);
+            }
         }
         break;
     case LEFT:

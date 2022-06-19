@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdio.h>
-#define assert(cond, args...) (cond) ? 0 : __assert_fail(#cond, __FILE__, __LINE__, args)
+#define assert(cond, args...) (cond) ? 0 : __assert_fail(#cond, __FILE__, __FUNCTION__, __LINE__, args)
 
 
 enum levels{DEBUG_H, DEBUG, INFO, WARNING, ERROR, CRITICAL};
@@ -21,5 +21,5 @@ void log(unsigned char level, const char* format, ... );
  */
 void close_log();
 
-int __assert_fail(const char * condition, const char * file, int lineno, const char * format, ...);
+int __assert_fail(const char * condition, const char * file, const char * func, int lineno, const char * format, ...);
 

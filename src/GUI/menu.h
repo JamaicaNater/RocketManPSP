@@ -116,9 +116,6 @@ public:
 
     void select_next(Direction direction);
 private:
-// TODO ID vs index
-    int next_id = 0;
-    int next_group_id = 0;
 
     int selected_comp_id = 0;
     int selected_group_id = 0;

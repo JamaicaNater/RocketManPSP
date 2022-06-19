@@ -48,7 +48,9 @@ void close_log() {
     #endif
 }
 
-int __assert_fail(const char * condition, const char * file, int lineno, const char * format, ...){
+int __assert_fail(const char * condition, const char * file, const char * func, 
+    int lineno, const char * format, ...
+){
     pspDebugScreenInit();
 
     va_list args;
@@ -59,7 +61,8 @@ int __assert_fail(const char * condition, const char * file, int lineno, const c
     vsprintf(va_data, format, args);
     va_end( args );
 
-    sprintf(data, "assert() evaluated false: %s, at %s:%d comments: %s", condition, file, lineno, va_data);
+    sprintf(data, "Assertion failed: '%s' in %s at %s:%d notes: '%s'",  
+        condition, file, func, lineno, va_data);
 
     pspDebugScreenPrintf("%s", data);
 
