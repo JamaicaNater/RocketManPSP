@@ -431,6 +431,14 @@ void Menu::draw_and_swap_buffers() {
     GFX::swapBuffers();
 }
 
+void Menu::close() {
+    for (Component comp : components) {
+        if (comp.data.type == Component::IMAGE_TYPE) {
+            psp_free(comp.data.data.img.img_matrix);
+        }
+    }
+}
+
 std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr) {
     std::vector<int> selectable_arr;
 
@@ -441,6 +449,10 @@ std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr) {
     return selectable_arr;
 }
 
+void Menu::set_selection_group(int group_index) {
+    selected_group_id = group_index;
+}
+
 void Menu::select_next(Direction direction) {
     if (components.size() == 0 || groups.size() == 0) {
         log(WARNING, "Groups and / or component list is empty");
@@ -449,7 +461,7 @@ void Menu::select_next(Direction direction) {
 
     // Get the array of selectable buttons within a group
     std::vector<int> selectable =
-        get_selectable_components(groups[1].components);
+        get_selectable_components(groups[selected_group_id].components);
 
     if (selectable.size() == 0) {
         log(WARNING, "No selections for group %d", selected_group_id);
@@ -458,10 +470,10 @@ void Menu::select_next(Direction direction) {
 
     // Get the group array index of the item we wish to deselect
     int old_index = selectable[selected_comp_id];
-    groups[1].components[old_index]->deselect();  // Deselect the old item
+    groups[selected_group_id].components[old_index]->deselect();  // Deselect the old item
 
-    int rows = groups[1].rows;
-    int cols = groups[1].cols;
+    int rows = groups[selected_group_id].rows;
+    int cols = groups[selected_group_id].cols;
     int size = selectable.size();
 
     switch (direction)
@@ -469,7 +481,7 @@ void Menu::select_next(Direction direction) {
     case UP:
         if (rows <= 1) break;
 
-        if (groups[1].row_major) {
+        if (groups[selected_group_id].row_major) {
             selected_comp_id -= cols;  // Go to upper row
             // If that is out of bounds add the max grid value to move to the
             // bottom of the grid, if the grid is not complete this is out of
@@ -496,7 +508,7 @@ void Menu::select_next(Direction direction) {
     case DOWN:
         if (rows <= 1) break;
 
-        if (groups[1].row_major) {
+        if (groups[selected_group_id].row_major) {
             selected_comp_id += cols;  // Go to lower row
 
             // If that is out of bounds subtract the max grid value to move to
@@ -521,9 +533,9 @@ void Menu::select_next(Direction direction) {
         }
         break;
     case LEFT:
-        if (groups[1].cols <= 1) break;
+        if (groups[selected_group_id].cols <= 1) break;
 
-        if (groups[1].row_major) {
+        if (groups[selected_group_id].row_major) {
             // If current position is the first element...
             if (selected_comp_id % cols == 0) {
                 // then to move left we wrap around to the back of the row...
@@ -548,9 +560,9 @@ void Menu::select_next(Direction direction) {
 
         break;
     case RIGHT:
-        if (groups[1].cols <= 1) break;
+        if (groups[selected_group_id].cols <= 1) break;
 
-        if (groups[1].row_major) {
+        if (groups[selected_group_id].row_major) {
             // If current position is the last element...
             if (selected_comp_id % cols == cols - 1) {
                 // then to move right we wrap around to the front of the row...
@@ -581,19 +593,19 @@ void Menu::select_next(Direction direction) {
     }
 
     log(DEBUG, "selected: %d", selected_comp_id);
-    log(DEBUG, "size: %d", groups[1].components.size());
+    log(DEBUG, "size: %d", groups[selected_group_id].components.size());
     log(DEBUG, "rows: %d cols: %d", rows, cols);
 
     int new_index = selectable[selected_comp_id];
     log(DEBUG, "index: %d", new_index);
-    groups[1].components[new_index]->select();
+    groups[selected_group_id].components[new_index]->select();
     log(DEBUG, "here");
 }
 
 void Menu::click_selection(){
     // Get the array of selectable buttons within a group
     std::vector<int> selectable =
-        get_selectable_components(groups[1].components);
+        get_selectable_components(groups[selected_group_id].components);
 
     if (selectable.size() == 0) {
         log(WARNING, "No selections for group %d", selected_group_id);
@@ -602,5 +614,5 @@ void Menu::click_selection(){
 
     // Get the group array index of the item we wish to deselect
     int index = selectable[selected_comp_id];
-    groups[1].components[index]->on_click(); // do the on_click functions
+    groups[selected_group_id].components[index]->on_click(); // do the on_click functions
 }

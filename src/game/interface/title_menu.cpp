@@ -13,7 +13,7 @@ Menu build_title_menu() {
 
     title.add_component(CENTER, Component(title_img).set_selectable(false) );
 
-    title.add_component_group(CENTER, {
+    int group = title.add_component_group(CENTER, {
         Component("Play Game", 0x22B681)
         .set_on_click([](){
             GameState::in_title = false;
@@ -23,9 +23,10 @@ Menu build_title_menu() {
         .set_on_click([](){
             GameState::exit_game();
         })
-        }, Menu::HORIZONTAL_LIST, 10, 0, -40);
+        }, Menu::HORIZONTAL_LIST, 10, 0, -40) .second;
+    title.set_selection_group(group);
 
-    title.add_component(BOTTOM_LEFT, 
+    title.add_component(BOTTOM_LEFT,
     Component("Copyright 2022 Francis Williams", 0xFFFFFF)
     .set_selectable(false)
     );
@@ -54,17 +55,19 @@ Menu build_title_menu() {
         title.click_selection();
         title.control_reader.wait_button_release(PSP_CTRL_CROSS);
     };
-    
+
     title.on_open = [](Menu &self){
-        self.update();  
+        self.update();
         self.draw_and_swap_buffers();
         while (GameState::in_title)
-        {   
+        {
             if (self.control_reader.read_controls()){
-                self.update();  
+                self.update();
                 self.draw_and_swap_buffers();
-            } 
+            }
         }
+
+        self.close();
     };
 
     return title;

@@ -117,6 +117,8 @@ class Menu {
      */
     std::vector<int> get_selectable_components(std::vector<Component *> arr);
 
+    void set_selection_group(int group_index);
+
     /**
      * @brief Selects the next component in a given direction
      *

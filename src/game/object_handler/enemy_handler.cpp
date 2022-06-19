@@ -34,7 +34,7 @@ EnemyHandler::EnemyHandler(int MAX_OBJECTS, int _velocity,
     ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns, _type
 ) {
     MAX_COLLISIONS = 1;
-    ignore_collisions_with = {Object::ENEMY};
+    ignore_collisions_with = {Object::ENEMY, Object::WEAPON};
 }
 
 EnemyHandler::~EnemyHandler()

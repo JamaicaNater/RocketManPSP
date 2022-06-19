@@ -17,12 +17,17 @@ void swap_player_image(const char * filename){
 Menu build_pause_menu(){
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
 
-    pause_menu.add_component(CENTER,
+    pause_menu.add_component(TOP_CENTER,
         Component("Game Paused", 0x00CC00)
-        .set_selectable(false)
+        .set_selectable(false), 0, -5
     );
 
-    pause_menu.add_component_group(BOTTOM_CENTER, {
+    pause_menu.add_component(CENTER,
+        Component("Change skin", 0x00CC00)
+        .set_selectable(false), 0, -30
+    );
+
+    int group = pause_menu.add_component_group(BOTTOM_CENTER, {
         Component("1", 0x00CC00).set_on_click([](){
             swap_player_image("assets/player/player1.bmp");
         }),
@@ -47,7 +52,8 @@ Menu build_pause_menu(){
         Component("8", 0x00CC00).set_on_click([](){
             swap_player_image("assets/player/player8.bmp");
         })
-        }, Menu::GRID, 2,0,0, 4,2,false);
+        }, Menu::GRID, 2,0,0, 2,4,false).second;
+    pause_menu.set_selection_group(group);
 
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {
         pause_menu.control_reader.wait_button_release(PSP_CTRL_START);
@@ -96,7 +102,7 @@ Menu build_pause_menu(){
             }
         }
 
-
+        self.close();
     };
 
     return pause_menu;
