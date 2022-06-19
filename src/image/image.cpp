@@ -76,19 +76,18 @@ Image Image::blur(){
     uint32_t prev_row[width];
     uint32_t prev_item;
 
-    for (uint32_t y = 0; y <= height; y++){
+    for (uint32_t y = 0; y < height; y++){
         if (y>0) memcpy(prev_row, img_matrix + (y-1)*width, width * sizeof(uint32_t));
-        for (uint32_t x = 0; x < width; x++){
-            if (x>0) prev_item = img_matrix[y*width + x-1];		
+        for (uint32_t x = 0; x < width; x++){		
             start_i = (y > 0) ? -1 : 0;
             start_j = (x > 0) ? -1 : 0;
 
-            end_i = (y < height) ? 1 : 0;
-            end_j = (x < width) ? 1 : 0;
+            end_i = (y < height-1) ? 1 : 0;
+            end_j = (x < width-1) ? 1 : 0;
 
             index = 0;
             for (int i = start_i; i <= end_i; i++){
-                for (int j = start_i; j <= end_j; j++){
+                for (int j = start_j; j <= end_j; j++){
                     // We have already modified the top values
                     if (i == -1) to_avg[index] = prev_row[(x+j)]; 
                     // We have already modified the left value
@@ -99,6 +98,7 @@ Image Image::blur(){
                 }
             }
             neighborhood_size = (end_i - start_i + 1) * (end_j - start_j + 1);
+            prev_item = img_matrix[y*width + x];
             img_matrix[y*width + x] = average_pixels(to_avg, neighborhood_size);
         }
     }

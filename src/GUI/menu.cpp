@@ -153,7 +153,7 @@ std::pair<int,int> Menu::add_component_group(Position pos,
     }
 
     std::vector<Component *> group_vec;
-    for(int i = components.size() - arr.size(); i < components.size(); i++) {
+    for(unsigned int i = components.size() - arr.size(); i < components.size(); i++) {
         group_vec.push_back(&components[i]);
         log(DEBUG, "push back %d", i);
     }
@@ -180,8 +180,8 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     int tallest[rows] = {0};
 
     // Total dimensions of the grid
-    int total_height = 0;
-    int total_width = 0;
+    unsigned int total_height = 0;
+    unsigned int total_width = 0;
     
     // Determine the widest and tallest member of each column and row
     for (unsigned int i = 0; i < arr.size(); i++) {
@@ -255,8 +255,8 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     int tallest[rows] = {0};
 
     // Total dimensions of the grid
-    int total_height = 0;
-    int total_width = 0;
+    unsigned int total_height = 0;
+    unsigned int total_width = 0;
     
     // Determine the widest and tallest member of each column and row
     for (unsigned int i = 0; i < arr.size(); i++) {

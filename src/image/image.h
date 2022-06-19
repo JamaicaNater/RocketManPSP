@@ -24,7 +24,27 @@ struct Image
 
 	~Image();
 
+	/**
+	 * @brief Resize an image
+	 * 
+	 * @param h New height
+	 * @param w New width
+	 * @return Image 
+	 */
 	Image resize(int h, int w);
+
+	/**
+	 * @brief Resize image
+	 * 
+	 * @param scale Scale of new image compared with previous
+	 * @return Image 
+	 */
 	Image resize(float scale);
+
+	/**
+	 * @brief Blurs an image
+	 * 
+	 * @return Image 
+	 */
 	Image blur();
 };
