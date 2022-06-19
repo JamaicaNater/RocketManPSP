@@ -2,6 +2,8 @@
 
 #include <math.h>
 
+#include "globals.h"
+#include "graphics/gfx.hpp"
 #include "text_builder.h"
 
 Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height, 

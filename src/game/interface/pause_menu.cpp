@@ -4,6 +4,7 @@
 
 #include "../gamestate.h"
 
+#include "graphics/gfx.hpp"
 #include "../../bmp/loadbmp.h"
 
 void swap_player_image(const char * filename){

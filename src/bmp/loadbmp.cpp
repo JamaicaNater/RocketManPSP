@@ -1,8 +1,8 @@
 #include <algorithm>
 
 #include "loadbmp.h"
-#include "stdlib.h"
-#include "math.h"
+#include <stdlib.h>
+#include <math.h>
 
 #include "../memory/psp_malloc.h"
 #include "../logger/logger.h"

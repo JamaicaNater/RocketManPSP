@@ -1,6 +1,5 @@
 #pragma once
 
-#include "../../globals.h"
 #include "../../object/object_list.h"
 #include "../../physics/vector2d.h"
 

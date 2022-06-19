@@ -5,13 +5,9 @@
 #include <cstdlib>
 #include <vector>
 
-#include "memory/psp_malloc.h"
-
 #include "../image/image.h"
-#include "../graphics/gfx.hpp"
 #include "../controls/control_reader.h"
-#include "../logger/logger.h"
-//#include "../game/utils.h"
+#include "physics/vector2d.h"
 
 class Menu
 {

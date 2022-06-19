@@ -2,12 +2,10 @@
 
 #include <cstdint>
 #include <pspkerneltypes.h>
-#include "../object/object.h"
 
-#define SCREEN_HEIGHT 272
-#define SCREEN_WIDTH_RES 480
-#define SCREEN_WIDTH 512
+#include "physics/vector2d.h"
 
+struct Image;
 
 namespace GFX 
 {

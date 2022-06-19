@@ -5,8 +5,6 @@
 #include <math.h>
 
 #include "image_utils.h"
-#include "logger/logger.h"
-#include "memory/psp_malloc.h"
 
 Image::Image(const char * _filename) {
     int str_size = strlen(_filename) + 1;

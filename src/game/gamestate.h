@@ -1,17 +1,10 @@
 #pragma once
 
-#include "../globals.h"
-#include "../object/object.h"
-#include "../object/object_list.h"
-#include "object_handler/object_handler.h"
 #include "object_handler/enemy_handler.h"
 #include "object_handler/animation_handler.h"
 #include "object_handler/explosion_handler.h"
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
-#include "../GUI/menu.h"
-#include "../GUI/component.h"
-#include "../GUI/text_builder.h"
 #include "../controls/control_reader.h"
 
 // TODO make singleton

@@ -1,8 +1,10 @@
 #pragma once
 
-enum Flips{FORWARD = 1, BACKWARD = -1};
-enum Position{CENTER = 0, TOP_LEFT, CENTER_LEFT, BOTTOM_LEFT, TOP_CENTER, 
-BOTTOM_CENTER, TOP_RIGHT, CENTER_RIGHT, BOTTOM_RIGHT};
+#include <stdint.h>
+
+enum Flips : int8_t {FORWARD = 1, BACKWARD = -1};
+enum Position : uint8_t {CENTER = 0, TOP_LEFT, CENTER_LEFT, BOTTOM_LEFT, TOP_CENTER, 
+    BOTTOM_CENTER, TOP_RIGHT, CENTER_RIGHT, BOTTOM_RIGHT};
 
 struct Vector2d {
     public:

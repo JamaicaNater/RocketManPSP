@@ -3,11 +3,14 @@
 #include <pspctrl.h>
 
 #include "gamestate.h"
+
 #include "graphics/gfx.hpp"
 #include "game_utils.h"
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"
+
+#include "../GUI/text_builder.h"
 
 #include "interface/pause_menu.h"
 #include "interface/title_menu.h"
@@ -66,7 +69,7 @@ void GameState::update(){
 }
 
 void GameState::update_nonplayer_actions() {
-    //enemy_handler.spawn(Vector2d(300, noise_map[300]), enemy_img);
+    enemy_handler.spawn(Vector2d(300, noise_map[300]), enemy_img);
     explosion_handler.update_frames();
 }
 
