@@ -4,6 +4,15 @@
 
 #include "../gamestate.h"
 
+#include "../../bmp/loadbmp.h"
+
+void swap_player_image(const char * filename){
+    psp_free(PlayerHandler::player->image.img_matrix);
+    Image new_skin = Image(filename); 
+    load_BMP(new_skin);
+    PlayerHandler::player->image = new_skin;
+}
+
 Menu build_pause_menu(){
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
 
@@ -13,16 +22,30 @@ Menu build_pause_menu(){
     );
 
     pause_menu.add_component_group(BOTTOM_CENTER, {
-        Component("1", 0x00CC00),
-        Component("2", 0x00CC00),
-        Component("3", 0x00CC00),
-        Component("4", 0x00CC00),
-        Component("5", 0x00CC00),
-        Component("6", 0x00CC00),
-        Component(16,16, Component::Rectangle, 0x00FF00)
-        // Component("8", 0x00CC00),
-        // Component("9", 0x00CC00),
-        // Component("10", 0x00CC00),
+        Component("1", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player1.bmp");
+        }),
+        Component("2", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player2.bmp");
+        }),
+        Component("3", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player3.bmp");
+        }),
+        Component("4", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player4.bmp");
+        }),
+        Component("5", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player5.bmp");
+        }),
+        Component("6", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player6.bmp");
+        }),
+        Component("7", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player7.bmp");
+        }),
+        Component("8", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player8.bmp");
+        })
         }, Menu::GRID, 2,0,0, 4,2,false);
 
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       
@@ -49,6 +72,11 @@ Menu build_pause_menu(){
     pause_menu.control_reader.on_button_press_right = [&pause_menu]() {
         pause_menu.select_next(Menu::RIGHT);
         pause_menu.control_reader.wait_button_release(PSP_CTRL_RIGHT);
+    };
+
+    pause_menu.control_reader.on_button_press_cross = [&pause_menu]() {
+        pause_menu.click_selection();
+        pause_menu.control_reader.wait_button_release(PSP_CTRL_CROSS);
     };
     
     pause_menu.on_open = [](Menu &self){

@@ -42,7 +42,7 @@ void PlayerHandler::init() {
     set_up_controls();
 }
 
-Object * PlayerHandler::player = new Object(Image("assets/player.bmp"));
+Object * PlayerHandler::player = new Object(Image("assets/player1.bmp"));
 
 Object PlayerHandler::get_player_val(){
     return *player;

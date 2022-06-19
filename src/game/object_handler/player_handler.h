@@ -4,11 +4,15 @@
 
 #include "object_handler.h" 
 #include "projectile_handler.h"
+
+#include "../interface/pause_menu.h"
+
 #include "../../controls/control_reader.h"
 
 class PlayerHandler : public ObjectHandler
 {
 public:
+    static Object * player;
     static Object get_player_val();
     
     /**
@@ -48,8 +52,6 @@ public:
     PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler);
     ~PlayerHandler();
 private:
-    static Object * player;
-
     ControlReader player_control_reader;
     Object * weapon = new Object(Image("assets/player_rocket.bmp"));
     Image rocket = Image("assets/missile.bmp");
