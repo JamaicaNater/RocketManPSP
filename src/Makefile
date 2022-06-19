@@ -29,7 +29,9 @@ LIBS = -lstdc++ -lm
 
 CFLAGS = 
 CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra -Wdouble-promotion \
-					 -Wno-unused-parameter #-DPSP_LOGGING
+					-Wno-unused-parameter -Warray-bounds -Wcoverage-mismatch \
+					-Wparentheses -Wunused-const-variable -Wuseless-cast \
+					-Wunused #-DPSP_LOGGING
 ASFLAGS = $(CFLAGS)
 
 #PSP Stuff
