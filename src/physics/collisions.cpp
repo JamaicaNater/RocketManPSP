@@ -4,7 +4,7 @@
 #include "logger/logger.h"
 #include "physics/collisions.h"
 
-int object_collision(Object * obj, ObjectList &collisions) {
+int object_collision(Object * obj, ObjectList &collisions, std::set<Object::ObjectTypes> ignore) {
     // Treat objects as a rectangle
     // NOTE: a position of 0 is the higher than a position of 50
     // NOTE: objects are shifter left by half their width when drawn
@@ -21,6 +21,7 @@ int object_collision(Object * obj, ObjectList &collisions) {
         if (glob_objects[i] == obj) continue;
         if (glob_objects[i]->type == Object::EXPLOSION) continue;
         if (collisions.find(glob_objects[i]) != -1) continue;
+        if (ignore.find(glob_objects[i]->type) != ignore.end()) continue;
 
         obj2_x1 = glob_objects[i]->vector.x - glob_objects[i]->image.width/2,
         obj2_y1 = glob_objects[i]->vector.y - glob_objects[i]->image.height,  // Top Left

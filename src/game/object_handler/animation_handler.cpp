@@ -2,13 +2,11 @@
 #include "graphics/gfx.hpp"
 #include "bmp/loadbmp.h"
 
-AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity, 
-    int _time_between_spawns, Object::ObjectTypes _type) 
-    : ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns, _type)
-{
-    
-    time_between_spawns = 0;
-    MAX_COLLISIONS = 5;
+AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity,
+    int _time_between_spawns, Object::ObjectTypes _type)
+    : ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns, _type
+) {
+
 }
 
 AnimationHandler::~AnimationHandler()
@@ -44,4 +42,3 @@ void AnimationHandler::init(Animation * _animation){
     load_BMP(*_animation);
     animation = _animation;
 }
-    

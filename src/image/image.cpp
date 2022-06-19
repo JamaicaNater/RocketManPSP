@@ -120,6 +120,7 @@ Image Image::blur() {
                     else {
                         to_avg[index] = img_matrix[(y+i) * width + (x+j)];
                     }
+
                     index++;
                 }
             }

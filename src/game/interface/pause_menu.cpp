@@ -9,7 +9,7 @@
 
 void swap_player_image(const char * filename){
     psp_free(PlayerHandler::player->image.img_matrix);
-    Image new_skin = Image(filename); 
+    Image new_skin = Image(filename);
     load_BMP(new_skin);
     PlayerHandler::player->image = new_skin;
 }
@@ -17,7 +17,7 @@ void swap_player_image(const char * filename){
 Menu build_pause_menu(){
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
 
-    pause_menu.add_component(CENTER, 
+    pause_menu.add_component(CENTER,
         Component("Game Paused", 0x00CC00)
         .set_selectable(false)
     );
@@ -49,8 +49,8 @@ Menu build_pause_menu(){
         })
         }, Menu::GRID, 2,0,0, 4,2,false);
 
-    pause_menu.control_reader.on_button_press_start = [&pause_menu]() {       
-        pause_menu.control_reader.wait_button_release(PSP_CTRL_START);  
+    pause_menu.control_reader.on_button_press_start = [&pause_menu]() {
+        pause_menu.control_reader.wait_button_release(PSP_CTRL_START);
         pause_time += (sceKernelGetSystemTimeLow() - GameState::status_info.start_time);
         GameState::update_status(GameState::RUNNING);
     };
@@ -79,22 +79,24 @@ Menu build_pause_menu(){
         pause_menu.click_selection();
         pause_menu.control_reader.wait_button_release(PSP_CTRL_CROSS);
     };
-    
+
     pause_menu.on_open = [](Menu &self){
         GFX::blur_screen();
         GFX::copy_buffers();
         self.update();
         self.draw_and_swap_buffers();
 
-        self.control_reader.wait_button_release(PSP_CTRL_START);   
+        self.control_reader.wait_button_release(PSP_CTRL_START);
 
         while (GameState::status_info.status == GameState::PAUSED)
-        {   
+        {
             if (self.control_reader.read_controls()){
                 self.update();
                 self.draw_and_swap_buffers();
             }
         }
+
+
     };
 
     return pause_menu;

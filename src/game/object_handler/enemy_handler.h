@@ -7,12 +7,20 @@ class EnemyHandler : public ObjectHandler
 public:
     /**
      * @brief Handle actions of the AI
-     * 
+     *
      * @param player_x position of the player
      */
     void update_movement(int player_x);
-    
-    EnemyHandler(int MAX_OBJECTS, int _velocity, 
+
+    /**
+     * @brief Damage the player
+     *
+     * @param obj current enemy
+     * @param collision_list list of objects
+     */
+    void on_object_collision(Object * obj, ObjectList &collision_list) override;
+
+    EnemyHandler(int MAX_OBJECTS, int _velocity,
         int _time_between_spawns, Object::ObjectTypes _type);
     ~EnemyHandler();
 

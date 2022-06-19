@@ -22,12 +22,12 @@ OBJS = RocketMan.o \
 	image/image.o image/animation.o image/image_utils.o \
 	object/object_list.o object/object.o \
 
-LIBS = -lstdc++ -lm 
-#-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum 
-#-lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp 
+LIBS = -lstdc++ -lm
+#-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum
+#-lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp
 #-lpspmath
 
-CFLAGS = 
+CFLAGS =
 CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra -Wdouble-promotion \
 					-Wno-unused-parameter -Warray-bounds -Wcoverage-mismatch \
 					-Wparentheses -Wunused-const-variable -Wuseless-cast \

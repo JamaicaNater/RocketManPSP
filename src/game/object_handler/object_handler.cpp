@@ -4,7 +4,7 @@
 #include "physics/collisions.h"
 #include "physics/physics.h"
 
-ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, 
+ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity,
     int _time_between_spawns, Object::ObjectTypes _type)
 {
     log(DEBUG, "Calling ObjectList for objects");
@@ -24,7 +24,7 @@ ObjectHandler::~ObjectHandler(){
 }
 
 bool ObjectHandler::can_spawn(){
-    return ( (curr_time >= last_spawn + time_between_spawns) && 
+    return ( (curr_time >= last_spawn + time_between_spawns) &&
              object_list.size < object_list.MAX_SIZE );
 }
 
@@ -35,7 +35,7 @@ void ObjectHandler::spawn(Vector2d v, Image _img) {
     object->vector = v;
     object->type = type;
 
-    log(DEBUG, "Spawned:%s ptr: %0x", 
+    log(DEBUG, "Spawned:%s ptr: %0x",
     _img.filename, _img.img_matrix);
 
     assert((object_list.insert(object) > -1), "Object spawned successfully");
@@ -72,9 +72,9 @@ void ObjectHandler::draw(){
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
         if (objects[i]->off_screen()) continue;
-        
-        GFX::drawBMP(objects[i]->get_draw_x(), objects[i]->get_draw_y(), 
-            objects[i]->vector.angle, objects[i]->vector.pivot, 
+
+        GFX::drawBMP(objects[i]->get_draw_x(), objects[i]->get_draw_y(),
+            objects[i]->vector.angle, objects[i]->vector.pivot,
             objects[i]->vector.direction, 0, objects[i]->image);
     }
 }
@@ -110,18 +110,18 @@ void ObjectHandler::check_collisions(int MAX_COLLISIONS){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
-        
+
         if (MAX_COLLISIONS){
             ObjectList collision_list = ObjectList(MAX_COLLISIONS);
-            if ( object_collision(objects[i], collision_list)){ 
-                on_object_collision(objects[i] ,collision_list);
-            } 
+            if ( object_collision(objects[i], collision_list, ignore_collisions_with)){
+                on_object_collision(objects[i], collision_list);
+            }
         }
-        
+
         if (objects[i] && terrain_collision(objects[i])){
             on_terrain_collision(objects[i]);
-        } 
-        
+        }
+
         if (objects[i] && objects[i]->off_screen()) {
             on_off_screen(objects[i]);
         }

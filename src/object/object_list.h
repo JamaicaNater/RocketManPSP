@@ -1,5 +1,7 @@
 #pragma once
 
+#include <set>
+
 #include "object/object.h"
 #include "game/object_handler/global_object_manager.h"
 
@@ -78,7 +80,7 @@ struct ObjectList {
  private:
     Object * * objects;
     static ObjectList * _global_object_list;
-    friend int object_collision(Object*, ObjectList&);
+    friend int object_collision(Object*, ObjectList&, std::set<Object::ObjectTypes>);
 
     friend void ObjectManager::draw_health_bars();
 
