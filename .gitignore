@@ -4,6 +4,7 @@
 /build/
 /src/Debug/
 /logs/
+src/cppclean
 *.o
 *.elf
 *.prx
