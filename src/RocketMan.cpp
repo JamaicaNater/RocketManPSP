@@ -84,7 +84,7 @@ int main()
 		game_state.draw();
 
 		end_time = sceKernelGetSystemTimeLow();
-		printf("FPS: %.1f", static_cast<float>(SECOND) / (end_time - start_time));
+		printf("FPS: %.1f", static_cast<double>(SECOND) / (end_time - start_time));
 
 		sceDisplayWaitVblankStart();
 	}

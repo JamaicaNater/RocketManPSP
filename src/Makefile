@@ -28,7 +28,8 @@ LIBS = -lstdc++ -lm
 #-lpspmath
 
 CFLAGS = 
-CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra #-DPSP_LOGGING
+CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra -Wdouble-promotion \
+					 -Wno-unused-parameter #-DPSP_LOGGING
 ASFLAGS = $(CFLAGS)
 
 #PSP Stuff

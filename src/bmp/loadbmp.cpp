@@ -44,8 +44,8 @@ int load_BMP(Image &img) {
     }
 
     bmp_mem += size*sizeof(unsigned int);
-    log(INFO, "Succesfuly loaded %s, %f kb used by bmps", 
-        img.filename, bmp_mem/1024.0f);
+    log(INFO, "Successfully loaded %s, %d kb used by bmps", 
+        img.filename, bmp_mem);
 
     fclose(fp);
     return 1;
@@ -148,8 +148,8 @@ int load_BMP(Animation &anim) {
     }
     
     bmp_mem += anim.rows * anim.cols* size*sizeof(unsigned int);
-    log(INFO, "Successfully loaded %s, %.2f kb used by BMPs", 
-        anim.filename, bmp_mem/1024.0f);
+    log(INFO, "Successfully loaded %s, %d bytes used by BMPs", 
+        anim.filename, bmp_mem);
     
     fclose(fp);
     return 1;
