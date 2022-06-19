@@ -30,7 +30,7 @@ void GameState::init(){
     load_BMP(enemy_img);
     
     player_handler.init();
-    explosion_handler.init(new Animation(3, 5, 50000, "assets/explosion.bmp"));
+    explosion_handler.init(new Animation(3, 5, 50000, "assets/misc/explosion.bmp"));
 
     control_reader.init();
     init_text_builder();    

@@ -3,7 +3,7 @@
 #include "text_builder.h"
 #include <cstdlib>
 
-Animation font = Animation(9, 9, 0, "assets/font.bmp");
+Animation font = Animation(9, 9, 0, "assets/misc/font.bmp");
 bool initialized = false;
 int convert_ascii(char c);
 

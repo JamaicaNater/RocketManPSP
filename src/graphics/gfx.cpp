@@ -21,10 +21,10 @@ namespace GFX
 	uint32_t* draw_buffer,
 			* disp_buffer;
 
-	Image dirt("assets/dirt.bmp");
-	Image sky("assets/sky.bmp");
-	Image grass("assets/grass.bmp");
-	Image bground("assets/background.bmp");
+	Image dirt("assets/terrain/dirt.bmp");
+	Image sky("assets/terrain/sky.bmp");
+	Image grass("assets/terrain/grass.bmp");
+	Image bground("assets/terrain/background.bmp");
 
 
 	bool is_transparent(unsigned int pixel) {

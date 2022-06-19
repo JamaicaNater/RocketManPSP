@@ -23,28 +23,28 @@ Menu build_pause_menu(){
 
     pause_menu.add_component_group(BOTTOM_CENTER, {
         Component("1", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player1.bmp");
+            swap_player_image("assets/player/player1.bmp");
         }),
         Component("2", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player2.bmp");
+            swap_player_image("assets/player/player2.bmp");
         }),
         Component("3", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player3.bmp");
+            swap_player_image("assets/player/player3.bmp");
         }),
         Component("4", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player4.bmp");
+            swap_player_image("assets/player/player4.bmp");
         }),
         Component("5", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player5.bmp");
+            swap_player_image("assets/player/player5.bmp");
         }),
         Component("6", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player6.bmp");
+            swap_player_image("assets/player/player6.bmp");
         }),
         Component("7", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player7.bmp");
+            swap_player_image("assets/player/player7.bmp");
         }),
         Component("8", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player8.bmp");
+            swap_player_image("assets/player/player8.bmp");
         })
         }, Menu::GRID, 2,0,0, 4,2,false);
 

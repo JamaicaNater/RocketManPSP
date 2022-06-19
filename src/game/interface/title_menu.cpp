@@ -7,7 +7,7 @@ Menu build_title_menu() {
     Menu title = Menu(CENTER, SCREEN_HEIGHT, SCREEN_WIDTH_RES, 0xC0C0C0, 0, 0);
     title.selected_color = 0x002000;
 
-    Image title_img =  Image("assets/titlescreen.bmp");
+    Image title_img =  Image("assets/game/titlescreen.bmp");
     load_BMP(title_img);
 
     title.add_component(CENTER, Component(title_img).set_selectable(false) );

@@ -53,8 +53,8 @@ public:
     ~PlayerHandler();
 private:
     ControlReader player_control_reader;
-    Object * weapon = new Object(Image("assets/player_rocket.bmp"));
-    Image rocket = Image("assets/missile.bmp");
+    Object * weapon = new Object(Image("assets/player/playerrocket.bmp"));
+    Image rocket = Image("assets/misc/missile.bmp");
 
     ProjectileHandler * projectile_handler;
 };

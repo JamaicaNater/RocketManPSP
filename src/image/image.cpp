@@ -61,7 +61,7 @@ Image Image::resize(float scale){
 Image Image::flip_vertical(){
     uint32_t * temp = (uint32_t*)malloc(width*sizeof(uint32_t));
     uint32_t * front, * back;
-    int i = 0;
+    uint32_t i = 0;
 
     while (i < height/2)
     {
@@ -80,7 +80,7 @@ Image Image::flip_vertical(){
 /*
 The following is an implementation of the Box Blur 
 (https://en.wikipedia.org/wiki/Box_blur) algorithm, in the implementation of
-the algorithm we take the neighbors (3 x 3) of a matrix value and average 
+the algorithm i took the neighbors (3 x 3) of a matrix value and average 
 their values together
 
 This implementation blurs the matrix inplace

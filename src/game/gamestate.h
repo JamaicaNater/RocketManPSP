@@ -76,8 +76,8 @@ private:
     static const int MAX_PROJ = 64;
     static const int MAX_ENEMIES = 16;
 
-    Image status_bar = Image("assets/statusbar.bmp");
-    Image enemy_img = Image("assets/enemy.bmp");
+    Image status_bar = Image("assets/game/statusbar.bmp");
+    Image enemy_img = Image("assets/enemy/enemy.bmp");
     
     EnemyHandler enemy_handler = EnemyHandler(MAX_ENEMIES, 1, 1*SECOND, 
         Object::ENEMY);
