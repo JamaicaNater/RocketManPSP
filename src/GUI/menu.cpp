@@ -219,7 +219,7 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
 
     for (unsigned int i = 0; i < arr.size(); i++) {
         if (i % cols == 0 && i > 0) { // next row
-            curr_coord.y -= tallest[i/cols] + spacing;
+            curr_coord.y -= (tallest[i/cols] + spacing);
             curr_coord.x = start_x;
         }
 
@@ -231,7 +231,7 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
         arr[i].x += (widest[i%cols] - arr[i].width)/2;
         
         // Move for next element
-        curr_coord.x += widest[i%cols] + spacing;
+        curr_coord.x += (widest[i%cols] + spacing);
 
         components.push_back(arr[i]);
     }
@@ -480,10 +480,10 @@ void Menu::select_next(Direction direction){
             // Move selection in bounds
             if (selected_comp_id >= size) selected_comp_id = size-1;
         }
-        else {
+        else { // Column major
             // If current position is the last element...
             if (selected_comp_id % rows == rows - 1) {
-                // then to move right we wrap around to the front of the row...
+                // then to move down we wrap around to the end of the row...
                 selected_comp_id -= rows - 1;
             } else {
                 // Other wise just increment
@@ -509,8 +509,13 @@ void Menu::select_next(Direction direction){
             }
         }
         else {
-            (selected_comp_id) -= rows; // Bounded decrement
-            if (selected_comp_id < 0) selected_comp_id += selectable.size();
+            selected_comp_id -= rows; // Go to upper column
+            // If that is out of bounds add the max grid value to move to the
+            // bottom of the grid, if the grid is not complete this is out of bounds
+            if (selected_comp_id < 0) selected_comp_id += (rows * cols);
+            
+            // Move selection in bounds
+            if (selected_comp_id >= size) selected_comp_id = size-1;
         }
 
         break;
@@ -529,8 +534,14 @@ void Menu::select_next(Direction direction){
                 if (selected_comp_id >= size) selected_comp_id = cols * (size/cols);
             }
         } else {
-            selected_comp_id += groups[1].rows;
-            selected_comp_id %= selectable.size(); // Bounded increment
+            selected_comp_id += rows; // Go to next column
+
+            // If that is out of bounds subtract the max grid value to move to the
+            // top of the grid, if the grid is not complete this is out of bounds
+            if (selected_comp_id >= size) selected_comp_id %= (rows * cols);
+
+            // Move selection in bounds
+            if (selected_comp_id >= size) selected_comp_id = size-1;
         }
 
         break;
