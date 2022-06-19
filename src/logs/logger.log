@@ -126,10 +126,207 @@ DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
 DEBUG-H: freed 9920 bytes
 DEBUG-H: Attempting to free 8ac7ea0
 DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 9920 at 8ac7ea0
+DEBUG-H: Allocated 9920 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
+DEBUG-H: freed 9920 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 9920 at 8ac7ea0
+DEBUG-H: Allocated 9920 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
+DEBUG-H: freed 9920 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
 DEBUG: selected: 1
 DEBUG: size: 2
 DEBUG: rows: 1 cols: 2
 DEBUG: index: 1
+DEBUG: here
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 9920 at 8ac7ea0
+DEBUG-H: Allocated 9920 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
+DEBUG-H: freed 9920 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: selected: 0
+DEBUG: size: 2
+DEBUG: rows: 1 cols: 2
+DEBUG: index: 0
+DEBUG: here
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 9920 at 8ac7ea0
+DEBUG-H: Allocated 9920 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
+DEBUG-H: freed 9920 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: selected: 1
+DEBUG: size: 2
+DEBUG: rows: 1 cols: 2
+DEBUG: index: 1
+DEBUG: here
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 9920 at 8ac7ea0
+DEBUG-H: Allocated 9920 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
+DEBUG-H: freed 9920 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: selected: 0
+DEBUG: size: 2
+DEBUG: rows: 1 cols: 2
+DEBUG: index: 0
+DEBUG: here
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 9920 at 8ac7ea0
+DEBUG-H: Allocated 9920 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
+DEBUG-H: freed 9920 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: selected: 1
+DEBUG: size: 2
+DEBUG: rows: 1 cols: 2
+DEBUG: index: 1
+DEBUG: here
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 9920 at 8ac7ea0
+DEBUG-H: Allocated 9920 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
+DEBUG-H: freed 9920 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: selected: 0
+DEBUG: size: 2
+DEBUG: rows: 1 cols: 2
+DEBUG: index: 0
+DEBUG: here
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 9920 at 8ac7ea0
+DEBUG-H: Allocated 9920 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
+DEBUG-H: freed 9920 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: selected: 1
+DEBUG: size: 2
+DEBUG: rows: 1 cols: 2
+DEBUG: index: 1
+DEBUG: here
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 2880 at 8ac7ea0
+DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2549508 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 9920 at 8ac7ea0
+DEBUG-H: Allocated 9920 at 8ac7ea0. Info 
+DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
+DEBUG-H: freed 9920 bytes
+DEBUG-H: Attempting to free 8ac7ea0
+DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: selected: 0
+DEBUG: size: 2
+DEBUG: rows: 1 cols: 2
+DEBUG: index: 0
 DEBUG: here
 DEBUG-H: inset 2880 at 8ac7ea0
 DEBUG-H: Allocated 2880 at 8ac7ea0. Info 
@@ -167,3 +364,3553 @@ DEBUG-H: 19 Objects in memory allocated to 2556548 bytes
 DEBUG-H: freed 9920 bytes
 DEBUG-H: Attempting to free 8ac7ea0
 DEBUG-H: Successfully freed 8ac7ea0. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 887fb70
+DEBUG: Spawned:assets/enemy.bmp ptr: 887fb70
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 8873ad0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:185 y:130, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883330
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883330
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883330
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883330
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 8873ad0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:167 y:126, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8873ad0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 887fb70
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8883450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:220 y:162, on terrain
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7d90
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7d00
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7d90
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 88834e0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:233 y:101, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:498 y:105, on terrain
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7eb0
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 887fb70
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7eb0
+INFO: Collision detected with 88834e0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 88834e0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:223 y:120, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac80f0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac80f0
+INFO: Collision detected with 8883180
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 8883180
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:205 y:114, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8210
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:250 y:130, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8330
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8330
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8330
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8330
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8330
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8330
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8330
+INFO: Collision detected with 8ac7fd0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 8ac7fd0
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:232 y:124, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 887fb70
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac84e0
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac84e0
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac84e0
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac84e0
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac84e0
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac84e0
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac84e0
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac84e0
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 8ac8450
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:260 y:80, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8600
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8600
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8600
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:268 y:151, on terrain
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8720
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8720
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8720
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8720
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8720
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:240 y:151, on terrain
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 887fb70
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac8450
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8859c20
+DEBUG-H: Allocated 16 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 8ac8840
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:231 y:146, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/missile.bmp ptr: 8882030
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 887fb70
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+INFO: Collision detected with 8ac8840
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac89f0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac89f0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac89f0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+INFO: Collision detected with 8ac8840
+INFO: Collision detected with 8ac89f0
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 16 at 8883570
+DEBUG-H: Allocated 16 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546644 bytes
+INFO: Collision detected with 8ac8840
+DEBUG: Spawned:Non-Loadable Animation frame ptr: 8883590
+INFO: Exploded proj at x:204 y:132, coll_with:1
+DEBUG-H: freed 16 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8859c20
+DEBUG-H: Allocated 20 at 8859c20. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8859c20
+DEBUG-H: Successfully freed 8859c20. 18 Objects in memory allocated to 2546628 bytes
+DEBUG-H: inset 20 at 8883570
+DEBUG-H: Allocated 20 at 8883570. Info 
+DEBUG-H: 19 Objects in memory allocated to 2546648 bytes
+INFO: Collision detected with 8ac8a80
+DEBUG-H: freed 20 bytes
+DEBUG-H: Attempting to free 8883570
+DEBUG-H: Successfully freed 8883570. 18 Objects in memory allocated to 2546628 bytes
+DEBUG: Spawned:assets/enemy.bmp ptr: 887fb70

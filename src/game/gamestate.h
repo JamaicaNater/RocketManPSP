@@ -30,6 +30,10 @@ public:
     static bool in_title;
     static StatusInfo status_info;
     
+    /**
+     * @brief Exits the game
+     * 
+     */
     static void exit_game();
 
     /**

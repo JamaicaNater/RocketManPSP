@@ -100,6 +100,12 @@ public:
     void update();
 
     /**
+     * @brief Draws the menu to screen and swaps buffers TODO: menu handler
+     * 
+     */
+    void draw_and_swap_buffers();
+
+    /**
      * @brief close the menu TODO: finish
      * 
      */
@@ -114,8 +120,17 @@ public:
      */
     std::vector<int> get_selectable_components(std::vector<Component *> arr);
 
+    /**
+     * @brief Selects the next component in a given direction
+     * 
+     * @param direction up down left right
+     */
     void select_next(Direction direction);
 
+    /**
+     * @brief Activate the on click function for currently selected item
+     * 
+     */
     void click_selection();
 private:
 

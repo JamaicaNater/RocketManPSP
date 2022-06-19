@@ -5,7 +5,7 @@
 
 Menu build_title_menu() {
     Menu title = Menu(CENTER, SCREEN_HEIGHT, SCREEN_WIDTH_RES, 0xC0C0C0, 0, 0);
-    title.selected_color = 0x003000;
+    title.selected_color = 0x002000;
 
     Image title_img =  Image("assets/titlescreen.bmp");
     load_BMP(title_img);
@@ -56,14 +56,12 @@ Menu build_title_menu() {
     
     title.on_open = [](Menu &self){
         self.update();  
-        GFX::simple_drawBMP(self.x, self.y, self.gui);
-        GFX::swapBuffers();
+        self.draw_and_swap_buffers();
         while (GameState::in_title)
         {   
             if (self.control_reader.read_controls()){
                 self.update();  
-                GFX::simple_drawBMP(self.x, self.y, self.gui);
-                GFX::swapBuffers();
+                self.draw_and_swap_buffers();
             } 
         }
     };

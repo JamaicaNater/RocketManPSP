@@ -55,8 +55,7 @@ Menu build_pause_menu(){
         GFX::blur_screen();
         GFX::copy_buffers();
         self.update();
-        GFX::simple_drawBMP(self.x, self.y, self.gui);
-        GFX::swapBuffers();
+        self.draw_and_swap_buffers();
 
         self.control_reader.wait_button_release(PSP_CTRL_START);   
 
@@ -64,8 +63,7 @@ Menu build_pause_menu(){
         {   
             if (self.control_reader.read_controls()){
                 self.update();
-                GFX::simple_drawBMP(self.x, self.y, self.gui);
-                GFX::swapBuffers();
+                self.draw_and_swap_buffers();
             }
         }
     };

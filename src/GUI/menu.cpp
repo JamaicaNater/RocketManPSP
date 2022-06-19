@@ -407,6 +407,11 @@ void Menu::update(){
     }
 }
 
+void Menu::draw_and_swap_buffers(){
+    GFX::simple_drawBMP(x, y, gui);
+    GFX::swapBuffers();
+}
+
 std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr){
     std::vector<int> selectable_arr;
     
