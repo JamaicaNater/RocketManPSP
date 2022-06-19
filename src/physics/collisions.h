@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * @brief Check if two objects collide
  * 

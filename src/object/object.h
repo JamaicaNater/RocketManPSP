@@ -8,57 +8,52 @@
 #include "image/image.h"
 #include "globals.h"
 
-class Object
-{
-public:
-	enum ObjectTypes{PLAYER = 0, ENEMY, MISSILE, EXPLOSION, WEAPON, NONE};
+class Object {
+ public:
+    enum ObjectTypes{PLAYER = 0, ENEMY, MISSILE, EXPLOSION, WEAPON, NONE};
 
-	ObjectTypes type = NONE;
-	Image image;
-	int draw_pos_x; // postion to draw at
-	int health = 100, max_health = 100;
+    ObjectTypes type = NONE;
+    Image image;
+    int draw_pos_x; // postion to draw at
+    int health = 100, max_health = 100;
 
-	unsigned int next_damage_event = 0;
-	unsigned int invincibility_time = 10 * MILLISECOND;
+    unsigned int next_damage_event = 0;
+    unsigned int invincibility_time = 10 * MILLISECOND;
 
-	Vector2d vector;
-	
-	Object();
-	
-	Object(Image _img);
+    Vector2d vector;
 
-	/**
-	 * @brief Reduce the health value of an object
-	 * 
-	 * @param damage value to reduce objects health by
-	 */
-	void damage_object(int damage);
+    Object();
 
-	/**
-	 * @brief Returns whether or not if the object is off the screen 
-	 * 
-	 * @return true 
-	 * @return false 
-	 */
-	bool off_screen();
+    explicit Object(Image _img);
 
-	/**
-	 * @brief We dont draw objects as their precise x and y position, the x and
-	 * y refer to the position of the image corner
-	 * 
-	 * @return int 
-	 */
-	int get_draw_x();
+    /**
+     * @brief Reduce the health value of an object
+     *
+     * @param damage value to reduce objects health by
+     */
+    void damage_object(int damage);
 
-	/**
-	 * @brief We dont draw objects as their precise x and y position, the x and
-	 * y refer to the position of the image corner
-	 * 
-	 * @return int 
-	 */
-	int get_draw_y();
+    /**
+     * @brief Returns whether or not if the object is off the screen
+     *
+     * @return true
+     * @return false
+     */
+    bool off_screen();
+
+    /**
+     * @brief We dont draw objects as their precise x and y position, the x and
+     * y refer to the position of the image corner
+     *
+     * @return int
+     */
+    int get_draw_x();
+
+    /**
+     * @brief We dont draw objects as their precise x and y position, the x and
+     * y refer to the position of the image corner
+     *
+     * @return int
+     */
+    int get_draw_y();
 };
-
-
-
-

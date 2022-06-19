@@ -1,3 +1,3 @@
-#include "../../GUI/menu.h"
+class Menu;
 
 Menu build_title_menu();

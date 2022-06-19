@@ -1,4 +1,6 @@
-#include "vector2d.h"
+#pragma once
+
+#include "physics/vector2d.h"
 /**
  * @brief Applies gravity to a vector;
  * 
