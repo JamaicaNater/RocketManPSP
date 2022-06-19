@@ -10,6 +10,7 @@
 #include "object_handler/global_object_manager.h"
 
 #include "interface/pause_menu.h"
+#include "interface/title_menu.h"
 
 
 
@@ -34,25 +35,7 @@ void GameState::init(){
 }
 
 void GameState::title_screen() {
-    int home_thid = sceKernelCreateThread("homescreen_thread", 
-        GFX::do_homescreen, 0x12, 0xaFA0, 0, NULL);
-
-	if (home_thid >= 0) sceKernelStartThread(home_thid, 0, NULL);
-	else log(ERROR, "failed to create thread");
-
-    control_reader.on_button_press_start = [home_thid, this](){
-        sceKernelTerminateThread(home_thid);
-        sceKernelDeleteThread(home_thid);
-        sceKernelDelayThread(200 * MILLISECOND); // So that we have 
-        //time for the start(pause) button to be released
-        in_title = false;
-    };
-
-	while (in_title)
-	{
-        sceKernelDelayThread(100);
-        control_reader.read_controls();
-	}
+    Menu title_menu = build_title_menu();
 }
 
 void GameState::on_pause(){    

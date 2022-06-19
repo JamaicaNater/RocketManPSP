@@ -10,6 +10,8 @@ OBJS = RocketMan.o \
 	game/object_handler/global_object_manager.o \
 	game/object_handler/player_handler.o \
 	game/object_handler/explosion_handler.o \
+	game/interface/pause_menu.o \
+	game/interface/title_menu.o \
 	graphics/gfx.o \
 	bmp/loadbmp.o \
 	logger/logger.o \
@@ -17,7 +19,6 @@ OBJS = RocketMan.o \
 	controls/control_reader.o \
 	physics/physics.o physics/collisions.o physics/vector2d.o \
 	GUI/text_builder.o GUI/menu.o GUI/component.o \
-	game/interface/pause_menu.o \
 	image/image.o image/animation.o image/image_utils.o \
 	object/object_list.o object/object.o \
 

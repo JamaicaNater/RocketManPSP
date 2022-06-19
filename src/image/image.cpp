@@ -58,6 +58,25 @@ Image Image::resize(float scale){
     return resize(scale*height, scale*width);
 }
 
+Image Image::flip_vertical(){
+    uint32_t * temp = (uint32_t*)malloc(width*sizeof(uint32_t));
+    uint32_t * front, * back;
+    int i = 0;
+
+    while (i < height/2)
+    {
+        log(DEBUG, "i: %d, height %d", i, height);
+        front = (img_matrix + i * width);
+        back = (img_matrix + (height - i - 1) * width);
+
+        memcpy(temp, front, width*sizeof(uint32_t));
+        memcpy(front, back, width*sizeof(uint32_t));
+        memcpy(back, temp, width*sizeof(uint32_t));
+        i++;
+    }
+    return *this;
+}
+
 /*
 The following is an implementation of the Box Blur 
 (https://en.wikipedia.org/wiki/Box_blur) algorithm, in the implementation of

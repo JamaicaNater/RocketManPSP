@@ -75,15 +75,6 @@ namespace GFX
 	void drawBMP(int x, int y, short rot, Position pivot, Flips direction, uint32_t filter, Image &image); // TODO: char direction???
 
 	/**
-	 * @brief Creates a looping titlescreen that a separate thread terminates upon start button being pressed
-	 * 
-	 * @param args - unused requred for threading
-	 * @param argp - unused requred for threading
-	 * @return int 
-	 */
-	int do_homescreen(SceSize args, void* argp);
-
-	/**
 	 * @brief Loads textures needed for the terrain
 	 * 
 	 */

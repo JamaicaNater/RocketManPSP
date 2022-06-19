@@ -347,17 +347,4 @@ namespace GFX
 			}
 		}
 	}
-
-	int do_homescreen(SceSize args, void* argp){
-		unsigned int width;
-		unsigned int height;
-
-		while (1)
-		{
-			write_BMP(&height, &width, draw_buffer , "assets/back.bmp");
-			swapBuffers();
-			write_BMP(&height, &width, draw_buffer , "assets/back2.bmp");
-			swapBuffers();
-		}
-	} 
 }

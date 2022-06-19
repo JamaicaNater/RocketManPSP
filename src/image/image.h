@@ -41,6 +41,8 @@ struct Image
 	 */
 	Image resize(float scale);
 
+	Image flip_vertical();
+
 	/**
 	 * @brief Blurs an image
 	 * 
