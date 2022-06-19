@@ -26,8 +26,28 @@ public:
     
 private:
     AnimationHandler * explosion_handler; // Trigger explosions
-
+    
+    /**
+     * @brief When projectiles go off the screen delete them
+     * 
+     * @param obj projectile
+     */
     void on_off_screen(Object * obj);
+
+    /**
+     * @brief When projectiles collide with objects, explode them, damage the 
+     * objects the projectile collides with and then delete the projectile
+     * 
+     * @param obj projectile
+     * @param collision_list objects collided with
+     */
     void on_object_collision(Object * obj, ObjectList &collision_list);
+
+    /**
+     * @brief When the projectile collides with the terrain explode it, and
+     * delete the projectile
+     * 
+     * @param obj 
+     */
     void on_terrain_collision(Object * obj);
 };

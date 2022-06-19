@@ -17,11 +17,17 @@ struct Animation
 	uint32_t cols = 0;
 	char filename[64] = {'\0'};
 
-	Image get_frame(int index);
-
 	Animation(uint32_t _rows, uint32_t _cols, uint32_t _frame_time, 
 		const char * _filename);
 
 	~Animation();
+
+	/**
+	 * @brief Generate an image from an animation frame
+	 * 
+	 * @param index index of the frame
+	 * @return Image 
+	 */
+	Image get_frame(int index);
 	private:
 };

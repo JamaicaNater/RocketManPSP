@@ -21,5 +21,16 @@ void log(unsigned char level, const char* format, ... );
  */
 void close_log();
 
+/**
+ * @brief If an assertion fails run this code
+ * 
+ * @param condition - checked condition
+ * @param file - file failed in
+ * @param func - function failed in
+ * @param lineno - line number failed in
+ * @param format - text
+ * @param ... 
+ * @return int for ternary macro
+ */
 int __assert_fail(const char * condition, const char * file, const char * func, int lineno, const char * format, ...);
 
