@@ -11,8 +11,6 @@ Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height,
         : gui(_height, _width,
             (uint32_t *)psp_malloc(_width * _height * sizeof(uint32_t)), "menu"
 ) {
-    components.reserve(MAX_COMPONENTS);
-    log(DEBUG, "component vec ptr %0x, component capacity %d", components.data(), components.capacity());
     x = _x;
     y = _y;
     height = _height;
@@ -27,8 +25,6 @@ Menu::Menu(Position _pos, unsigned int _height, unsigned int _width,
 ) {
     Vector2d vec = pos_to_coord(_pos, _height, _width, SCREEN_HEIGHT,
         SCREEN_WIDTH_RES, true, padding_x, padding_y);
-    components.reserve(MAX_COMPONENTS);
-    log(DEBUG, "component vec ptr %0x, component capacity %d", components.data(), components.capacity());
     x = vec.x;
     y = vec.y;
     height = _height;
@@ -38,6 +34,17 @@ Menu::Menu(Position _pos, unsigned int _height, unsigned int _width,
 
 Menu::~Menu() {
 //TODO DFS style dealloc
+}
+
+void Menu::init() {
+    try {
+        components.reserve(MAX_COMPONENTS);
+    } catch(std::exception & e) {
+        assert(0, "call to 'components.reserve(MAX_COMPONENTS);' raised %s",
+            e.what());
+    }
+
+    initialized = true;
 }
 
 Menu Menu::set_name(const char * _name) {
@@ -78,7 +85,7 @@ inline uint32_t Menu::highlight_selection(Component comp, uint32_t pixel) {
 }
 
 void Menu::log_comp_data() {
-    log(DEBUG, "logging component data for %s", menu_name);
+    log(DEBUG, "logging component data for %s capacity %d", menu_name, components.capacity());
     for (Component &comp: components) {
         comp.log_info();
     }
@@ -153,6 +160,9 @@ Vector2d Menu::pos_to_coord(Position pos, unsigned int height_obj,
 std::pair<int, int> Menu::add_component(Position _pos, Component comp,
     int padding_x /* = 0*/, int padding_y /* = 0*/
 ) {
+    if (!initialized) log (WARNING, "%s was not initialized, component "
+        "vector must have reserved capacity", menu_name);
+
     uint16_t comp_width;
     uint16_t comp_height;
     switch (comp.data.type) {
@@ -205,6 +215,9 @@ std::pair<int, int> Menu::add_component_group(Position pos,
     int padding_x/* = 0*/, int padding_y/* = 0*/, int rows/* = 0*/,
     int cols/* = 0*/, bool row_major/* = true*/
 ) {
+    if (!initialized) log (WARNING, "%s was not initialized, component "
+        "vector must have reserved capacity", menu_name);
+
     int first_comp_index = components.size();
     int group_index = groups.size();
     switch (grouping) {
@@ -604,6 +617,7 @@ int Menu::set_selection_polarity(int pol){
 
     log(DEBUG, "%0x", comp);
     log_comp_data();
+
 
     if (pol) {
         comp->select();

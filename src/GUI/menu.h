@@ -5,6 +5,7 @@
 #include <utility>
 #include <cstdlib>
 #include <vector>
+#include <list>
 
 #include "image/image.h"
 #include "controls/control_reader.h"
@@ -23,7 +24,7 @@ class Menu {
     };
     uint8_t cursor_position;
 
-    const static int MAX_COMPONENTS = 64;
+    const static int MAX_COMPONENTS = 32;
 
     unsigned int x, y, height, width;
     uint32_t background_color;
@@ -41,6 +42,8 @@ class Menu {
     Menu(Position _pos, unsigned int _height, unsigned int _width,
         uint32_t _color, int padding_x = 0, int padding_y = 0);
     ~Menu();
+
+    void init();
 
     /**
      * @brief Set the name of the menu for debugging
@@ -196,10 +199,12 @@ class Menu {
     void log_comp_data();
 
  private:
+    bool initialized = false;
+
     int selected_comp = 0;
     int selected_group = 0;
 
-    std::vector<Component> components;
+    std::vector<Component> components = std::vector<Component>();
     struct GroupInfo {
         int num_components;
         bool row_major;

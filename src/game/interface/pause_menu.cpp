@@ -17,6 +17,7 @@ void swap_player_image(const char * filename){
 Menu build_pause_menu(){
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20)
         .set_name("pause_menu");
+    pause_menu.init();
 
     pause_menu.selected_color = 0xAAAAAA;
 
@@ -79,7 +80,11 @@ Menu build_pause_menu(){
     };
 
     pause_menu.control_reader.on_button_press_up = [&pause_menu]() {
-        pause_menu.select_next(Menu::UP);
+        if (pause_menu.cursor_position & Menu::FIRST_ROW) {
+            pause_menu.prev_group();
+        } else {
+            pause_menu.select_next(Menu::UP);
+        }
         pause_menu.control_reader.wait_button_release(PSP_CTRL_UP);
     };
 
