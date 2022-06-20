@@ -18,10 +18,11 @@ public:
         uint32_t start_time; // when did we enter this state
     };
 
-
     static bool in_menu;
     static bool in_title;
     static StatusInfo status_info;
+
+    static int enemies_killed;
 
     /**
      * @brief Exits the game

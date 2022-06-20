@@ -20,6 +20,14 @@ public:
      */
     void on_object_collision(Object * obj, ObjectList &collision_list) override;
 
+    /**
+     * @brief increment enemies killed and then call base class on_zero_health
+     * function
+     *
+     * @param obj
+     */
+    void on_zero_health(Object * obj) override;
+
     EnemyHandler(int MAX_OBJECTS, int _velocity,
         int _time_between_spawns, Object::ObjectTypes _type);
     ~EnemyHandler();

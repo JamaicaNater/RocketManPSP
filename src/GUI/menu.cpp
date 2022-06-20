@@ -38,6 +38,33 @@ Menu::~Menu() {
 //TODO DFS style dealloc
 }
 
+void Menu::setup_basic_controls(){
+    control_reader.on_button_press_up = [this]() {
+        select_next(Menu::UP);
+        control_reader.wait_button_release(PSP_CTRL_UP);
+    };
+
+    control_reader.on_button_press_down = [this]() {
+        select_next(Menu::DOWN);
+        control_reader.wait_button_release(PSP_CTRL_DOWN);
+    };
+
+    control_reader.on_button_press_left = [this]() {
+        select_next(Menu::LEFT);
+        control_reader.wait_button_release(PSP_CTRL_LEFT);
+    };
+
+    control_reader.on_button_press_right = [this]() {
+        select_next(Menu::RIGHT);
+        control_reader.wait_button_release(PSP_CTRL_RIGHT);
+    };
+
+    control_reader.on_button_press_cross = [this]() {
+        click_selection();
+        control_reader.wait_button_release(PSP_CTRL_CROSS);
+    };
+}
+
 inline uint32_t Menu::highlight_selection(Component comp, uint32_t pixel) {
     return pixel + comp.selected * selected_color;
 }

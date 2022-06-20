@@ -34,8 +34,7 @@ public:
 
     bool selectable = true, selected = false, hidden = false;
 
-    std::function<void()> on_click;
-    std::function<void()> on_select;
+    std::function<void()> on_click = [](){};
 
     Component(int _height, int _width, Shape s, uint32_t _color = 0x00000000);
     Component(const char * txt, uint32_t _color = 0x00000000);

@@ -43,6 +43,13 @@ class Menu {
     ~Menu();
 
     /**
+     * @brief Setup basic control for navigating menus up, down, left, right
+     * and cross
+     *
+     */
+    void setup_basic_controls();
+
+    /**
      * @brief Set the position of the menu
      *
      * @param pos Position to move to

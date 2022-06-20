@@ -29,7 +29,7 @@ public:
      * @brief Remove objects that have under 0 heath
      *
      */
-    void remove_dead_objects();
+    virtual void on_zero_health(Object * obj);
 
     /**
      * @brief Advance the postion of the object;

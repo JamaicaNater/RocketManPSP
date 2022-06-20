@@ -84,10 +84,14 @@ void ObjectHandler::clean(){
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
 
-        if (objects[i]->health <= 0) object_list.remove(objects[i]);
+        if (objects[i]->health <= 0) on_zero_health(objects[i]);
         //TODO: put off screen here
     }
 
+}
+
+void ObjectHandler::on_zero_health(Object * obj) {
+    object_list.remove(obj);
 }
 
 void ObjectHandler::init() {

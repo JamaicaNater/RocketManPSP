@@ -14,13 +14,15 @@
 
 #include "interface/pause_menu.h"
 #include "interface/title_menu.h"
-
+#include "interface/main_menu.h"
 
 
 GameState::StatusInfo GameState::status_info = {GameState::RUNNING, sceKernelGetSystemTimeLow()};
 
 bool GameState::in_title = false;
 bool GameState::in_menu = false;
+
+int GameState::enemies_killed = 0;
 
 void GameState::init(){
     log(INFO, "Init Gamestate");
@@ -52,25 +54,8 @@ void GameState::title_screen() {
 
 void GameState::menu_screen() {
     in_menu = true;
-
-    Menu main_menu = Menu(CENTER, SCREEN_HEIGHT, SCREEN_WIDTH_RES, 0xC0C0C0, 0, 0);
-    Image menu_image = Image("assets/game/menu.bmp");
-    load_BMP(menu_image);
-
-    main_menu.add_component(CENTER, Component(menu_image));
-
-    main_menu.update();
-    main_menu.draw_and_swap_buffers();
-    while (GameState::in_menu)
-    {
-        if (main_menu.control_reader.read_controls()){
-            main_menu.update();
-            main_menu.draw_and_swap_buffers();
-        }
-    }
-
-    main_menu.close();
-
+    Menu main_menu = build_main_menu();
+    main_menu.on_open(main_menu);
 }
 
 void GameState::on_pause(){

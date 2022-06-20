@@ -1,5 +1,7 @@
 #include "enemy_handler.h"
 
+#include "game/gamestate.h"
+
 void EnemyHandler::update_movement(int player_x){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
@@ -27,6 +29,11 @@ void EnemyHandler::on_object_collision(Object * obj,
 
         collisions[i]->damage_object(1);
     }
+}
+
+void EnemyHandler::on_zero_health(Object * obj) {
+    GameState::enemies_killed++;
+    ObjectHandler::on_zero_health(obj);
 }
 
 EnemyHandler::EnemyHandler(int MAX_OBJECTS, int _velocity,
