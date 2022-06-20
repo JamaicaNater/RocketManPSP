@@ -79,7 +79,7 @@ void GameState::update_nonplayer_actions() {
     enemy_handler.spawn(Vector2d(300, noise_map[300]), enemy_img);
     explosion_handler.update_frames();
 
-    update_kills();
+    update_kills(kill_counter);
     kill_counter.update();
 }
 

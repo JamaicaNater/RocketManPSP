@@ -174,6 +174,15 @@ class Menu {
     Component * get_component(int index);
 
     /**
+     * @brief Coy and replace a component, if the old value is an image it must
+     * be freed
+     *
+     * @param new_comp
+     * @param index index we are replacing
+     */
+    void update_component(Component new_comp, int index);
+
+    /**
      * @brief Get the selected component
      *
      * @return Component*

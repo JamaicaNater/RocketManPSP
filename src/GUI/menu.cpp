@@ -436,6 +436,7 @@ void Menu::draw_panel(Component comp) {
 
 void Menu::draw_text(Component comp) {
     assert(comp.data.type == Component::LABEL_TYPE, "");
+    log(DEBUG, "in draw text %s", comp.data.data.text);
     // Create temporary component object
     Component temp = comp;
     temp.data.type = Component::IMAGE_TYPE;
@@ -760,6 +761,16 @@ void Menu::prev_group() {
     selected_comp = num_selectable - 1;
     set_cursor_position();
     set_selection_polarity(1);
+}
+
+void Menu::update_component(Component new_comp, int index) {
+    log (DEBUG, "update %d", index);
+    log (DEBUG, "text %s", components[index].data.data.text);
+    if (components[index].data.type == Component::IMAGE_TYPE) {
+        psp_free(components[index].data.data.img.img_matrix);
+    }
+
+    components[index] = new_comp;
 }
 
 Component * Menu::get_component(int index) {
