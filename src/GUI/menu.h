@@ -28,6 +28,7 @@ class Menu {
     unsigned int x, y, height, width;
     uint32_t background_color;
     uint32_t selected_color = 0x0000AA;
+    char menu_name[32] = "";
 
     ControlReader control_reader;  // Todo init
 
@@ -39,8 +40,15 @@ class Menu {
         unsigned int _width, uint32_t color);
     Menu(Position _pos, unsigned int _height, unsigned int _width,
         uint32_t _color, int padding_x = 0, int padding_y = 0);
-
     ~Menu();
+
+    /**
+     * @brief Set the name of the menu for debugging
+     *
+     * @param name
+     * @return Menu
+     */
+    Menu set_name(const char * _name);
 
     /**
      * @brief Setup basic control for navigating menus up, down, left, right

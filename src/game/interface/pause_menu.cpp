@@ -15,7 +15,9 @@ void swap_player_image(const char * filename){
 }
 
 Menu build_pause_menu(){
-    Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
+    Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20)
+        .set_name("pause_menu");
+
     pause_menu.selected_color = 0xAAAAAA;
 
     pause_menu.add_component(TOP_CENTER,

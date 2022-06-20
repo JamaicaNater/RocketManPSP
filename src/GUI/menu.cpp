@@ -38,6 +38,12 @@ Menu::~Menu() {
 //TODO DFS style dealloc
 }
 
+Menu Menu::set_name(const char * _name) {
+    strncpy(menu_name, _name, 31);
+
+    return *this;
+}
+
 void Menu::setup_basic_controls(){
     control_reader.on_button_press_up = [this]() {
         select_next(Menu::UP);
@@ -497,11 +503,13 @@ void Menu::draw_and_swap_buffers() {
 }
 
 void Menu::close() {
+    log(DEBUG, "Closing menu: %s", menu_name);
     for (Component comp : components) {
         if (comp.data.type == Component::IMAGE_TYPE) {
             psp_free(comp.data.data.img.img_matrix);
         }
     }
+    psp_free(gui.img_matrix);
 }
 
 void Menu::set_cursor_position() {

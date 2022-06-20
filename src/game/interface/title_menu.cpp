@@ -5,7 +5,9 @@
 #include "game/gamestate.h"
 
 Menu build_title_menu() {
-    Menu title = Menu(CENTER, SCREEN_HEIGHT, SCREEN_WIDTH_RES, 0xC0C0C0, 0, 0);
+    Menu title = Menu(CENTER, SCREEN_HEIGHT, SCREEN_WIDTH_RES, 0xC0C0C0, 0, 0)
+        .set_name("title_menu");
+
     title.selected_color = 0x002000;
 
     Image title_img =  Image("assets/game/titlescreen.bmp");
