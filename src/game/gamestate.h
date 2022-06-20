@@ -7,6 +7,8 @@
 #include "object_handler/player_handler.h"
 #include "../controls/control_reader.h"
 
+#include "game/interface/on_screen.h"
+
 // TODO make singleton
 class GameState
 {
@@ -23,6 +25,8 @@ public:
     static StatusInfo status_info;
 
     static int enemies_killed;
+
+    Menu kill_counter = build_kill_counter();
 
     /**
      * @brief Exits the game

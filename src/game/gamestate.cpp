@@ -10,8 +10,6 @@
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"
 
-#include "GUI/text_builder.h"
-
 #include "interface/pause_menu.h"
 #include "interface/title_menu.h"
 #include "interface/main_menu.h"
@@ -39,7 +37,6 @@ void GameState::init(){
     explosion_handler.init(new Animation(3, 5, 50000, "assets/misc/explosion.bmp"));
 
     control_reader.init();
-    init_text_builder();
 }
 
 void GameState::exit_game(){
@@ -81,6 +78,9 @@ void GameState::update(){
 void GameState::update_nonplayer_actions() {
     enemy_handler.spawn(Vector2d(300, noise_map[300]), enemy_img);
     explosion_handler.update_frames();
+
+    update_kills();
+    kill_counter.update();
 }
 
 void GameState::update_player_actions() {
@@ -106,6 +106,7 @@ void GameState::draw(){
     player_handler.draw();
     enemy_handler.draw();
     explosion_handler.draw();
+    kill_counter.draw();
 
     ObjectManager::draw_health_bars();
     //GFX::tint_screen(0x000000);

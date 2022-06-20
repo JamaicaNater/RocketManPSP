@@ -109,6 +109,12 @@ class Menu {
     void update();
 
     /**
+     * @brief Draws the menu to the screen TODO: add effects
+     *
+     */
+    void draw();
+
+    /**
      * @brief Draws the menu to screen and swaps buffers TODO: menu handler
      *
      */
@@ -173,6 +179,12 @@ class Menu {
      * @return Component*
      */
     Component * get_selected_component();
+
+    /**
+     * @brief Log data obtained from the components for debugging purposes
+     *
+     */
+    void log_comp_data();
 
  private:
     int selected_comp = 0;

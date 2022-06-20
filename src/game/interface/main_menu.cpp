@@ -9,9 +9,7 @@ Menu build_main_menu() {
     Menu main_menu = Menu(CENTER, SCREEN_HEIGHT, SCREEN_WIDTH_RES, 0xC0C0C0, 0, 0)
         .set_name("main_menu");
 
-    Image menu_image = Image("assets/game/menu.bmp");
-    load_BMP(menu_image);
-
+    Image menu_image = Image("assets/game/menu.bmp").load();
     main_menu.add_component(CENTER, Component(menu_image));
 
     int group1 = main_menu.add_component_group(CENTER,{

@@ -24,6 +24,14 @@ struct Image {
     ~Image();
 
     /**
+     * @brief For images with a valid passed filename used so that image can be
+     * declared and loaded in one line (useful for constructors)
+     *
+     * @return Image
+     */
+    Image& load();
+
+    /**
      * @brief Resize an image
      *
      * @param h New height
@@ -40,6 +48,11 @@ struct Image {
      */
     Image resize(float scale);
 
+    /**
+     * @brief Vertically flip image
+     *
+     * @return Image
+     */
     Image flip_vertical();
 
     /**

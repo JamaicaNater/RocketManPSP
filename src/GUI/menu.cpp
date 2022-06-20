@@ -75,6 +75,13 @@ inline uint32_t Menu::highlight_selection(Component comp, uint32_t pixel) {
     return pixel + comp.selected * selected_color;
 }
 
+void Menu::log_comp_data() {
+    log(DEBUG, "logging component data for %s", menu_name);
+    for (Component comp: components) {
+        comp.log_info();
+    }
+}
+
 Vector2d Menu::pos_to_coord(Position pos, unsigned int height_obj,
     unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
     bool screen_coord, int padding_x/* = 0*/, int padding_y/* = 0*/
@@ -495,6 +502,10 @@ void Menu::update() {
                 break;
         }
     }
+}
+
+void Menu::draw() {
+    GFX::simple_drawBMP(x, y, gui);
 }
 
 void Menu::draw_and_swap_buffers() {

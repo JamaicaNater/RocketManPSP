@@ -13,6 +13,7 @@ OBJS = RocketMan.o \
 	game/interface/pause_menu.o \
 	game/interface/title_menu.o \
 	game/interface/main_menu.o \
+	game/interface/on_screen.o \
 	graphics/gfx.o \
 	bmp/loadbmp.o \
 	logger/logger.o \
