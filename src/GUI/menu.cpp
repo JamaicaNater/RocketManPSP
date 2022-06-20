@@ -669,7 +669,7 @@ void Menu::select_next(Direction direction) {
 }
 
 void Menu::next_group() {
-    set_selection_polarity(0);
+    set_selection_polarity(0);  // Deselect old select
     do {
         selected_group =
             (selected_group + 1 < groups.size()) ? selected_group + 1 : 0;
@@ -682,7 +682,7 @@ void Menu::next_group() {
 }
 
 void Menu::prev_group() {
-    set_selection_polarity(0);
+    set_selection_polarity(0);  // Deselect old select
     int num_selectable = 0;
     do {
         selected_group =
@@ -710,5 +710,5 @@ void Menu::click_selection() {
 
     // Get the group array index of the item we wish to deselect
     int index = selectable[selected_comp];
-    groups[selected_group].components[index]->on_click(); // do the on_click functions
+    groups[selected_group].components[index]->on_click(); // do the on_click function
 }

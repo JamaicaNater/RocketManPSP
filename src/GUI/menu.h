@@ -42,6 +42,14 @@ class Menu {
 
     ~Menu();
 
+    /**
+     * @brief Set the position of the menu
+     *
+     * @param pos Position to move to
+     * @param padding_x additional x
+     * @param padding_y additional y
+     * @return Menu self
+     */
     Menu set_pos(Position pos, int padding_x = 0, int padding_y = 0);
 
     /**
@@ -80,27 +88,6 @@ class Menu {
         bool row_major = true);
 
     /**
-     * @brief Draws panel type component
-     *
-     * @param comp
-     */
-    void draw_panel(Component comp);
-
-    /**
-     * @brief Draws image type component
-     *
-     * @param comp
-     */
-    void draw_img(Component comp);
-
-    /**
-     * @brief Draws text type component
-     *
-     * @param comp
-     */
-    void draw_text(Component comp);
-
-    /**
      * @brief Updates the displayed image of the menu
      *
      */
@@ -118,23 +105,30 @@ class Menu {
      */
     void close();
 
+    /**
+     * @brief Set the cursor position object
+     * used to determine if the current selection is in the top or bottom row
+     * or in the first or last column
+     */
     void set_cursor_position();
 
     /**
-     * @brief Get the selectable components in a given array
-     * Primary use is the find which component are selectable of the components
-     * in a groups' pointer vector
-     * @param arr
-     * @return std::vector<int> indices of the selectable components
+     * @brief Set the group that is being selected from
+     *
+     * @param group_index
      */
-    std::vector<int> get_selectable_components(std::vector<Component *> arr);
-
-    int count_selectable_components(int group);
-
     void set_selection_group(int group_index);
 
+    /**
+     * @brief Move to the next group (wrap around if out of bounds)
+     *
+     */
     void next_group();
 
+    /**
+     * @brief Move to previous group (wrap around if out of bounds)
+     *
+     */
     void prev_group();
 
     /**
@@ -174,6 +168,51 @@ class Menu {
 
     std::vector<GroupInfo> groups;
 
+        /**
+     * @brief Draws panel type component
+     *
+     * @param comp
+     */
+    void draw_panel(Component comp);
+
+    /**
+     * @brief Draws image type component
+     *
+     * @param comp
+     */
+    void draw_img(Component comp);
+
+    /**
+     * @brief Draws text type component
+     *
+     * @param comp
+     */
+    void draw_text(Component comp);
+
+    /**
+     * @brief Get the selectable components in a given array
+     * Primary use is the find which component are selectable of the components
+     * in a groups' pointer vector
+     * @param arr
+     * @return std::vector<int> indices of the selectable components
+     */
+    std::vector<int> get_selectable_components(std::vector<Component *> arr);
+
+    /**
+     * @brief count number of selectable components in a group
+     *
+     * @param group group number
+     * @return int number of selectable components
+     */
+    int count_selectable_components(int group);
+
+    /**
+     * @brief Perform the select / deselect method on the component that is
+     * currently selected
+     *
+     * @param pol 0 - deselect 1 - select
+     * @return int 1 on success -1 on failure
+     */
     int set_selection_polarity(int pol);
 
     /**
