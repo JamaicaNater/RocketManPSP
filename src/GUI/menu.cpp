@@ -77,7 +77,7 @@ inline uint32_t Menu::highlight_selection(Component comp, uint32_t pixel) {
 
 void Menu::log_comp_data() {
     log(DEBUG, "logging component data for %s", menu_name);
-    for (Component comp: components) {
+    for (Component &comp: components) {
         comp.log_info();
     }
 }
@@ -193,6 +193,8 @@ std::pair<int, int> Menu::add_component(Position _pos, Component comp,
     components.push_back(comp);
     groups.push_back(GroupInfo(true, 1, 1, {&components[components.size()-1]}));
 
+    log_comp_data();
+
     return {comp_index, group_index};
 }
 
@@ -239,6 +241,7 @@ std::pair<int, int> Menu::add_component_group(Position pos,
     }
     groups.push_back(GroupInfo(row_major, rows, cols, group_vec));
 
+    log_comp_data();
     return {first_comp_index, group_index};
 }
 
@@ -525,6 +528,7 @@ void Menu::close() {
 }
 
 void Menu::set_cursor_position() {
+    log(INFO, "Setting cursor position");
     int rows = groups[selected_group].rows;
     int cols = groups[selected_group].cols;
     bool row_major = groups[selected_group].row_major;
@@ -539,7 +543,7 @@ void Menu::set_cursor_position() {
         if (selected_comp/cols == 0) {
             cursor_position |= FIRST_ROW;
         }
-        if (selected_comp%cols ==cols-1) {
+        if (selected_comp%cols == cols-1) {
             cursor_position |= LAST_COL;
         }
         if (selected_comp%cols == 0) {
@@ -559,6 +563,7 @@ void Menu::set_cursor_position() {
             cursor_position |= FIRST_COL;
         }
     }
+    log(INFO, "cursor position set");
 }
 
 std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr) {
@@ -595,12 +600,18 @@ int Menu::set_selection_polarity(int pol){
         return -1;
     }
 
+    log(DEBUG, "%0x", comp);
+    for (Component &comp : components){
+        comp.log_info();
+    }
+
+
     if (pol) {
         comp->select();
     } else {
         comp->deselect();
     }
-
+    log(INFO, "Set select to %d", pol);
     return 1;
 }
 
@@ -726,13 +737,16 @@ void Menu::select_next(Direction direction) {
         assert(0, "value %d did not match a valid direction", direction);
         break;
     }
+    set_cursor_position();
+
+    log(DEBUG, "first row: %d, first col: %d, last row: %d, last col: %d",
+        selected_comp/cols == 0, selected_comp%cols == 0,
+        selected_comp/cols == rows-1, selected_comp%cols == cols-1);
     log(DEBUG, "cur pos: %d", cursor_position);
     log(DEBUG, "selected: %d", selected_comp);
     log(DEBUG, "group: %d", selected_group);
     log(DEBUG, "size: %d", groups[selected_group].components.size());
     log(DEBUG, "rows: %d cols: %d", rows, cols);
-
-    set_cursor_position();
     set_selection_polarity(1);  // Select the component
 }
 
@@ -741,12 +755,13 @@ void Menu::next_group() {
     do {
         selected_group =
             (selected_group + 1 < groups.size()) ? selected_group + 1 : 0;
-        log(DEBUG, "Moving to next group");
+        log(DEBUG, "Moved to next group %d", selected_group);
     } while (!count_selectable_components(selected_group));
 
     selected_comp = 0;
     set_cursor_position();
     set_selection_polarity(1);
+    (DEBUG, "Moved to group %d", selected_group);
 }
 
 void Menu::prev_group() {
@@ -801,7 +816,7 @@ Component * Menu::get_selected_component() {
     }
 
     int index = selectable[selected_comp];
-
+    log(DEBUG, "get_selected_component in selectable at %d for group %d in has index of %d", selected_comp, selected_group, index);
     return groups[selected_group].components[index];
 }
 

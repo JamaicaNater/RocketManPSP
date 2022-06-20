@@ -1,306 +1,1428 @@
 DEBUG-H: Init: 0 Objects in memory allocated to 0 bytes
 INFO: loading assets/misc/font.bmp into memory
 INFO: Allocating Space
-DEBUG-H: inset 25920 at 885e690
-DEBUG-H: Allocated 25920 at 885e690. Info 
+DEBUG-H: inset 25920 at 885eb90
+DEBUG-H: Allocated 25920 at 885eb90. Info 
 DEBUG-H: 1 Objects in memory allocated to 25920 bytes
 INFO: Formatting pixels
 INFO: Successfully loaded assets/misc/font.bmp, 25920 bytes used by BMPs
 INFO: loading assets/terrain/dirt.bmp into memory
-DEBUG-H: inset 16384 at 8864ff0
-DEBUG-H: Allocated 16384 at 8864ff0. Info 
+DEBUG-H: inset 16384 at 88654f0
+DEBUG-H: Allocated 16384 at 88654f0. Info 
 DEBUG-H: 2 Objects in memory allocated to 42304 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/terrain/dirt.bmp, 42304 kb used by bmps
 INFO: loading assets/terrain/sky.bmp into memory
-DEBUG-H: inset 32768 at 8869000
-DEBUG-H: Allocated 32768 at 8869000. Info 
+DEBUG-H: inset 32768 at 8869500
+DEBUG-H: Allocated 32768 at 8869500. Info 
 DEBUG-H: 3 Objects in memory allocated to 75072 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/terrain/sky.bmp, 75072 kb used by bmps
 INFO: loading assets/terrain/grass.bmp into memory
-DEBUG-H: inset 16384 at 8871010
-DEBUG-H: Allocated 16384 at 8871010. Info 
+DEBUG-H: inset 16384 at 8871510
+DEBUG-H: Allocated 16384 at 8871510. Info 
 DEBUG-H: 4 Objects in memory allocated to 91456 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/terrain/grass.bmp, 91456 kb used by bmps
 INFO: loading assets/terrain/background.bmp into memory
-DEBUG-H: inset 39200 at 8875020
-DEBUG-H: Allocated 39200 at 8875020. Info 
+DEBUG-H: inset 39200 at 8875520
+DEBUG-H: Allocated 39200 at 8875520. Info 
 DEBUG-H: 5 Objects in memory allocated to 130656 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/terrain/background.bmp, 130656 kb used by bmps
-DEBUG-H: inset 7200 at 887e950
-DEBUG-H: Allocated 7200 at 887e950. Info 
+DEBUG-H: inset 7200 at 887ee50
+DEBUG-H: Allocated 7200 at 887ee50. Info 
 DEBUG-H: 6 Objects in memory allocated to 137856 bytes
 INFO: loading assets/enemy/enemy.bmp into memory
-DEBUG-H: inset 9400 at 8882390
-DEBUG-H: Allocated 9400 at 8882390. Info 
+DEBUG-H: inset 9400 at 8882890
+DEBUG-H: Allocated 9400 at 8882890. Info 
 DEBUG-H: 7 Objects in memory allocated to 147256 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/enemy/enemy.bmp, 140056 kb used by bmps
-DEBUG-H: inset 2300 at 8884850
-DEBUG-H: Allocated 2300 at 8884850. Info 
+DEBUG-H: inset 2300 at 8884d50
+DEBUG-H: Allocated 2300 at 8884d50. Info 
 DEBUG-H: 8 Objects in memory allocated to 149556 bytes
 DEBUG-H: freed 9400 bytes
-DEBUG-H: Attempting to free 8882390
-DEBUG-H: Successfully freed 8882390. 7 Objects in memory allocated to 140156 bytes
-DEBUG-H: inset 2400 at 8882390
-DEBUG-H: Allocated 2400 at 8882390. Info 
+DEBUG-H: Attempting to free 8882890
+DEBUG-H: Successfully freed 8882890. 7 Objects in memory allocated to 140156 bytes
+DEBUG: logging component data for 
+INFO: x: 0 y: 3, width: 23 height 25, color 0, type 3, selectable 1, selected 0, hidden 0 ptr 8880a80
+DEBUG: logging component data for 
+INFO: x: 0 y: 3, width: 23 height 25, color 0, type 3, selectable 1, selected 0, hidden 0 ptr 8880a80
+INFO: x: 23 y: 10, width: 24 height 10, color 0, type 2, selectable 1, selected 0, hidden 0 ptr 8880af8
+DEBUG-H: inset 2400 at 8882890
+DEBUG-H: Allocated 2400 at 8882890. Info 
 DEBUG-H: 8 Objects in memory allocated to 142556 bytes
+DEBUG: logging component data for 
+INFO: x: 7 y: 5, width: 16 height 10, color 0, type 2, selectable 1, selected 0, hidden 0 ptr 8885650
 DEBUG: Calling ObjectList for objects
-DEBUG-H: inset 64 at 8864c90
-DEBUG-H: Allocated 64 at 8864c90. Info 
+DEBUG-H: inset 64 at 8865190
+DEBUG-H: Allocated 64 at 8865190. Info 
 DEBUG-H: 9 Objects in memory allocated to 142620 bytes
 DEBUG: Calling ObjectList for objects
-DEBUG-H: inset 512 at 8864d20
-DEBUG-H: Allocated 512 at 8864d20. Info 
+DEBUG-H: inset 512 at 8865220
+DEBUG-H: Allocated 512 at 8865220. Info 
 DEBUG-H: 10 Objects in memory allocated to 143132 bytes
 DEBUG: Calling ObjectList for objects
-DEBUG-H: inset 256 at 885e260
-DEBUG-H: Allocated 256 at 885e260. Info 
+DEBUG-H: inset 256 at 885e760
+DEBUG-H: Allocated 256 at 885e760. Info 
 DEBUG-H: 11 Objects in memory allocated to 143388 bytes
 DEBUG: Calling ObjectList for objects
-DEBUG-H: inset 8 at 885e380
-DEBUG-H: Allocated 8 at 885e380. Info 
+DEBUG-H: inset 8 at 885e880
+DEBUG-H: Allocated 8 at 885e880. Info 
 DEBUG-H: 12 Objects in memory allocated to 143396 bytes
 INFO: Init Gamestate
 INFO: loading assets/game/statusbar.bmp into memory
-DEBUG-H: inset 49152 at 8886f60
-DEBUG-H: Allocated 49152 at 8886f60. Info 
+DEBUG-H: inset 49152 at 8887460
+DEBUG-H: Allocated 49152 at 8887460. Info 
 DEBUG-H: 13 Objects in memory allocated to 192548 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/game/statusbar.bmp, 189208 kb used by bmps
 INFO: loading assets/enemy/enemy.bmp into memory
-DEBUG-H: inset 9400 at 8892f70
-DEBUG-H: Allocated 9400 at 8892f70. Info 
+DEBUG-H: inset 9400 at 8893470
+DEBUG-H: Allocated 9400 at 8893470. Info 
 DEBUG-H: 14 Objects in memory allocated to 201948 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/enemy/enemy.bmp, 198608 kb used by bmps
 INFO: loading assets/misc/missile.bmp into memory
-DEBUG-H: inset 288 at 8883110
-DEBUG-H: Allocated 288 at 8883110. Info 
+DEBUG-H: inset 288 at 8883610
+DEBUG-H: Allocated 288 at 8883610. Info 
 DEBUG-H: 15 Objects in memory allocated to 202236 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/misc/missile.bmp, 198896 kb used by bmps
 INFO: loading assets/player/playerrocket.bmp into memory
-DEBUG-H: inset 736 at 8883270
-DEBUG-H: Allocated 736 at 8883270. Info 
+DEBUG-H: inset 736 at 8883770
+DEBUG-H: Allocated 736 at 8883770. Info 
 DEBUG-H: 16 Objects in memory allocated to 202972 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/player/playerrocket.bmp, 199632 kb used by bmps
 INFO: loading assets/player/player1.bmp into memory
-DEBUG-H: inset 3072 at 8883560
-DEBUG-H: Allocated 3072 at 8883560. Info 
+DEBUG-H: inset 3072 at 8883a60
+DEBUG-H: Allocated 3072 at 8883a60. Info 
 DEBUG-H: 17 Objects in memory allocated to 206044 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/player/player1.bmp, 202704 kb used by bmps
-DEBUG-H: inset 1024 at 8882d00
-DEBUG-H: Allocated 1024 at 8882d00. Info 
+DEBUG-H: inset 1024 at 8883200
+DEBUG-H: Allocated 1024 at 8883200. Info 
 DEBUG-H: 18 Objects in memory allocated to 207068 bytes
 INFO: loading assets/misc/explosion.bmp into memory
 INFO: Allocating Space
-DEBUG-H: inset 1306980 at 8895430
-DEBUG-H: Allocated 1306980 at 8895430. Info 
+DEBUG-H: inset 1306980 at 8895930
+DEBUG-H: Allocated 1306980 at 8895930. Info 
 DEBUG-H: 19 Objects in memory allocated to 1514048 bytes
 INFO: Formatting pixels
 INFO: Successfully loaded assets/misc/explosion.bmp, 1509684 bytes used by BMPs
-DEBUG-H: inset 522240 at 89d45a0
-DEBUG-H: Allocated 522240 at 89d45a0. Info 
+DEBUG-H: inset 522240 at 89d4aa0
+DEBUG-H: Allocated 522240 at 89d4aa0. Info 
 DEBUG-H: 20 Objects in memory allocated to 2036288 bytes
 INFO: loading assets/game/titlescreen.bmp into memory
-DEBUG-H: inset 522240 at 8a53db0
-DEBUG-H: Allocated 522240 at 8a53db0. Info 
+DEBUG-H: inset 522240 at 8a542b0
+DEBUG-H: Allocated 522240 at 8a542b0. Info 
 DEBUG-H: 21 Objects in memory allocated to 2558528 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/game/titlescreen.bmp, 2031924 kb used by bmps
+DEBUG: logging component data for title_menu
+INFO: x: 0 y: 0, width: 480 height 272, color 0, type 3, selectable 0, selected 0, hidden 0 ptr 8865440
+DEBUG: logging component data for title_menu
+INFO: x: 0 y: 0, width: 480 height 272, color 0, type 3, selectable 0, selected 0, hidden 0 ptr 88847d0
+INFO: x: 163 y: 91, width: 72 height 10, color 22b681, type 2, selectable 1, selected 0, hidden 0 ptr 8884848
+INFO: x: 245 y: 91, width: 72 height 10, color 1125ff, type 2, selectable 1, selected 0, hidden 0 ptr 88848c0
+INFO: Setting cursor position
+INFO: cursor position set
+DEBUG: logging component data for title_menu
+INFO: x: 0 y: 0, width: 480 height 272, color 0, type 3, selectable 0, selected 0, hidden 0 ptr 88847d0
+INFO: x: 163 y: 91, width: 72 height 10, color 22b681, type 2, selectable 1, selected 1, hidden 0 ptr 8884848
+INFO: x: 245 y: 91, width: 72 height 10, color 1125ff, type 2, selectable 1, selected 0, hidden 0 ptr 88848c0
+INFO: x: 0 y: 0, width: 248 height 10, color ffffff, type 2, selectable 0, selected 0, hidden 0 ptr 8884938
 DEBUG: in draw text Play Game
-DEBUG-H: inset 2880 at 8ad35c0
-DEBUG-H: Allocated 2880 at 8ad35c0. Info 
+DEBUG-H: inset 2880 at 8ad3ac0
+DEBUG-H: Allocated 2880 at 8ad3ac0. Info 
 DEBUG-H: 22 Objects in memory allocated to 2561408 bytes
 DEBUG-H: freed 2880 bytes
-DEBUG-H: Attempting to free 8ad35c0
-DEBUG-H: Successfully freed 8ad35c0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
 DEBUG: in draw text Exit Game
-DEBUG-H: inset 2880 at 8ad35c0
-DEBUG-H: Allocated 2880 at 8ad35c0. Info 
+DEBUG-H: inset 2880 at 8ad3ac0
+DEBUG-H: Allocated 2880 at 8ad3ac0. Info 
 DEBUG-H: 22 Objects in memory allocated to 2561408 bytes
 DEBUG-H: freed 2880 bytes
-DEBUG-H: Attempting to free 8ad35c0
-DEBUG-H: Successfully freed 8ad35c0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
 DEBUG: in draw text Copyright 2022 Francis Williams
-DEBUG-H: inset 9920 at 8ad35c0
-DEBUG-H: Allocated 9920 at 8ad35c0. Info 
+DEBUG-H: inset 9920 at 8ad3ac0
+DEBUG-H: Allocated 9920 at 8ad3ac0. Info 
 DEBUG-H: 22 Objects in memory allocated to 2568448 bytes
 DEBUG-H: freed 9920 bytes
-DEBUG-H: Attempting to free 8ad35c0
-DEBUG-H: Successfully freed 8ad35c0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
 DEBUG: in draw text Play Game
-DEBUG-H: inset 2880 at 8ad35c0
-DEBUG-H: Allocated 2880 at 8ad35c0. Info 
+DEBUG-H: inset 2880 at 8ad3ac0
+DEBUG-H: Allocated 2880 at 8ad3ac0. Info 
 DEBUG-H: 22 Objects in memory allocated to 2561408 bytes
 DEBUG-H: freed 2880 bytes
-DEBUG-H: Attempting to free 8ad35c0
-DEBUG-H: Successfully freed 8ad35c0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
 DEBUG: in draw text Exit Game
-DEBUG-H: inset 2880 at 8ad35c0
-DEBUG-H: Allocated 2880 at 8ad35c0. Info 
+DEBUG-H: inset 2880 at 8ad3ac0
+DEBUG-H: Allocated 2880 at 8ad3ac0. Info 
 DEBUG-H: 22 Objects in memory allocated to 2561408 bytes
 DEBUG-H: freed 2880 bytes
-DEBUG-H: Attempting to free 8ad35c0
-DEBUG-H: Successfully freed 8ad35c0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
 DEBUG: in draw text Copyright 2022 Francis Williams
-DEBUG-H: inset 9920 at 8ad35c0
-DEBUG-H: Allocated 9920 at 8ad35c0. Info 
+DEBUG-H: inset 9920 at 8ad3ac0
+DEBUG-H: Allocated 9920 at 8ad3ac0. Info 
 DEBUG-H: 22 Objects in memory allocated to 2568448 bytes
 DEBUG-H: freed 9920 bytes
-DEBUG-H: Attempting to free 8ad35c0
-DEBUG-H: Successfully freed 8ad35c0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
 DEBUG: Closing menu: title_menu
 DEBUG-H: freed 522240 bytes
-DEBUG-H: Attempting to free 8a53db0
-DEBUG-H: Successfully freed 8a53db0. 20 Objects in memory allocated to 2036288 bytes
+DEBUG-H: Attempting to free 8a542b0
+DEBUG-H: Successfully freed 8a542b0. 20 Objects in memory allocated to 2036288 bytes
 DEBUG-H: freed 522240 bytes
-DEBUG-H: Attempting to free 89d45a0
-DEBUG-H: Successfully freed 89d45a0. 19 Objects in memory allocated to 1514048 bytes
-DEBUG-H: inset 522240 at 89d45a0
-DEBUG-H: Allocated 522240 at 89d45a0. Info 
+DEBUG-H: Attempting to free 89d4aa0
+DEBUG-H: Successfully freed 89d4aa0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 522240 at 89d4aa0
+DEBUG-H: Allocated 522240 at 89d4aa0. Info 
 DEBUG-H: 20 Objects in memory allocated to 2036288 bytes
 INFO: loading assets/game/menu.bmp into memory
-DEBUG-H: inset 522240 at 8a53db0
-DEBUG-H: Allocated 522240 at 8a53db0. Info 
+DEBUG-H: inset 522240 at 8a542b0
+DEBUG-H: Allocated 522240 at 8a542b0. Info 
 DEBUG-H: 21 Objects in memory allocated to 2558528 bytes
 INFO: Reading file
 INFO: Formatting pixels
 INFO: Successfully loaded assets/game/menu.bmp, 2554164 kb used by bmps
+DEBUG: logging component data for main_menu
+INFO: x: 0 y: 0, width: 480 height 272, color 0, type 3, selectable 1, selected 0, hidden 0 ptr 8865440
+DEBUG: logging component data for main_menu
+INFO: x: 0 y: 0, width: 480 height 272, color 0, type 3, selectable 1, selected 0, hidden 0 ptr 88847d0
+INFO: x: 154 y: 131, width: 88 height 10, color 0, type 2, selectable 1, selected 0, hidden 0 ptr 8884848
+INFO: x: 247 y: 131, width: 80 height 10, color 0, type 2, selectable 1, selected 0, hidden 0 ptr 88848c0
+INFO: Setting cursor position
+INFO: cursor position set
 DEBUG: in draw text Arcade Mode
-DEBUG-H: inset 3520 at 8ad35c0
-DEBUG-H: Allocated 3520 at 8ad35c0. Info 
+DEBUG-H: inset 3520 at 8ad3ac0
+DEBUG-H: Allocated 3520 at 8ad3ac0. Info 
 DEBUG-H: 22 Objects in memory allocated to 2562048 bytes
 DEBUG-H: freed 3520 bytes
-DEBUG-H: Attempting to free 8ad35c0
-DEBUG-H: Successfully freed 8ad35c0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
 DEBUG: in draw text Story Mode
-DEBUG-H: inset 3200 at 8ad35c0
-DEBUG-H: Allocated 3200 at 8ad35c0. Info 
+DEBUG-H: inset 3200 at 8ad3ac0
+DEBUG-H: Allocated 3200 at 8ad3ac0. Info 
 DEBUG-H: 22 Objects in memory allocated to 2561728 bytes
 DEBUG-H: freed 3200 bytes
-DEBUG-H: Attempting to free 8ad35c0
-DEBUG-H: Successfully freed 8ad35c0. 21 Objects in memory allocated to 2558528 bytes
-located to 1514048 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG: in draw text Arcade Mode
+DEBUG-H: inset 3520 at 8ad3ac0
+DEBUG-H: Allocated 3520 at 8ad3ac0. Info 
+DEBUG-H: 22 Objects in memory allocated to 2562048 bytes
+DEBUG-H: freed 3520 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG: in draw text Story Mode
+DEBUG-H: inset 3200 at 8ad3ac0
+DEBUG-H: Allocated 3200 at 8ad3ac0. Info 
+DEBUG-H: 22 Objects in memory allocated to 2561728 bytes
+DEBUG-H: freed 3200 bytes
+DEBUG-H: Attempting to free 8ad3ac0
+DEBUG-H: Successfully freed 8ad3ac0. 21 Objects in memory allocated to 2558528 bytes
+DEBUG: Closing menu: main_menu
+DEBUG-H: freed 522240 bytes
+DEBUG-H: Attempting to free 8a542b0
+DEBUG-H: Successfully freed 8a542b0. 20 Objects in memory allocated to 2036288 bytes
+DEBUG-H: freed 522240 bytes
+DEBUG-H: Attempting to free 89d4aa0
+DEBUG-H: Successfully freed 89d4aa0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: Spawned:assets/enemy/enemy.bmp ptr: 8893470
 DEBUG: in draw text x 0
-DEBUG-H: inset 960 at 88840a0
-DEBUG-H: Allocated 960 at 88840a0. Info 
+DEBUG-H: inset 960 at 88846d0
+DEBUG-H: Allocated 960 at 88846d0. Info 
 DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
 DEBUG-H: freed 960 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 88846d0
+DEBUG-H: Successfully freed 88846d0. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: updating kills to 0
-DEBUG: in draw text 0s
-DEBUG-H: inset 640 at 88840a0
-DEBUG-H: Allocated 640 at 88840a0. Info 
+DEBUG: in draw text 1s
+DEBUG-H: inset 640 at 88846d0
+DEBUG-H: Allocated 640 at 88846d0. Info 
 DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
 DEBUG-H: freed 640 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 88846d0
+DEBUG-H: Successfully freed 88846d0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 88846d0
+DEBUG-H: Allocated 4 at 88846d0. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 88846d0
+DEBUG-H: Successfully freed 88846d0. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: in draw text x 0
-DEBUG-H: inset 960 at 88840a0
-DEBUG-H: Allocated 960 at 88840a0. Info 
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
 DEBUG-H: freed 960 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: updating kills to 0
-DEBUG: in draw text 0s
-DEBUG-H: inset 640 at 88840a0
-DEBUG-H: Allocated 640 at 88840a0. Info 
+DEBUG: in draw text 1s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
 DEBUG-H: freed 640 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: in draw text x 0
-DEBUG-H: inset 960 at 88840a0
-DEBUG-H: Allocated 960 at 88840a0. Info 
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
 DEBUG-H: freed 960 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: updating kills to 0
-DEBUG: in draw text 0s
-DEBUG-H: inset 640 at 88840a0
-DEBUG-H: Allocated 640 at 88840a0. Info 
+DEBUG: in draw text 1s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
 DEBUG-H: freed 640 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: in draw text x 0
-DEBUG-H: inset 960 at 88840a0
-DEBUG-H: Allocated 960 at 88840a0. Info 
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
 DEBUG-H: freed 960 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: updating kills to 0
-DEBUG: in draw text 0s
-DEBUG-H: inset 640 at 88840a0
-DEBUG-H: Allocated 640 at 88840a0. Info 
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
 DEBUG-H: freed 640 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: in draw text x 0
-DEBUG-H: inset 960 at 88840a0
-DEBUG-H: Allocated 960 at 88840a0. Info 
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
 DEBUG-H: freed 960 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: updating kills to 0
-DEBUG: in draw text 0s
-DEBUG-H: inset 640 at 88840a0
-DEBUG-H: Allocated 640 at 88840a0. Info 
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
 DEBUG-H: freed 640 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: in draw text x 0
-DEBUG-H: inset 960 at 88840a0
-DEBUG-H: Allocated 960 at 88840a0. Info 
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
 DEBUG-H: freed 960 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: updating kills to 0
-DEBUG: in draw text 0s
-DEBUG-H: inset 640 at 88840a0
-DEBUG-H: Allocated 640 at 88840a0. Info 
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
 DEBUG-H: freed 640 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: in draw text x 0
-DEBUG-H: inset 960 at 88840a0
-DEBUG-H: Allocated 960 at 88840a0. Info 
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
 DEBUG-H: freed 960 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
 DEBUG: updating kills to 0
-DEBUG: in draw text 0s
-DEBUG-H: inset 640 at 88840a0
-DEBUG-H: Allocated 640 at 88840a0. Info 
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
 DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
 DEBUG-H: freed 640 bytes
-DEBUG-H: Attempting to free 88840a0
-DEBUG-H: Successfully freed 88840a0. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: in draw text x 0
+DEBUG-H: inset 960 at 8884780
+DEBUG-H: Allocated 960 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1515008 bytes
+DEBUG-H: freed 960 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG: updating kills to 0
+DEBUG: in draw text 2s
+DEBUG-H: inset 640 at 8884780
+DEBUG-H: Allocated 640 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514688 bytes
+DEBUG-H: freed 640 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 4 at 8884780
+DEBUG-H: Allocated 4 at 8884780. Info 
+DEBUG-H: 20 Objects in memory allocated to 1514052 bytes
+DEBUG-H: freed 4 bytes
+DEBUG-H: Attempting to free 8884780
+DEBUG-H: Successfully freed 8884780. 19 Objects in memory allocated to 1514048 bytes
+DEBUG-H: inset 43200 at 89d4aa0
+DEBUG-H: Allocated 43200 at 89d4aa0. Info 
+DEBUG-H: 20 Objects in memory allocated to 1557248 bytes
+DEBUG: logging component data for pause_menu
+INFO: x: 1 y: 105, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 885e920
+DEBUG: logging component data for pause_menu
+INFO: x: 1 y: 105, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 885e9e0
+INFO: x: 1 y: 25, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 885ea58
+DEBUG: widest 72, 0
+DEBUG: tallest 10, 0
+DEBUG: tallest 10, 1
+DEBUG: logging component data for pause_menu
+INFO: x: 1 y: 105, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 8884980
+INFO: x: 1 y: 25, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 88849f8
+INFO: x: 13 y: 73, width: 64 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 8884a70
+INFO: x: 9 y: 58, width: 72 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 8884ae8
+DEBUG: widest 8, 0
+DEBUG: widest 8, 1
+DEBUG: widest 8, 2
+DEBUG: widest 8, 3
+DEBUG: tallest 10, 0
+DEBUG: tallest 10, 1
+DEBUG: logging component data for pause_menu
+INFO: x: 1 y: 105, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dfee0
+INFO: x: 1 y: 25, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dff58
+INFO: x: 13 y: 73, width: 64 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89dffd0
+INFO: x: 9 y: 58, width: 72 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0048
+INFO: x: 26 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e00c0
+INFO: x: 26 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0138
+INFO: x: 36 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e01b0
+INFO: x: 36 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0228
+INFO: x: 46 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e02a0
+INFO: x: 46 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0318
+INFO: x: 56 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0390
+INFO: x: 56 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0408
+INFO: Setting cursor position
+INFO: cursor position set
+DEBUG: in draw text Game Paused
+DEBUG-H: inset 3520 at 89e0670
+DEBUG-H: Allocated 3520 at 89e0670. Info 
+DEBUG-H: 21 Objects in memory allocated to 1560768 bytes
+DEBUG-H: freed 3520 bytes
+DEBUG-H: Attempting to free 89e0670
+DEBUG-H: Successfully freed 89e0670. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text Change skin
+DEBUG-H: inset 3520 at 89e0670
+DEBUG-H: Allocated 3520 at 89e0670. Info 
+DEBUG-H: 21 Objects in memory allocated to 1560768 bytes
+DEBUG-H: freed 3520 bytes
+DEBUG-H: Attempting to free 89e0670
+DEBUG-H: Successfully freed 89e0670. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text Continue
+DEBUG-H: inset 2560 at 89df370
+DEBUG-H: Allocated 2560 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1559808 bytes
+DEBUG-H: freed 2560 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text Exit Game
+DEBUG-H: inset 2880 at 89df370
+DEBUG-H: Allocated 2880 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1560128 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 1
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 2
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 3
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 4
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 5
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 6
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 7
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 8
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: get_selected_component in selectable at 0 for group 3 in has index of 0
+DEBUG: 89e00c0
+INFO: x: 1 y: 105, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dfee0
+INFO: x: 1 y: 25, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dff58
+INFO: x: 13 y: 73, width: 64 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89dffd0
+INFO: x: 9 y: 58, width: 72 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0048
+INFO: x: 26 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 1, hidden 0 ptr 89e00c0
+INFO: x: 26 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0138
+INFO: x: 36 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e01b0
+INFO: x: 36 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0228
+INFO: x: 46 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e02a0
+INFO: x: 46 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0318
+INFO: x: 56 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0390
+INFO: x: 56 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0408
+INFO: Set select to 0
+INFO: Setting cursor position
+INFO: cursor position set
+DEBUG: first row: 1, first col: 0, last row: 0, last col: 0
+DEBUG: cur pos: 33
+DEBUG: selected: 1
+DEBUG: group: 3
+DEBUG: size: 8
+DEBUG: rows: 2 cols: 4
+DEBUG: get_selected_component in selectable at 1 for group 3 in has index of 1
+DEBUG: 89e0138
+INFO: x: 1 y: 105, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dfee0
+INFO: x: 1 y: 25, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dff58
+INFO: x: 13 y: 73, width: 64 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89dffd0
+INFO: x: 9 y: 58, width: 72 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0048
+INFO: x: 26 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e00c0
+INFO: x: 26 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0138
+INFO: x: 36 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e01b0
+INFO: x: 36 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0228
+INFO: x: 46 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e02a0
+INFO: x: 46 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0318
+INFO: x: 56 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0390
+INFO: x: 56 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0408
+INFO: Set select to 1
+DEBUG: in draw text Game Paused
+DEBUG-H: inset 3520 at 89e0670
+DEBUG-H: Allocated 3520 at 89e0670. Info 
+DEBUG-H: 21 Objects in memory allocated to 1560768 bytes
+DEBUG-H: freed 3520 bytes
+DEBUG-H: Attempting to free 89e0670
+DEBUG-H: Successfully freed 89e0670. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text Change skin
+DEBUG-H: inset 3520 at 89e0670
+DEBUG-H: Allocated 3520 at 89e0670. Info 
+DEBUG-H: 21 Objects in memory allocated to 1560768 bytes
+DEBUG-H: freed 3520 bytes
+DEBUG-H: Attempting to free 89e0670
+DEBUG-H: Successfully freed 89e0670. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text Continue
+DEBUG-H: inset 2560 at 89df370
+DEBUG-H: Allocated 2560 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1559808 bytes
+DEBUG-H: freed 2560 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text Exit Game
+DEBUG-H: inset 2880 at 89df370
+DEBUG-H: Allocated 2880 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1560128 bytes
+DEBUG-H: freed 2880 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 1
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 2
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 3
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 4
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 5
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 6
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 7
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: in draw text 8
+DEBUG-H: inset 320 at 89df370
+DEBUG-H: Allocated 320 at 89df370. Info 
+DEBUG-H: 21 Objects in memory allocated to 1557568 bytes
+DEBUG-H: freed 320 bytes
+DEBUG-H: Attempting to free 89df370
+DEBUG-H: Successfully freed 89df370. 20 Objects in memory allocated to 1557248 bytes
+DEBUG: get_selected_component in selectable at 1 for group 3 in has index of 1
+DEBUG: 89e0138
+INFO: x: 1 y: 105, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dfee0
+INFO: x: 1 y: 25, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dff58
+INFO: x: 13 y: 73, width: 64 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89dffd0
+INFO: x: 9 y: 58, width: 72 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0048
+INFO: x: 26 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e00c0
+INFO: x: 26 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 1, hidden 0 ptr 89e0138
+INFO: x: 36 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e01b0
+INFO: x: 36 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0228
+INFO: x: 46 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e02a0
+INFO: x: 46 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0318
+INFO: x: 56 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0390
+INFO: x: 56 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0408
+INFO: Set select to 0
+DEBUG: Moved to next group 0
+INFO: Setting cursor position
+INFO: cursor position set
+DEBUG: get_selected_component in selectable at 0 for group 0 in has index of 0
+DEBUG: 885e920
+INFO: x: 1 y: 105, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dfee0
+INFO: x: 1 y: 25, width: 88 height 10, color cc00, type 2, selectable 0, selected 0, hidden 0 ptr 89dff58
+INFO: x: 13 y: 73, width: 64 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89dffd0
+INFO: x: 9 y: 58, width: 72 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0048
+INFO: x: 26 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e00c0
+INFO: x: 26 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0138
+INFO: x: 36 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e01b0
+INFO: x: 36 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0228
+INFO: x: 46 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e02a0
+INFO: x: 46 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0318
+INFO: x: 56 y: 12, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0390
+INFO: x: 56 y: 0, width: 8 height 10, color cc00, type 2, selectable 1, selected 0, hidden 0 ptr 89e0408
