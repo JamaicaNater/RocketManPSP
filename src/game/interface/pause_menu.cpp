@@ -66,8 +66,7 @@ Menu build_pause_menu(){
         })
     }, Menu::GRID, 2,0,0, 2,4,false).second;
 
-    pause_menu.set_selection_group(group1);
-    log(DEBUG, "pause");
+    pause_menu.set_selection_group(group2);
 
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {
         pause_menu.control_reader.wait_button_release(PSP_CTRL_START);

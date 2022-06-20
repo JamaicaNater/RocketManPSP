@@ -591,6 +591,7 @@ int Menu::set_selection_polarity(int pol){
     Component * comp = get_selected_component();
 
     if (!comp) {
+        log (ERROR, "Failed to set selection");
         return -1;
     }
 
@@ -727,6 +728,7 @@ void Menu::select_next(Direction direction) {
     }
     log(DEBUG, "cur pos: %d", cursor_position);
     log(DEBUG, "selected: %d", selected_comp);
+    log(DEBUG, "group: %d", selected_group);
     log(DEBUG, "size: %d", groups[selected_group].components.size());
     log(DEBUG, "rows: %d cols: %d", rows, cols);
 
