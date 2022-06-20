@@ -111,6 +111,36 @@ Vector2d Menu::pos_to_coord(Position pos, unsigned int height_obj,
 std::pair<int, int> Menu::add_component(Position _pos, Component comp,
     int padding_x /* = 0*/, int padding_y /* = 0*/
 ) {
+    uint16_t comp_width;
+    uint16_t comp_height;
+    switch (comp.data.type) {
+        case Component::IMAGE_TYPE:
+            comp_width = comp.data.data.img.width;
+            comp_height = comp.data.data.img.height;
+            break;
+
+        case Component::LABEL_TYPE:
+            comp_width = strlen(comp.data.data.text) * get_font_width();
+            comp_height =  get_font_height();
+            break;
+
+        case Component::PANEL_TYPE:
+            comp_width = comp_width;
+            comp_height = comp.height;
+            break;
+
+        default:
+            comp_width = 0;
+            comp_height = 0;
+            assert(0, "type %d not recognized", comp.data.type);
+            break;
+    }
+
+    if (comp_height > height || comp_width > width) {
+        log(ERROR, "Attempt to add component (%d x %d) to canvas (%d x %d)",
+            comp_width, comp_height, width, height);
+    }
+
     int comp_index = components.size();
     int group_index = groups.size();
 

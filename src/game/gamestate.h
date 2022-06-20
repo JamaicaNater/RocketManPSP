@@ -31,10 +31,16 @@ public:
 
     /**
      * @brief Load the title screen image and render it to the screen wait for
-     * player to press start
+     * player to press the buttons
      *
      */
     void title_screen();
+
+    /**
+     * @brief menu screen with options
+     *
+     */
+    void menu_screen();
 
     /**
      * @brief Initialize variables needed for GameState,

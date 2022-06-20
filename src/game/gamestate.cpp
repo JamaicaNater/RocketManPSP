@@ -19,7 +19,7 @@
 
 GameState::StatusInfo GameState::status_info = {GameState::RUNNING, sceKernelGetSystemTimeLow()};
 
-bool GameState::in_title = true;
+bool GameState::in_title = false;
 bool GameState::in_menu = false;
 
 void GameState::init(){
@@ -45,9 +45,32 @@ void GameState::exit_game(){
 }
 
 void GameState::title_screen() {
+    in_title = true;
     Menu title_menu = build_title_menu();
     title_menu.on_open(title_menu);
-    in_title = true;
+}
+
+void GameState::menu_screen() {
+    in_menu = true;
+
+    Menu main_menu = Menu(CENTER, SCREEN_HEIGHT, SCREEN_WIDTH_RES, 0xC0C0C0, 0, 0);
+    Image menu_image = Image("assets/game/menu.bmp");
+    load_BMP(menu_image);
+
+    main_menu.add_component(CENTER, Component(menu_image));
+
+    main_menu.update();
+    main_menu.draw_and_swap_buffers();
+    while (GameState::in_menu)
+    {
+        if (main_menu.control_reader.read_controls()){
+            main_menu.update();
+            main_menu.draw_and_swap_buffers();
+        }
+    }
+
+    main_menu.close();
+
 }
 
 void GameState::on_pause(){

@@ -42,7 +42,7 @@ int callbackThread(SceSize args, void* argp)
 
 void setupCallbacks()
 {
-	int thid = sceKernelCreateThread("update_thread", callbackThread, 0x11, 
+	int thid = sceKernelCreateThread("update_thread", callbackThread, 0x11,
 		0xFA0, 0, NULL);
 
 	if (thid >= 0)
@@ -52,7 +52,7 @@ void setupCallbacks()
 // End of boilerplate PSP code
 
 int main()
-{  	
+{
 	init_malloc();
 	setupCallbacks();
 	pspDebugScreenInit();
@@ -64,7 +64,7 @@ int main()
 	FastNoiseLite noise(sceKernelGetSystemTimeLow());
 	noise.SetFrequency(.008f);
 	for(int i = 0; i < MAP_SIZE; i++) {
-		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 100) + 100; 
+		noise_map[i] = (char)map(noise.GetNoise((float)i*.8f, 0.0f), 100) + 100;
 	}
 
 	// FPS calculation
@@ -73,6 +73,7 @@ int main()
 	GameState game_state = GameState();
 	game_state.init();
 	game_state.title_screen();
+	game_state.menu_screen();
 
 	curr_time = sceKernelGetSystemTimeLow();
 	while (game_state.status_info.status != GameState::TERMINATED)
