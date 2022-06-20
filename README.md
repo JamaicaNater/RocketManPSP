@@ -2,7 +2,7 @@
 
 Rocketman PSP is a 2D platformer PSP game written in c++.
 
-The program uses a built from scrtch BMP loader and renderer as well as a logger and utilty library for debugging 
+The program uses a built from scrtch BMP loader and renderer as well as a logger and utilty library for debugging, The GUI interface, image libray, memory allocation wrapper, collisions manager and physics handler where all writen from scratch
 
 screenshots:
 ![image](https://user-images.githubusercontent.com/52978102/174580752-26627dd4-655f-4754-b16d-d6836d467761.png)
