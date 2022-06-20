@@ -31,12 +31,12 @@ void GameState::init(){
     //TODO: load all BMPs here
     load_BMP(status_bar);
     load_BMP(enemy_img);
-    
+
     player_handler.init();
     explosion_handler.init(new Animation(3, 5, 50000, "assets/misc/explosion.bmp"));
 
     control_reader.init();
-    init_text_builder();    
+    init_text_builder();
 }
 
 void GameState::exit_game(){
@@ -48,13 +48,13 @@ void GameState::title_screen() {
     title_menu.on_open(title_menu);
 }
 
-void GameState::on_pause(){    
+void GameState::on_pause(){
     Menu pause_menu = build_pause_menu();
     pause_menu.on_open(pause_menu);
 }
 
 void GameState::update(){
-    if (status_info.status == PAUSED) { 
+    if (status_info.status == PAUSED) {
         GameState::on_pause();
     }
 
@@ -77,9 +77,9 @@ void GameState::update_player_actions() {
     player_handler.read_controls();
 }
 
-void GameState::update_physics(){  
+void GameState::update_physics(){
     player_handler.update_physics();
-    projectile_handler.update_physics();  
+    projectile_handler.update_physics();
     enemy_handler.update_movement(PlayerHandler::get_player_val().vector.x);
     enemy_handler.update_physics();
     explosion_handler.update_physics();
@@ -88,10 +88,10 @@ void GameState::update_physics(){
 void GameState::draw(){
     GFX::drawTerrain();
     GFX::simple_drawBMP(0, SCREEN_HEIGHT-64-2,  status_bar);
-    GFX::draw_progress_bar(50, 240, 20, 120, 
-        PlayerHandler::get_player_val().health, 
+    GFX::draw_progress_bar(50, 240, 20, 120,
+        PlayerHandler::get_player_val().health,
         PlayerHandler::get_player_val().max_health, 0xFF00FF00, 0xFF0000FF);
-    
+
     projectile_handler.draw();
     player_handler.draw();
     enemy_handler.draw();
@@ -99,12 +99,15 @@ void GameState::draw(){
 
     ObjectManager::draw_health_bars();
     //GFX::tint_screen(0x000000);
-       
+
     GFX::swapBuffers();
     GFX::clear();
 }
 
-void GameState::update_status(Status _status){
+void GameState::update_status(Status _status) {
+    if (status_info.status == GameState::PAUSED) {
+        pause_time += (sceKernelGetSystemTimeLow() - GameState::status_info.start_time);
+    }
     status_info.status = _status;
     status_info.start_time = sceKernelGetSystemTimeLow();
 }
@@ -114,5 +117,5 @@ GameState::GameState(){
 }
 
 GameState::~GameState(){
-    
+
 }

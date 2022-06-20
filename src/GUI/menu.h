@@ -15,6 +15,14 @@ class Menu {
     enum Grouping{GRID, VERTICAL_LIST, HORIZONTAL_LIST};
     enum Direction{UP, DOWN, LEFT, RIGHT};
 
+    enum CursorPosition {
+        FIRST_COL     = 0x000001,
+        LAST_COL      = 0x000008,
+        FIRST_ROW     = 0x000010,
+        LAST_ROW      = 0x000020,
+    };
+    uint8_t cursor_position;
+
     const static int MAX_COMPONENTS = 64;
 
     unsigned int x, y, height, width;
@@ -110,6 +118,8 @@ class Menu {
      */
     void close();
 
+    void set_cursor_position();
+
     /**
      * @brief Get the selectable components in a given array
      * Primary use is the find which component are selectable of the components
@@ -122,6 +132,10 @@ class Menu {
     int count_selectable_components(int group);
 
     void set_selection_group(int group_index);
+
+    void next_group();
+
+    void prev_group();
 
     /**
      * @brief Selects the next component in a given direction
@@ -159,6 +173,8 @@ class Menu {
     };
 
     std::vector<GroupInfo> groups;
+
+    int set_selection_polarity(int pol);
 
     /**
      * @brief Highlights a pixel if component is selected TODO: increase effiecincy

@@ -20,41 +20,22 @@ Menu build_pause_menu(){
 
     pause_menu.add_component(TOP_CENTER,
         Component("Game Paused", 0x00CC00)
-        .set_selectable(true), 0, -5
+        .set_selectable(false), 0, -5
     );
-    log(DEBUG, "pause");
 
     pause_menu.add_component(CENTER,
         Component("Change skin", 0x00CC00)
-        .set_selectable(true), 0, -30
+        .set_selectable(false), 0, -30
     );
-    log(DEBUG, "pause");
-    int group1= pause_menu.add_component_group(TOP_CENTER, {
-        Component("1", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player/player1.bmp");
+
+    int group1 = pause_menu.add_component_group(CENTER, {
+        Component("Continue", 0x00CC00).set_on_click([](){
+            GameState::update_status(GameState::RUNNING);
         }),
-        Component("2", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player/player2.bmp");
-        }),
-        Component("3", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player/player3.bmp");
-        }),
-        Component("4", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player/player4.bmp");
-        }),
-        Component("5", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player/player5.bmp");
-        }),
-        Component("6", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player/player6.bmp");
-        }),
-        Component("7", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player/player7.bmp");
-        }),
-        Component("8", 0x00CC00).set_on_click([](){
-            swap_player_image("assets/player/player8.bmp");
+        Component("Exit Game", 0x00CC00).set_on_click([](){
+            GameState::exit_game();
         })
-        }, Menu::GRID, 2,0,-10, 2,4,true).second;
+    }, Menu::VERTICAL_LIST, 5, 0, 10).second;
 
     int group2 = pause_menu.add_component_group(BOTTOM_CENTER, {
         Component("1", 0x00CC00).set_on_click([](){
@@ -81,13 +62,18 @@ Menu build_pause_menu(){
         Component("8", 0x00CC00).set_on_click([](){
             swap_player_image("assets/player/player8.bmp");
         })
-        }, Menu::GRID, 2,0,0, 2,4,false).second;
-    pause_menu.set_selection_group(2);
+    }, Menu::GRID, 2,0,0, 2,4,false).second;
+
+    pause_menu.set_selection_group(group1);
     log(DEBUG, "pause");
 
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {
         pause_menu.control_reader.wait_button_release(PSP_CTRL_START);
-        pause_time += (sceKernelGetSystemTimeLow() - GameState::status_info.start_time);
+        GameState::update_status(GameState::RUNNING);
+    };
+
+    pause_menu.control_reader.on_button_press_circle = [&pause_menu]() {
+        pause_menu.control_reader.wait_button_release(PSP_CTRL_CIRCLE);
         GameState::update_status(GameState::RUNNING);
     };
 
@@ -97,7 +83,11 @@ Menu build_pause_menu(){
     };
 
     pause_menu.control_reader.on_button_press_down = [&pause_menu]() {
-        pause_menu.select_next(Menu::DOWN);
+        if (pause_menu.cursor_position & Menu::LAST_ROW) {
+            pause_menu.next_group();
+        } else {
+            pause_menu.select_next(Menu::DOWN);
+        }
         pause_menu.control_reader.wait_button_release(PSP_CTRL_DOWN);
     };
 

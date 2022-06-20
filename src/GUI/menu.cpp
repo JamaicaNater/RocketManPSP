@@ -447,6 +447,43 @@ void Menu::close() {
     }
 }
 
+void Menu::set_cursor_position() {
+    int rows = groups[selected_group].rows;
+    int cols = groups[selected_group].cols;
+    bool row_major = groups[selected_group].row_major;
+
+    cursor_position = 0;
+
+    if (row_major) {
+        if (selected_comp/cols == rows-1) {
+            // Bitwise or then assignment
+            cursor_position |= LAST_ROW;
+        }
+        if (selected_comp/cols == 0) {
+            cursor_position |= FIRST_ROW;
+        }
+        if (selected_comp%cols ==cols-1) {
+            cursor_position |= LAST_COL;
+        }
+        if (selected_comp%cols == 0) {
+            cursor_position |= FIRST_COL;
+        }
+    } else {
+        if (selected_comp%rows == rows-1) {
+            cursor_position |= LAST_ROW;
+        }
+        if (selected_comp%rows == 0) {
+            cursor_position |= FIRST_ROW;
+        }
+        if (selected_comp/cols ==cols-1) {
+            cursor_position |= LAST_COL;
+        }
+        if (selected_comp/cols == 0) {
+            cursor_position |= FIRST_COL;
+        }
+    }
+}
+
 std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr) {
     std::vector<int> selectable_arr;
     for (unsigned int i = 0; i < arr.size(); i++) {
@@ -463,7 +500,41 @@ int Menu::count_selectable_components(int group){
 }
 
 void Menu::set_selection_group(int group_index) {
+    if (!count_selectable_components(group_index)) {
+        log(WARNING, "Choosen group %d has not selectable components"
+            , group_index);
+    }
     selected_group = group_index;
+    selected_comp = 0;
+    set_cursor_position();
+    groups[selected_group].components[0]->select();
+}
+
+int Menu::set_selection_polarity(int pol){
+    if (components.size() == 0 || groups.size() == 0) {
+        log(WARNING, "Groups and / or component list is empty");
+        return -1;
+    }
+
+    std::vector<int> selectable =
+        get_selectable_components(groups[selected_group].components);
+
+    if (selectable.size() == 0) {
+        log(WARNING, "No selections for group %d group size %d", selected_group,
+            groups[selected_group].components.size());
+        return -1;
+    }
+
+    int index = selectable[selected_comp];
+
+    if (pol) {
+        groups[selected_group].components[index]->select();
+    }
+    else {
+        groups[selected_group].components[index]->deselect();
+    }
+
+    return 1;
 }
 
 void Menu::select_next(Direction direction) {
@@ -528,14 +599,7 @@ void Menu::select_next(Direction direction) {
             // If that is out of bounds subtract the max grid value to move to
             //the top of the grid, if the grid is not complete this is out of
             // bounds
-            if (selected_comp >= size) {
-                if (groups.size()-1 > selected_group && count_selectable_components(groups.size()-1)) {
-                    selected_group++;
-                    selected_comp = 0;
-                    break;
-                }
-                selected_comp %= (rows * cols);
-            }
+            if (selected_comp >= size) selected_comp %= (rows * cols);
 
             // Move selection in bounds
             if (selected_comp >= size) selected_comp = size-1;
@@ -612,6 +676,8 @@ void Menu::select_next(Direction direction) {
         assert(0, "value %d did not match a valid direction", direction);
         break;
     }
+    set_cursor_position();
+    log(DEBUG, "cur pos: %d", cursor_position);
 
     log(DEBUG, "selected: %d", selected_comp);
     log(DEBUG, "size: %d", groups[selected_group].components.size());
@@ -622,7 +688,36 @@ void Menu::select_next(Direction direction) {
     groups[selected_group].components[new_index]->select();
 }
 
-void Menu::click_selection(){
+void Menu::next_group() {
+    set_selection_polarity(0);
+    do {
+        selected_group =
+            (selected_group + 1 < groups.size()) ? selected_group + 1 : 0;
+        log(DEBUG, "Moving to next group");
+    } while (!count_selectable_components(selected_group));
+
+    selected_comp = 0;
+    set_cursor_position();
+    set_selection_polarity(1);
+}
+
+void Menu::prev_group() {
+    set_selection_polarity(0);
+    int num_selectable = 0;
+    do {
+        selected_group =
+            (selected_group - 1 > -1) ? selected_group - 1 : groups.size() - 1;
+        log(DEBUG, "Moving to prev group");
+
+        num_selectable = count_selectable_components(selected_group);
+    } while (!num_selectable);
+
+    selected_comp = num_selectable - 1;
+    set_cursor_position();
+    set_selection_polarity(1);
+}
+
+void Menu::click_selection() {
     // Get the array of selectable buttons within a group
     std::vector<int> selectable =
         get_selectable_components(groups[selected_group].components);
