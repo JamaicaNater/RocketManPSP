@@ -1,6 +1,7 @@
 #include <pspkernel.h>
 #include <math.h>
 #include <pspctrl.h>
+#include <random>
 
 #include "gamestate.h"
 
@@ -37,6 +38,7 @@ void GameState::init(){
     explosion_handler.init(new Animation(3, 5, 50000, "assets/misc/explosion.bmp"));
 
     control_reader.init();
+    srand(sceKernelGetSystemTimeLow());
 }
 
 void GameState::exit_game(){
@@ -76,7 +78,12 @@ void GameState::update(){
 }
 
 void GameState::update_nonplayer_actions() {
-    enemy_handler.spawn(Vector2d(300, noise_map[300]), enemy_img);
+    int spawn_pos_x;
+    do {
+        spawn_pos_x = rand() % MAP_SIZE;
+    } while (spawn_pos_x < PlayerHandler::player->vector.x + 50 && spawn_pos_x > PlayerHandler::player->vector.x - 50);
+    enemy_handler.spawn(Vector2d(spawn_pos_x, noise_map[spawn_pos_x]), enemy_img);
+
     explosion_handler.update_frames();
 
     update_kills(kill_counter);

@@ -12,7 +12,7 @@
 #include "../../physics/physics.h"
 #include "../../bmp/loadbmp.h"
 
-PlayerHandler::PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler) : 
+PlayerHandler::PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler) :
     ObjectHandler(2, _velocity, 0, Object::PLAYER
 ) {
     projectile_handler = _projectile_handler;
@@ -30,6 +30,7 @@ void PlayerHandler::init() {
     load_BMP(player->image);
 
     player->type = Object::PLAYER;
+    player->vector.x = MAP_SIZE/2;
     object_list.insert(player);
 
     weapon->vector.pivot = CENTER_LEFT;
@@ -89,8 +90,8 @@ void PlayerHandler::set_up_controls(){
             + (player->vector.direction==BACKWARD)*vec.get_mirrored_angle());
 
         // Add distance so the missile doesnt collide with player/weapon
-        vec.x = vec.x_i = weapon->vector.x + cos(rad)*25; 
-        vec.y = vec.y_i = weapon->vector.y + sin(rad)*25; 
+        vec.x = vec.x_i = weapon->vector.x + cos(rad)*25;
+        vec.y = vec.y_i = weapon->vector.y + sin(rad)*25;
         vec.vel_x = cos(rad) * 550;
         vec.vel_y = sin(rad) * 550;
 
@@ -108,7 +109,7 @@ void PlayerHandler::read_controls(){
 
     player_control_reader.read_controls();
 
-    // Jump 
+    // Jump
     if (!player->vector.vel_y) player->vector.y = (int)noise_map[player->vector.x];
 }
 
