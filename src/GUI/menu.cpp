@@ -538,28 +538,11 @@ int Menu::set_selection_polarity(int pol){
 }
 
 void Menu::select_next(Direction direction) {
-    if (components.size() == 0 || groups.size() == 0) {
-        log(WARNING, "Groups and / or component list is empty");
-        return;
-    }
-
-    // Get the array of selectable buttons within a group
-    std::vector<int> selectable =
-        get_selectable_components(groups[selected_group].components);
-
-    if (selectable.size() == 0) {
-        log(WARNING, "No selections for group %d group size %d", selected_group,
-            groups[selected_group].components.size());
-        return;
-    }
-
-    // Get the group array index of the item we wish to deselect
-    int old_index = selectable[selected_comp];
-    groups[selected_group].components[old_index]->deselect();  // Deselect the old item
+    set_selection_polarity(0);  // Deselect the old item
 
     int rows = groups[selected_group].rows;
     int cols = groups[selected_group].cols;
-    int size = selectable.size();
+    int size = count_selectable_components(selected_group);
 
     switch (direction)
     {
@@ -676,16 +659,13 @@ void Menu::select_next(Direction direction) {
         assert(0, "value %d did not match a valid direction", direction);
         break;
     }
-    set_cursor_position();
     log(DEBUG, "cur pos: %d", cursor_position);
-
     log(DEBUG, "selected: %d", selected_comp);
     log(DEBUG, "size: %d", groups[selected_group].components.size());
     log(DEBUG, "rows: %d cols: %d", rows, cols);
 
-    int new_index = selectable[selected_comp];
-    log(DEBUG, "index: %d", new_index);
-    groups[selected_group].components[new_index]->select();
+    set_cursor_position();
+    set_selection_polarity(1);  // Select the component
 }
 
 void Menu::next_group() {
