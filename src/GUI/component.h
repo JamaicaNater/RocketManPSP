@@ -39,6 +39,7 @@ public:
     Component(int _height, int _width, Shape s, uint32_t _color = 0x00000000);
     Component(const char * txt, uint32_t _color = 0x00000000);
     Component(Image _img, uint32_t _color = 0x00000000);
+    Component();
     ~Component();
 
     /**

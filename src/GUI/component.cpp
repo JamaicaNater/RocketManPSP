@@ -13,7 +13,7 @@ Component::Component(int _height, int _width, Shape s, uint32_t _color/* = 0x000
     data.type = PANEL_TYPE;
 }
 
-Component::Component(const char * txt, uint32_t _color/* = 0x00000000*/){
+Component::Component(const char * txt, uint32_t _color/* = 0x00000000*/) {
     width = get_font_width() * strlen(txt);
     height = get_font_height();
 
@@ -23,7 +23,7 @@ Component::Component(const char * txt, uint32_t _color/* = 0x00000000*/){
     data.type = LABEL_TYPE;
 }
 
-Component::Component(Image _img, uint32_t _color/* = 0x00000000*/){
+Component::Component(Image _img, uint32_t _color/* = 0x00000000*/) {
     width = _img.width;
     height = _img.height;
     background_color = _color;
@@ -32,8 +32,10 @@ Component::Component(Image _img, uint32_t _color/* = 0x00000000*/){
     data.type = IMAGE_TYPE;
 }
 
-Component::~Component()
-{
+Component::Component() {
+}
+
+Component::~Component() {
 }
 
 Component Component::set_x(int _x){

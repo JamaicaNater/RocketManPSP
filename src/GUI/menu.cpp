@@ -12,6 +12,7 @@ Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height,
             (uint32_t *)psp_malloc(_width * _height * sizeof(uint32_t)), "menu"
 ) {
     components.reserve(MAX_COMPONENTS);
+    log(DEBUG, "component vec ptr %0x, component capacity %d", components.data(), components.capacity());
     x = _x;
     y = _y;
     height = _height;
@@ -27,6 +28,7 @@ Menu::Menu(Position _pos, unsigned int _height, unsigned int _width,
     Vector2d vec = pos_to_coord(_pos, _height, _width, SCREEN_HEIGHT,
         SCREEN_WIDTH_RES, true, padding_x, padding_y);
     components.reserve(MAX_COMPONENTS);
+    log(DEBUG, "component vec ptr %0x, component capacity %d", components.data(), components.capacity());
     x = vec.x;
     y = vec.y;
     height = _height;
@@ -601,10 +603,7 @@ int Menu::set_selection_polarity(int pol){
     }
 
     log(DEBUG, "%0x", comp);
-    for (Component &comp : components){
-        comp.log_info();
-    }
-
+    log_comp_data();
 
     if (pol) {
         comp->select();
