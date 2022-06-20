@@ -81,6 +81,9 @@ void GameState::update_nonplayer_actions() {
 
     update_kills(kill_counter);
     kill_counter.update();
+
+    update_game_time_icon(game_time_icon);
+    game_time_icon.update();
 }
 
 void GameState::update_player_actions() {
@@ -106,7 +109,9 @@ void GameState::draw(){
     player_handler.draw();
     enemy_handler.draw();
     explosion_handler.draw();
+
     kill_counter.draw();
+    game_time_icon.draw();
 
     ObjectManager::draw_health_bars();
     //GFX::tint_screen(0x000000);

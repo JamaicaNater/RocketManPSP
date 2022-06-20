@@ -27,6 +27,7 @@ public:
     static int enemies_killed;
 
     Menu kill_counter = build_kill_counter();
+    Menu game_time_icon = build_game_time_icon();
 
     /**
      * @brief Exits the game
