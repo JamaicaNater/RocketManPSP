@@ -25,6 +25,7 @@ Menu build_title_menu() {
         })
         }, Menu::HORIZONTAL_LIST, 10, 0, -40) .second;
     title.set_selection_group(group);
+    log(DEBUG, "title");
 
     title.add_component(BOTTOM_LEFT,
     Component("Copyright 2022 Francis Williams", 0xFFFFFF)

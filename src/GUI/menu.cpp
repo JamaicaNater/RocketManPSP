@@ -11,6 +11,7 @@ Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height,
         : gui(_height, _width,
             (uint32_t *)psp_malloc(_width * _height * sizeof(uint32_t)), "menu"
 ) {
+    components.reserve(MAX_COMPONENTS);
     x = _x;
     y = _y;
     height = _height;
@@ -25,7 +26,7 @@ Menu::Menu(Position _pos, unsigned int _height, unsigned int _width,
 ) {
     Vector2d vec = pos_to_coord(_pos, _height, _width, SCREEN_HEIGHT,
         SCREEN_WIDTH_RES, true, padding_x, padding_y);
-
+    components.reserve(MAX_COMPONENTS);
     x = vec.x;
     y = vec.y;
     height = _height;
@@ -163,9 +164,8 @@ std::pair<int, int> Menu::add_component_group(Position pos,
     }
 
     std::vector<Component *> group_vec;
-    for (unsigned int i = components.size() - arr.size(); i < components.size(); i++) {
+    for (unsigned int i = first_comp_index; i < components.size(); i++) {
         group_vec.push_back(&components[i]);
-        log(DEBUG, "push back %d", i);
     }
     groups.push_back(GroupInfo(row_major, rows, cols, group_vec));
 
@@ -414,14 +414,22 @@ void Menu::update() {
     for (Component comp: components) {
         if (comp.hidden) continue;
 
-        if (comp.data.type == Component::IMAGE_TYPE) {
-            draw_img(comp);
-        }
-        if (comp.data.type == Component::LABEL_TYPE) {
-            draw_text(comp);
-        }
-        if (comp.data.type == Component::PANEL_TYPE) {
-            draw_panel(comp);
+        switch (comp.data.type) {
+            case Component::IMAGE_TYPE:
+                draw_img(comp);
+                break;
+
+            case Component::LABEL_TYPE:
+                draw_text(comp);
+                break;
+
+            case Component::PANEL_TYPE:
+                draw_panel(comp);
+                break;
+
+            default:
+                assert(0, "type %d not recognized", comp.data.type );
+                break;
         }
     }
 }
@@ -441,7 +449,6 @@ void Menu::close() {
 
 std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr) {
     std::vector<int> selectable_arr;
-
     for (unsigned int i = 0; i < arr.size(); i++) {
         if (arr[i]->selectable) selectable_arr.push_back(i);
     }
@@ -449,8 +456,14 @@ std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr) {
     return selectable_arr;
 }
 
+int Menu::count_selectable_components(int group){
+    if (group > groups.size()-1) return 0;
+
+    return get_selectable_components(groups[group].components).size();
+}
+
 void Menu::set_selection_group(int group_index) {
-    selected_group_id = group_index;
+    selected_group = group_index;
 }
 
 void Menu::select_next(Direction direction) {
@@ -461,19 +474,20 @@ void Menu::select_next(Direction direction) {
 
     // Get the array of selectable buttons within a group
     std::vector<int> selectable =
-        get_selectable_components(groups[selected_group_id].components);
+        get_selectable_components(groups[selected_group].components);
 
     if (selectable.size() == 0) {
-        log(WARNING, "No selections for group %d", selected_group_id);
+        log(WARNING, "No selections for group %d group size %d", selected_group,
+            groups[selected_group].components.size());
         return;
     }
 
     // Get the group array index of the item we wish to deselect
-    int old_index = selectable[selected_comp_id];
-    groups[selected_group_id].components[old_index]->deselect();  // Deselect the old item
+    int old_index = selectable[selected_comp];
+    groups[selected_group].components[old_index]->deselect();  // Deselect the old item
 
-    int rows = groups[selected_group_id].rows;
-    int cols = groups[selected_group_id].cols;
+    int rows = groups[selected_group].rows;
+    int cols = groups[selected_group].cols;
     int size = selectable.size();
 
     switch (direction)
@@ -481,26 +495,26 @@ void Menu::select_next(Direction direction) {
     case UP:
         if (rows <= 1) break;
 
-        if (groups[selected_group_id].row_major) {
-            selected_comp_id -= cols;  // Go to upper row
+        if (groups[selected_group].row_major) {
+            selected_comp -= cols;  // Go to upper row
             // If that is out of bounds add the max grid value to move to the
             // bottom of the grid, if the grid is not complete this is out of
             // bounds
-            if (selected_comp_id < 0) selected_comp_id += (rows * cols);
+            if (selected_comp < 0) selected_comp += (rows * cols);
 
             // Move selection in bounds
-            if (selected_comp_id >= size) selected_comp_id = size-1;
+            if (selected_comp >= size) selected_comp = size-1;
         }
         else { // Column Major
             // If current position is the first element...
-            if (selected_comp_id % rows == 0) {
+            if (selected_comp % rows == 0) {
                 // then to move up we wrap around to the end of the column...
-                selected_comp_id += rows - 1;
+                selected_comp += rows - 1;
                 // bounds checking if the grid is not complete
-                if (selected_comp_id >= size) selected_comp_id = size-1;
+                if (selected_comp >= size) selected_comp = size-1;
             } else {
                 // Otherwise just decrement
-                selected_comp_id--;
+                selected_comp--;
             }
         }
 
@@ -508,81 +522,88 @@ void Menu::select_next(Direction direction) {
     case DOWN:
         if (rows <= 1) break;
 
-        if (groups[selected_group_id].row_major) {
-            selected_comp_id += cols;  // Go to lower row
+        if (groups[selected_group].row_major) {
+            selected_comp += cols;  // Go to lower row
 
             // If that is out of bounds subtract the max grid value to move to
             //the top of the grid, if the grid is not complete this is out of
             // bounds
-            if (selected_comp_id >= size) selected_comp_id %= (rows * cols);
+            if (selected_comp >= size) {
+                if (groups.size()-1 > selected_group && count_selectable_components(groups.size()-1)) {
+                    selected_group++;
+                    selected_comp = 0;
+                    break;
+                }
+                selected_comp %= (rows * cols);
+            }
 
             // Move selection in bounds
-            if (selected_comp_id >= size) selected_comp_id = size-1;
+            if (selected_comp >= size) selected_comp = size-1;
         }
         else { // Column major
             // If current position is the last element...
-            if (selected_comp_id % rows == rows - 1) {
+            if (selected_comp % rows == rows - 1) {
                 // then to move down we wrap around to the end of the row...
-                selected_comp_id -= rows - 1;
+                selected_comp -= rows - 1;
             } else {
                 // Other wise just increment
-                selected_comp_id++;
+                selected_comp++;
                 // bounds checking if the grid is not complete
-                if (selected_comp_id >= size) selected_comp_id = rows * (size/rows);
+                if (selected_comp >= size) selected_comp = rows * (size/rows);
             }
         }
         break;
     case LEFT:
-        if (groups[selected_group_id].cols <= 1) break;
+        if (groups[selected_group].cols <= 1) break;
 
-        if (groups[selected_group_id].row_major) {
+        if (groups[selected_group].row_major) {
             // If current position is the first element...
-            if (selected_comp_id % cols == 0) {
+            if (selected_comp % cols == 0) {
                 // then to move left we wrap around to the back of the row...
-                selected_comp_id += cols - 1;
+                selected_comp += cols - 1;
                 // bounds checking if the grid is not complete
-                if (selected_comp_id >= size) selected_comp_id = size-1;
+                if (selected_comp >= size) selected_comp = size-1;
             } else {
                 // Other wise just decrement
-                selected_comp_id--;
+                selected_comp--;
             }
         }
         else {
-            selected_comp_id -= rows;  // Go to upper column
+            selected_comp -= rows;  // Go to upper column
             // If that is out of bounds add the max grid value to move to the
             // bottom of the grid, if the grid is not complete this is out of
             // bounds
-            if (selected_comp_id < 0) selected_comp_id += (rows * cols);
+            if (selected_comp < 0) selected_comp += (rows * cols);
 
             // Move selection in bounds
-            if (selected_comp_id >= size) selected_comp_id = size-1;
+            if (selected_comp >= size) selected_comp = size-1;
         }
 
         break;
     case RIGHT:
-        if (groups[selected_group_id].cols <= 1) break;
+        if (groups[selected_group].cols <= 1) break;
 
-        if (groups[selected_group_id].row_major) {
+        if (groups[selected_group].row_major) {
             // If current position is the last element...
-            if (selected_comp_id % cols == cols - 1) {
+            if (selected_comp % cols == cols - 1) {
                 // then to move right we wrap around to the front of the row...
-                selected_comp_id -= cols - 1;
+                selected_comp -= cols - 1;
             } else {
                 // Other wise just increment
-                selected_comp_id++;
+                selected_comp++;
                 // bounds checking if the grid is not complete
-                if (selected_comp_id >= size) selected_comp_id = cols * (size/cols);
+                if (selected_comp >= size) selected_comp = cols * (size/cols);
             }
         } else {
-            selected_comp_id += rows;  // Go to next column
+            selected_comp += rows;  // Go to next column
 
             // If that is out of bounds subtract the max grid value to move to
             // the top of the grid, if the grid is not complete this is out of
             // bounds
-            if (selected_comp_id >= size) selected_comp_id %= (rows * cols);
+            if (selected_comp >= size) selected_comp %= (rows * cols);
 
             // Move selection in bounds
-            if (selected_comp_id >= size) selected_comp_id = size-1;
+            if (selected_comp >= size) selected_comp = size-1;
         }
 
         break;
@@ -592,27 +613,27 @@ void Menu::select_next(Direction direction) {
         break;
     }
 
-    log(DEBUG, "selected: %d", selected_comp_id);
-    log(DEBUG, "size: %d", groups[selected_group_id].components.size());
+    log(DEBUG, "selected: %d", selected_comp);
+    log(DEBUG, "size: %d", groups[selected_group].components.size());
     log(DEBUG, "rows: %d cols: %d", rows, cols);
 
-    int new_index = selectable[selected_comp_id];
+    int new_index = selectable[selected_comp];
     log(DEBUG, "index: %d", new_index);
-    groups[selected_group_id].components[new_index]->select();
-    log(DEBUG, "here");
+    groups[selected_group].components[new_index]->select();
 }
 
 void Menu::click_selection(){
     // Get the array of selectable buttons within a group
     std::vector<int> selectable =
-        get_selectable_components(groups[selected_group_id].components);
+        get_selectable_components(groups[selected_group].components);
 
     if (selectable.size() == 0) {
-        log(WARNING, "No selections for group %d", selected_group_id);
+        log(WARNING, "No selections for group %d group size %d", selected_group,
+            groups[selected_group].components.size());
         return;
     }
 
     // Get the group array index of the item we wish to deselect
-    int index = selectable[selected_comp_id];
-    groups[selected_group_id].components[index]->on_click(); // do the on_click functions
+    int index = selectable[selected_comp];
+    groups[selected_group].components[index]->on_click(); // do the on_click functions
 }

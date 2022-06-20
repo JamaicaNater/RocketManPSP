@@ -98,4 +98,6 @@ public:
      *
      */
     Component set_on_click(std::function<void()> _on_click);
+
+    void log_info();
 };

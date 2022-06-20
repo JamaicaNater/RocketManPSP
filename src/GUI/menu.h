@@ -15,6 +15,8 @@ class Menu {
     enum Grouping{GRID, VERTICAL_LIST, HORIZONTAL_LIST};
     enum Direction{UP, DOWN, LEFT, RIGHT};
 
+    const static int MAX_COMPONENTS = 64;
+
     unsigned int x, y, height, width;
     uint32_t background_color;
     uint32_t selected_color = 0x0000AA;
@@ -117,6 +119,8 @@ class Menu {
      */
     std::vector<int> get_selectable_components(std::vector<Component *> arr);
 
+    int count_selectable_components(int group);
+
     void set_selection_group(int group_index);
 
     /**
@@ -133,8 +137,8 @@ class Menu {
     void click_selection();
 
  private:
-    int selected_comp_id = 0;
-    int selected_group_id = 0;
+    int selected_comp = 0;
+    int selected_group = 0;
 
     std::vector<Component> components;
     struct GroupInfo {

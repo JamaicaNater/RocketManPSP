@@ -1,6 +1,8 @@
 #include "component.h"
 #include "text_builder.h"
 
+char comp_types[4][11] = {"NONE_TYPE", "PANEL_TYPE", "LABEL_TYPE", "IMAGE_TYPE"};
+
 Component::Component(int _height, int _width, Shape s, uint32_t _color/* = 0x00000000*/
 ){
     width = _width;
@@ -72,4 +74,10 @@ Component Component::set_selectable(bool _selectable){
 Component Component::set_on_click(std::function<void()> _on_click){
     on_click = _on_click;
     return *this;
+}
+
+void Component::log_info(){
+    log(INFO, "x: %d y: %d, width: %d height %d, color %0x, type %d, "
+        "selectable %d, selected %d, hidden %d ptr %0x", x, y, width, height,
+        background_color, data.type, selectable, selected, hidden, this);
 }

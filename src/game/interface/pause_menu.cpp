@@ -16,18 +16,47 @@ void swap_player_image(const char * filename){
 
 Menu build_pause_menu(){
     Menu pause_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20);
+    pause_menu.selected_color = 0xAAAAAA;
 
     pause_menu.add_component(TOP_CENTER,
         Component("Game Paused", 0x00CC00)
-        .set_selectable(false), 0, -5
+        .set_selectable(true), 0, -5
     );
+    log(DEBUG, "pause");
 
     pause_menu.add_component(CENTER,
         Component("Change skin", 0x00CC00)
-        .set_selectable(false), 0, -30
+        .set_selectable(true), 0, -30
     );
+    log(DEBUG, "pause");
+    int group1= pause_menu.add_component_group(TOP_CENTER, {
+        Component("1", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player/player1.bmp");
+        }),
+        Component("2", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player/player2.bmp");
+        }),
+        Component("3", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player/player3.bmp");
+        }),
+        Component("4", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player/player4.bmp");
+        }),
+        Component("5", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player/player5.bmp");
+        }),
+        Component("6", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player/player6.bmp");
+        }),
+        Component("7", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player/player7.bmp");
+        }),
+        Component("8", 0x00CC00).set_on_click([](){
+            swap_player_image("assets/player/player8.bmp");
+        })
+        }, Menu::GRID, 2,0,-10, 2,4,true).second;
 
-    int group = pause_menu.add_component_group(BOTTOM_CENTER, {
+    int group2 = pause_menu.add_component_group(BOTTOM_CENTER, {
         Component("1", 0x00CC00).set_on_click([](){
             swap_player_image("assets/player/player1.bmp");
         }),
@@ -53,7 +82,8 @@ Menu build_pause_menu(){
             swap_player_image("assets/player/player8.bmp");
         })
         }, Menu::GRID, 2,0,0, 2,4,false).second;
-    pause_menu.set_selection_group(group);
+    pause_menu.set_selection_group(2);
+    log(DEBUG, "pause");
 
     pause_menu.control_reader.on_button_press_start = [&pause_menu]() {
         pause_menu.control_reader.wait_button_release(PSP_CTRL_START);
