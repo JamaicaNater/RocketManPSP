@@ -511,27 +511,16 @@ void Menu::set_selection_group(int group_index) {
 }
 
 int Menu::set_selection_polarity(int pol){
-    if (components.size() == 0 || groups.size() == 0) {
-        log(WARNING, "Groups and / or component list is empty");
+    Component * comp = get_selected_component();
+
+    if (!comp) {
         return -1;
     }
-
-    std::vector<int> selectable =
-        get_selectable_components(groups[selected_group].components);
-
-    if (selectable.size() == 0) {
-        log(WARNING, "No selections for group %d group size %d", selected_group,
-            groups[selected_group].components.size());
-        return -1;
-    }
-
-    int index = selectable[selected_comp];
 
     if (pol) {
-        groups[selected_group].components[index]->select();
-    }
-    else {
-        groups[selected_group].components[index]->deselect();
+        comp->select();
+    } else {
+        comp->deselect();
     }
 
     return 1;
@@ -695,6 +684,36 @@ void Menu::prev_group() {
     selected_comp = num_selectable - 1;
     set_cursor_position();
     set_selection_polarity(1);
+}
+
+Component * Menu::get_component(int index) {
+    if (index < 0 || index > components.size()) {
+        log(WARNING, "index of %d passed to get_component is out of bounds",
+            index);
+        return NULL;
+    }
+
+    return &components[index];
+}
+
+Component * Menu::get_selected_component() {
+    if (components.size() == 0 || groups.size() == 0) {
+        log(WARNING, "Groups and / or component list is empty");
+        return NULL;
+    }
+
+    std::vector<int> selectable =
+        get_selectable_components(groups[selected_group].components);
+
+    if (selectable.size() == 0) {
+        log(WARNING, "No selections for group %d group size %d", selected_group,
+            groups[selected_group].components.size());
+        return NULL;
+    }
+
+    int index = selectable[selected_comp];
+
+    return groups[selected_group].components[index];
 }
 
 void Menu::click_selection() {

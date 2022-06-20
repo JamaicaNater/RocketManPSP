@@ -144,6 +144,21 @@ class Menu {
      */
     void click_selection();
 
+    /**
+     * @brief Get component at an index
+     *
+     * @param index
+     * @return Component*
+     */
+    Component * get_component(int index);
+
+    /**
+     * @brief Get the selected component
+     *
+     * @return Component*
+     */
+    Component * get_selected_component();
+
  private:
     int selected_comp = 0;
     int selected_group = 0;

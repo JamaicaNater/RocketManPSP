@@ -20,6 +20,7 @@
 GameState::StatusInfo GameState::status_info = {GameState::RUNNING, sceKernelGetSystemTimeLow()};
 
 bool GameState::in_title = true;
+bool GameState::in_menu = false;
 
 void GameState::init(){
     log(INFO, "Init Gamestate");
@@ -46,6 +47,7 @@ void GameState::exit_game(){
 void GameState::title_screen() {
     Menu title_menu = build_title_menu();
     title_menu.on_open(title_menu);
+    in_title = true;
 }
 
 void GameState::on_pause(){
