@@ -43,7 +43,7 @@ void Menu::init() {
         assert(0, "call to 'components.reserve(MAX_COMPONENTS);' raised %s",
             e.what());
     }
-
+    update();
     initialized = true;
 }
 

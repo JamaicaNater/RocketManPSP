@@ -12,6 +12,8 @@
 #include "../../physics/physics.h"
 #include "../../bmp/loadbmp.h"
 
+#include "game/interface/death_menu.h"
+
 PlayerHandler::PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler) :
     ObjectHandler(2, _velocity, 0, Object::PLAYER
 ) {
@@ -122,5 +124,13 @@ void PlayerHandler::update_physics() {
 void PlayerHandler::on_off_screen(Object * obj)  {
     if (player->vector.x < 0) player->vector.x = 20;
     if (player->vector.x > MAP_SIZE) player->vector.x = MAP_SIZE - 50;
+}
+
+void PlayerHandler::on_zero_health(Object * obj) {
+    if(obj->type != Object::PLAYER) return;
+    ObjectHandler::on_zero_health(obj);
+
+    Menu death_menu = build_death_menu();
+    death_menu.on_open(death_menu);
 }
 

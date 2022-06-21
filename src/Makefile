@@ -14,6 +14,7 @@ OBJS = RocketMan.o \
 	game/interface/title_menu.o \
 	game/interface/main_menu.o \
 	game/interface/on_screen.o \
+	game/interface/death_menu.o \
 	graphics/gfx.o \
 	bmp/loadbmp.o \
 	logger/logger.o \
@@ -33,7 +34,7 @@ CFLAGS =
 CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra -Wdouble-promotion \
 					-Wno-unused-parameter -Warray-bounds -Wcoverage-mismatch \
 					-Wparentheses -Wunused-const-variable -Wuseless-cast \
-					-Wunused #-DPSP_LOGGING
+					-Wunused -DPSP_LOGGING
 ASFLAGS = $(CFLAGS)
 
 #PSP Stuff
