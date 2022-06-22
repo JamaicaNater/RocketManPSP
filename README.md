@@ -2,7 +2,7 @@
 
 Description:
 Rocketman PSP is a 2D platformer PSP game written in c++.
-Fight against the North Korean Military while trying not to blow yourself up in the process!
+Play as renowned singer Elton John and fight against the North Korean military while trying not to blow yourself up in the process!
 
 Technical Info:
 The program uses a built from scratch BMP loader and renderer as well as a logger and utility library for debugging, The GUI interface, image library, memory allocation wrapper, collisions manager and physics handler where all written from scratch
