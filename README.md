@@ -1,11 +1,14 @@
 # RocketManPSP
 
+Description:
 Rocketman PSP is a 2D platformer PSP game written in c++.
+Play as renowned singer Elton John and fight against the North Korean military while trying not to blow yourself up in the process!
 
-The program uses a built from scrtch BMP loader and renderer as well as a logger and utilty library for debugging, The GUI interface, image libray, memory allocation wrapper, collisions manager and physics handler where all writen from scratch
+Technical Info:
+The program uses a built from scratch BMP loader and renderer as well as a logger and utility library for debugging, The GUI interface, image library, memory allocation wrapper, collisions manager and physics handler where all written from scratch
 
 Installation Instructions:
-To install, navigate to the releases page and download the RocketMan zip. Once downloaded, simply navigate to the Game folder of your psp and unzip the files there. Alternatly these same step could be followed on the PPSSPP emulator.
+To install, navigate to the releases page and download the RocketMan zip. Once downloaded, simply navigate to the Game folder of your psp and unzip the files there. Alternatively these same steps could be followed on the PPSSPP emulator.
 
 screenshots:
 ![image](https://user-images.githubusercontent.com/52978102/174580752-26627dd4-655f-4754-b16d-d6836d467761.png)
