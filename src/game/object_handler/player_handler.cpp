@@ -131,6 +131,6 @@ void PlayerHandler::on_zero_health(Object * obj) {
     ObjectHandler::on_zero_health(obj);
 
     Menu death_menu = build_death_menu();
-    death_menu.on_open(death_menu);
+    death_menu.open();
 }
 

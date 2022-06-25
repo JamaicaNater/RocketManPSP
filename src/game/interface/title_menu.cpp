@@ -35,18 +35,18 @@ Menu build_title_menu() {
 
     title.setup_basic_controls();
 
-    title.on_open = [](Menu &self){
-        self.update();
-        self.draw_and_swap_buffers();
+    title.on_open = [](Menu * self){
+        self->update();
+        self->draw_and_swap_buffers();
         while (GameState::in_title)
         {
-            if (self.control_reader.read_controls()){
-                self.update();
-                self.draw_and_swap_buffers();
+            if (self->control_reader.read_controls()){
+                self->update();
+                self->draw_and_swap_buffers();
             }
         }
 
-        self.close();
+        self->close();
     };
 
     return title;

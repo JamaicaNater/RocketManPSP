@@ -112,23 +112,23 @@ Menu build_pause_menu(){
         pause_menu.control_reader.wait_button_release(PSP_CTRL_CROSS);
     };
 
-    pause_menu.on_open = [](Menu &self){
+    pause_menu.on_open = [](Menu * self){
         GFX::blur_screen();
         GFX::copy_buffers();
-        self.update();
-        self.draw_and_swap_buffers();
+        self->update();
+        self->draw_and_swap_buffers();
 
-        self.control_reader.wait_button_release(PSP_CTRL_START);
+        self->control_reader.wait_button_release(PSP_CTRL_START);
 
         while (GameState::status_info.status == GameState::PAUSED)
         {
-            if (self.control_reader.read_controls()){
-                self.update();
-                self.draw_and_swap_buffers();
+            if (self->control_reader.read_controls()){
+                self->update();
+                self->draw_and_swap_buffers();
             }
         }
 
-        self.close();
+        self->close();
     };
 
     return pause_menu;

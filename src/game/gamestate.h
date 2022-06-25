@@ -26,6 +26,8 @@ public:
 
     static int enemies_killed;
 
+    static unsigned int time_game_start;
+
     Menu kill_counter = build_kill_counter();
     Menu game_time_icon = build_game_time_icon();
 

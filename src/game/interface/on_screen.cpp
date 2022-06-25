@@ -44,9 +44,10 @@ Menu build_game_time_icon() {
     return game_time_icon;
 }
 
-void update_game_time_icon(Menu& clock) {
+void update_game_time_icon(Menu & clock) {
     log(DEBUG, "updating kills to %d", prev_kills);
 
     Component * clock_comp = clock.get_component(clock_index);
-    sprintf(clock_comp->data.data.text, "%ds", curr_time/SECOND);
+    sprintf(clock_comp->data.data.text, "%ds",
+        (curr_time - GameState::time_game_start)/SECOND);
 }

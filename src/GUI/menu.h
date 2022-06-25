@@ -33,7 +33,7 @@ class Menu {
 
     ControlReader control_reader;  // Todo init
 
-    std::function<void(Menu &self)> on_open;
+    std::function<void(Menu * self)> on_open;
 
     Image gui;
 
@@ -44,6 +44,12 @@ class Menu {
     ~Menu();
 
     void init();
+
+    /**
+     * @brief Run the on open function
+     *
+     */
+    void open();
 
     /**
      * @brief Set the name of the menu for debugging

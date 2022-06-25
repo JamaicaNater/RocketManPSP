@@ -8,10 +8,11 @@ namespace ObjectManager{
         for (int i = 0; i < ObjectList::_global_object_list->MAX_SIZE; i++) {
             if (!glob_objects[i]) continue;
             if (glob_objects[i]->type != Object::ENEMY) continue;
+            if (glob_objects[i]->off_screen()) continue;
 
 
             GFX::draw_progress_bar(glob_objects[i]->get_draw_x(),
-                glob_objects[i]->get_draw_y() - 5, 3, 30, 
+                glob_objects[i]->get_draw_y() - 5, 3, 30,
                 glob_objects[i]->health, glob_objects[i]->max_health, 0xFF00FF00, 0xFF0000FF);
             }
     }

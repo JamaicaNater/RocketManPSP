@@ -23,6 +23,8 @@ bool GameState::in_menu = false;
 
 int GameState::enemies_killed = 0;
 
+unsigned int GameState::time_game_start = 0;
+
 void GameState::init(){
     log(INFO, "Init Gamestate");
     GameState::update_status(RUNNING);
@@ -48,18 +50,20 @@ void GameState::exit_game(){
 void GameState::title_screen() {
     in_title = true;
     Menu title_menu = build_title_menu();
-    title_menu.on_open(title_menu);
+    title_menu.open();
 }
 
 void GameState::menu_screen() {
     in_menu = true;
     Menu main_menu = build_main_menu();
-    main_menu.on_open(main_menu);
+    main_menu.open();
+
+    time_game_start = sceKernelGetSystemTimeLow();
 }
 
 void GameState::on_pause(){
     Menu pause_menu = build_pause_menu();
-    pause_menu.on_open(pause_menu);
+    pause_menu.open();
 }
 
 void GameState::update(){

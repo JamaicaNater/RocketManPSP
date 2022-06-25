@@ -25,14 +25,14 @@ Menu build_main_menu() {
     main_menu.update();
     main_menu.draw_and_swap_buffers();
 
-    main_menu.on_open = [](Menu &self){
+    main_menu.on_open = [](Menu * self){
          while (GameState::in_menu) {
-            if (self.control_reader.read_controls()) {
-                self.update();
-                self.draw_and_swap_buffers();
+            if (self->control_reader.read_controls()) {
+                self->update();
+                self->draw_and_swap_buffers();
             }
         }
-        self.close();
+        self->close();
     };
 
     return main_menu;

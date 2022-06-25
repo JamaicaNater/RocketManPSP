@@ -47,6 +47,10 @@ void Menu::init() {
     initialized = true;
 }
 
+void Menu::open() {
+    this->on_open(this);
+}
+
 Menu Menu::set_name(const char * _name) {
     strncpy(menu_name, _name, 31);
 
