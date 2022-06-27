@@ -35,6 +35,66 @@ Image& Image::load() {
     return *this;
 }
 
+Image Image::trim_edges(){
+    int sim_width;
+    int sim_height;
+
+    sim_width = sim_height = 12;
+
+    int dis_cen_x;
+    int dis_cen_y;
+    int rad = sim_height/2;
+
+    // Bottom left
+    for(int y = 0; y < rad; y++) {
+        for (int x = 0; x < rad; x++) {
+            dis_cen_x = rad - x;
+            dis_cen_y = rad - y;
+
+            if(( (int)pow(dis_cen_x, 2) + (int)pow(dis_cen_y, 2)) > (int)pow(rad, 2)) {
+                img_matrix[width*y + x] = 0;
+            }
+        }
+    }
+    // bottom right corner
+    for(int y = 0; y < rad; y++) {
+        for (int x = width-rad; x < width; x++) {
+            dis_cen_x = width-rad + rad - x;
+            dis_cen_y = rad - y;
+
+            if((pow(dis_cen_x-rad-1, 2) + pow(dis_cen_y, 2)) > pow(rad, 2)) {
+                img_matrix[width*y + x] = 0;
+            }
+        }
+    }
+
+    // For circle position
+    int circle_y = height-sim_height-1;
+    // Top right corner
+    for(int y = height-rad; y < height; y++) {
+        for (int x = width-rad; x < width; x++) {
+            dis_cen_x = width-rad + rad - x;
+            dis_cen_y = rad - y;
+
+            if((pow(dis_cen_x-rad-1, 2) + pow(dis_cen_y+circle_y, 2)) > pow(rad, 2)) {
+                img_matrix[width*y + x] = 0;
+            }
+        }
+    }
+    // Top left corner
+    for(int y = height - rad; y < height; y++) {
+        for (int x = 0; x < rad; x++) {
+            dis_cen_x = rad - x;
+            dis_cen_y = rad - y;
+            if((pow(dis_cen_x, 2) + pow(dis_cen_y+circle_y, 2)) > pow(rad, 2)) {
+                img_matrix[width*y + x] = 0;
+            }
+        }
+    }
+
+    return *this;
+}
+
 /*
     Implementation of the nearest neighbor resize algorithm
     https://towardsdatascience.com/image-processing-image-scaling-algorithms-ae29aaa6b36c

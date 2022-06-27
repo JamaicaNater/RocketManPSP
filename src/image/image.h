@@ -31,6 +31,8 @@ struct Image {
      */
     Image& load();
 
+    Image trim_edges();
+
     /**
      * @brief Resize an image
      *

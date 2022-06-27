@@ -528,6 +528,7 @@ void Menu::update() {
 }
 
 void Menu::draw() {
+    gui.trim_edges();
     GFX::simple_drawBMP(x, y, gui);
 }
 
