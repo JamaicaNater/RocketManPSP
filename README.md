@@ -14,4 +14,4 @@ screenshots:
 ![image](https://github.com/JamaicaNater/RocketManPSP/assets/52978102/f221ebcf-c951-4f95-9e5b-9689c49506f3)
 ![image](https://github.com/JamaicaNater/RocketManPSP/assets/52978102/317cfefd-19e9-407a-8689-e5350cc6053d)
 ![image](https://user-images.githubusercontent.com/52978102/174581212-2125485f-cf5a-4ab9-92ce-b6f7161b0169.png)
-![image](https://github.com/JamaicaNater/RocketManPSP/assets/52978102/4f67044a-f2b7-4306-aa58-177ef3545870)
+![image](https://github.com/JamaicaNater/RocketManPSP/assets/52978102/c143e422-c4e6-4ab4-be9e-e0af74d17495)
