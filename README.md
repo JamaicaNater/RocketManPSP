@@ -11,8 +11,7 @@ Installation Instructions:
 To install, navigate to the releases page and download the RocketMan zip. Once downloaded, simply navigate to the Game folder of your psp and unzip the files there. Alternatively these same steps could be followed on the PPSSPP emulator.
 
 screenshots:
-![image](https://user-images.githubusercontent.com/52978102/174580752-26627dd4-655f-4754-b16d-d6836d467761.png)
-![image](https://user-images.githubusercontent.com/52978102/174580882-04822566-b310-4c8c-accf-341d52f0b524.png)
+![image](https://github.com/JamaicaNater/RocketManPSP/assets/52978102/f221ebcf-c951-4f95-9e5b-9689c49506f3)
+![image](https://github.com/JamaicaNater/RocketManPSP/assets/52978102/317cfefd-19e9-407a-8689-e5350cc6053d)
 ![image](https://user-images.githubusercontent.com/52978102/174581212-2125485f-cf5a-4ab9-92ce-b6f7161b0169.png)
-![image](https://user-images.githubusercontent.com/52978102/174581255-23fda162-d353-4efe-af8b-11ca3fe9004b.png)
-![image](https://user-images.githubusercontent.com/52978102/174724385-fb94f34a-1147-42bd-97dc-10eead5608a9.png)
+![image](https://github.com/JamaicaNater/RocketManPSP/assets/52978102/4f67044a-f2b7-4306-aa58-177ef3545870)
