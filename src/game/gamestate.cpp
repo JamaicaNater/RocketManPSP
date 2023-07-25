@@ -23,7 +23,7 @@ bool GameState::in_menu = false;
 
 int GameState::enemies_killed = 0;
 
-unsigned int GameState::time_game_start = 0;
+uint32_t GameState::time_game_start = 0;
 
 void GameState::init(){
     log(INFO, "Init Gamestate");

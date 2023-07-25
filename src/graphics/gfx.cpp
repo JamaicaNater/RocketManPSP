@@ -10,7 +10,7 @@
 
 #include "globals.h"
 
-#include "bmp/loadBMP.h"
+#include "bmp/loadbmp.h"
 #include "logger/logger.h"
 #include "image/image_utils.h"
 
@@ -27,7 +27,7 @@ namespace GFX
 	Image bground("assets/terrain/background.bmp");
 
 
-	bool is_transparent(unsigned int pixel) {
+	bool is_transparent(uint32_t pixel) {
 		return !(pixel&0xFF000000);
 	}
 
@@ -121,9 +121,9 @@ namespace GFX
 	void drawBMP(int x, int y, short rot, Position pivot, Flips direction, 
 		uint32_t filter, Image &img
 	){	
-		unsigned int * &image = img.img_matrix;
-		unsigned int &width = img.width;
-		unsigned int &height = img.height;
+		uint32_t * &image = img.img_matrix;
+		uint32_t &width = img.width;
+		uint32_t &height = img.height;
 		// If there is not a image present generate one and store it
 		if (!image) {
 			log(DEBUG, "call loadBMP on %s", img.filename);
@@ -285,11 +285,11 @@ namespace GFX
 		last_chunk_size = SCREEN_WIDTH_RES - (first_chunk_size+384);
 		last_chunk_size *= (last_chunk_size>0);
 		for(int y = y_i; y < y_f; y++){
-			memcpy(draw_buffer + (SCREEN_WIDTH*y), sky.img_matrix+(y)*sky.width+img_start_pos, first_chunk_size * sizeof(unsigned int));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size), sky.img_matrix+(y)*sky.width, chunk_size * sizeof(unsigned int));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+128), sky.img_matrix+(y)*sky.width, chunk_size * sizeof(unsigned int));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+256), sky.img_matrix+(y)*sky.width, chunk_size * sizeof(unsigned int));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+384), sky.img_matrix+(y)*sky.width, last_chunk_size * sizeof(unsigned int));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y), sky.img_matrix+(y)*sky.width+img_start_pos, first_chunk_size * sizeof(uint32_t));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size), sky.img_matrix+(y)*sky.width, chunk_size * sizeof(uint32_t));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+128), sky.img_matrix+(y)*sky.width, chunk_size * sizeof(uint32_t));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+256), sky.img_matrix+(y)*sky.width, chunk_size * sizeof(uint32_t));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+384), sky.img_matrix+(y)*sky.width, last_chunk_size * sizeof(uint32_t));
 		}
 
 		//Draw Blue sky
@@ -306,10 +306,10 @@ namespace GFX
 		last_chunk_size = SCREEN_WIDTH_RES - (first_chunk_size+384);
 		last_chunk_size *= (last_chunk_size>0);
 		for (int y = y_i; y < y_f; y++) {
-			memcpy(draw_buffer + (SCREEN_WIDTH*y) , bground.img_matrix+(y-y_i)*chunk_size+img_start_pos, first_chunk_size * sizeof(unsigned int) );
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size) , bground.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+chunk_size) , bground.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+chunk_size*2) , bground.img_matrix+(y-y_i)*chunk_size, last_chunk_size * sizeof(unsigned int) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y) , bground.img_matrix+(y-y_i)*chunk_size+img_start_pos, first_chunk_size * sizeof(uint32_t) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size) , bground.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(uint32_t) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+chunk_size) , bground.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(uint32_t) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+first_chunk_size+chunk_size*2) , bground.img_matrix+(y-y_i)*chunk_size, last_chunk_size * sizeof(uint32_t) );
 		}
 
 		// Draw bottom 64 dirt
@@ -321,12 +321,12 @@ namespace GFX
 		last_chunk_size = SCREEN_WIDTH_RES - (192+first_chunk_size+256);
 		last_chunk_size *= (last_chunk_size>0);
 		for(int y = y_i; y <= y_f; y++) {
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192) , dirt.img_matrix+(y-y_i)*chunk_size+img_start_pos, first_chunk_size * sizeof(unsigned int) );
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size*2) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int) );
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size*3) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(unsigned int));
-			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size*4) , dirt.img_matrix+(y-y_i)*chunk_size, last_chunk_size * sizeof(unsigned int));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192) , dirt.img_matrix+(y-y_i)*chunk_size+img_start_pos, first_chunk_size * sizeof(uint32_t) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(uint32_t) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(uint32_t) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size*2) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(uint32_t) );
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size*3) , dirt.img_matrix+(y-y_i)*chunk_size, chunk_size * sizeof(uint32_t));
+			memcpy(draw_buffer + (SCREEN_WIDTH*y+192+first_chunk_size+chunk_size*4) , dirt.img_matrix+(y-y_i)*chunk_size, last_chunk_size * sizeof(uint32_t));
 		}
 		
 

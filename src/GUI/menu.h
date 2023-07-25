@@ -26,7 +26,7 @@ class Menu {
 
     const static int MAX_COMPONENTS = 32;
 
-    unsigned int x, y, height, width;
+    uint32_t x, y, height, width;
     uint32_t background_color;
     uint32_t selected_color = 0x0000AA;
     char menu_name[32] = "";
@@ -37,9 +37,9 @@ class Menu {
 
     Image gui;
 
-    Menu(unsigned int _x, unsigned int _y, unsigned int _height,
-        unsigned int _width, uint32_t color);
-    Menu(Position _pos, unsigned int _height, unsigned int _width,
+    Menu(uint32_t _x, uint32_t _y, uint32_t _height,
+        uint32_t _width, uint32_t color);
+    Menu(Position _pos, uint32_t _height, uint32_t _width,
         uint32_t _color, int padding_x = 0, int padding_y = 0);
     ~Menu();
 
@@ -301,8 +301,8 @@ class Menu {
      * it lower
      * @return Vector2d (x,y) coords
      */
-    Vector2d pos_to_coord(Position pos, unsigned int height_obj,
-        unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
+    Vector2d pos_to_coord(Position pos, uint32_t height_obj,
+        uint32_t width_obj, uint32_t height_pan, uint32_t width_pan,
         bool screen_coord, int padding_x = 0, int padding_y = 0);
 
     /**

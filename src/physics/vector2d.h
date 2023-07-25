@@ -11,7 +11,7 @@ struct Vector2d {
     constexpr static float grav = 70.0f;
     int16_t x_i = 0, y_i = 0, x = 0, y = 0, vel_x = 0, vel_y = 0, acc_x = 0,
         acc_y = 0, angle = 0;
-    unsigned int t0_x = 0, t0_y = 0;  //t0 for velocity and gravity calculations
+    uint32_t t0_x = 0, t0_y = 0;  //t0 for velocity and gravity calculations
     Flips direction;
     Position pivot = CENTER;
 

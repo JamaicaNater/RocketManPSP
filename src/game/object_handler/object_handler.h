@@ -62,8 +62,8 @@ public:
 protected:
     Object::ObjectTypes type = Object::NONE;
     ObjectList object_list;
-    unsigned int time_between_spawns = 0;
-    unsigned int last_spawn = 0;
+    uint32_t time_between_spawns = 0;
+    uint32_t last_spawn = 0;
     int velocity;
     int MAX_COLLISIONS = 0;
     std::set<Object::ObjectTypes> ignore_collisions_with;

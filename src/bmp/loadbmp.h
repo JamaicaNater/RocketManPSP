@@ -22,7 +22,7 @@ int load_BMP(Image &img);
  * @param buf 
  * @param filename 
  */
-void write_BMP(unsigned int *height,unsigned int *width, unsigned int * &buf, const char * filename);
+void write_BMP(uint32_t *height,uint32_t *width, uint32_t * &buf, const char * filename);
 
 /**
  * @brief Reads in a large image composed of multiple sprites in different 

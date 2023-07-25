@@ -12,7 +12,7 @@ float map(float num, int range) {
 	return num * range;
 }
 
-unsigned int swap_endian(unsigned int data)
+uint32_t swap_endian(uint32_t data)
 {
 	return  (data&0x0000FF00) | (data&0xFF000000) | (data&0x00FF0000)>>16 | (data&0x000000FF)<<16;
 }
@@ -24,6 +24,6 @@ int get_cam_position(int player_postion, int center) {
 	return player_postion-center;
 }
 
-unsigned int get_time(){
+uint32_t get_time(){
 	return sceKernelGetSystemTimeLow() - pause_time;
 }

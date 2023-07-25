@@ -17,8 +17,8 @@ class Object {
     int draw_pos_x; // postion to draw at
     int health = 100, max_health = 100;
 
-    unsigned int next_damage_event = 0;
-    unsigned int invincibility_time = 10 * MILLISECOND;
+    uint32_t next_damage_event = 0;
+    uint32_t invincibility_time = 10 * MILLISECOND;
 
     Vector2d vector;
 

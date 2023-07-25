@@ -26,12 +26,12 @@ private:
     friend class ProjectileHandler;
     struct FrameData
     {
-        unsigned int last_updated = 0;
-        unsigned int curr_frame = 0;
+        uint32_t last_updated = 0;
+        uint32_t curr_frame = 0;
     };
 
     FrameData * frame_data = NULL;
     Animation * animation = NULL;
 
-    const unsigned int FRAME_TIME = 30 * MILLISECOND;
+    const uint32_t FRAME_TIME = 30 * MILLISECOND;
 };

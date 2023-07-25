@@ -7,14 +7,14 @@
 struct MemNode
 {
     void * ptr;
-    unsigned int bytes;
+    uint32_t bytes;
 };
 
 struct MemMap {
     static const int MAX_SIZE = 256;
     MemNode arr[MAX_SIZE] = {0,0};
     unsigned short num_allocated = 0;
-    unsigned int bytes_allocated = 0;
+    uint32_t bytes_allocated = 0;
 
     int insert(MemNode m){
         int index = MAX_SIZE;
@@ -62,7 +62,7 @@ void init_malloc(){
         map.num_allocated, map.bytes_allocated);
 }
 
-void * psp_malloc(unsigned int bytes, const char * debug_info){
+void * psp_malloc(uint32_t bytes, const char * debug_info){
     void * ptr = malloc(bytes);
 
     assert(map.insert({ptr,bytes})>-1, "psp_malloc inserted %u" 

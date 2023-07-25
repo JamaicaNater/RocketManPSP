@@ -6,8 +6,8 @@
 #include "graphics/gfx.hpp"
 #include "text_builder.h"
 
-Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height,
-    unsigned int _width, uint32_t _color)
+Menu::Menu(uint32_t _x, uint32_t _y, uint32_t _height,
+    uint32_t _width, uint32_t _color)
         : gui(_height, _width,
             (uint32_t *)psp_malloc(_width * _height * sizeof(uint32_t)), "menu"
 ) {
@@ -18,7 +18,7 @@ Menu::Menu(unsigned int _x, unsigned int _y, unsigned int _height,
     background_color = _color;
 }
 
-Menu::Menu(Position _pos, unsigned int _height, unsigned int _width,
+Menu::Menu(Position _pos, uint32_t _height, uint32_t _width,
     uint32_t _color, int padding_x/* = 0*/, int padding_y/* = 0*/)
         : gui(_height, _width,
             (uint32_t *)psp_malloc(_width * _height * sizeof(uint32_t)), "menu"
@@ -95,8 +95,8 @@ void Menu::log_comp_data() {
     }
 }
 
-Vector2d Menu::pos_to_coord(Position pos, unsigned int height_obj,
-    unsigned int width_obj, unsigned int height_pan, unsigned int width_pan,
+Vector2d Menu::pos_to_coord(Position pos, uint32_t height_obj,
+    uint32_t width_obj, uint32_t height_pan, uint32_t width_pan,
     bool screen_coord, int padding_x/* = 0*/, int padding_y/* = 0*/
 ) {
     // Center of the panel we are placing the object on
@@ -255,7 +255,7 @@ std::pair<int, int> Menu::add_component_group(Position pos,
     }
 
     std::vector<Component *> group_vec;
-    for (unsigned int i = first_comp_index; i < components.size(); i++) {
+    for (uint32_t i = first_comp_index; i < components.size(); i++) {
         group_vec.push_back(&components[i]);
     }
     groups.push_back(GroupInfo(row_major, rows, cols, group_vec));
@@ -282,11 +282,11 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     int tallest[rows] = {0};
 
     // Total dimensions of the grid
-    unsigned int total_height = 0;
-    unsigned int total_width = 0;
+    uint32_t total_height = 0;
+    uint32_t total_width = 0;
 
     // Determine the widest and tallest member of each column and row
-    for (unsigned int i = 0; i < arr.size(); i++) {
+    for (uint32_t i = 0; i < arr.size(); i++) {
         if (arr[i].width > widest[i%cols]) widest[i%cols] = arr[i].width;
         if (arr[i].height > tallest[i/cols]) tallest[i/cols] = arr[i].height;
     }
@@ -321,7 +321,7 @@ void Menu::add_grid_row_major(Position pos, std::vector<Component> arr,
     curr_coord.y += total_height - tallest[0];
     int start_x = curr_coord.x;
 
-    for (unsigned int i = 0; i < arr.size(); i++) {
+    for (uint32_t i = 0; i < arr.size(); i++) {
         if (i % cols == 0 && i > 0) {  // next row
             curr_coord.y -= (tallest[i/cols] + spacing);
             curr_coord.x = start_x;
@@ -359,11 +359,11 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     int tallest[rows] = {0};
 
     // Total dimensions of the grid
-    unsigned int total_height = 0;
-    unsigned int total_width = 0;
+    uint32_t total_height = 0;
+    uint32_t total_width = 0;
 
     // Determine the widest and tallest member of each column and row
-    for (unsigned int i = 0; i < arr.size(); i++) {
+    for (uint32_t i = 0; i < arr.size(); i++) {
         if (arr[i].width > widest[i/rows]) widest[i/rows] = arr[i].width;
         if (arr[i].height > tallest[i%rows]) tallest[i%rows] = arr[i].height;
     }
@@ -400,7 +400,7 @@ void Menu::add_grid_col_major(Position pos, std::vector<Component> arr,
     // We draw components top down left to right
     curr_coord.y += total_height;
     int start_y = curr_coord.y;
-    for (unsigned int i = 0; i < arr.size(); i++) {
+    for (uint32_t i = 0; i < arr.size(); i++) {
         // Move for next element
         if (i % rows == 0 && i > 0) {  // next col
             curr_coord.x += (widest[(i-1)/rows] + spacing);
@@ -473,8 +473,8 @@ void Menu::draw_img(Component comp) {
     assert(comp.data.type == Component::IMAGE_TYPE, "");
 
     Image _img = comp.data.data.img;
-    for (unsigned int y = comp.y; y < _img.height + comp.y; y++) {
-        for (unsigned int x = comp.x; x < _img.width + comp.x; x++) {
+    for (uint32_t y = comp.y; y < _img.height + comp.y; y++) {
+        for (uint32_t x = comp.x; x < _img.width + comp.x; x++) {
             if (y < height && x < width) {
                 if (GFX::is_transparent(_img.img_matrix[_img.width*(y - comp.y) + (x - comp.x)])){
                     if (comp.background_color ) {
@@ -501,7 +501,7 @@ Menu Menu::set_pos(Position pos, int padding_x/* = 0*/, int padding_y/* = 0*/) {
 }
 
 void Menu::update() {
-    for (unsigned int i = 0; i < width * height; i++) {
+    for (uint32_t i = 0; i < width * height; i++) {
         gui.img_matrix[i] = background_color;
     }
     for (Component comp: components) {
@@ -588,7 +588,7 @@ void Menu::set_cursor_position() {
 
 std::vector<int> Menu::get_selectable_components(std::vector<Component *> arr) {
     std::vector<int> selectable_arr;
-    for (unsigned int i = 0; i < arr.size(); i++) {
+    for (uint32_t i = 0; i < arr.size(); i++) {
         if (arr[i]->selectable) selectable_arr.push_back(i);
     }
 

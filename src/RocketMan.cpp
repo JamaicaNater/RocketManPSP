@@ -15,8 +15,8 @@
 #include "../Dependencies/FastNoise/FastNoise.hpp"
 
 unsigned char * noise_map = (unsigned char*)malloc(MAP_SIZE);
-unsigned int curr_time = 0;
-unsigned int pause_time = 0;
+uint32_t curr_time = 0;
+uint32_t pause_time = 0;
 int camera_x = 0;
 
 #define printf pspDebugScreenPrintf
@@ -70,7 +70,7 @@ int main()
 	}
 
 	// FPS calculation
-	unsigned int start_time = 0, end_time = 0;
+	uint32_t start_time = 0, end_time = 0;
 
 	GameState game_state = GameState();
 	game_state.init();

@@ -24,7 +24,7 @@ namespace GFX
 	 * @return true - Pixel is transparent
 	 * @return false Pixel is not transparent
 	 */
-	bool is_transparent(unsigned int pixel);
+	bool is_transparent(uint32_t pixel);
 
 	void clear();
 	/**

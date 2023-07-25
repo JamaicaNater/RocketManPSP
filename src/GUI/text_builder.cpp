@@ -22,8 +22,8 @@ Image text(const char * txt) {
     int letter_size = font.height * font.width;
     int length = strlen(txt);
 
-    unsigned int * img_matrix = (unsigned int *)psp_malloc(letter_size
-        * length * sizeof(unsigned int));
+    uint32_t * img_matrix = (uint32_t *)psp_malloc(letter_size
+        * length * sizeof(uint32_t));
     if (!img_matrix) {
         log(CRITICAL, "Failed to allocate memory for text builder");
     }
@@ -31,10 +31,10 @@ Image text(const char * txt) {
     while (txt[index]) {
         Image letter = font.get_frame(convert_ascii(txt[index]));
         // Draw each letter in the img_matrix
-        for (unsigned int y = 0; y < font.height; y++) {
+        for (uint32_t y = 0; y < font.height; y++) {
             memcpy(&img_matrix[y*length*font.width + index * font.width],
                 &letter.img_matrix[y * font.width],
-                font.width * sizeof(unsigned int));
+                font.width * sizeof(uint32_t));
         }
 
         index++;

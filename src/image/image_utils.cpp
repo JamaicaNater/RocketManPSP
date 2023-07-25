@@ -1,6 +1,6 @@
 #include "image/image_utils.h"
 
-unsigned int average(unsigned int * arr, int size) {
+uint32_t average(uint32_t * arr, int size) {
     int sum = 0;
     for (int i = 0; i < size; i++) {
         sum += arr[i];

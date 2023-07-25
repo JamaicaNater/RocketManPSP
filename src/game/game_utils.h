@@ -15,9 +15,9 @@ float map(float num, int range);
  * @brief Converts date from big endian to little endian and vice versa
  * 
  * @param data data in original endianess
- * @return unsigned int data in new endianess
+ * @return uint32_t data in new endianess
  */
-unsigned int swap_endian(unsigned int data);
+uint32_t swap_endian(uint32_t data);
 
 /**
  * @brief Get the cam position given the player position. We generally want the 
@@ -35,6 +35,6 @@ int get_cam_position(int player_postion, int center);
  * @brief Wrapper for sceKernelGetSystemTimeLow() that takes into account the 
  * time we spend paused
  * 
- * @return unsigned int 
+ * @return uint32_t 
  */
-unsigned int get_time();
+uint32_t get_time();
