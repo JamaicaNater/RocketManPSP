@@ -1,8 +1,8 @@
 #pragma once
 
 #include <pspctrl.h>
-
-#include "object_handler.h"
+#include "game/game_globals.h"
+#include "object/object_handler.h"
 #include "projectile_handler.h"
 
 #include "controls/control_reader.h"

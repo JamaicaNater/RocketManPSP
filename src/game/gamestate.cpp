@@ -4,9 +4,12 @@
 #include <random>
 
 #include "gamestate.h"
+#include "game_globals.h"
+
+#include "game_utils.h"
+#include "game/graphics/game_graphics.h"
 
 #include "graphics/gfx.hpp"
-#include "game_utils.h"
 #include "logger/logger.h"
 #include "bmp/loadbmp.h"
 #include "object_handler/global_object_manager.h"
@@ -110,7 +113,7 @@ void GameState::update_physics(){
 }
 
 void GameState::draw(){
-    GFX::drawTerrain();
+    drawTerrain();
     GFX::simple_drawBMP(0, SCREEN_HEIGHT-64-2,  status_bar);
     GFX::draw_progress_bar(50, 240, 20, 120,
         PlayerHandler::get_player_val().health,

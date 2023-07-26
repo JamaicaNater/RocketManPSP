@@ -5,11 +5,13 @@
 #include <cstdlib>
 
 #include "globals.h"
+#include "game/game_globals.h"
 #include "game/gamestate.h"
 #include "game/game_utils.h"
 #include "logger/logger.h"
 #include "memory/psp_malloc.h"
 #include "graphics/gfx.hpp"
+#include "game/graphics/game_graphics.h"
 #include "GUI/text_builder.h"
 
 #include "../Dependencies/FastNoise/FastNoise.hpp"
@@ -59,7 +61,7 @@ int main()
 	setupCallbacks();
 	pspDebugScreenInit();
 
-	GFX::load_terrain_textures();
+	load_terrain_textures();
 	GFX::init();
 
 	// Terrain Generation

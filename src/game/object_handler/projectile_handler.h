@@ -1,6 +1,6 @@
 #pragma once
 
-#include "object_handler.h"
+#include "object/object_handler.h"
 #include "animation_handler.h"
 
 class ProjectileHandler : public ObjectHandler

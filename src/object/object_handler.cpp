@@ -1,3 +1,4 @@
+#include "game/game_globals.h" // TODO remove in doecouple
 #include "object_handler.h"
 #include "logger/logger.h"
 #include "graphics/gfx.hpp"

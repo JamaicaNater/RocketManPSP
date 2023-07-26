@@ -3,7 +3,6 @@ OBJS = RocketMan.o \
 	game/gamestate.o \
 	game/game_utils.o \
 	game/interface/pause_menu.o \
-	game/object_handler/object_handler.o \
 	game/object_handler/enemy_handler.o \
 	game/object_handler/projectile_handler.o \
 	game/object_handler/animation_handler.o \
@@ -15,6 +14,7 @@ OBJS = RocketMan.o \
 	game/interface/main_menu.o \
 	game/interface/on_screen.o \
 	game/interface/death_menu.o \
+	game/graphics/game_graphics.o \
 	graphics/gfx.o \
 	bmp/loadbmp.o \
 	logger/logger.o \
@@ -23,7 +23,7 @@ OBJS = RocketMan.o \
 	physics/physics.o physics/collisions.o physics/vector2d.o \
 	GUI/text_builder.o GUI/menu.o GUI/component.o \
 	image/image.o image/animation.o image/image_utils.o \
-	object/object_list.o object/object.o \
+	object/object_list.o object/object.o object/object_handler.o \
 
 LIBS = -lstdc++ -lm
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum

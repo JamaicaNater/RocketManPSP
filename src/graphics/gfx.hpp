@@ -10,6 +10,9 @@ enum Flips : int8_t;
 
 namespace GFX 
 {
+	extern uint32_t* draw_buffer;
+    extern uint32_t* disp_buffer;
+
 	/**
 	 * @brief Sets up draw and display buffers
 	 * 
@@ -46,12 +49,6 @@ namespace GFX
 	 * 
 	 */
 	void swapBuffers();
-
-	/**
-	 * @brief Draws the background terrain of the worm
-	 * 
-	 */
-	void drawTerrain();
 
 	/**
 	 * @brief Blurs the screen;
@@ -105,10 +102,4 @@ namespace GFX
 	 */
 	void drawBMP(int x, int y, short rot, Position pivot, Flips direction, 
 		uint32_t filter, Image &image); // TODO: char direction???
-
-	/**
-	 * @brief Loads textures needed for the terrain
-	 * 
-	 */
-	void load_terrain_textures();
 }

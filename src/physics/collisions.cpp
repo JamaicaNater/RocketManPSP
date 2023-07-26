@@ -1,5 +1,6 @@
 #include "globals.h"
 
+#include "game/game_globals.h" // TODO remove in doecouple
 #include "object/object_list.h"
 #include "logger/logger.h"
 #include "physics/collisions.h"

@@ -1,5 +1,4 @@
-#ifndef PSP_GLOBS
-#define PSP_GLOBS
+#pragma once
 #include <cstdint>
 
 #define MAP_SIZE 3000
@@ -17,8 +16,3 @@
 
 extern uint32_t curr_time;
 extern uint32_t pause_time;
-
-// Game Specific
-extern unsigned char * noise_map;
-extern int camera_x;
-#endif

@@ -1,5 +1,7 @@
 #include "object/object.h"
 
+#include "game/game_globals.h" // TODO remove in doecouple
+
 Object::Object() {}
 Object::Object(Image _img) {
     image = _img;
