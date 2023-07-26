@@ -5,7 +5,7 @@
 #include "object_handler/explosion_handler.h"
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
-#include "../controls/control_reader.h"
+#include "controls/control_reader.h"
 
 #include "game/interface/on_screen.h"
 

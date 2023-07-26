@@ -1,6 +1,6 @@
 #include <cstdint> 
 #include "../game_globals.h"
-#include "../../graphics/gfx.hpp"
+#include "graphics/gfx.hpp"
 #include "image/image.h"
 #include "bmp/loadbmp.h"
 

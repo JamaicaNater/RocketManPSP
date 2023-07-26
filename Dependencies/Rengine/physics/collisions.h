@@ -11,12 +11,3 @@
  * @return Object* - Number of objects we collided with.
  */
 int object_collision(Object * obj, ObjectList &collisions, std::set<Object::ObjectTypes> ignore);
-
-/**
- * @brief Detects collisions with the terrain
- *
- * @param obj the object we are checking
- * @return true - collision detected
- * @return false - no collision
- */
-bool terrain_collision(Object * obj);

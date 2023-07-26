@@ -3,14 +3,14 @@
 #include <pspkernel.h>
 #include <math.h>
 
-#include "../../globals.h"
+#include "globals.h"
 
 #include "../gamestate.h"
 #include "../game_utils.h"
 
-#include "../../graphics/gfx.hpp"
-#include "../../physics/physics.h"
-#include "../../bmp/loadbmp.h"
+#include "graphics/gfx.hpp"
+#include "physics/physics.h"
+#include "bmp/loadbmp.h"
 
 #include "game/interface/death_menu.h"
 

@@ -4,10 +4,11 @@
 #include <pspthreadman.h>
 #include <cstdlib>
 
-#include "globals.h"
 #include "game/game_globals.h"
 #include "game/gamestate.h"
 #include "game/game_utils.h"
+
+#include "globals.h"
 #include "logger/logger.h"
 #include "memory/psp_malloc.h"
 #include "graphics/gfx.hpp"

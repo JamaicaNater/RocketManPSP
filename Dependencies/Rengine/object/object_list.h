@@ -3,7 +3,6 @@
 #include <set>
 
 #include "object/object.h"
-#include "game/object_handler/global_object_manager.h"
 
 struct ObjectList {
  public:
@@ -81,8 +80,6 @@ struct ObjectList {
     Object * * objects;
     static ObjectList * _global_object_list;
     friend int object_collision(Object*, ObjectList&, std::set<Object::ObjectTypes>);
-
-    friend void ObjectManager::draw_health_bars();
 
     /**
      * @brief Private insert method, inserts to a given list without inserting

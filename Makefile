@@ -1,5 +1,6 @@
+ENGINE_PATH := $(shell pwd)/Dependencies/Rengine
 all:
-	$(MAKE) -C src
+	ENGINE_PATH=$(ENGINE_PATH) $(MAKE) -C src
 
 clean:
 	$(MAKE) -C src clean
