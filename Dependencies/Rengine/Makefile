@@ -8,7 +8,7 @@ OBJS = graphics/gfx.o \
 	image/image.o image/animation.o image/image_utils.o \
 	object/object_list.o object/object.o object/object_handler.o
 
-LIBRARY_NAME = librocketman.a
+LIBRARY_NAME = rengine.a
 
 PSPSDK=$(shell psp-config --pspsdk-path)
 

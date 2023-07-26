@@ -5,8 +5,9 @@
 
 ProjectileHandler::ProjectileHandler(int MAX_OBJECTS, int velocity, 
     int _time_between_spawns, Object::ObjectTypes type, 
+    int * camera_x, unsigned char * terrain, 
     AnimationHandler * _explosion_handler) : 
-    ObjectHandler(MAX_OBJECTS, velocity, _time_between_spawns, type
+    ObjectHandler(MAX_OBJECTS, velocity, _time_between_spawns, camera_x, terrain, type
 ){
     explosion_handler = _explosion_handler;
     MAX_COLLISIONS = 4;

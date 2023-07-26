@@ -1,16 +1,17 @@
-#include "game/game_globals.h" // TODO remove in doecouple
 #include "object_handler.h"
 #include "logger/logger.h"
 #include "graphics/gfx.hpp"
 #include "physics/collisions.h"
 #include "physics/physics.h"
 
-ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity,
-    int _time_between_spawns, Object::ObjectTypes _type)
+ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, 
+    int _time_between_spawns, int * camera_x, unsigned char * terrain, 
+    Object::ObjectTypes _type)
 {
     log(DEBUG, "Calling ObjectList for objects");
     object_list = *(new ObjectList(MAX_OBJECTS));
-
+    camera_x = camera_x;
+    terrain = terrain;
     velocity = _velocity;
     time_between_spawns = _time_between_spawns;
     type = _type;
@@ -53,11 +54,11 @@ void ObjectHandler::update_physics(){
 
         if (objects[i]->vector.vel_y) {
             apply_gravity(objects[i]->vector);
-            if (objects[i]->vector.y > noise_map[objects[i]->vector.x]) { // End of jump
+            if (objects[i]->vector.y > terrain[objects[i]->vector.x]) { // End of jump
                 objects[i]->vector.vel_y = objects[i]->vector.y_i = 0;
             }
         } else {
-            objects[i]->vector.y = noise_map[objects[i]->vector.x];
+            objects[i]->vector.y = terrain[objects[i]->vector.x];
         }
 
         objects[i]->vector.x += objects[i]->vector.vel_x;
@@ -72,9 +73,9 @@ void ObjectHandler::draw(){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
-        if (objects[i]->off_screen()) continue;
+        if (objects[i]->off_screen(*camera_x)) continue;
 
-        GFX::drawBMP(objects[i]->get_draw_x(), objects[i]->get_draw_y(),
+        GFX::drawBMP(objects[i]->get_draw_x(*camera_x), objects[i]->get_draw_y(),
             objects[i]->vector.angle, objects[i]->vector.pivot,
             objects[i]->vector.direction, 0, objects[i]->image);
     }
@@ -123,11 +124,11 @@ void ObjectHandler::check_collisions(int MAX_COLLISIONS){
             }
         }
 
-        if (objects[i] && terrain_collision(objects[i])){
+        if (objects[i] && terrain_collision(objects[i], terrain)){
             on_terrain_collision(objects[i]);
         }
 
-        if (objects[i] && objects[i]->off_screen()) {
+        if (objects[i] && objects[i]->off_screen(*camera_x)) {
             on_off_screen(objects[i]);
         }
     }

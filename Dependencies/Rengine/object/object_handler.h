@@ -56,10 +56,25 @@ public:
      */
     virtual void init();
 
-    ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns,
-        Object::ObjectTypes type);
+    /**
+     * @brief Create the handler for the Enemy object
+     *
+     * @param MAX_OBJECTS max objects
+     * @param velocity speed of objects
+     * @param time_between_spawns time for each object to spawn
+     * @param position of the camera
+     * @param terrain 
+     * @param type type of object
+     */
+    ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, 
+        int * camera_x, unsigned char * terrain, Object::ObjectTypes type);
+    
     virtual ~ObjectHandler();
 protected:
+    // TODO make generic
+    int * camera_x; 
+    char * terrain;
+
     Object::ObjectTypes type = Object::NONE;
     ObjectList object_list;
     uint32_t time_between_spawns = 0;

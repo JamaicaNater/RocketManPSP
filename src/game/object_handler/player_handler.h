@@ -56,7 +56,8 @@ public:
      */
     virtual void on_zero_health(Object * obj) override;
 
-    PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler);
+    PlayerHandler(int _velocity, int * camera_x, unsigned char * terrain, 
+        ProjectileHandler * _projectile_handler);
     ~PlayerHandler();
 private:
     ControlReader player_control_reader;

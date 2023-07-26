@@ -31,6 +31,7 @@ LIBS = -lstdc++ -lm
 #-lpspmath
 
 INCDIR   := $(INCDIR) . $(ENGINE_PATH)
+LDFLAGS := $(addprefix -L,$(LIBDIR) $(ENGINE_PATH))
 
 CFLAGS =
 CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra -Wdouble-promotion \
@@ -38,6 +39,10 @@ CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra -Wdouble-promotion \
 					-Wparentheses -Wunused-const-variable -Wuseless-cast \
 					-Wunused #-DPSP_LOGGING
 ASFLAGS = $(CFLAGS)
+
+# Link your objects and your custom library
+$(TARGET).elf: $(OBJS)
+	$(LINK.c) $^ $(LIBS) -o $@ $(LDFLAGS) -l$(LIBNAME)
 
 #PSP Stuff
 BUILD_PRX = 1

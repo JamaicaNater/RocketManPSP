@@ -7,7 +7,7 @@ class AnimationHandler : public ObjectHandler
 {
 public:
     AnimationHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, 
-        Object::ObjectTypes _type);
+        int * camera_x, unsigned char * terrain, Object::ObjectTypes _type);
     ~AnimationHandler();
 
     /**

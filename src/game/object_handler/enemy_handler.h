@@ -28,8 +28,18 @@ public:
      */
     void on_zero_health(Object * obj) override;
 
-    EnemyHandler(int MAX_OBJECTS, int _velocity,
-        int _time_between_spawns, Object::ObjectTypes _type);
+    /**
+     * @brief Create the handler for the Enemy object
+     *
+     * @param MAX_OBJECTS max objects
+     * @param velocity speed of objects
+     * @param time_between_spawns time for each object to spawn
+     * @param position of the camera
+     * @param terrain 
+     * @param type type of object
+     */
+    EnemyHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns,
+        int * _camera_x, unsigned char * _terrain, Object::ObjectTypes type);
     ~EnemyHandler();
 
 private:

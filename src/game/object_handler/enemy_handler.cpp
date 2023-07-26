@@ -36,9 +36,9 @@ void EnemyHandler::on_zero_health(Object * obj) {
     ObjectHandler::on_zero_health(obj);
 }
 
-EnemyHandler::EnemyHandler(int MAX_OBJECTS, int _velocity,
-    int _time_between_spawns, Object::ObjectTypes _type) :
-    ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns, _type
+EnemyHandler::EnemyHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns,
+    int * _camera_x, unsigned char * _terrain, Object::ObjectTypes _type) :
+    ObjectHandler(MAX_OBJECTS, _velocity, _time_between_spawns, _camera_x, _terrain, _type 
 ) {
     MAX_COLLISIONS = 1;
     ignore_collisions_with = {Object::ENEMY, Object::WEAPON};

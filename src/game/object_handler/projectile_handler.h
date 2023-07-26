@@ -6,8 +6,9 @@
 class ProjectileHandler : public ObjectHandler
 {
 public:
-    ProjectileHandler(int MAX_OBJECTS, int velocity, int _time_between_spawns, 
-    Object::ObjectTypes type, AnimationHandler * _explosion_handler);
+    ProjectileHandler(int MAX_OBJECTS, int velocity, int _time_between_spawns,
+    Object::ObjectTypes type, int * camera_x, unsigned char * terrain, 
+    AnimationHandler * _explosion_handler);
     ~ProjectileHandler();
 
     /**

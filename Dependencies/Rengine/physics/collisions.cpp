@@ -50,3 +50,7 @@ int object_collision(Object * obj, ObjectList &collisions, std::set<Object::Obje
     }
     return collisions.size;
 }
+
+bool terrain_collision(Object * obj, char * terrain) {
+    return obj->vector.y >= terrain[obj->vector.x];
+}

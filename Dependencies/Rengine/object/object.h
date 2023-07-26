@@ -36,18 +36,22 @@ class Object {
     /**
      * @brief Returns whether or not if the object is off the screen
      *
+     * @param camera_x x position of camera
+     * 
      * @return true
      * @return false
      */
-    bool off_screen();
+    bool off_screen(int camera_x);
 
     /**
      * @brief We dont draw objects as their precise x and y position, the x and
      * y refer to the position of the image corner
      *
+     * @param camera_x x position of camera
+     * 
      * @return int
      */
-    int get_draw_x();
+    int get_draw_x(int camera_x);
 
     /**
      * @brief We dont draw objects as their precise x and y position, the x and

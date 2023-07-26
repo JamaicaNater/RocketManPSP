@@ -14,8 +14,9 @@
 
 #include "game/interface/death_menu.h"
 
-PlayerHandler::PlayerHandler(int _velocity, ProjectileHandler * _projectile_handler) :
-    ObjectHandler(2, _velocity, 0, Object::PLAYER
+PlayerHandler::PlayerHandler(int _velocity, int * camera_x, 
+    unsigned char * terrain, ProjectileHandler * _projectile_handler) :
+    ObjectHandler(2, _velocity, 0, camera_x, terrain, Object::PLAYER
 ) {
     projectile_handler = _projectile_handler;
 }
@@ -107,7 +108,7 @@ void PlayerHandler::set_up_controls(){
 
 void PlayerHandler::read_controls(){
     player->vector.vel_x = 0;// reset velocity; TODO: slowdown mechanic
-    camera_x = get_cam_position(player->vector.x, SCREEN_WIDTH/2);
+    *camera_x = get_cam_position(player->vector.x, SCREEN_WIDTH/2);
 
     player_control_reader.read_controls();
 

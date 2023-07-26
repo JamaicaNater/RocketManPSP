@@ -2,7 +2,9 @@
 class ExplosionHandler : public AnimationHandler
 {
 public:
-    ExplosionHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, Object::ObjectTypes _type);
+    ExplosionHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns,
+    int * camera_x, unsigned char * terrain, Object::ObjectTypes _type);
+
     ~ExplosionHandler();
     
     /**

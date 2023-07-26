@@ -1,8 +1,8 @@
 #include "explosion_handler.h"
 
 ExplosionHandler::ExplosionHandler(int MAX_OBJECTS, int _velocity,
-    int _time_between_spawns, Object::ObjectTypes _type)
-        : AnimationHandler(MAX_OBJECTS, _velocity,  _time_between_spawns, _type
+    int _time_between_spawns, int * camera_x, unsigned char * terrain, Object::ObjectTypes _type)
+        : AnimationHandler(MAX_OBJECTS, _velocity,  _time_between_spawns, camera_x, terrain, _type
 ) {
     time_between_spawns = 0;
     MAX_COLLISIONS = 5;

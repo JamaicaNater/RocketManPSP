@@ -76,6 +76,12 @@ struct ObjectList {
      */
     bool is_empty();
 
+   /**
+    * Returns every object thats has been created
+    * @return Every object thats has been created
+   */
+    static ObjectList* getGlobalObjectList();
+
  private:
     Object * * objects;
     static ObjectList * _global_object_list;
