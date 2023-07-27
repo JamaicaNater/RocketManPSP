@@ -25,7 +25,8 @@ OBJS = RocketMan.o \
 	# image/image.o image/animation.o image/image_utils.o \
 	# object/object_list.o object/object.o object/object_handler.o \
 
-LIBS = -lstdc++ -lm
+LIBS = -lstdc++ -lm -lrengine
+
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum
 #-lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp
 #-lpspmath

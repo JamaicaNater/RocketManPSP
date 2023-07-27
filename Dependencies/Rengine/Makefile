@@ -8,18 +8,18 @@ OBJS = graphics/gfx.o \
 	image/image.o image/animation.o image/image_utils.o \
 	object/object_list.o object/object.o object/object_handler.o
 
-LIBRARY_NAME = rengine.a
+LIBRARY_NAME = librengine.a
 
 PSPSDK=$(shell psp-config --pspsdk-path)
-
+LIBS = -lstdc++ -lm
 CXX      = psp-g++
 
 # Add PSPSDK includes and libraries.
 INCDIR   := $(INCDIR) . $(PSPDEV)/psp/include $(PSPSDK)/include
 LIBDIR   := $(LIBDIR) . $(PSPDEV)/psp/lib $(PSPSDK)/lib
 
-CFLAGS   := $(addprefix -I,$(INCDIR)) -G0 $(CFLAGS)
-CXXFLAGS := $(CFLAGS) $(CXXFLAGS)
+CFLAGS   := $(addprefix -I,$(INCDIR)) -G0 $(CFLAGS) -std=c++14 -fno-rtti -O3 
+CXXFLAGS := $(CFLAGS) $(CXXFLAGS) $(LIBS)
 ASFLAGS  := $(CFLAGS) $(ASFLAGS)
 
 all: $(LIBRARY_NAME)

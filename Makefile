@@ -1,5 +1,14 @@
 ENGINE_PATH := $(shell pwd)/Dependencies/Rengine
-game:
+
+all: 
+	$(MAKE) build-engine
+	$(MAKE) build-game
+
+clean:
+	$(MAKE) clean-engine
+	$(MAKE) clean-game
+
+build-game:
 	ENGINE_PATH=$(ENGINE_PATH) $(MAKE) -C src
 
 clean-game:
