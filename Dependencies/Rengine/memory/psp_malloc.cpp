@@ -4,6 +4,8 @@
 
 #include "logger/logger.h"
 
+const int MAX_SIZE = 256;
+
 struct MemNode
 {
     void * ptr;
@@ -11,7 +13,6 @@ struct MemNode
 };
 
 struct MemMap {
-    static const int MAX_SIZE = 256;
     MemNode arr[MAX_SIZE] = {0,0};
     unsigned short num_allocated = 0;
     uint32_t bytes_allocated = 0;

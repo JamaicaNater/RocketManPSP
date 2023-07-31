@@ -11,15 +11,15 @@ OBJS = graphics/gfx.o \
 LIBRARY_NAME = librengine.a
 
 PSPSDK=$(shell psp-config --pspsdk-path)
-LIBS = -lstdc++ -lm
+
 CXX      = psp-g++
 
 # Add PSPSDK includes and libraries.
 INCDIR   := $(INCDIR) . $(PSPDEV)/psp/include $(PSPSDK)/include
 LIBDIR   := $(LIBDIR) . $(PSPDEV)/psp/lib $(PSPSDK)/lib
 
-CFLAGS   := $(addprefix -I,$(INCDIR)) -G0 $(CFLAGS) -std=c++14 -fno-rtti -O3 
-CXXFLAGS := $(CFLAGS) $(CXXFLAGS) $(LIBS)
+CFLAGS   := $(addprefix -I,$(INCDIR)) -G0 $(CFLAGS)
+CXXFLAGS := $(CFLAGS) $(CXXFLAGS) $(EXTRA_ARGS)
 ASFLAGS  := $(CFLAGS) $(ASFLAGS)
 
 all: $(LIBRARY_NAME)

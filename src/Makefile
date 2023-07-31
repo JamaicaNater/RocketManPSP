@@ -25,7 +25,7 @@ OBJS = RocketMan.o \
 	# image/image.o image/animation.o image/image_utils.o \
 	# object/object_list.o object/object.o object/object_handler.o \
 
-LIBS = -lstdc++ -lm -lrengine
+LIBS = -lrengine -lstdc++ -lm 
 
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum
 #-lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp
@@ -38,12 +38,8 @@ CFLAGS =
 CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra -Wdouble-promotion \
 					-Wno-unused-parameter -Warray-bounds -Wcoverage-mismatch \
 					-Wparentheses -Wunused-const-variable -Wuseless-cast \
-					-Wunused #-DPSP_LOGGING
+					-Wunused $(EXTRA_ARGS)
 ASFLAGS = $(CFLAGS)
-
-# Link your objects and your custom library
-$(TARGET).elf: $(OBJS)
-	$(LINK.c) $^ $(LIBS) -o $@ $(LDFLAGS) -l$(LIBNAME)
 
 #PSP Stuff
 BUILD_PRX = 1

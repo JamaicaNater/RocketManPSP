@@ -16,6 +16,8 @@ enum levels{DEBUG_H, DEBUG, INFO, WARNING, ERROR, CRITICAL};
  */
 void log(unsigned char level, const char* format, ...);
 
+void init_log();
+
 /**
  * @brief Closes the log file
  *

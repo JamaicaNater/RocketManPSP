@@ -57,10 +57,11 @@ void setupCallbacks()
 
 int main()
 {
+	pspDebugScreenInit();
 	init_malloc();
 	init_text_builder();
 	setupCallbacks();
-	pspDebugScreenInit();
+	
 
 	load_terrain_textures();
 	GFX::init();

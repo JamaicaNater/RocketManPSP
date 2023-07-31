@@ -8,22 +8,24 @@
 
 #include <cstring>
 
-#ifdef PSP_LOGGING
 const char * logger_file = "umd0:/logs/logger.log";
-SceUID fd = sceIoOpen(logger_file, PSP_O_WRONLY | PSP_O_CREAT | PSP_O_TRUNC,
-    0777);
-#endif
-
+SceUID fd = -1;
 
 char levels_text[6][10] = {"DEBUG-H", "DEBUG", "INFO", "WARNING", "ERROR",
     "CRITICAL"};
 
 void log(unsigned char level, const char* format, ... ) {
     #ifdef PSP_LOGGING
+    if (fd == -1) {
+        init_log();
+    }
     if (fd < 0) {
         pspDebugScreenInit();
-        pspDebugScreenPrintf("Failed to open logger file at %s, please make "
-            "sure the path exists, exiting in 10 seconds", logger_file);
+        pspDebugScreenPrintf("%d", fd);
+        pspDebugScreenPrintf("%s", format);
+        pspDebugScreenPrintf("Failed to log \"%s\" to %s please make sure the "
+            "path exists, fd: %d, exiting in 10 seconds\n", 
+            format, logger_file, fd);
         sceKernelDelayThread(10 * SECOND);
         sceKernelExitGame();
     }
@@ -43,6 +45,27 @@ void log(unsigned char level, const char* format, ... ) {
         close_log();
         sceKernelExitGame();
     }
+    #endif
+}
+
+void init_log() {
+    #ifdef PSP_LOGGING
+    pspDebugScreenInit();
+    pspDebugScreenPrintf("init");
+    fd = sceIoOpen(logger_file,  PSP_O_TRUNC | PSP_O_RDWR, 0777);
+
+    SceUID file = sceIoOpen("umd0:/logs/logger.log", PSP_O_RDWR, 0777);
+
+    if (file < 0) {
+        pspDebugScreenPrintf("Error opening the file.\n");
+        sceKernelDelayThread(10 * SECOND);
+    }
+
+    // // Write some data to the file
+    // fprintf(file, "Hello, world!\n");
+
+    // // Close the file when done writing
+    // fclose(file);
     #endif
 }
 

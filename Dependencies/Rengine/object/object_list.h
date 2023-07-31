@@ -80,7 +80,7 @@ struct ObjectList {
     * Returns every object thats has been created
     * @return Every object thats has been created
    */
-    static ObjectList* getGlobalObjectList();
+    static ObjectList* get_global_object_list();
 
  private:
     Object * * objects;

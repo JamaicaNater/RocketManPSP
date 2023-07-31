@@ -5,8 +5,8 @@
 
 namespace ObjectManager{
     void draw_health_bars(){
-        Object ** glob_objects = ObjectList::getGlobalObjectList()->get_list();
-        for (int i = 0; i < ObjectList::getGlobalObjectList()->MAX_SIZE; i++) {
+        Object ** glob_objects = ObjectList::get_global_object_list()->get_list();
+        for (int i = 0; i < ObjectList::get_global_object_list()->MAX_SIZE; i++) {
             if (!glob_objects[i]) continue;
             if (glob_objects[i]->type != Object::ENEMY) continue;
             if (glob_objects[i]->off_screen(camera_x)) continue;

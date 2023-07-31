@@ -86,6 +86,10 @@ Object * * ObjectList::get_list() {
     return objects;
 }
 
+ObjectList * ObjectList::get_global_object_list() {
+    return _global_object_list;
+}
+
 bool ObjectList::is_full() {
     return size == MAX_SIZE;
 }

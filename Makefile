@@ -1,8 +1,10 @@
 ENGINE_PATH := $(shell pwd)/Dependencies/Rengine
+EXTRA_ARGS := -DPSP_LOGGING
+rebuild: clean all
 
 all: 
-	$(MAKE) build-engine
-	$(MAKE) build-game
+	EXTRA_ARGS=$(EXTRA_ARGS) $(MAKE) build-engine
+	EXTRA_ARGS=$(EXTRA_ARGS) $(MAKE) build-game
 
 clean:
 	$(MAKE) clean-engine
