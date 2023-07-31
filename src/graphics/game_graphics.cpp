@@ -1,5 +1,5 @@
 #include <cstdint> 
-#include "../game_globals.h"
+#include "game_globals.h"
 #include "gfx.hpp"
 #include "image/image.h"
 #include "loadbmp.h"

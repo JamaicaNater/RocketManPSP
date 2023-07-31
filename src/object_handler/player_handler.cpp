@@ -5,14 +5,14 @@
 
 #include "globals.h"
 
-#include "game/gamestate.h"
-#include "game/game_utils.h"
+#include "gamestate.h"
+#include "game_utils.h"
 
 #include "gfx.hpp"
 #include "physics/physics.h"
 #include "loadbmp.h"
 
-#include "game/interface/death_menu.h"
+#include "interface/death_menu.h"
 
 PlayerHandler::PlayerHandler(int _velocity, int * camera_x, 
     unsigned char * terrain, ProjectileHandler * _projectile_handler) :

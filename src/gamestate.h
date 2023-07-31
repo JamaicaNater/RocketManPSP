@@ -7,7 +7,7 @@
 #include "object_handler/player_handler.h"
 #include "control_reader.h"
 
-#include "game/interface/on_screen.h"
+#include "interface/on_screen.h"
 
 // TODO make singleton
 class GameState

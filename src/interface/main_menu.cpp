@@ -1,9 +1,9 @@
-#include "game/interface/main_menu.h"
+#include "interface/main_menu.h"
 
 #include "GUI/menu.h"
 
 #include "loadbmp.h"
-#include "game/gamestate.h"
+#include "gamestate.h"
 
 Menu build_main_menu() {
     Menu main_menu = Menu(CENTER, SCREEN_HEIGHT, SCREEN_WIDTH_RES, 0xC0C0C0, 0, 0)

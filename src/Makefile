@@ -1,20 +1,20 @@
 TARGET = Tutorial
 OBJS = RocketMan.o \
-	game/gamestate.o \
-	game/game_utils.o \
-	game/interface/pause_menu.o \
-	game/object_handler/enemy_handler.o \
-	game/object_handler/projectile_handler.o \
-	game/object_handler/animation_handler.o \
-	game/object_handler/global_object_manager.o \
-	game/object_handler/player_handler.o \
-	game/object_handler/explosion_handler.o \
-	game/interface/pause_menu.o \
-	game/interface/title_menu.o \
-	game/interface/main_menu.o \
-	game/interface/on_screen.o \
-	game/interface/death_menu.o \
-	game/graphics/game_graphics.o \
+    gamestate.o \
+    game_utils.o \
+    interface/pause_menu.o \
+    object_handler/enemy_handler.o \
+    object_handler/projectile_handler.o \
+    object_handler/animation_handler.o \
+    object_handler/global_object_manager.o \
+    object_handler/player_handler.o \
+    object_handler/explosion_handler.o \
+    interface/pause_menu.o \
+    interface/title_menu.o \
+    interface/main_menu.o \
+    interface/on_screen.o \
+    interface/death_menu.o \
+    graphics/game_graphics.o \
 
 LIBS = -lrocket_engine -lstdc++ -lm 
 
@@ -22,7 +22,7 @@ LIBS = -lrocket_engine -lstdc++ -lm
 #-lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp
 #-lpspmath
 
-INCDIR   := $(INCDIR) ./game $(ENGINE_PATH)/include
+INCDIR   := $(INCDIR) . $(ENGINE_PATH)/include
 LDFLAGS := $(addprefix -L,$(LIBDIR) $(ENGINE_PATH))
 
 CFLAGS =

@@ -2,7 +2,7 @@
 
 #include <pspthreadman.h>
 
-#include "game/gamestate.h"
+#include "gamestate.h"
 
 #include "gfx.hpp"
 #include "loadbmp.h"

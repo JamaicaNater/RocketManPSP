@@ -14,6 +14,8 @@
 To build an run ```make``` to build the game, then execute EBOOT.PBP on your emulator
 Alternatively you can just navigate to the releases page and download the RocketMan zip. Once downloaded, simply navigate to the Game folder of your psp and unzip the files there. Alternatively these same steps could be followed on the PPSSPP emulator.
 
+Note: Due to flatpak file permissions, if you wish to run the game with logging enabled you will need to run flatpak using the host filesystem. ```flatpak run --filesystem=host org.ppsspp.PPSSPP```
+
 # Description:
 Rocketman PSP is a 2D platformer PSP game written in c++.
 Play as renowned singer Elton John and fight against the a mercenary group while trying not to blow yourself up in the process!

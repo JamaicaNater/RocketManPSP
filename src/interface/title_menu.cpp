@@ -2,7 +2,7 @@
 
 #include "loadbmp.h"
 #include "GUI/menu.h"
-#include "game/gamestate.h"
+#include "gamestate.h"
 
 Menu build_title_menu() {
     Menu title = Menu(CENTER, SCREEN_HEIGHT, SCREEN_WIDTH_RES, 0xC0C0C0, 0, 0)

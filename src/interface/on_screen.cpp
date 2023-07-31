@@ -1,8 +1,8 @@
-#include "game/interface/on_screen.h"
+#include "interface/on_screen.h"
 
 #include "globals.h"
 
-#include "game/gamestate.h"
+#include "gamestate.h"
 
 #include "GUI/menu.h"
 

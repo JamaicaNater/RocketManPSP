@@ -7,7 +7,7 @@
 #include "game_globals.h"
 
 #include "game_utils.h"
-#include "game/graphics/game_graphics.h"
+#include "graphics/game_graphics.h"
 
 #include "gfx.hpp"
 #include "logger.h"

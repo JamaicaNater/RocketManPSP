@@ -1,6 +1,6 @@
 #include "GUI/menu.h"
 
-#include "game/gamestate.h"
+#include "gamestate.h"
 #include "gfx.hpp"
 
 Menu build_death_menu() {

@@ -1,6 +1,6 @@
 #include "enemy_handler.h"
 
-#include "game/gamestate.h"
+#include "gamestate.h"
 
 void EnemyHandler::update_movement(int player_x){
     Object ** objects = object_list.get_list();
