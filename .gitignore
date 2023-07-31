@@ -8,5 +8,5 @@ src/cppclean
 *.o
 *.elf
 *.prx
-*.PBP
+# *.PBP
 *.SFO
