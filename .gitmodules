@@ -1,0 +1,3 @@
+[submodule "Dependencies/RocketEngine"]
+	path = Dependencies/RocketEngine
+	url = https://github.com/JamaicaNater/RocketEngine.git
