@@ -4,6 +4,9 @@
 #include "physics/collisions.h"
 #include "physics/physics.h"
 
+#include "logger/logger.h"
+#include "object/object.h"
+
 ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, 
     int _time_between_spawns, int * camera_x, unsigned char * terrain, 
     Object::ObjectTypes _type)
@@ -37,8 +40,8 @@ void ObjectHandler::spawn(Vector2d v, Image _img) {
     object->vector = v;
     object->type = type;
 
-    log(DEBUG, "Spawned:%s ptr: %0x",
-    _img.filename, _img.img_matrix);
+    log(DEBUG, "Spawned:%s ptr: %0x at %d, %d",
+    _img.filename, _img.img_matrix, v.x, v.y);
 
     assert((object_list.insert(object) > -1), "Object spawned successfully");
     last_spawn = curr_time;
@@ -53,11 +56,21 @@ void ObjectHandler::update_physics(){
         if (!objects[i]) continue;
 
         if (objects[i]->vector.vel_y) {
+            if (objects[i]->type == Object::PLAYER) {
+                log(INFO, "vector 1: %s", objects[i]->vector.to_string());
+            }
+
             apply_gravity(objects[i]->vector);
             if (objects[i]->vector.y > terrain[objects[i]->vector.x]) { // End of jump
                 objects[i]->vector.vel_y = objects[i]->vector.y_i = 0;
             }
+            if (objects[i]->type == Object::PLAYER) {
+                log(INFO, "vector 2: %s", objects[i]->vector.to_string());
+            }
         } else {
+            if (objects[i]->type == Object::PLAYER) {
+                log(INFO, "vector 3: %s", objects[i]->vector.to_string());
+            }
             objects[i]->vector.y = terrain[objects[i]->vector.x];
         }
 
@@ -73,6 +86,9 @@ void ObjectHandler::draw(){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
+        if (objects[i]->type == Object::PLAYER)
+        {log(INFO, "Drawing at %d %d, %d, %d, %d", objects[i]->get_draw_x(*camera_x), objects[i]->get_draw_y(), objects[i]->vector.y, *camera_x, objects[i]->vector.x);}
+
         if (objects[i]->off_screen(*camera_x)) continue;
 
         GFX::drawBMP(objects[i]->get_draw_x(*camera_x), objects[i]->get_draw_y(),

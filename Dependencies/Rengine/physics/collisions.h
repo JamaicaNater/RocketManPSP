@@ -19,4 +19,4 @@ int object_collision(Object * obj, ObjectList &collisions, std::set<Object::Obje
  * @return true - collision detected
  * @return false - no collision
  */
-bool terrain_collision(Object * obj, char * terrain);
+bool terrain_collision(Object * obj, unsigned char * terrain);

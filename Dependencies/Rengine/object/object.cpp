@@ -1,9 +1,12 @@
 #include "object/object.h"
 
 
-Object::Object() {}
+Object::Object() {
+    vector = Vector2d();
+}
 Object::Object(Image _img) {
     image = _img;
+    vector = Vector2d();
 }
 
 void Object::damage_object(int damage) {

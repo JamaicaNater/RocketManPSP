@@ -25,5 +25,7 @@ struct Vector2d {
      * @return short 
      */
     int16_t get_mirrored_angle();
+
+    char* to_string() const;
  private:
 };

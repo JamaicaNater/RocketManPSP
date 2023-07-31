@@ -21,8 +21,6 @@ void log(unsigned char level, const char* format, ... ) {
     }
     if (fd < 0) {
         pspDebugScreenInit();
-        pspDebugScreenPrintf("%d", fd);
-        pspDebugScreenPrintf("%s", format);
         pspDebugScreenPrintf("Failed to log \"%s\" to %s please make sure the "
             "path exists, fd: %d, exiting in 10 seconds\n", 
             format, logger_file, fd);
@@ -52,20 +50,8 @@ void init_log() {
     #ifdef PSP_LOGGING
     pspDebugScreenInit();
     pspDebugScreenPrintf("init");
-    fd = sceIoOpen(logger_file,  PSP_O_TRUNC | PSP_O_RDWR, 0777);
-
-    SceUID file = sceIoOpen("umd0:/logs/logger.log", PSP_O_RDWR, 0777);
-
-    if (file < 0) {
-        pspDebugScreenPrintf("Error opening the file.\n");
-        sceKernelDelayThread(10 * SECOND);
-    }
-
-    // // Write some data to the file
-    // fprintf(file, "Hello, world!\n");
-
-    // // Close the file when done writing
-    // fclose(file);
+    fd = sceIoOpen(logger_file, PSP_O_WRONLY | PSP_O_CREAT | PSP_O_TRUNC,
+    0777);
     #endif
 }
 

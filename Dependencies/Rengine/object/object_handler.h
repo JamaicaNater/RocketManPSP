@@ -73,7 +73,7 @@ public:
 protected:
     // TODO make generic
     int * camera_x; 
-    char * terrain;
+    unsigned char * terrain;
 
     Object::ObjectTypes type = Object::NONE;
     ObjectList object_list;
