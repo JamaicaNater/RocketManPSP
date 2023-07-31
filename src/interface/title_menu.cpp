@@ -1,7 +1,7 @@
-#include "title_menu.h"
+#include <loadbmp.h>
+#include <GUI/menu.h>
 
-#include "loadbmp.h"
-#include "GUI/menu.h"
+#include "title_menu.h"
 #include "gamestate.h"
 
 Menu build_title_menu() {

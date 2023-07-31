@@ -1,12 +1,12 @@
 #pragma once
 
+#include <control_reader.h>
+
 #include "object_handler/enemy_handler.h"
 #include "object_handler/animation_handler.h"
 #include "object_handler/explosion_handler.h"
 #include "object_handler/projectile_handler.h"
 #include "object_handler/player_handler.h"
-#include "control_reader.h"
-
 #include "interface/on_screen.h"
 
 // TODO make singleton

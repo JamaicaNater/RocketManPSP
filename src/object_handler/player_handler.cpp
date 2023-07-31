@@ -1,17 +1,16 @@
 #include "player_handler.h"
 
-#include <pspkernel.h>
 #include <math.h>
 
-#include "globals.h"
+#include <pspkernel.h>
+
+#include <globals.h>
+#include <gfx.hpp>
+#include <physics/physics.h>
+#include <loadbmp.h>
 
 #include "gamestate.h"
 #include "game_utils.h"
-
-#include "gfx.hpp"
-#include "physics/physics.h"
-#include "loadbmp.h"
-
 #include "interface/death_menu.h"
 
 PlayerHandler::PlayerHandler(int _velocity, int * camera_x, 

@@ -3,7 +3,7 @@
 #include "object/object_list.h"
 #include "global_object_manager.h"
 
-namespace ObjectManager{
+namespace ObjectManager {
     void draw_health_bars(){
         Object ** glob_objects = ObjectList::get_global_object_list()->get_list();
         for (int i = 0; i < ObjectList::get_global_object_list()->MAX_SIZE; i++) {

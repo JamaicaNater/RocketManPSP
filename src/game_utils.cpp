@@ -1,9 +1,10 @@
 #include <pspthreadman.h>
 #include <cstdlib>
-#include "psp_malloc.h"
+
+#include <globals.h>
+#include <psp_malloc.h>
 
 #include "game_utils.h"
-#include "globals.h"
 
 float map(float num, int range) {
 	num += 1;

@@ -1,10 +1,8 @@
-#include "interface/on_screen.h"
-
-#include "globals.h"
+#include <globals.h>
+#include <GUI/menu.h>
 
 #include "gamestate.h"
-
-#include "GUI/menu.h"
+#include "interface/on_screen.h"
 
 int counter_index;
 int prev_kills = 0;

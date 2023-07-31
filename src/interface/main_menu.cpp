@@ -1,8 +1,8 @@
+
+#include <loadbmp.h>
+#include <GUI/menu.h>
+
 #include "interface/main_menu.h"
-
-#include "GUI/menu.h"
-
-#include "loadbmp.h"
 #include "gamestate.h"
 
 Menu build_main_menu() {

@@ -1,5 +1,4 @@
 #include "enemy_handler.h"
-
 #include "gamestate.h"
 
 void EnemyHandler::update_movement(int player_x){

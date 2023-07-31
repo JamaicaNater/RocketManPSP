@@ -3,16 +3,15 @@
 #include <pspctrl.h>
 #include <random>
 
+#include <graphics/game_graphics.h>
+#include <gfx.hpp>
+#include <logger.h>
+#include <loadbmp.h>
+#include <object_handler/global_object_manager.h>
+
 #include "gamestate.h"
 #include "game_globals.h"
-
 #include "game_utils.h"
-#include "graphics/game_graphics.h"
-
-#include "gfx.hpp"
-#include "logger.h"
-#include "loadbmp.h"
-#include "object_handler/global_object_manager.h"
 
 #include "interface/pause_menu.h"
 #include "interface/title_menu.h"

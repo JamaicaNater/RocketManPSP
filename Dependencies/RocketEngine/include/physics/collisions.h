@@ -2,6 +2,9 @@
 
 #include <set>
 
+#include <object/object.h>
+#include <object/object_list.h>
+
 /**
  * @brief Check if two objects collide
  *

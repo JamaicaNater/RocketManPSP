@@ -1,7 +1,7 @@
 #pragma once
 
-#include "object/object_handler.h"
-#include "image/animation.h"
+#include <object/object_handler.h>
+#include <image/animation.h>
 
 class AnimationHandler : public ObjectHandler
 {

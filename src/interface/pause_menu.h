@@ -1,4 +1,4 @@
-#include "GUI/menu.h"
+#include <GUI/menu.h>
 
 /**
  * @brief Builds the pause menu

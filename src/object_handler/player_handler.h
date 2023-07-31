@@ -1,12 +1,12 @@
 #pragma once
 
 #include <pspctrl.h>
+
+#include <object/object_handler.h>
+#include <control_reader.h>
+
 #include "game_globals.h"
-#include "object/object_handler.h"
 #include "projectile_handler.h"
-
-#include "control_reader.h"
-
 #include "interface/pause_menu.h"
 
 class PlayerHandler : public ObjectHandler

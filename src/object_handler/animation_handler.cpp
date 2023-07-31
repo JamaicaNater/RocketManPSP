@@ -1,6 +1,7 @@
+#include <gfx.hpp>
+#include <loadbmp.h>
+
 #include "animation_handler.h"
-#include "gfx.hpp"
-#include "loadbmp.h"
 
 AnimationHandler::AnimationHandler(int MAX_OBJECTS, int _velocity,
     int _time_between_spawns, int * camera_x, unsigned char * terrain, 
