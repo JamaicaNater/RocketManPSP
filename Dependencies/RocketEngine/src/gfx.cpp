@@ -10,8 +10,8 @@
 
 #include "globals.h"
 
-#include "bmp/loadbmp.h"
-#include "logger/logger.h"
+#include "loadbmp.h"
+#include "logger.h"
 #include "image/image_utils.h"
 
 

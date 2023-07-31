@@ -4,7 +4,7 @@
 #include <cstdlib>
 
 #include "physics/vector2d.h"
-#include "logger/logger.h"
+#include "logger.h"
 #include "image/image.h"
 #include "globals.h"
 

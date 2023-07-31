@@ -1,10 +1,10 @@
-#include "object_handler.h"
-#include "logger/logger.h"
-#include "graphics/gfx.hpp"
+#include "object/object_handler.h"
+#include "logger.h"
+#include "gfx.hpp"
 #include "physics/collisions.h"
 #include "physics/physics.h"
 
-#include "logger/logger.h"
+#include "logger.h"
 #include "object/object.h"
 
 ObjectHandler::ObjectHandler(int MAX_OBJECTS, int velocity, 

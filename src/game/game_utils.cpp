@@ -1,6 +1,6 @@
 #include <pspthreadman.h>
 #include <cstdlib>
-#include "memory/psp_malloc.h"
+#include "psp_malloc.h"
 
 #include "game_utils.h"
 #include "globals.h"

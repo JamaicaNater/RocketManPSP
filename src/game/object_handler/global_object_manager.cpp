@@ -1,5 +1,5 @@
-#include "graphics/gfx.hpp"
-#include "../game_globals.h"
+#include "gfx.hpp"
+#include "game/game_globals.h"
 #include "object/object_list.h"
 #include "global_object_manager.h"
 

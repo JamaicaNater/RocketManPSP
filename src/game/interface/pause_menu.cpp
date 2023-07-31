@@ -2,10 +2,10 @@
 
 #include <pspthreadman.h>
 
-#include "../gamestate.h"
+#include "game/gamestate.h"
 
-#include "graphics/gfx.hpp"
-#include "bmp/loadbmp.h"
+#include "gfx.hpp"
+#include "loadbmp.h"
 
 void swap_player_image(const char * filename){
     psp_free(PlayerHandler::player->image.img_matrix);

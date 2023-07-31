@@ -1,10 +1,10 @@
-#include "menu.h"
+#include "GUI/menu.h"
 
 #include <math.h>
 
 #include "globals.h"
-#include "graphics/gfx.hpp"
-#include "text_builder.h"
+#include "gfx.hpp"
+#include "GUI/text_builder.h"
 
 Menu::Menu(uint32_t _x, uint32_t _y, uint32_t _height,
     uint32_t _width, uint32_t _color)

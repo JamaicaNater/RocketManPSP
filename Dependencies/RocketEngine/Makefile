@@ -1,12 +1,13 @@
-OBJS = graphics/gfx.o \
-	bmp/loadbmp.o \
-	logger/logger.o \
-	memory/psp_malloc.o \
-	controls/control_reader.o \
-	physics/physics.o physics/collisions.o physics/vector2d.o \
-	GUI/text_builder.o GUI/menu.o GUI/component.o \
-	image/image.o image/animation.o image/image_utils.o \
-	object/object_list.o object/object.o object/object_handler.o
+OBJS = src/gfx.o \
+	src/loadbmp.o \
+	src/logger.o \
+	src/psp_malloc.o \
+	src/control_reader.o \
+	src/physics/physics.o src/physics/collisions.o src/physics/vector2d.o \
+	src/GUI/text_builder.o src/GUI/menu.o src/GUI/component.o \
+	src/image/image.o src/image/animation.o src/image/image_utils.o \
+	src/object/object_list.o src/object/object.o src/object/object_handler.o
+
 
 LIBRARY_NAME = librocket_engine.a
 
@@ -15,7 +16,7 @@ PSPSDK=$(shell psp-config --pspsdk-path)
 CXX      = psp-g++
 
 # Add PSPSDK includes and libraries.
-INCDIR   := $(INCDIR) . $(PSPDEV)/psp/include $(PSPSDK)/include
+INCDIR   := $(INCDIR) . $(PSPDEV)/psp/include $(PSPSDK)/include $(ENGINE_PATH)/include
 LIBDIR   := $(LIBDIR) . $(PSPDEV)/psp/lib $(PSPSDK)/lib
 
 CFLAGS   := $(addprefix -I,$(INCDIR)) -G0 $(CFLAGS)

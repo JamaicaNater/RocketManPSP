@@ -22,7 +22,7 @@ LIBS = -lrocket_engine -lstdc++ -lm
 #-lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp
 #-lpspmath
 
-INCDIR   := $(INCDIR) . $(ENGINE_PATH)
+INCDIR   := $(INCDIR) ./game $(ENGINE_PATH)/include
 LDFLAGS := $(addprefix -L,$(LIBDIR) $(ENGINE_PATH))
 
 CFLAGS =

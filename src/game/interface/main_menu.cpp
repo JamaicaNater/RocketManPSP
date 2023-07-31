@@ -2,7 +2,7 @@
 
 #include "GUI/menu.h"
 
-#include "bmp/loadbmp.h"
+#include "loadbmp.h"
 #include "game/gamestate.h"
 
 Menu build_main_menu() {

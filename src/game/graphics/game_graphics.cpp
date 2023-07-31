@@ -1,8 +1,8 @@
 #include <cstdint> 
 #include "../game_globals.h"
-#include "graphics/gfx.hpp"
+#include "gfx.hpp"
 #include "image/image.h"
-#include "bmp/loadbmp.h"
+#include "loadbmp.h"
 
 Image dirt("assets/terrain/dirt.bmp");
 Image sky("assets/terrain/sky.bmp");

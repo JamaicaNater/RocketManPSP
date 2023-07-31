@@ -8,7 +8,7 @@
 #include <list>
 
 #include "image/image.h"
-#include "controls/control_reader.h"
+#include "control_reader.h"
 #include "physics/vector2d.h"
 
 class Menu {

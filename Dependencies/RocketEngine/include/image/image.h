@@ -5,8 +5,8 @@
 #include <math.h>
 #include <stdint.h>
 
-#include "logger/logger.h"
-#include "memory/psp_malloc.h"
+#include "logger.h"
+#include "psp_malloc.h"
 
 struct Image {
     uint32_t * img_matrix = NULL;

@@ -1,6 +1,6 @@
 #include "title_menu.h"
 
-#include "bmp/loadbmp.h"
+#include "loadbmp.h"
 #include "GUI/menu.h"
 #include "game/gamestate.h"
 

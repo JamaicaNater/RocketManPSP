@@ -2,7 +2,7 @@
 
 #include <cstdlib>
 
-#include "logger/logger.h"
+#include "logger.h"
 
 const int MAX_SIZE = 256;
 

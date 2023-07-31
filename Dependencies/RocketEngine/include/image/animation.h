@@ -1,7 +1,7 @@
 #pragma once
 
 #include "image/image.h"
-#include "logger/logger.h"
+#include "logger.h"
 
 struct Animation {
  public:

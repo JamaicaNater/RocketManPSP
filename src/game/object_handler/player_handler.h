@@ -5,7 +5,7 @@
 #include "object/object_handler.h"
 #include "projectile_handler.h"
 
-#include "controls/control_reader.h"
+#include "control_reader.h"
 
 #include "game/interface/pause_menu.h"
 

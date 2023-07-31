@@ -1,7 +1,7 @@
 #include "GUI/menu.h"
 
 #include "game/gamestate.h"
-#include "graphics/gfx.hpp"
+#include "gfx.hpp"
 
 Menu build_death_menu() {
     Menu death_menu = Menu(CENTER, 120, 90, 0xC0C0C0, 0, -20)

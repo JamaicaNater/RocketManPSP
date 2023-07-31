@@ -9,9 +9,9 @@
 #include "game_utils.h"
 #include "game/graphics/game_graphics.h"
 
-#include "graphics/gfx.hpp"
-#include "logger/logger.h"
-#include "bmp/loadbmp.h"
+#include "gfx.hpp"
+#include "logger.h"
+#include "loadbmp.h"
 #include "object_handler/global_object_manager.h"
 
 #include "interface/pause_menu.h"

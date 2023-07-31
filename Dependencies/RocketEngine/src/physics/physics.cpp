@@ -4,7 +4,7 @@
 
 #include "physics/physics.h"
 
-#include "logger/logger.h"
+#include "logger.h"
 
 void apply_gravity(Vector2d &vec) {
     float time = (int)(curr_time - vec.t0_y) / (float)SECOND;

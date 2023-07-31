@@ -5,12 +5,12 @@
 
 #include "globals.h"
 
-#include "../gamestate.h"
-#include "../game_utils.h"
+#include "game/gamestate.h"
+#include "game/game_utils.h"
 
-#include "graphics/gfx.hpp"
+#include "gfx.hpp"
 #include "physics/physics.h"
-#include "bmp/loadbmp.h"
+#include "loadbmp.h"
 
 #include "game/interface/death_menu.h"
 

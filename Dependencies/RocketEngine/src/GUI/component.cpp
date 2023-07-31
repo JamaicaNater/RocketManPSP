@@ -1,5 +1,5 @@
-#include "component.h"
-#include "text_builder.h"
+#include "GUI/component.h"
+#include "GUI/text_builder.h"
 
 char comp_types[4][11] = {"NONE_TYPE", "PANEL_TYPE", "LABEL_TYPE", "IMAGE_TYPE"};
 

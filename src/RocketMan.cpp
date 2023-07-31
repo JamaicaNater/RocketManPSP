@@ -9,9 +9,9 @@
 #include "game/game_utils.h"
 
 #include "globals.h"
-#include "logger/logger.h"
-#include "memory/psp_malloc.h"
-#include "graphics/gfx.hpp"
+#include "logger.h"
+#include "psp_malloc.h"
+#include "gfx.hpp"
 #include "game/graphics/game_graphics.h"
 #include "GUI/text_builder.h"
 

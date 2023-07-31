@@ -5,7 +5,7 @@
 #include <math.h>
 
 #include "image/image_utils.h"
-#include "bmp/loadbmp.h"
+#include "loadbmp.h"
 
 Image::Image(const char * _filename) {
     int str_size = strlen(_filename) + 1;

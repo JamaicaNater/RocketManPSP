@@ -4,8 +4,8 @@ EXTRA_ARGS := -O3
 rebuild: clean all
 
 all: 
-	EXTRA_ARGS=$(EXTRA_ARGS) $(MAKE) build-engine
-	EXTRA_ARGS=$(EXTRA_ARGS) $(MAKE) build-game
+	ENGINE_PATH=$(ENGINE_PATH) EXTRA_ARGS=$(EXTRA_ARGS) $(MAKE) build-engine
+	ENGINE_PATH=$(ENGINE_PATH) EXTRA_ARGS=$(EXTRA_ARGS) $(MAKE) build-game
 
 clean:
 	$(MAKE) clean-engine

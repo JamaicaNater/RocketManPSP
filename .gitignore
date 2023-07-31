@@ -1,12 +1,60 @@
-/.vscode/
-/src/.vscode/
+
+# Testspace
 /Testspace/
-/build/
-/src/Debug/
-/logs/
-src/cppclean
-*.o
+
+# PSP object files
 *.elf
 *.prx
-# *.PBP
+*.PBP
 *.SFO
+
+# Logs
+.log
+
+# Compiled object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+
+# # Compiled libraries
+# *.lib
+# *.a
+
+# Compiled dynamic libraries (DLLs on Windows, SO on Linux, Dylib on macOS)
+*.dll
+*.so
+*.dylib
+
+# Compiled shared object files (PSO on PSP)
+*.pso
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# IDE and editor specific files
+.vscode/
+*.suo
+*.user
+*.sdf
+*.opensdf
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.cbp
+*.sln.docstates
+
+# macOS specific
+.DS_Store
+
+# Linux specific
+*~
+
+# Windows specific
+Thumbs.db
