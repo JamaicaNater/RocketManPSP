@@ -16,7 +16,7 @@ OBJS = RocketMan.o \
 	game/interface/death_menu.o \
 	game/graphics/game_graphics.o \
 
-LIBS = -lrengine -lstdc++ -lm 
+LIBS = -lrocket_engine -lstdc++ -lm 
 
 #-lpng -lpspaudiolib -lpspaudio -lpspaudiocodec -lintraFont -lz  -lpspgum
 #-lpspgu -lstdc++ -lpsprtc -lpspctrl -lm -lpspvfpu -lpspsdk -lpsppower -lpsphttp

@@ -8,7 +8,7 @@
 
 #include <cstring>
 
-const char * logger_file = "umd0:/logs/logger.log";
+const char * logger_file = "umd0:/logs/game.log";
 SceUID fd = -1;
 
 char levels_text[6][10] = {"DEBUG-H", "DEBUG", "INFO", "WARNING", "ERROR",

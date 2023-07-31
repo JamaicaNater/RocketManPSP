@@ -1,4 +1,4 @@
-ENGINE_PATH := $(shell pwd)/Dependencies/Rengine
+ENGINE_PATH := $(shell pwd)/Dependencies/RocketEngine
 # EXTRA_ARGS := -DPSP_LOGGING -03
 EXTRA_ARGS := -O3
 rebuild: clean all
