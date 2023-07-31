@@ -56,21 +56,11 @@ void ObjectHandler::update_physics(){
         if (!objects[i]) continue;
 
         if (objects[i]->vector.vel_y) {
-            if (objects[i]->type == Object::PLAYER) {
-                log(INFO, "vector 1: %s", objects[i]->vector.to_string());
-            }
-
             apply_gravity(objects[i]->vector);
             if (objects[i]->vector.y > terrain[objects[i]->vector.x]) { // End of jump
                 objects[i]->vector.vel_y = objects[i]->vector.y_i = 0;
             }
-            if (objects[i]->type == Object::PLAYER) {
-                log(INFO, "vector 2: %s", objects[i]->vector.to_string());
-            }
         } else {
-            if (objects[i]->type == Object::PLAYER) {
-                log(INFO, "vector 3: %s", objects[i]->vector.to_string());
-            }
             objects[i]->vector.y = terrain[objects[i]->vector.x];
         }
 
@@ -86,8 +76,6 @@ void ObjectHandler::draw(){
     Object ** objects = object_list.get_list();
     for (int i = 0; i < object_list.MAX_SIZE; i++){
         if (!objects[i]) continue;
-        if (objects[i]->type == Object::PLAYER)
-        {log(INFO, "Drawing at %d %d, %d, %d, %d", objects[i]->get_draw_x(*camera_x), objects[i]->get_draw_y(), objects[i]->vector.y, *camera_x, objects[i]->vector.x);}
 
         if (objects[i]->off_screen(*camera_x)) continue;
 
