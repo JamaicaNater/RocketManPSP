@@ -108,6 +108,7 @@ void PlayerHandler::set_up_controls(){
 
 void PlayerHandler::read_controls(){
     player->vector.vel_x = 0;// reset velocity; TODO: slowdown mechanic
+    
     *camera_x = get_cam_position(player->vector.x, SCREEN_WIDTH/2);
 
     player_control_reader.read_controls();
