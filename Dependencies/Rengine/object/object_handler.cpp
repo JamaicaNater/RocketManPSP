@@ -7,17 +7,17 @@
 #include "logger/logger.h"
 #include "object/object.h"
 
-ObjectHandler::ObjectHandler(int MAX_OBJECTS, int _velocity, 
-    int _time_between_spawns, int * camera_x, unsigned char * terrain, 
-    Object::ObjectTypes _type)
+ObjectHandler::ObjectHandler(int MAX_OBJECTS, int velocity, 
+    int time_between_spawns, int * camera_x, unsigned char * terrain, 
+    Object::ObjectTypes tanh)
 {
     log(DEBUG, "Calling ObjectList for objects");
-    object_list = *(new ObjectList(MAX_OBJECTS));
-    camera_x = camera_x;
-    terrain = terrain;
-    velocity = _velocity;
-    time_between_spawns = _time_between_spawns;
-    type = _type;
+    this->object_list = *(new ObjectList(MAX_OBJECTS));
+    this->camera_x = camera_x;
+    this->terrain = terrain;
+    this->velocity = velocity;
+    this->time_between_spawns = time_between_spawns;
+    this->type = type;
 }
 
 ObjectHandler::~ObjectHandler(){

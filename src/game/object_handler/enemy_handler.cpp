@@ -25,7 +25,7 @@ void EnemyHandler::on_object_collision(Object * obj,
     for (int i = 0; i < collision_list.MAX_SIZE; i++){
         if (!collision_list.size) break;
         if (!collisions[i]) continue;
-        //if (collisions[i]->type != Object::PLAYER) continue;
+        if (collisions[i]->type != Object::PLAYER) continue;
 
         collisions[i]->damage_object(1);
     }

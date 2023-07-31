@@ -66,7 +66,7 @@ public:
      * @param terrain 
      * @param type type of object
      */
-    ObjectHandler(int MAX_OBJECTS, int _velocity, int _time_between_spawns, 
+    ObjectHandler(int MAX_OBJECTS, int velocity, int time_between_spawns, 
         int * camera_x, unsigned char * terrain, Object::ObjectTypes type);
     
     virtual ~ObjectHandler();

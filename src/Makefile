@@ -15,15 +15,6 @@ OBJS = RocketMan.o \
 	game/interface/on_screen.o \
 	game/interface/death_menu.o \
 	game/graphics/game_graphics.o \
-	# graphics/gfx.o \
-	# bmp/loadbmp.o \
-	# logger/logger.o \
-	# memory/psp_malloc.o \
-	# controls/control_reader.o \
-	# physics/physics.o physics/collisions.o physics/vector2d.o \
-	# GUI/text_builder.o GUI/menu.o GUI/component.o \
-	# image/image.o image/animation.o image/image_utils.o \
-	# object/object_list.o object/object.o object/object_handler.o \
 
 LIBS = -lrengine -lstdc++ -lm 
 
@@ -35,7 +26,7 @@ INCDIR   := $(INCDIR) . $(ENGINE_PATH)
 LDFLAGS := $(addprefix -L,$(LIBDIR) $(ENGINE_PATH))
 
 CFLAGS =
-CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -O3 -Wall -Wextra -Wdouble-promotion \
+CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti -Wall -Wextra -Wdouble-promotion \
 					-Wno-unused-parameter -Warray-bounds -Wcoverage-mismatch \
 					-Wparentheses -Wunused-const-variable -Wuseless-cast \
 					-Wunused $(EXTRA_ARGS)

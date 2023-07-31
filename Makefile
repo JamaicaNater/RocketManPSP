@@ -1,5 +1,6 @@
 ENGINE_PATH := $(shell pwd)/Dependencies/Rengine
-EXTRA_ARGS := -DPSP_LOGGING
+# EXTRA_ARGS := -DPSP_LOGGING -03
+EXTRA_ARGS := -O3
 rebuild: clean all
 
 all: 
