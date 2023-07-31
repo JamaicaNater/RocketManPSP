@@ -4,12 +4,15 @@
 #include <pspthreadman.h>
 #include <cstdlib>
 
+#include "game_globals.h"
+#include "gamestate.h"
+#include "game_utils.h"
+
 #include "globals.h"
-#include "game/gamestate.h"
-#include "game/game_utils.h"
-#include "logger/logger.h"
-#include "memory/psp_malloc.h"
-#include "graphics/gfx.hpp"
+#include "logger.h"
+#include "psp_malloc.h"
+#include "gfx.hpp"
+#include "graphics/game_graphics.h"
 #include "GUI/text_builder.h"
 
 #include "../Dependencies/FastNoise/FastNoise.hpp"
@@ -54,12 +57,13 @@ void setupCallbacks()
 
 int main()
 {
+	pspDebugScreenInit();
 	init_malloc();
 	init_text_builder();
 	setupCallbacks();
-	pspDebugScreenInit();
+	
 
-	GFX::load_terrain_textures();
+	load_terrain_textures();
 	GFX::init();
 
 	// Terrain Generation
