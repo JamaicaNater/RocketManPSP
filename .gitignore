@@ -9,7 +9,7 @@
 *.SFO
 
 # Logs
-.log
+*.log
 
 # Compiled object files
 *.o
@@ -58,3 +58,4 @@
 
 # Windows specific
 Thumbs.db
+src/logs/game.log

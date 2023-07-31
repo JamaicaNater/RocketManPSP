@@ -9,7 +9,7 @@
 
 ObjectHandler::ObjectHandler(int MAX_OBJECTS, int velocity, 
     int time_between_spawns, int * camera_x, unsigned char * terrain, 
-    Object::ObjectTypes tanh)
+    Object::ObjectTypes type)
 {
     log(DEBUG, "Calling ObjectList for objects");
     this->object_list = *(new ObjectList(MAX_OBJECTS));
